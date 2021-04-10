@@ -324,6 +324,52 @@
         }
     }
 }
+.c-form {
+    width: $site-width_xl;
+    margin: 120px auto;
+    border: 1px solid $color_accent;
+    padding: $space_3l;
+    box-sizing: border-box;
+    @include mq(md) {
+        width: $site-width_md;
+    }
+    @include mq(ms) {
+        width: $site-width_ms;
+    }
+    @include mq(sm) {
+        width: 300px;
+    }
+    &__title {
+        font-size: $font-size_xxl;
+        text-align: center;
+    }
+    &__label {
+        display: block;
+        margin: $space_l 0;
+    }
+    &__input {
+        display: block;
+        border: 2px solid $color_accent;
+        width: 100%;
+        height: 40px;
+        padding: $space_l;
+        margin-bottom: $space_s;
+        box-sizing: border-box;
+    }
+    &__submit {
+        width: 100%;
+        background: $color_accent;
+        text-align: center;
+        font-size: $font-size_l;
+        padding: $space_m;
+        &:hover {
+            opacity: .6;
+        }
+    }
+}
+// Project
+// ----------------------------------
+@import "object/project/region";
 .p-article {
     &__prev {
         display: inline-block;
@@ -405,9 +451,14 @@
     // メニュー関連
     &__menu {
         border-bottom: 3px solid $bg_color;
+        display: flex;
+        @include mq(md) {
+            overflow-x: scroll;
+        }
     }
     &__tab {
         width: calc(100%/5);
+        min-width: 70px;
         height: 50px;
         background: $border_color;
         line-height: 50px;
@@ -419,15 +470,15 @@
         }
     }
     &__label {
-        display: inline-block;
+        display: block;
         width: 100%;
         height: 100%;
         text-align: center;
+        @include mq(md) {
+            font-size: $font-size_s;
+        }
     }
 }
-// Project
-// ----------------------------------
-@import "object/project/region";
 .p-search {
     border: 1px solid $font-color_default;
     background: $color_base;
@@ -588,7 +639,7 @@
 }
 .p-comment {
     &__body {
-        background: url("../images/pic7.jpg");
+        background: $color_accent;
         height: 500px;
         overflow-y: scroll;
         background-position: 0 600px;
@@ -602,10 +653,25 @@
         border-radius: 50%;
         overflow: hidden;
     }
+    &__balloon {
+        display: flex;
+        max-width: 90%;
+        justify-content: flex-end;
+        align-items: flex-end;
+        @include mq(md) {
+            max-width: 80%;
+        }
+    }
+    &__time {
+        font-size: $font-size_s;
+        margin: 0 $space_m;
+        text-align: end;
+    }
     &__msg {
         background: $color_base;
         padding: $space_m $space_l;
         border-radius: 20px;
+        max-width: 70%;
         &To {
             margin-left: $space_xl;
             position: relative;
@@ -638,6 +704,24 @@
                 border-top: 10px solid $color_base;
             }
         }
+    }
+    &__form {
+        background: $color_base;
+        padding: $space_s 0 $space_s $space_xl;
+    }
+    &__textarea {
+        width: 90%;
+        max-height: 80px;
+        min-height: 50px;
+        border-radius: 15px;
+        border: 1px solid $border_color;
+        padding: 0 $space_l;
+    }
+    &__submit {
+        vertical-align: bottom;
+        text-align: center;
+        font-size: $font-size_l;
+        margin-left: $space_s;
     }
 }
 // Utility
@@ -733,4 +817,10 @@
 }
 .u-display-none {
     display: none;
+}
+.u-err-msg {
+    color: $color_err;
+}
+.u-err-input {
+    border: 2px solid $color_err;
 }

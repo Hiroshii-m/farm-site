@@ -29,7 +29,8 @@ img {
 }
 
 textarea {
-    resize: none;
+    resize: vertical;
+    height: 30px;
 }
 
 ::placeholder {

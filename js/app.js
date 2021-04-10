@@ -34,6 +34,7 @@ window.addEventListener("DOMContentLoaded", function() {
     // 処理内容
     // ********************************************************
     checkMenu($menuProduct, $articleProduct);
+    checkMenu($menuComment, $articleComment);
     $menuAll.forEach(function($tab) {
         $tab.addEventListener('click', function() {
             checkMenu($menuProduct, $articleProduct);

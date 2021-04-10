@@ -68,9 +68,9 @@
                             
                             <!-- 初め -->
                             <section id="" class="p-article__body">
-                                <div class="p-article__menu u-flex">
+                                <div class="p-article__menu">
                                     <div class="p-article__tab">
-                                        <input id="products" class="p-article__input u-display-none js-menu-product js-menu" type="radio" name="tab-item" value="" checked>
+                                        <input id="products" class="p-article__input u-display-none js-menu-product js-menu" type="radio" name="tab-item" value="" >
                                         <label class="p-article__label" for="products">商品情報</label>
                                     </div>
                                     <div class="p-article__tab">
@@ -86,7 +86,7 @@
                                         <label class="p-article__label" for="access">アクセス</label>
                                     </div>
                                     <div class="p-article__tab">
-                                        <input id="comment" class="p-article__input u-display-none js-menu-comment js-menu" type="radio" name="tab-item" value="">
+                                        <input id="comment" class="p-article__input u-display-none js-menu-comment js-menu" type="radio" name="tab-item" value="" checked>
                                         <label class="p-article__label" for="comment">コメント</label>
                                     </div>
                                 </div>
@@ -157,15 +157,22 @@
                                                     <div class="p-comment__msg p-comment__msgTo">ほらこれ古い温泉卵があるねん。</div>
                                                 </div>
                                                 <div class="p-comment__from u-flex u-padding-10">
-                                                    <div class="p-comment__msg p-comment__msgFrom">
-                                                        なんだ？最近、温泉卵に流行ってて、商品に加えてみた。<br>
-                                                        どや？
+                                                    <div class="p-comment__balloon">
+                                                        <p class="p-comment__time">10:14</p>
+                                                        <div class="p-comment__msg p-comment__msgFrom">
+                                                            なんだ？最近、温泉卵に流行ってて、商品に加えてみた。
+                                                            どや？
+                                                        </div>
                                                     </div>
                                                     <figure class="p-comment__icon">
                                                         <img src="images/pic6.jpeg" alt="">
                                                     </figure>
                                                 </div>
                                             </div>
+                                            <form class="p-comment__form">
+                                                <textarea type="text" class="p-comment__textarea"></textarea>
+                                                <button class="p-comment__submit" type="submit"><i class="fas fa-paper-plane"></i></button>
+                                            </form>
                                         </div>
                                     </section><!-- /コメント -->
 
@@ -214,6 +221,9 @@
                     </li>
                     <li class="c-footer__icon">
                         <a href=""><i class="fab fa-facebook-square"></i></a>
+                    </li>
+                    <li class="c-footer__icon">
+                        <a href=""><i class="fab fa-instagram"></i></a>
                     </li>
                 </ul>
             </div>
