@@ -1,0 +1,7 @@
+#l-blog {
+    padding: 80px 0;
+    background: $color_main;
+    @include mq(md) {
+        padding: 40px 0;
+    }
+}

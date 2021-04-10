@@ -1,0 +1,8 @@
+#l-sidebar {
+    margin: 100px 0 0 50px;
+    @include mq(lg) {
+        background: $color_main;
+        padding-bottom: 80px;
+        margin: 100px 0 0 0;
+    }
+}

@@ -1,0 +1,17 @@
+// メディアクエリのブレークポイント設定
+$breakpoints: (
+    'sm': 'screen and (max-width: 414px)',
+    'ms': 'screen and (max-width: 600px)',
+    'md': 'screen and (max-width: 768px)',
+    'lg': 'screen and (max-width: 1000px)',
+    'xl': 'screen and (max-width: 1200px)',
+) !default;
+
+// =================================
+// mixin
+// =================================
+@mixin mq($breakpoint: sm) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}

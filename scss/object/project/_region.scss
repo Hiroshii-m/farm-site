@@ -1,0 +1,71 @@
+.p-region {
+    box-sizing: border-box;
+    background: url('../images/pic1.jpg');
+    padding: 50px;
+    @include mq(md) {
+        padding: 10px;
+    }
+    &__tit {
+        color: $color_base;
+        font-size: $font-size_xl;
+        margin: 0 0 20px 0;
+        text-align: center;
+    }
+    &__top {
+        overflow: hidden;
+        margin-right: -20px;
+        @include mq(sm) {
+            margin-right: 0;
+        }
+    }
+    &__bottom {
+        margin-right: -20px;
+        @include mq(sm) {
+            margin-right: 0;
+        }
+    }
+    &__box {
+        width: calc(33.3% - 20px);
+        min-height: 200px;
+        text-align: center;
+        background: $color_base;
+        box-sizing: border-box;
+        margin-right: $space_xl;
+        margin-bottom: $space_xl;
+        padding: $space_m $space_l;
+        @include mq(xl) {
+            padding: $space_s $space_m;
+        }
+        @include mq(md) {
+            min-height: 50px;
+            width: 100%;
+        }
+        @include mq(sm) {
+            margin-right: 0;
+        }
+        &:nth-of-type(1) {
+            float: right;
+            @include mq(sm) {
+                float: none;
+            }
+        }
+    }
+    &__block {
+        margin: 10px 0 20px 0;
+        font-size: $font-size_l;
+        @include mq(xl) {
+            margin: 5px 0;
+        }
+    }
+    &__item {
+        width: 33.3%;
+        margin: 0 auto 15px auto;
+        @include mq(xl) {
+            width: 50%;
+            margin: 0 auto 5px auto;
+        }
+        @include mq(md) {
+            width: 25%;
+        }
+    }
+}

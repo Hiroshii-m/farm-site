@@ -1,0 +1,11 @@
+.u-upArrow {
+    position: fixed;
+    right: 40px;
+    bottom: 50px;
+    font-size: $font-size_3l;
+    cursor: pointer;
+    @include mq(sm) {
+        right: 15px;
+        bottom: 20px;
+    }
+}
