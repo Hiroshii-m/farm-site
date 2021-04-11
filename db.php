@@ -1,61 +1,120 @@
 <?php
 // ****************************************
-// テーブル作成(2021/2/9)
+// テーブル作成(2021/4/11)
 // ****************************************
+// DB作成
+$db = 'CREATE DATABASE farmshops;';
 // ユーザーテーブルの作成
 $users = 'CREATE TABLE users(
     `id` INT(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
-    `nickname` VARCHAR(255) NULL,
+    `group_id` INT(11) NOT NULL,
+    `screen_name` VARCHAR(255) NULL,
+    `email` VARCHAR(255) NOT NULL,
+    `password` VARCHAR(255) NOT NULL,
     `last_name` VARCHAR(255) NULL,
     `first_name` VARCHAR(255) NULL,
     `last_name_kana` VARCHAR(255) NULL,
     `first_name_kana` VARCHAR(255) NULL,
-    `email` VARCHAR(255) UNIQUE NOT NULL,
-    `password` VARCHAR(255) NOT NULL,
-    `height` INT(3) NULL,
-    `pic` VARCHAR(255) NULL,
-    `biography` VARCHAR(255) NULL,
-    `delete_flg` BOOLEAN DEFAULT 0
-)ENGINE=INNODB DEFAULT CHARSET=utf8';
-// 体調データテーブルの作成
-$health_infos = 'CREATE TABLE health_infos(
+    `birthday_year` INT(4) NULL,
+    `birthday_month` INT(2) NULL,
+    `birthday_day` INT(2) NULL,
+    `avatar_image_path` VARCHAR(255) NULL,
+    `prefecture_id` INT(3) NULL,
+    `city_id` INT(3) NULL,
+    `block` VARCHAR(255) NULL,
+    `building` VARCHAR(255) NULL,
+    `postcode` VARCHAR(255) NULL,
+    `delete_flg` BOOLEAN DEFAULT 0 NOT NULL,
+    `create_date` DATE NOT NULL,
+    `update_date` TIMESTAMP NOT NULL
+)ENGINE=INNODB DEFAULT CHARSET=utf8;';
+// 店舗テーブル作成
+$shops = 'CREATE TABLE shops(
     `id` INT(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
-    `u_id` INT(11) NOT NULL,
-    `weight` INT(3) NULL,
-    `bpercent` INT(3) NULL,
-    `bmi` DECIMAL(3,1) NULL,
-    `get_on_time` DATETIME NULL,
-    `get_off_time` DATETIME NULL,
-    `sleep_time` DATETIME NULL,
-    `food_first_time` DATETIME NULL,
-    `food_last_time` DATETIME NULL,
-    `hungry_time` DATETIME NULL,
-    `feel` INT(1) NULL,
-    `created_at` DATETIME NOT NULL,
-    `updated_at` DATETIME NOT NULL
-)ENGINE=INNODB DEFAULT CHARSET=utf8';
-// 記事情報テーブル作成
-$articles = 'CREATE TABLE articles(
+    `user_id` INT(11) NOT NULL,
+    `shop_name` VARCHAR(255) NOT NULL,
+    `social_profile` VARCHAR(255) NULL,
+    `prefecture_id` INT(3) NULL,
+    `city_id` INT(3) NULL,
+    `block` VARCHAR(255) NULL,
+    `building` VARCHAR(255) NULL,
+    `value` INT(1) NULL,
+    `map_iframe` VARCHAR(255) NULL,
+    `shop_img` VARCHAR(255) NULL,
+    `browsing_num` INT(11) NULL,
+    `favorites` INT(11) NULL,
+    `delete_flg` BOOLEAN DEFAULT 0 NOT NULL,
+    `create_date` DATE NOT NULL,
+    `update_date` TIMESTAMP NOT NULL
+)ENGINE=INNODB DEFAULT CHARSET=utf8;';
+// 製品テーブル作成
+$products = 'CREATE TABLE products(
     `id` INT(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
-    `u_id` INT(11) NOT NULL,
-    `title` VARCHAR(255) NOT NULL,
-    `content` VARCHAR(255) NOT NULL,
+    `shop_id` INT(11) NOT NULL,
+    `user_id` INT(11) NOT NULL,
+    `product_name` VARCHAR(255) NOT NULL,
+    `product_detail` VARCHAR(255) NULL,
+    `product_value` INT(11) NOT NULL,
+    `category_id` INT(11) NOT NULL,
+    `pic1` VARCHAR(255) NULL,
+    `pic2` VARCHAR(255) NULL,
+    `pic3` VARCHAR(255) NULL,
+    `delete_flg` BOOLEAN DEFAULT 0 NOT NULL,
+    `create_date` DATE NOT NULL,
+    `update_date` TIMESTAMP NOT NULL
+)ENGINE=INNODB DEFAULT CHARSET=utf8;';
+// お気に入りテーブル作成
+$favorite = 'CREATE TABLE favorites(
+    `id` INT(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    `user_id` INT(11) NOT NULL,
+    `shop_id` INT(11) NOT NULL,
+    `delete_flg` BOOLEAN DEFAULT 0 NOT NULL,
+    `create_date` DATE NOT NULL,
+    `update_date` TIMESTAMP NOT NULL
+)ENGINE=INNODB DEFAULT CHARSET=utf8;';
+// コメントテーブル作成
+$comments = 'CREATE TABLE comments(
+    `id` INT(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    `send_date` DATETIME NOT NULL,
+    `send_id` INT(11) NOT NULL,
+    `shop_id` INT(11) NOT NULL,
+    `message` VARCHAR(255) NOT NULL,
+    `delete_flg` BOOLEAN DEFAULT 0 NOT NULL,
+    `create_date` DATE NOT NULL,
+    `update_date` TIMESTAMP NOT NULL
+)ENGINE=INNODB DEFAULT CHARSET=utf8;';
+// カテゴリーテーブル作成
+$category = 'CREATE TABLE category(
+    `id` INT(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    `category_name` VARCHAR(255) NOT NULL,
+    `delete_flg` BOOLEAN DEFAULT 0 NOT NULL,
+    `create_date` DATE NOT NULL,
+    `update_date` TIMESTAMP NOT NULL
+)ENGINE=INNODB DEFAULT CHARSET=utf8;';
+// 都道府県テーブル作成
+$prefecture = 'CREATE TABLE prefectures(
+    `id` INT(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    `prefecture_name` VARCHAR(255) NOT NULL,
+    `delete_flg` BOOLEAN DEFAULT 0 NOT NULL,
+    `create_date` DATE NOT NULL,
+    `update_date` TIMESTAMP NOT NULL
+)ENGINE=INNODB DEFAULT CHARSET=utf8;';
+// 市区町村テーブル作成
+$city = 'CREATE TABLE cites(
+    `id` INT(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    `prefecture_id` INT(11) NOT NULL,
+    `city_name` VARCHAR(255) NOT NULL,
+    `delete_flg` BOOLEAN DEFAULT 0 NOT NULL,
+    `create_date` DATE NOT NULL,
+    `update_date` TIMESTAMP NOT NULL
+)ENGINE=INNODB DEFAULT CHARSET=utf8;';
+// ブログテーブル作成
+$blog = 'CREATE TABLE blogs(
+    `id` INT(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    `shop_id` INT(11) NOT NULL,
     `img` VARCHAR(255) NULL,
-    `create_at` DATETIME NOT NULL,
-    `update_at` DATETIME NOT NULL
-)ENGINE=INNODB DEFAULT CHARSET=utf8';
-// 連絡掲示板テーブル作成
-$bords = 'CREATE TABLE bords(
-    `id` INT(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
-    `send_id` INT(11) NOT NULL,
-    `serve_id` INT(11) NOT NULL
-)ENGINE=INNODB DEFAULT CHARSET=utf8';
-// メッセージテーブル作成
-$messages = 'CREATE TABLE messages(
-    `id` INT(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
-    `bord_id` INT(11) NOT NULL,
-    `send_at` DATETIME NOT NULL,
-    `send_id` INT(11) NOT NULL,
-    `serve_id` INT(11) NOT NULL,
-    `message` VARCHAR(255) NOT NULL
-)ENGINE=INNODB DEFAULT CHARSET=utf8';
+    `text` VARCHAR(255) NULL,
+    `delete_flg` BOOLEAN DEFAULT 0 NOT NULL,
+    `create_date` DATE NOT NULL,
+    `update_date` TIMESTAMP NOT NULL
+)ENGINE=INNODB DEFAULT CHARSET=utf8;';

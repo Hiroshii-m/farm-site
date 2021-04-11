@@ -1,122 +1,102 @@
 <?php
+// 共通ファイルの読み込み
+require('function.php');
 
-// ================================================
-// ログ
-// ================================================
-ini_set('log_errors', 'on');
-ini_set('error_log', 'error.log');
+if(!empty($_POST)) {
+    debug('POSTされました。');
+    $email = (!empty($_POST['email'])) ? $_POST['email'] : '';
+    $pass = (!empty($_POST['pass'])) ? $_POST['pass'] : '';
+    $pass_re = (!empty($_POST['pass_re'])) ? $_POST['pass_re'] : '';
 
-// ================================================
-// デバッグ
-// ================================================
-$debug_flg = true;
-function debug($str) {
-    global $debug_flg;
-    if(!empty($debug_flg)){
-        error_log('デバッグ:'.$str);
+    validRequired($email, 'email');
+    if(empty($err_msg['email'])) {
+        validMax($email, 'email');
+    }
+    if(empty($err_msg['email'])) {
+        validEmail($email, 'email');
+    }
+    validRequired($pass, 'pass');
+    if(empty($err_msg['pass'])) {
+        validMin($pass, 'pass');
+    }
+    if(empty($err_msg['pass'])) {
+        validMax($pass, 'pass');
+    }
+    if(empty($err_msg['pass'])) {
+        validHalf($pass, 'pass');
+    }
+    validRequired($pass_re, 'pass_re');
+    if(empty($err_msg['pass_re'])) {
+        validMatch($pass, $pass_re, 'pass_re');
+    }
+    if(empty($err_msg)) {
+        debug('バリデーションOKです。');
+
+        $token = makeRandKey(); // 認証キー生成
+
+        // メール送信
+        $to = $email;
+        $from = 'karinoaca3@gmail.com';
+        $subject = '【ユーザー登録】| ノウハン';
+        $comment = <<<EOT
+ノウハンをご利用いただきありがとうございます。
+
+以下のURLへ進むとユーザー登録されます。
+
+
+
+*認証キーの有効期限は30分です。
+*このメールは返信しても届きません。お問い合わせは、本サイト下部の「お問い合わせ」からお願いいたします。
+
+■ご登録の覚えがないのにこのメールが届いたという方
+ご迷惑をおかけし申し訳ありません。大変お手数ですが、下記のメールアドレスまでご連絡をお願いいたします。
+support@nouhan.jp
+
+EOT;
+
+        sendMail($from, $to, $subject, $comment);
+        debug('認証キーです。'.$auth_key);
+
+        // 認証に必要な情報をセッションへ保存
     }
 }
 
-
 ?>
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>vegetable place</title>
-</head>
-<body>
-    <!-- ヘッダー -->
-    <header id="l-header" class="u-bgColor">
-        <div class="c-header">
-            <a class="c-header__logo u-flex">
-                <div class="c-header__img">
-                    <img src="images/ilust1.png" alt="">
-                </div>
-                <h3>農産物販売所</h3>
-            </a>
-            <nav class="c-header__nav">
-                <ul class="c-header__list u-flex">
-                    <li class="c-header__item">
-                        <a href="" class="c-header__text">ホーム</a>
-                    </li>
-                    <li class="c-header__item">
-                        <a href="" class="c-header__text">ログイン</a>
-                    </li>
-                    <li class="c-header__item">
-                        <a href="" class="c-header__text">ユーザー登録</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header><!-- /ヘッダー -->
+<?php
+require('header.php');
+?>
 
     <main id="l-main">
-        <form action="post" class="c-form">
-            <h2 class="c-form__title">新規登録</h2>
+        <form method="post" class="c-form">
+            <h2 class="c-form__title">ユーザー登録</h2>
             <div class="u-err-msg">
-                全体のエラー
+                <?= showErrMsg('common'); ?>
             </div>
             <label class="c-form__label" for="">
                 Email
-                <input class="c-form__input" type="text" name="email" value="">
+                <input class="c-form__input <?= showErrStyle('email'); ?>" type="text" name="email" value="<?= sanitize(retain($_POST['email'])); ?>">
                 <div class="u-err-msg">
-                    Emailのエラー
+                    <?= showErrMsg('email'); ?>
                 </div>
             </label>
             <label class="c-form__label" for="">
                 パスワード
-                <input class="c-form__input" type="password" name="pass">
+                <input class="c-form__input <?= showErrStyle('pass'); ?>" type="password" name="pass" value="<?= sanitize(retain($_POST['pass'])); ?>">
                 <div class="u-err-msg">
-                    パスワードのエラー
+                    <?= showErrMsg('pass'); ?>
+                </div>
+            </label>
+            <label class="c-form__label" for="">
+                パスワード（再入力）
+                <input class="c-form__input <?= showErrStyle('pass_re'); ?>" type="password" name="pass_re" value="<?= sanitize(retain($_POST['pass_re'])); ?>">
+                <div class="u-err-msg">
+                    <?= showErrMsg('pass_re'); ?>
                 </div>
             </label>
             <input class="c-form__submit" type="submit" value="送信">
         </form>
     </main>
     
-    <!-- フッター -->
-    <footer id="l-footer" class="js-footer">
-        <div class="c-footer">
-            <div class="c-footer__share">
-                <p class="c-footer__text">SNSでシェアしよう</p>
-                <ul class="c-footer__sns u-flex">
-                    <li class="c-footer__icon">
-                        <a href=""><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li class="c-footer__icon">
-                        <a href=""><i class="fab fa-facebook-square"></i></a>
-                    </li>
-                    <li class="c-footer__icon">
-                        <a href=""><i class="fab fa-instagram"></i></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="c-footer__logo">
-                <div class="c-footer__img"><img src="./images/ilust1.png" alt=""></div>
-                <p class="c-footer__name">農作物販売所</p>
-            </div>
-            <ul class="c-footer__info u-flex">
-                <li class="c-footer__list">
-                    <a href="">このサイトについて</a>
-                </li>
-                <li class="c-footer__list">
-                    <a href="">利用規約</a>
-                </li>
-                <li class="c-footer__list">
-                    <a href="">プライバシーポリシー</a>
-                </li>
-                <li class="c-footer__list">
-                    <a href="">情報セキュリティ基本方針</a>
-                </li>
-                <li class="c-footer__list">
-                    <a href="">お問い合わせ</a>
-                </li>
-            </ul>
-        </div>
-    </footer><!-- /フッター -->
-</body>
-</html>
+<?php
+require('footer.php');
+?>
