@@ -20,3 +20,522 @@
 [11-Apr-2021 21:07:19 Asia/Tokyo] デバッグ:POSTされました。
 [11-Apr-2021 21:07:29 Asia/Tokyo] デバッグ:POSTされました。
 [11-Apr-2021 21:07:40 Asia/Tokyo] デバッグ:POSTされました。
+[12-Apr-2021 13:49:03 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/output2/farm/signup.php on line 82
+[12-Apr-2021 13:49:03 Asia/Tokyo] PHP Notice:  Undefined index: pass in /Applications/MAMP/htdocs/output2/farm/signup.php on line 89
+[12-Apr-2021 13:49:03 Asia/Tokyo] PHP Notice:  Undefined index: pass_re in /Applications/MAMP/htdocs/output2/farm/signup.php on line 96
+[12-Apr-2021 13:51:41 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/output2/farm/signup.php on line 82
+[12-Apr-2021 13:51:41 Asia/Tokyo] PHP Notice:  Undefined index: pass in /Applications/MAMP/htdocs/output2/farm/signup.php on line 89
+[12-Apr-2021 13:51:41 Asia/Tokyo] PHP Notice:  Undefined index: pass_re in /Applications/MAMP/htdocs/output2/farm/signup.php on line 96
+[12-Apr-2021 13:51:44 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/output2/farm/signup.php on line 82
+[12-Apr-2021 13:51:44 Asia/Tokyo] PHP Notice:  Undefined index: pass in /Applications/MAMP/htdocs/output2/farm/signup.php on line 89
+[12-Apr-2021 13:51:44 Asia/Tokyo] PHP Notice:  Undefined index: pass_re in /Applications/MAMP/htdocs/output2/farm/signup.php on line 96
+[12-Apr-2021 13:51:51 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/output2/farm/signup.php on line 82
+[12-Apr-2021 13:51:51 Asia/Tokyo] PHP Notice:  Undefined index: pass in /Applications/MAMP/htdocs/output2/farm/signup.php on line 89
+[12-Apr-2021 13:51:51 Asia/Tokyo] PHP Notice:  Undefined index: pass_re in /Applications/MAMP/htdocs/output2/farm/signup.php on line 96
+[12-Apr-2021 13:52:47 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/output2/farm/signup.php on line 82
+[12-Apr-2021 13:52:47 Asia/Tokyo] PHP Notice:  Undefined index: pass in /Applications/MAMP/htdocs/output2/farm/signup.php on line 89
+[12-Apr-2021 13:52:47 Asia/Tokyo] PHP Notice:  Undefined index: pass_re in /Applications/MAMP/htdocs/output2/farm/signup.php on line 96
+[12-Apr-2021 13:52:54 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/output2/farm/signup.php on line 82
+[12-Apr-2021 13:52:54 Asia/Tokyo] PHP Notice:  Undefined index: pass in /Applications/MAMP/htdocs/output2/farm/signup.php on line 89
+[12-Apr-2021 13:52:54 Asia/Tokyo] PHP Notice:  Undefined index: pass_re in /Applications/MAMP/htdocs/output2/farm/signup.php on line 96
+[12-Apr-2021 13:53:54 Asia/Tokyo] PHP Notice:  Undefined index: pass in /Applications/MAMP/htdocs/output2/farm/signup.php on line 89
+[12-Apr-2021 13:53:54 Asia/Tokyo] PHP Notice:  Undefined index: pass_re in /Applications/MAMP/htdocs/output2/farm/signup.php on line 96
+[12-Apr-2021 13:54:34 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/output2/farm/signup.php on line 82
+[12-Apr-2021 13:54:34 Asia/Tokyo] PHP Notice:  Undefined index: pass in /Applications/MAMP/htdocs/output2/farm/signup.php on line 89
+[12-Apr-2021 13:54:34 Asia/Tokyo] PHP Notice:  Undefined index: pass_re in /Applications/MAMP/htdocs/output2/farm/signup.php on line 96
+[12-Apr-2021 13:55:04 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/output2/farm/signup.php on line 82
+[12-Apr-2021 13:55:04 Asia/Tokyo] PHP Notice:  Undefined index: pass in /Applications/MAMP/htdocs/output2/farm/signup.php on line 89
+[12-Apr-2021 13:55:04 Asia/Tokyo] PHP Notice:  Undefined index: pass_re in /Applications/MAMP/htdocs/output2/farm/signup.php on line 96
+[12-Apr-2021 13:55:14 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/output2/farm/signup.php on line 82
+[12-Apr-2021 13:55:14 Asia/Tokyo] PHP Notice:  Undefined index: pass in /Applications/MAMP/htdocs/output2/farm/signup.php on line 89
+[12-Apr-2021 13:55:14 Asia/Tokyo] PHP Notice:  Undefined index: pass_re in /Applications/MAMP/htdocs/output2/farm/signup.php on line 96
+[12-Apr-2021 13:55:34 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/output2/farm/signup.php on line 82
+[12-Apr-2021 13:55:34 Asia/Tokyo] PHP Notice:  Undefined index: pass in /Applications/MAMP/htdocs/output2/farm/signup.php on line 89
+[12-Apr-2021 13:55:34 Asia/Tokyo] PHP Notice:  Undefined index: pass_re in /Applications/MAMP/htdocs/output2/farm/signup.php on line 96
+[12-Apr-2021 13:55:43 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/output2/farm/signup.php on line 82
+[12-Apr-2021 13:55:43 Asia/Tokyo] PHP Notice:  Undefined index: pass in /Applications/MAMP/htdocs/output2/farm/signup.php on line 89
+[12-Apr-2021 13:55:43 Asia/Tokyo] PHP Notice:  Undefined index: pass_re in /Applications/MAMP/htdocs/output2/farm/signup.php on line 96
+[12-Apr-2021 13:59:04 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[12-Apr-2021 13:59:04 Asia/Tokyo] デバッグ:セッションID：tulikfgd8dob2877agl8cr6tov
+[12-Apr-2021 13:59:04 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [login_limit] => 3600
+    [login_date] => 1616658850
+    [user_id] => 1
+)
+
+[12-Apr-2021 13:59:04 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1618203544
+[12-Apr-2021 13:59:04 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1616662450
+[12-Apr-2021 13:59:04 Asia/Tokyo] デバッグ:POSTされました。
+[12-Apr-2021 13:59:04 Asia/Tokyo] デバッグ:バリデーションOKです。
+[12-Apr-2021 13:59:04 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Call to undefined function makeRandKey() in /Applications/MAMP/htdocs/output2/farm/signup.php:39
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/output2/farm/signup.php on line 39
+[12-Apr-2021 14:01:19 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[12-Apr-2021 14:01:19 Asia/Tokyo] デバッグ:セッションID：m0luclk61k56vmos4pmbd7kqpp
+[12-Apr-2021 14:01:19 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [login_limit] => 3600
+    [login_date] => 1616658850
+    [user_id] => 1
+)
+
+[12-Apr-2021 14:01:19 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1618203679
+[12-Apr-2021 14:01:19 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1616662450
+[12-Apr-2021 14:01:19 Asia/Tokyo] デバッグ:POSTされました。
+[12-Apr-2021 14:01:19 Asia/Tokyo] デバッグ:バリデーションOKです。
+[12-Apr-2021 14:01:19 Asia/Tokyo] PHP Notice:  Undefined index: HTTPS in /Applications/MAMP/htdocs/output2/farm/signup.php on line 45
+[12-Apr-2021 14:01:19 Asia/Tokyo] デバッグ:メールを送信しました。
+[12-Apr-2021 14:01:19 Asia/Tokyo] デバッグ:認証URLです。localhost:8888tokenRecieve.php?token=6073d41f7a84a
+[12-Apr-2021 14:01:59 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[12-Apr-2021 14:01:59 Asia/Tokyo] デバッグ:セッションID：3c0loivgem19ptu1th35inr8gr
+[12-Apr-2021 14:01:59 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [login_limit] => 3600
+    [login_date] => 1616658850
+    [user_id] => 1
+    [token] => 6073d41f7a84a
+)
+
+[12-Apr-2021 14:01:59 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1618203719
+[12-Apr-2021 14:01:59 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1616662450
+[12-Apr-2021 14:01:59 Asia/Tokyo] デバッグ:POSTされました。
+[12-Apr-2021 14:01:59 Asia/Tokyo] デバッグ:バリデーションOKです。
+[12-Apr-2021 14:01:59 Asia/Tokyo] PHP Notice:  Undefined index: HTTP in /Applications/MAMP/htdocs/output2/farm/signup.php on line 45
+[12-Apr-2021 14:01:59 Asia/Tokyo] デバッグ:メールを送信しました。
+[12-Apr-2021 14:01:59 Asia/Tokyo] デバッグ:認証URLです。localhost:8888tokenRecieve.php?token=6073d4473894d
+[12-Apr-2021 14:03:40 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[12-Apr-2021 14:03:40 Asia/Tokyo] デバッグ:セッションID：gin14i4mf3q1f90tb51bi4248j
+[12-Apr-2021 14:03:40 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [login_limit] => 3600
+    [login_date] => 1616658850
+    [user_id] => 1
+    [token] => 6073d4473894d
+)
+
+[12-Apr-2021 14:03:40 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1618203820
+[12-Apr-2021 14:03:40 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1616662450
+[12-Apr-2021 14:03:40 Asia/Tokyo] デバッグ:POSTされました。
+[12-Apr-2021 14:03:40 Asia/Tokyo] デバッグ:バリデーションOKです。
+[12-Apr-2021 14:03:40 Asia/Tokyo] PHP Notice:  Undefined index: HTTPS in /Applications/MAMP/htdocs/output2/farm/signup.php on line 45
+[12-Apr-2021 14:03:40 Asia/Tokyo] デバッグ:
+[12-Apr-2021 14:03:40 Asia/Tokyo] デバッグ:localhost:8888
+[12-Apr-2021 14:03:40 Asia/Tokyo] PHP Notice:  Undefined variable: url in /Applications/MAMP/htdocs/output2/farm/signup.php on line 52
+[12-Apr-2021 14:03:40 Asia/Tokyo] デバッグ:メールを送信しました。
+[12-Apr-2021 14:03:40 Asia/Tokyo] PHP Notice:  Undefined variable: url in /Applications/MAMP/htdocs/output2/farm/signup.php on line 66
+[12-Apr-2021 14:03:40 Asia/Tokyo] デバッグ:認証URLです。
+[12-Apr-2021 14:04:29 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[12-Apr-2021 14:04:29 Asia/Tokyo] デバッグ:セッションID：cq9fk0j2q54h7chh9jfqrus3bv
+[12-Apr-2021 14:04:29 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [login_limit] => 3600
+    [login_date] => 1616658850
+    [user_id] => 1
+    [token] => 6073d4ac62415
+)
+
+[12-Apr-2021 14:04:29 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1618203869
+[12-Apr-2021 14:04:29 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1616662450
+[12-Apr-2021 14:04:29 Asia/Tokyo] デバッグ:POSTされました。
+[12-Apr-2021 14:04:29 Asia/Tokyo] デバッグ:バリデーションOKです。
+[12-Apr-2021 14:04:29 Asia/Tokyo] デバッグ:localhost:8888
+[12-Apr-2021 14:04:29 Asia/Tokyo] デバッグ:メールを送信しました。
+[12-Apr-2021 14:04:29 Asia/Tokyo] デバッグ:認証URLです。localhost:8888tokenRecieve.php?token=6073d4ddb4818
+[12-Apr-2021 14:05:18 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[12-Apr-2021 14:05:18 Asia/Tokyo] デバッグ:セッションID：5bqcj8ikaesjp055p9kopatd6q
+[12-Apr-2021 14:05:18 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [login_limit] => 3600
+    [login_date] => 1616658850
+    [user_id] => 1
+    [token] => 6073d4ddb4818
+)
+
+[12-Apr-2021 14:05:18 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1618203918
+[12-Apr-2021 14:05:18 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1616662450
+[12-Apr-2021 14:05:18 Asia/Tokyo] デバッグ:POSTされました。
+[12-Apr-2021 14:05:18 Asia/Tokyo] デバッグ:バリデーションOKです。
+[12-Apr-2021 14:05:18 Asia/Tokyo] デバッグ:localhost:8888
+[12-Apr-2021 14:05:18 Asia/Tokyo] デバッグ:メールを送信しました。
+[12-Apr-2021 14:05:18 Asia/Tokyo] デバッグ:認証URLです。localhost:8888/output2/farm/tokenRecieve.php?token=6073d50e6cb99
+[12-Apr-2021 15:05:50 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[12-Apr-2021 15:05:50 Asia/Tokyo] デバッグ:セッションID：hpha32su1bd06qalh23rqs0tm2
+[12-Apr-2021 15:05:50 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [login_limit] => 3600
+    [login_date] => 1616658850
+    [user_id] => 1
+    [token] => 6073d50e6cb99
+)
+
+[12-Apr-2021 15:05:50 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1618207550
+[12-Apr-2021 15:05:50 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1616662450
+[12-Apr-2021 15:05:50 Asia/Tokyo] デバッグ:POSTされました。
+[12-Apr-2021 15:05:50 Asia/Tokyo] デバッグ:バリデーションOKです。
+[12-Apr-2021 15:05:50 Asia/Tokyo] デバッグ:localhost:8888
+[12-Apr-2021 15:05:50 Asia/Tokyo] デバッグ:メールを送信しました。
+[12-Apr-2021 15:07:23 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[12-Apr-2021 15:07:23 Asia/Tokyo] デバッグ:セッションID：ouchg65dti7u5ghaljq82fth0u
+[12-Apr-2021 15:07:23 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [login_limit] => 3600
+    [login_date] => 1616658850
+    [user_id] => 1
+    [token] => 6073e33e38571
+    [email] => aiueo@aiueo.com
+    [password] => $2y$10$6VwpRpzPz5jGN327p7UI/.lEWu/j11R4.qZ8HinaR8P2SSg6dRaKW
+)
+
+[12-Apr-2021 15:07:23 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1618207643
+[12-Apr-2021 15:07:23 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1616662450
+[12-Apr-2021 15:07:23 Asia/Tokyo] デバッグ:POSTされました。
+[12-Apr-2021 15:07:23 Asia/Tokyo] デバッグ:バリデーションOKです。
+[12-Apr-2021 15:07:23 Asia/Tokyo] デバッグ:メールを送信しました。
+[12-Apr-2021 15:07:23 Asia/Tokyo] デバッグ:URL発行
+[12-Apr-2021 15:07:23 Asia/Tokyo] デバッグ:localhost:8888/output2/farm/tokenRecieve.php?token=6073e39b431d0
+[12-Apr-2021 15:07:55 Asia/Tokyo] エラー発生：SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+[12-Apr-2021 15:11:46 Asia/Tokyo] エラー発生：SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+[12-Apr-2021 15:12:02 Asia/Tokyo] エラー発生：SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+[12-Apr-2021 15:12:10 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[12-Apr-2021 15:12:10 Asia/Tokyo] デバッグ:セッションID：suj317bl1dbabblt54qbes6l87
+[12-Apr-2021 15:12:10 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [login_limit] => 3600
+    [login_date] => 1616658850
+    [user_id] => 1
+    [token] => 6073e39b431d0
+    [email] => aiueo@aiueo.com
+    [password] => $2y$10$qkLdnnd6/PCa1D3y6SN32eErfZmYC2ZoOVG/Lami18Mbg/8SW3PYa
+)
+
+[12-Apr-2021 15:12:10 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1618207930
+[12-Apr-2021 15:12:10 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1616662450
+[12-Apr-2021 15:12:10 Asia/Tokyo] デバッグ:POSTされました。
+[12-Apr-2021 15:12:10 Asia/Tokyo] デバッグ:バリデーションOKです。
+[12-Apr-2021 15:12:10 Asia/Tokyo] デバッグ:メールを送信しました。
+[12-Apr-2021 15:12:10 Asia/Tokyo] デバッグ:URL発行
+[12-Apr-2021 15:12:10 Asia/Tokyo] デバッグ:localhost:8888/output2/farm/tokenRecieve.php?token=6073e4bae9529
+[12-Apr-2021 15:12:22 Asia/Tokyo] エラー発生：SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+[12-Apr-2021 15:14:33 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[12-Apr-2021 15:14:33 Asia/Tokyo] デバッグ:セッションID：bqepjp1df4qfkkv1jgc4k2d376
+[12-Apr-2021 15:14:33 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [login_limit] => 3600
+    [login_date] => 1616658850
+    [user_id] => 1
+    [token] => 6073e4bae9529
+    [email] => aiueo@aiueo.com
+    [password] => $2y$10$csOBHR1o5T8BgSUbMJU0h.EMOL.h/61eC546O9/D2z55dzAb49Ypy
+)
+
+[12-Apr-2021 15:14:33 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1618208073
+[12-Apr-2021 15:14:33 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1616662450
+[12-Apr-2021 15:14:33 Asia/Tokyo] デバッグ:POSTされました。
+[12-Apr-2021 15:14:33 Asia/Tokyo] デバッグ:バリデーションOKです。
+[12-Apr-2021 15:14:33 Asia/Tokyo] デバッグ:メールを送信しました。
+[12-Apr-2021 15:14:33 Asia/Tokyo] デバッグ:URL発行
+[12-Apr-2021 15:14:33 Asia/Tokyo] デバッグ:localhost:8888/output2/farm/tokenRecieve.php?token=6073e5492d0ee
+[12-Apr-2021 15:14:44 Asia/Tokyo] エラー発生：SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+[12-Apr-2021 15:23:58 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[12-Apr-2021 15:23:58 Asia/Tokyo] デバッグ:セッションID：9fse0t6sr4mjpidiknamghn583
+[12-Apr-2021 15:23:58 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [login_limit] => 3600
+    [login_date] => 1616658850
+    [user_id] => 1
+    [token] => 6073e5492d0ee
+    [email] => aiueo@aiueo.com
+    [password] => $2y$10$Ri2BWWRHHd82Axfp52Coc.zuhVvLmpbC6ZGtXgdfuWgABbcrE8/c.
+)
+
+[12-Apr-2021 15:23:58 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1618208638
+[12-Apr-2021 15:23:58 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1616662450
+[12-Apr-2021 15:23:58 Asia/Tokyo] デバッグ:POSTされました。
+[12-Apr-2021 15:23:58 Asia/Tokyo] デバッグ:バリデーションOKです。
+[12-Apr-2021 15:23:58 Asia/Tokyo] デバッグ:メールを送信しました。
+[12-Apr-2021 15:23:58 Asia/Tokyo] デバッグ:URL発行
+[12-Apr-2021 15:23:58 Asia/Tokyo] デバッグ:localhost:8888/output2/farm/tokenRecieve.php?token=6073e77e1ed51
+[12-Apr-2021 15:24:12 Asia/Tokyo] エラー発生：SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+[12-Apr-2021 15:24:47 Asia/Tokyo] エラー発生：SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+[12-Apr-2021 15:26:15 Asia/Tokyo] エラー発生：SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+[12-Apr-2021 15:29:46 Asia/Tokyo] エラー発生：SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+[12-Apr-2021 15:35:32 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[12-Apr-2021 15:35:32 Asia/Tokyo] デバッグ:セッションID：9rqcm5kd243bs436ke7slaoc8c
+[12-Apr-2021 15:35:32 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [login_limit] => 3600
+    [login_date] => 1616658850
+    [user_id] => 1
+    [token] => 6073e77e1ed51
+    [email] => aiueo@aiueo.com
+    [password] => $2y$10$aCx3s9OUp7tVUFuFKVVa7O/2yb6n9kW/QnuZFc9pZYigOk4IWo2he
+)
+
+[12-Apr-2021 15:35:32 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1618209332
+[12-Apr-2021 15:35:32 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1616662450
+[12-Apr-2021 15:35:32 Asia/Tokyo] デバッグ:POSTされました。
+[12-Apr-2021 15:35:32 Asia/Tokyo] デバッグ:バリデーションOKです。
+[12-Apr-2021 15:35:32 Asia/Tokyo] デバッグ:メールを送信しました。
+[12-Apr-2021 15:35:32 Asia/Tokyo] デバッグ:URL発行
+[12-Apr-2021 15:35:32 Asia/Tokyo] デバッグ:localhost:8888/output2/farm/tokenRecieve.php?token=6073ea34ce034
+[12-Apr-2021 15:36:10 Asia/Tokyo] エラー発生：SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+[12-Apr-2021 15:40:54 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[12-Apr-2021 15:40:54 Asia/Tokyo] デバッグ:セッションID：bmtfkl0g84bg679nn15jj1q41s
+[12-Apr-2021 15:40:54 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [login_limit] => 3600
+    [login_date] => 1616658850
+    [user_id] => 1
+    [token] => 6073ea34ce034
+    [email] => aiueo@aiueo.com
+    [password] => $2y$10$Q0tOYu31b.8BSgw3RsGjUe.jmKanolV1sJhHsl11n4oop1vTqL6Dq
+)
+
+[12-Apr-2021 15:40:54 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1618209654
+[12-Apr-2021 15:40:54 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1616662450
+[12-Apr-2021 15:40:54 Asia/Tokyo] デバッグ:POSTされました。
+[12-Apr-2021 15:40:54 Asia/Tokyo] デバッグ:バリデーションOKです。
+[12-Apr-2021 15:40:54 Asia/Tokyo] デバッグ:メールを送信しました。
+[12-Apr-2021 15:40:54 Asia/Tokyo] デバッグ:URL発行
+[12-Apr-2021 15:40:54 Asia/Tokyo] デバッグ:localhost:8888/output2/farm/tokenRecieve.php?token=6073eb76a1b46
+[12-Apr-2021 15:41:04 Asia/Tokyo] エラー発生：SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+[12-Apr-2021 15:41:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[12-Apr-2021 19:48:38 Asia/Tokyo] デバッグ:==============================================
+[12-Apr-2021 19:48:38 Asia/Tokyo] デバッグ:ユーザー登録画面
+[12-Apr-2021 19:48:38 Asia/Tokyo] デバッグ:==============================================
+[12-Apr-2021 19:48:38 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[12-Apr-2021 19:48:38 Asia/Tokyo] デバッグ:セッションID：g85a2higpvurdpalki13fqc9pf
+[12-Apr-2021 19:48:38 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [login_limit] => 3600
+    [login_date] => 1618209717
+    [user_id] => 3
+    [token] => 6073eb76a1b46
+    [email] => aiueo@aiueo.com
+    [password] => $2y$10$QVn4f1VcJA4tuCiGPfcwUewti2UqFBVwgAFBd3LBkWJRSIYHQxiWu
+)
+
+[12-Apr-2021 19:48:38 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1618224518
+[12-Apr-2021 19:48:38 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1618213317
+[12-Apr-2021 19:48:38 Asia/Tokyo] デバッグ:POSTされました。
+[12-Apr-2021 19:48:38 Asia/Tokyo] デバッグ:バリデーションOKです。
+[12-Apr-2021 19:48:38 Asia/Tokyo] デバッグ:メールを送信しました。
+[12-Apr-2021 19:48:38 Asia/Tokyo] デバッグ:URL発行
+[12-Apr-2021 19:48:38 Asia/Tokyo] デバッグ:localhost:8888/output2/farm/tokenRecieve.php?token=607425864adc6
+[12-Apr-2021 19:48:39 Asia/Tokyo] PHP Fatal error:  Cannot redeclare debugLogStart() (previously declared in /Applications/MAMP/htdocs/output2/farm/function.php:27) in /Applications/MAMP/htdocs/output2/farm/function.php on line 26
+[12-Apr-2021 19:49:56 Asia/Tokyo] デバッグ:ログイン有効期限切れです。
+[12-Apr-2021 19:49:56 Asia/Tokyo] デバッグ:==============================================
+[12-Apr-2021 19:49:56 Asia/Tokyo] デバッグ:ログイン画面
+[12-Apr-2021 19:49:56 Asia/Tokyo] デバッグ:==============================================
+[12-Apr-2021 19:49:56 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[12-Apr-2021 19:49:56 Asia/Tokyo] デバッグ:セッションID：
+[12-Apr-2021 19:49:56 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [login_limit] => 3600
+    [login_date] => 1618209717
+    [user_id] => 3
+    [token] => 607425864adc6
+    [email] => aiueo@aiueo.com
+    [password] => $2y$10$fNBKoskY3F8mfkNc6usV4uc4oTlvPnPipJMhMoc7Ga/31TFrJOU0q
+)
+
+[12-Apr-2021 19:49:56 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1618224596
+[12-Apr-2021 19:49:56 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1618213317
+[12-Apr-2021 19:49:56 Asia/Tokyo] デバッグ:==============================================
+[12-Apr-2021 19:49:56 Asia/Tokyo] デバッグ:ログイン画面
+[12-Apr-2021 19:49:56 Asia/Tokyo] デバッグ:==============================================
+[12-Apr-2021 19:49:56 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[12-Apr-2021 19:49:56 Asia/Tokyo] デバッグ:セッションID：j1l5lpotvmo10qa94cnehaus33
+[12-Apr-2021 19:49:56 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[12-Apr-2021 19:49:56 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1618224596
+[12-Apr-2021 19:50:08 Asia/Tokyo] デバッグ:==============================================
+[12-Apr-2021 19:50:08 Asia/Tokyo] デバッグ:ログイン画面
+[12-Apr-2021 19:50:08 Asia/Tokyo] デバッグ:==============================================
+[12-Apr-2021 19:50:08 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[12-Apr-2021 19:50:08 Asia/Tokyo] デバッグ:セッションID：6m2rsocboqoftccb12mrkj2c9n
+[12-Apr-2021 19:50:08 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[12-Apr-2021 19:50:08 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1618224608
+[12-Apr-2021 19:53:11 Asia/Tokyo] デバッグ:==============================================
+[12-Apr-2021 19:53:11 Asia/Tokyo] デバッグ:ログイン画面
+[12-Apr-2021 19:53:11 Asia/Tokyo] デバッグ:==============================================
+[12-Apr-2021 19:53:11 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[12-Apr-2021 19:53:11 Asia/Tokyo] デバッグ:セッションID：02dsb1s595a33ql4n459ev13up
+[12-Apr-2021 19:53:11 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[12-Apr-2021 19:53:11 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1618224791
+[12-Apr-2021 19:53:15 Asia/Tokyo] デバッグ:==============================================
+[12-Apr-2021 19:53:15 Asia/Tokyo] デバッグ:ログイン画面
+[12-Apr-2021 19:53:15 Asia/Tokyo] デバッグ:==============================================
+[12-Apr-2021 19:53:15 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[12-Apr-2021 19:53:15 Asia/Tokyo] デバッグ:セッションID：2ieuc7hfo331v74392lk5chl97
+[12-Apr-2021 19:53:15 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[12-Apr-2021 19:53:15 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1618224795
+[12-Apr-2021 20:01:31 Asia/Tokyo] デバッグ:==============================================
+[12-Apr-2021 20:01:31 Asia/Tokyo] デバッグ:ログイン画面
+[12-Apr-2021 20:01:31 Asia/Tokyo] デバッグ:==============================================
+[12-Apr-2021 20:01:31 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[12-Apr-2021 20:01:31 Asia/Tokyo] デバッグ:セッションID：e0u3flkm5o98voo0e19qgs617h
+[12-Apr-2021 20:01:31 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[12-Apr-2021 20:01:31 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1618225291
+[12-Apr-2021 20:01:56 Asia/Tokyo] デバッグ:==============================================
+[12-Apr-2021 20:01:56 Asia/Tokyo] デバッグ:ログイン画面
+[12-Apr-2021 20:01:56 Asia/Tokyo] デバッグ:==============================================
+[12-Apr-2021 20:01:56 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[12-Apr-2021 20:01:56 Asia/Tokyo] デバッグ:セッションID：ee8hjccncs7dcglhmlme09tour
+[12-Apr-2021 20:01:56 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[12-Apr-2021 20:01:56 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1618225316
+[12-Apr-2021 20:03:33 Asia/Tokyo] デバッグ:==============================================
+[12-Apr-2021 20:03:33 Asia/Tokyo] デバッグ:ログイン画面
+[12-Apr-2021 20:03:33 Asia/Tokyo] デバッグ:==============================================
+[12-Apr-2021 20:03:33 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[12-Apr-2021 20:03:33 Asia/Tokyo] デバッグ:セッションID：6phdgaar6fbss4i0v90pb5cq6m
+[12-Apr-2021 20:03:33 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[12-Apr-2021 20:03:33 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1618225413
+[12-Apr-2021 20:04:10 Asia/Tokyo] デバッグ:==============================================
+[12-Apr-2021 20:04:10 Asia/Tokyo] デバッグ:ログイン画面
+[12-Apr-2021 20:04:10 Asia/Tokyo] デバッグ:==============================================
+[12-Apr-2021 20:04:10 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[12-Apr-2021 20:04:10 Asia/Tokyo] デバッグ:セッションID：jb0pfuopvn2ph9bon7qivjfiiv
+[12-Apr-2021 20:04:10 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[12-Apr-2021 20:04:10 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1618225450
+[12-Apr-2021 20:04:12 Asia/Tokyo] デバッグ:==============================================
+[12-Apr-2021 20:04:12 Asia/Tokyo] デバッグ:ログイン画面
+[12-Apr-2021 20:04:12 Asia/Tokyo] デバッグ:==============================================
+[12-Apr-2021 20:04:12 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[12-Apr-2021 20:04:12 Asia/Tokyo] デバッグ:セッションID：67hjo70i7i13bq281h00ajqcpg
+[12-Apr-2021 20:04:12 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[12-Apr-2021 20:04:12 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1618225452
+[12-Apr-2021 20:04:32 Asia/Tokyo] デバッグ:==============================================
+[12-Apr-2021 20:04:32 Asia/Tokyo] デバッグ:ログイン画面
+[12-Apr-2021 20:04:32 Asia/Tokyo] デバッグ:==============================================
+[12-Apr-2021 20:04:32 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[12-Apr-2021 20:04:32 Asia/Tokyo] デバッグ:セッションID：77kn52v55gcnibq9dhqk6v8cmk
+[12-Apr-2021 20:04:32 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[12-Apr-2021 20:04:32 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1618225472
+[12-Apr-2021 20:04:38 Asia/Tokyo] デバッグ:==============================================
+[12-Apr-2021 20:04:38 Asia/Tokyo] デバッグ:ログイン画面
+[12-Apr-2021 20:04:38 Asia/Tokyo] デバッグ:==============================================
+[12-Apr-2021 20:04:38 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[12-Apr-2021 20:04:38 Asia/Tokyo] デバッグ:セッションID：efa1eandq0r9agml0bif8ungdr
+[12-Apr-2021 20:04:38 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[12-Apr-2021 20:04:38 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1618225478
+[12-Apr-2021 20:04:45 Asia/Tokyo] デバッグ:==============================================
+[12-Apr-2021 20:04:45 Asia/Tokyo] デバッグ:ユーザー登録画面
+[12-Apr-2021 20:04:45 Asia/Tokyo] デバッグ:==============================================
+[12-Apr-2021 20:04:45 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[12-Apr-2021 20:04:45 Asia/Tokyo] デバッグ:セッションID：bg9dfo3uo33n0dhdjeptnnspar
+[12-Apr-2021 20:04:45 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[12-Apr-2021 20:04:45 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1618225485
+[12-Apr-2021 20:04:46 Asia/Tokyo] デバッグ:==============================================
+[12-Apr-2021 20:04:46 Asia/Tokyo] デバッグ:ユーザー登録画面
+[12-Apr-2021 20:04:46 Asia/Tokyo] デバッグ:==============================================
+[12-Apr-2021 20:04:46 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[12-Apr-2021 20:04:46 Asia/Tokyo] デバッグ:セッションID：1rflauaa61sjc1qgoejnlq4d94
+[12-Apr-2021 20:04:46 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[12-Apr-2021 20:04:46 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1618225486
+[12-Apr-2021 20:04:46 Asia/Tokyo] デバッグ:POSTされました。
+[12-Apr-2021 20:05:40 Asia/Tokyo] デバッグ:==============================================
+[12-Apr-2021 20:05:40 Asia/Tokyo] デバッグ:ログイン画面
+[12-Apr-2021 20:05:40 Asia/Tokyo] デバッグ:==============================================
+[12-Apr-2021 20:05:40 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[12-Apr-2021 20:05:40 Asia/Tokyo] デバッグ:セッションID：1hns5854qjn7me7evoarobiou2
+[12-Apr-2021 20:05:40 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[12-Apr-2021 20:05:40 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1618225540
+[12-Apr-2021 20:05:46 Asia/Tokyo] デバッグ:==============================================
+[12-Apr-2021 20:05:46 Asia/Tokyo] デバッグ:ログイン画面
+[12-Apr-2021 20:05:46 Asia/Tokyo] デバッグ:==============================================
+[12-Apr-2021 20:05:46 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[12-Apr-2021 20:05:46 Asia/Tokyo] デバッグ:セッションID：96li81sndcuk19qie96ca8a963
+[12-Apr-2021 20:05:46 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[12-Apr-2021 20:05:46 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1618225546
+[12-Apr-2021 20:10:08 Asia/Tokyo] PHP Notice:  Undefined variable: sesLimit in /Applications/MAMP/htdocs/output2/farm/login.php on line 52
+[12-Apr-2021 20:12:14 Asia/Tokyo] デバッグ:==============================================
+[12-Apr-2021 20:12:14 Asia/Tokyo] デバッグ:ユーザー登録画面
+[12-Apr-2021 20:12:14 Asia/Tokyo] デバッグ:==============================================
+[12-Apr-2021 20:12:14 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[12-Apr-2021 20:12:14 Asia/Tokyo] デバッグ:セッションID：rk2gnibn4k2q0b3k6qlmsgj97l
+[12-Apr-2021 20:12:14 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [login_date] => 1618225907
+    [login_limit] => 3600
+    [user_id] => 0
+)
+
+[12-Apr-2021 20:12:14 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1618225934
+[12-Apr-2021 20:12:14 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1618229507
+[12-Apr-2021 20:12:16 Asia/Tokyo] デバッグ:==============================================
+[12-Apr-2021 20:12:16 Asia/Tokyo] デバッグ:ユーザー登録画面
+[12-Apr-2021 20:12:16 Asia/Tokyo] デバッグ:==============================================
+[12-Apr-2021 20:12:16 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[12-Apr-2021 20:12:16 Asia/Tokyo] デバッグ:セッションID：vl4omh0bflqos1fgdasaae3o1t
+[12-Apr-2021 20:12:16 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [login_date] => 1618225907
+    [login_limit] => 3600
+    [user_id] => 0
+)
+
+[12-Apr-2021 20:12:16 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1618225936
+[12-Apr-2021 20:12:16 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1618229507
+[12-Apr-2021 20:12:17 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[12-Apr-2021 20:12:17 Asia/Tokyo] デバッグ:マイページへ遷移します。
+[12-Apr-2021 20:12:17 Asia/Tokyo] デバッグ:==============================================
+[12-Apr-2021 20:12:17 Asia/Tokyo] デバッグ:ログイン画面
+[12-Apr-2021 20:12:17 Asia/Tokyo] デバッグ:==============================================
+[12-Apr-2021 20:12:17 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[12-Apr-2021 20:12:17 Asia/Tokyo] デバッグ:セッションID：i917o1gjvaebd6ep4bo38dauh1
+[12-Apr-2021 20:12:17 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [login_date] => 1618225937
+    [login_limit] => 3600
+    [user_id] => 0
+)
+
+[12-Apr-2021 20:12:17 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1618225937
+[12-Apr-2021 20:12:17 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1618229537

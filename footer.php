@@ -38,5 +38,3 @@
             </ul>
         </div>
     </footer><!-- /フッター -->
-</body>
-</html>

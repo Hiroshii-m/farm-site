@@ -19,6 +19,10 @@
             margin: $space_xl 0;
         }
     }
+    &__text {
+        font-size: $font-size_l;
+        text-align: center;
+    }
     &__sns {
         justify-content: center;
     }

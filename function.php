@@ -36,7 +36,7 @@ function debugLogStart(){
 // ================================================
 // デバッグ
 // ================================================
-$debug_flg = true;
+$debug_flg = false;
 function debug($str) {
     global $debug_flg;
     if(!empty($debug_flg)){
@@ -56,6 +56,10 @@ class VALID {
     const TEXTMAX = '最大文字数を超えています。';
     const HALFENG = '半角英数字で入力してください。';
     const NOMATCH = 'パスワードとパスワード（再入力）があっていません。';
+    const NOTLOGIN = 'メールアドレスまたはパスワードが違います。';
+}
+class MSG {
+    const UNEXPECTED = '予期せぬエラーが発生しました。しばらく経ってから、やり直してください。';
 }
 
 // ================================================
@@ -137,13 +141,6 @@ function showErrStyle($key) {
         return 'u-err-input';
     }
 }
-// フォーム内容を保持
-// ************************************************
-function retain($val) {
-    if(!empty($val)) {
-        return $val;
-    }
-}
 // データベース
 // ************************************************
 function dbConnect(){
@@ -167,7 +164,7 @@ function queryPost($dbh, $sql, $data){
     if(!$stmt->execute($data)){
         debug('クエリ失敗しました。');
         debug('失敗したSQL:'.print_r($stmt, true));
-        $err_msg['common'] = MSG_WAIT;
+        $err_msg['common'] = MSG::UNEXPECTED;
         return 0;
     }
     debug('クエリ成功しました。');

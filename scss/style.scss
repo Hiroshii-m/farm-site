@@ -17,7 +17,7 @@
 @import "layout/sidebar";
 @import "layout/footer";
 #l-search {
-    padding: 100px 0 100px 0;
+    padding: 100px 0 80px 0;
     @include mq(sm) {
         padding: 50px 0;
     }
@@ -26,7 +26,7 @@
     padding: 0 0 80px 0;
 }
 #l-pagination {
-    padding: 50px 0 0 0;
+    padding: 30px 0 0 0;
 }
 #l-article {
     padding: 80px 0;
@@ -356,12 +356,16 @@
         margin-bottom: $space_s;
         box-sizing: border-box;
     }
+    &__check {
+        margin-right: $space_m;
+    }
     &__submit {
         width: 100%;
         background: $color_accent;
         text-align: center;
         font-size: $font-size_l;
         padding: $space_m;
+        margin: $space_s 0 $space_xl 0;
         &:hover {
             opacity: .6;
         }
@@ -563,9 +567,7 @@
 }
 .p-shopList {
     &__heading {
-        border-bottom: 1px solid $font-color_default;
         margin: 0 auto 50px auto;
-        padding-bottom: 10px;
     }
     &__title {
         margin-left: 50px;
@@ -578,6 +580,18 @@
     }
     &__showNum {
         text-align: right;
+        padding-bottom: $space_m;
+        border-bottom: 1px solid $font-color_default;
+    }
+    &__terms {
+        margin-top: $space_m;
+    }
+    &__tag {
+        display: inline-block;
+        border-radius: 5px;
+        font-size: $font-size_l;
+        padding: 0 $space_m;
+        background: $color_base;
     }
 }
 .p-product {
@@ -724,6 +738,10 @@
         margin-left: $space_s;
     }
 }
+.p-tokenRecieve {
+    height: 500px;
+    padding: 80px 0;
+}
 // Utility
 // ----------------------------------
 @import "object/utility/upArrow";
@@ -824,4 +842,14 @@
 .u-err-input {
     background: $bg_err;
     border: 2px solid $color_err;
+}
+.u-tag {
+    &-accent {
+        color: $color_accent2;
+        border: 1px solid $color_accent2;
+    }
+    &-sub {
+        color: $bg_color;
+        border: 1px solid $bg_color;
+    }
 }
