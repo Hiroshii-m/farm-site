@@ -166,10 +166,28 @@
     &__icon {
         font-size: $font-size_xl;
         cursor: pointer;
+        margin-right: 20px;
+        position: relative;
         @include mq(sm) {
             position: absolute;
-            top: 5px;
-            right: 15px;
+            top: 10px;
+            right: 30px;
+        }
+    }
+    &__fav {
+        position: absolute;
+        z-index: 2;
+        background: $color_base;
+        &.is-active {
+            animation: favPushAnimation .2s ease-out;
+            color: $color_err;
+        }
+        &2 {
+            color: $color_err;
+            position: absolute;
+            &.is-active {
+                animation: favMoveAnimation 1s ease-out;
+            }
         }
     }
 }
