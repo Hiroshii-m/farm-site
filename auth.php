@@ -21,7 +21,7 @@ if(!empty($_SESSION['login_date'])) {
         // 現在ページがlogin.phpの場合
         if(basename($_SERVER['PHP_SELF']) === 'login.php'){
             debug('マイページへ遷移します。');
-            header("Location:mypage.html"); // マイページへ
+            header("Location:mypage.php"); // マイページへ
         }
     }
 
@@ -29,6 +29,6 @@ if(!empty($_SESSION['login_date'])) {
 }else{
     // 未ログイン
     if(basename($_SERVER['PHP_SELF']) !== 'login.php') {
-        header("Location:mypage.html");
+        header("Location:login.php");
     }
 }

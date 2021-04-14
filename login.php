@@ -1,6 +1,6 @@
 <?php
 // 予想時間（ログインページ）：3h
-// かかった時間：1h1mi
+// かかった時間：1h27mi（基本的な機能）
 
 // 共通ファイルの読み込み
 require('function.php');
@@ -38,34 +38,39 @@ if(!empty($_POST)) {
 
     if(empty($err_msg)) {
         try {
-            debug('バリデーションOKです。');
+            $expired_id = validEmailExpired($email);
+            // 退会済のユーザーの場合、再度登録するように促す
+            if(!empty($expired_id)) {
+                $err_msg['common'] = VALID::WITHDRAW;
 
-            $dbh = dbConnect();
-            $sql = 'SELECT `id`, `password` FROM users WHERE email = :email AND delete_flg = 0';
-            $data = array(':email' => $email);
-            $stmt = queryPost($dbh, $sql, $data);
-            $result = $stmt->fetch(PDO::FETCH_ASSOC);
-
-            // マッチした場合
-            if(!empty($result) && password_verify($pass, $result['password'])) {
-                // パスワード省略をチェックした場合
-                if($pass_save === true) {
-                    $sesLimit = 60 * 60 * 24;
-                } else {
-                    $sesLimit = 60*60;
-                }
-                // 最終ログイン日時を現在日時に
-                $_SESSION['login_date'] = time();
-                $_SESSION['login_limit'] = $sesLimit;
-                // ユーザーIDを格納
-                $_SESSION['user_id'] = $dbh->lastInsertId();
-                debug('セッション変数の中身：'.print_r($_SESSION, true));
-
-                header("Location:mypage.html");
+            // 退会していないユーザーの場合、ログインする
             } else {
-                $err_msg['common'] = VALID::NOTLOGIN;
-            }
+                $dbh = dbConnect();
+                $sql = 'SELECT `id`, `password` FROM users WHERE `email` = :email AND `delete_flg` = :d_flg';
+                $data = array(':email' => $email, ':d_flg' => 0);
+                $stmt = queryPost($dbh, $sql, $data);
+                $result = $stmt->fetch(PDO::FETCH_ASSOC);
+                // マッチした場合
+                if(!empty($result) && password_verify($pass, $result['password'])) {
+                    // パスワード省略をチェックした場合
+                    if($pass_save === true) {
+                        $sesLimit = 60 * 60 * 24;
+                    } else {
+                        $sesLimit = 60*60;
+                    }
+                    // 最終ログイン日時を現在日時に
+                    $_SESSION['login_date'] = time();
+                    $_SESSION['login_limit'] = $sesLimit;
+                    // ユーザーIDを格納
+                    $_SESSION['user_id'] = $result['id'];
     
+                    header("Location:mypage.php");
+
+                // そもそもユーザーでない場合、ログインしない
+                } else {
+                    $err_msg['common'] = VALID::NOTLOGIN;
+                }
+            }
         } catch (Exception $e) {
             error_log('エラー発生:' . $e->getMessage());
             $err_msg['common'] = MSG::UNEXPECTED;
@@ -118,5 +123,7 @@ require('header.php');
 <?php
 require('footer.php');
 ?>
+<!-- 共通ファイル -->
+<script src="js/app.js"></script>
 </body>
 </html>

@@ -57,6 +57,7 @@ class VALID {
     const HALFENG = '半角英数字で入力してください。';
     const NOMATCH = 'パスワードとパスワード（再入力）があっていません。';
     const NOTLOGIN = 'メールアドレスまたはパスワードが違います。';
+    const WITHDRAW = 'このメールアドレスは、退会済のユーザーです。再度利用する場合、もう一度、ユーザー登録を行ってください。';
 }
 class MSG {
     const UNEXPECTED = '予期せぬエラーが発生しました。しばらく経ってから、やり直してください。';
@@ -96,6 +97,21 @@ function validEmailDup($str, $key){
     if(!empty($rst)){
         $err_msg[$key] = VALID::EMAILDUP;
     }else{
+        return false;
+    }
+}
+// 退会済ユーザーかどうかをチェック
+function validEmailExpired($email) {
+    $dbh = dbConnect();
+    $sql = 'SELECT id FROM users WHERE email = :email AND delete_flg = :d_flg';
+    $data = array(':email' => $email, ':d_flg' => 1);
+    $stmt = queryPost($dbh, $sql, $data);
+    $rst = $stmt->fetch(PDO::FETCH_ASSOC);
+    if(!empty($rst)) {
+        // 退会済のユーザーです。
+        return $rst;
+    } else {
+        // 退会済のユーザーではありません。
         return false;
     }
 }

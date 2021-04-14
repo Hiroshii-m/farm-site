@@ -1,6 +1,6 @@
 <?php
 // 予想時間（ユーザー登録）：4h
-// かかった時間：4h19mi
+// かかった時間：4h19mi（基本的な機能）
 // 共通ファイルの読み込み
 require('function.php');
 
@@ -41,7 +41,7 @@ if(!empty($_POST)) {
     if(empty($err_msg)) {
         try {
             debug('バリデーションOKです。');
-            $token = uniqid(); // 認証キー生成
+            $token = bin2hex(random_bytes(32)); // 認証キー生成
 
             // 認証に必要な情報をセッションへ保存
             $_SESSION['token'] = $token;
@@ -108,5 +108,7 @@ require('header.php');
 <?php
 require('footer.php');
 ?>
+<!-- 共通jsファイル -->
+<script src="js/app.js"></script>
 </body>
 </html>

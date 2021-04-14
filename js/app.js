@@ -2,46 +2,24 @@ window.addEventListener("DOMContentLoaded", function() {
     // ********************************************************
     // 変数
     // ********************************************************
-    
-    // single.htmlで使用
-    // =================================
-    // メニュー
-    $menuAll = document.querySelectorAll('.js-menu');
-    $menuProduct = document.querySelector('.js-menu-product');
-    $menuExplain = document.querySelector('.js-menu-explain');
-    $menuBlog = document.querySelector('.js-menu-blog');
-    $menuAccess = document.querySelector('.js-menu-access');
-    $menuComment = document.querySelector('.js-menu-comment');
-    // コンテンツ
-    $articleProduct = document.querySelector('.js-article-product');
-    $articleExplain = document.querySelector('.js-article-explain');
-    $articleBlog = document.querySelector('.js-article-blog');
-    $articleAccess = document.querySelector('.js-article-access');
-    $articleComment = document.querySelector('.js-article-comment');
+    $headerNav = document.querySelector('.js-header-nav');
+    $headerList = document.querySelector('.js-header-list');
+    $spMenuTarget = document.querySelector('.js-sp-menu-target');
 
     // ********************************************************
     // 関数
     // ********************************************************
-    // メニューが押されたら、一つだけ表示
-    function checkMenu(menuTab, menuTarget) {
-        if(menuTab.checked === true) {
-            menuTarget.classList.remove('u-display-none');
-        }else{
-            menuTarget.classList.add('u-display-none');
-        }
-    }
+    
     // ********************************************************
     // 処理内容
     // ********************************************************
-    checkMenu($menuProduct, $articleProduct);
-    checkMenu($menuComment, $articleComment);
-    $menuAll.forEach(function($tab) {
-        $tab.addEventListener('click', function() {
-            checkMenu($menuProduct, $articleProduct);
-            checkMenu($menuExplain, $articleExplain);
-            checkMenu($menuBlog, $articleBlog);
-            checkMenu($menuAccess, $articleAccess);
-            checkMenu($menuComment, $articleComment);
-        });
+    window.addEventListener("scroll", function() {
+        if($spMenuTarget.offsetTop < window.scrollY) {
+            $headerNav.classList.add('active');
+            $headerList.classList.add('active');
+        } else {
+            $headerNav.classList.remove('active');
+            $headerList.classList.remove('active');
+        }
     });
 });

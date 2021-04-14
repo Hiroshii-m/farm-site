@@ -8,8 +8,8 @@
                 </div>
                 <h3>ノウハン</h3>
             </a>
-            <nav class="c-header__nav">
-                <ul class="c-header__list u-flex">
+            <nav class="c-header__nav js-header-nav">
+                <ul class="c-header__list u-flex js-header-list">
                     <li class="c-header__item">
                         <a href="index.html" class="c-header__text">ホーム</a>
                     </li>

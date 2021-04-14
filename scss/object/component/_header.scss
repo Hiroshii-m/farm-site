@@ -1,5 +1,6 @@
 .c-header {
     width: 80%;
+    min-height: 83px;
     margin: 0 auto;
     font-weight: bold;
     &__logo {
@@ -14,13 +15,36 @@
         @include mq(md) {
             margin-top: $space_xxl;
         }
+        &.active {
+            @include mq(sm) {
+                margin-top: 0;
+                padding: 0 $space_xxl;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 50px;
+                line-height: 50px;
+                background: rgb(211, 222, 241, .7);
+                z-index: 3;
+            }
+        }
+    }
+    &__list {
+        &.active {
+            @include mq(sm) {
+                justify-content: space-between;
+            }
+        }
     }
     &__item {
         margin-right: $space_xxl;
-        margin-bottom: $space_m;
         @include mq(sm) {
             margin-right: $space_m;
             font-size: $font-size_m;
+            &:last-child {
+                margin-right: 0;
+            }
         }
     }
     &__text {
