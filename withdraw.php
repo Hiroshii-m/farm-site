@@ -16,8 +16,8 @@ $u_id = $_SESSION['user_id'];
 if(!empty($_POST)) {
     try {
         $dbh = dbConnect();
-        $sql = 'UPDATE users SET `delete_flg` = :d_flg WHERE `id` = :u_id';
-        $data = array(':d_flg' => true, ':u_id' => $u_id);
+        $sql = 'UPDATE users SET `delete_flg` = 1 WHERE `id` = :u_id';
+        $data = array(':u_id' => $u_id);
         $stmt = queryPost($dbh, $sql, $data);
 
         if(isset($stmt)) {

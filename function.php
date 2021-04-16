@@ -186,6 +186,15 @@ function queryPost($dbh, $sql, $data){
     debug('クエリ成功しました。');
     return $stmt;
 }
+// ユーザー情報を取得
+function getUser($u_id) {
+    $dbh = dbConnect();
+    $sql = 'SELECT `id`, `screen_name`, `email`, `last_name`, `first_name`, `last_name_kana`, `first_name_kana`, `birthday_year`, `birthday_month`, `birthday_day`, `avatar_image_path`, `prefecture_id`, `city_id`, `block`, `building`, `postcode` FROM users WHERE `id` = :u_id AND `group_id` = 1';
+    $data = array(':u_id' => $u_id);
+    $stmt = queryPost($dbh, $sql, $data);
+    $rst = $stmt->fetch(PDO::FETCH_ASSOC);
+    return $rst;
+}
 
 //================================
 // メール送信

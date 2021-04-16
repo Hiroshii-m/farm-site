@@ -490,6 +490,11 @@ img {
   object-fit: cover;
 }
 
+input {
+  display: block;
+  width: 100%;
+}
+
 textarea {
   resize: vertical;
   height: 30px;
@@ -1139,18 +1144,19 @@ i {
 }
 @media screen and (max-width: 600px) {
   .c-form {
-    width: 400px;
-  }
-}
-@media screen and (max-width: 414px) {
-  .c-form {
-    width: 300px;
+    width: 90%;
+    min-width: 300px;
   }
 }
 .c-form__title {
   font-size: 28px;
   text-align: center;
   margin-bottom: 15px;
+}
+@media screen and (max-width: 768px) {
+  .c-form__title {
+    font-size: 24px;
+  }
 }
 .c-form__label {
   display: block;
@@ -1165,6 +1171,42 @@ i {
   margin-bottom: 5px;
   box-sizing: border-box;
 }
+.c-form__divide2 {
+  width: calc(50% - 5px);
+}
+.c-form__divide3 {
+  width: calc(33.3% - 5px);
+}
+.c-form__areaDrop {
+  display: block;
+  background: #e2e2e2;
+  min-width: 200px;
+  width: 50%;
+  height: 200px;
+  text-align: center;
+  display: table;
+  position: relative;
+}
+.c-form__areaDrop.active {
+  opacity: 0.4;
+}
+.c-form__areaText {
+  display: table-cell;
+  width: 100%;
+  vertical-align: middle;
+  font-weight: bold;
+}
+.c-form__file {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+}
+.c-form__img {
+  width: 100%;
+  height: 100%;
+}
 .c-form__check {
   margin-right: 10px;
 }
@@ -1174,7 +1216,7 @@ i {
   text-align: center;
   font-size: 18px;
   padding: 10px;
-  margin: 5px 0 20px 0;
+  margin: 30px 0 20px 0;
 }
 .c-form__submit:hover {
   opacity: 0.6;
@@ -1807,6 +1849,10 @@ i {
 .u-tag-sub {
   color: #4e89ee;
   border: 1px solid #4e89ee;
+}
+
+.u-margin-top-5 {
+  margin-top: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

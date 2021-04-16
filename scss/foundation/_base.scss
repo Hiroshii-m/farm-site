@@ -28,6 +28,11 @@ img {
     object-fit: cover;
 }
 
+input {
+    display: block;
+    width: 100%;
+}
+
 textarea {
     resize: vertical;
     height: 30px;

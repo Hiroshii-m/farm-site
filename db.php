@@ -7,7 +7,7 @@ $db = 'CREATE DATABASE farmshops;';
 // ユーザーテーブルの作成
 $users = 'CREATE TABLE users(
     `id` INT(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
-    `group_id` INT(11) NOT NULL,
+    `group_id` INT(11) DEFAULT 1 NOT NULL,
     `screen_name` VARCHAR(255) NULL,
     `email` VARCHAR(255) NOT NULL,
     `password` VARCHAR(255) NOT NULL,
