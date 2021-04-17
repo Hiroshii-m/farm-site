@@ -1836,3 +1836,293 @@ Stack trace:
 
 [14-Apr-2021 23:31:22 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1618410682
 [14-Apr-2021 23:32:52 Asia/Tokyo] エラー発生：SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'delete_flg' at row 1
+[17-Apr-2021 16:29:15 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Call to undefined function validMin() in /Applications/MAMP/htdocs/output2/farm/login.php:30
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/output2/farm/login.php on line 30
+[17-Apr-2021 16:30:11 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Call to undefined function validMin() in /Applications/MAMP/htdocs/output2/farm/signup.php:28
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/output2/farm/signup.php on line 28
+[17-Apr-2021 16:31:15 Asia/Tokyo] デバッグ:==============================================
+[17-Apr-2021 16:31:15 Asia/Tokyo] デバッグ:ユーザー登録画面
+[17-Apr-2021 16:31:15 Asia/Tokyo] デバッグ:==============================================
+[17-Apr-2021 16:31:15 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[17-Apr-2021 16:31:15 Asia/Tokyo] デバッグ:セッションID：i1jm0cuvf3h7fgoadn367gphsk
+[17-Apr-2021 16:31:15 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [token] => 6533488de5e16c14d14785a8f18d0543db4adfe4db681a02cdd5b26e8e37a8e8
+    [email] => aiueo@aiueo.com
+    [password] => $2y$10$boxkI3wuXF.bi8dO86O0huINSxzWcKh5cPYfnJS8xHBWgR4NqKID2
+    [login_time] => 1618572113
+    [login_limit] => 1618658497
+    [user_id] => 2
+    [msg_success] => 
+)
+
+[17-Apr-2021 16:31:15 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1618644675
+[17-Apr-2021 16:31:15 Asia/Tokyo] デバッグ:POSTされました。
+[17-Apr-2021 16:31:15 Asia/Tokyo] デバッグ:バリデーションOKです。
+[17-Apr-2021 16:31:16 Asia/Tokyo] デバッグ:メールを送信しました。
+[17-Apr-2021 16:31:16 Asia/Tokyo] デバッグ:URL発行
+[17-Apr-2021 16:31:16 Asia/Tokyo] デバッグ:localhost:8888/output2/farm/tokenRecieve.php?token=a2fe0b1234372205ebfd0b108687a04fd8fcac910b0bbc05936ab28c44b09411
+[17-Apr-2021 16:31:34 Asia/Tokyo] デバッグ:==============================================
+[17-Apr-2021 16:31:34 Asia/Tokyo] デバッグ:トークン受け取り画面
+[17-Apr-2021 16:31:34 Asia/Tokyo] デバッグ:==============================================
+[17-Apr-2021 16:31:34 Asia/Tokyo] デバッグ:クエリ成功しました。
+[17-Apr-2021 16:31:34 Asia/Tokyo] デバッグ:クエリ成功しました。
+[17-Apr-2021 16:31:37 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[17-Apr-2021 16:31:37 Asia/Tokyo] デバッグ:==============================================
+[17-Apr-2021 16:31:37 Asia/Tokyo] デバッグ:マイページ画面
+[17-Apr-2021 16:31:37 Asia/Tokyo] デバッグ:==============================================
+[17-Apr-2021 16:32:34 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[17-Apr-2021 16:32:34 Asia/Tokyo] デバッグ:==============================================
+[17-Apr-2021 16:32:34 Asia/Tokyo] デバッグ:マイページ画面
+[17-Apr-2021 16:32:34 Asia/Tokyo] デバッグ:==============================================
+[17-Apr-2021 16:32:38 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[17-Apr-2021 16:32:38 Asia/Tokyo] デバッグ:==============================================
+[17-Apr-2021 16:32:38 Asia/Tokyo] デバッグ:プロフィール編集画面
+[17-Apr-2021 16:32:38 Asia/Tokyo] デバッグ:==============================================
+[17-Apr-2021 16:32:38 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 189
+[17-Apr-2021 16:32:38 Asia/Tokyo] デバッグ:クエリ成功しました。
+[17-Apr-2021 16:32:38 Asia/Tokyo] デバッグ:取得した情報
+[17-Apr-2021 16:33:23 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[17-Apr-2021 16:33:23 Asia/Tokyo] デバッグ:==============================================
+[17-Apr-2021 16:33:23 Asia/Tokyo] デバッグ:プロフィール編集画面
+[17-Apr-2021 16:33:23 Asia/Tokyo] デバッグ:==============================================
+[17-Apr-2021 16:33:23 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 189
+[17-Apr-2021 16:33:23 Asia/Tokyo] デバッグ:クエリ成功しました。
+[17-Apr-2021 16:33:23 Asia/Tokyo] デバッグ:取得した情報
+[17-Apr-2021 16:33:24 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[17-Apr-2021 16:33:24 Asia/Tokyo] デバッグ:==============================================
+[17-Apr-2021 16:33:24 Asia/Tokyo] デバッグ:プロフィール編集画面
+[17-Apr-2021 16:33:24 Asia/Tokyo] デバッグ:==============================================
+[17-Apr-2021 16:33:24 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 189
+[17-Apr-2021 16:33:24 Asia/Tokyo] デバッグ:クエリ成功しました。
+[17-Apr-2021 16:33:24 Asia/Tokyo] デバッグ:取得した情報
+[17-Apr-2021 16:33:26 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[17-Apr-2021 16:33:26 Asia/Tokyo] デバッグ:==============================================
+[17-Apr-2021 16:33:26 Asia/Tokyo] デバッグ:プロフィール編集画面
+[17-Apr-2021 16:33:26 Asia/Tokyo] デバッグ:==============================================
+[17-Apr-2021 16:33:26 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 189
+[17-Apr-2021 16:33:26 Asia/Tokyo] デバッグ:クエリ成功しました。
+[17-Apr-2021 16:33:26 Asia/Tokyo] デバッグ:取得した情報
+[17-Apr-2021 16:38:04 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[17-Apr-2021 16:38:04 Asia/Tokyo] デバッグ:==============================================
+[17-Apr-2021 16:38:04 Asia/Tokyo] デバッグ:プロフィール編集画面
+[17-Apr-2021 16:38:04 Asia/Tokyo] デバッグ:==============================================
+[17-Apr-2021 16:38:04 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[17-Apr-2021 16:38:04 Asia/Tokyo] デバッグ:Array
+[17-Apr-2021 16:38:04 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 189
+[17-Apr-2021 16:38:04 Asia/Tokyo] デバッグ:クエリ成功しました。
+[17-Apr-2021 16:38:04 Asia/Tokyo] デバッグ:取得した情報
+[17-Apr-2021 16:39:09 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[17-Apr-2021 16:39:09 Asia/Tokyo] デバッグ:==============================================
+[17-Apr-2021 16:39:09 Asia/Tokyo] デバッグ:プロフィール編集画面
+[17-Apr-2021 16:39:09 Asia/Tokyo] デバッグ:==============================================
+[17-Apr-2021 16:39:09 Asia/Tokyo] デバッグ:1
+[17-Apr-2021 16:39:09 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 189
+[17-Apr-2021 16:39:09 Asia/Tokyo] デバッグ:クエリ成功しました。
+[17-Apr-2021 16:39:09 Asia/Tokyo] デバッグ:取得した情報
+[17-Apr-2021 16:39:35 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[17-Apr-2021 16:39:35 Asia/Tokyo] デバッグ:==============================================
+[17-Apr-2021 16:39:35 Asia/Tokyo] デバッグ:プロフィール編集画面
+[17-Apr-2021 16:39:35 Asia/Tokyo] デバッグ:==============================================
+[17-Apr-2021 16:39:35 Asia/Tokyo] デバッグ:Array
+(
+    [id] => 3
+)
+
+[17-Apr-2021 16:39:35 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 189
+[17-Apr-2021 16:39:35 Asia/Tokyo] デバッグ:クエリ成功しました。
+[17-Apr-2021 16:39:35 Asia/Tokyo] デバッグ:取得した情報
+[17-Apr-2021 16:40:46 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[17-Apr-2021 16:40:46 Asia/Tokyo] デバッグ:==============================================
+[17-Apr-2021 16:40:46 Asia/Tokyo] デバッグ:プロフィール編集画面
+[17-Apr-2021 16:40:46 Asia/Tokyo] デバッグ:==============================================
+[17-Apr-2021 16:40:46 Asia/Tokyo] デバッグ:3
+[17-Apr-2021 16:40:46 Asia/Tokyo] デバッグ:クエリ成功しました。
+[17-Apr-2021 16:40:46 Asia/Tokyo] デバッグ:取得した情報Array
+(
+    [id] => 3
+    [screen_name] => 
+    [last_name] => 
+    [first_name] => 
+    [last_name_kana] => 
+    [first_name_kana] => 
+    [birthday_year] => 
+    [birthday_month] => 
+    [birthday_day] => 
+    [avatar_image_path] => 
+    [prefecture_id] => 
+    [city_id] => 
+    [block] => 
+    [building] => 
+    [postcode] => 
+)
+
+[17-Apr-2021 16:52:13 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 189
+[17-Apr-2021 19:49:42 Asia/Tokyo] PHP Notice:  Undefined variable: userData in /Applications/MAMP/htdocs/output2/farm/editProf.php on line 18
+[17-Apr-2021 19:49:52 Asia/Tokyo] PHP Notice:  Undefined variable: userData in /Applications/MAMP/htdocs/output2/farm/editProf.php on line 18
+[17-Apr-2021 19:54:12 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Call to undefined function int() in /Applications/MAMP/htdocs/output2/farm/editProf.php:186
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/output2/farm/editProf.php on line 186
+[17-Apr-2021 19:56:01 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Call to undefined function int() in /Applications/MAMP/htdocs/output2/farm/editProf.php:186
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/output2/farm/editProf.php on line 186
+[17-Apr-2021 20:00:19 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[17-Apr-2021 20:00:19 Asia/Tokyo] デバッグ:==============================================
+[17-Apr-2021 20:00:19 Asia/Tokyo] デバッグ:プロフィール編集画面
+[17-Apr-2021 20:00:19 Asia/Tokyo] デバッグ:==============================================
+[17-Apr-2021 20:00:19 Asia/Tokyo] デバッグ:クエリ成功しました。
+[17-Apr-2021 20:00:19 Asia/Tokyo] デバッグ:Array
+(
+    [screen_name] => 
+    [last_name] => 
+    [first_name] => 
+    [last_name_kana] => 
+    [first_name_kana] => 
+    [birthday_year] => 
+    [birthday_month] => 
+    [birthday_day] => 
+    [postcode] => ああああ
+    [prefecture_id] => 2
+    [city_name] => 
+    [block] => 
+    [building] => 
+    [MAX_FILE_SIZE] => 3145728
+    [avatar_image_path] => 
+)
+
+[17-Apr-2021 20:00:28 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[17-Apr-2021 20:00:28 Asia/Tokyo] デバッグ:==============================================
+[17-Apr-2021 20:00:28 Asia/Tokyo] デバッグ:プロフィール編集画面
+[17-Apr-2021 20:00:28 Asia/Tokyo] デバッグ:==============================================
+[17-Apr-2021 20:00:28 Asia/Tokyo] デバッグ:クエリ成功しました。
+[17-Apr-2021 20:00:28 Asia/Tokyo] デバッグ:Array
+(
+    [screen_name] => 
+    [last_name] => 
+    [first_name] => 
+    [last_name_kana] => 
+    [first_name_kana] => 
+    [birthday_year] => 
+    [birthday_month] => 
+    [birthday_day] => 
+    [postcode] => ああああ
+    [prefecture_id] => 2
+    [city_name] => 
+    [block] => 
+    [building] => 
+    [MAX_FILE_SIZE] => 3145728
+    [avatar_image_path] => 
+)
+
+[17-Apr-2021 20:02:36 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[17-Apr-2021 20:02:36 Asia/Tokyo] デバッグ:==============================================
+[17-Apr-2021 20:02:36 Asia/Tokyo] デバッグ:プロフィール編集画面
+[17-Apr-2021 20:02:36 Asia/Tokyo] デバッグ:==============================================
+[17-Apr-2021 20:02:36 Asia/Tokyo] デバッグ:クエリ成功しました。
+[17-Apr-2021 20:02:36 Asia/Tokyo] デバッグ:Array
+(
+    [screen_name] => 
+    [last_name] => 
+    [first_name] => 
+    [last_name_kana] => 
+    [first_name_kana] => 
+    [birthday_year] => 
+    [birthday_month] => 
+    [birthday_day] => 
+    [postcode] => ああああ
+    [prefecture_id] => 1
+    [city_name] => 
+    [block] => 
+    [building] => 
+    [MAX_FILE_SIZE] => 3145728
+    [avatar_image_path] => 
+)
+
+[17-Apr-2021 20:02:36 Asia/Tokyo] デバッグ:1
+[17-Apr-2021 20:02:59 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[17-Apr-2021 20:02:59 Asia/Tokyo] デバッグ:==============================================
+[17-Apr-2021 20:02:59 Asia/Tokyo] デバッグ:プロフィール編集画面
+[17-Apr-2021 20:02:59 Asia/Tokyo] デバッグ:==============================================
+[17-Apr-2021 20:02:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[17-Apr-2021 20:02:59 Asia/Tokyo] デバッグ:Array
+(
+    [screen_name] => 
+    [last_name] => 
+    [first_name] => 
+    [last_name_kana] => 
+    [first_name_kana] => 
+    [birthday_year] => 
+    [birthday_month] => 
+    [birthday_day] => 
+    [postcode] => ああああ
+    [prefecture_id] => 32
+    [city_name] => 
+    [block] => 
+    [building] => 
+    [MAX_FILE_SIZE] => 3145728
+    [avatar_image_path] => 
+)
+
+[17-Apr-2021 20:02:59 Asia/Tokyo] デバッグ:32
+[17-Apr-2021 20:03:55 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[17-Apr-2021 20:03:55 Asia/Tokyo] デバッグ:==============================================
+[17-Apr-2021 20:03:55 Asia/Tokyo] デバッグ:プロフィール編集画面
+[17-Apr-2021 20:03:55 Asia/Tokyo] デバッグ:==============================================
+[17-Apr-2021 20:03:55 Asia/Tokyo] デバッグ:クエリ成功しました。
+[17-Apr-2021 20:03:55 Asia/Tokyo] デバッグ:Array
+(
+    [screen_name] => 
+    [last_name] => 
+    [first_name] => 
+    [last_name_kana] => 
+    [first_name_kana] => 
+    [birthday_year] => 
+    [birthday_month] => 
+    [birthday_day] => 
+    [postcode] => ああああ
+    [prefecture_id] => 32
+    [city_name] => 
+    [block] => 
+    [building] => 
+    [MAX_FILE_SIZE] => 3145728
+    [avatar_image_path] => 
+)
+
+[17-Apr-2021 20:03:55 Asia/Tokyo] デバッグ:32
+[17-Apr-2021 20:03:59 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[17-Apr-2021 20:03:59 Asia/Tokyo] デバッグ:==============================================
+[17-Apr-2021 20:03:59 Asia/Tokyo] デバッグ:プロフィール編集画面
+[17-Apr-2021 20:03:59 Asia/Tokyo] デバッグ:==============================================
+[17-Apr-2021 20:03:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[17-Apr-2021 20:03:59 Asia/Tokyo] デバッグ:Array
+(
+    [screen_name] => 
+    [last_name] => 
+    [first_name] => 
+    [last_name_kana] => 
+    [first_name_kana] => 
+    [birthday_year] => 
+    [birthday_month] => 
+    [birthday_day] => 
+    [postcode] => ああああ
+    [prefecture_id] => 4
+    [city_name] => 
+    [block] => 
+    [building] => 
+    [MAX_FILE_SIZE] => 3145728
+    [avatar_image_path] => 
+)
+
+[17-Apr-2021 20:03:59 Asia/Tokyo] デバッグ:4
+[17-Apr-2021 20:07:48 Asia/Tokyo] PHP Notice:  Undefined variable: srt in /Applications/MAMP/htdocs/output2/farm/function.php on line 151
+[17-Apr-2021 20:54:49 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Function name must be a string in /Applications/MAMP/htdocs/output2/farm/editProf.php:158
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/output2/farm/editProf.php on line 158
+[17-Apr-2021 21:05:10 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/editProf.php on line 115

@@ -8,20 +8,20 @@ $db = 'CREATE DATABASE farmshops;';
 $users = 'CREATE TABLE users(
     `id` INT(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
     `group_id` INT(11) DEFAULT 1 NOT NULL,
-    `screen_name` VARCHAR(255) NULL,
+    `screen_name` VARCHAR(30) NULL,
     `email` VARCHAR(255) NOT NULL,
     `password` VARCHAR(255) NOT NULL,
-    `last_name` VARCHAR(255) NULL,
-    `first_name` VARCHAR(255) NULL,
-    `last_name_kana` VARCHAR(255) NULL,
-    `first_name_kana` VARCHAR(255) NULL,
+    `last_name` VARCHAR(30) NULL,
+    `first_name` VARCHAR(30) NULL,
+    `last_name_kana` VARCHAR(30) NULL,
+    `first_name_kana` VARCHAR(30) NULL,
     `birthday_year` INT(4) NULL,
     `birthday_month` INT(2) NULL,
     `birthday_day` INT(2) NULL,
     `avatar_image_path` VARCHAR(255) NULL,
     `prefecture_id` INT(3) NULL,
     `city_id` INT(3) NULL,
-    `block` VARCHAR(255) NULL,
+    `street` VARCHAR(255) NULL,
     `building` VARCHAR(255) NULL,
     `postcode` VARCHAR(255) NULL,
     `delete_flg` BOOLEAN DEFAULT 0 NOT NULL,
@@ -91,14 +91,14 @@ $category = 'CREATE TABLE category(
     `create_date` DATE NOT NULL,
     `update_date` TIMESTAMP NOT NULL
 )ENGINE=INNODB DEFAULT CHARSET=utf8;';
-// 都道府県テーブル作成
-$prefecture = 'CREATE TABLE prefectures(
-    `id` INT(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
-    `prefecture_name` VARCHAR(255) NOT NULL,
-    `delete_flg` BOOLEAN DEFAULT 0 NOT NULL,
-    `create_date` DATE NOT NULL,
-    `update_date` TIMESTAMP NOT NULL
-)ENGINE=INNODB DEFAULT CHARSET=utf8;';
+// 都道府県テーブル作成　いらんかも
+// $prefecture = 'CREATE TABLE prefectures(
+//     `id` INT(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
+//     `prefecture_name` VARCHAR(255) NOT NULL,
+//     `delete_flg` BOOLEAN DEFAULT 0 NOT NULL,
+//     `create_date` DATE NOT NULL,
+//     `update_date` TIMESTAMP NOT NULL
+// )ENGINE=INNODB DEFAULT CHARSET=utf8;';
 // 市区町村テーブル作成
 $city = 'CREATE TABLE cites(
     `id` INT(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,

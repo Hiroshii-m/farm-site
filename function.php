@@ -54,7 +54,11 @@ class VALID {
     const EMAILDUP = 'このEmailは既に登録されています。';
     const TEXTMIN = '6文字以上入力してください。';
     const TEXTMAX = '最大文字数を超えています。';
+    const TEXTMAX_30 = '30文字以内で入力してください。';
     const HALFENG = '半角英数字で入力してください。';
+    const ZIP = '半角数字で7文字、入力してください。';
+    const KANJIHIRAGANA = '漢字またはひらがなで入力してください。';
+    const KANA = 'カタカナで入力してください。';
     const NOMATCH = 'パスワードとパスワード（再入力）があっていません。';
     const NOTLOGIN = 'メールアドレスまたはパスワードが違います。';
     const WITHDRAW = 'このメールアドレスは、退会済のユーザーです。再度利用する場合、もう一度、ユーザー登録を行ってください。';
@@ -103,30 +107,30 @@ function validEmailDup($str, $key){
 // 退会済ユーザーかどうかをチェック
 function validEmailExpired($email) {
     $dbh = dbConnect();
-    $sql = 'SELECT id FROM users WHERE email = :email AND delete_flg = :d_flg';
+    $sql = 'SELECT `id` FROM users WHERE `email` = :email AND `delete_flg` = :d_flg';
     $data = array(':email' => $email, ':d_flg' => 1);
     $stmt = queryPost($dbh, $sql, $data);
     $rst = $stmt->fetch(PDO::FETCH_ASSOC);
     if(!empty($rst)) {
         // 退会済のユーザーです。
-        return $rst;
+        return $rst['id'];
     } else {
         // 退会済のユーザーではありません。
         return false;
     }
 }
 // 最小文字数以上かどうか判定
-function validMin($str, $key, $min = 6){
+function validMinLen($str, $key, $min = 6, $msg = VALID::TEXTMIN){
     global $err_msg;
     if(mb_strlen($str) < $min){
-        $err_msg[$key] = VALID::TEXTMIN;
+        $err_msg[$key] = $msg;
     }
 }
 // 最大文字数以内かどうか判定
-function validMax($str, $key, $max = 256){
+function validMaxLen($str, $key, $max = 255, $msg = VALID::TEXTMAX){
     global $err_msg;
     if($max <= mb_strlen($str)){
-        $err_msg[$key] = VALID::TEXTMAX;
+        $err_msg[$key] = $msg;
     }
 }
 // 半角英数字かどうか判定
@@ -143,18 +147,71 @@ function validMatch($str, $str2, $key){
         $err_msg[$key] = VALID::NOMATCH;
     }
 }
+// 7文字の数字かどうか判定
+function validZip($str, $key) {
+    global $err_msg;
+    if(!preg_match("/^[0-9]+$/", $str) || mb_strlen($str) !== 7) {
+        $err_msg[$key] = VALID::ZIP;
+    }
+}
+// 漢字かひらがなか判定
+function validKanjiHira($str, $key) {
+    global $err_msg;
+    if(!preg_match("/^[ぁ-ん一-龠]+$/u", $str)) {
+        $err_msg[$key] = VALID::KANJIHIRAGANA;
+    }
+}
+// カナ文字か判定
+function validKana($str, $key) {
+    global $err_msg;
+    if(!preg_match("/^[ァ-ヶー]+$/u", $str)) {
+        $err_msg[$key] = VALID::KANA;
+    }
+}
 // バリデーションを反映
 // ************************************************
-function showErrMsg($key) {
+function showErrMsg($key, $key2 = '', $key3 = '') {
     global $err_msg;
     if(!empty($err_msg[$key])) {
         return $err_msg[$key];
+    }else if(!empty($key2) && !empty($err_msg[$key2])) {
+        return $err_msg[$key2];
+    }else if(!empty($key3) && !empty($err_msg[$key3])) {
+        return $err_msg[$key3];
     }
 }
 function showErrStyle($key) {
     global $err_msg;
     if(!empty($err_msg[$key])) {
         return 'u-err-input';
+    }
+}
+// POST、DBの情報を表示
+// ************************************************
+function getFormData($str, $flg = false){
+    if($flg){
+        $method = $_GET;
+    }else{
+        $method = $_POST;
+    }
+    global $dbFormData;
+    // dbFormDataがある場合
+    if(!empty($dbFormData[$str])){
+        // POSTされている場合
+        if(!empty($_POST[$str])){
+            return $_POST[$str];
+            // されていなければ、db表示
+        }else{
+            return $dbFormData[$str];
+        }
+        // dbFormDataが無い場合
+    }else{
+        // POSTされているか
+        if(!empty($_POST[$str])){
+            return $_POST[$str];
+        }else{
+            return '';
+        }
     }
 }
 // データベース
@@ -189,7 +246,7 @@ function queryPost($dbh, $sql, $data){
 // ユーザー情報を取得
 function getUser($u_id) {
     $dbh = dbConnect();
-    $sql = 'SELECT `id`, `screen_name`, `email`, `last_name`, `first_name`, `last_name_kana`, `first_name_kana`, `birthday_year`, `birthday_month`, `birthday_day`, `avatar_image_path`, `prefecture_id`, `city_id`, `block`, `building`, `postcode` FROM users WHERE `id` = :u_id AND `group_id` = 1';
+    $sql = 'SELECT `id`, `screen_name`, `last_name`, `first_name`, `last_name_kana`, `first_name_kana`, `birthday_year`, `birthday_month`, `birthday_day`, `avatar_image_path`, `prefecture_id`, `city_id`, `block`, `building`, `postcode` FROM users WHERE `id` = :u_id AND `group_id` = 1';
     $data = array(':u_id' => $u_id);
     $stmt = queryPost($dbh, $sql, $data);
     $rst = $stmt->fetch(PDO::FETCH_ASSOC);

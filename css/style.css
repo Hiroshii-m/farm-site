@@ -984,9 +984,6 @@ i {
 .c-sidebar__list:last-child {
   border-bottom: none;
 }
-.c-sidebar__text {
-  padding: 5px;
-}
 
 .c-card {
   background: #fff;
@@ -1171,6 +1168,16 @@ i {
   margin-bottom: 5px;
   box-sizing: border-box;
 }
+.c-form__select {
+  display: block;
+  border: 2px solid #D3DEF1;
+  width: 100%;
+  height: 40px;
+  padding-left: 15px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
 .c-form__divide2 {
   width: calc(50% - 5px);
 }
@@ -1208,6 +1215,7 @@ i {
   height: 100%;
 }
 .c-form__check {
+  width: 20px;
   margin-right: 10px;
 }
 .c-form__submit {

@@ -20,17 +20,17 @@ if(!empty($_POST)) {
 
     validRequired($email, 'email');
     if(empty($err_msg['email'])) {
-        validMax($email, 'email');
+        validMaxLen($email, 'email');
     }
     if(empty($err_msg['email'])) {
         validEmail($email, 'email');
     }
     validRequired($pass, 'pass');
     if(empty($err_msg['pass'])) {
-        validMin($pass, 'pass');
+        validMinLen($pass, 'pass');
     }
     if(empty($err_msg['pass'])) {
-        validMax($pass, 'pass');
+        validMaxLen($pass, 'pass');
     }
     if(empty($err_msg['pass'])) {
         validHalf($pass, 'pass');

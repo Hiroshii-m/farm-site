@@ -220,9 +220,6 @@
             border-bottom: none;
         }
     }
-    &__text {
-        padding: $space_s;
-    }
 }
 .c-card {
     background: $color_base;
@@ -376,6 +373,16 @@
         margin-bottom: $space_s;
         box-sizing: border-box;
     }
+    &__select {
+        display: block;
+        border: 2px solid $color_accent;
+        width: 100%;
+        height: 40px;
+        padding-left: $space_l;
+        margin-bottom: $space_s;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
     &__divide {
         &2 {
             width: calc(50% - 5px);
@@ -415,6 +422,7 @@
         height: 100%;
     }
     &__check {
+        width: 20px;
         margin-right: $space_m;
     }
     &__submit {
