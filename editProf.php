@@ -75,14 +75,16 @@ if(!empty($_POST)) {
     $first_name = (!empty($_POST['first_name'])) ? $_POST['first_name'] : '';
     $last_name_kana = (!empty($_POST['last_name_kana'])) ? $_POST['last_name_kana'] : '';
     $first_name_kana = (!empty($_POST['first_name_kana'])) ? $_POST['first_name_kana'] : '';
-    $birthday_year = (!empty($_POST['birthday_year'])) ? $_POST['birthday_year'] : '';
-    $birthday_month = (!empty($_POST['birthday_month'])) ? $_POST['birthday_month'] : '';
-    $birthday_day = (!empty($_POST['birthday_day'])) ? $_POST['birthday_day'] : '';
+    $birthday_year = (!empty($_POST['birthday_year'])) ? $_POST['birthday_year'] : 0;
+    $birthday_month = (!empty($_POST['birthday_month'])) ? $_POST['birthday_month'] : 0;
+    $birthday_day = (!empty($_POST['birthday_day'])) ? $_POST['birthday_day'] : 0;
     $postcode = (!empty($_POST['postcode'])) ? $_POST['postcode'] : '';
-    $prefecture_id = (!empty($_POST['prefecture_id'])) ? $_POST['prefecture_id'] : '';
+    $prefecture_id = (!empty($_POST['prefecture_id'])) ? $_POST['prefecture_id'] : 0;
     $city_name = (!empty($_POST['city_name'])) ? $_POST['city_name'] : '';
-    $block = (!empty($_POST['block'])) ? $_POST['block'] : '';
+    $city_id = 0;
+    $street = (!empty($_POST['street'])) ? $_POST['street'] : '';
     $building = (!empty($_POST['building'])) ? $_POST['building'] : '';
+
 
     // バリデーションチェック
     if(!empty($screen_name)) {
@@ -115,17 +117,41 @@ if(!empty($_POST)) {
     if(is_numeric($postcode) || !empty($postcode)) {
         validZip($postcode, 'postcode');
     }
-    if(!empty($block)) {
-        validMaxLen($block, 'block');
+    if(is_numeric($prefecture_id)) {
+        validHalfNum($prefecture_id, 'prefecture_id');
+    }
+    // 市区町村データが合っているか
+    if(!empty($prefecture_id) && !empty($city_name)) {
+        $city_id = getCityMatch($prefecture_id, $city_name, 'city_name');
+    }
+    if(!empty($street)) {
+        validMaxLen($street, 'street');
     }
     if(!empty($building)) {
         validMaxLen($building, 'building');
     }
+
+    // 全てエラーがなければ、ファイルをアップロードし、パスを変数へ格納
+    if(empty($err_msg)) {
+        $avatar_image_path = (!empty($_FILES['avatar_image_path']['name'])) ? uploadImg($_FILES['avatar_image_path'], 'avatar_image_path') : '';
+        $avatar_image_path = ( empty($avatar_image_path) && !empty($dbFormData['avatar_image_path']) ) ? $dbFormData['avatar_image_path'] : $avatar_image_path;
+    }
+
     // DBへ更新する
     if(empty($err_msg)) {
-        $dbh = dbConnect();
-        $sql = 'UPDATE users SET `screen_name` = :s_name, `last_name` = :l_name, `first_name` = :f_name, `last_name_kana` = :l_name_kana, `first_name_kana` = :f_name_kana, `birthday_year` = :b_year, `birthday_month` = :_month, `birthday_day` = :b_day, `prefecture_id` = :pre_id, `city_id` = :city_id, `street` = :street, `building` = :building, `postcode` = :postcode';
-        $data = array();
+        try {
+            debug('バリデーションOK');
+            $dbh = dbConnect();
+            $sql = 'UPDATE users SET `screen_name` = :s_name, `last_name` = :l_name, `first_name` = :f_name, `last_name_kana` = :l_name_kana, `first_name_kana` = :f_name_kana, `birthday_year` = :b_year, `birthday_month` = :b_month, `birthday_day` = :b_day, `prefecture_id` = :p_id, `city_id` = :c_id, `street` = :street, `building` = :building, `postcode` = :postcode';
+            $data = array(':s_name' => $screen_name, ':l_name' => $last_name, ':f_name' => $first_name_kana, ':l_name_kana' => $last_name_kana, ':f_name_kana' => $first_name_kana, ':b_year' => $birthday_year, ':b_month' => $birthday_month, ':b_day' => $birthday_day, ':p_id' => $prefecture_id, ':c_id' => $city_id, ':street' => $street, ':building' => $building, ':postcode' => $postcode);
+            $stmt = queryPost($dbh, $sql, $data);
+
+            // マイページへ移動
+            header("Location:mypage.php");
+        } catch (Exception $e) {
+            error_log('エラー発生:' . $e->getMessage());
+            $err_msg['common'] = MSG::UNEXPECTED;
+        }
     }
 }
 
@@ -207,7 +233,7 @@ require('head.php');
                 </div>
             </label>
             <label class="c-form__label" for="">
-                住所（市区町村）
+                住所（市区町村）（例）札幌市中央区,世田谷区,明石市...
                 <input class="c-form__input <?= showErrStyle('city_name'); ?>" type="text" name="city_name" value="<?= getFormData('city_name'); ?>">
                 <div class="u-err-msg">
                     <?= showErrMsg('city_name'); ?>
@@ -215,9 +241,9 @@ require('head.php');
             </label>
             <label class="c-form__label" for="">
                 住所（番地）
-                <input class="c-form__input <?= showErrStyle('block'); ?>" type="text" name="block" value="<?= getFormData('block'); ?>">
+                <input class="c-form__input <?= showErrStyle('street'); ?>" type="text" name="street" value="<?= getFormData('street'); ?>">
                 <div class="u-err-msg">
-                    <?= showErrMsg('block'); ?>
+                    <?= showErrMsg('street'); ?>
                 </div>
             </label>
             <label class="c-form__label" for="">

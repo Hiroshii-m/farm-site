@@ -56,12 +56,14 @@ class VALID {
     const TEXTMAX = '最大文字数を超えています。';
     const TEXTMAX_30 = '30文字以内で入力してください。';
     const HALFENG = '半角英数字で入力してください。';
+    const ILLEGAL = '不正な値が入りました。';
     const ZIP = '半角数字で7文字、入力してください。';
     const KANJIHIRAGANA = '漢字またはひらがなで入力してください。';
     const KANA = 'カタカナで入力してください。';
     const NOMATCH = 'パスワードとパスワード（再入力）があっていません。';
     const NOTLOGIN = 'メールアドレスまたはパスワードが違います。';
     const WITHDRAW = 'このメールアドレスは、退会済のユーザーです。再度利用する場合、もう一度、ユーザー登録を行ってください。';
+    const CITYNOMATCH = '正しい市区町村を漢字で入力してください。';
 }
 class MSG {
     const UNEXPECTED = '予期せぬエラーが発生しました。しばらく経ってから、やり直してください。';
@@ -140,6 +142,13 @@ function validHalf($str, $key){
         $err_msg[$key] = VALID::HALFENG;
     }
 }
+// 半角数字かどうか判定
+function validHalfNum($str, $key) {
+    global $err_msg;
+    if(!preg_match("/^[0-9]+$/", $str)) {
+        $err_msg[$key] = VALID::ILLEGAL;
+    }
+}
 // 値がマッチしているか判定
 function validMatch($str, $str2, $key){
     global $err_msg;
@@ -166,6 +175,20 @@ function validKana($str, $key) {
     global $err_msg;
     if(!preg_match("/^[ァ-ヶー]+$/u", $str)) {
         $err_msg[$key] = VALID::KANA;
+    }
+}
+// 都道府県選択されていた場合、市区町村が正しいか判定
+function getCityMatch($prefecture_id, $city_name, $key) {
+    global $err_msg;
+    $dbh = dbConnect();
+    $sql = 'SELECT `id` FROM cites WHERE `prefecture_id` = :p_id AND `city_name` = :c_name';
+    $data = array(':p_id' => $prefecture_id, ':c_name' => $city_name);
+    $stmt = queryPost($dbh, $sql, $data);
+    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+    if(!empty($result)) {
+        return $result['id'];
+    }else{
+        $err_msg[$key] = VALID::CITYNOMATCH;
     }
 }
 // バリデーションを反映
@@ -233,8 +256,15 @@ function dbConnect(){
 function queryPost($dbh, $sql, $data){
     // クエリ作成
     $stmt = $dbh->prepare($sql);
+    foreach($data as $key => $val) {
+        if(is_int($val)) {
+            $stmt->bindValue($key, $val, PDO::PARAM_INT);
+        }else{
+            $stmt->bindValue($key, $val, PDO::PARAM_STR);
+        }
+    }
     // SQL実行
-    if(!$stmt->execute($data)){
+    if(!$stmt->execute()){
         debug('クエリ失敗しました。');
         debug('失敗したSQL:'.print_r($stmt, true));
         $err_msg['common'] = MSG::UNEXPECTED;
@@ -246,11 +276,51 @@ function queryPost($dbh, $sql, $data){
 // ユーザー情報を取得
 function getUser($u_id) {
     $dbh = dbConnect();
-    $sql = 'SELECT `id`, `screen_name`, `last_name`, `first_name`, `last_name_kana`, `first_name_kana`, `birthday_year`, `birthday_month`, `birthday_day`, `avatar_image_path`, `prefecture_id`, `city_id`, `block`, `building`, `postcode` FROM users WHERE `id` = :u_id AND `group_id` = 1';
+    $sql = 'SELECT `id`, `screen_name`, `last_name`, `first_name`, `last_name_kana`, `first_name_kana`, `birthday_year`, `birthday_month`, `birthday_day`, `avatar_image_path`, `prefecture_id`, `city_id`, `street`, `building`, `postcode` FROM users WHERE `id` = :u_id AND `group_id` = 1';
     $data = array(':u_id' => $u_id);
     $stmt = queryPost($dbh, $sql, $data);
     $rst = $stmt->fetch(PDO::FETCH_ASSOC);
     return $rst;
+}
+// 画像をアップロード
+function uploadImg($file, $key) {
+    // 1.ファイルの中身が画像かどうかを判定
+    if(isset($file['error']) || !is_int($file['error'])) {
+        try {
+            // 2.バリデーション
+            switch ($file['error']){
+                case UPLOAD_ERR_OK:
+                    break;
+                case UPLOAD_ERR_NO_FILE:
+                    throw new RuntimeException('ファイルが選択されていません。');
+                case UPLOAD_ERR_INI_SIZE:
+                case UPLOAD_ERR_FORM_SIZE:
+                    throw new RuntimeException('ファイルサイズが大きすぎます。');
+                default:
+                    throw new RuntimeException('その他のエラーが発生しました。');
+            }
+
+            // 3.MIMEタイプをチェック
+            $type = @exif_imagetype($file['tmp_name']);
+            if(!in_array($type, [IMAGETYPE_GIF, IMAGETYPE_JPEG, IMAGETYPE_PNG], true)) {
+                throw new RuntimeException('画像形式が未対応です。');
+            }
+            // 4.ファイルからSHA-1ハッシュをとってファイル名を決定し、保存する。DBで保存したとき、どれが画像か分かるようにpathを指定
+           $path = 'uploads/'.sha1_file($file['tmp_name']).image_type_to_extension($type);
+            // 5.ファイルを保存（移動）
+            if(!move_uploaded_file($file['tmp_name'], $path)) {
+                throw new RuntimeException('ファイル保存時にエラーが発生しました。');
+            }
+            // 6.保存したファイルパスのパーミッション（権限）を変更する
+            chmod($path, 0644);
+
+            return $path;
+        } catch ( Exception $e ) {
+            debug($e->getMessage());
+            global $err_msg;
+            $err_msg[$key] = $e->getMessage();
+        }
+    }
 }
 
 //================================

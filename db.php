@@ -23,7 +23,7 @@ $users = 'CREATE TABLE users(
     `city_id` INT(3) NULL,
     `street` VARCHAR(255) NULL,
     `building` VARCHAR(255) NULL,
-    `postcode` VARCHAR(255) NULL,
+    `postcode` VARCHAR(7) NULL,
     `delete_flg` BOOLEAN DEFAULT 0 NOT NULL,
     `create_date` DATE NOT NULL,
     `update_date` TIMESTAMP NOT NULL

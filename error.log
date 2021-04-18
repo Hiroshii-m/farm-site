@@ -2126,3 +2126,171 @@ Stack trace:
 #0 {main}
   thrown in /Applications/MAMP/htdocs/output2/farm/editProf.php on line 158
 [17-Apr-2021 21:05:10 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/editProf.php on line 115
+[18-Apr-2021 21:51:26 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'block' in 'field list' in /Applications/MAMP/htdocs/output2/farm/function.php:259
+Stack trace:
+#0 /Applications/MAMP/htdocs/output2/farm/function.php(259): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/output2/farm/function.php(273): queryPost(Object(PDO), 'SELECT `id`, `s...', Array)
+#2 /Applications/MAMP/htdocs/output2/farm/editProf.php(17): getUser('3')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/output2/farm/function.php on line 259
+[18-Apr-2021 21:57:56 Asia/Tokyo] PHP Notice:  Undefined variable: city_id in /Applications/MAMP/htdocs/output2/farm/editProf.php on line 144
+[18-Apr-2021 21:57:56 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[18-Apr-2021 21:59:08 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[18-Apr-2021 22:00:17 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[18-Apr-2021 22:02:39 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+
+
+[19-Apr-2021 00:26:53 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[19-Apr-2021 00:26:53 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:26:53 Asia/Tokyo] デバッグ:マイページ画面
+[19-Apr-2021 00:26:53 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:28:00 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[19-Apr-2021 00:28:00 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:28:00 Asia/Tokyo] デバッグ:プロフィール編集画面
+[19-Apr-2021 00:28:00 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:28:00 Asia/Tokyo] デバッグ:クエリ成功しました。
+[19-Apr-2021 00:28:12 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[19-Apr-2021 00:28:12 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:28:12 Asia/Tokyo] デバッグ:プロフィール編集画面
+[19-Apr-2021 00:28:12 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:28:12 Asia/Tokyo] デバッグ:クエリ成功しました。
+[19-Apr-2021 00:28:12 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[19-Apr-2021 00:31:21 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[19-Apr-2021 00:31:21 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:31:21 Asia/Tokyo] デバッグ:プロフィール編集画面
+[19-Apr-2021 00:31:21 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:31:21 Asia/Tokyo] デバッグ:クエリ成功しました。
+[19-Apr-2021 00:31:27 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[19-Apr-2021 00:31:27 Asia/Tokyo] デバッグ:マイページへ遷移します。
+[19-Apr-2021 00:31:27 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:31:27 Asia/Tokyo] デバッグ:ログイン画面
+[19-Apr-2021 00:31:27 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:31:27 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[19-Apr-2021 00:31:27 Asia/Tokyo] デバッグ:セッションID：hgg679koeitqmnknn1uaj47ba1
+[19-Apr-2021 00:31:27 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [login_date] => 1618759887
+    [login_limit] => 3600
+    [user_id] => 3
+)
+
+[19-Apr-2021 00:31:27 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1618759887
+[19-Apr-2021 00:31:27 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1618763487
+[19-Apr-2021 00:31:27 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[19-Apr-2021 00:31:27 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:31:27 Asia/Tokyo] デバッグ:マイページ画面
+[19-Apr-2021 00:31:27 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:31:43 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[19-Apr-2021 00:31:43 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:31:43 Asia/Tokyo] デバッグ:プロフィール編集画面
+[19-Apr-2021 00:31:43 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:31:43 Asia/Tokyo] デバッグ:クエリ成功しました。
+[19-Apr-2021 00:31:50 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[19-Apr-2021 00:31:50 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:31:50 Asia/Tokyo] デバッグ:プロフィール編集画面
+[19-Apr-2021 00:31:50 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:31:50 Asia/Tokyo] デバッグ:クエリ成功しました。
+[19-Apr-2021 00:31:50 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[19-Apr-2021 00:32:13 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[19-Apr-2021 00:32:13 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:32:13 Asia/Tokyo] デバッグ:プロフィール編集画面
+[19-Apr-2021 00:32:13 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:32:13 Asia/Tokyo] デバッグ:クエリ成功しました。
+[19-Apr-2021 00:32:13 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[19-Apr-2021 00:32:24 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[19-Apr-2021 00:32:24 Asia/Tokyo] デバッグ:マイページへ遷移します。
+[19-Apr-2021 00:32:24 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:32:24 Asia/Tokyo] デバッグ:ログイン画面
+[19-Apr-2021 00:32:24 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:32:24 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[19-Apr-2021 00:32:24 Asia/Tokyo] デバッグ:セッションID：ttd6u09ecm7imudp1svqtvm4m0
+[19-Apr-2021 00:32:24 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [login_date] => 1618759944
+    [login_limit] => 3600
+    [user_id] => 3
+)
+
+[19-Apr-2021 00:32:24 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1618759944
+[19-Apr-2021 00:32:24 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1618763544
+[19-Apr-2021 00:32:24 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[19-Apr-2021 00:32:24 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:32:24 Asia/Tokyo] デバッグ:マイページ画面
+[19-Apr-2021 00:32:24 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:32:29 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[19-Apr-2021 00:32:29 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:32:29 Asia/Tokyo] デバッグ:プロフィール編集画面
+[19-Apr-2021 00:32:29 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:32:29 Asia/Tokyo] デバッグ:クエリ成功しました。
+[19-Apr-2021 00:33:04 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[19-Apr-2021 00:33:04 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:33:04 Asia/Tokyo] デバッグ:プロフィール編集画面
+[19-Apr-2021 00:33:04 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:33:04 Asia/Tokyo] デバッグ:クエリ成功しました。
+[19-Apr-2021 00:33:04 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[19-Apr-2021 00:35:16 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[19-Apr-2021 00:35:16 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:35:16 Asia/Tokyo] デバッグ:プロフィール編集画面
+[19-Apr-2021 00:35:16 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:35:16 Asia/Tokyo] デバッグ:クエリ成功しました。
+[19-Apr-2021 00:35:16 Asia/Tokyo] デバッグ:SQL:PDOStatement Object
+(
+    [queryString] => SELECT `id`, `screen_name`, `last_name`, `first_name`, `last_name_kana`, `first_name_kana`, `birthday_year`, `birthday_month`, `birthday_day`, `avatar_image_path`, `prefecture_id`, `city_id`, `street`, `building`, `postcode` FROM users WHERE `id` = :u_id AND `group_id` = 1
+)
+
+[19-Apr-2021 00:35:16 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[19-Apr-2021 00:37:10 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[19-Apr-2021 00:37:10 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:37:10 Asia/Tokyo] デバッグ:プロフィール編集画面
+[19-Apr-2021 00:37:10 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:37:10 Asia/Tokyo] デバッグ:クエリ成功しました。
+[19-Apr-2021 00:37:10 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[19-Apr-2021 00:37:47 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[19-Apr-2021 00:37:47 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:37:47 Asia/Tokyo] デバッグ:プロフィール編集画面
+[19-Apr-2021 00:37:47 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:37:47 Asia/Tokyo] デバッグ:クエリ成功しました。
+[19-Apr-2021 00:37:47 Asia/Tokyo] デバッグ:バリデーションOK
+[19-Apr-2021 00:37:47 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[19-Apr-2021 00:41:09 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[19-Apr-2021 00:41:09 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:41:09 Asia/Tokyo] デバッグ:プロフィール編集画面
+[19-Apr-2021 00:41:09 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:41:09 Asia/Tokyo] デバッグ:クエリ成功しました。
+[19-Apr-2021 00:41:09 Asia/Tokyo] デバッグ:バリデーションOK
+[19-Apr-2021 00:41:09 Asia/Tokyo] エラー発生:SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'birthday_year' at row 1
+[19-Apr-2021 00:46:53 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[19-Apr-2021 00:46:53 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:46:53 Asia/Tokyo] デバッグ:プロフィール編集画面
+[19-Apr-2021 00:46:53 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:46:53 Asia/Tokyo] デバッグ:クエリ成功しました。
+[19-Apr-2021 00:46:57 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[19-Apr-2021 00:46:57 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:46:57 Asia/Tokyo] デバッグ:プロフィール編集画面
+[19-Apr-2021 00:46:57 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:46:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[19-Apr-2021 00:46:57 Asia/Tokyo] デバッグ:バリデーションOK
+[19-Apr-2021 00:46:57 Asia/Tokyo] エラー発生:SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'prefecture_id' at row 1
+[19-Apr-2021 00:47:38 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[19-Apr-2021 00:47:38 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:47:38 Asia/Tokyo] デバッグ:プロフィール編集画面
+[19-Apr-2021 00:47:38 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:47:38 Asia/Tokyo] デバッグ:クエリ成功しました。
+[19-Apr-2021 00:47:38 Asia/Tokyo] デバッグ:バリデーションOK
+[19-Apr-2021 00:47:38 Asia/Tokyo] デバッグ:クエリ成功しました。
+[19-Apr-2021 00:47:38 Asia/Tokyo] デバッグ:SQLPDOStatement Object
+(
+    [queryString] => UPDATE users SET `screen_name` = :s_name, `last_name` = :l_name, `first_name` = :f_name, `last_name_kana` = :l_name_kana, `first_name_kana` = :f_name_kana, `birthday_year` = :b_year, `birthday_month` = :b_month, `birthday_day` = :b_day, `prefecture_id` = :p_id, `city_id` = :c_id, `street` = :street, `building` = :building, `postcode` = :postcode
+)
+
+[19-Apr-2021 00:49:35 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[19-Apr-2021 00:49:35 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:49:35 Asia/Tokyo] デバッグ:プロフィール編集画面
+[19-Apr-2021 00:49:35 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:49:35 Asia/Tokyo] デバッグ:クエリ成功しました。
+[19-Apr-2021 00:49:35 Asia/Tokyo] デバッグ:バリデーションOK
+[19-Apr-2021 00:49:35 Asia/Tokyo] デバッグ:クエリ成功しました。
+[19-Apr-2021 00:49:35 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[19-Apr-2021 00:49:35 Asia/Tokyo] デバッグ:==============================================
+[19-Apr-2021 00:49:35 Asia/Tokyo] デバッグ:マイページ画面
+[19-Apr-2021 00:49:35 Asia/Tokyo] デバッグ:==============================================
