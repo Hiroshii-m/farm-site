@@ -1193,6 +1193,7 @@ i {
   text-align: center;
   display: table;
   position: relative;
+  cursor: pointer;
 }
 .c-form__areaDrop.active {
   opacity: 0.4;
@@ -1205,12 +1206,15 @@ i {
 }
 .c-form__file {
   opacity: 0;
+  position: absolute;
   width: 100%;
   height: 100%;
-  position: absolute;
   z-index: 2;
 }
 .c-form__img {
+  top: 0;
+  left: 0;
+  position: absolute;
   width: 100%;
   height: 100%;
 }

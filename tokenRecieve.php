@@ -49,6 +49,9 @@ if(!empty($_GET)) {
             $token_flg = false;
 
             if(!empty($_POST)) {
+                $token = bin2hex(random_bytes(32));
+                $_SESSION['token'] = $token;
+
                include('sendMailSubmit.php');
             }
         }
@@ -82,8 +85,8 @@ require('header.php');
             ?>
             <p>ユーザー登録できませんでした。</p>
             <p>もう一度、トークン付きURLを送信してください。</p>
-            <form action="" type="post">
-                <button class="c-form__submit" type="submit">もう一度、URLを発行する</button>
+            <form method="post" action="">
+                <button name="submit" class="c-form__submit" type="submit">もう一度、URLを発行する</button>
             </form>
             <?php
                 }

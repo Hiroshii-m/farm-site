@@ -12,10 +12,7 @@
                 <a href="" class="c-sidebar__text">商品登録</a>
             </li>
             <li class="c-sidebar__list">
-                <a href="" class="c-sidebar__text">メールアドレス・パスワードを変更する</a>
-            </li>
-            <li class="c-sidebar__list">
-                <a href="logout.php" class="c-sidebar__text">ログアウト</a>
+                <a href="editMailPass.php" class="c-sidebar__text">メールアドレス・パスワードを変更する</a>
             </li>
             <li class="c-sidebar__list">
                 <a href="withdraw.php" class="c-sidebar__text">退会</a>

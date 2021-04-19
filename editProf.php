@@ -2,7 +2,7 @@
 // 予想時間（プロフィール編集画面）：3h
 // かかった時間：3h58mi
 // 予想時間（機能面）:3h
-// かかった時間：2h45mi
+// かかった時間：6h45mi
 
 // 共通ファイルの読み込み
 require('function.php');
@@ -15,6 +15,8 @@ debug('==============================================');
 
 $u_id = $_SESSION['user_id'];
 $dbFormData = getUser($u_id);
+$city_name = ($dbFormData['city_id'] !== 0) ? getCityName($dbFormData['city_id']) : '';
+$dbFormData['city_name'] = $city_name;
 
 // 都道府県の配列生成
 $pref = array(
@@ -81,7 +83,6 @@ if(!empty($_POST)) {
     $postcode = (!empty($_POST['postcode'])) ? $_POST['postcode'] : '';
     $prefecture_id = (!empty($_POST['prefecture_id'])) ? $_POST['prefecture_id'] : 0;
     $city_name = (!empty($_POST['city_name'])) ? $_POST['city_name'] : '';
-    $city_id = 0;
     $street = (!empty($_POST['street'])) ? $_POST['street'] : '';
     $building = (!empty($_POST['building'])) ? $_POST['building'] : '';
 
@@ -133,6 +134,7 @@ if(!empty($_POST)) {
 
     // 全てエラーがなければ、ファイルをアップロードし、パスを変数へ格納
     if(empty($err_msg)) {
+        // 一旦飛ばす。FILEのなかみに値が入らない。
         $avatar_image_path = (!empty($_FILES['avatar_image_path']['name'])) ? uploadImg($_FILES['avatar_image_path'], 'avatar_image_path') : '';
         $avatar_image_path = ( empty($avatar_image_path) && !empty($dbFormData['avatar_image_path']) ) ? $dbFormData['avatar_image_path'] : $avatar_image_path;
     }
@@ -142,8 +144,8 @@ if(!empty($_POST)) {
         try {
             debug('バリデーションOK');
             $dbh = dbConnect();
-            $sql = 'UPDATE users SET `screen_name` = :s_name, `last_name` = :l_name, `first_name` = :f_name, `last_name_kana` = :l_name_kana, `first_name_kana` = :f_name_kana, `birthday_year` = :b_year, `birthday_month` = :b_month, `birthday_day` = :b_day, `prefecture_id` = :p_id, `city_id` = :c_id, `street` = :street, `building` = :building, `postcode` = :postcode';
-            $data = array(':s_name' => $screen_name, ':l_name' => $last_name, ':f_name' => $first_name_kana, ':l_name_kana' => $last_name_kana, ':f_name_kana' => $first_name_kana, ':b_year' => $birthday_year, ':b_month' => $birthday_month, ':b_day' => $birthday_day, ':p_id' => $prefecture_id, ':c_id' => $city_id, ':street' => $street, ':building' => $building, ':postcode' => $postcode);
+            $sql = 'UPDATE users SET `screen_name` = :s_name, `last_name` = :l_name, `first_name` = :f_name, `last_name_kana` = :l_name_kana, `first_name_kana` = :f_name_kana, `birthday_year` = :b_year, `birthday_month` = :b_month, `birthday_day` = :b_day, `avatar_image_path` = :a_path, `prefecture_id` = :p_id, `city_id` = :c_id, `street` = :street, `building` = :building, `postcode` = :postcode';
+            $data = array(':s_name' => $screen_name, ':l_name' => $last_name, ':f_name' => $first_name, ':l_name_kana' => $last_name_kana, ':f_name_kana' => $first_name_kana, ':b_year' => $birthday_year, ':b_month' => $birthday_month, ':b_day' => $birthday_day, ':a_path' => $avatar_image_path, ':p_id' => $prefecture_id, ':c_id' => $city_id, ':street' => $street, ':building' => $building, ':postcode' => $postcode);
             $stmt = queryPost($dbh, $sql, $data);
 
             // マイページへ移動
@@ -168,7 +170,7 @@ require('head.php');
     ?>
 
     <main id="l-main">
-        <form method="post" class="c-form js-sp-menu-target">
+        <form method="post" class="c-form js-sp-menu-target" enctype="multipart/form-data">
             <h2 class="c-form__title">プロフィール編集</h2>
             <div class="u-err-msg">
                 
@@ -258,7 +260,7 @@ require('head.php');
                 <label class="c-form__areaDrop u-margin-top-5 js-area-drop">
                     <input type="hidden" name="MAX_FILE_SIZE" value="3145728">
                     <input class="c-form__file js-file-input" type="file" name="avatar_image_path">
-                    <img class="u-display-none c-form__img" alt="" src="<?= getFormData('avatar_image_path'); ?>">
+                    <img class="c-form__img js-avatar-img" alt="" src="<?= getFormData('avatar_image_path'); ?>">
                     <p class="c-form__areaText">ドラッグ&ドロップ</p>
                 </label>
                 <div class="u-err-msg">
@@ -275,6 +277,6 @@ require('head.php');
     <!-- 共通ファイル -->
     <script src="js/app.js"></script>
     <!-- プロフィール編集画面のjsファイル -->
-    <script src="js/app_editProf.js"></script>
+    <script src="js/app_EditProf.js"></script>
 </body>
 </html>

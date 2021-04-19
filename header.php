@@ -10,6 +10,7 @@
             </a>
             <nav class="c-header__nav js-header-nav">
                 <ul class="c-header__list u-flex js-header-list">
+                    <?php if(!empty($_SESSION['login_date']) && time() <= $_SESSION['login_date'] + $_SESSION['login_limit']){ ?>
                     <li class="c-header__item">
                         <a href="index.html" class="c-header__text">ホーム</a>
                     </li>
@@ -19,6 +20,19 @@
                     <li class="c-header__item">
                         <a href="signup.php" class="c-header__text">ユーザー登録</a>
                     </li>
+
+                    <?php }else{ ?>
+
+                    <li class="c-header__item">
+                        <a href="index.html" class="c-header__text">ホーム</a>
+                    </li>
+                    <li class="c-header__item">
+                        <a href="mypage.php" class="c-header__text">マイページ</a>
+                    </li>
+                    <li class="c-header__item">
+                        <a href="logout.php" class="c-header__text">ログアウト</a>
+                    </li>
+                    <?php } ?>
                 </ul>
             </nav>
         </div>

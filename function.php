@@ -36,7 +36,7 @@ function debugLogStart(){
 // ================================================
 // デバッグ
 // ================================================
-$debug_flg = false;
+$debug_flg = true;
 function debug($str) {
     global $debug_flg;
     if(!empty($debug_flg)){
@@ -279,8 +279,28 @@ function getUser($u_id) {
     $sql = 'SELECT `id`, `screen_name`, `last_name`, `first_name`, `last_name_kana`, `first_name_kana`, `birthday_year`, `birthday_month`, `birthday_day`, `avatar_image_path`, `prefecture_id`, `city_id`, `street`, `building`, `postcode` FROM users WHERE `id` = :u_id AND `group_id` = 1';
     $data = array(':u_id' => $u_id);
     $stmt = queryPost($dbh, $sql, $data);
-    $rst = $stmt->fetch(PDO::FETCH_ASSOC);
-    return $rst;
+    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+    return $result;
+}
+// メールアドレスだけ取得
+function getMail($u_id) {
+    $dbh = dbConnect();
+    $sql = 'SELECT `email` FROM users WHERE `id` = :u_id';
+    $data = array(':u_id' => $u_id);
+    $stmt = queryPost($dbh, $sql, $data);
+    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+    return $result;
+}
+// 市区町村名を取得
+function getCityName($city_id) {
+    $dbh = dbConnect();
+    $sql = 'SELECT `city_name` From cites WHERE `id` = :c_id';
+    $data = array(':c_id' => $city_id);
+    $stmt = queryPost($dbh, $sql, $data);
+    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+    if(!empty($result)) {
+        return $result['city_name'];
+    }
 }
 // 画像をアップロード
 function uploadImg($file, $key) {

@@ -100,7 +100,7 @@ $category = 'CREATE TABLE category(
 //     `update_date` TIMESTAMP NOT NULL
 // )ENGINE=INNODB DEFAULT CHARSET=utf8;';
 // 市区町村テーブル作成
-$city = 'CREATE TABLE cites(
+$cites = 'CREATE TABLE cites(
     `id` INT(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
     `prefecture_id` INT(11) NOT NULL,
     `city_name` VARCHAR(255) NOT NULL,

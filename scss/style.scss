@@ -400,6 +400,7 @@
         text-align: center;
         display: table;
         position: relative;
+        cursor: pointer;
         &.active {
             opacity: .4;
         }
@@ -412,12 +413,15 @@
     }
     &__file {
         opacity: 0;
+        position: absolute;
         width: 100%;
         height: 100%;
-        position: absolute;
         z-index: 2;
     }
     &__img {
+        top: 0;
+        left: 0;
+        position: absolute;
         width: 100%;
         height: 100%;
     }
