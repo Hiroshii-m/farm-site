@@ -99,14 +99,14 @@ require('header.php');
             </div>
             <label class="c-form__label" for="mail">
                 Email
-                <input id="mail" class="c-form__input <?= showErrStyle('email'); ?>" type="text" name="email" value="<?php echo (!empty($_POST['email'])) ? sanitize($_POST['email']) : ''; ?>">
+                <input id="mail" class="c-form__input <?= showErrStyle('email'); ?>" type="text" name="email" value="<?= sanitize(getFormData('email')); ?>">
                 <div class="u-err-msg">
                     <?= showErrMsg('email'); ?>
                 </div>
             </label>
             <label class="c-form__label" for="password">
                 パスワード
-                <input id="password" class="c-form__input <?= showErrStyle('pass'); ?>" type="password" name="pass" value="<?php echo (!empty($_POST['pass'])) ? sanitize($_POST['pass']) : ''; ?>">
+                <input id="password" class="c-form__input <?= showErrStyle('pass'); ?>" type="password" name="pass" value="<?= sanitize(getFormData('pass')); ?>">
                 <div class="u-err-msg">
                     <?= showErrMsg('pass'); ?>
                 </div>
@@ -116,7 +116,7 @@ require('header.php');
             </label>
 
             <input class="c-form__submit" type="submit" value="送信">
-            <a class="" href="">パスワードお忘れですか？</a>
+            <a class="" href="remindPass/remindPassSend.php">パスワードお忘れですか？</a>
         </form>
     </main>
     

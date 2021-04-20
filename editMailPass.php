@@ -103,7 +103,7 @@ include('head.php');
             </div>
             <label class="c-form__label" for="">
                 メールアドレス
-                <input class="c-form__input" type="text" name="email" value="<?= getFormData('email'); ?>">
+                <input class="c-form__input" type="text" name="email" value="<?= sanitize(getFormData('email')); ?>">
                 <div class="u-err-msg">
                     
                 </div>

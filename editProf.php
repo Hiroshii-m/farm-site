@@ -177,7 +177,7 @@ require('head.php');
             </div>
             <label class="c-form__label" for="">
                 プロフィール表示名
-                <input class="c-form__input <?= showErrStyle('screen_name'); ?>" type="text" name="screen_name" value="<?= getFormData('screen_name'); ?>">
+                <input class="c-form__input <?= showErrStyle('screen_name'); ?>" type="text" name="screen_name" value="<?= sanitize(getFormData('screen_name')); ?>">
                 <div class="u-err-msg">
                     <?= showErrMsg('screen_name'); ?>
                 </div>
@@ -185,8 +185,8 @@ require('head.php');
             <label class="c-form__label" for="">
                 氏名（全角）
                 <div class="u-flex-between">
-                    <input class="c-form__input c-form__divide2 <?= showErrStyle('last_name'); ?>" type="text" name="last_name" placeholder="姓" value="<?= getFormData('last_name'); ?>">
-                    <input class="c-form__input c-form__divide2 <?= showErrStyle('first_name'); ?>" type="text" name="first_name" placeholder="名" value="<?= getFormData('first_name'); ?>">
+                    <input class="c-form__input c-form__divide2 <?= showErrStyle('last_name'); ?>" type="text" name="last_name" placeholder="姓" value="<?= sanitize(getFormData('last_name')); ?>">
+                    <input class="c-form__input c-form__divide2 <?= showErrStyle('first_name'); ?>" type="text" name="first_name" placeholder="名" value="<?= sanitize(getFormData('first_name')); ?>">
                 </div>
                 <div class="u-err-msg">
                     <?= showErrMsg('last_name', 'first_name'); ?>
@@ -195,8 +195,8 @@ require('head.php');
             <label class="c-form__label" for="">
                 シメイ（全角）
                 <div class="u-flex-between">
-                    <input class="c-form__input c-form__divide2 <?= showErrStyle('last_name_kana'); ?>" type="text" name="last_name_kana" placeholder="姓カナ" value="<?= getFormData('last_name_kana'); ?>">
-                    <input class="c-form__input c-form__divide2 <?= showErrStyle('first_name_kana'); ?>" type="text" name="first_name_kana" placeholder="名カナ" value="<?= getFormData('first_name_kana'); ?>">
+                    <input class="c-form__input c-form__divide2 <?= showErrStyle('last_name_kana'); ?>" type="text" name="last_name_kana" placeholder="姓カナ" value="<?= sanitize(getFormData('last_name_kana')); ?>">
+                    <input class="c-form__input c-form__divide2 <?= showErrStyle('first_name_kana'); ?>" type="text" name="first_name_kana" placeholder="名カナ" value="<?= sanitize(getFormData('first_name_kana')); ?>">
                 </div>
                 <div class="u-err-msg">
                     <?= showErrMsg('last_name_kana', 'first_name_kana'); ?>
@@ -205,9 +205,9 @@ require('head.php');
             <label class="c-form__label" for="">
                 生年月日
                 <div class="u-flex-between">
-                    <input class="c-form__input c-form__divide3 <?= showErrStyle('birthday_year'); ?>" type="number" min="1900" max="2014" name="birthday_year" placeholder="年" value="<?= getFormData('birthday_year'); ?>">
-                    <input class="c-form__input c-form__divide3 <?= showErrStyle('birthday_month'); ?>" type="number" min="1" max="12" name="birthday_month" placeholder="月" value="<?= getFormData('birthday_month'); ?>">
-                    <input class="c-form__input c-form__divide3 <?= showErrStyle('last_name_day'); ?>" type="number" min="1" max="31" name="birthday_day" placeholder="日" value="<?= getFormData('birthday_day'); ?>">
+                    <input class="c-form__input c-form__divide3 <?= showErrStyle('birthday_year'); ?>" type="number" min="1900" max="2014" name="birthday_year" placeholder="年" value="<?= sanitize(getFormData('birthday_year')); ?>">
+                    <input class="c-form__input c-form__divide3 <?= showErrStyle('birthday_month'); ?>" type="number" min="1" max="12" name="birthday_month" placeholder="月" value="<?= sanitize(getFormData('birthday_month')); ?>">
+                    <input class="c-form__input c-form__divide3 <?= showErrStyle('last_name_day'); ?>" type="number" min="1" max="31" name="birthday_day" placeholder="日" value="<?= sanitize(getFormData('birthday_day')); ?>">
                 </div>
                 <div class="u-err-msg">
                     <?= showErrMsg('birthday_year'); ?>
@@ -217,7 +217,7 @@ require('head.php');
             </label>
             <label class="c-form__label" for="">
                 郵便番号（ハイフンなし）
-                <input class="c-form__input <?= showErrStyle('postcode'); ?>" type="text" name="postcode" value="<?= getFormData('postcode'); ?>">
+                <input class="c-form__input <?= showErrStyle('postcode'); ?>" type="text" name="postcode" value="<?= sanitize(getFormData('postcode')); ?>">
                 <div class="u-err-msg">
                     <?= showErrMsg('postcode'); ?>
                 </div>
@@ -236,21 +236,21 @@ require('head.php');
             </label>
             <label class="c-form__label" for="">
                 住所（市区町村）（例）札幌市中央区,世田谷区,明石市...
-                <input class="c-form__input <?= showErrStyle('city_name'); ?>" type="text" name="city_name" value="<?= getFormData('city_name'); ?>">
+                <input class="c-form__input <?= showErrStyle('city_name'); ?>" type="text" name="city_name" value="<?= sanitize(getFormData('city_name')); ?>">
                 <div class="u-err-msg">
                     <?= showErrMsg('city_name'); ?>
                 </div>
             </label>
             <label class="c-form__label" for="">
                 住所（番地）
-                <input class="c-form__input <?= showErrStyle('street'); ?>" type="text" name="street" value="<?= getFormData('street'); ?>">
+                <input class="c-form__input <?= showErrStyle('street'); ?>" type="text" name="street" value="<?= sanitize(getFormData('street')); ?>">
                 <div class="u-err-msg">
                     <?= showErrMsg('street'); ?>
                 </div>
             </label>
             <label class="c-form__label" for="">
                 住所（建物名）＊任意
-                <input class="c-form__input <?= showErrStyle('building'); ?>" type="text" name="building" value="<?= getFormData('building'); ?>">
+                <input class="c-form__input <?= showErrStyle('building'); ?>" type="text" name="building" value="<?= sanitize(getFormData('building')); ?>">
                 <div class="u-err-msg">
                     <?= showErrMsg('building'); ?>
                 </div>
@@ -260,7 +260,7 @@ require('head.php');
                 <label class="c-form__areaDrop u-margin-top-5 js-area-drop">
                     <input type="hidden" name="MAX_FILE_SIZE" value="3145728">
                     <input class="c-form__file js-file-input" type="file" name="avatar_image_path">
-                    <img class="c-form__img js-avatar-img" alt="" src="<?= getFormData('avatar_image_path'); ?>">
+                    <img class="c-form__img js-avatar-img" alt="" src="<?= sanitize(getFormData('avatar_image_path')); ?>">
                     <p class="c-form__areaText">ドラッグ&ドロップ</p>
                 </label>
                 <div class="u-err-msg">

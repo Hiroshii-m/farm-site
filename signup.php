@@ -82,26 +82,26 @@ require('header.php');
             </div>
             <label class="c-form__label" for="">
                 Email
-                <input class="c-form__input <?= showErrStyle('email'); ?>" type="text" name="email" value="<?php echo (!empty($_POST['email'])) ? sanitize($_POST['email']) : ''; ?>">
+                <input class="c-form__input <?= showErrStyle('email'); ?>" type="text" name="email" value="<?= sanitize(getFormData('email')); ?>">
                 <div class="u-err-msg">
                     <?= showErrMsg('email'); ?>
                 </div>
             </label>
             <label class="c-form__label" for="">
                 パスワード
-                <input class="c-form__input <?= showErrStyle('pass'); ?>" type="password" name="pass" value="<?php echo (!empty($_POST['pass'])) ? sanitize($_POST['pass']) : ''; ?>">
+                <input class="c-form__input <?= showErrStyle('pass'); ?>" type="password" name="pass" value="<?= sanitize(getFormData('pass')); ?>">
                 <div class="u-err-msg">
                     <?= showErrMsg('pass'); ?>
                 </div>
             </label>
             <label class="c-form__label" for="">
                 パスワード（再入力）
-                <input class="c-form__input <?= showErrStyle('pass_re'); ?>" type="password" name="pass_re" value="<?php echo (!empty($_POST['pass_re'])) ? sanitize($_POST['pass_re']) : ''; ?>">
+                <input class="c-form__input <?= showErrStyle('pass_re'); ?>" type="password" name="pass_re" value="<?= sanitize(getFormData('pass_re')); ?>">
                 <div class="u-err-msg">
                     <?= showErrMsg('pass_re'); ?>
                 </div>
             </label>
-            <input class="c-form__submit" type="submit" value="送信">
+            <input class="c-form__submit" type="submit" value="確認メールを送信">
         </form>
     </main>
     

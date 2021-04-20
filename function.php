@@ -58,6 +58,7 @@ class VALID {
     const HALFENG = '半角英数字で入力してください。';
     const ILLEGAL = '不正な値が入りました。';
     const ZIP = '半角数字で7文字、入力してください。';
+    const LENGTH = '文字で入力してください。';
     const KANJIHIRAGANA = '漢字またはひらがなで入力してください。';
     const KANA = 'カタカナで入力してください。';
     const NOMATCH = 'パスワードとパスワード（再入力）があっていません。';
@@ -161,6 +162,13 @@ function validZip($str, $key) {
     global $err_msg;
     if(!preg_match("/^[0-9]+$/", $str) || mb_strlen($str) !== 7) {
         $err_msg[$key] = VALID::ZIP;
+    }
+}
+// 固定長の判定
+function validLength($str, $key, $length = 8) {
+    global $err_msg;
+    if(mb_strlen($str) !== $length) {
+        $err_msg[$key] = $length.VALID::LENGTH;
     }
 }
 // 漢字かひらがなか判定
@@ -369,4 +377,13 @@ function sendMail($from, $to, $subject, $comment){
 // サニタイズ
 function sanitize($str){
     return htmlspecialchars($str,ENT_QUOTES);
+}
+// 8桁の認証キー発行
+function makeRandomKey($length = 8) {
+    $chars = 'abcdefghijelmnopqrstuvwxyzABCDEFGHIIJELMNOPQURSTUVWXYZ1234567890';
+    $result = '';
+    for($i = 0; $i < $length; $i++) {
+        $result .= $chars[mt_rand(0, 62)];
+    }
+    return $result;
 }
