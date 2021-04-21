@@ -86,7 +86,6 @@ if(!empty($_POST)) {
     $street = (!empty($_POST['street'])) ? $_POST['street'] : '';
     $building = (!empty($_POST['building'])) ? $_POST['building'] : '';
 
-
     // バリデーションチェック
     if(!empty($screen_name)) {
         validMaxLen($screen_name, 'screen_name', 30, VALID::TEXTMAX_30);
@@ -173,7 +172,7 @@ require('head.php');
         <form method="post" class="c-form js-sp-menu-target" enctype="multipart/form-data">
             <h2 class="c-form__title">プロフィール編集</h2>
             <div class="u-err-msg">
-                
+                <?= showErrMsg('common'); ?>
             </div>
             <label class="c-form__label" for="">
                 プロフィール表示名
@@ -225,11 +224,11 @@ require('head.php');
             <label class="c-form__label" for="">
                 住所（都道府県）
                 <select name="prefecture_id" id="" class="c-form__select <?= showErrStyle('prefecture_id'); ?>">
-                        <option value="0">選択してください</option>
-                        <?php foreach($pref as $key => $val): ?>
-                            <option value="<?= $key; ?>" <?php echo (getFormData('prefecture_id') == $key) ? 'selected' : ''; ?>><?= $val; ?></option>
-                        <?php endforeach; ?>
-                    </select>
+                    <option value="0">選択してください</option>
+                    <?php foreach($pref as $key => $val): ?>
+                        <option value="<?= $key; ?>" <?php echo (getFormData('prefecture_id') == $key) ? 'selected' : ''; ?>><?= $val; ?></option>
+                    <?php endforeach; ?>
+                </select>
                 <div class="u-err-msg">
                 <?= showErrMsg('prefecture_id'); ?>
                 </div>
@@ -277,6 +276,6 @@ require('head.php');
     <!-- 共通ファイル -->
     <script src="js/app.js"></script>
     <!-- プロフィール編集画面のjsファイル -->
-    <script src="js/app_EditProf.js"></script>
+    <script src="js/app_uploadImg.js"></script>
 </body>
 </html>

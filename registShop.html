@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+    <html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>vegetable place</title>
+    </head>
+    <body>
+        <!-- ヘッダー -->
+        <header id="l-header" class="u-bgColor">
+            <div class="c-header">
+                <a class="c-header__logo u-flex">
+                    <div class="c-header__img">
+                        <img src="images/ilust1.png" alt="">
+                    </div>
+                    <h3>ノウハン</h3>
+                </a>
+                <nav class="c-header__nav js-header-nav">
+                    <ul class="c-header__list u-flex js-header-list">
+                        <li class="c-header__item">
+                            <a href="" class="c-header__text">ホーム</a>
+                        </li>
+                        <li class="c-header__item">
+                            <a href="" class="c-header__text">ログイン</a>
+                        </li>
+                        <li class="c-header__item">
+                            <a href="" class="c-header__text">ユーザー登録</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header><!-- /ヘッダー -->
+    
+        <main id="l-main">
+            <form action="post" class="c-form js-sp-menu-target">
+                <h2 class="c-form__title">店舗を登録する</h2>
+                <div class="u-err-msg">
+                    
+                </div>
+                <label class="c-form__label" for="">
+                    店舗名
+                    <input class="c-form__input" type="text" name="" value="">
+                    <div class="u-err-msg">
+                        
+                    </div>
+                </label>
+                <label class="c-form__label" for="">
+                    店の情報
+                    <input class="c-form__input" type="text" name="" value="">
+                    <div class="u-err-msg">
+                        
+                    </div>
+                </label>
+                <label class="c-form__label" for="">
+                    カテゴリー
+                    <div>
+                        <label class="u-flex" for="grain">
+                            <input class="c-form__check" type="checkbox" name="" id="grain">
+                            <p id="">米・穀物・シリアル</p>
+                        </label>
+                        <label class="u-flex" for="vegetable">
+                            <input class="c-form__check" type="checkbox" name="" id="vegetable">
+                            <p id="">野菜</p>
+                        </label>
+                        <label class="u-flex" for="fish">
+                            <input class="c-form__check" type="checkbox" name="" id="fish">
+                            <p id="">水産物</p>
+                        </label>
+                        <label class="u-flex" for="meet">
+                            <input class="c-form__check" type="checkbox" name="" id="meet">
+                            <p id="">肉・肉加工品</p>
+                        </label>
+                        <label class="u-flex" for="egg">
+                            <input class="c-form__check" type="checkbox" name="" id="egg">
+                            <p id="">卵・チーズ・乳製品</p>
+                        </label>
+                        <label class="u-flex" for="fruit">
+                            <input class="c-form__check" type="checkbox" name="" id="fruit">
+                            <p id="">果物</p>
+                        </label>
+                        <label class="u-flex" for="bean">
+                            <input class="c-form__check" type="checkbox" name="" id="bean">
+                            <p id="">豆腐・納豆・漬物</p>
+                        </label>
+                        <label class="u-flex" for="jam">
+                            <input class="c-form__check" type="checkbox" name="" id="jam">
+                            <p id="">ジャム・ハチミツ</p>
+                        </label>
+                    </div>
+                    <div class="u-err-msg">
+                        
+                    </div>
+                </label>
+                <label class="c-form__label" for="">
+                    郵便番号（ハイフンなし）
+                    <input class="c-form__input" type="text" name="">
+                    <div class="u-err-msg">
+                        
+                    </div>
+                </label>
+                <label class="c-form__label" for="">
+                    住所（都道府県）
+                    <select name="prefecture_id" id="" class="c-form__select">
+                        <option value="選択してください" >選択してください</option>
+                        <option value="1">北海道</option>
+                        <option value="2">青森県</option>
+                        <option value="3">岩手県</option>
+                        <option value="4">宮城県</option>
+                        <option value="5">秋田県</option>
+                        <option value="6">山形県</option>
+                        <option value="7">福島県</option>
+                        <option value="8">茨城県</option>
+                        <option value="9">栃木県</option>
+                        <option value="10">群馬県</option>
+                        <option value="11">埼玉県</option>
+                        <option value="12">千葉県</option>
+                        <option value="13">東京都</option>
+                        <option value="14">神奈川県</option>
+                        <option value="15">新潟県</option>
+                        <option value="16">富山県</option>
+                        <option value="17">石川県</option>
+                        <option value="18">福井県</option>
+                        <option value="19">山梨県</option>
+                        <option value="20">長野県</option>
+                        <option value="21">岐阜県</option>
+                        <option value="22">静岡県</option>
+                        <option value="23">愛知県</option>
+                        <option value="24">三重県</option>
+                        <option value="25">滋賀県</option>
+                        <option value="26">京都府</option>
+                        <option value="27">大阪府</option>
+                        <option value="28">兵庫県</option>
+                        <option value="29">奈良県</option>
+                        <option value="30">和歌山県</option>
+                        <option value="31">鳥取県</option>
+                        <option value="32">島根県</option>
+                        <option value="33">岡山県</option>
+                        <option value="34">広島県</option>
+                        <option value="35">山口県</option>
+                        <option value="36">徳島県</option>
+                        <option value="37">香川県</option>
+                        <option value="38">愛媛県</option>
+                        <option value="39">高知県</option>
+                        <option value="40">福岡県</option>
+                        <option value="41">佐賀県</option>
+                        <option value="42">長崎県</option>
+                        <option value="43">熊本県</option>
+                        <option value="44">大分県</option>
+                        <option value="45">宮崎県</option>
+                        <option value="46">鹿児島県</option>
+                        <option value="47">沖縄県</option>
+                    </select>
+                    <div class="u-err-msg">
+                        
+                    </div>
+                </label>
+                <label class="c-form__label" for="">
+                    住所（市区町村）
+                    <input class="c-form__input" type="text" name="">
+                    <div class="u-err-msg">
+                        
+                    </div>
+                </label>
+                <label class="c-form__label" for="">
+                    住所（番地）
+                    <input class="c-form__input" type="text" name="">
+                    <div class="u-err-msg">
+                        
+                    </div>
+                </label>
+                <label class="c-form__label" for="">
+                    住所（建物名）＊任意
+                    <input class="c-form__input" type="text" name="">
+                    <div class="u-err-msg">
+                        
+                    </div>
+                </label>
+                <label class="c-form__label" for="">
+                    電話番号&emsp;＊任意
+                    <input class="c-form__input" type="text" name="">
+                    <div class="u-err-msg">
+                        
+                    </div>
+                </label>
+                <label class="c-form__label" for="">
+                    お店の画像
+                    <label class="c-form__areaDrop u-margin-top-5 js-area-drop">
+                        <input type="hidden" name="MAX_FILE_SIZE" value="3145728">
+                        <input class="c-form__file js-file-input" type="file" name="">
+                        <img src="" class="c-form__img js-avatar-img" alt="">
+                        <p class="c-form__areaText">ドラッグ&ドロップ</p>
+                    </label>
+                    <div class="u-err-msg">
+                        
+                    </div>
+                </label>
+                
+                <input class="c-form__submit" type="submit" value="送信">
+            </form>
+        </main>
+        
+        <!-- フッター -->
+        <footer id="l-footer" class="js-footer">
+            <div class="c-footer">
+                <div class="c-footer__share">
+                    <p class="c-footer__text">SNSでシェアしよう</p>
+                    <ul class="c-footer__sns u-flex">
+                        <li class="c-footer__icon">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="c-footer__icon">
+                            <a href=""><i class="fab fa-facebook-square"></i></a>
+                        </li>
+                        <li class="c-footer__icon">
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="c-footer__logo">
+                    <div class="c-footer__img"><img src="./images/ilust1.png" alt=""></div>
+                    <p class="c-footer__name">農作物販売所</p>
+                </div>
+                <ul class="c-footer__info u-flex">
+                    <li class="c-footer__list">
+                        <a href="">このサイトについて</a>
+                    </li>
+                    <li class="c-footer__list">
+                        <a href="">利用規約</a>
+                    </li>
+                    <li class="c-footer__list">
+                        <a href="">プライバシーポリシー</a>
+                    </li>
+                    <li class="c-footer__list">
+                        <a href="">情報セキュリティ基本方針</a>
+                    </li>
+                    <li class="c-footer__list">
+                        <a href="">お問い合わせ</a>
+                    </li>
+                </ul>
+            </div>
+        </footer><!-- /フッター -->
+        <!-- 共通ファイル -->
+        <script src="js/app.js"></script>
+        <!-- 専用ファイル -->
+        <script src="js/app_uploadImg.js"></script>
+    </body>
+    </html>

@@ -38,8 +38,8 @@ if(!empty($_POST)) {
                 $_SESSION['email'] = $email;
                 // 認証キーの有効期限を保存
                 $_SESSION['auth_limit'] = time() + 30 * 60;
-                $recieveUrl = $_SERVER['HTTP_HOST'].'/output2/farm/remindPass/remindPassRecieve.php';
-                $sendUrl = $_SERVER['HTTP_HOST'].'/output2/farm/remindPass/remindPassSend.php';
+                $recieveUrl = $_SERVER['HTTP_HOST'].'/output2/farm/remindPassRecieve.php';
+                $sendUrl = $_SERVER['HTTP_HOST'].'/output2/farm/remindPassSend.php';
 
                 $to = $email;
                 $from = 'karinoaca3@gmail.com';
