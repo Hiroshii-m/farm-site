@@ -1,9 +1,11 @@
 <?php
 // 予想時間:3h
-// かかった時間：2h10mi
+// かかった時間：2h40mi
 
 // 共通ファイルの読み込み
 require('function.php');
+// ログイン認証ファイル読み込み
+require('auth.php');
 
 debug('==============================================');
 debug('店舗登録');
@@ -60,6 +62,9 @@ $pref = array(
     '47'=>'沖縄県'
 );
 
+// ユーザーIDを格納
+$u_id = $_SESSION['user_id'];
+
 if(!empty($_POST)) {
     $shop_name = (!empty($_POST['shop_name'])) ? $_POST['shop_name'] : '';
     $social_profile = (!empty($_POST['social_profile'])) ? $_POST['social_profile'] : '';
@@ -79,10 +84,10 @@ if(!empty($_POST)) {
         validMaxLen($social_profile, 'social_profile');
     }
     validRequired($postcode, 'postcode');
-    if(!empty($err_msg['postcode'])) {
+    if(empty($err_msg['postcode'])) {
         validZip($postcode, 'postcode');
     }
-    validRequired($prefecture_id, 'prefecture_id');
+    validRequiredSelect($prefecture_id, 'prefecture_id');
     if(is_numeric($prefecture_id)) {
         validHalfNum($prefecture_id, 'prefecture_id');
     }
@@ -97,6 +102,12 @@ if(!empty($_POST)) {
     if(!empty($building)) {
         validMaxLen($building, 'building');
     }
+    if(!empty($tel)) {
+        validMinLen($tel, 'tel', 9);
+        if(empty($err_msg['tel'])) {
+            validTel($tel, 'tel');
+        }
+    }
     // 全てエラーがなければ、ファイルをアップロードし、パスを変数へ格納
     if(empty($err_msg)) {
         // 一旦飛ばす。FILEのなかみに値が入らない。
@@ -108,9 +119,11 @@ if(!empty($_POST)) {
     if(empty($err_msg)) {
         try {
             $dbh = dbConnect();
-            $sql = 'INSERT INTO users (`shop_name`, `social_profile`, `postcode`, `prefecture_id`, `city_id`, `street`, `building`, `shop_img`) VALUES (:shop_name, :social_profile, :postcode, :prefecture_id, :city_id, :street, :building, :shop_img);';
-            $data = array(':shop_name' => $shop_name, ':social_profile' => $social_profile, ':postcode' => $postcode, ':prefecture_id' => $prefecture_id, ':city_id' => $city_id, ':street' => $street, ':building' => $building, ':shop_img' => $shop_img);
-            $stmt = queryPost($dbh, $sql, $data);
+            $sql = 'INSERT INTO shops (`user_id`, `shop_name`, `social_profile`, `postcode`, `prefecture_id`, `city_id`, `street`, `building`, `shop_img`, `create_date`) VALUES (:u_id, :shop_name, :social_profile, :postcode, :prefecture_id, :city_id, :street, :building, :shop_img, :create_date);';
+            $data = array(':u_id' => $u_id, ':shop_name' => $shop_name, ':social_profile' => $social_profile, ':postcode' => $postcode, ':prefecture_id' => $prefecture_id, ':city_id' => $city_id, ':street' => $street, ':building' => $building, ':shop_img' => $shop_img, ':create_date' => date('Y-m-d H:i:s'));
+            queryPost($dbh, $sql, $data);
+
+            header("Location:mypage.php");
         } catch ( Exception $e ) {
             error_log('エラー発生:' . $e->getMessage());
             $err_msg['common'] = MSG::UNEXPECTED;
@@ -128,7 +141,7 @@ require('head.php');
         <?php require('header.php'); ?>
     
         <main id="l-main">
-            <form action="post" class="c-form js-sp-menu-target">
+            <form method="post" class="c-form js-sp-menu-target">
                 <h2 class="c-form__title">店舗を登録する</h2>
                 <div class="u-err-msg">
                     <?= showErrMsg('common'); ?>
@@ -141,8 +154,8 @@ require('head.php');
                     </div>
                 </label>
                 <label class="c-form__label" for="">
-                    店の情報
-                    <input class="c-form__input <?= showErrStyle('social_profile'); ?>" type="text" name="social_profile" value="<?= sanitize(getFormData('social_profile')); ?>">
+                    店の情報（任意）
+                    <textarea class="c-form__textarea <?= showErrStyle('social_profile'); ?>" type="text" name="social_profile"><?= sanitize(getFormData('social_profile')); ?></textarea>
                     <div class="u-err-msg">
                         <?= showErrMsg('social_profile'); ?>
                     </div>
@@ -208,28 +221,28 @@ require('head.php');
                 </label>
                 <label class="c-form__label" for="">
                     住所（市区町村）
-                    <input class="c-form__input <?= showErrStyle('city_name'); ?>" type="text" name="city_name">
+                    <input class="c-form__input <?= showErrStyle('city_name'); ?>" type="text" name="city_name" value="<?= sanitize(getFormData('city_name')); ?>">
                     <div class="u-err-msg">
                         <?= showErrMsg('city_name'); ?>
                     </div>
                 </label>
                 <label class="c-form__label" for="">
                     住所（番地）
-                    <input class="c-form__input <?= showErrStyle('street'); ?>" type="text" name="street">
+                    <input class="c-form__input <?= showErrStyle('street'); ?>" type="text" name="street" value="<?= sanitize(getFormData('street')); ?>">
                     <div class="u-err-msg">
                         <?= showErrMsg('street'); ?>
                     </div>
                 </label>
                 <label class="c-form__label" for="">
                     住所（建物名）＊任意
-                    <input class="c-form__input <?= showErrStyle('building'); ?>" type="text" name="building">
+                    <input class="c-form__input <?= showErrStyle('building'); ?>" type="text" name="building" value="<?= sanitize(getFormData('building')); ?>">
                     <div class="u-err-msg">
                         <?= showErrMsg('building'); ?>
                     </div>
                 </label>
                 <label class="c-form__label" for="">
                     電話番号&emsp;＊任意
-                    <input class="c-form__input <?= showErrStyle('tel'); ?>" type="text" name="tel">
+                    <input class="c-form__input <?= showErrStyle('tel'); ?>" type="text" name="tel" value="<?= sanitize(getFormData('tel')); ?>">
                     <div class="u-err-msg">
                         <?= showErrMsg('tel'); ?>
                     </div>
@@ -256,6 +269,6 @@ require('head.php');
         <!-- 共通ファイル -->
         <script src="js/app.js"></script>
         <!-- 専用ファイル -->
-        <script src="js/uploadImg.js"></script>
+        <script src="js/app_uploadImg.js"></script>
     </body>
     </html>

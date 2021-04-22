@@ -116,7 +116,7 @@ require('header.php');
             </label>
 
             <input class="c-form__submit" type="submit" value="送信">
-            <a class="" href="remindPass/remindPassSend.php">パスワードお忘れですか？</a>
+            <a class="" href="remindPassSend.php">パスワードお忘れですか？</a>
         </form>
     </main>
     

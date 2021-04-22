@@ -1159,23 +1159,24 @@ i {
   display: block;
   margin: 15px 0;
 }
-.c-form__input {
+.c-form__input, .c-form__textarea, .c-form__select {
   display: block;
   border: 2px solid #D3DEF1;
   width: 100%;
-  height: 40px;
-  padding: 15px;
   margin-bottom: 5px;
   box-sizing: border-box;
 }
+.c-form__input {
+  height: 40px;
+  padding: 15px;
+}
+.c-form__textarea {
+  height: 200px;
+  padding: 5px 10px;
+}
 .c-form__select {
-  display: block;
-  border: 2px solid #D3DEF1;
-  width: 100%;
   height: 40px;
   padding-left: 15px;
-  margin-bottom: 5px;
-  box-sizing: border-box;
   cursor: pointer;
 }
 .c-form__divide2 {
@@ -1592,20 +1593,26 @@ i {
     line-height: 40px;
   }
 }
+@media screen and (max-width: 414px) {
+  .p-product__summary {
+    line-height: 25px;
+  }
+}
 .p-product__point {
   display: inline-block;
   margin-right: 5px;
-  padding: 0 10px;
+  padding: 0 5px;
   box-sizing: border-box;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .p-product__point {
-    padding: 0 5px;
+    font-size: 14px;
+    padding: 0;
   }
 }
 @media screen and (max-width: 414px) {
   .p-product__point {
-    padding: 0;
+    font-size: 12px;
   }
 }
 
@@ -1669,6 +1676,11 @@ i {
   padding: 10px 15px;
   border-radius: 20px;
   max-width: 70%;
+}
+@media screen and (max-width: 768px) {
+  .p-comment__msg {
+    font-size: 12px;
+  }
 }
 .p-comment__msgTo {
   margin-left: 20px;

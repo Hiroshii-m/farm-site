@@ -64,8 +64,9 @@ support@nouhan.jp
 EOT;
 
                 sendMail($from, $to, $subject, $comment);
-                debug($recieveUrl);
                 debug($auth_key);
+                header("Location:remindPassRecieve.php");
+                exit;
             }
 
         } catch ( Exception $e ) {
@@ -80,31 +81,31 @@ EOT;
 $headTitle = 'パスワードリマインダー送信画面';
 require('head.php');
 ?>
-    <body>
-        <!-- ヘッダー -->
-        <?php require('header.php'); ?>
-    
-        <main id="l-main">
-            <form method="post" class="c-form js-sp-menu-target">
-                <h2 class="c-form__title">パスワードリマインダー</h2>
+<body>
+    <!-- ヘッダー -->
+    <?php require('header.php'); ?>
+
+    <main id="l-main">
+        <form method="post" class="c-form js-sp-menu-target">
+            <h2 class="c-form__title">パスワードリマインダー</h2>
+            <div class="u-err-msg">
+                <?= showErrMsg('common'); ?>
+            </div>
+            <label class="c-form__label" for="">
+                メールアドレス
+                <input class="c-form__input <?= showErrStyle('email'); ?>" type="text" name="email" value="<?= sanitize(getFormData('email')); ?>">
                 <div class="u-err-msg">
-                    <?= showErrMsg('common'); ?>
+                    <?= showErrMsg('email'); ?>
                 </div>
-                <label class="c-form__label" for="">
-                    メールアドレス
-                    <input class="c-form__input <?= showErrStyle('email'); ?>" type="text" name="email" value="<?= sanitize(getFormData('email')); ?>">
-                    <div class="u-err-msg">
-                        <?= showErrMsg('email'); ?>
-                    </div>
-                </label>
-                
-                <input class="c-form__submit" type="submit" value="自分宛にメールを送信">
-            </form>
-        </main>
-        
-        <!-- フッター -->
-        <?php require('footer.php'); ?>
-        <!-- 共通ファイル -->
-        <script src="js/app.js"></script>
-    </body>
-    </html>
+            </label>
+            
+            <input class="c-form__submit" type="submit" value="自分宛にメールを送信">
+        </form>
+    </main>
+    
+    <!-- フッター -->
+    <?php require('footer.php'); ?>
+    <!-- 共通ファイル -->
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -75,7 +75,7 @@ if(!empty($_POST)) {
                     // パスワードをアップデート
                     $dbh = dbConnect();
                     $sql = 'UPDATE users SET `password` = :pass_next WHERE `id` = :u_id';
-                    $data = array(':pass_next' => $pass_next, ':u_id' => $u_id);
+                    $data = array(':pass_next' => password_hash($pass_next, PASSWORD_DEFAULT), ':u_id' => $u_id);
                     $stmt = queryPost($dbh, $sql, $data);
                 }
                 header("Location:mypage.php");

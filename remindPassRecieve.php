@@ -43,6 +43,8 @@ EOT;
                 sendMail($from, $to, $subject, $comment);
                 debug('パスワード発行');
                 debug($pass);
+                header("Location:login.php");
+                exit;
 
             } catch ( Exception $e ) {
                 error_log('エラー発生:' . $e->getMessage());

@@ -39,6 +39,7 @@ $shops = 'CREATE TABLE shops(
     `city_id` INT(3) NULL,
     `street` VARCHAR(255) NULL,
     `building` VARCHAR(255) NULL,
+    `tel` VARCHAR(15) NULL,
     `value` INT(1) NULL,
     `map_iframe` VARCHAR(255) NULL,
     `shop_img` VARCHAR(255) NULL,

@@ -52,12 +52,13 @@ class VALID {
     const REQUIRED = '入力必須です。';
     const EMAIL = 'Email形式で入力してください。';
     const EMAILDUP = 'このEmailは既に登録されています。';
-    const TEXTMIN = '6文字以上入力してください。';
+    const TEXTMIN = '文字以上入力してください。';
     const TEXTMAX = '最大文字数を超えています。';
     const TEXTMAX_30 = '30文字以内で入力してください。';
     const HALFENG = '半角英数字で入力してください。';
     const ILLEGAL = '不正な値が入りました。';
     const ZIP = '半角数字で7文字、入力してください。';
+    const TEL = '電話番号形式で入力してください。';
     const LENGTH = '文字で入力してください。';
     const KANJIHIRAGANA = '漢字またはひらがなで入力してください。';
     const KANA = 'カタカナで入力してください。';
@@ -83,6 +84,12 @@ $err_msg = array();
 function validRequired($str, $key){
     global $err_msg;
     if($str === ''){
+        $err_msg[$key] = VALID::REQUIRED;
+    }
+}
+function validRequiredSelect($str, $key) {
+    global $err_msg;
+    if($str === 0) {
         $err_msg[$key] = VALID::REQUIRED;
     }
 }
@@ -123,10 +130,10 @@ function validEmailExpired($email) {
     }
 }
 // 最小文字数以上かどうか判定
-function validMinLen($str, $key, $min = 6, $msg = VALID::TEXTMIN){
+function validMinLen($str, $key, $min = 6){
     global $err_msg;
     if(mb_strlen($str) < $min){
-        $err_msg[$key] = $msg;
+        $err_msg[$key] = $min.VALID::TEXTMIN;
     }
 }
 // 最大文字数以内かどうか判定
@@ -162,6 +169,13 @@ function validZip($str, $key) {
     global $err_msg;
     if(!preg_match("/^[0-9]+$/", $str) || mb_strlen($str) !== 7) {
         $err_msg[$key] = VALID::ZIP;
+    }
+}
+// 電話番号形式チェック
+function validTel($str, $key) {
+    global $err_msg;
+    if(!preg_match("/^[0-9]{2,4}-[0-9]{2,4}-[0-9]{3,4}$/", $str)) {
+        $err_msg[$key] = VALID::TEL;
     }
 }
 // 固定長の判定
@@ -289,6 +303,19 @@ function getUser($u_id) {
     $stmt = queryPost($dbh, $sql, $data);
     $result = $stmt->fetch(PDO::FETCH_ASSOC);
     return $result;
+}
+// 店舗を登録したかどうか
+function getRegist($u_id) {
+    $dbh = dbConnect();
+    $sql = 'SELECT `id` FROM shops WHERE `user_id` = :u_id';
+    $data = array(':u_id' => $u_id);
+    $stmt = queryPost($dbh, $sql, $data);
+    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+    if(!empty($result)) {
+        return true;
+    } else {
+        return false;
+    }
 }
 // メールアドレスだけ取得
 function getMail($u_id) {

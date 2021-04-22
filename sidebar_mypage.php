@@ -5,9 +5,15 @@
             <li class="c-sidebar__list">
                 <a href="editProf.php" class="c-sidebar__text">プロフィール編集</a>
             </li>
-            <li class="c-sidebar__list">
-                <a href="" class="c-sidebar__text">加盟店登録</a>
-            </li>
+            <?php if($regist_flg === false){ ?>
+                <li class="c-sidebar__list">
+                    <a href="registShop.php" class="c-sidebar__text">加盟店登録</a>
+                </li>
+            <?php }else{ ?>
+                <li class="c-sidebar__list">
+                    <a href="" class="c-sidebar__text">加盟店編集</a>
+                </li>
+            <?php } ?>
             <li class="c-sidebar__list">
                 <a href="" class="c-sidebar__text">商品登録</a>
             </li>

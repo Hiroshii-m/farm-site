@@ -364,23 +364,24 @@
         display: block;
         margin: $space_l 0;
     }
-    &__input {
+    &__input, &__textarea, &__select {
         display: block;
         border: 2px solid $color_accent;
         width: 100%;
-        height: 40px;
-        padding: $space_l;
         margin-bottom: $space_s;
         box-sizing: border-box;
     }
+    &__input {
+        height: 40px;
+        padding: $space_l;
+    }
+    &__textarea {
+        height: 200px;
+        padding: $space_s $space_m;
+    }
     &__select {
-        display: block;
-        border: 2px solid $color_accent;
-        width: 100%;
         height: 40px;
         padding-left: $space_l;
-        margin-bottom: $space_s;
-        box-sizing: border-box;
         cursor: pointer;
     }
     &__divide {
@@ -685,17 +686,21 @@
             height: 80px;
             line-height: 40px;
         }
+        @include mq(sm) {
+            line-height: 25px;
+        }
     }
     &__point {
         display: inline-block;
         margin-right: $space_s;
-        padding: 0 $space_m;
+        padding: 0 $space_s;
         box-sizing: border-box;
-        @include mq(md) {
-            padding: 0 $space_s;
+        @include mq(xl) {
+            font-size: $font-size_m;
+            padding: 0;
         }
         @include mq(sm) {
-            padding: 0;
+            font-size: $font-size_s;
         }
     }
 }
@@ -756,6 +761,9 @@
         padding: $space_m $space_l;
         border-radius: 20px;
         max-width: 70%;
+        @include mq(md) {
+            font-size: $font-size_s;
+        }
         &To {
             margin-left: $space_xl;
             position: relative;
