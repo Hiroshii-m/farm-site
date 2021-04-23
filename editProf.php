@@ -273,8 +273,6 @@ require('head.php');
     
     <!-- フッター -->
     <?php require('footer.php'); ?>
-    <!-- 共通ファイル -->
-    <script src="js/app.js"></script>
     <!-- プロフィール編集画面のjsファイル -->
     <script src="js/app_uploadImg.js"></script>
 </body>

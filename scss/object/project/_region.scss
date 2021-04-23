@@ -1,7 +1,7 @@
 .p-region {
     box-sizing: border-box;
-    background: url('../images/pic1.jpg');
-    padding: 50px;
+    background: $bg_color;
+    padding: 30px;
     @include mq(md) {
         padding: 10px;
     }
@@ -13,28 +13,28 @@
     }
     &__top {
         overflow: hidden;
-        margin-right: -20px;
+        margin-right: -15px;
         @include mq(sm) {
             margin-right: 0;
         }
     }
     &__bottom {
-        margin-right: -20px;
+        margin-right: -15px;
         @include mq(sm) {
             margin-right: 0;
         }
     }
     &__box {
-        width: calc(33.3% - 20px);
-        min-height: 200px;
+        width: calc(33.3% - 15px);
+        min-height: 230px;
         text-align: center;
         background: $color_base;
         box-sizing: border-box;
-        margin-right: $space_xl;
+        margin-right: $space_l;
         margin-bottom: $space_xl;
-        padding: $space_m $space_l;
+        padding: $space_m;
         @include mq(xl) {
-            padding: $space_s $space_m;
+            padding: $space_l $space_m;
         }
         @include mq(md) {
             min-height: 50px;
@@ -54,7 +54,7 @@
         margin: 10px 0 20px 0;
         font-size: $font-size_l;
         @include mq(xl) {
-            margin: 5px 0;
+            margin: 5px 0 20px 0;
         }
     }
     &__item {

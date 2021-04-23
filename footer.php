@@ -38,3 +38,5 @@
             </ul>
         </div>
     </footer><!-- /フッター -->
+    <!-- 共通ファイル -->
+    <script src="js/app.js"></script>

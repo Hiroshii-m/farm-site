@@ -2,7 +2,7 @@
     <!-- ヘッダー -->
     <header id="l-header" class="u-bgColor">
         <div class="c-header">
-            <a class="c-header__logo u-flex">
+            <a href="index.php" class="c-header__logo u-flex">
                 <div class="c-header__img">
                     <img src="images/ilust1.png" alt="">
                 </div>

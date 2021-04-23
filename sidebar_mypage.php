@@ -11,7 +11,7 @@
                 </li>
             <?php }else{ ?>
                 <li class="c-sidebar__list">
-                    <a href="" class="c-sidebar__text">加盟店編集</a>
+                    <a href="editShop.php" class="c-sidebar__text">加盟店編集</a>
                 </li>
             <?php } ?>
             <li class="c-sidebar__list">

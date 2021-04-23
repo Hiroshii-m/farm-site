@@ -3887,3 +3887,493 @@ Stack trace:
 [22-Apr-2021 20:15:52 Asia/Tokyo] デバッグ:==============================================
 [22-Apr-2021 20:15:52 Asia/Tokyo] デバッグ:マイページ画面
 [22-Apr-2021 20:15:52 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:08:41 Asia/Tokyo] デバッグ:ログイン有効期限切れです。
+[23-Apr-2021 16:08:41 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:08:41 Asia/Tokyo] デバッグ:ログイン画面
+[23-Apr-2021 16:08:41 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:08:41 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[23-Apr-2021 16:08:41 Asia/Tokyo] デバッグ:セッションID：
+[23-Apr-2021 16:08:41 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [login_date] => 1619090152
+    [login_limit] => 3600
+    [user_id] => 3
+)
+
+[23-Apr-2021 16:08:41 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1619161721
+[23-Apr-2021 16:08:41 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1619093752
+[23-Apr-2021 16:08:41 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:08:41 Asia/Tokyo] デバッグ:ログイン画面
+[23-Apr-2021 16:08:41 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:08:41 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[23-Apr-2021 16:08:41 Asia/Tokyo] デバッグ:セッションID：jmpvr9d0m5f0359dv0f9sem143
+[23-Apr-2021 16:08:41 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[23-Apr-2021 16:08:41 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1619161721
+[23-Apr-2021 16:08:42 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:08:42 Asia/Tokyo] デバッグ:ログイン画面
+[23-Apr-2021 16:08:42 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:08:42 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[23-Apr-2021 16:08:42 Asia/Tokyo] デバッグ:セッションID：ef529a58sabigruqj4l3a31sk7
+[23-Apr-2021 16:08:42 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[23-Apr-2021 16:08:42 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1619161722
+[23-Apr-2021 16:08:47 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:08:47 Asia/Tokyo] デバッグ:ログイン画面
+[23-Apr-2021 16:08:47 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:08:47 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[23-Apr-2021 16:08:47 Asia/Tokyo] デバッグ:セッションID：nkavgublvs2h3dmrkspinkrg6o
+[23-Apr-2021 16:08:47 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[23-Apr-2021 16:08:47 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1619161727
+[23-Apr-2021 16:08:47 Asia/Tokyo] デバッグ:POSTされました。
+[23-Apr-2021 16:08:47 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 16:08:47 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 16:08:48 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[23-Apr-2021 16:08:48 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:08:48 Asia/Tokyo] デバッグ:マイページ画面
+[23-Apr-2021 16:08:48 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:08:48 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 16:08:56 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[23-Apr-2021 16:08:56 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:08:56 Asia/Tokyo] デバッグ:店舗編集
+[23-Apr-2021 16:08:56 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:08:56 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 16:16:13 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[23-Apr-2021 16:16:13 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:16:13 Asia/Tokyo] デバッグ:店舗編集
+[23-Apr-2021 16:16:13 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:16:13 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 16:19:53 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[23-Apr-2021 16:19:53 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:19:53 Asia/Tokyo] デバッグ:店舗編集
+[23-Apr-2021 16:19:53 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:19:53 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 16:19:53 Asia/Tokyo] PHP Notice:  Undefined variable: city_id in /Applications/MAMP/htdocs/output2/farm/editShop.php on line 72
+[23-Apr-2021 16:19:53 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 16:19:54 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[23-Apr-2021 16:19:54 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:19:54 Asia/Tokyo] デバッグ:店舗編集
+[23-Apr-2021 16:19:54 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:19:54 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 16:19:54 Asia/Tokyo] PHP Notice:  Undefined variable: city_id in /Applications/MAMP/htdocs/output2/farm/editShop.php on line 72
+[23-Apr-2021 16:19:54 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 16:20:45 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[23-Apr-2021 16:20:45 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:20:45 Asia/Tokyo] デバッグ:店舗編集
+[23-Apr-2021 16:20:45 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:20:46 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 16:20:46 Asia/Tokyo] PHP Notice:  Undefined variable: city_id in /Applications/MAMP/htdocs/output2/farm/editShop.php on line 72
+[23-Apr-2021 16:20:46 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 16:20:47 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[23-Apr-2021 16:20:47 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:20:47 Asia/Tokyo] デバッグ:マイページ画面
+[23-Apr-2021 16:20:47 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:20:47 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 16:20:49 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[23-Apr-2021 16:20:49 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:20:49 Asia/Tokyo] デバッグ:店舗編集
+[23-Apr-2021 16:20:49 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:20:49 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 16:20:49 Asia/Tokyo] PHP Notice:  Undefined variable: city_id in /Applications/MAMP/htdocs/output2/farm/editShop.php on line 72
+[23-Apr-2021 16:20:49 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 16:21:16 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[23-Apr-2021 16:21:16 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:21:16 Asia/Tokyo] デバッグ:店舗編集
+[23-Apr-2021 16:21:16 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:21:16 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 16:21:16 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 16:21:40 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[23-Apr-2021 16:21:40 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:21:40 Asia/Tokyo] デバッグ:マイページ画面
+[23-Apr-2021 16:21:40 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:21:40 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 16:21:42 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[23-Apr-2021 16:21:42 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:21:42 Asia/Tokyo] デバッグ:店舗編集
+[23-Apr-2021 16:21:42 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:21:42 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 16:21:42 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 16:22:30 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[23-Apr-2021 16:22:30 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:22:30 Asia/Tokyo] デバッグ:店舗編集
+[23-Apr-2021 16:22:30 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:22:30 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 16:22:30 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 16:22:30 Asia/Tokyo] デバッグ:Array
+(
+    [id] => 1
+    [shop_name] => 屯田スクラム
+    [social_profile] => 化学肥料は一切なし。動物系、植物系の肥料をふんだんに使って自然に優しく。土にこだわっている。
+1. ふかふかの土
+有機肥料がたっぷり入った特製の柔らかな土。アスパラガスは土の中のミネラルで甘みやコクがあるアスパラガスに仕上がります。
+2. 美しい自然と水
+眞鍋牧場は山々に囲まれた高台にあり、清らかな地下水に恵まれている環境です。
+    [postcode] => 0020855
+    [prefecture_id] => 1
+    [city_id] => 2
+    [street] => 屯田５条１１丁目２−６
+    [building] => 
+    [tel] => 
+    [shop_img] => 
+)
+
+[23-Apr-2021 16:23:16 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[23-Apr-2021 16:23:16 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:23:16 Asia/Tokyo] デバッグ:店舗編集
+[23-Apr-2021 16:23:16 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:23:16 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 16:23:16 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 16:23:16 Asia/Tokyo] デバッグ:札幌市北区
+[23-Apr-2021 16:23:18 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[23-Apr-2021 16:23:18 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:23:18 Asia/Tokyo] デバッグ:店舗編集
+[23-Apr-2021 16:23:18 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:23:18 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 16:23:18 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 16:23:18 Asia/Tokyo] デバッグ:札幌市北区
+[23-Apr-2021 16:24:04 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[23-Apr-2021 16:24:04 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:24:04 Asia/Tokyo] デバッグ:店舗編集
+[23-Apr-2021 16:24:04 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:24:04 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 16:24:04 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 16:24:04 Asia/Tokyo] デバッグ:札幌市北区
+[23-Apr-2021 16:25:48 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[23-Apr-2021 16:25:48 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:25:48 Asia/Tokyo] デバッグ:店舗編集
+[23-Apr-2021 16:25:48 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:25:48 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 16:25:48 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 16:25:48 Asia/Tokyo] デバッグ:Array
+(
+    [id] => 1
+    [shop_name] => 屯田スクラム
+    [social_profile] => 化学肥料は一切なし。動物系、植物系の肥料をふんだんに使って自然に優しく。土にこだわっている。
+1. ふかふかの土
+有機肥料がたっぷり入った特製の柔らかな土。アスパラガスは土の中のミネラルで甘みやコクがあるアスパラガスに仕上がります。
+2. 美しい自然と水
+眞鍋牧場は山々に囲まれた高台にあり、清らかな地下水に恵まれている環境です。
+    [postcode] => 0020855
+    [prefecture_id] => 1
+    [city_id] => 2
+    [street] => 屯田５条１１丁目２−６
+    [building] => 
+    [tel] => 
+    [shop_img] => 
+    [city_name] => 札幌市北区
+)
+
+[23-Apr-2021 16:26:11 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[23-Apr-2021 16:26:11 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:26:11 Asia/Tokyo] デバッグ:店舗編集
+[23-Apr-2021 16:26:11 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:26:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 16:26:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 16:26:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 16:26:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 16:26:11 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[23-Apr-2021 16:26:11 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:26:11 Asia/Tokyo] デバッグ:マイページ画面
+[23-Apr-2021 16:26:11 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 16:26:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 19:37:56 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 19:37:56 Asia/Tokyo] デバッグ:TOP画面
+[23-Apr-2021 19:37:56 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 19:37:56 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 19:37:56 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 19:37:56 Asia/Tokyo] デバッグ:1
+[23-Apr-2021 19:37:56 Asia/Tokyo] PHP Warning:  Illegal string offset 'shop_name' in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[23-Apr-2021 19:37:56 Asia/Tokyo] PHP Warning:  Illegal string offset 'shop_name' in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[23-Apr-2021 19:37:56 Asia/Tokyo] PHP Warning:  Illegal string offset 'shop_name' in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[23-Apr-2021 19:37:56 Asia/Tokyo] PHP Warning:  Illegal string offset 'shop_name' in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[23-Apr-2021 19:37:56 Asia/Tokyo] PHP Warning:  Illegal string offset 'shop_name' in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[23-Apr-2021 19:37:56 Asia/Tokyo] PHP Warning:  Illegal string offset 'shop_name' in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[23-Apr-2021 19:37:56 Asia/Tokyo] PHP Warning:  Illegal string offset 'shop_name' in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[23-Apr-2021 19:37:56 Asia/Tokyo] PHP Warning:  Illegal string offset 'shop_name' in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[23-Apr-2021 19:37:56 Asia/Tokyo] PHP Warning:  Illegal string offset 'shop_name' in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[23-Apr-2021 19:37:56 Asia/Tokyo] PHP Notice:  Uninitialized string offset: 0 in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[23-Apr-2021 19:37:56 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[23-Apr-2021 19:37:56 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[23-Apr-2021 19:37:56 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[23-Apr-2021 19:37:56 Asia/Tokyo] PHP Warning:  Illegal string offset 'shop_name' in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[23-Apr-2021 19:37:56 Asia/Tokyo] PHP Notice:  Uninitialized string offset: 0 in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[23-Apr-2021 19:37:56 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[23-Apr-2021 19:37:56 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[23-Apr-2021 19:37:56 Asia/Tokyo] PHP Warning:  Illegal string offset 'shop_name' in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[23-Apr-2021 19:37:56 Asia/Tokyo] PHP Warning:  Illegal string offset 'shop_name' in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[23-Apr-2021 19:37:56 Asia/Tokyo] PHP Warning:  Illegal string offset 'shop_name' in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[23-Apr-2021 19:38:48 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 19:38:48 Asia/Tokyo] デバッグ:TOP画面
+[23-Apr-2021 19:38:48 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 19:38:48 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 19:38:48 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 19:38:48 Asia/Tokyo] デバッグ:Array
+(
+    [id] => 1
+    [user_id] => 3
+    [shop_name] => 屯田スクラム
+    [social_profile] => 化学肥料は一切なし。動物系、植物系の肥料をふんだんに使って自然に優しく。土にこだわっている。
+1. ふかふかの土
+有機肥料がたっぷり入った特製の柔らかな土。アスパラガスは土の中のミネラルで甘みやコクがあるアスパラガスに仕上がります。
+2. 美しい自然と水
+眞鍋牧場は山々に囲まれた高台にあり、清らかな地下水に恵まれている環境です。
+    [postcode] => 0020855
+    [prefecture_id] => 1
+    [city_id] => 2
+    [street] => 屯田５条１１丁目２−６
+    [building] => 
+    [tel] => 
+    [value] => 
+    [map_iframe] => 
+    [shop_img] => 
+    [browsing_num] => 
+    [favorites] => 
+    [delete_flg] => 0
+    [create_date] => 2021-04-23
+    [update_date] => 2021-04-23 16:26:11
+)
+
+[23-Apr-2021 19:38:48 Asia/Tokyo] PHP Warning:  Illegal string offset 'shop_name' in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[23-Apr-2021 19:38:48 Asia/Tokyo] PHP Warning:  Illegal string offset 'shop_name' in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[23-Apr-2021 19:38:48 Asia/Tokyo] PHP Warning:  Illegal string offset 'shop_name' in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[23-Apr-2021 19:38:48 Asia/Tokyo] PHP Warning:  Illegal string offset 'shop_name' in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[23-Apr-2021 19:38:48 Asia/Tokyo] PHP Warning:  Illegal string offset 'shop_name' in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[23-Apr-2021 19:38:48 Asia/Tokyo] PHP Warning:  Illegal string offset 'shop_name' in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[23-Apr-2021 19:38:48 Asia/Tokyo] PHP Warning:  Illegal string offset 'shop_name' in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[23-Apr-2021 19:38:48 Asia/Tokyo] PHP Warning:  Illegal string offset 'shop_name' in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[23-Apr-2021 19:38:48 Asia/Tokyo] PHP Warning:  Illegal string offset 'shop_name' in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[23-Apr-2021 19:38:48 Asia/Tokyo] PHP Notice:  Uninitialized string offset: 0 in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[23-Apr-2021 19:38:48 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[23-Apr-2021 19:38:48 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[23-Apr-2021 19:38:48 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[23-Apr-2021 19:38:48 Asia/Tokyo] PHP Warning:  Illegal string offset 'shop_name' in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[23-Apr-2021 19:38:48 Asia/Tokyo] PHP Notice:  Uninitialized string offset: 0 in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[23-Apr-2021 19:38:48 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[23-Apr-2021 19:38:48 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[23-Apr-2021 19:38:48 Asia/Tokyo] PHP Warning:  Illegal string offset 'shop_name' in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[23-Apr-2021 19:38:48 Asia/Tokyo] PHP Warning:  Illegal string offset 'shop_name' in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[23-Apr-2021 19:38:48 Asia/Tokyo] PHP Warning:  Illegal string offset 'shop_name' in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[23-Apr-2021 19:39:37 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 19:39:37 Asia/Tokyo] デバッグ:TOP画面
+[23-Apr-2021 19:39:37 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 19:39:37 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 19:39:37 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 19:39:37 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [user_id] => 3
+            [shop_name] => 屯田スクラム
+            [social_profile] => 化学肥料は一切なし。動物系、植物系の肥料をふんだんに使って自然に優しく。土にこだわっている。
+1. ふかふかの土
+有機肥料がたっぷり入った特製の柔らかな土。アスパラガスは土の中のミネラルで甘みやコクがあるアスパラガスに仕上がります。
+2. 美しい自然と水
+眞鍋牧場は山々に囲まれた高台にあり、清らかな地下水に恵まれている環境です。
+            [postcode] => 0020855
+            [prefecture_id] => 1
+            [city_id] => 2
+            [street] => 屯田５条１１丁目２−６
+            [building] => 
+            [tel] => 
+            [value] => 
+            [map_iframe] => 
+            [shop_img] => 
+            [browsing_num] => 
+            [favorites] => 
+            [delete_flg] => 0
+            [create_date] => 2021-04-23
+            [update_date] => 2021-04-23 16:26:11
+        )
+
+)
+
+[23-Apr-2021 19:41:58 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 19:41:58 Asia/Tokyo] デバッグ:TOP画面
+[23-Apr-2021 19:41:58 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 19:41:58 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 19:41:58 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 19:43:54 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 19:43:54 Asia/Tokyo] デバッグ:TOP画面
+[23-Apr-2021 19:43:54 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 19:43:54 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 19:43:54 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 19:43:59 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 19:43:59 Asia/Tokyo] デバッグ:TOP画面
+[23-Apr-2021 19:43:59 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 19:43:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 19:43:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 19:44:02 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 19:44:02 Asia/Tokyo] デバッグ:TOP画面
+[23-Apr-2021 19:44:02 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 19:44:02 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 19:44:02 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 19:44:14 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 19:44:14 Asia/Tokyo] デバッグ:TOP画面
+[23-Apr-2021 19:44:14 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 19:44:14 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 19:44:14 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 19:45:01 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 19:45:01 Asia/Tokyo] デバッグ:TOP画面
+[23-Apr-2021 19:45:01 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 19:45:01 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 19:45:01 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 20:08:16 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 20:08:16 Asia/Tokyo] デバッグ:TOP画面
+[23-Apr-2021 20:08:16 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 20:08:16 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 20:08:16 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 20:08:16 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 20:08:26 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 20:08:26 Asia/Tokyo] デバッグ:TOP画面
+[23-Apr-2021 20:08:26 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 20:08:26 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 20:08:26 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 20:08:26 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 20:09:11 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 20:09:11 Asia/Tokyo] デバッグ:TOP画面
+[23-Apr-2021 20:09:11 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 20:09:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 20:09:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 20:09:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 20:09:13 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 20:09:13 Asia/Tokyo] デバッグ:TOP画面
+[23-Apr-2021 20:09:13 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 20:09:13 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 20:09:13 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 20:09:13 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 20:10:21 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 20:10:21 Asia/Tokyo] デバッグ:TOP画面
+[23-Apr-2021 20:10:21 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 20:10:21 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 20:10:21 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 20:10:21 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 20:10:27 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 20:10:27 Asia/Tokyo] デバッグ:TOP画面
+[23-Apr-2021 20:10:27 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 20:10:27 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 20:10:27 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 20:10:27 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 20:12:30 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 20:12:30 Asia/Tokyo] デバッグ:TOP画面
+[23-Apr-2021 20:12:30 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 20:12:30 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 20:12:30 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 20:12:30 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [user_id] => 3
+            [shop_name] => 屯田スクラム
+            [social_profile] => 化学肥料は一切なし。動物系、植物系の肥料をふんだんに使って自然に優しく。土にこだわっている。
+1. ふかふかの土
+有機肥料がたっぷり入った特製の柔らかな土。アスパラガスは土の中のミネラルで甘みやコクがあるアスパラガスに仕上がります。
+2. 美しい自然と水
+眞鍋牧場は山々に囲まれた高台にあり、清らかな地下水に恵まれている環境です。
+            [postcode] => 0020855
+            [prefecture_id] => 1
+            [city_id] => 2
+            [street] => 屯田５条１１丁目２−６
+            [building] => 
+            [tel] => 
+            [value] => 
+            [map_iframe] => 
+            [shop_img] => 
+            [browsing_num] => 
+            [favorites] => 
+            [delete_flg] => 0
+            [create_date] => 2021-04-23
+            [update_date] => 2021-04-23 16:26:11
+        )
+
+)
+
+[23-Apr-2021 20:12:30 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 20:13:47 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 20:13:47 Asia/Tokyo] デバッグ:TOP画面
+[23-Apr-2021 20:13:47 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 20:13:47 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 20:13:47 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 20:13:47 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 20:13:47 Asia/Tokyo] デバッグ:
+[23-Apr-2021 20:16:16 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 20:16:16 Asia/Tokyo] デバッグ:TOP画面
+[23-Apr-2021 20:16:16 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 20:16:16 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 20:16:16 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 20:16:16 Asia/Tokyo] デバッグ:クエリ成功しました。
+[23-Apr-2021 21:27:50 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 21:27:50 Asia/Tokyo] デバッグ:TOP画面
+[23-Apr-2021 21:27:50 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 21:27:50 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /Applications/MAMP/htdocs/output2/farm/function.php:305
+Stack trace:
+#0 /Applications/MAMP/htdocs/output2/farm/function.php(305): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/output2/farm/function.php(350): queryPost(Object(PDO), 'SELECT `s.shop_...', Array)
+#2 /Applications/MAMP/htdocs/output2/farm/index.php(75): getShopList()
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/output2/farm/function.php on line 305
+[23-Apr-2021 21:28:41 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 21:28:41 Asia/Tokyo] デバッグ:TOP画面
+[23-Apr-2021 21:28:41 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 21:28:41 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /Applications/MAMP/htdocs/output2/farm/function.php:305
+Stack trace:
+#0 /Applications/MAMP/htdocs/output2/farm/function.php(305): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/output2/farm/function.php(350): queryPost(Object(PDO), 'SELECT s.shop_n...', Array)
+#2 /Applications/MAMP/htdocs/output2/farm/index.php(75): getShopList()
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/output2/farm/function.php on line 305
+[23-Apr-2021 21:29:49 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 21:29:49 Asia/Tokyo] デバッグ:TOP画面
+[23-Apr-2021 21:29:49 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 21:29:49 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /Applications/MAMP/htdocs/output2/farm/function.php:305
+Stack trace:
+#0 /Applications/MAMP/htdocs/output2/farm/function.php(305): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/output2/farm/function.php(350): queryPost(Object(PDO), 'SELECT * FROM s...', Array)
+#2 /Applications/MAMP/htdocs/output2/farm/index.php(75): getShopList()
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/output2/farm/function.php on line 305
+[23-Apr-2021 21:32:56 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 21:32:56 Asia/Tokyo] デバッグ:TOP画面
+[23-Apr-2021 21:32:56 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 21:32:56 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 's.shop_name' in 'field list' in /Applications/MAMP/htdocs/output2/farm/function.php:305
+Stack trace:
+#0 /Applications/MAMP/htdocs/output2/farm/function.php(305): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/output2/farm/function.php(350): queryPost(Object(PDO), 'SELECT `s.shop_...', Array)
+#2 /Applications/MAMP/htdocs/output2/farm/index.php(75): getShopList()
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/output2/farm/function.php on line 305
+[23-Apr-2021 21:33:16 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 21:33:16 Asia/Tokyo] デバッグ:TOP画面
+[23-Apr-2021 21:33:16 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 21:33:16 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 's.shop_name' in 'field list' in /Applications/MAMP/htdocs/output2/farm/function.php:305
+Stack trace:
+#0 /Applications/MAMP/htdocs/output2/farm/function.php(305): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/output2/farm/function.php(350): queryPost(Object(PDO), 'SELECT `s.shop_...', Array)
+#2 /Applications/MAMP/htdocs/output2/farm/index.php(75): getShopList()
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/output2/farm/function.php on line 305
+[23-Apr-2021 21:33:17 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 21:33:17 Asia/Tokyo] デバッグ:TOP画面
+[23-Apr-2021 21:33:17 Asia/Tokyo] デバッグ:==============================================
+[23-Apr-2021 21:33:17 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 's.shop_name' in 'field list' in /Applications/MAMP/htdocs/output2/farm/function.php:305
+Stack trace:
+#0 /Applications/MAMP/htdocs/output2/farm/function.php(305): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/output2/farm/function.php(350): queryPost(Object(PDO), 'SELECT `s.shop_...', Array)
+#2 /Applications/MAMP/htdocs/output2/farm/index.php(75): getShopList()
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/output2/farm/function.php on line 305
+[23-Apr-2021 21:33:35 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 's.shop_name' in 'field list' in /Applications/MAMP/htdocs/output2/farm/function.php:305
+Stack trace:
+#0 /Applications/MAMP/htdocs/output2/farm/function.php(305): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/output2/farm/function.php(350): queryPost(Object(PDO), 'SELECT `s.shop_...', Array)
+#2 /Applications/MAMP/htdocs/output2/farm/index.php(75): getShopList()
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/output2/farm/function.php on line 305

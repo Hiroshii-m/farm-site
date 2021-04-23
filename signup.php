@@ -108,7 +108,5 @@ require('header.php');
 <?php
 require('footer.php');
 ?>
-<!-- 共通jsファイル -->
-<script src="js/app.js"></script>
 </body>
 </html>

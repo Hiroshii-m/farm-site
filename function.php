@@ -36,7 +36,7 @@ function debugLogStart(){
 // ================================================
 // デバッグ
 // ================================================
-$debug_flg = true;
+$debug_flg = false;
 function debug($str) {
     global $debug_flg;
     if(!empty($debug_flg)){
@@ -259,6 +259,22 @@ function getFormData($str, $flg = false){
         }
     }
 }
+// 値を表示
+function showData($str) {
+    if(!empty($str)) {
+        return $str;
+    }else{
+        return '';
+    }
+}
+// 画像を表示
+function showImg($src) {
+    if(!empty($src)) {
+        return $src;
+    } else {
+        return 'images/pic8.jpeg';
+    }
+}
 // データベース
 // ************************************************
 function dbConnect(){
@@ -316,6 +332,24 @@ function getRegist($u_id) {
     } else {
         return false;
     }
+}
+// 登録した店舗情報を取得
+function getShop($u_id) {
+    $dbh = dbConnect();
+    $sql = 'SELECT `id`, `shop_name`, `social_profile`, `postcode`, `prefecture_id`, `city_id`, `street`, `building`, `tel`, `shop_img` FROM shops WHERE `user_id` = :u_id';
+    $data = array(':u_id' => $u_id);
+    $stmt = queryPost($dbh, $sql, $data);
+    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+    return $result;
+}
+// 複数の店舗を取得
+function getShopList() {
+    $dbh = dbConnect();
+    $sql = 'SELECT s.`shop_name`, s.`social_profile`, s.`shop_img`, u.`screen_name` FROM shops AS s LEFT JOIN users AS u ON s.user_id = u.id';
+    $data = array();
+    $stmt = queryPost($dbh, $sql, $data);
+    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+    return $result;
 }
 // メールアドレスだけ取得
 function getMail($u_id) {

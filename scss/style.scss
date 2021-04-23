@@ -17,9 +17,9 @@
 @import "layout/sidebar";
 @import "layout/footer";
 #l-search {
-    padding: 100px 0 80px 0;
+    padding: 0 0 80px 0;
     @include mq(sm) {
-        padding: 50px 0;
+        padding: 0 0 50px 0;
     }
 }
 #l-shopList {
@@ -155,6 +155,8 @@
         }
     }
     &__detail {
+        max-height: 100px;
+        overflow: hidden;
         margin-top: 40px;
         @include mq(ms) {
             font-size: $font-size_s;
@@ -440,6 +442,15 @@
         &:hover {
             opacity: .6;
         }
+    }
+}
+.c-pankuzu {
+    padding-top: 80px;
+    @include mq(md) {
+        padding-top: 40px;
+    }
+    @include mq(sm) {
+        padding-top: 20px;
     }
 }
 // Project

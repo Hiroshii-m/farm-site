@@ -153,9 +153,7 @@ require('head.php');
     </div>
     <!-- フッター -->
     <?php require('footer.php'); ?>
-    <!-- 共通ファイル -->
-    <script src="js/app.js"></script>
     <!-- 個別のjsファイル -->
-    <script src="js/app_mypage.js"></script>
+    <script src="js/app_icon.js"></script>
 </body>
 </html>

@@ -574,7 +574,7 @@ i {
 }
 
 #l-region {
-  padding: 80px 0;
+  padding: 0 0 80px 0;
 }
 @media screen and (max-width: 768px) {
   #l-region {
@@ -603,11 +603,11 @@ i {
 }
 
 #l-search {
-  padding: 100px 0 80px 0;
+  padding: 0 0 80px 0;
 }
 @media screen and (max-width: 414px) {
   #l-search {
-    padding: 50px 0;
+    padding: 0 0 50px 0;
   }
 }
 
@@ -906,6 +906,8 @@ i {
   }
 }
 .c-submission__detail {
+  max-height: 100px;
+  overflow: hidden;
   margin-top: 40px;
 }
 @media screen and (max-width: 600px) {
@@ -1235,10 +1237,24 @@ i {
   opacity: 0.6;
 }
 
+.c-pankuzu {
+  padding-top: 80px;
+}
+@media screen and (max-width: 768px) {
+  .c-pankuzu {
+    padding-top: 40px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .c-pankuzu {
+    padding-top: 20px;
+  }
+}
+
 .p-region {
   box-sizing: border-box;
-  background: url("../images/pic1.jpg");
-  padding: 50px;
+  background: #4e89ee;
+  padding: 30px;
 }
 @media screen and (max-width: 768px) {
   .p-region {
@@ -1253,7 +1269,7 @@ i {
 }
 .p-region__top {
   overflow: hidden;
-  margin-right: -20px;
+  margin-right: -15px;
 }
 @media screen and (max-width: 414px) {
   .p-region__top {
@@ -1261,7 +1277,7 @@ i {
   }
 }
 .p-region__bottom {
-  margin-right: -20px;
+  margin-right: -15px;
 }
 @media screen and (max-width: 414px) {
   .p-region__bottom {
@@ -1269,18 +1285,18 @@ i {
   }
 }
 .p-region__box {
-  width: calc(33.3% - 20px);
-  min-height: 200px;
+  width: calc(33.3% - 15px);
+  min-height: 230px;
   text-align: center;
   background: #fff;
   box-sizing: border-box;
-  margin-right: 20px;
+  margin-right: 15px;
   margin-bottom: 20px;
-  padding: 10px 15px;
+  padding: 10px;
 }
 @media screen and (max-width: 1200px) {
   .p-region__box {
-    padding: 5px 10px;
+    padding: 15px 10px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1308,7 +1324,7 @@ i {
 }
 @media screen and (max-width: 1200px) {
   .p-region__block {
-    margin: 5px 0;
+    margin: 5px 0 20px 0;
   }
 }
 .p-region__item {
