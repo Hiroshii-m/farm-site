@@ -1,4 +1,23 @@
 <?php
+// 予想時間:8h
+// かかった時間：2h
+// できれば、google map自動生成をしたい。もし、自動生成でずれていたら、自分で修正できるようにiframeをいれてもらう。
+
+// 共通ファイルの読み込み
+require('function.php');
+
+debug('==============================================');
+debug('店舗詳細画面');
+debug('==============================================');
+
+// 店舗idを格納
+$s_id = (!empty($_GET['s_id'])) ? $_GET['s_id'] : '';
+// 店舗情報を取得
+$dbFormData = (!empty($s_id)) ? getShopOne($s_id) : '';
+
+?>
+
+<?php
 $headTitle = '店舗詳細ページ';
 require('head.php');
 ?>
@@ -6,7 +25,7 @@ require('head.php');
     <!-- ヘッダー -->
     <?php require('header.php'); ?>
 
-    <main id="l-main" class="u-bgColor js-header-target">
+    <main id="l-main" class="u-bgColor js-sp-menu-target">
         <div class="c-main">
             <!-- 記事 -->
             <section id="l-article" class="">
@@ -30,19 +49,19 @@ require('head.php');
                         </div>
                         <div class="p-article__inner">
                             <div class="p-article__head u-flex-between">
-                                <h2 class="p-article__shopName">お店の名前</h2>
+                                <h2 class="p-article__shopName"><?= sanitize(getFormData('shop_name')); ?></h2>
                                 <div class="u-flex">
                                     <i class="far fa-heart p-article__icon"></i>
                                 </div>
                             </div>
                             <div class="p-article__images">
                                 <div class="p-article__caption">
-                                    <img src="images/pic2.jpeg" alt="">
+                                    <img src="<?= sanitize(showImg(getFormData('shop_img1'))); ?>" alt="">
                                 </div>
                                 <div class="p-article__thumnails">
-                                    <div class="p-article__img"><img src="images/pic2.jpeg" alt=""></div>
-                                    <div class="p-article__img"><img src="images/pic4.jpg" alt=""></div>
-                                    <div class="p-article__img"><img src="images/pic5.jpg" alt=""></div>
+                                    <div class="p-article__img"><img src="<?= sanitize(showImg(getFormData('shop_img1'))); ?>" alt=""></div>
+                                    <div class="p-article__img"><img src="<?= sanitize(showImg(getFormData('shop_img2'))); ?>" alt=""></div>
+                                    <div class="p-article__img"><img src="<?= sanitize(showImg(getFormData('shop_img3'))); ?>" alt=""></div>
                                 </div>
                             </div>
                             
@@ -50,7 +69,7 @@ require('head.php');
                             <section id="" class="p-article__body">
                                 <div class="p-article__menu">
                                     <div class="p-article__tab">
-                                        <input id="products" class="p-article__input u-display-none js-menu-product js-menu" type="radio" name="tab-item" value="" >
+                                        <input id="products" class="p-article__input u-display-none js-menu-product js-menu" type="radio" name="tab-item" value="" checked>
                                         <label class="p-article__label" for="products">商品情報</label>
                                     </div>
                                     <div class="p-article__tab">
@@ -66,7 +85,7 @@ require('head.php');
                                         <label class="p-article__label" for="access">アクセス</label>
                                     </div>
                                     <div class="p-article__tab">
-                                        <input id="comment" class="p-article__input u-display-none js-menu-comment js-menu" type="radio" name="tab-item" value="" checked>
+                                        <input id="comment" class="p-article__input u-display-none js-menu-comment js-menu" type="radio" name="tab-item" value="">
                                         <label class="p-article__label" for="comment">コメント</label>
                                     </div>
                                 </div>
@@ -77,23 +96,47 @@ require('head.php');
                                         <ul class="p-product">
                                             <p>＜穀物＞</p>
                                             <li class="p-product__list">
-                                                <details>
+                                                <details open>
                                                     <summary class="p-product__summary">
-                                                        <span class="p-product__point ">【<i class="fas fa-shopping-bag u-padding-1"></i>商品名】</span>米
+                                                        <span class="p-product__point ">【<i class="fas fa-shopping-bag u-padding-1"></i>商品名】</span>聖護院青長節成キュウリ
                                                         <span class="p-product__point ">【<i class="fas fa-yen-sign u-padding-1"></i>値段】</span>500円
-                                                        <span class="p-product__point ">【<i class="fas fa-balance-scale u-padding-1"></i>数量】</span>1kg
+                                                        <span class="p-product__point ">【<i class="fas fa-balance-scale u-padding-1"></i>数量・質量】</span>10本
                                                     </summary>
-                                                    詳細じゃよ詳細じゃよ詳細じゃよ詳細じゃよ詳細じゃよ詳細じゃよ詳細じゃよ詳細じゃよ詳細じゃよ詳細じゃよ詳細じゃよ
+                                                    <div class="p-product__info u-flex">
+                                                        <div class="p-product__img">
+                                                            <img src="images/pic3.jpeg" alt="">
+                                                        </div>
+                                                        <div class="p-product__explain">
+                                                            <p class="u-font-weight-bold">＜カテゴリ＞</p>
+                                                            <p>野菜</p>
+                                                            <p class="u-font-weight-bold">＜収穫時期・販売時期＞</p>
+                                                            <p>4月〜7月</p>
+                                                            <p class="u-font-weight-bold">＜説明＞</p>
+                                                            <p>無農薬</p>
+                                                        </div>
+                                                    </div>
                                                 </details>
                                             </li>
                                             <li class="p-product__list">
-                                                <details>
+                                                <details open>
                                                     <summary class="p-product__summary">
-                                                        <span class="p-product__point ">【<i class="fas fa-shopping-bag u-padding-1"></i>商品名】</span>米
+                                                        <span class="p-product__point ">【<i class="fas fa-shopping-bag u-padding-1"></i>商品名】</span>聖護院青長節成キュウリ
                                                         <span class="p-product__point ">【<i class="fas fa-yen-sign u-padding-1"></i>値段】</span>500円
-                                                        <span class="p-product__point ">【<i class="fas fa-balance-scale u-padding-1"></i>数量】</span>1kg
+                                                        <span class="p-product__point ">【<i class="fas fa-balance-scale u-padding-1"></i>数量・質量】</span>10本
                                                     </summary>
-                                                    詳細じゃよ詳細じゃよ詳細じゃよ詳細じゃよ詳細じゃよ詳細じゃよ詳細じゃよ詳細じゃよ詳細じゃよ詳細じゃよ詳細じゃよ
+                                                    <div class="p-product__info u-flex">
+                                                        <div class="p-product__img">
+                                                            <img src="images/pic3.jpeg" alt="">
+                                                        </div>
+                                                        <div class="p-product__explain">
+                                                            <p>＜カテゴリ＞</p>
+                                                            <p>野菜</p>
+                                                            <p>＜収穫時期・販売時期＞</p>
+                                                            <p>4月〜7月</p>
+                                                            <p>＜説明＞</p>
+                                                            <p>無農薬</p>
+                                                        </div>
+                                                    </div>
                                                 </details>
                                             </li>
                                         </ul>
@@ -101,7 +144,10 @@ require('head.php');
                                     <!-- 店舗情報 -->
                                     <section id="l-explain" class="u-display-none js-article-explain">
                                         <div class="p-explain">
-                                            <div class="">このお店は、無農薬を徹底した育成です。このお店は、無農薬を徹底した育成です。このお店は、無農薬を徹底した育成です。このお店は、無農薬を徹底した育成です。このお店は、無農薬を徹底した育成です。このお店は、無農薬を徹底した育成です。</div>
+                                            <p class="p-explain__title u-padding-10 u-font-weight-bold">＜販売所の説明＞</p>
+                                            <div><?= sanitize(getFormData('social_profile')); ?></div>
+                                            <p class="p-explain__title u-padding-10 u-font-weight-bold">＜電話番号＞</p>
+                                            <p><?= sanitize(getFormData('tel')); ?></p>
                                         </div>
                                     </section><!-- /店舗情報 -->
                                     
@@ -169,22 +215,7 @@ require('head.php');
         </div>
 
         <!-- サイドバー -->
-        <section id="l-sidebar">
-            <aside class="c-sidebar">
-                <h2 class="c-sidebar__tit">お気に入りの販売所</h2>
-                <ul class="c-sidebar__body">
-                    <li class="c-sidebar__list">
-                        <a href="" class="c-sidebar__text">タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</a>
-                    </li>
-                    <li class="c-sidebar__list">
-                        <a href="" class="c-sidebar__text">タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</a>
-                    </li>
-                    <li class="c-sidebar__list">
-                        <a href="" class="c-sidebar__text">タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</a>
-                    </li>
-                </ul>
-            </aside>
-        </section><!-- /サイドバー -->
+        <?php require('sidebar_favo.php'); ?>
 
     </main>
     <div class="u-upArrow">

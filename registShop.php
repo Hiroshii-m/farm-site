@@ -74,6 +74,7 @@ if(!empty($_POST)) {
     $street = (!empty($_POST['street'])) ? $_POST['street'] : '';
     $building = (!empty($_POST['building'])) ? $_POST['building'] : '';
     $tel = (!empty($_POST['tel'])) ? $_POST['tel'] : '';
+    $map_iframe = (!empty($_POST['map_iframe'])) ? $_POST['map_iframe'] : '';
 
     // バリデーションチェック
     validRequired($shop_name, 'shop_name');
@@ -110,17 +111,20 @@ if(!empty($_POST)) {
     }
     // 全てエラーがなければ、ファイルをアップロードし、パスを変数へ格納
     if(empty($err_msg)) {
-        // 一旦飛ばす。FILEのなかみに値が入らない。
-        $shop_img = (!empty($_FILES['shop_img']['name'])) ? uploadImg($_FILES['shop_img'], 'shop_img') : '';
-        $shop_img = ( empty($shop_img) && !empty($dbFormData['shop_img']) ) ? $dbFormData['shop_img'] : $shop_img;
+        $shop_img1 = (!empty($_FILES['shop_img1']['name'])) ? uploadImg($_FILES['shop_img1'], 'shop_img1') : '';
+        $shop_img1 = ( empty($shop_img1) && !empty($dbFormData['shop_img1']) ) ? $dbFormData['shop_img1'] : $shop_img1;
+        $shop_img2 = (!empty($_FILES['shop_img2']['name'])) ? uploadImg($_FILES['shop_img2'], 'shop_img2') : '';
+        $shop_img2 = ( empty($shop_img2) && !empty($dbFormData['shop_img2']) ) ? $dbFormData['shop_img2'] : $shop_img2;
+        $shop_img3 = (!empty($_FILES['shop_img3']['name'])) ? uploadImg($_FILES['shop_img3'], 'shop_img3') : '';
+        $shop_img3 = ( empty($shop_img3) && !empty($dbFormData['shop_img3']) ) ? $dbFormData['shop_img3'] : $shop_img3;
     }
 
     // DBへ登録
     if(empty($err_msg)) {
         try {
             $dbh = dbConnect();
-            $sql = 'INSERT INTO shops (`user_id`, `shop_name`, `social_profile`, `postcode`, `prefecture_id`, `city_id`, `street`, `building`, `shop_img`, `create_date`) VALUES (:u_id, :shop_name, :social_profile, :postcode, :prefecture_id, :city_id, :street, :building, :shop_img, :create_date);';
-            $data = array(':u_id' => $u_id, ':shop_name' => $shop_name, ':social_profile' => $social_profile, ':postcode' => $postcode, ':prefecture_id' => $prefecture_id, ':city_id' => $city_id, ':street' => $street, ':building' => $building, ':shop_img' => $shop_img, ':create_date' => date('Y-m-d H:i:s'));
+            $sql = 'INSERT INTO shops (`user_id`, `shop_name`, `social_profile`, `postcode`, `prefecture_id`, `city_id`, `street`, `building`, `tel`, `map_iframe`, `shop_img1`, `shop_img2`, `shop_img3`, `create_date`) VALUES (:u_id, :shop_name, :social_profile, :postcode, :prefecture_id, :city_id, :street, :building, :tel, :map_iframe, :shop_img1, :shop_img2, :shop_img3, :create_date);';
+            $data = array(':u_id' => $u_id, ':shop_name' => $shop_name, ':social_profile' => $social_profile, ':postcode' => $postcode, ':prefecture_id' => $prefecture_id, ':city_id' => $city_id, ':street' => $street, ':building' => $building, ':tel' => $tel, ':map_iframe' -> $map_iframe, ':shop_img1' => $shop_img1, ':shop_img2' => $shop_img2, ':shop_img3' => $shop_img3, ':create_date' => date('Y-m-d H:i:s'));
             queryPost($dbh, $sql, $data);
 
             header("Location:mypage.php");
@@ -241,6 +245,13 @@ require('head.php');
                     </div>
                 </label>
                 <label class="c-form__label" for="">
+                    Googleマップを埋め込む＊任意
+                    <input class="c-form__input <?= showErrStyle('map_iframe'); ?>" type="text" name="" value="<?= sanitize(getFormData('map_iframe')); ?>">
+                    <div class="u-err-msg">
+                        <?= showErrMsg('map_iframe'); ?>
+                    </div>
+                </label>
+                <label class="c-form__label" for="">
                     電話番号&emsp;＊任意
                     <input class="c-form__input <?= showErrStyle('tel'); ?>" type="text" name="tel" value="<?= sanitize(getFormData('tel')); ?>">
                     <div class="u-err-msg">
@@ -249,12 +260,26 @@ require('head.php');
                 </label>
                 <label class="c-form__label" for="">
                     お店の画像
-                    <label class="c-form__areaDrop u-margin-top-5 js-area-drop">
-                        <input type="hidden" name="MAX_FILE_SIZE" value="3145728">
-                        <input class="c-form__file js-file-input" type="file" name="shop_img">
-                        <img src="" class="c-form__img js-avatar-img" alt="">
-                        <p class="c-form__areaText">ドラッグ&ドロップ</p>
-                    </label>
+                    <div class="u-flex-between u-flex-wrap">
+                        <label class="c-form__areaDrop u-margin-top-5 js-area-drop">
+                            <input type="hidden" name="MAX_FILE_SIZE" value="3145728">
+                            <input class="c-form__file js-file-input" type="file" name="shop_img1">
+                            <img src="" class="c-form__img js-avatar-img" alt="">
+                            <p class="c-form__areaText">ドラッグ&ドロップ</p>
+                        </label>
+                        <label class="c-form__areaDrop u-margin-top-5 js-area-drop">
+                            <input type="hidden" name="MAX_FILE_SIZE" value="3145728">
+                            <input class="c-form__file js-file-input" type="file" name="shop_img2">
+                            <img src="" class="c-form__img js-avatar-img" alt="">
+                            <p class="c-form__areaText">ドラッグ&ドロップ</p>
+                        </label>
+                        <label class="c-form__areaDrop u-margin-top-5 js-area-drop">
+                            <input type="hidden" name="MAX_FILE_SIZE" value="3145728">
+                            <input class="c-form__file js-file-input" type="file" name="shop_img3">
+                            <img src="" class="c-form__img js-avatar-img" alt="">
+                            <p class="c-form__areaText">ドラッグ&ドロップ</p>
+                        </label>
+                    </div>
                     <div class="u-err-msg">
                         <?= showErrMsg('shop_img'); ?>
                     </div>

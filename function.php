@@ -336,8 +336,17 @@ function getRegist($u_id) {
 // 登録した店舗情報を取得
 function getShop($u_id) {
     $dbh = dbConnect();
-    $sql = 'SELECT `id`, `shop_name`, `social_profile`, `postcode`, `prefecture_id`, `city_id`, `street`, `building`, `tel`, `shop_img` FROM shops WHERE `user_id` = :u_id';
+    $sql = 'SELECT `id`, `shop_name`, `social_profile`, `postcode`, `prefecture_id`, `city_id`, `street`, `building`, `tel`, `shop_img1`, `shop_img2`, `shop_img3` FROM shops WHERE `user_id` = :u_id';
     $data = array(':u_id' => $u_id);
+    $stmt = queryPost($dbh, $sql, $data);
+    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+    return $result;
+}
+// 店舗詳細情報を取得
+function getShopOne($s_id) {
+    $dbh = dbConnect();
+    $sql = 'SELECT s.`id`, s.`shop_name`, s.`social_profile`, s.`postcode`, s.`prefecture_id`, s.`city_id`, s.`street`, s.`building`, s.`tel`, s.`value`, s.`map_iframe`, s.`shop_img1`, s.`shop_img2`, s.`shop_img3`, s.`browsing_num`, s.`favorites`, u.`screen_name` FROM shops AS s LEFT JOIN users AS u ON s.`user_id` = u.`id` WHERE s.`id` = :s_id';
+    $data = array(':s_id' => $s_id);
     $stmt = queryPost($dbh, $sql, $data);
     $result = $stmt->fetch(PDO::FETCH_ASSOC);
     return $result;
@@ -345,7 +354,7 @@ function getShop($u_id) {
 // 複数の店舗を取得
 function getShopList() {
     $dbh = dbConnect();
-    $sql = 'SELECT s.`shop_name`, s.`social_profile`, s.`shop_img`, u.`screen_name` FROM shops AS s LEFT JOIN users AS u ON s.user_id = u.id';
+    $sql = 'SELECT s.`id`, s.`shop_name`, s.`social_profile`, s.`shop_img1`, u.`screen_name` FROM shops AS s LEFT JOIN users AS u ON s.user_id = u.id LIMIT 10';
     $data = array();
     $stmt = queryPost($dbh, $sql, $data);
     $result = $stmt->fetch(PDO::FETCH_ASSOC);

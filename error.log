@@ -4377,3 +4377,12 @@ Stack trace:
 #2 /Applications/MAMP/htdocs/output2/farm/index.php(75): getShopList()
 #3 {main}
   thrown in /Applications/MAMP/htdocs/output2/farm/function.php on line 305
+[24-Apr-2021 17:15:56 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'shop_img' in 'field list' in /Applications/MAMP/htdocs/output2/farm/function.php:305
+Stack trace:
+#0 /Applications/MAMP/htdocs/output2/farm/function.php(305): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/output2/farm/function.php(341): queryPost(Object(PDO), 'SELECT `id`, `s...', Array)
+#2 /Applications/MAMP/htdocs/output2/farm/editShop.php(68): getShop('3')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/output2/farm/function.php on line 305
+[24-Apr-2021 17:26:54 Asia/Tokyo] PHP Notice:  Undefined index: shop_img in /Applications/MAMP/htdocs/output2/farm/index.php on line 188
+[24-Apr-2021 22:01:51 Asia/Tokyo] PHP Notice:  Undefined index: shop_img in /Applications/MAMP/htdocs/output2/farm/index.php on line 188

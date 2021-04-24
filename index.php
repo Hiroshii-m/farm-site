@@ -189,7 +189,7 @@ require('head.php');
                                 <p class="c-submission__author"><?= sanitize(showData($val['screen_name'])); ?></p>
                             </div>
                             <div class="c-submission__content">
-                                <a href="" class="c-submission__tit"><?= sanitize(showData($val['shop_name'])); ?></a>
+                                <a href="single.php?s_id=<?= sanitize(showData($val['id'])); ?>" class="c-submission__tit"><?= sanitize(showData($val['shop_name'])); ?></a>
                                 <div class="c-submission__detail">
                                     <?= sanitize(showData($val['social_profile'])); ?>
                                 </div>
