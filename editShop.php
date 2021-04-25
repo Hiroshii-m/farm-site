@@ -175,35 +175,15 @@ require('head.php');
                     <div>
                         <label class="u-flex" for="grain">
                             <input class="c-form__check" type="checkbox" name="" id="grain">
-                            <p id="">米・穀物・シリアル</p>
+                            <p id="">穀物</p>
                         </label>
                         <label class="u-flex" for="vegetable">
                             <input class="c-form__check" type="checkbox" name="" id="vegetable">
                             <p id="">野菜</p>
                         </label>
-                        <label class="u-flex" for="fish">
-                            <input class="c-form__check" type="checkbox" name="" id="fish">
-                            <p id="">水産物</p>
-                        </label>
-                        <label class="u-flex" for="meet">
-                            <input class="c-form__check" type="checkbox" name="" id="meet">
-                            <p id="">肉・肉加工品</p>
-                        </label>
-                        <label class="u-flex" for="egg">
-                            <input class="c-form__check" type="checkbox" name="" id="egg">
-                            <p id="">卵・チーズ・乳製品</p>
-                        </label>
                         <label class="u-flex" for="fruit">
                             <input class="c-form__check" type="checkbox" name="" id="fruit">
                             <p id="">果物</p>
-                        </label>
-                        <label class="u-flex" for="bean">
-                            <input class="c-form__check" type="checkbox" name="" id="bean">
-                            <p id="">豆腐・納豆・漬物</p>
-                        </label>
-                        <label class="u-flex" for="jam">
-                            <input class="c-form__check" type="checkbox" name="" id="jam">
-                            <p id="">ジャム・ハチミツ</p>
                         </label>
                     </div>
                     <div class="u-err-msg">

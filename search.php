@@ -11,6 +11,8 @@ debug('==============================================');
 
 // GETパラメータを取得
 $p_id = (!empty($_GET['p_id'])) ? $_GET['p_id'] : '';
+// 都道府県idから市区町村idと名前を取得
+$cityInfo[] = (!empty($p_id)) ? getCityInfo($p_id) : '';
 
 ?>
 <?php
@@ -34,15 +36,15 @@ require('head.php');
             <!-- 検索ボックス -->
             <section id="l-search" class="">
                 <div class="p-search">
-                    <form class="p-search__shop">
+                    <form method="post" class="p-search__option">
                         <input type="text" class="p-search__input" placeholder="キーワード[例：キャベツ、店名、穀物]">
-                        <button class="p-search__nameBtn u-miniBtn" type="submit">検索</button>
-                    </form>
-                    <h2 class="p-search__title">こだわり検索</h2>
-                    <form action="" class="p-search__option">
+                        <h2 class="p-search__title">条件を絞る</h2>
                         <div class="p-search__area">
-                            <select class="p-search__select" name="" id="">
-                                <option value="">エリア</option>
+                            <select class="p-search__select" name="city_id" id="">
+                                <option value="0">エリア</option>
+                                <?php foreach($cityInfo as $key => $val): ?>
+                                <option value="<?= sanitize(showData($val['id'])); ?>"><?= sanitize(showData($val['city_name'])); ?></option>
+                                <?php endforeach; ?>
                             </select>
                             <i class="fas fa-chevron-down p-search__arrow"></i>
                         </div>

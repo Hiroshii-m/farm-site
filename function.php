@@ -36,7 +36,7 @@ function debugLogStart(){
 // ================================================
 // デバッグ
 // ================================================
-$debug_flg = false;
+$debug_flg = true;
 function debug($str) {
     global $debug_flg;
     if(!empty($debug_flg)){
@@ -360,11 +360,29 @@ function getShopList() {
     $result = $stmt->fetch(PDO::FETCH_ASSOC);
     return $result;
 }
+// カテゴリーを取得
+function getCategory() {
+    $dbh = dbConnect();
+    $sql = 'SELECT * FROM category';
+    $data = array();
+    $stmt = queryPost($dbh, $sql, $data);
+    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+    return $result;
+}
 // メールアドレスだけ取得
 function getMail($u_id) {
     $dbh = dbConnect();
     $sql = 'SELECT `email` FROM users WHERE `id` = :u_id';
     $data = array(':u_id' => $u_id);
+    $stmt = queryPost($dbh, $sql, $data);
+    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+    return $result;
+}
+// 都道府県から市区町村データを取得
+function getCityInfo($p_id) {
+    $dbh = dbConnect();
+    $sql = 'SELECT `id`, `city_name` FROM cities WHERE `prefecture_id` = :p_id AND `delete_flg` = 0';
+    $data = array(':p_id' => $p_id);
     $stmt = queryPost($dbh, $sql, $data);
     $result = $stmt->fetch(PDO::FETCH_ASSOC);
     return $result;

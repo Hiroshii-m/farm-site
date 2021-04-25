@@ -632,7 +632,7 @@ i {
 }
 
 #l-main {
-  padding-top: 80px;
+  padding: 80px 0;
   display: flex;
   justify-content: center;
 }
@@ -1475,11 +1475,6 @@ i {
     padding: 30px;
   }
 }
-.p-search__shop {
-  margin: 15px 0;
-  display: flex;
-  justify-content: space-between;
-}
 .p-search__input {
   height: 100%;
   width: 100%;
@@ -1541,6 +1536,7 @@ i {
   }
 }
 .p-search__commit {
+  min-width: 150px;
   height: 55px;
   margin-right: 10px;
 }

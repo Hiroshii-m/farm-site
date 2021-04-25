@@ -4386,3 +4386,206 @@ Stack trace:
   thrown in /Applications/MAMP/htdocs/output2/farm/function.php on line 305
 [24-Apr-2021 17:26:54 Asia/Tokyo] PHP Notice:  Undefined index: shop_img in /Applications/MAMP/htdocs/output2/farm/index.php on line 188
 [24-Apr-2021 22:01:51 Asia/Tokyo] PHP Notice:  Undefined index: shop_img in /Applications/MAMP/htdocs/output2/farm/index.php on line 188
+[25-Apr-2021 20:17:40 Asia/Tokyo] PHP Notice:  Undefined index: shop_img in /Applications/MAMP/htdocs/output2/farm/index.php on line 188
+[25-Apr-2021 20:18:51 Asia/Tokyo] デバッグ:==============================================
+[25-Apr-2021 20:18:51 Asia/Tokyo] デバッグ:ユーザー登録画面
+[25-Apr-2021 20:18:51 Asia/Tokyo] デバッグ:==============================================
+[25-Apr-2021 20:18:51 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[25-Apr-2021 20:18:51 Asia/Tokyo] デバッグ:セッションID：tb53t6cfpp3l7afkssvva9e77m
+[25-Apr-2021 20:18:51 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [login_date] => 1619252817
+    [login_limit] => 3600
+    [user_id] => 3
+)
+
+[25-Apr-2021 20:18:51 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1619349531
+[25-Apr-2021 20:18:51 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1619256417
+[25-Apr-2021 20:18:51 Asia/Tokyo] デバッグ:POSTされました。
+[25-Apr-2021 20:18:51 Asia/Tokyo] デバッグ:バリデーションOKです。
+[25-Apr-2021 20:18:51 Asia/Tokyo] デバッグ:メールを送信しました。
+[25-Apr-2021 20:18:51 Asia/Tokyo] デバッグ:URL発行
+[25-Apr-2021 20:18:51 Asia/Tokyo] デバッグ:localhost:8888/output2/farm/tokenRecieve.php?token=61d38927b99d4f1d31b0b0a615adb14a9623bd06c24e7d4b09726380fedabaaa
+[25-Apr-2021 20:19:07 Asia/Tokyo] デバッグ:==============================================
+[25-Apr-2021 20:19:07 Asia/Tokyo] デバッグ:トークン受け取り画面
+[25-Apr-2021 20:19:07 Asia/Tokyo] デバッグ:==============================================
+[25-Apr-2021 20:19:07 Asia/Tokyo] デバッグ:クエリ成功しました。
+[25-Apr-2021 20:19:07 Asia/Tokyo] デバッグ:クエリ成功しました。
+[25-Apr-2021 20:19:09 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[25-Apr-2021 20:19:09 Asia/Tokyo] デバッグ:==============================================
+[25-Apr-2021 20:19:09 Asia/Tokyo] デバッグ:マイページ画面
+[25-Apr-2021 20:19:09 Asia/Tokyo] デバッグ:==============================================
+[25-Apr-2021 20:19:09 Asia/Tokyo] デバッグ:クエリ成功しました。
+[25-Apr-2021 20:19:15 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[25-Apr-2021 20:19:15 Asia/Tokyo] デバッグ:==============================================
+[25-Apr-2021 20:19:15 Asia/Tokyo] デバッグ:店舗登録
+[25-Apr-2021 20:19:15 Asia/Tokyo] デバッグ:==============================================
+[25-Apr-2021 20:19:51 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[25-Apr-2021 20:19:51 Asia/Tokyo] デバッグ:==============================================
+[25-Apr-2021 20:19:51 Asia/Tokyo] デバッグ:店舗登録
+[25-Apr-2021 20:19:51 Asia/Tokyo] デバッグ:==============================================
+[25-Apr-2021 20:19:51 Asia/Tokyo] デバッグ:Array
+(
+    [shop_name] => 山城の里
+    [social_profile] => 
+    [category] => vegetable
+    [postcode] => ああ
+    [prefecture_id] => 0
+    [city_name] => 
+    [street] => 
+    [building] => 
+    [tel] => 
+    [MAX_FILE_SIZE] => 3145728
+    [shop_img1] => 
+    [shop_img2] => 
+    [shop_img3] => 
+)
+
+[25-Apr-2021 20:20:06 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[25-Apr-2021 20:20:06 Asia/Tokyo] デバッグ:==============================================
+[25-Apr-2021 20:20:06 Asia/Tokyo] デバッグ:店舗登録
+[25-Apr-2021 20:20:06 Asia/Tokyo] デバッグ:==============================================
+[25-Apr-2021 20:20:06 Asia/Tokyo] デバッグ:Array
+(
+    [shop_name] => 山城の里
+    [social_profile] => 
+    [category] => fruit
+    [postcode] => ああ
+    [prefecture_id] => 0
+    [city_name] => 
+    [street] => 
+    [building] => 
+    [tel] => 
+    [MAX_FILE_SIZE] => 3145728
+    [shop_img1] => 
+    [shop_img2] => 
+    [shop_img3] => 
+)
+
+[25-Apr-2021 20:20:38 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[25-Apr-2021 20:20:38 Asia/Tokyo] デバッグ:==============================================
+[25-Apr-2021 20:20:38 Asia/Tokyo] デバッグ:店舗登録
+[25-Apr-2021 20:20:38 Asia/Tokyo] デバッグ:==============================================
+[25-Apr-2021 20:20:38 Asia/Tokyo] デバッグ:Array
+(
+    [shop_name] => 山城の里
+    [social_profile] => 
+    [category] => fruit
+    [postcode] => ああ
+    [prefecture_id] => 0
+    [city_name] => 
+    [street] => 
+    [building] => 
+    [tel] => 
+    [MAX_FILE_SIZE] => 3145728
+    [shop_img1] => 
+    [shop_img2] => 
+    [shop_img3] => 
+)
+
+[25-Apr-2021 20:20:41 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[25-Apr-2021 20:20:41 Asia/Tokyo] デバッグ:==============================================
+[25-Apr-2021 20:20:41 Asia/Tokyo] デバッグ:店舗登録
+[25-Apr-2021 20:20:41 Asia/Tokyo] デバッグ:==============================================
+[25-Apr-2021 20:20:41 Asia/Tokyo] デバッグ:Array
+(
+    [shop_name] => 山城の里
+    [social_profile] => 
+    [postcode] => ああ
+    [prefecture_id] => 0
+    [city_name] => 
+    [street] => 
+    [building] => 
+    [tel] => 
+    [MAX_FILE_SIZE] => 3145728
+    [shop_img1] => 
+    [shop_img2] => 
+    [shop_img3] => 
+)
+
+[25-Apr-2021 20:20:48 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[25-Apr-2021 20:20:48 Asia/Tokyo] デバッグ:==============================================
+[25-Apr-2021 20:20:48 Asia/Tokyo] デバッグ:店舗登録
+[25-Apr-2021 20:20:48 Asia/Tokyo] デバッグ:==============================================
+[25-Apr-2021 20:20:48 Asia/Tokyo] デバッグ:Array
+(
+    [shop_name] => 山城の里
+    [social_profile] => 
+    [category] => fruit
+    [postcode] => ああ
+    [prefecture_id] => 0
+    [city_name] => 
+    [street] => 
+    [building] => 
+    [tel] => 
+    [MAX_FILE_SIZE] => 3145728
+    [shop_img1] => 
+    [shop_img2] => 
+    [shop_img3] => 
+)
+
+[25-Apr-2021 20:21:43 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[25-Apr-2021 20:21:43 Asia/Tokyo] デバッグ:==============================================
+[25-Apr-2021 20:21:43 Asia/Tokyo] デバッグ:店舗登録
+[25-Apr-2021 20:21:43 Asia/Tokyo] デバッグ:==============================================
+[25-Apr-2021 20:21:43 Asia/Tokyo] デバッグ:Array
+(
+    [shop_name] => 山城の里
+    [social_profile] => 
+    [category] => vegetable
+    [postcode] => ああ
+    [prefecture_id] => 0
+    [city_name] => 
+    [street] => 
+    [building] => 
+    [tel] => 
+    [MAX_FILE_SIZE] => 3145728
+    [shop_img1] => 
+    [shop_img2] => 
+    [shop_img3] => 
+)
+
+[25-Apr-2021 20:22:24 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[25-Apr-2021 20:22:24 Asia/Tokyo] デバッグ:==============================================
+[25-Apr-2021 20:22:24 Asia/Tokyo] デバッグ:店舗登録
+[25-Apr-2021 20:22:24 Asia/Tokyo] デバッグ:==============================================
+[25-Apr-2021 20:22:24 Asia/Tokyo] デバッグ:fruit
+[25-Apr-2021 20:22:54 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[25-Apr-2021 20:22:54 Asia/Tokyo] デバッグ:==============================================
+[25-Apr-2021 20:22:54 Asia/Tokyo] デバッグ:店舗登録
+[25-Apr-2021 20:22:54 Asia/Tokyo] デバッグ:==============================================
+[25-Apr-2021 20:22:54 Asia/Tokyo] デバッグ:vegetable
+[25-Apr-2021 20:26:53 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[25-Apr-2021 20:26:53 Asia/Tokyo] デバッグ:==============================================
+[25-Apr-2021 20:26:53 Asia/Tokyo] デバッグ:店舗登録
+[25-Apr-2021 20:26:53 Asia/Tokyo] デバッグ:==============================================
+[25-Apr-2021 20:26:53 Asia/Tokyo] デバッグ:vegetable
+[25-Apr-2021 20:27:09 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[25-Apr-2021 20:27:09 Asia/Tokyo] デバッグ:==============================================
+[25-Apr-2021 20:27:09 Asia/Tokyo] デバッグ:店舗登録
+[25-Apr-2021 20:27:09 Asia/Tokyo] デバッグ:==============================================
+[25-Apr-2021 20:27:09 Asia/Tokyo] デバッグ:Array
+(
+    [0] => grain
+    [1] => vegetable
+)
+
+[25-Apr-2021 22:28:28 Asia/Tokyo] デバッグ:ログイン有効期限切れです。
+[25-Apr-2021 22:28:28 Asia/Tokyo] デバッグ:==============================================
+[25-Apr-2021 22:28:28 Asia/Tokyo] デバッグ:店舗登録
+[25-Apr-2021 22:28:28 Asia/Tokyo] デバッグ:==============================================
+[25-Apr-2021 22:28:28 Asia/Tokyo] デバッグ:Array
+(
+    [0] => fruit
+)
+
+[25-Apr-2021 22:28:28 Asia/Tokyo] デバッグ:==============================================
+[25-Apr-2021 22:28:28 Asia/Tokyo] デバッグ:ログイン画面
+[25-Apr-2021 22:28:28 Asia/Tokyo] デバッグ:==============================================
+[25-Apr-2021 22:28:28 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[25-Apr-2021 22:28:28 Asia/Tokyo] デバッグ:セッションID：afunspgl5rnp3vsq1vu7rj5tv2
+[25-Apr-2021 22:28:28 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[25-Apr-2021 22:28:28 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1619357308

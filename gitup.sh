@@ -2,6 +2,6 @@
 
 git add .
 # コミット
-git commit -m "20210424"
+git commit -m "20210425"
 git remote add origin https://github.com/Hiroshii-m/farm-site.git
 git push origin main

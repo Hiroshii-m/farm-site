@@ -577,11 +577,6 @@
     @include mq(ms) {
         padding: 30px;
     }
-    &__shop {
-        margin: 15px 0;
-        display: flex;
-        justify-content: space-between;
-    }
     &__input {
         height: 100%;
         width: 100%;
@@ -640,6 +635,7 @@
         }
     }
     &__commit {
+        min-width: 150px;
         height: 55px;
         margin-right: $space_m;
         @include mq(sm) {

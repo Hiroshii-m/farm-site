@@ -61,7 +61,8 @@ $pref = array(
     '46'=>'鹿児島県',
     '47'=>'沖縄県'
 );
-
+// カテゴリーを取得
+$category[] = getCategory();
 // ユーザーIDを格納
 $u_id = $_SESSION['user_id'];
 
@@ -75,6 +76,7 @@ if(!empty($_POST)) {
     $building = (!empty($_POST['building'])) ? $_POST['building'] : '';
     $tel = (!empty($_POST['tel'])) ? $_POST['tel'] : '';
     $map_iframe = (!empty($_POST['map_iframe'])) ? $_POST['map_iframe'] : '';
+    debug(print_r($_POST['category'], true));
 
     // バリデーションチェック
     validRequired($shop_name, 'shop_name');
@@ -168,36 +170,16 @@ require('head.php');
                     カテゴリー
                     <div>
                         <label class="u-flex" for="grain">
-                            <input class="c-form__check" type="checkbox" name="" id="grain">
-                            <p id="">米・穀物・シリアル</p>
+                            <input class="c-form__check" type="checkbox" name="category[]" value="grain" id="grain">
+                            <p id="">穀物</p>
                         </label>
                         <label class="u-flex" for="vegetable">
-                            <input class="c-form__check" type="checkbox" name="" id="vegetable">
+                            <input class="c-form__check" type="checkbox" name="category[]" value="vegetable" id="vegetable">
                             <p id="">野菜</p>
                         </label>
-                        <label class="u-flex" for="fish">
-                            <input class="c-form__check" type="checkbox" name="" id="fish">
-                            <p id="">水産物</p>
-                        </label>
-                        <label class="u-flex" for="meet">
-                            <input class="c-form__check" type="checkbox" name="" id="meet">
-                            <p id="">肉・肉加工品</p>
-                        </label>
-                        <label class="u-flex" for="egg">
-                            <input class="c-form__check" type="checkbox" name="" id="egg">
-                            <p id="">卵・チーズ・乳製品</p>
-                        </label>
                         <label class="u-flex" for="fruit">
-                            <input class="c-form__check" type="checkbox" name="" id="fruit">
+                            <input class="c-form__check" type="checkbox" name="category[]" value="fruit" id="fruit">
                             <p id="">果物</p>
-                        </label>
-                        <label class="u-flex" for="bean">
-                            <input class="c-form__check" type="checkbox" name="" id="bean">
-                            <p id="">豆腐・納豆・漬物</p>
-                        </label>
-                        <label class="u-flex" for="jam">
-                            <input class="c-form__check" type="checkbox" name="" id="jam">
-                            <p id="">ジャム・ハチミツ</p>
                         </label>
                     </div>
                     <div class="u-err-msg">
