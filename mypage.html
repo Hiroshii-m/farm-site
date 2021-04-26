@@ -1,27 +1,37 @@
-<?php
-
-// 共通ファイルの読み込み
-require('function.php');
-// ログイン認証ファイル読み込み
-require('auth.php');
-
-debug('==============================================');
-debug('マイページ画面');
-debug('==============================================');
-
-// ユーザーIDを格納
-$u_id = $_SESSION['user_id'];
-// 店舗登録状態
-$regist_flg = getRegist($u_id);
-
-?>
-<?php
-$headTitle = 'マイページ';
-require('head.php');
-?>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>vegetable place</title>
+</head>
 <body>
     <!-- ヘッダー -->
-    <?php require('header.php'); ?>
+    <header id="l-header" class="u-bgColor">
+        <div class="c-header">
+            <a class="c-header__logo u-flex">
+                <div class="c-header__img">
+                    <img src="images/ilust1.png" alt="">
+                </div>
+                <h3>農産物販売所</h3>
+            </a>
+            <nav class="c-header__nav js-header-nav">
+                <ul class="c-header__list u-flex js-header-list">
+                    <li class="c-header__item">
+                        <a href="" class="c-header__text">ホーム</a>
+                    </li>
+                    <li class="c-header__item">
+                        <a href="" class="c-header__text">ログイン</a>
+                    </li>
+                    <li class="c-header__item">
+                        <a href="" class="c-header__text">ユーザー登録</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header><!-- /ヘッダー -->
     
     <main id="l-main" class="u-bgColor js-sp-menu-target">
         <div class="c-main">
@@ -112,6 +122,29 @@ require('head.php');
                                 <a class="p-product__btn" href="">編集する</a>
                             </details>
                         </li>
+                        <li class="p-product__list">
+                            <details open>
+                                <summary class="p-product__summary">
+                                    <span class="p-product__point ">【<i class="fas fa-shopping-bag u-padding-1"></i>商品名】</span>聖護院青長節成キュウリ
+                                    <span class="p-product__point ">【<i class="fas fa-yen-sign u-padding-1"></i>値段】</span>500円
+                                    <span class="p-product__point ">【<i class="fas fa-balance-scale u-padding-1"></i>数量・質量】</span>10本
+                                </summary>
+                                <div class="p-product__info u-flex">
+                                    <div class="p-product__img">
+                                        <img src="images/pic3.jpeg" alt="">
+                                    </div>
+                                    <div class="p-product__explain">
+                                        <p class="u-font-weight-bold">＜カテゴリ＞</p>
+                                        <p>野菜</p>
+                                        <p class="u-font-weight-bold">＜収穫時期・販売時期＞</p>
+                                        <p>4月〜7月</p>
+                                        <p class="u-font-weight-bold">＜説明＞</p>
+                                        <p>無農薬</p>
+                                    </div>
+                                </div>
+                                <a class="p-product__btn" href="">編集する</a>
+                            </details>
+                        </li>
                     </ul>
                     <button class="c-container__btn u-btn u-btn-border-shadow u-btn-border-shadow--color">もっと見る</button>
                 </div>
@@ -119,7 +152,31 @@ require('head.php');
 
         </div>
         <!-- サイドバー -->
-        <?php require('sidebar_mypage.php'); ?>
+        <section id="l-sidebar">
+            <aside class="c-sidebar">
+                <h2 class="c-sidebar__tit">メニュー</h2>
+                <ul class="c-sidebar__body">
+                    <li class="c-sidebar__list">
+                        <a href="" class="c-sidebar__text">プロフィール編集</a>
+                    </li>
+                    <li class="c-sidebar__list">
+                        <a href="" class="c-sidebar__text">加盟店登録</a>
+                    </li>
+                    <li class="c-sidebar__list">
+                        <a href="" class="c-sidebar__text">商品登録</a>
+                    </li>
+                    <li class="c-sidebar__list">
+                        <a href="" class="c-sidebar__text">メールアドレス・パスワードを変更する</a>
+                    </li>
+                    <li class="c-sidebar__list">
+                        <a href="" class="c-sidebar__text">ログアウト</a>
+                    </li>
+                    <li class="c-sidebar__list">
+                        <a href="" class="c-sidebar__text">退会</a>
+                    </li>
+                </ul>
+            </aside>
+        </section><!-- /サイドバー -->
     </main>
 
 
@@ -127,7 +184,47 @@ require('head.php');
         <i class="fas fa-chevron-circle-up"></i>
     </div>
     <!-- フッター -->
-    <?php require('footer.php'); ?>
+    <footer id="l-footer" class="">
+        <div class="c-footer">
+            <div class="c-footer__share">
+                <p class="c-footer__text">SNSでシェアしよう</p>
+                <ul class="c-footer__sns u-flex">
+                    <li class="c-footer__icon">
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="c-footer__icon">
+                        <a href=""><i class="fab fa-facebook-square"></i></a>
+                    </li>
+                    <li class="c-footer__icon">
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="c-footer__logo">
+                <div class="c-footer__img"><img src="./images/ilust1.png" alt=""></div>
+                <p class="c-footer__name">農作物販売所</p>
+            </div>
+            <ul class="c-footer__info u-flex">
+                <li class="c-footer__list">
+                    <a href="">このサイトについて</a>
+                </li>
+                <li class="c-footer__list">
+                    <a href="">利用規約</a>
+                </li>
+                <li class="c-footer__list">
+                    <a href="">プライバシーポリシー</a>
+                </li>
+                <li class="c-footer__list">
+                    <a href="">情報セキュリティ基本方針</a>
+                </li>
+                <li class="c-footer__list">
+                    <a href="">お問い合わせ</a>
+                </li>
+            </ul>
+        </div>
+    </footer><!-- /フッター -->
+    <!-- 共通ファイル -->
+    <script src="js/app.js"></script>
     <!-- 個別のjsファイル -->
     <script src="js/app_icon.js"></script>
 </body>

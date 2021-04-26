@@ -583,12 +583,12 @@ i {
 }
 
 #l-sale {
-  padding: 100px 0 0;
+  padding: 40px 0 0;
   background: #FFF6E8;
 }
 
 #l-sidebar {
-  margin: 100px 0 0 50px;
+  margin: 45px 0 0 50px;
 }
 @media screen and (max-width: 1000px) {
   #l-sidebar {
@@ -1137,7 +1137,7 @@ i {
 
 .c-form {
   width: 680px;
-  margin: 120px auto;
+  margin: 0 auto;
   border: 1px solid #D3DEF1;
   padding: 40px;
   box-sizing: border-box;
@@ -1633,6 +1633,17 @@ i {
   .p-product__point {
     font-size: 12px;
   }
+}
+.p-product__btn {
+  display: block;
+  min-width: 200px;
+  width: 40%;
+  padding: 5px;
+  color: #fff;
+  background: #4e89ee;
+  margin: 20px auto 50px auto;
+  border-radius: 5px;
+  text-align: center;
 }
 
 .p-explain {

@@ -56,11 +56,13 @@ $products = 'CREATE TABLE products(
     `id` INT(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
     `shop_id` INT(11) NOT NULL,
     `user_id` INT(11) NOT NULL,
-    `product_name` VARCHAR(255) NOT NULL,
-    `product_detail` VARCHAR(255) NULL,
-    `product_value` INT(11) NOT NULL,
+    `p_name` VARCHAR(255) NOT NULL,
+    `p_detail` VARCHAR(255) NULL,
     `category_id` INT(11) NOT NULL,
-    `product_img` VARCHAR(255) NULL,
+    `term` VARCHAR(255) NULL,
+    `p_value` INT(11) NOT NULL,
+    `p_number` VARCHAR(255) NULL,
+    `p_img` VARCHAR(255) NULL,
     `delete_flg` BOOLEAN DEFAULT 0 NOT NULL,
     `create_date` DATE NOT NULL,
     `update_date` TIMESTAMP NOT NULL
@@ -85,15 +87,15 @@ $comments = 'CREATE TABLE comments(
     `create_date` DATE NOT NULL,
     `update_date` TIMESTAMP NOT NULL
 )ENGINE=INNODB DEFAULT CHARSET=utf8;';
-// 商品が持つカテゴリー情報を作成
-$p_category = 'CREATE TABLE p_category(
-    `id` INT(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
-    `category_id` INT(11) NOT NULL,
-    `product_id` INT(11) NOT NULL,
-    `delete_flg` BOOLEAN DEFAULT 0 NOT NULL,
-    `create_date` DATE NOT NULL,
-    `update_date` TIMESTAMP NOT NULL
-)ENGINE=INNODB DEFAULT CHARSET=utf8;';
+// // 商品が持つカテゴリー情報を作成　これやっぱいらんかも
+// $p_category = 'CREATE TABLE p_category(
+//     `id` INT(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
+//     `category_id` INT(11) NOT NULL,
+//     `product_id` INT(11) NOT NULL,
+//     `delete_flg` BOOLEAN DEFAULT 0 NOT NULL,
+//     `create_date` DATE NOT NULL,
+//     `update_date` TIMESTAMP NOT NULL
+// )ENGINE=INNODB DEFAULT CHARSET=utf8;';
 // カテゴリーテーブル作成
 $category = 'CREATE TABLE category(
     `id` INT(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,

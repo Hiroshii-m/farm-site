@@ -171,26 +171,6 @@ require('head.php');
                     </div>
                 </label>
                 <label class="c-form__label" for="">
-                    カテゴリー
-                    <div>
-                        <label class="u-flex" for="grain">
-                            <input class="c-form__check" type="checkbox" name="" id="grain">
-                            <p id="">穀物</p>
-                        </label>
-                        <label class="u-flex" for="vegetable">
-                            <input class="c-form__check" type="checkbox" name="" id="vegetable">
-                            <p id="">野菜</p>
-                        </label>
-                        <label class="u-flex" for="fruit">
-                            <input class="c-form__check" type="checkbox" name="" id="fruit">
-                            <p id="">果物</p>
-                        </label>
-                    </div>
-                    <div class="u-err-msg">
-                        <?= showErrMsg('category'); ?>
-                    </div>
-                </label>
-                <label class="c-form__label" for="">
                     郵便番号（ハイフンなし）
                     <input class="c-form__input <?= showErrStyle('postcode'); ?>" type="text" name="postcode" value="<?= sanitize(getFormData('postcode')); ?>">
                     <div class="u-err-msg">

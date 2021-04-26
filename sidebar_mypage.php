@@ -15,7 +15,7 @@
                 </li>
             <?php } ?>
             <li class="c-sidebar__list">
-                <a href="" class="c-sidebar__text">商品登録</a>
+                <a href="registProduct.php" class="c-sidebar__text">商品登録</a>
             </li>
             <li class="c-sidebar__list">
                 <a href="editMailPass.php" class="c-sidebar__text">メールアドレス・パスワードを変更する</a>

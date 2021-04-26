@@ -357,16 +357,16 @@ function getShopList() {
     $sql = 'SELECT s.`id`, s.`shop_name`, s.`social_profile`, s.`shop_img1`, u.`screen_name` FROM shops AS s LEFT JOIN users AS u ON s.user_id = u.id LIMIT 10';
     $data = array();
     $stmt = queryPost($dbh, $sql, $data);
-    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+    $result = $stmt->fetchAll();
     return $result;
 }
 // カテゴリーを取得
 function getCategory() {
     $dbh = dbConnect();
-    $sql = 'SELECT * FROM category';
+    $sql = 'SELECT * FROM category WHERE `delete_flg` = 0';
     $data = array();
     $stmt = queryPost($dbh, $sql, $data);
-    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+    $result = $stmt->fetchAll();
     return $result;
 }
 // メールアドレスだけ取得
@@ -390,7 +390,7 @@ function getCityInfo($p_id) {
 // 市区町村名を取得
 function getCityName($city_id) {
     $dbh = dbConnect();
-    $sql = 'SELECT `city_name` From cites WHERE `id` = :c_id';
+    $sql = 'SELECT `city_name` FROM cites WHERE `id` = :c_id';
     $data = array(':c_id' => $city_id);
     $stmt = queryPost($dbh, $sql, $data);
     $result = $stmt->fetch(PDO::FETCH_ASSOC);

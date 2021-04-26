@@ -61,8 +61,6 @@ $pref = array(
     '46'=>'鹿児島県',
     '47'=>'沖縄県'
 );
-// カテゴリーを取得
-$category[] = getCategory();
 // ユーザーIDを格納
 $u_id = $_SESSION['user_id'];
 
@@ -76,7 +74,6 @@ if(!empty($_POST)) {
     $building = (!empty($_POST['building'])) ? $_POST['building'] : '';
     $tel = (!empty($_POST['tel'])) ? $_POST['tel'] : '';
     $map_iframe = (!empty($_POST['map_iframe'])) ? $_POST['map_iframe'] : '';
-    debug(print_r($_POST['category'], true));
 
     // バリデーションチェック
     validRequired($shop_name, 'shop_name');
@@ -124,6 +121,7 @@ if(!empty($_POST)) {
     // DBへ登録
     if(empty($err_msg)) {
         try {
+            // 店舗登録
             $dbh = dbConnect();
             $sql = 'INSERT INTO shops (`user_id`, `shop_name`, `social_profile`, `postcode`, `prefecture_id`, `city_id`, `street`, `building`, `tel`, `map_iframe`, `shop_img1`, `shop_img2`, `shop_img3`, `create_date`) VALUES (:u_id, :shop_name, :social_profile, :postcode, :prefecture_id, :city_id, :street, :building, :tel, :map_iframe, :shop_img1, :shop_img2, :shop_img3, :create_date);';
             $data = array(':u_id' => $u_id, ':shop_name' => $shop_name, ':social_profile' => $social_profile, ':postcode' => $postcode, ':prefecture_id' => $prefecture_id, ':city_id' => $city_id, ':street' => $street, ':building' => $building, ':tel' => $tel, ':map_iframe' -> $map_iframe, ':shop_img1' => $shop_img1, ':shop_img2' => $shop_img2, ':shop_img3' => $shop_img3, ':create_date' => date('Y-m-d H:i:s'));
@@ -164,26 +162,6 @@ require('head.php');
                     <textarea class="c-form__textarea <?= showErrStyle('social_profile'); ?>" type="text" name="social_profile"><?= sanitize(getFormData('social_profile')); ?></textarea>
                     <div class="u-err-msg">
                         <?= showErrMsg('social_profile'); ?>
-                    </div>
-                </label>
-                <label class="c-form__label" for="">
-                    カテゴリー
-                    <div>
-                        <label class="u-flex" for="grain">
-                            <input class="c-form__check" type="checkbox" name="category[]" value="grain" id="grain">
-                            <p id="">穀物</p>
-                        </label>
-                        <label class="u-flex" for="vegetable">
-                            <input class="c-form__check" type="checkbox" name="category[]" value="vegetable" id="vegetable">
-                            <p id="">野菜</p>
-                        </label>
-                        <label class="u-flex" for="fruit">
-                            <input class="c-form__check" type="checkbox" name="category[]" value="fruit" id="fruit">
-                            <p id="">果物</p>
-                        </label>
-                    </div>
-                    <div class="u-err-msg">
-                        <?= showErrMsg('category'); ?>
                     </div>
                 </label>
                 <label class="c-form__label" for="">

@@ -4589,3 +4589,363 @@ Stack trace:
 )
 
 [25-Apr-2021 22:28:28 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1619357308
+[26-Apr-2021 20:28:02 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:28:02 Asia/Tokyo] デバッグ:TOP画面
+[26-Apr-2021 20:28:02 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:28:02 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:28:02 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:28:02 Asia/Tokyo] PHP Notice:  Undefined index: shop_img in /Applications/MAMP/htdocs/output2/farm/index.php on line 188
+[26-Apr-2021 20:28:05 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:28:05 Asia/Tokyo] デバッグ:ログイン画面
+[26-Apr-2021 20:28:05 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:28:05 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[26-Apr-2021 20:28:05 Asia/Tokyo] デバッグ:セッションID：91a5bp0m7u925ultnaflm2b66d
+[26-Apr-2021 20:28:05 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[26-Apr-2021 20:28:05 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1619436485
+[26-Apr-2021 20:28:14 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:28:14 Asia/Tokyo] デバッグ:ログイン画面
+[26-Apr-2021 20:28:14 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:28:14 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[26-Apr-2021 20:28:14 Asia/Tokyo] デバッグ:セッションID：6diqt91798i92p0drm1e6v9tt7
+[26-Apr-2021 20:28:14 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[26-Apr-2021 20:28:14 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1619436494
+[26-Apr-2021 20:28:14 Asia/Tokyo] デバッグ:POSTされました。
+[26-Apr-2021 20:28:14 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:28:14 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:28:14 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[26-Apr-2021 20:28:14 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:28:14 Asia/Tokyo] デバッグ:マイページ画面
+[26-Apr-2021 20:28:14 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:28:14 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:30:11 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[26-Apr-2021 20:30:11 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:30:11 Asia/Tokyo] デバッグ:商品登録
+[26-Apr-2021 20:30:11 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:30:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:30:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:35:12 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[26-Apr-2021 20:35:12 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:35:12 Asia/Tokyo] デバッグ:商品登録
+[26-Apr-2021 20:35:12 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:35:12 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:35:12 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [category_name] => 穀物
+            [delete_flg] => 0
+            [create_date] => 2021-04-25
+            [update_date] => 2021-04-25 19:58:06
+        )
+
+)
+
+[26-Apr-2021 20:35:12 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:35:35 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[26-Apr-2021 20:35:35 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:35:35 Asia/Tokyo] デバッグ:商品登録
+[26-Apr-2021 20:35:35 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:35:35 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:35:35 Asia/Tokyo] デバッグ:Array
+(
+    [id] => 1
+    [category_name] => 穀物
+    [delete_flg] => 0
+    [create_date] => 2021-04-25
+    [update_date] => 2021-04-25 19:58:06
+)
+
+[26-Apr-2021 20:35:35 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:35:35 Asia/Tokyo] PHP Warning:  Illegal string offset 'id' in /Applications/MAMP/htdocs/output2/farm/registProduct.php on line 110
+[26-Apr-2021 20:35:35 Asia/Tokyo] PHP Warning:  Illegal string offset 'category_name' in /Applications/MAMP/htdocs/output2/farm/registProduct.php on line 110
+[26-Apr-2021 20:35:35 Asia/Tokyo] PHP Warning:  Illegal string offset 'id' in /Applications/MAMP/htdocs/output2/farm/registProduct.php on line 110
+[26-Apr-2021 20:35:35 Asia/Tokyo] PHP Warning:  Illegal string offset 'category_name' in /Applications/MAMP/htdocs/output2/farm/registProduct.php on line 110
+[26-Apr-2021 20:35:35 Asia/Tokyo] PHP Warning:  Illegal string offset 'id' in /Applications/MAMP/htdocs/output2/farm/registProduct.php on line 110
+[26-Apr-2021 20:35:35 Asia/Tokyo] PHP Warning:  Illegal string offset 'category_name' in /Applications/MAMP/htdocs/output2/farm/registProduct.php on line 110
+[26-Apr-2021 20:35:35 Asia/Tokyo] PHP Warning:  Illegal string offset 'id' in /Applications/MAMP/htdocs/output2/farm/registProduct.php on line 110
+[26-Apr-2021 20:35:35 Asia/Tokyo] PHP Warning:  Illegal string offset 'category_name' in /Applications/MAMP/htdocs/output2/farm/registProduct.php on line 110
+[26-Apr-2021 20:35:35 Asia/Tokyo] PHP Warning:  Illegal string offset 'id' in /Applications/MAMP/htdocs/output2/farm/registProduct.php on line 110
+[26-Apr-2021 20:35:35 Asia/Tokyo] PHP Warning:  Illegal string offset 'category_name' in /Applications/MAMP/htdocs/output2/farm/registProduct.php on line 110
+[26-Apr-2021 20:38:41 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[26-Apr-2021 20:38:41 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:38:41 Asia/Tokyo] デバッグ:商品登録
+[26-Apr-2021 20:38:41 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:38:41 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:38:41 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [category_name] => 穀物
+            [delete_flg] => 0
+            [create_date] => 2021-04-25
+            [update_date] => 2021-04-25 19:58:06
+        )
+
+)
+
+[26-Apr-2021 20:38:41 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:40:31 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[26-Apr-2021 20:40:31 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:40:31 Asia/Tokyo] デバッグ:商品登録
+[26-Apr-2021 20:40:31 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:40:31 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:40:31 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [category_name] => 穀物
+            [delete_flg] => 0
+            [create_date] => 2021-04-25
+            [update_date] => 2021-04-25 19:58:06
+        )
+
+)
+
+[26-Apr-2021 20:40:31 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:40:33 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[26-Apr-2021 20:40:33 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:40:33 Asia/Tokyo] デバッグ:商品登録
+[26-Apr-2021 20:40:33 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:40:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:40:33 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [category_name] => 穀物
+            [delete_flg] => 0
+            [create_date] => 2021-04-25
+            [update_date] => 2021-04-25 19:58:06
+        )
+
+)
+
+[26-Apr-2021 20:40:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:41:51 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[26-Apr-2021 20:41:51 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:41:51 Asia/Tokyo] デバッグ:商品登録
+[26-Apr-2021 20:41:51 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:41:51 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:41:51 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+        )
+
+)
+
+[26-Apr-2021 20:41:51 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:41:51 Asia/Tokyo] PHP Notice:  Undefined index: category_name in /Applications/MAMP/htdocs/output2/farm/registProduct.php on line 110
+[26-Apr-2021 20:43:18 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[26-Apr-2021 20:43:18 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:43:18 Asia/Tokyo] デバッグ:商品登録
+[26-Apr-2021 20:43:18 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:43:18 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:43:18 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:43:18 Asia/Tokyo] デバッグ:Array
+(
+    [id] => 1
+    [category_name] => 穀物
+    [delete_flg] => 0
+    [create_date] => 2021-04-25
+    [update_date] => 2021-04-25 19:58:06
+)
+
+[26-Apr-2021 20:43:18 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:48:01 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[26-Apr-2021 20:48:01 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:48:01 Asia/Tokyo] デバッグ:商品登録
+[26-Apr-2021 20:48:01 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:48:01 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:48:01 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:48:01 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [category_name] => 穀物
+            [delete_flg] => 0
+            [create_date] => 2021-04-25
+            [update_date] => 2021-04-25 19:58:06
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [category_name] => 野菜
+            [delete_flg] => 0
+            [create_date] => 2021-04-25
+            [update_date] => 2021-04-25 20:00:22
+        )
+
+    [2] => Array
+        (
+            [id] => 3
+            [category_name] => 果物
+            [delete_flg] => 0
+            [create_date] => 2021-04-25
+            [update_date] => 2021-04-25 20:00:22
+        )
+
+)
+
+[26-Apr-2021 20:48:01 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:48:01 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/registProduct.php on line 110
+[26-Apr-2021 20:48:01 Asia/Tokyo] PHP Notice:  Undefined index: category_name in /Applications/MAMP/htdocs/output2/farm/registProduct.php on line 110
+[26-Apr-2021 20:48:05 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[26-Apr-2021 20:48:05 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:48:05 Asia/Tokyo] デバッグ:商品登録
+[26-Apr-2021 20:48:05 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:48:05 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:48:05 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:48:05 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [category_name] => 穀物
+            [delete_flg] => 0
+            [create_date] => 2021-04-25
+            [update_date] => 2021-04-25 19:58:06
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [category_name] => 野菜
+            [delete_flg] => 0
+            [create_date] => 2021-04-25
+            [update_date] => 2021-04-25 20:00:22
+        )
+
+    [2] => Array
+        (
+            [id] => 3
+            [category_name] => 果物
+            [delete_flg] => 0
+            [create_date] => 2021-04-25
+            [update_date] => 2021-04-25 20:00:22
+        )
+
+)
+
+[26-Apr-2021 20:48:05 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:48:05 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/registProduct.php on line 110
+[26-Apr-2021 20:48:05 Asia/Tokyo] PHP Notice:  Undefined index: category_name in /Applications/MAMP/htdocs/output2/farm/registProduct.php on line 110
+[26-Apr-2021 20:48:37 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[26-Apr-2021 20:48:37 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:48:37 Asia/Tokyo] デバッグ:商品登録
+[26-Apr-2021 20:48:37 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:48:37 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:48:37 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:48:37 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [category_name] => 穀物
+            [delete_flg] => 0
+            [create_date] => 2021-04-25
+            [update_date] => 2021-04-25 19:58:06
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [category_name] => 野菜
+            [delete_flg] => 0
+            [create_date] => 2021-04-25
+            [update_date] => 2021-04-25 20:00:22
+        )
+
+    [2] => Array
+        (
+            [id] => 3
+            [category_name] => 果物
+            [delete_flg] => 0
+            [create_date] => 2021-04-25
+            [update_date] => 2021-04-25 20:00:22
+        )
+
+)
+
+[26-Apr-2021 20:48:37 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:49:15 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[26-Apr-2021 20:49:15 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:49:15 Asia/Tokyo] デバッグ:商品登録
+[26-Apr-2021 20:49:15 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:49:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:49:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:49:15 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [category_name] => 穀物
+            [delete_flg] => 0
+            [create_date] => 2021-04-25
+            [update_date] => 2021-04-25 19:58:06
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [category_name] => 野菜
+            [delete_flg] => 0
+            [create_date] => 2021-04-25
+            [update_date] => 2021-04-25 20:00:22
+        )
+
+    [2] => Array
+        (
+            [id] => 3
+            [category_name] => 果物
+            [delete_flg] => 0
+            [create_date] => 2021-04-25
+            [update_date] => 2021-04-25 20:00:22
+        )
+
+)
+
+[26-Apr-2021 20:49:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:49:15 Asia/Tokyo] エラー発生:SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p_name' in 'field list'
+[26-Apr-2021 20:50:48 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[26-Apr-2021 20:50:48 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:50:48 Asia/Tokyo] デバッグ:商品登録
+[26-Apr-2021 20:50:48 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:50:48 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:50:48 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:50:48 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:50:48 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[26-Apr-2021 20:50:48 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:50:48 Asia/Tokyo] デバッグ:マイページ画面
+[26-Apr-2021 20:50:48 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:50:48 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:51:07 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[26-Apr-2021 20:51:07 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:51:07 Asia/Tokyo] デバッグ:商品登録
+[26-Apr-2021 20:51:07 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:51:07 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:51:07 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:52:15 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[26-Apr-2021 20:52:15 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:52:15 Asia/Tokyo] デバッグ:商品登録
+[26-Apr-2021 20:52:15 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:52:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:52:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:52:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[26-Apr-2021 20:52:15 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[26-Apr-2021 20:52:15 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:52:15 Asia/Tokyo] デバッグ:マイページ画面
+[26-Apr-2021 20:52:15 Asia/Tokyo] デバッグ:==============================================
+[26-Apr-2021 20:52:15 Asia/Tokyo] デバッグ:クエリ成功しました。

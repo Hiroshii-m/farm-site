@@ -347,7 +347,7 @@
 }
 .c-form {
     width: $site-width_xl;
-    margin: 120px auto;
+    margin: 0 auto;
     border: 1px solid $color_accent;
     padding: $space_3l;
     box-sizing: border-box;
@@ -718,6 +718,17 @@
         @include mq(sm) {
             font-size: $font-size_s;
         }
+    }
+    &__btn {
+        display: block;
+        min-width: 200px;
+        width: 40%;
+        padding: $space_s;
+        color: $color_base;
+        background: $bg_color;
+        margin: 20px auto 50px auto;
+        border-radius: 5px;
+        text-align: center;
     }
 }
 .p-explain {
