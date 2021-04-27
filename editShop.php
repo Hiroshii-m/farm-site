@@ -70,6 +70,11 @@ $dbFormData = getShop($u_id);
 $s_id = $dbFormData['id'];
 // 市区町村名を取得
 $dbFormData['city_name'] = (!empty($dbFormData['city_id'])) ? getCityName($dbFormData['city_id']) : '';
+// 不正な値が入った場合
+if(empty($dbFormData)) {
+    debug('不正な値が入りました。');
+    header("Location:mypage.php");
+}
 
 if(!empty($_POST)) {
     $shop_name = (!empty($_POST['shop_name'])) ? $_POST['shop_name'] : '';

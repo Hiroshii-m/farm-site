@@ -5,7 +5,7 @@
             <li class="c-sidebar__list">
                 <a href="editProf.php" class="c-sidebar__text">プロフィール編集</a>
             </li>
-            <?php if($regist_flg === false){ ?>
+            <?php if(empty($s_id)){ ?>
                 <li class="c-sidebar__list">
                     <a href="registShop.php" class="c-sidebar__text">加盟店登録</a>
                 </li>

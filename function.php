@@ -321,16 +321,16 @@ function getUser($u_id) {
     return $result;
 }
 // 店舗を登録したかどうか
-function getRegist($u_id) {
+function getShopId($u_id) {
     $dbh = dbConnect();
     $sql = 'SELECT `id` FROM shops WHERE `user_id` = :u_id';
     $data = array(':u_id' => $u_id);
     $stmt = queryPost($dbh, $sql, $data);
     $result = $stmt->fetch(PDO::FETCH_ASSOC);
     if(!empty($result)) {
-        return true;
+        return $result['id'];
     } else {
-        return false;
+        return '';
     }
 }
 // 登録した店舗情報を取得
@@ -354,11 +354,42 @@ function getShopOne($s_id) {
 // 複数の店舗を取得
 function getShopList() {
     $dbh = dbConnect();
-    $sql = 'SELECT s.`id`, s.`shop_name`, s.`social_profile`, s.`shop_img1`, u.`screen_name` FROM shops AS s LEFT JOIN users AS u ON s.user_id = u.id LIMIT 10';
+    $sql = 'SELECT s.`id`, s.`shop_name`, s.`social_profile`, s.`shop_img1`, u.`screen_name` FROM shops AS s LEFT JOIN users AS u ON s.`user_id` = u.`id` LIMIT 10';
     $data = array();
     $stmt = queryPost($dbh, $sql, $data);
     $result = $stmt->fetchAll();
-    return $result;
+    if(!empty($result)) {
+        return $result;
+    } else {
+        return '';
+    }
+}
+// 商品一覧を取得
+function getProducts($s_id, $current_num = 0, $limit = 10) {
+    $offset = $limit * $current_num;
+    $dbh = dbConnect();
+    $sql = 'SELECT p.`id`, p.`shop_id`, p.`user_id`, p.`p_name`, p.`p_detail`, p.`term`, p.`p_value`, p.`p_number`, p.`p_img`, c.`category_name` FROM products AS p LEFT JOIN category AS c ON p.`category_id` = c.`id` WHERE p.`shop_id` = :s_id LIMIT '.$limit.' OFFSET '.$offset;
+    $data = array(':s_id' => $s_id);
+    $stmt = queryPost($dbh, $sql, $data);
+    $result = $stmt->fetchAll();
+    if(!empty($result)) {
+        return $result;
+    } else {
+        return '';
+    }
+}
+// 商品情報を取得
+function getProductOne($p_id) {
+    $dbh = dbConnect();
+    $sql = 'SELECT * FROM products WHERE id = :p_id';
+    $data = array(':p_id' => $p_id);
+    $stmt = queryPost($dbh, $sql, $data);
+    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+    if(!empty($result)) {
+        return $result;
+    } else {
+        return '';
+    }
 }
 // カテゴリーを取得
 function getCategory() {
@@ -384,7 +415,7 @@ function getCityInfo($p_id) {
     $sql = 'SELECT `id`, `city_name` FROM cities WHERE `prefecture_id` = :p_id AND `delete_flg` = 0';
     $data = array(':p_id' => $p_id);
     $stmt = queryPost($dbh, $sql, $data);
-    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+    $result = $stmt->fetchAll();
     return $result;
 }
 // 市区町村名を取得

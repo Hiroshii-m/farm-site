@@ -13,7 +13,7 @@
                     <?php if(!empty($_SESSION['login_date']) && time() <= $_SESSION['login_date'] + $_SESSION['login_limit']){ ?>
                     
                         <li class="c-header__item">
-                            <a href="index.html" class="c-header__text">ホーム</a>
+                            <a href="index.php" class="c-header__text">ホーム</a>
                         </li>
                         <li class="c-header__item">
                             <a href="mypage.php" class="c-header__text">マイページ</a>
@@ -25,7 +25,7 @@
                     <?php }else{ ?>
 
                     <li class="c-header__item">
-                        <a href="index.html" class="c-header__text">ホーム</a>
+                        <a href="index.php" class="c-header__text">ホーム</a>
                     </li>
                     <li class="c-header__item">
                         <a href="login.php" class="c-header__text">ログイン</a>

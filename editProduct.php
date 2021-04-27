@@ -1,23 +1,27 @@
 <?php
-// 予想時間: 3h
-// かかった時間：1h18mi
+// 予想時間: 1h
+// かかった時間：1h5mi
 
 // 共通ファイルの読み込み
-require_once('function.php');
+require('function.php');
 // ログイン認証ファイル読み込み
 require('auth.php');
 
 debug('==============================================');
-debug('商品登録');
+debug('商品編集画面');
 debug('==============================================');
 
+// GETパラメータ取得
+$p_id = (!empty($_GET['p_id'])) ? $_GET['p_id'] : '';
 // カテゴリーを取得
 $category = getCategory();
-// ユーザーidを格納
-$u_id = $_SESSION['user_id'];
-// 店舗情報を取得
-$shop = getShop($u_id);
-$s_id = $shop['id'];
+// 商品情報を取得
+$dbFormData = getProductOne($p_id);
+// 不正な値が入った場合
+if(empty($dbFormData)) {
+    debug('不正な値が入りました。');
+    header("Location:mypage.php");
+}
 
 if(!empty($_POST)) {
     $p_name = (!empty($_POST['p_name'])) ? $_POST['p_name'] : '';
@@ -40,8 +44,8 @@ if(!empty($_POST)) {
         try {
             // 商品を登録
             $dbh = dbConnect();
-            $sql = 'INSERT INTO products(`shop_id`, `user_id`, `p_name`, `p_detail`, `category_id`, `term`, `p_value`, `p_number`, `p_img`, `create_date`) VALUES(:s_id, :u_id, :p_name, :p_detail, :c_id, :term, :p_value, :p_number, :p_img, :create_date)';
-            $data = array(':s_id' => $s_id, ':u_id' => $u_id, ':p_name' => $p_name, ':p_detail' => $p_detail, ':c_id' => $c_id, ':term' => $term, ':p_value' => $p_value, ':p_number' => $p_number, ':p_img' => $p_img, ':create_date' => date('Y-m-d H:i:s'));
+            $sql = 'UPDATE products SET `p_name` = :p_name, `p_detail` = :p_detail, `category_id` = :c_id, `term` = :term, `p_value` = :p_value, `p_number` = :p_number, `p_img` = :p_img WHERE `id` = :p_id';
+            $data = array(':p_name' => $p_name, ':p_detail' => $p_detail, ':c_id' => $c_id, ':term' => $term, ':p_value' => $p_value, ':p_number' => $p_number, ':p_img' => $p_img, ':p_id' => $p_id);
             queryPost($dbh, $sql, $data);
 
             header("Location:mypage.php");
@@ -54,7 +58,7 @@ if(!empty($_POST)) {
 
 ?>
 <?php
-$headTitle = '商品登録ページ';
+$headTitle = '商品編集ページ';
 require('head.php');
 ?>
     <body>
@@ -63,7 +67,7 @@ require('head.php');
     
         <main id="l-main">
             <form method="post" class="c-form js-sp-menu-target" enctype="multipart/form-data">
-                <h2 class="c-form__title">商品を登録する</h2>
+                <h2 class="c-form__title">商品を編集する</h2>
                 <div class="u-err-msg">
                     <?= showErrMsg('common'); ?>
                 </div>
@@ -107,7 +111,7 @@ require('head.php');
                     <select name="c_id" id="" class="c-form__select <?= showErrStyle('c_id'); ?>">
                         <option value="0">選択してください</option>
                         <?php foreach($category as $key => $val): ?>
-                            <option value="<?= $val['id']; ?>"><?= $val['category_name']; ?></option>
+                            <option value="<?= $val['id']; ?>" <?= ($dbFormData['category_id'] == $val['id']) ? 'selected' : ''; ?>><?= $val['category_name']; ?></option>
                         <?php endforeach; ?>
                     </select>
                     <div class="u-err-msg">
@@ -127,7 +131,7 @@ require('head.php');
                     </div>
                 </label>
                 
-                <input class="c-form__submit" type="submit" value="登録">
+                <input class="c-form__submit" type="submit" value="変更">
             </form>
         </main>
         

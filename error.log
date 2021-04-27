@@ -4949,3 +4949,1234 @@ Stack trace:
 [26-Apr-2021 20:52:15 Asia/Tokyo] デバッグ:マイページ画面
 [26-Apr-2021 20:52:15 Asia/Tokyo] デバッグ:==============================================
 [26-Apr-2021 20:52:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 15:21:11 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:21:11 Asia/Tokyo] デバッグ:TOP画面
+[27-Apr-2021 15:21:11 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:21:11 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.id' in 'on clause' in /Applications/MAMP/htdocs/output2/farm/function.php:305
+Stack trace:
+#0 /Applications/MAMP/htdocs/output2/farm/function.php(305): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/output2/farm/function.php(359): queryPost(Object(PDO), 'SELECT s.`id`, ...', Array)
+#2 /Applications/MAMP/htdocs/output2/farm/index.php(75): getShopList()
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/output2/farm/function.php on line 305
+[27-Apr-2021 15:24:04 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:24:04 Asia/Tokyo] デバッグ:TOP画面
+[27-Apr-2021 15:24:04 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:24:04 Asia/Tokyo] PHP Notice:  Undefined variable: shopData in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[27-Apr-2021 15:24:04 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/output2/farm/index.php on line 185
+[27-Apr-2021 15:24:39 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:24:39 Asia/Tokyo] デバッグ:TOP画面
+[27-Apr-2021 15:24:39 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:24:39 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.id' in 'on clause' in /Applications/MAMP/htdocs/output2/farm/function.php:305
+Stack trace:
+#0 /Applications/MAMP/htdocs/output2/farm/function.php(305): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/output2/farm/function.php(359): queryPost(Object(PDO), 'SELECT s.`id`, ...', Array)
+#2 /Applications/MAMP/htdocs/output2/farm/index.php(75): getShopList()
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/output2/farm/function.php on line 305
+[27-Apr-2021 15:24:56 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:24:56 Asia/Tokyo] デバッグ:TOP画面
+[27-Apr-2021 15:24:56 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:24:56 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 15:24:56 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 15:24:56 Asia/Tokyo] PHP Notice:  Undefined index: shop_img in /Applications/MAMP/htdocs/output2/farm/index.php on line 188
+[27-Apr-2021 15:24:56 Asia/Tokyo] PHP Notice:  Undefined index: screen_name in /Applications/MAMP/htdocs/output2/farm/index.php on line 189
+[27-Apr-2021 15:24:56 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/index.php on line 192
+[27-Apr-2021 15:24:56 Asia/Tokyo] PHP Notice:  Undefined index: shop_name in /Applications/MAMP/htdocs/output2/farm/index.php on line 192
+[27-Apr-2021 15:24:56 Asia/Tokyo] PHP Notice:  Undefined index: social_profile in /Applications/MAMP/htdocs/output2/farm/index.php on line 194
+[27-Apr-2021 15:28:06 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:28:06 Asia/Tokyo] デバッグ:TOP画面
+[27-Apr-2021 15:28:06 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:28:06 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 15:28:06 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 15:28:06 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [shop_name] => 屯田スクラム
+                    [social_profile] => 化学肥料は一切なし。動物系、植物系の肥料をふんだんに使って自然に優しく。土にこだわっている。
+1. ふかふかの土
+有機肥料がたっぷり入った特製の柔らかな土。アスパラガスは土の中のミネラルで甘みやコクがあるアスパラガスに仕上がります。
+2. 美しい自然と水
+眞鍋牧場は山々に囲まれた高台にあり、清らかな地下水に恵まれている環境です。
+                    [shop_img1] => uploads/5146bcb40e6b81b1afb89254c422c9cfa7c0e714.jpeg
+                    [screen_name] => サトシ
+                )
+
+        )
+
+)
+
+[27-Apr-2021 15:28:06 Asia/Tokyo] PHP Notice:  Undefined index: shop_img in /Applications/MAMP/htdocs/output2/farm/index.php on line 189
+[27-Apr-2021 15:28:06 Asia/Tokyo] PHP Notice:  Undefined index: screen_name in /Applications/MAMP/htdocs/output2/farm/index.php on line 190
+[27-Apr-2021 15:28:06 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/index.php on line 193
+[27-Apr-2021 15:28:06 Asia/Tokyo] PHP Notice:  Undefined index: shop_name in /Applications/MAMP/htdocs/output2/farm/index.php on line 193
+[27-Apr-2021 15:28:06 Asia/Tokyo] PHP Notice:  Undefined index: social_profile in /Applications/MAMP/htdocs/output2/farm/index.php on line 195
+[27-Apr-2021 15:28:28 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:28:28 Asia/Tokyo] デバッグ:TOP画面
+[27-Apr-2021 15:28:28 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:28:28 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 15:28:28 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 15:28:28 Asia/Tokyo] PHP Notice:  Undefined index: shop_img in /Applications/MAMP/htdocs/output2/farm/index.php on line 188
+[27-Apr-2021 15:31:26 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:31:26 Asia/Tokyo] デバッグ:TOP画面
+[27-Apr-2021 15:31:26 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:31:26 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 15:31:26 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 15:35:19 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:35:19 Asia/Tokyo] デバッグ:TOP画面
+[27-Apr-2021 15:35:19 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:35:19 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 15:35:19 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 15:35:32 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:35:32 Asia/Tokyo] デバッグ:TOP画面
+[27-Apr-2021 15:35:32 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:35:32 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 15:35:32 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 15:36:31 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:36:31 Asia/Tokyo] デバッグ:TOP画面
+[27-Apr-2021 15:36:31 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:36:31 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 15:36:31 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 15:50:39 Asia/Tokyo] デバッグ:ログイン有効期限切れです。
+[27-Apr-2021 15:50:39 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:50:39 Asia/Tokyo] デバッグ:ログイン画面
+[27-Apr-2021 15:50:39 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:50:39 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[27-Apr-2021 15:50:39 Asia/Tokyo] デバッグ:セッションID：
+[27-Apr-2021 15:50:39 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [login_date] => 1619437935
+    [login_limit] => 3600
+    [user_id] => 3
+)
+
+[27-Apr-2021 15:50:39 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1619506239
+[27-Apr-2021 15:50:39 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1619441535
+[27-Apr-2021 15:50:39 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:50:39 Asia/Tokyo] デバッグ:ログイン画面
+[27-Apr-2021 15:50:39 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:50:39 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[27-Apr-2021 15:50:39 Asia/Tokyo] デバッグ:セッションID：v0hfol20psqts3drgtmmc3of5v
+[27-Apr-2021 15:50:39 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[27-Apr-2021 15:50:39 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1619506239
+[27-Apr-2021 15:50:46 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:50:46 Asia/Tokyo] デバッグ:ログイン画面
+[27-Apr-2021 15:50:46 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:50:46 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[27-Apr-2021 15:50:46 Asia/Tokyo] デバッグ:セッションID：4vv8b1sqe57ss7lpif1n28io0e
+[27-Apr-2021 15:50:46 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[27-Apr-2021 15:50:46 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1619506246
+[27-Apr-2021 15:50:46 Asia/Tokyo] デバッグ:POSTされました。
+[27-Apr-2021 15:50:46 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 15:50:46 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 15:50:47 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 15:50:47 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:50:47 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 15:50:47 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:50:47 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 15:50:47 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[27-Apr-2021 15:50:47 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 15:50:47 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/output2/farm/mypage.php on line 94
+[27-Apr-2021 15:53:01 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 15:53:01 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:53:01 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 15:53:01 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:53:01 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 15:53:01 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[27-Apr-2021 15:53:01 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 15:53:01 Asia/Tokyo] デバッグ:
+[27-Apr-2021 15:53:01 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/output2/farm/mypage.php on line 95
+[27-Apr-2021 15:53:56 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 15:53:56 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:53:56 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 15:53:56 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:53:56 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 15:53:56 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[27-Apr-2021 15:53:56 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 15:53:56 Asia/Tokyo] デバッグ:
+[27-Apr-2021 15:53:56 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/output2/farm/mypage.php on line 95
+[27-Apr-2021 15:54:29 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 15:54:29 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:54:29 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 15:54:29 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:54:29 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 15:54:29 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[27-Apr-2021 15:54:29 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 15:54:29 Asia/Tokyo] PHP Notice:  Undefined variable: getProducts in /Applications/MAMP/htdocs/output2/farm/mypage.php on line 18
+[27-Apr-2021 15:54:29 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Function name must be a string in /Applications/MAMP/htdocs/output2/farm/mypage.php:18
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/output2/farm/mypage.php on line 18
+[27-Apr-2021 15:55:25 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 15:55:25 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:55:25 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 15:55:25 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:55:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 15:55:25 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[27-Apr-2021 15:55:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 15:55:25 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[27-Apr-2021 15:55:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 15:55:25 Asia/Tokyo] デバッグ:
+[27-Apr-2021 15:55:25 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/output2/farm/mypage.php on line 95
+[27-Apr-2021 15:56:18 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 15:56:18 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:56:18 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 15:56:18 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:56:18 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 15:56:18 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[27-Apr-2021 15:56:18 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 15:56:18 Asia/Tokyo] デバッグ:Array
+(
+    [id] => 1
+)
+
+[27-Apr-2021 15:56:18 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/output2/farm/mypage.php on line 95
+[27-Apr-2021 15:57:07 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 15:57:07 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:57:07 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 15:57:07 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:57:07 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 15:57:07 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 15:58:25 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 15:58:25 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:58:25 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 15:58:25 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:58:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 15:58:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 15:58:25 Asia/Tokyo] デバッグ:0
+[27-Apr-2021 15:59:44 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 15:59:44 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:59:44 Asia/Tokyo] デバッグ:商品編集画面
+[27-Apr-2021 15:59:44 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:59:44 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 15:59:44 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 15:59:53 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 15:59:53 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:59:53 Asia/Tokyo] デバッグ:商品編集画面
+[27-Apr-2021 15:59:53 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 15:59:53 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 15:59:53 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 15:59:53 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[27-Apr-2021 16:01:36 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 16:01:36 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 16:01:36 Asia/Tokyo] デバッグ:商品編集画面
+[27-Apr-2021 16:01:36 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 16:01:36 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 16:01:36 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 16:01:36 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[27-Apr-2021 16:05:56 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 16:05:56 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 16:05:56 Asia/Tokyo] デバッグ:商品編集画面
+[27-Apr-2021 16:05:56 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 16:05:56 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 16:05:56 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 16:05:56 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[27-Apr-2021 16:05:56 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/editProduct.php on line 114
+[27-Apr-2021 16:05:56 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/editProduct.php on line 114
+[27-Apr-2021 16:05:56 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/editProduct.php on line 114
+[27-Apr-2021 16:06:49 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 16:06:49 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 16:06:49 Asia/Tokyo] デバッグ:商品編集画面
+[27-Apr-2021 16:06:49 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 16:06:49 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 16:06:49 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 16:06:49 Asia/Tokyo] デバッグ:Array
+(
+    [id] => 2
+    [shop_id] => 1
+    [user_id] => 3
+    [p_name] => 米
+    [p_detail] => もちもちの米です。
+    [category_id] => 1
+    [term] => 冬
+    [p_value] => 100000
+    [p_number] => 10kg
+    [p_img] => 
+    [delete_flg] => 0
+    [create_date] => 2021-04-26
+    [update_date] => 2021-04-26 20:52:15
+)
+
+[27-Apr-2021 16:06:49 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[27-Apr-2021 16:06:49 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/editProduct.php on line 115
+[27-Apr-2021 16:06:49 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/editProduct.php on line 115
+[27-Apr-2021 16:06:49 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/editProduct.php on line 115
+[27-Apr-2021 16:08:34 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 16:08:34 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 16:08:34 Asia/Tokyo] デバッグ:商品編集画面
+[27-Apr-2021 16:08:34 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 16:08:34 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 16:08:34 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 16:08:34 Asia/Tokyo] デバッグ:Array
+(
+    [id] => 2
+    [shop_id] => 1
+    [user_id] => 3
+    [p_name] => 米
+    [p_detail] => もちもちの米です。
+    [category_id] => 1
+    [term] => 冬
+    [p_value] => 100000
+    [p_number] => 10kg
+    [p_img] => 
+    [delete_flg] => 0
+    [create_date] => 2021-04-26
+    [update_date] => 2021-04-26 20:52:15
+)
+
+[27-Apr-2021 16:08:34 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [category_name] => 穀物
+            [delete_flg] => 0
+            [create_date] => 2021-04-25
+            [update_date] => 2021-04-25 19:58:06
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [category_name] => 野菜
+            [delete_flg] => 0
+            [create_date] => 2021-04-25
+            [update_date] => 2021-04-25 20:00:22
+        )
+
+    [2] => Array
+        (
+            [id] => 3
+            [category_name] => 果物
+            [delete_flg] => 0
+            [create_date] => 2021-04-25
+            [update_date] => 2021-04-25 20:00:22
+        )
+
+)
+
+[27-Apr-2021 16:08:34 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[27-Apr-2021 16:08:34 Asia/Tokyo] PHP Notice:  Undefined index:  in /Applications/MAMP/htdocs/output2/farm/editProduct.php on line 116
+[27-Apr-2021 16:08:34 Asia/Tokyo] PHP Notice:  Undefined index:  in /Applications/MAMP/htdocs/output2/farm/editProduct.php on line 116
+[27-Apr-2021 16:08:34 Asia/Tokyo] PHP Notice:  Undefined index:  in /Applications/MAMP/htdocs/output2/farm/editProduct.php on line 116
+[27-Apr-2021 16:08:58 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 16:08:58 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 16:08:58 Asia/Tokyo] デバッグ:商品編集画面
+[27-Apr-2021 16:08:58 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 16:08:58 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 16:08:58 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 16:08:58 Asia/Tokyo] デバッグ:Array
+(
+    [id] => 2
+    [shop_id] => 1
+    [user_id] => 3
+    [p_name] => 米
+    [p_detail] => もちもちの米です。
+    [category_id] => 1
+    [term] => 冬
+    [p_value] => 100000
+    [p_number] => 10kg
+    [p_img] => 
+    [delete_flg] => 0
+    [create_date] => 2021-04-26
+    [update_date] => 2021-04-26 20:52:15
+)
+
+[27-Apr-2021 16:08:58 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [category_name] => 穀物
+            [delete_flg] => 0
+            [create_date] => 2021-04-25
+            [update_date] => 2021-04-25 19:58:06
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [category_name] => 野菜
+            [delete_flg] => 0
+            [create_date] => 2021-04-25
+            [update_date] => 2021-04-25 20:00:22
+        )
+
+    [2] => Array
+        (
+            [id] => 3
+            [category_name] => 果物
+            [delete_flg] => 0
+            [create_date] => 2021-04-25
+            [update_date] => 2021-04-25 20:00:22
+        )
+
+)
+
+[27-Apr-2021 16:08:58 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[27-Apr-2021 16:09:33 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 16:09:33 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 16:09:33 Asia/Tokyo] デバッグ:商品編集画面
+[27-Apr-2021 16:09:33 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 16:09:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 16:09:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 16:09:33 Asia/Tokyo] デバッグ:Array
+(
+    [id] => 2
+    [shop_id] => 1
+    [user_id] => 3
+    [p_name] => 米
+    [p_detail] => もちもちの米です。
+    [category_id] => 1
+    [term] => 冬
+    [p_value] => 100000
+    [p_number] => 10kg
+    [p_img] => 
+    [delete_flg] => 0
+    [create_date] => 2021-04-26
+    [update_date] => 2021-04-26 20:52:15
+)
+
+[27-Apr-2021 16:09:33 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [category_name] => 穀物
+            [delete_flg] => 0
+            [create_date] => 2021-04-25
+            [update_date] => 2021-04-25 19:58:06
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [category_name] => 野菜
+            [delete_flg] => 0
+            [create_date] => 2021-04-25
+            [update_date] => 2021-04-25 20:00:22
+        )
+
+    [2] => Array
+        (
+            [id] => 3
+            [category_name] => 果物
+            [delete_flg] => 0
+            [create_date] => 2021-04-25
+            [update_date] => 2021-04-25 20:00:22
+        )
+
+)
+
+[27-Apr-2021 16:09:33 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 16:09:33 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 16:09:33 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 16:09:33 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 16:09:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 16:09:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 16:09:37 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 16:09:37 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 16:09:37 Asia/Tokyo] デバッグ:商品編集画面
+[27-Apr-2021 16:09:37 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 16:09:37 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 16:09:37 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 16:09:37 Asia/Tokyo] デバッグ:Array
+(
+    [id] => 2
+    [shop_id] => 1
+    [user_id] => 3
+    [p_name] => 米
+    [p_detail] => もちもちの米です。
+    [category_id] => 1
+    [term] => 冬
+    [p_value] => 100000
+    [p_number] => 10kg
+    [p_img] => 
+    [delete_flg] => 0
+    [create_date] => 2021-04-26
+    [update_date] => 2021-04-26 20:52:15
+)
+
+[27-Apr-2021 16:09:37 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [category_name] => 穀物
+            [delete_flg] => 0
+            [create_date] => 2021-04-25
+            [update_date] => 2021-04-25 19:58:06
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [category_name] => 野菜
+            [delete_flg] => 0
+            [create_date] => 2021-04-25
+            [update_date] => 2021-04-25 20:00:22
+        )
+
+    [2] => Array
+        (
+            [id] => 3
+            [category_name] => 果物
+            [delete_flg] => 0
+            [create_date] => 2021-04-25
+            [update_date] => 2021-04-25 20:00:22
+        )
+
+)
+
+[27-Apr-2021 16:11:08 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 16:11:08 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 16:11:08 Asia/Tokyo] デバッグ:商品編集画面
+[27-Apr-2021 16:11:08 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 16:11:08 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 16:11:08 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 16:11:08 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [category_name] => 穀物
+            [delete_flg] => 0
+            [create_date] => 2021-04-25
+            [update_date] => 2021-04-25 19:58:06
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [category_name] => 野菜
+            [delete_flg] => 0
+            [create_date] => 2021-04-25
+            [update_date] => 2021-04-25 20:00:22
+        )
+
+    [2] => Array
+        (
+            [id] => 3
+            [category_name] => 果物
+            [delete_flg] => 0
+            [create_date] => 2021-04-25
+            [update_date] => 2021-04-25 20:00:22
+        )
+
+)
+
+[27-Apr-2021 16:12:16 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 16:12:16 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 16:12:16 Asia/Tokyo] デバッグ:商品編集画面
+[27-Apr-2021 16:12:16 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 16:12:16 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 16:12:16 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 16:12:16 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [category_name] => 穀物
+            [delete_flg] => 0
+            [create_date] => 2021-04-25
+            [update_date] => 2021-04-25 19:58:06
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [category_name] => 野菜
+            [delete_flg] => 0
+            [create_date] => 2021-04-25
+            [update_date] => 2021-04-25 20:00:22
+        )
+
+    [2] => Array
+        (
+            [id] => 3
+            [category_name] => 果物
+            [delete_flg] => 0
+            [create_date] => 2021-04-25
+            [update_date] => 2021-04-25 20:00:22
+        )
+
+)
+
+[27-Apr-2021 16:13:57 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 16:13:57 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 16:13:57 Asia/Tokyo] デバッグ:商品編集画面
+[27-Apr-2021 16:13:57 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 16:13:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 16:13:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 16:14:39 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 16:14:39 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 16:14:39 Asia/Tokyo] デバッグ:商品編集画面
+[27-Apr-2021 16:14:39 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 16:14:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 16:14:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 16:18:45 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 16:18:45 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 16:18:45 Asia/Tokyo] デバッグ:商品編集画面
+[27-Apr-2021 16:18:45 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 16:18:45 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 16:18:45 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 16:21:37 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 16:21:37 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 16:21:37 Asia/Tokyo] デバッグ:商品編集画面
+[27-Apr-2021 16:21:37 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 16:21:37 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 16:21:37 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 16:21:37 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[27-Apr-2021 16:23:40 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 16:23:40 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 16:23:40 Asia/Tokyo] デバッグ:商品編集画面
+[27-Apr-2021 16:23:40 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 16:23:40 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 16:23:40 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 16:23:40 Asia/Tokyo] デバッグ:Array
+(
+    [p_name] => 米
+    [p_value] => 100000
+    [p_number] => 10kg
+    [p_detail] => 
+    [term] => 
+    [c_id] => 1
+    [MAX_FILE_SIZE] => 3145728
+)
+
+[27-Apr-2021 16:23:40 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[27-Apr-2021 16:25:10 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 16:25:10 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 16:25:10 Asia/Tokyo] デバッグ:商品編集画面
+[27-Apr-2021 16:25:10 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 16:25:10 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 16:25:10 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 16:25:10 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[27-Apr-2021 16:25:28 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 16:25:28 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 16:25:28 Asia/Tokyo] デバッグ:商品編集画面
+[27-Apr-2021 16:25:28 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 16:25:28 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 16:25:28 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 16:25:28 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[27-Apr-2021 16:26:50 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 16:26:50 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 16:26:50 Asia/Tokyo] デバッグ:商品編集画面
+[27-Apr-2021 16:26:50 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 16:26:50 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 16:26:50 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 16:26:50 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 16:26:50 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 16:26:50 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 16:26:50 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 16:26:50 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 16:26:50 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 16:26:50 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:14:18 Asia/Tokyo] デバッグ:ログイン有効期限切れです。
+[27-Apr-2021 18:14:18 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:14:18 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 18:14:18 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:14:18 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:14:18 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:14:18 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:14:18 Asia/Tokyo] デバッグ:ログイン画面
+[27-Apr-2021 18:14:18 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:14:18 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[27-Apr-2021 18:14:18 Asia/Tokyo] デバッグ:セッションID：k59dqplangv77n6s8g9pvu1p3m
+[27-Apr-2021 18:14:18 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[27-Apr-2021 18:14:18 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1619514858
+[27-Apr-2021 18:14:29 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:14:29 Asia/Tokyo] デバッグ:ログイン画面
+[27-Apr-2021 18:14:29 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:14:29 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[27-Apr-2021 18:14:29 Asia/Tokyo] デバッグ:セッションID：3bttpp3ul5bo2uilgc4rfjk2es
+[27-Apr-2021 18:14:29 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[27-Apr-2021 18:14:29 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1619514869
+[27-Apr-2021 18:14:29 Asia/Tokyo] デバッグ:POSTされました。
+[27-Apr-2021 18:14:29 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:14:29 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:14:29 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 18:14:29 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:14:29 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 18:14:29 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:14:29 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:14:29 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:41:20 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 18:41:20 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:41:20 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 18:41:20 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:41:20 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:41:20 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:41:24 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 18:41:24 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:41:24 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 18:41:24 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:41:24 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:41:24 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:42:27 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 18:42:27 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:42:27 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 18:42:27 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:42:27 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:42:27 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:43:02 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 18:43:02 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:43:02 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 18:43:02 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:43:02 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:43:02 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:43:02 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[27-Apr-2021 18:43:02 Asia/Tokyo] デバッグ:Array
+[27-Apr-2021 18:43:28 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 18:43:28 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:43:28 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 18:43:28 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:43:28 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:43:28 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:43:28 Asia/Tokyo] デバッグ:Array
+(
+    [add_product] => 
+)
+
+[27-Apr-2021 18:43:35 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 18:43:35 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:43:35 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 18:43:35 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:43:35 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:43:35 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:43:35 Asia/Tokyo] デバッグ:Array
+(
+    [add_product] => 
+)
+
+[27-Apr-2021 18:43:57 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 18:43:57 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:43:57 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 18:43:57 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:43:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:43:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:43:57 Asia/Tokyo] デバッグ:Array
+(
+    [add_product] => 
+)
+
+[27-Apr-2021 18:44:06 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 18:44:06 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:44:06 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 18:44:06 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:44:06 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:44:06 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:44:06 Asia/Tokyo] デバッグ:Array
+(
+    [add_product] => 1
+)
+
+[27-Apr-2021 18:44:06 Asia/Tokyo] デバッグ:商品をもっと見る
+[27-Apr-2021 18:45:50 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 18:45:50 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:45:50 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 18:45:50 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:45:50 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:45:50 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:45:50 Asia/Tokyo] デバッグ:1
+[27-Apr-2021 18:45:52 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 18:45:52 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:45:52 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 18:45:52 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:45:52 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:45:52 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:45:52 Asia/Tokyo] デバッグ:1
+[27-Apr-2021 18:46:03 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 18:46:03 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:46:03 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 18:46:03 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:46:03 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:46:03 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:46:03 Asia/Tokyo] デバッグ:1
+[27-Apr-2021 18:46:30 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 18:46:30 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:46:30 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 18:46:30 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:46:30 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:46:30 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:46:30 Asia/Tokyo] PHP Notice:  Undefined variable: current_num in /Applications/MAMP/htdocs/output2/farm/mypage.php on line 20
+[27-Apr-2021 18:46:30 Asia/Tokyo] デバッグ:1
+[27-Apr-2021 18:46:39 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 18:46:39 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:46:39 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 18:46:39 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:46:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:46:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:46:39 Asia/Tokyo] PHP Notice:  Undefined variable: current_num in /Applications/MAMP/htdocs/output2/farm/mypage.php on line 20
+[27-Apr-2021 18:46:39 Asia/Tokyo] デバッグ:1
+[27-Apr-2021 18:46:59 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 18:46:59 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:46:59 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 18:46:59 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:46:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:46:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:46:59 Asia/Tokyo] デバッグ:1
+[27-Apr-2021 18:47:02 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 18:47:02 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:47:02 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 18:47:02 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:47:02 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:47:02 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:47:02 Asia/Tokyo] デバッグ:1
+[27-Apr-2021 18:47:04 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 18:47:04 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:47:04 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 18:47:04 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:47:04 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:47:04 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:47:04 Asia/Tokyo] デバッグ:1
+[27-Apr-2021 18:48:02 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 18:48:02 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:48:02 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 18:48:02 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:48:02 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:48:02 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:48:02 Asia/Tokyo] PHP Notice:  Undefined variable: current_num in /Applications/MAMP/htdocs/output2/farm/mypage.php on line 21
+[27-Apr-2021 18:48:02 Asia/Tokyo] デバッグ:
+[27-Apr-2021 18:48:38 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 18:48:38 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:48:38 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 18:48:38 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:48:38 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:48:38 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:48:38 Asia/Tokyo] PHP Notice:  Undefined variable: current_num in /Applications/MAMP/htdocs/output2/farm/mypage.php on line 22
+[27-Apr-2021 18:48:38 Asia/Tokyo] デバッグ:
+[27-Apr-2021 18:48:57 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 18:48:57 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:48:57 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 18:48:57 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:48:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:48:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:49:00 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 18:49:00 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:49:00 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 18:49:00 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:49:00 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:49:00 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:49:02 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 18:49:02 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:49:02 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 18:49:02 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:49:02 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:49:02 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:49:16 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 18:49:16 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:49:16 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 18:49:16 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 18:49:16 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:49:16 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 18:49:16 Asia/Tokyo] デバッグ:1
+[27-Apr-2021 19:00:07 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 19:00:07 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 19:00:07 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 19:00:07 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 19:00:07 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 19:00:07 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 19:00:10 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 19:00:10 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 19:00:10 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 19:00:10 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 19:00:10 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 19:00:10 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 19:00:10 Asia/Tokyo] デバッグ:1
+[27-Apr-2021 19:00:21 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 19:00:21 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 19:00:21 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 19:00:21 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 19:00:21 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 19:00:21 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 19:00:21 Asia/Tokyo] デバッグ:1
+[27-Apr-2021 19:00:45 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 19:00:45 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 19:00:45 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 19:00:45 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 19:00:45 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 19:00:45 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 19:00:45 Asia/Tokyo] デバッグ:1
+[27-Apr-2021 19:00:47 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 19:00:47 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 19:00:47 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 19:00:47 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 19:00:47 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 19:00:47 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 19:00:47 Asia/Tokyo] デバッグ:1
+[27-Apr-2021 19:00:48 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 19:00:48 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 19:00:48 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 19:00:48 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 19:00:48 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 19:00:48 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 19:00:48 Asia/Tokyo] デバッグ:1
+[27-Apr-2021 19:02:42 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 19:02:42 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 19:02:42 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 19:02:42 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 19:02:42 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 19:02:42 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 19:02:42 Asia/Tokyo] デバッグ:1
+[27-Apr-2021 19:02:44 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 19:02:44 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 19:02:44 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 19:02:44 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 19:02:44 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 19:02:44 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 19:02:44 Asia/Tokyo] デバッグ:1
+[27-Apr-2021 19:02:46 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 19:02:46 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 19:02:46 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 19:02:46 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 19:02:46 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 19:02:46 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 19:02:46 Asia/Tokyo] デバッグ:1
+[27-Apr-2021 20:33:17 Asia/Tokyo] デバッグ:ログイン有効期限切れです。
+[27-Apr-2021 20:33:17 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:33:17 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 20:33:17 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:33:17 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:33:17 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:33:17 Asia/Tokyo] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function CountNum::__construct(), 0 passed in /Applications/MAMP/htdocs/output2/farm/mypage.php on line 19 and exactly 1 expected in /Applications/MAMP/htdocs/output2/farm/function.php:80
+Stack trace:
+#0 /Applications/MAMP/htdocs/output2/farm/mypage.php(19): CountNum->__construct()
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/output2/farm/function.php on line 80
+[27-Apr-2021 20:33:17 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:33:17 Asia/Tokyo] デバッグ:ログイン画面
+[27-Apr-2021 20:33:17 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:33:17 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[27-Apr-2021 20:33:17 Asia/Tokyo] デバッグ:セッションID：tdsm8mbb824fond95dv1l4o8rg
+[27-Apr-2021 20:33:17 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[27-Apr-2021 20:33:17 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1619523197
+[27-Apr-2021 20:33:25 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:33:25 Asia/Tokyo] デバッグ:ログイン画面
+[27-Apr-2021 20:33:25 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:33:25 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[27-Apr-2021 20:33:25 Asia/Tokyo] デバッグ:セッションID：dvp22i53ar9ml1cdqunh2l3sav
+[27-Apr-2021 20:33:25 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[27-Apr-2021 20:33:25 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1619523205
+[27-Apr-2021 20:33:25 Asia/Tokyo] デバッグ:POSTされました。
+[27-Apr-2021 20:33:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:33:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:33:25 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 20:33:25 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:33:25 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 20:33:25 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:33:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:33:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:33:25 Asia/Tokyo] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function CountNum::__construct(), 0 passed in /Applications/MAMP/htdocs/output2/farm/mypage.php on line 19 and exactly 1 expected in /Applications/MAMP/htdocs/output2/farm/function.php:80
+Stack trace:
+#0 /Applications/MAMP/htdocs/output2/farm/mypage.php(19): CountNum->__construct()
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/output2/farm/function.php on line 80
+[27-Apr-2021 20:33:54 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 20:33:54 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:33:54 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 20:33:54 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:33:54 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:33:54 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:33:54 Asia/Tokyo] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function CountNum::__construct(), 0 passed in /Applications/MAMP/htdocs/output2/farm/mypage.php on line 19 and exactly 1 expected in /Applications/MAMP/htdocs/output2/farm/function.php:80
+Stack trace:
+#0 /Applications/MAMP/htdocs/output2/farm/mypage.php(19): CountNum->__construct()
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/output2/farm/function.php on line 80
+[27-Apr-2021 20:42:55 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 20:42:55 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:42:55 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 20:42:55 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:42:55 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:42:55 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:42:55 Asia/Tokyo] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function CountNum::__construct(), 0 passed in /Applications/MAMP/htdocs/output2/farm/mypage.php on line 19 and exactly 1 expected in /Applications/MAMP/htdocs/output2/farm/function.php:80
+Stack trace:
+#0 /Applications/MAMP/htdocs/output2/farm/mypage.php(19): CountNum->__construct()
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/output2/farm/function.php on line 80
+[27-Apr-2021 20:42:58 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 20:42:58 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:42:58 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 20:42:58 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:42:58 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:42:58 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:42:58 Asia/Tokyo] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function CountNum::__construct(), 0 passed in /Applications/MAMP/htdocs/output2/farm/mypage.php on line 19 and exactly 1 expected in /Applications/MAMP/htdocs/output2/farm/function.php:80
+Stack trace:
+#0 /Applications/MAMP/htdocs/output2/farm/mypage.php(19): CountNum->__construct()
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/output2/farm/function.php on line 80
+[27-Apr-2021 20:43:50 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 20:43:50 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:43:50 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 20:43:50 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:43:50 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:43:50 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:44:02 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 20:44:02 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:44:02 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 20:44:02 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:44:02 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:44:02 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:44:02 Asia/Tokyo] デバッグ:1
+[27-Apr-2021 20:44:13 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 20:44:13 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:44:13 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 20:44:13 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:44:13 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:44:13 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:44:13 Asia/Tokyo] デバッグ:1
+[27-Apr-2021 20:45:43 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 20:45:43 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:45:43 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 20:45:43 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:45:43 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:45:43 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:45:43 Asia/Tokyo] デバッグ:2
+[27-Apr-2021 20:46:26 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 20:46:26 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:46:26 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 20:46:26 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:46:26 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:46:26 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:46:26 Asia/Tokyo] PHP Notice:  Undefined variable: count_product in /Applications/MAMP/htdocs/output2/farm/mypage.php on line 24
+[27-Apr-2021 20:46:26 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Call to a member function getCount() on null in /Applications/MAMP/htdocs/output2/farm/mypage.php:24
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/output2/farm/mypage.php on line 24
+[27-Apr-2021 20:46:55 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 20:46:55 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:46:55 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 20:46:55 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:46:55 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:46:55 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:46:55 Asia/Tokyo] デバッグ:1
+[27-Apr-2021 20:46:58 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 20:46:58 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:46:58 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 20:46:58 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:46:58 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:46:58 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:46:58 Asia/Tokyo] デバッグ:1
+[27-Apr-2021 20:47:01 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 20:47:01 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:47:01 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 20:47:01 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:47:01 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:47:01 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:47:01 Asia/Tokyo] デバッグ:1
+[27-Apr-2021 20:47:36 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 20:47:36 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:47:36 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 20:47:36 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:47:36 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:47:36 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:47:36 Asia/Tokyo] デバッグ:1
+[27-Apr-2021 20:47:47 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 20:47:47 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:47:47 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 20:47:47 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:47:47 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:47:47 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:47:47 Asia/Tokyo] デバッグ:1
+[27-Apr-2021 20:47:56 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 20:47:56 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:47:56 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 20:47:56 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:47:56 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:47:56 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:47:56 Asia/Tokyo] デバッグ:1
+[27-Apr-2021 20:53:53 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 20:53:53 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:53:53 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 20:53:53 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:53:53 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:53:53 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:53:53 Asia/Tokyo] デバッグ:1
+[27-Apr-2021 20:53:54 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 20:53:54 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:53:54 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 20:53:54 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:53:54 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:53:54 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:53:54 Asia/Tokyo] デバッグ:1
+[27-Apr-2021 20:53:56 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 20:53:56 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:53:56 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 20:53:56 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:53:56 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:53:56 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:53:56 Asia/Tokyo] デバッグ:1
+[27-Apr-2021 20:54:14 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 20:54:14 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:54:14 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 20:54:14 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:54:14 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:54:14 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:54:14 Asia/Tokyo] デバッグ:1
+[27-Apr-2021 20:54:35 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 20:54:35 Asia/Tokyo] デバッグ:読み込んでへんよな
+[27-Apr-2021 20:54:35 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:54:35 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 20:54:35 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:54:35 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:54:35 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:54:35 Asia/Tokyo] デバッグ:1
+[27-Apr-2021 20:54:53 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 20:54:53 Asia/Tokyo] デバッグ:読み込んでへんよな
+[27-Apr-2021 20:54:53 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:54:53 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 20:54:53 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 20:54:53 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:54:53 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 20:54:53 Asia/Tokyo] デバッグ:1
+[27-Apr-2021 21:02:55 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 21:02:55 Asia/Tokyo] デバッグ:読み込んでへんよな
+[27-Apr-2021 21:02:55 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 21:02:55 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 21:02:55 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 21:02:55 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 21:02:55 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 21:02:55 Asia/Tokyo] デバッグ:1
+[27-Apr-2021 21:02:57 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 21:02:57 Asia/Tokyo] デバッグ:読み込んでへんよな
+[27-Apr-2021 21:02:57 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 21:02:57 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 21:02:57 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 21:02:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 21:02:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 21:02:57 Asia/Tokyo] デバッグ:1
+[27-Apr-2021 21:02:59 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 21:02:59 Asia/Tokyo] デバッグ:読み込んでへんよな
+[27-Apr-2021 21:02:59 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 21:02:59 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 21:02:59 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 21:02:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 21:02:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 21:02:59 Asia/Tokyo] デバッグ:1
+[27-Apr-2021 21:16:06 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 21:16:06 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 21:16:06 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 21:16:06 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 21:16:06 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 21:16:06 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 21:16:06 Asia/Tokyo] PHP Notice:  Undefined index: count_product in /Applications/MAMP/htdocs/output2/farm/mypage.php on line 24
+[27-Apr-2021 21:17:20 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 21:17:20 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 21:17:20 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 21:17:20 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 21:17:20 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 21:17:20 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 21:17:23 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 21:17:23 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 21:17:23 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 21:17:23 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 21:17:23 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 21:17:23 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 21:17:43 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 21:17:43 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 21:17:43 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 21:17:43 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 21:17:43 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 21:17:43 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 21:17:43 Asia/Tokyo] デバッグ:3
+[27-Apr-2021 21:17:50 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 21:17:50 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 21:17:50 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 21:17:50 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 21:17:50 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 21:17:50 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 21:17:50 Asia/Tokyo] デバッグ:4
+[27-Apr-2021 21:52:08 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 21:52:08 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 21:52:08 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 21:52:08 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 21:52:08 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 21:52:08 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 21:52:09 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 21:52:09 Asia/Tokyo] デバッグ:ログアウト画面
+[27-Apr-2021 21:52:09 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 21:52:09 Asia/Tokyo] デバッグ:セッションの中身Array
+(
+)
+
+[27-Apr-2021 21:52:09 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 21:52:09 Asia/Tokyo] デバッグ:ログイン画面
+[27-Apr-2021 21:52:09 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 21:52:09 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[27-Apr-2021 21:52:09 Asia/Tokyo] デバッグ:セッションID：gu33ftcl187p82kastqk8u7uee
+[27-Apr-2021 21:52:09 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[27-Apr-2021 21:52:09 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1619527929
+[27-Apr-2021 21:52:16 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 21:52:16 Asia/Tokyo] デバッグ:ログイン画面
+[27-Apr-2021 21:52:16 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 21:52:16 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[27-Apr-2021 21:52:16 Asia/Tokyo] デバッグ:セッションID：1vofn3qsoih4uimaev7k51c5mb
+[27-Apr-2021 21:52:16 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[27-Apr-2021 21:52:16 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1619527936
+[27-Apr-2021 21:52:16 Asia/Tokyo] デバッグ:POSTされました。
+[27-Apr-2021 21:52:16 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 21:52:16 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 21:52:16 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 21:52:16 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 21:52:16 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 21:52:16 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 21:52:16 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 21:52:16 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 21:52:23 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[27-Apr-2021 21:52:23 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 21:52:23 Asia/Tokyo] デバッグ:マイページ画面
+[27-Apr-2021 21:52:23 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 21:52:23 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 21:52:23 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 21:52:23 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 21:54:07 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 21:54:07 Asia/Tokyo] デバッグ:TOP画面
+[27-Apr-2021 21:54:07 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 21:54:07 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 21:54:07 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 21:55:07 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 21:55:07 Asia/Tokyo] デバッグ:検索画面
+[27-Apr-2021 21:55:07 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 21:55:07 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'farmshops.cities' doesn't exist in /Applications/MAMP/htdocs/output2/farm/function.php:305
+Stack trace:
+#0 /Applications/MAMP/htdocs/output2/farm/function.php(305): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/output2/farm/function.php(417): queryPost(Object(PDO), 'SELECT `id`, `c...', Array)
+#2 /Applications/MAMP/htdocs/output2/farm/search.php(15): getCityInfo('1')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/output2/farm/function.php on line 305
+[27-Apr-2021 21:59:18 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 21:59:18 Asia/Tokyo] デバッグ:検索画面
+[27-Apr-2021 21:59:18 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 21:59:18 Asia/Tokyo] デバッグ:クエリ成功しました。
+[27-Apr-2021 22:00:20 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 22:00:20 Asia/Tokyo] デバッグ:検索画面
+[27-Apr-2021 22:00:20 Asia/Tokyo] デバッグ:==============================================
+[27-Apr-2021 22:00:20 Asia/Tokyo] デバッグ:クエリ成功しました。

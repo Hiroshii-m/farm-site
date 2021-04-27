@@ -3,7 +3,7 @@
 // かかった時間：21mi
 
 // 共通ファイルの読み込み
-require('function.php');
+require_once('function.php');
 
 debug('==============================================');
 debug('検索画面');
@@ -12,7 +12,8 @@ debug('==============================================');
 // GETパラメータを取得
 $p_id = (!empty($_GET['p_id'])) ? $_GET['p_id'] : '';
 // 都道府県idから市区町村idと名前を取得
-$cityInfo[] = (!empty($p_id)) ? getCityInfo($p_id) : '';
+$cityInfo = (!empty($p_id)) ? getCityInfo($p_id) : '';
+// カテゴリー情報を取得
 
 ?>
 <?php

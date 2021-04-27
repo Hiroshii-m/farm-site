@@ -3,7 +3,7 @@
 // かかった時間：1h24mi
 
 // 共通ファイルの読み込み
-require('function.php');
+require_once('function.php');
 
 debug('==============================================');
 debug('TOP画面');
@@ -72,7 +72,7 @@ $kyusyu = array(
     '47'=>'沖縄県'
 );
 // 登録された販売所を取得
-$shopData[] = (!empty(getShopList())) ? getShopList() : '';
+$shopData = (!empty(getShopList())) ? getShopList() : '';
 
 ?>
 
@@ -181,11 +181,12 @@ require('head.php');
             <section id="l-sale">
                 <div class="c-container c-submission">
                     <h2 class="c-container__tit">最近登録された販売所</h2>
+                    <?php if(!empty($shopData)){ ?>
                     <ul class="c-submission__body">
                         <?php foreach($shopData as $key => $val): ?>
                         <li class="c-submission__item">
                             <div class="c-submission__visual">
-                                <div class="c-submission__img"><img src="<?= sanitize(showImg($val['shop_img'])); ?>" alt=""></div>
+                                <div class="c-submission__img"><img src="<?= sanitize(showImg($val['shop_img1'])); ?>" alt=""></div>
                                 <p class="c-submission__author"><?= sanitize(showData($val['screen_name'])); ?></p>
                             </div>
                             <div class="c-submission__content">
@@ -202,6 +203,9 @@ require('head.php');
                         <?php endforeach; ?>
                     </ul>
                     <button class="c-container__btn u-btn u-btn-border-shadow u-btn-border-shadow--color">もっと見る</button>
+                    <?php } else { ?>
+                        今、販売所を登録すると、登録者の中で、あなたが一番初めの販売者です。
+                    <?php } ?>
                 </div>
             </section><!-- /最近登録された販売所 -->
             

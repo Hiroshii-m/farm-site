@@ -87,15 +87,6 @@ $comments = 'CREATE TABLE comments(
     `create_date` DATE NOT NULL,
     `update_date` TIMESTAMP NOT NULL
 )ENGINE=INNODB DEFAULT CHARSET=utf8;';
-// // 商品が持つカテゴリー情報を作成　これやっぱいらんかも
-// $p_category = 'CREATE TABLE p_category(
-//     `id` INT(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
-//     `category_id` INT(11) NOT NULL,
-//     `product_id` INT(11) NOT NULL,
-//     `delete_flg` BOOLEAN DEFAULT 0 NOT NULL,
-//     `create_date` DATE NOT NULL,
-//     `update_date` TIMESTAMP NOT NULL
-// )ENGINE=INNODB DEFAULT CHARSET=utf8;';
 // カテゴリーテーブル作成
 $category = 'CREATE TABLE category(
     `id` INT(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
@@ -105,7 +96,7 @@ $category = 'CREATE TABLE category(
     `update_date` TIMESTAMP NOT NULL
 )ENGINE=INNODB DEFAULT CHARSET=utf8;';
 // 市区町村テーブル作成
-$cites = 'CREATE TABLE cites(
+$cites = 'CREATE TABLE cities(
     `id` INT(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
     `prefecture_id` INT(11) NOT NULL,
     `city_name` VARCHAR(255) NOT NULL,
