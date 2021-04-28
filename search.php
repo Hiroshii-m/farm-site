@@ -10,10 +10,34 @@ debug('検索画面');
 debug('==============================================');
 
 // GETパラメータを取得
+// ================================
 $p_id = (!empty($_GET['p_id'])) ? $_GET['p_id'] : '';
+$currentPageNum = 1;
+$city_id = (!empty($_GET['city_id'])) ? $_GET['city_id'] : '';
+$category_id = (!empty($_GET['category_id'])) ? $_GET['category_id'] : '';
+if(empty($p_id) && is_numeric($p_id)) {
+    header("Location:index.php");
+}
+// 処理内容
+// =================================
 // 都道府県idから市区町村idと名前を取得
 $cityInfo = (!empty($p_id)) ? getCityInfo($p_id) : '';
 // カテゴリー情報を取得
+$category = getCategory();
+// 表示件数
+$listSpan = 10;
+// 現在のレコードの先頭を算出
+$currentMinNum = (($currentPageNum-1) * $listSpan);
+// DBからデータを取得
+$dbShopData = getShopMatch($currentMinNum, $p_id, $city_id, $category_id);
+debug('取得した店舗情報');
+debug(print_r($dbShopData, true));
+// 検索クリアが押された場合
+if(!empty($_GET['clear'])) {
+    $_GET['city_id'] = '';
+    $_GET['category_id'] = '';
+    $_GET['clear'] = '';
+}
 
 ?>
 <?php
@@ -37,27 +61,35 @@ require('head.php');
             <!-- 検索ボックス -->
             <section id="l-search" class="">
                 <div class="p-search">
-                    <form method="post" class="p-search__option">
+                    <form method="get" class="p-search__option">
+                        <input type="hidden" name="p_id" value="<?= $p_id; ?>">
                         <input type="text" class="p-search__input" placeholder="キーワード[例：キャベツ、店名、穀物]">
                         <h2 class="p-search__title">条件を絞る</h2>
                         <div class="p-search__area">
                             <select class="p-search__select" name="city_id" id="">
-                                <option value="0">エリア</option>
-                                <?php foreach($cityInfo as $key => $val): ?>
-                                <option value="<?= sanitize(showData($val['id'])); ?>"><?= sanitize(showData($val['city_name'])); ?></option>
-                                <?php endforeach; ?>
+                                <option value="">エリア</option>
+                                <?php if(!empty($cityInfo)){ ?>
+                                    <?php foreach($cityInfo as $key => $val): ?>
+                                    <option value="<?= sanitize(showData($val['id'])); ?>" <?= (getFormData('city_id', true) === $val['id']) ? 'selected' : ''; ?>><?= sanitize(showData($val['city_name'])); ?></option>
+                                    <?php endforeach; ?>
+                                <?php } ?>
                             </select>
                             <i class="fas fa-chevron-down p-search__arrow"></i>
                         </div>
                         <div class="p-search__area">
-                            <select class="p-search__select" name="" id="">
+                            <select class="p-search__select" name="category_id" id="">
                                 <option value="">カテゴリー</option>
+                                <?php if(!empty($category)){ ?>
+                                    <?php foreach($category as $key => $val): ?>
+                                    <option value="<?= sanitize(showData($val['id'])); ?>" <?= (getFormData('category_id', true) === $val['id']) ? 'selected' : ''; ?>><?= sanitize(showData($val['category_name'])); ?></option>
+                                    <?php endforeach; ?>
+                                <?php } ?>
                             </select>
                             <i class="fas fa-chevron-down p-search__arrow"></i>
                         </div>
                         <div class="p-search__submit">
                             <button class="p-search__commit u-miniBtn">こだわり検索する</button>
-                            <button class="p-search__clear u-miniBtn">全てクリア</button>
+                            <button name="clear" value="1" class="p-search__clear u-miniBtn">全てクリア</button>
                         </div>
                     </form>
                 </div>
@@ -68,20 +100,21 @@ require('head.php');
                 <div class="p-shopList">
                     <h2 class="p-shopList__heading">
                         <p class="p-shopList__title">店舗一覧</p>
-                        <p class="p-shopList__showNum">1~20件表示</p>
+                        <p class="p-shopList__showNum">1~10件表示/合計<?= (!empty($dbShopData['total'])) ? $dbShopData['total'] : '0'; ?>件ヒット</p>
                         <div class="p-shopList__terms">
                             <span class="p-shopList__tag u-tag-accent">野菜</span>
                             <span class="p-shopList__tag u-tag-sub">苫小牧市</span>
                         </div>
                     </h2>
                     <ul class="p-shopList__body">
+                    <?php if(empty($dbShopData)) { ?>
+                        検索情報はありませんでした。
+                    <?php } else { ?>
+                        <?php foreach($dbShopData as $key => $val): ?>
                         <li class="c-card">
                             <div class="c-card__head">
-                                <div class="c-card__person">
-                                    <div class="c-card__img">
-                                        <img src="images/pic2.jpeg" alt="">
-                                    </div>
-                                    <p class="c-card__author">北海の農家</p>
+                                <div class="c-card__img">
+                                    <img src="images/pic2.jpeg" alt="">
                                 </div>
                                 <div class="c-card__summary">
                                     <p class="c-card__category">野菜</p>
@@ -104,6 +137,8 @@ require('head.php');
                                 </div>
                             </div>
                         </li>
+                        <?php endforeach; ?>
+                    <?php } ?>
                     </ul>
                     <!-- ページング -->
                     <div id="l-pagination" class="">

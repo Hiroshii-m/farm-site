@@ -1014,10 +1014,8 @@ i {
     flex-direction: column-reverse;
   }
 }
-.c-card__person {
-  margin-right: 20px;
-}
 .c-card__img {
+  margin-right: 20px;
   width: 100px;
   height: 100px;
 }

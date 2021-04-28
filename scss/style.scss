@@ -243,10 +243,8 @@
             flex-direction: column-reverse;
         }
     }
-    &__person {
-        margin-right: $space_xl;
-    }
     &__img {
+        margin-right: $space_xl;
         width: 100px;
         height: 100px;
         @include mq(sm) {

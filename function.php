@@ -243,8 +243,8 @@ function getFormData($str, $flg = false){
     // dbFormDataがある場合
     if(!empty($dbFormData[$str])){
         // POSTされている場合
-        if(!empty($_POST[$str])){
-            return $_POST[$str];
+        if(!empty($method[$str])){
+            return $method[$str];
             // されていなければ、db表示
         }else{
             return $dbFormData[$str];
@@ -252,8 +252,8 @@ function getFormData($str, $flg = false){
         // dbFormDataが無い場合
     }else{
         // POSTされているか
-        if(!empty($_POST[$str])){
-            return $_POST[$str];
+        if(!empty($method[$str])){
+            return $method[$str];
         }else{
             return '';
         }
@@ -313,120 +313,228 @@ function queryPost($dbh, $sql, $data){
 }
 // ユーザー情報を取得
 function getUser($u_id) {
-    $dbh = dbConnect();
-    $sql = 'SELECT `id`, `screen_name`, `last_name`, `first_name`, `last_name_kana`, `first_name_kana`, `birthday_year`, `birthday_month`, `birthday_day`, `avatar_image_path`, `prefecture_id`, `city_id`, `street`, `building`, `postcode` FROM users WHERE `id` = :u_id AND `group_id` = 1';
-    $data = array(':u_id' => $u_id);
-    $stmt = queryPost($dbh, $sql, $data);
-    $result = $stmt->fetch(PDO::FETCH_ASSOC);
-    return $result;
+    try {
+        $dbh = dbConnect();
+        $sql = 'SELECT `id`, `screen_name`, `last_name`, `first_name`, `last_name_kana`, `first_name_kana`, `birthday_year`, `birthday_month`, `birthday_day`, `avatar_image_path`, `prefecture_id`, `city_id`, `street`, `building`, `postcode` FROM users WHERE `id` = :u_id AND `group_id` = 1';
+        $data = array(':u_id' => $u_id);
+        $stmt = queryPost($dbh, $sql, $data);
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        return $result;
+    } catch ( Exception $e ) {
+        error_log('エラー発生:' . $e->getMessage());
+        $err_msg['common'] = MSG::UNEXPECTED;
+    }
 }
 // 店舗を登録したかどうか
 function getShopId($u_id) {
-    $dbh = dbConnect();
-    $sql = 'SELECT `id` FROM shops WHERE `user_id` = :u_id';
-    $data = array(':u_id' => $u_id);
-    $stmt = queryPost($dbh, $sql, $data);
-    $result = $stmt->fetch(PDO::FETCH_ASSOC);
-    if(!empty($result)) {
-        return $result['id'];
-    } else {
-        return '';
+    try {
+        $dbh = dbConnect();
+        $sql = 'SELECT `id` FROM shops WHERE `user_id` = :u_id';
+        $data = array(':u_id' => $u_id);
+        $stmt = queryPost($dbh, $sql, $data);
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        if(!empty($result)) {
+            return $result['id'];
+        } else {
+            return '';
+        }
+    } catch ( Exception $e ) {
+        error_log('エラー発生:' . $e->getMessage());
+        $err_msg['common'] = MSG::UNEXPECTED;
     }
 }
 // 登録した店舗情報を取得
 function getShop($u_id) {
-    $dbh = dbConnect();
-    $sql = 'SELECT `id`, `shop_name`, `social_profile`, `postcode`, `prefecture_id`, `city_id`, `street`, `building`, `tel`, `shop_img1`, `shop_img2`, `shop_img3` FROM shops WHERE `user_id` = :u_id';
-    $data = array(':u_id' => $u_id);
-    $stmt = queryPost($dbh, $sql, $data);
-    $result = $stmt->fetch(PDO::FETCH_ASSOC);
-    return $result;
+    try {
+        $dbh = dbConnect();
+        $sql = 'SELECT `id`, `shop_name`, `social_profile`, `postcode`, `prefecture_id`, `city_id`, `street`, `building`, `tel`, `shop_img1`, `shop_img2`, `shop_img3` FROM shops WHERE `user_id` = :u_id';
+        $data = array(':u_id' => $u_id);
+        $stmt = queryPost($dbh, $sql, $data);
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        return $result;
+    } catch ( Exception $e ) {
+        error_log('エラー発生:' . $e->getMessage());
+        $err_msg['common'] = MSG::UNEXPECTED;
+    }
 }
 // 店舗詳細情報を取得
 function getShopOne($s_id) {
-    $dbh = dbConnect();
-    $sql = 'SELECT s.`id`, s.`shop_name`, s.`social_profile`, s.`postcode`, s.`prefecture_id`, s.`city_id`, s.`street`, s.`building`, s.`tel`, s.`value`, s.`map_iframe`, s.`shop_img1`, s.`shop_img2`, s.`shop_img3`, s.`browsing_num`, s.`favorites`, u.`screen_name` FROM shops AS s LEFT JOIN users AS u ON s.`user_id` = u.`id` WHERE s.`id` = :s_id';
-    $data = array(':s_id' => $s_id);
-    $stmt = queryPost($dbh, $sql, $data);
-    $result = $stmt->fetch(PDO::FETCH_ASSOC);
-    return $result;
-}
-// 複数の店舗を取得
-function getShopList() {
-    $dbh = dbConnect();
-    $sql = 'SELECT s.`id`, s.`shop_name`, s.`social_profile`, s.`shop_img1`, u.`screen_name` FROM shops AS s LEFT JOIN users AS u ON s.`user_id` = u.`id` LIMIT 10';
-    $data = array();
-    $stmt = queryPost($dbh, $sql, $data);
-    $result = $stmt->fetchAll();
-    if(!empty($result)) {
+    try {
+        $dbh = dbConnect();
+        $sql = 'SELECT s.`id`, s.`shop_name`, s.`social_profile`, s.`postcode`, s.`prefecture_id`, s.`city_id`, s.`street`, s.`building`, s.`tel`, s.`value`, s.`map_iframe`, s.`shop_img1`, s.`shop_img2`, s.`shop_img3`, s.`browsing_num`, s.`favorites`, u.`screen_name` FROM shops AS s LEFT JOIN users AS u ON s.`user_id` = u.`id` WHERE s.`id` = :s_id';
+        $data = array(':s_id' => $s_id);
+        $stmt = queryPost($dbh, $sql, $data);
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
         return $result;
-    } else {
-        return '';
+    } catch ( Exception $e ) {
+        error_log('エラー発生:' . $e->getMessage());
+        $err_msg['common'] = MSG::UNEXPECTED;
+    }
+}
+// 複数の店舗を取得(index.php用)
+function getShopList() {
+    try {
+        $dbh = dbConnect();
+        $sql = 'SELECT s.`id`, s.`shop_name`, s.`social_profile`, s.`shop_img1`, u.`screen_name` FROM shops AS s LEFT JOIN users AS u ON s.`user_id` = u.`id` LIMIT 10';
+        $data = array();
+        $stmt = queryPost($dbh, $sql, $data);
+        $result = $stmt->fetchAll();
+        if(!empty($result)) {
+            return $result;
+        } else {
+            return '';
+        }
+    } catch ( Exception $e ) {
+        error_log('エラー発生:' . $e->getMessage());
+        $err_msg['common'] = MSG::UNEXPECTED;
+    }
+}
+// 条件に沿って店舗を取得
+function getShopMatch($currentMinNum = 0, $p_id, $city_id, $category_id, $span = 10) {
+    try {
+        // マッチした店舗数を取得
+        $dbh = dbConnect();
+        $sql = 'SELECT DISTINCT s.`shop_name`, s.`social_profile`, s.`prefecture_id`, s.`city_id`, s.`street`, s.`building`, s.`shop_img1` FROM shops AS s INNER JOIN products AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0';
+        $data = array(':p_id' => $p_id);
+        if(!empty($city_id)) {
+            $sql .= ' AND s.`city_id` = :city_id';
+            $data = array_merge($data, array(':city_id' => $city_id));
+        }
+        if(!empty($category_id)) {
+            $sql .= ' AND p.`category_id` = :category_id';
+            $data = array_merge($data, array(':category_id' => $category_id));
+        }
+        $stmt = queryPost($dbh, $sql, $data);
+        $rst['total'] = $stmt->rowCount();
+        $rst['total_page'] = ceil($rst['total']/$span);
+        if(empty($stmt)) {
+            return false;
+        }
+
+        // 表示する店舗情報を取得
+        $dbh = dbConnect();
+        $sql = 'SELECT DISTINCT s.`shop_name`, s.`social_profile`, s.`prefecture_id`, s.`city_id`, s.`street`, s.`building`, s.`shop_img1` FROM shops AS s INNER JOIN products AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0';
+        $data = array(':p_id' => $p_id);
+        if(!empty($city_id)) {
+            $sql .= ' AND s.`city_id` = :city_id';
+            $data = array_merge($data, array(':city_id' => $city_id));
+        }
+        if(!empty($category_id)) {
+            $sql .= ' AND p.`category_id` = :category_id';
+            $data = array_merge($data, array(':category_id' => $category_id));
+        }
+        $sql .= ' LIMIT :span OFFSET :currentMinNum';
+        $data = array_merge($data, array(':span' => $span, ':currentMinNum' => $currentMinNum));
+        $stmt = queryPost($dbh, $sql, $data);
+        if(!empty($stmt)) {
+            $rst['data'] = $stmt->fetchAll();
+            return $rst;
+        } else {
+            return false;
+        }
+
+    } catch ( Exception $e ) {
+        error_log('エラー発生:' . $e->getMessage());
+        $err_msg['common'] = MSG::UNEXPECTED;
     }
 }
 // 商品一覧を取得
 function getProducts($s_id, $current_num = 0, $limit = 10) {
-    $offset = $limit * $current_num;
-    $dbh = dbConnect();
-    $sql = 'SELECT p.`id`, p.`shop_id`, p.`user_id`, p.`p_name`, p.`p_detail`, p.`term`, p.`p_value`, p.`p_number`, p.`p_img`, c.`category_name` FROM products AS p LEFT JOIN category AS c ON p.`category_id` = c.`id` WHERE p.`shop_id` = :s_id LIMIT '.$limit.' OFFSET '.$offset;
-    $data = array(':s_id' => $s_id);
-    $stmt = queryPost($dbh, $sql, $data);
-    $result = $stmt->fetchAll();
-    if(!empty($result)) {
-        return $result;
-    } else {
-        return '';
+    try {
+        $offset = $limit * $current_num;
+        $dbh = dbConnect();
+        $sql = 'SELECT p.`id`, p.`shop_id`, p.`user_id`, p.`p_name`, p.`p_detail`, p.`term`, p.`p_value`, p.`p_number`, p.`p_img`, c.`category_name` FROM products AS p LEFT JOIN category AS c ON p.`category_id` = c.`id` WHERE p.`shop_id` = :s_id LIMIT '.$limit.' OFFSET '.$offset;
+        $data = array(':s_id' => $s_id);
+        $stmt = queryPost($dbh, $sql, $data);
+        $result = $stmt->fetchAll();
+        if(!empty($result)) {
+            return $result;
+        } else {
+            return '';
+        }
+    } catch ( Exception $e ) {
+        error_log('エラー発生:' . $e->getMessage());
+        $err_msg['common'] = MSG::UNEXPECTED;
     }
 }
 // 商品情報を取得
 function getProductOne($p_id) {
-    $dbh = dbConnect();
-    $sql = 'SELECT * FROM products WHERE id = :p_id';
-    $data = array(':p_id' => $p_id);
-    $stmt = queryPost($dbh, $sql, $data);
-    $result = $stmt->fetch(PDO::FETCH_ASSOC);
-    if(!empty($result)) {
-        return $result;
-    } else {
-        return '';
+    try {
+        $dbh = dbConnect();
+        $sql = 'SELECT * FROM products WHERE id = :p_id';
+        $data = array(':p_id' => $p_id);
+        $stmt = queryPost($dbh, $sql, $data);
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        if(!empty($result)) {
+            return $result;
+        } else {
+            return '';
+        }
+    } catch ( Exception $e ) {
+        error_log('エラー発生:' . $e->getMessage());
+        $err_msg['common'] = MSG::UNEXPECTED;
     }
 }
 // カテゴリーを取得
 function getCategory() {
-    $dbh = dbConnect();
-    $sql = 'SELECT * FROM category WHERE `delete_flg` = 0';
-    $data = array();
-    $stmt = queryPost($dbh, $sql, $data);
-    $result = $stmt->fetchAll();
-    return $result;
+    try {
+        $dbh = dbConnect();
+        $sql = 'SELECT `id`, `category_name` FROM category WHERE `delete_flg` = 0';
+        $data = array();
+        $stmt = queryPost($dbh, $sql, $data);
+        $result = $stmt->fetchAll();
+        if(!empty($result)) {
+            return $result;
+        } else {
+            return '';
+        }
+    } catch ( Exception $e ) {
+        error_log('エラー発生:' . $e->getMessage());
+        $err_msg['common'] = MSG::UNEXPECTED;
+    }
 }
 // メールアドレスだけ取得
 function getMail($u_id) {
-    $dbh = dbConnect();
-    $sql = 'SELECT `email` FROM users WHERE `id` = :u_id';
-    $data = array(':u_id' => $u_id);
-    $stmt = queryPost($dbh, $sql, $data);
-    $result = $stmt->fetch(PDO::FETCH_ASSOC);
-    return $result;
+    try {
+        $dbh = dbConnect();
+        $sql = 'SELECT `email` FROM users WHERE `id` = :u_id';
+        $data = array(':u_id' => $u_id);
+        $stmt = queryPost($dbh, $sql, $data);
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        return $result;
+    } catch ( Exception $e ) {
+        error_log('エラー発生:' . $e->getMessage());
+        $err_msg['common'] = MSG::UNEXPECTED;
+    }
 }
 // 都道府県から市区町村データを取得
 function getCityInfo($p_id) {
-    $dbh = dbConnect();
-    $sql = 'SELECT `id`, `city_name` FROM cities WHERE `prefecture_id` = :p_id AND `delete_flg` = 0';
-    $data = array(':p_id' => $p_id);
-    $stmt = queryPost($dbh, $sql, $data);
-    $result = $stmt->fetchAll();
-    return $result;
+    try {
+        $dbh = dbConnect();
+        $sql = 'SELECT `id`, `city_name` FROM cities WHERE `prefecture_id` = :p_id AND `delete_flg` = 0';
+        $data = array(':p_id' => $p_id);
+        $stmt = queryPost($dbh, $sql, $data);
+        $result = $stmt->fetchAll();
+        return $result;
+    } catch ( Exception $e ) {
+        error_log('エラー発生:' . $e->getMessage());
+        $err_msg['common'] = MSG::UNEXPECTED;
+    }
 }
 // 市区町村名を取得
 function getCityName($city_id) {
-    $dbh = dbConnect();
-    $sql = 'SELECT `city_name` FROM cites WHERE `id` = :c_id';
-    $data = array(':c_id' => $city_id);
-    $stmt = queryPost($dbh, $sql, $data);
-    $result = $stmt->fetch(PDO::FETCH_ASSOC);
-    if(!empty($result)) {
-        return $result['city_name'];
+    try {
+        $dbh = dbConnect();
+        $sql = 'SELECT `city_name` FROM cites WHERE `id` = :c_id';
+        $data = array(':c_id' => $city_id);
+        $stmt = queryPost($dbh, $sql, $data);
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        if(!empty($result)) {
+            return $result['city_name'];
+        }
+    } catch ( Exception $e ) {
+        error_log('エラー発生:' . $e->getMessage());
+        $err_msg['common'] = MSG::UNEXPECTED;
     }
 }
 // 画像をアップロード
