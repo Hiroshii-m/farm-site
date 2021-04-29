@@ -6587,3 +6587,1830 @@ Stack trace:
 
 )
 
+[29-Apr-2021 15:01:42 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:01:42 Asia/Tokyo] デバッグ:TOP画面
+[29-Apr-2021 15:01:42 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:01:42 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:01:42 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:01:56 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:01:56 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:01:56 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:01:56 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:01:56 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:01:56 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:01:56 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:01:56 Asia/Tokyo] デバッグ:取得した店舗情報
+[29-Apr-2021 15:01:56 Asia/Tokyo] デバッグ:Array
+(
+    [total] => 1
+    [total_page] => 1
+    [data] => Array
+        (
+            [0] => Array
+                (
+                    [shop_name] => 屯田スクラム
+                    [social_profile] => 化学肥料は一切なし。動物系、植物系の肥料をふんだんに使って自然に優しく。土にこだわっている。
+1. ふかふかの土
+有機肥料がたっぷり入った特製の柔らかな土。アスパラガスは土の中のミネラルで甘みやコクがあるアスパラガスに仕上がります。
+2. 美しい自然と水
+眞鍋牧場は山々に囲まれた高台にあり、清らかな地下水に恵まれている環境です。
+                    [prefecture_id] => 1
+                    [city_id] => 2
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => uploads/5146bcb40e6b81b1afb89254c422c9cfa7c0e714.jpeg
+                )
+
+        )
+
+)
+
+[29-Apr-2021 15:01:56 Asia/Tokyo] PHP Notice:  Undefined index:  in /Applications/MAMP/htdocs/output2/farm/search.php on line 106
+[29-Apr-2021 15:01:56 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 106
+[29-Apr-2021 15:01:56 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/search.php on line 117
+[29-Apr-2021 15:01:56 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/search.php on line 121
+[29-Apr-2021 15:01:56 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/search.php on line 132
+[29-Apr-2021 15:01:56 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:01:56 Asia/Tokyo] PHP Notice:  Undefined index:  in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:01:56 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:01:56 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:01:56 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:01:56 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/search.php on line 117
+[29-Apr-2021 15:01:56 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/search.php on line 121
+[29-Apr-2021 15:01:56 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/search.php on line 132
+[29-Apr-2021 15:01:56 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:01:56 Asia/Tokyo] PHP Notice:  Undefined index:  in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:01:56 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:01:56 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:01:56 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:01:56 Asia/Tokyo] PHP Notice:  Undefined index: shop_img1 in /Applications/MAMP/htdocs/output2/farm/search.php on line 117
+[29-Apr-2021 15:01:56 Asia/Tokyo] PHP Notice:  Undefined index: shop_name in /Applications/MAMP/htdocs/output2/farm/search.php on line 121
+[29-Apr-2021 15:01:56 Asia/Tokyo] PHP Notice:  Undefined index: social_profile in /Applications/MAMP/htdocs/output2/farm/search.php on line 132
+[29-Apr-2021 15:01:56 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:01:56 Asia/Tokyo] PHP Notice:  Undefined index:  in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:01:56 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:01:56 Asia/Tokyo] PHP Notice:  Undefined index: street in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:01:56 Asia/Tokyo] PHP Notice:  Undefined index: building in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:03:42 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:03:42 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:03:42 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:03:42 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:03:42 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:03:42 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:03:42 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:03:42 Asia/Tokyo] デバッグ:取得した店舗情報
+[29-Apr-2021 15:03:42 Asia/Tokyo] デバッグ:Array
+(
+    [total] => 1
+    [total_page] => 1
+    [data] => Array
+        (
+            [0] => Array
+                (
+                    [shop_name] => 屯田スクラム
+                    [social_profile] => 化学肥料は一切なし。動物系、植物系の肥料をふんだんに使って自然に優しく。土にこだわっている。
+1. ふかふかの土
+有機肥料がたっぷり入った特製の柔らかな土。アスパラガスは土の中のミネラルで甘みやコクがあるアスパラガスに仕上がります。
+2. 美しい自然と水
+眞鍋牧場は山々に囲まれた高台にあり、清らかな地下水に恵まれている環境です。
+                    [prefecture_id] => 1
+                    [city_id] => 2
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => uploads/5146bcb40e6b81b1afb89254c422c9cfa7c0e714.jpeg
+                )
+
+        )
+
+)
+
+[29-Apr-2021 15:03:42 Asia/Tokyo] PHP Notice:  Undefined index:  in /Applications/MAMP/htdocs/output2/farm/search.php on line 106
+[29-Apr-2021 15:03:42 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/search.php on line 117
+[29-Apr-2021 15:03:42 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/search.php on line 121
+[29-Apr-2021 15:03:42 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/search.php on line 132
+[29-Apr-2021 15:03:42 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:03:42 Asia/Tokyo] PHP Notice:  Undefined index:  in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:03:42 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:03:42 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:03:42 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:03:42 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/search.php on line 117
+[29-Apr-2021 15:03:42 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/search.php on line 121
+[29-Apr-2021 15:03:42 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/search.php on line 132
+[29-Apr-2021 15:03:42 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:03:42 Asia/Tokyo] PHP Notice:  Undefined index:  in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:03:42 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:03:42 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:03:42 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:03:42 Asia/Tokyo] PHP Notice:  Undefined index: shop_img1 in /Applications/MAMP/htdocs/output2/farm/search.php on line 117
+[29-Apr-2021 15:03:42 Asia/Tokyo] PHP Notice:  Undefined index: shop_name in /Applications/MAMP/htdocs/output2/farm/search.php on line 121
+[29-Apr-2021 15:03:42 Asia/Tokyo] PHP Notice:  Undefined index: social_profile in /Applications/MAMP/htdocs/output2/farm/search.php on line 132
+[29-Apr-2021 15:03:42 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:03:42 Asia/Tokyo] PHP Notice:  Undefined index:  in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:03:42 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:03:42 Asia/Tokyo] PHP Notice:  Undefined index: street in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:03:42 Asia/Tokyo] PHP Notice:  Undefined index: building in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:03:50 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:03:50 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:03:50 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:03:50 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:03:50 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:03:50 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:03:50 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:03:50 Asia/Tokyo] デバッグ:取得した店舗情報
+[29-Apr-2021 15:03:50 Asia/Tokyo] デバッグ:Array
+(
+    [total] => 1
+    [total_page] => 1
+    [data] => Array
+        (
+            [0] => Array
+                (
+                    [shop_name] => 屯田スクラム
+                    [social_profile] => 化学肥料は一切なし。動物系、植物系の肥料をふんだんに使って自然に優しく。土にこだわっている。
+1. ふかふかの土
+有機肥料がたっぷり入った特製の柔らかな土。アスパラガスは土の中のミネラルで甘みやコクがあるアスパラガスに仕上がります。
+2. 美しい自然と水
+眞鍋牧場は山々に囲まれた高台にあり、清らかな地下水に恵まれている環境です。
+                    [prefecture_id] => 1
+                    [city_id] => 2
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => uploads/5146bcb40e6b81b1afb89254c422c9cfa7c0e714.jpeg
+                )
+
+        )
+
+)
+
+[29-Apr-2021 15:03:50 Asia/Tokyo] PHP Warning:  htmlspecialchars() expects parameter 1 to be string, array given in /Applications/MAMP/htdocs/output2/farm/function.php on line 606
+[29-Apr-2021 15:03:50 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/search.php on line 117
+[29-Apr-2021 15:03:50 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/search.php on line 121
+[29-Apr-2021 15:03:50 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/search.php on line 132
+[29-Apr-2021 15:03:50 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:03:50 Asia/Tokyo] PHP Notice:  Undefined index:  in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:03:50 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:03:50 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:03:50 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:03:50 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/search.php on line 117
+[29-Apr-2021 15:03:50 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/search.php on line 121
+[29-Apr-2021 15:03:50 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/search.php on line 132
+[29-Apr-2021 15:03:50 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:03:50 Asia/Tokyo] PHP Notice:  Undefined index:  in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:03:50 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:03:50 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:03:50 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:03:50 Asia/Tokyo] PHP Notice:  Undefined index: shop_img1 in /Applications/MAMP/htdocs/output2/farm/search.php on line 117
+[29-Apr-2021 15:03:50 Asia/Tokyo] PHP Notice:  Undefined index: shop_name in /Applications/MAMP/htdocs/output2/farm/search.php on line 121
+[29-Apr-2021 15:03:50 Asia/Tokyo] PHP Notice:  Undefined index: social_profile in /Applications/MAMP/htdocs/output2/farm/search.php on line 132
+[29-Apr-2021 15:03:50 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:03:50 Asia/Tokyo] PHP Notice:  Undefined index:  in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:03:50 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:03:50 Asia/Tokyo] PHP Notice:  Undefined index: street in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:03:50 Asia/Tokyo] PHP Notice:  Undefined index: building in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:04:02 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:04:02 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:04:02 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:04:02 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:04:02 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:04:02 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:04:02 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:04:02 Asia/Tokyo] デバッグ:取得した店舗情報
+[29-Apr-2021 15:04:02 Asia/Tokyo] デバッグ:Array
+(
+    [total] => 1
+    [total_page] => 1
+    [data] => Array
+        (
+            [0] => Array
+                (
+                    [shop_name] => 屯田スクラム
+                    [social_profile] => 化学肥料は一切なし。動物系、植物系の肥料をふんだんに使って自然に優しく。土にこだわっている。
+1. ふかふかの土
+有機肥料がたっぷり入った特製の柔らかな土。アスパラガスは土の中のミネラルで甘みやコクがあるアスパラガスに仕上がります。
+2. 美しい自然と水
+眞鍋牧場は山々に囲まれた高台にあり、清らかな地下水に恵まれている環境です。
+                    [prefecture_id] => 1
+                    [city_id] => 2
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => uploads/5146bcb40e6b81b1afb89254c422c9cfa7c0e714.jpeg
+                )
+
+        )
+
+)
+
+[29-Apr-2021 15:04:02 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/search.php on line 117
+[29-Apr-2021 15:04:02 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/search.php on line 121
+[29-Apr-2021 15:04:02 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/search.php on line 132
+[29-Apr-2021 15:04:02 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:04:02 Asia/Tokyo] PHP Notice:  Undefined index:  in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:04:02 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:04:02 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:04:02 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:04:02 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/search.php on line 117
+[29-Apr-2021 15:04:02 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/search.php on line 121
+[29-Apr-2021 15:04:02 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/search.php on line 132
+[29-Apr-2021 15:04:02 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:04:02 Asia/Tokyo] PHP Notice:  Undefined index:  in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:04:02 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:04:02 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:04:02 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:04:02 Asia/Tokyo] PHP Notice:  Undefined index: shop_img1 in /Applications/MAMP/htdocs/output2/farm/search.php on line 117
+[29-Apr-2021 15:04:02 Asia/Tokyo] PHP Notice:  Undefined index: shop_name in /Applications/MAMP/htdocs/output2/farm/search.php on line 121
+[29-Apr-2021 15:04:02 Asia/Tokyo] PHP Notice:  Undefined index: social_profile in /Applications/MAMP/htdocs/output2/farm/search.php on line 132
+[29-Apr-2021 15:04:02 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:04:02 Asia/Tokyo] PHP Notice:  Undefined index:  in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:04:02 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:04:02 Asia/Tokyo] PHP Notice:  Undefined index: street in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:04:02 Asia/Tokyo] PHP Notice:  Undefined index: building in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:04:53 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:04:53 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:04:53 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:04:53 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:04:53 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:04:53 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:04:53 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:04:53 Asia/Tokyo] デバッグ:取得した店舗情報
+[29-Apr-2021 15:04:53 Asia/Tokyo] デバッグ:Array
+(
+    [total] => 1
+    [total_page] => 1
+    [data] => Array
+        (
+            [0] => Array
+                (
+                    [shop_name] => 屯田スクラム
+                    [social_profile] => 化学肥料は一切なし。動物系、植物系の肥料をふんだんに使って自然に優しく。土にこだわっている。
+1. ふかふかの土
+有機肥料がたっぷり入った特製の柔らかな土。アスパラガスは土の中のミネラルで甘みやコクがあるアスパラガスに仕上がります。
+2. 美しい自然と水
+眞鍋牧場は山々に囲まれた高台にあり、清らかな地下水に恵まれている環境です。
+                    [prefecture_id] => 1
+                    [city_id] => 2
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => uploads/5146bcb40e6b81b1afb89254c422c9cfa7c0e714.jpeg
+                )
+
+        )
+
+)
+
+[29-Apr-2021 15:04:53 Asia/Tokyo] PHP Notice:  Undefined index: city_name in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[29-Apr-2021 15:05:17 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:05:17 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:05:17 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:05:17 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:05:17 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:05:17 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:05:17 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:05:17 Asia/Tokyo] デバッグ:取得した店舗情報
+[29-Apr-2021 15:05:17 Asia/Tokyo] デバッグ:Array
+(
+    [total] => 1
+    [total_page] => 1
+    [data] => Array
+        (
+            [0] => Array
+                (
+                    [shop_name] => 屯田スクラム
+                    [social_profile] => 化学肥料は一切なし。動物系、植物系の肥料をふんだんに使って自然に優しく。土にこだわっている。
+1. ふかふかの土
+有機肥料がたっぷり入った特製の柔らかな土。アスパラガスは土の中のミネラルで甘みやコクがあるアスパラガスに仕上がります。
+2. 美しい自然と水
+眞鍋牧場は山々に囲まれた高台にあり、清らかな地下水に恵まれている環境です。
+                    [prefecture_id] => 1
+                    [city_id] => 2
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => uploads/5146bcb40e6b81b1afb89254c422c9cfa7c0e714.jpeg
+                )
+
+        )
+
+)
+
+[29-Apr-2021 15:07:56 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:07:56 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:07:56 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:07:56 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:07:56 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:07:56 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:07:56 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:07:56 Asia/Tokyo] デバッグ:取得した店舗情報
+[29-Apr-2021 15:07:56 Asia/Tokyo] デバッグ:Array
+(
+    [total] => 1
+    [total_page] => 1
+    [data] => Array
+        (
+            [0] => Array
+                (
+                    [shop_name] => 屯田スクラム
+                    [social_profile] => 化学肥料は一切なし。動物系、植物系の肥料をふんだんに使って自然に優しく。土にこだわっている。
+1. ふかふかの土
+有機肥料がたっぷり入った特製の柔らかな土。アスパラガスは土の中のミネラルで甘みやコクがあるアスパラガスに仕上がります。
+2. 美しい自然と水
+眞鍋牧場は山々に囲まれた高台にあり、清らかな地下水に恵まれている環境です。
+                    [prefecture_id] => 1
+                    [city_id] => 2
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => uploads/5146bcb40e6b81b1afb89254c422c9cfa7c0e714.jpeg
+                )
+
+        )
+
+)
+
+[29-Apr-2021 15:08:34 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:08:34 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:08:34 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:08:34 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:08:34 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:08:34 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:08:34 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:08:34 Asia/Tokyo] デバッグ:取得したカテゴリー情報
+[29-Apr-2021 15:08:34 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [category_name] => 穀物
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [category_name] => 野菜
+        )
+
+    [2] => Array
+        (
+            [id] => 3
+            [category_name] => 果物
+        )
+
+)
+
+[29-Apr-2021 15:16:21 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:16:21 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:16:21 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:16:21 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:16:21 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:16:21 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:16:21 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:16:21 Asia/Tokyo] デバッグ:取得したカテゴリー情報
+[29-Apr-2021 15:16:21 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [category_name] => 穀物
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [category_name] => 野菜
+        )
+
+    [2] => Array
+        (
+            [id] => 3
+            [category_name] => 果物
+        )
+
+)
+
+[29-Apr-2021 15:16:24 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:16:24 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:16:24 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:16:24 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:16:24 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:16:24 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:16:24 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:16:24 Asia/Tokyo] デバッグ:取得したカテゴリー情報
+[29-Apr-2021 15:16:24 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [category_name] => 穀物
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [category_name] => 野菜
+        )
+
+    [2] => Array
+        (
+            [id] => 3
+            [category_name] => 果物
+        )
+
+)
+
+[29-Apr-2021 15:16:59 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:16:59 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:16:59 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:16:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:16:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:16:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:16:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:16:59 Asia/Tokyo] デバッグ:取得したカテゴリー情報
+[29-Apr-2021 15:16:59 Asia/Tokyo] デバッグ:Array
+(
+    [p_id] => 1
+    [city_id] => 1
+    [category_id] => 
+)
+
+[29-Apr-2021 15:18:08 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:18:08 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:18:08 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:18:08 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:18:08 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:18:08 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:18:08 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:18:08 Asia/Tokyo] デバッグ:取得したカテゴリー情報
+[29-Apr-2021 15:18:08 Asia/Tokyo] デバッグ:Array
+(
+    [p_id] => 1
+    [city_id] => 1
+    [category_id] => 
+)
+
+[29-Apr-2021 15:18:10 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:18:10 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:18:10 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:18:10 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:18:10 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:18:10 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:18:10 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:18:10 Asia/Tokyo] デバッグ:取得したカテゴリー情報
+[29-Apr-2021 15:18:10 Asia/Tokyo] デバッグ:Array
+(
+    [p_id] => 1
+    [city_id] => 1
+    [category_id] => 
+)
+
+[29-Apr-2021 15:19:37 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:19:37 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:19:37 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:19:37 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:19:37 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:19:37 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:19:37 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:19:37 Asia/Tokyo] デバッグ:取得したカテゴリー情報
+[29-Apr-2021 15:19:37 Asia/Tokyo] デバッグ:Array
+(
+    [p_id] => 1
+    [city_id] => 1
+    [category_id] => 
+)
+
+[29-Apr-2021 15:20:23 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:20:23 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:20:23 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:20:23 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:20:23 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:20:23 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:20:23 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:20:23 Asia/Tokyo] デバッグ:取得したカテゴリー情報
+[29-Apr-2021 15:20:23 Asia/Tokyo] デバッグ:Array
+(
+    [p_id] => 1
+    [city_id] => 1
+    [category_id] => 
+)
+
+[29-Apr-2021 15:20:23 Asia/Tokyo] デバッグ:10
+[29-Apr-2021 15:20:23 Asia/Tokyo] デバッグ:11
+[29-Apr-2021 15:20:49 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:20:49 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:20:49 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:20:49 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:20:49 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:20:49 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:20:49 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:20:49 Asia/Tokyo] デバッグ:取得したカテゴリー情報
+[29-Apr-2021 15:20:49 Asia/Tokyo] デバッグ:Array
+(
+    [p_id] => 1
+    [city_id] => 1
+    [category_id] => 
+)
+
+[29-Apr-2021 15:20:49 Asia/Tokyo] デバッグ:10
+[29-Apr-2021 15:20:49 Asia/Tokyo] デバッグ:11
+[29-Apr-2021 15:21:07 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:21:07 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:21:07 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:21:07 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:21:07 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:21:07 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:21:07 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:21:07 Asia/Tokyo] デバッグ:取得したカテゴリー情報
+[29-Apr-2021 15:21:07 Asia/Tokyo] デバッグ:Array
+(
+    [p_id] => 1
+    [city_id] => 1
+    [category_id] => 
+)
+
+[29-Apr-2021 15:21:07 Asia/Tokyo] デバッグ:10
+[29-Apr-2021 15:21:07 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Call to undefined function int() in /Applications/MAMP/htdocs/output2/farm/search.php:74
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/output2/farm/search.php on line 74
+[29-Apr-2021 15:21:10 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:21:10 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:21:10 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:21:10 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:21:10 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:21:10 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:21:10 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:21:10 Asia/Tokyo] デバッグ:取得したカテゴリー情報
+[29-Apr-2021 15:21:10 Asia/Tokyo] デバッグ:Array
+(
+    [p_id] => 1
+    [city_id] => 0
+    [category_id] => 
+)
+
+[29-Apr-2021 15:21:10 Asia/Tokyo] デバッグ:0
+[29-Apr-2021 15:21:10 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Call to undefined function int() in /Applications/MAMP/htdocs/output2/farm/search.php:74
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/output2/farm/search.php on line 74
+[29-Apr-2021 15:21:15 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:21:15 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:21:15 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:21:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:21:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:21:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:21:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:21:15 Asia/Tokyo] デバッグ:取得したカテゴリー情報
+[29-Apr-2021 15:21:15 Asia/Tokyo] デバッグ:Array
+(
+    [p_id] => 1
+    [city_id] => 0
+    [category_id] => 
+)
+
+[29-Apr-2021 15:21:15 Asia/Tokyo] デバッグ:0
+[29-Apr-2021 15:21:15 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Call to undefined function int() in /Applications/MAMP/htdocs/output2/farm/search.php:74
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/output2/farm/search.php on line 74
+[29-Apr-2021 15:21:21 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:21:21 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:21:21 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:21:21 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:21:21 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:21:21 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:21:21 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:21:21 Asia/Tokyo] デバッグ:取得したカテゴリー情報
+[29-Apr-2021 15:21:21 Asia/Tokyo] デバッグ:Array
+(
+    [p_id] => 1
+    [city_id] => 0
+    [category_id] => 
+)
+
+[29-Apr-2021 15:21:21 Asia/Tokyo] デバッグ:0
+[29-Apr-2021 15:21:21 Asia/Tokyo] デバッグ:1
+[29-Apr-2021 15:22:00 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:22:00 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:22:00 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:22:00 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:22:00 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:22:00 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:22:00 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:22:00 Asia/Tokyo] デバッグ:取得したカテゴリー情報
+[29-Apr-2021 15:22:00 Asia/Tokyo] デバッグ:Array
+(
+    [p_id] => 1
+    [city_id] => 0
+    [category_id] => 
+)
+
+[29-Apr-2021 15:22:06 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:22:06 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:22:06 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:22:06 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:22:06 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:22:06 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:22:06 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:22:06 Asia/Tokyo] デバッグ:取得したカテゴリー情報
+[29-Apr-2021 15:22:06 Asia/Tokyo] デバッグ:Array
+(
+    [p_id] => 1
+    [city_id] => 1
+    [category_id] => 
+)
+
+[29-Apr-2021 15:22:10 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:22:10 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:22:10 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:22:10 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:22:10 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:22:10 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:22:10 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:22:10 Asia/Tokyo] デバッグ:取得したカテゴリー情報
+[29-Apr-2021 15:22:10 Asia/Tokyo] デバッグ:Array
+(
+    [p_id] => 1
+    [city_id] => 
+    [category_id] => 
+)
+
+[29-Apr-2021 15:22:33 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:22:33 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:22:33 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:22:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:22:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:22:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:22:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:22:33 Asia/Tokyo] デバッグ:取得したカテゴリー情報
+[29-Apr-2021 15:22:33 Asia/Tokyo] デバッグ:Array
+(
+    [p_id] => 1
+    [city_id] => 
+    [category_id] => 
+)
+
+[29-Apr-2021 15:22:34 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:22:34 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:22:34 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:22:34 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:22:34 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:22:34 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:22:34 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:22:34 Asia/Tokyo] デバッグ:取得したカテゴリー情報
+[29-Apr-2021 15:22:34 Asia/Tokyo] デバッグ:Array
+(
+    [p_id] => 1
+    [city_id] => 
+    [category_id] => 
+)
+
+[29-Apr-2021 15:22:57 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:22:57 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:22:57 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:22:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:22:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:22:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:22:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:22:57 Asia/Tokyo] デバッグ:取得したカテゴリー情報
+[29-Apr-2021 15:22:57 Asia/Tokyo] デバッグ:Array
+(
+    [p_id] => 1
+    [city_id] => 
+    [category_id] => 
+)
+
+[29-Apr-2021 15:23:03 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:23:03 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:23:03 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:23:03 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:23:03 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:23:03 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:23:04 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:23:04 Asia/Tokyo] デバッグ:取得したカテゴリー情報
+[29-Apr-2021 15:23:04 Asia/Tokyo] デバッグ:Array
+(
+    [p_id] => 1
+    [city_id] => 1
+    [category_id] => 
+)
+
+[29-Apr-2021 15:23:07 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:23:07 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:23:07 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:23:07 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:23:07 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:23:07 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:23:07 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:23:07 Asia/Tokyo] デバッグ:取得したカテゴリー情報
+[29-Apr-2021 15:23:07 Asia/Tokyo] デバッグ:Array
+(
+    [p_id] => 1
+    [city_id] => 0
+    [category_id] => 
+)
+
+[29-Apr-2021 15:23:24 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:23:24 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:23:24 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:23:24 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:23:24 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:23:24 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:23:24 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:23:24 Asia/Tokyo] デバッグ:取得したカテゴリー情報
+[29-Apr-2021 15:23:24 Asia/Tokyo] デバッグ:Array
+(
+    [p_id] => 1
+    [city_id] => 0
+    [category_id] => 
+)
+
+[29-Apr-2021 15:23:25 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:23:25 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:23:25 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:23:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:23:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:23:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:23:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:23:25 Asia/Tokyo] デバッグ:取得したカテゴリー情報
+[29-Apr-2021 15:23:25 Asia/Tokyo] デバッグ:Array
+(
+    [p_id] => 1
+    [city_id] => 0
+    [category_id] => 
+)
+
+[29-Apr-2021 15:23:30 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:23:30 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:23:30 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:23:30 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:23:30 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:23:30 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:23:30 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:23:30 Asia/Tokyo] デバッグ:取得したカテゴリー情報
+[29-Apr-2021 15:23:30 Asia/Tokyo] デバッグ:Array
+(
+    [p_id] => 1
+    [city_id] => 0
+    [category_id] => 
+)
+
+[29-Apr-2021 15:24:32 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:24:32 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:24:32 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:24:32 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:24:32 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:24:32 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:24:32 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:24:32 Asia/Tokyo] デバッグ:取得したカテゴリー情報
+[29-Apr-2021 15:24:32 Asia/Tokyo] デバッグ:Array
+(
+    [p_id] => 1
+    [city_id] => 0
+    [category_id] => 
+)
+
+[29-Apr-2021 15:24:39 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:24:39 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:24:39 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:24:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:24:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:24:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:24:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:24:39 Asia/Tokyo] デバッグ:取得したカテゴリー情報
+[29-Apr-2021 15:24:39 Asia/Tokyo] デバッグ:Array
+(
+    [p_id] => 1
+    [city_id] => 1
+    [category_id] => 
+)
+
+[29-Apr-2021 15:28:02 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:28:02 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:28:02 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:28:02 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:28:02 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:28:02 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:28:02 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:28:02 Asia/Tokyo] デバッグ:1
+[29-Apr-2021 15:28:02 Asia/Tokyo] デバッグ:1
+[29-Apr-2021 15:28:18 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:28:18 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:28:18 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:28:18 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:28:18 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:28:18 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:28:18 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:28:18 Asia/Tokyo] デバッグ:1
+[29-Apr-2021 15:28:18 Asia/Tokyo] デバッグ:1
+[29-Apr-2021 15:28:41 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:28:41 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:28:41 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:28:41 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:28:41 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:28:41 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:28:41 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:34:09 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:34:09 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:34:09 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:34:09 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:34:09 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:34:09 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:34:09 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:34:09 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Call to undefined function int() in /Applications/MAMP/htdocs/output2/farm/search.php:71
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/output2/farm/search.php on line 71
+[29-Apr-2021 15:35:49 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:35:49 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:35:49 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:35:49 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:35:49 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:35:49 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:35:49 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:38:50 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:38:50 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:38:50 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:38:50 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:38:50 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:38:50 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:38:50 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:38:50 Asia/Tokyo] デバッグ:integer
+[29-Apr-2021 15:38:50 Asia/Tokyo] デバッグ:string
+[29-Apr-2021 15:38:50 Asia/Tokyo] デバッグ:integer
+[29-Apr-2021 15:38:50 Asia/Tokyo] デバッグ:string
+[29-Apr-2021 15:40:31 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:40:31 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:40:31 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:40:31 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:40:31 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:40:31 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:40:31 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:40:57 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:40:57 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:40:57 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:40:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:40:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:40:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:40:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:40:57 Asia/Tokyo] デバッグ:keyinteger
+[29-Apr-2021 15:40:57 Asia/Tokyo] デバッグ:string
+[29-Apr-2021 15:40:57 Asia/Tokyo] デバッグ:keyinteger
+[29-Apr-2021 15:40:57 Asia/Tokyo] デバッグ:string
+[29-Apr-2021 15:41:19 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:41:19 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:41:19 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:41:19 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:41:19 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:41:19 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:41:19 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:41:19 Asia/Tokyo] デバッグ:keyinteger
+[29-Apr-2021 15:41:19 Asia/Tokyo] デバッグ:string
+[29-Apr-2021 15:41:19 Asia/Tokyo] デバッグ:keyinteger
+[29-Apr-2021 15:41:19 Asia/Tokyo] デバッグ:string
+[29-Apr-2021 15:50:55 Asia/Tokyo] PHP Notice:  Undefined index:  in /Applications/MAMP/htdocs/output2/farm/search.php on line 103
+[29-Apr-2021 15:50:55 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 103
+[29-Apr-2021 15:53:10 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:53:10 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:53:10 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:53:10 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:53:10 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:53:10 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [category_name] => 穀物
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [category_name] => 野菜
+        )
+
+    [2] => Array
+        (
+            [id] => 3
+            [category_name] => 果物
+        )
+
+)
+
+[29-Apr-2021 15:53:10 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:53:10 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:54:31 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:54:31 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:54:31 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:54:31 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:54:31 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:54:31 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [category_name] => 穀物
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [category_name] => 野菜
+        )
+
+    [2] => Array
+        (
+            [id] => 3
+            [category_name] => 果物
+        )
+
+)
+
+[29-Apr-2021 15:54:31 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:54:31 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:54:31 Asia/Tokyo] PHP Notice:  Undefined index:  in /Applications/MAMP/htdocs/output2/farm/search.php on line 104
+[29-Apr-2021 15:54:31 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 104
+[29-Apr-2021 15:57:55 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:57:55 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:57:55 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:57:55 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:57:55 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:57:55 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:57:55 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:57:55 Asia/Tokyo] PHP Notice:  Undefined index:  in /Applications/MAMP/htdocs/output2/farm/search.php on line 104
+[29-Apr-2021 15:57:55 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 104
+[29-Apr-2021 15:58:59 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:58:59 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:58:59 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:58:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:58:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:58:59 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [category_name] => 穀物
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [category_name] => 野菜
+        )
+
+    [2] => Array
+        (
+            [id] => 3
+            [category_name] => 果物
+        )
+
+)
+
+[29-Apr-2021 15:58:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:58:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:59:08 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:59:08 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:59:08 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:59:08 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:59:08 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:59:08 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [category_name] => 穀物
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [category_name] => 野菜
+        )
+
+    [2] => Array
+        (
+            [id] => 3
+            [category_name] => 果物
+        )
+
+)
+
+[29-Apr-2021 15:59:08 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:59:08 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:59:23 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:59:23 Asia/Tokyo] デバッグ:TOP画面
+[29-Apr-2021 15:59:23 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:59:23 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:59:23 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:59:25 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:59:25 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 15:59:25 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 15:59:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:59:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:59:25 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [category_name] => 穀物
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [category_name] => 野菜
+        )
+
+    [2] => Array
+        (
+            [id] => 3
+            [category_name] => 果物
+        )
+
+)
+
+[29-Apr-2021 15:59:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:59:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 15:59:25 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 72
+[29-Apr-2021 15:59:25 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 72
+[29-Apr-2021 15:59:25 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 72
+[29-Apr-2021 15:59:25 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 72
+[29-Apr-2021 15:59:25 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 15:59:25 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 15:59:25 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 15:59:25 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 15:59:25 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 15:59:25 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 15:59:25 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 105
+[29-Apr-2021 15:59:25 Asia/Tokyo] PHP Notice:  Undefined index:  in /Applications/MAMP/htdocs/output2/farm/search.php on line 105
+[29-Apr-2021 15:59:25 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 105
+[29-Apr-2021 16:00:41 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 16:00:41 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 16:00:41 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 16:00:41 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:00:41 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:00:41 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [category_name] => 穀物
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [category_name] => 野菜
+        )
+
+    [2] => Array
+        (
+            [id] => 3
+            [category_name] => 果物
+        )
+
+)
+
+[29-Apr-2021 16:00:41 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:00:41 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:00:41 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 72
+[29-Apr-2021 16:00:41 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 72
+[29-Apr-2021 16:00:41 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 72
+[29-Apr-2021 16:00:41 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 72
+[29-Apr-2021 16:00:41 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:00:41 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:00:41 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:00:41 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:00:41 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:00:41 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:00:41 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 105
+[29-Apr-2021 16:00:41 Asia/Tokyo] PHP Notice:  Undefined index:  in /Applications/MAMP/htdocs/output2/farm/search.php on line 105
+[29-Apr-2021 16:00:41 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 105
+[29-Apr-2021 16:02:04 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 16:02:04 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 16:02:04 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 16:02:04 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:02:04 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:02:04 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [category_name] => 穀物
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [category_name] => 野菜
+        )
+
+    [2] => Array
+        (
+            [id] => 3
+            [category_name] => 果物
+        )
+
+)
+
+[29-Apr-2021 16:02:04 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:02:04 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:02:04 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 72
+[29-Apr-2021 16:02:04 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 72
+[29-Apr-2021 16:02:04 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 72
+[29-Apr-2021 16:02:04 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 72
+[29-Apr-2021 16:02:04 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:02:04 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:02:04 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:02:04 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:02:04 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:02:04 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:02:50 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 16:02:50 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 16:02:50 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 16:02:50 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:02:50 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:02:50 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [category_name] => 穀物
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [category_name] => 野菜
+        )
+
+    [2] => Array
+        (
+            [id] => 3
+            [category_name] => 果物
+        )
+
+)
+
+[29-Apr-2021 16:02:50 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:02:50 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:02:50 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 72
+[29-Apr-2021 16:02:50 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 72
+[29-Apr-2021 16:02:50 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 72
+[29-Apr-2021 16:02:50 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 72
+[29-Apr-2021 16:02:50 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:02:50 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:02:50 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:02:50 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:02:50 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:02:50 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:03:37 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 16:03:37 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 16:03:37 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 16:03:37 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:03:37 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:03:37 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [category_name] => 穀物
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [category_name] => 野菜
+        )
+
+    [2] => Array
+        (
+            [id] => 3
+            [category_name] => 果物
+        )
+
+)
+
+[29-Apr-2021 16:03:37 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:03:37 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:03:37 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 72
+[29-Apr-2021 16:03:37 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 72
+[29-Apr-2021 16:03:37 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 72
+[29-Apr-2021 16:03:37 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 72
+[29-Apr-2021 16:03:37 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:03:37 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:03:37 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:03:37 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:03:37 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:03:37 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:03:46 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 16:03:46 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 16:03:46 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 16:03:46 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:03:46 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:03:46 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [category_name] => 穀物
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [category_name] => 野菜
+        )
+
+    [2] => Array
+        (
+            [id] => 3
+            [category_name] => 果物
+        )
+
+)
+
+[29-Apr-2021 16:03:46 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:03:46 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:03:46 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 72
+[29-Apr-2021 16:03:46 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 72
+[29-Apr-2021 16:03:46 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 72
+[29-Apr-2021 16:03:46 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 72
+[29-Apr-2021 16:03:46 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:03:46 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:03:46 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:03:46 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:03:46 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:03:46 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:03:46 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 105
+[29-Apr-2021 16:03:46 Asia/Tokyo] PHP Notice:  Undefined index:  in /Applications/MAMP/htdocs/output2/farm/search.php on line 105
+[29-Apr-2021 16:03:46 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 105
+[29-Apr-2021 16:04:53 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 16:04:53 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 16:04:53 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 16:04:53 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:04:53 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:04:53 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [category_name] => 穀物
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [category_name] => 野菜
+        )
+
+    [2] => Array
+        (
+            [id] => 3
+            [category_name] => 果物
+        )
+
+)
+
+[29-Apr-2021 16:04:53 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:04:53 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:04:53 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 72
+[29-Apr-2021 16:04:53 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 72
+[29-Apr-2021 16:04:53 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 72
+[29-Apr-2021 16:04:53 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 72
+[29-Apr-2021 16:04:53 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:04:53 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:04:53 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:04:53 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:04:53 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:04:53 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:05:41 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 16:05:41 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 16:05:41 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 16:05:41 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:05:41 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:05:41 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [category_name] => 穀物
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [category_name] => 野菜
+        )
+
+    [2] => Array
+        (
+            [id] => 3
+            [category_name] => 果物
+        )
+
+)
+
+[29-Apr-2021 16:05:41 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:05:41 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:05:41 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 72
+[29-Apr-2021 16:05:41 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 72
+[29-Apr-2021 16:05:41 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 72
+[29-Apr-2021 16:05:41 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 72
+[29-Apr-2021 16:05:41 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:05:41 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:05:41 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:05:41 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:05:41 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:05:41 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:08:15 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 16:08:15 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 16:08:15 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 16:08:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:08:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:08:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:08:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:08:15 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 72
+[29-Apr-2021 16:08:15 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 72
+[29-Apr-2021 16:08:15 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 72
+[29-Apr-2021 16:08:15 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 72
+[29-Apr-2021 16:08:15 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:08:15 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:08:15 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:08:15 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:08:15 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:08:15 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:20:04 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 16:20:04 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 16:20:04 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 16:20:04 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:20:04 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:20:04 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:20:04 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:20:04 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 72
+[29-Apr-2021 16:20:04 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 72
+[29-Apr-2021 16:20:04 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 72
+[29-Apr-2021 16:20:04 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 72
+[29-Apr-2021 16:20:04 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:20:04 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:20:04 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:20:04 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:20:04 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:20:04 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 83
+[29-Apr-2021 16:21:02 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 16:21:02 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 16:21:02 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 16:21:02 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:21:02 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:21:02 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:21:02 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:26:40 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 16:26:40 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 16:26:40 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 16:26:40 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:26:40 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:26:40 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 16:26:40 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:19:59 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:19:59 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:19:59 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:19:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:19:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:19:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:19:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:20:02 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:20:02 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:20:02 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:20:02 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:20:02 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:20:02 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:20:02 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:20:09 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:20:09 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:20:09 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:20:09 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:20:09 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:20:09 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:20:09 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:20:14 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:20:14 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:20:14 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:20:14 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:20:14 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:20:14 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:20:14 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:21:12 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:21:12 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:21:12 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:21:12 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:21:12 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:21:12 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [city_name] => 札幌市北区
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [city_name] => 札幌市中央区
+        )
+
+)
+
+[29-Apr-2021 20:21:12 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:21:12 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:21:45 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:21:45 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:21:45 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:21:45 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:21:45 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:21:45 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:21:45 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:21:49 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:21:49 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:21:49 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:21:49 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:21:49 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:21:49 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:21:49 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:22:19 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:22:19 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:22:19 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:22:19 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:22:19 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:22:19 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:22:19 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:22:19 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 71
+[29-Apr-2021 20:22:19 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 71
+[29-Apr-2021 20:22:19 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 71
+[29-Apr-2021 20:22:19 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 71
+[29-Apr-2021 20:23:32 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:23:32 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:23:32 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:23:32 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:23:32 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:23:32 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:23:32 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:23:32 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 71
+[29-Apr-2021 20:23:32 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 71
+[29-Apr-2021 20:23:57 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:23:57 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:23:57 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:23:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:23:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:23:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:23:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:25:02 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:25:02 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:25:02 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:25:02 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:25:02 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:25:02 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:25:02 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:25:08 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:25:08 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:25:08 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:25:08 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:25:08 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:25:08 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:25:08 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:26:17 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:26:17 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:26:17 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:26:17 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:26:17 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:26:17 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:26:17 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:27:33 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:27:33 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:27:33 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:27:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:27:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:27:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:27:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:27:56 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:27:56 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:27:56 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:27:56 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:27:56 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:27:56 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:27:56 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:28:06 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:28:06 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:28:06 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:28:06 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:28:06 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:28:06 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:28:06 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:29:05 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:29:05 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:29:05 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:29:05 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:29:05 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:29:05 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:29:05 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:29:09 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:29:09 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:29:09 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:29:09 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:29:09 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:29:09 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:29:09 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:29:26 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:29:26 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:29:26 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:29:26 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:29:26 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:29:26 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:29:26 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:29:34 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:29:34 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:29:34 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:29:34 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:29:34 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:29:34 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:29:34 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:29:37 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:29:37 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:29:37 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:29:37 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:29:37 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:29:37 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:29:37 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:29:39 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:29:39 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:29:39 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:29:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:29:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:29:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:29:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:30:40 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:30:40 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:30:40 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:30:40 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:30:40 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:30:40 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:30:40 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:30:41 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:30:41 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:30:41 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:30:41 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:30:41 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:30:41 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:30:41 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:30:43 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:30:43 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:30:43 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:30:43 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:30:43 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:30:43 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:30:43 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:31:13 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:31:13 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:31:13 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:31:13 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:31:13 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:31:13 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:31:13 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:31:13 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:31:13 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:31:13 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:31:13 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:31:13 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:31:13 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:31:13 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:34:09 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:34:09 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:34:09 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:34:09 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:34:09 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:34:09 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:34:09 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:34:09 Asia/Tokyo] デバッグ:
+[29-Apr-2021 20:34:16 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:34:16 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:34:16 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:34:16 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:34:16 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:34:16 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:34:16 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:34:16 Asia/Tokyo] デバッグ:
+[29-Apr-2021 20:34:31 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:34:31 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:34:31 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:34:31 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:34:31 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:34:31 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:34:31 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:34:31 Asia/Tokyo] デバッグ:
+[29-Apr-2021 20:34:34 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:34:34 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:34:34 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:34:34 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:34:34 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:34:34 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:34:34 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:34:34 Asia/Tokyo] デバッグ:
+[29-Apr-2021 20:34:39 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:34:39 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:34:39 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:34:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:34:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:34:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:34:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:34:39 Asia/Tokyo] PHP Notice:  Undefined index: clear in /Applications/MAMP/htdocs/output2/farm/search.php on line 35
+[29-Apr-2021 20:34:39 Asia/Tokyo] PHP Notice:  Undefined index: clear in /Applications/MAMP/htdocs/output2/farm/search.php on line 40
+[29-Apr-2021 20:34:39 Asia/Tokyo] デバッグ:
+[29-Apr-2021 20:35:40 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:35:40 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:35:40 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:35:40 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:35:40 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:35:40 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:35:40 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:35:40 Asia/Tokyo] PHP Notice:  Undefined index: clear in /Applications/MAMP/htdocs/output2/farm/search.php on line 35
+[29-Apr-2021 20:35:40 Asia/Tokyo] PHP Notice:  Undefined index: clear in /Applications/MAMP/htdocs/output2/farm/search.php on line 40
+[29-Apr-2021 20:35:40 Asia/Tokyo] デバッグ:
+[29-Apr-2021 20:35:42 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:35:42 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:35:42 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:35:42 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:35:42 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:35:42 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:35:42 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:35:42 Asia/Tokyo] デバッグ:
+[29-Apr-2021 20:35:44 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:35:44 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:35:44 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:35:44 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:35:44 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:35:44 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:35:44 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:35:44 Asia/Tokyo] デバッグ:
+[29-Apr-2021 20:35:57 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:35:57 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:35:57 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:35:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:35:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:35:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:35:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:35:57 Asia/Tokyo] デバッグ:
+[29-Apr-2021 20:37:34 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:37:34 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:37:34 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:37:34 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:37:34 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:37:34 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:37:34 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:37:34 Asia/Tokyo] デバッグ:
+[29-Apr-2021 20:37:39 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:37:39 Asia/Tokyo] デバッグ:TOP画面
+[29-Apr-2021 20:37:39 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:37:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:37:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:37:41 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:37:41 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:37:41 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:37:41 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:37:41 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:37:41 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:37:41 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:37:41 Asia/Tokyo] PHP Notice:  Undefined index: clear in /Applications/MAMP/htdocs/output2/farm/search.php on line 35
+[29-Apr-2021 20:37:41 Asia/Tokyo] PHP Notice:  Undefined index: clear in /Applications/MAMP/htdocs/output2/farm/search.php on line 40
+[29-Apr-2021 20:37:41 Asia/Tokyo] デバッグ:
+[29-Apr-2021 20:37:49 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:37:49 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:37:49 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:37:49 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:37:49 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:37:49 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:37:49 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:37:55 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:37:55 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:37:55 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:37:55 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:37:55 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:37:55 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:37:55 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:38:21 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:38:21 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:38:21 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:38:21 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:38:21 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:38:21 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:38:21 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:38:26 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:38:26 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:38:26 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:38:26 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:38:26 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:38:26 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:38:26 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:38:31 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:38:31 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:38:31 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:38:31 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:38:31 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:38:31 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:38:31 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:38:31 Asia/Tokyo] PHP Notice:  Undefined offset: 3 in /Applications/MAMP/htdocs/output2/farm/search.php on line 106
+[29-Apr-2021 20:38:31 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 106
+[29-Apr-2021 20:38:55 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:38:55 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:38:55 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:38:55 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:38:55 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:38:55 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:38:55 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:38:55 Asia/Tokyo] PHP Notice:  Undefined index: clear in /Applications/MAMP/htdocs/output2/farm/search.php on line 35
+[29-Apr-2021 20:38:55 Asia/Tokyo] PHP Notice:  Undefined offset: 3 in /Applications/MAMP/htdocs/output2/farm/search.php on line 106
+[29-Apr-2021 20:38:55 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 106
+[29-Apr-2021 20:39:05 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:39:05 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:39:05 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:39:05 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:39:05 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:39:05 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:39:05 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:39:05 Asia/Tokyo] PHP Notice:  Undefined offset: 3 in /Applications/MAMP/htdocs/output2/farm/search.php on line 106
+[29-Apr-2021 20:39:05 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 106
+[29-Apr-2021 20:39:11 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:39:11 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:39:11 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:39:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:39:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:39:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:39:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:39:15 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:39:15 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:39:15 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:39:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:39:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:39:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:39:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:39:18 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:39:18 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:39:18 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:39:18 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:39:18 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:39:18 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:39:18 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:39:21 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:39:21 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:39:21 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:39:21 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:39:21 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:39:21 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:39:21 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:39:25 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:39:25 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:39:25 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:39:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:39:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:39:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:39:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:41:57 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:41:57 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:41:57 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:41:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:41:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:41:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:41:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:42:06 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:42:06 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:42:06 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:42:06 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:42:06 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:42:06 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:42:06 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:42:06 Asia/Tokyo] PHP Notice:  Undefined index: d in /Applications/MAMP/htdocs/output2/farm/search.php on line 106
+[29-Apr-2021 20:42:06 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 106
+[29-Apr-2021 20:42:45 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:42:45 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:42:45 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:42:45 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:42:45 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:42:45 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:42:45 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:42:45 Asia/Tokyo] PHP Notice:  Undefined index: d in /Applications/MAMP/htdocs/output2/farm/search.php on line 106
+[29-Apr-2021 20:42:45 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 106
+[29-Apr-2021 20:42:49 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:42:49 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:42:49 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:42:49 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:42:49 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:42:49 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:42:49 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:43:30 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:43:30 Asia/Tokyo] デバッグ:検索画面
+[29-Apr-2021 20:43:30 Asia/Tokyo] デバッグ:==============================================
+[29-Apr-2021 20:43:30 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:43:30 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:43:30 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:43:30 Asia/Tokyo] デバッグ:クエリ成功しました。
+[29-Apr-2021 20:48:24 Asia/Tokyo] PHP Notice:  Undefined index: d in /Applications/MAMP/htdocs/output2/farm/search.php on line 106
+[29-Apr-2021 20:48:24 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 106
+[29-Apr-2021 20:48:30 Asia/Tokyo] PHP Notice:  Undefined index: d in /Applications/MAMP/htdocs/output2/farm/search.php on line 106
+[29-Apr-2021 20:48:30 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 106
+[29-Apr-2021 20:58:30 Asia/Tokyo] PHP Notice:  Undefined index:  in /Applications/MAMP/htdocs/output2/farm/search.php on line 137
+[29-Apr-2021 20:58:30 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 137
+[29-Apr-2021 20:59:02 Asia/Tokyo] PHP Notice:  Undefined variable: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 31
+[29-Apr-2021 20:59:02 Asia/Tokyo] PHP Notice:  Undefined variable: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 31

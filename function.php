@@ -36,7 +36,7 @@ function debugLogStart(){
 // ================================================
 // デバッグ
 // ================================================
-$debug_flg = true;
+$debug_flg = false;
 function debug($str) {
     global $debug_flg;
     if(!empty($debug_flg)){
@@ -394,7 +394,7 @@ function getShopMatch($currentMinNum = 0, $p_id, $city_id, $category_id, $span =
     try {
         // マッチした店舗数を取得
         $dbh = dbConnect();
-        $sql = 'SELECT DISTINCT s.`shop_name`, s.`social_profile`, s.`prefecture_id`, s.`city_id`, s.`street`, s.`building`, s.`shop_img1` FROM shops AS s INNER JOIN products AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0';
+        $sql = 'SELECT DISTINCT s.`id` FROM shops AS s INNER JOIN products AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0';
         $data = array(':p_id' => $p_id);
         if(!empty($city_id)) {
             $sql .= ' AND s.`city_id` = :city_id';
@@ -413,7 +413,7 @@ function getShopMatch($currentMinNum = 0, $p_id, $city_id, $category_id, $span =
 
         // 表示する店舗情報を取得
         $dbh = dbConnect();
-        $sql = 'SELECT DISTINCT s.`shop_name`, s.`social_profile`, s.`prefecture_id`, s.`city_id`, s.`street`, s.`building`, s.`shop_img1` FROM shops AS s INNER JOIN products AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0';
+        $sql = 'SELECT DISTINCT s.`id`, s.`shop_name`, s.`social_profile`, s.`prefecture_id`, s.`city_id`, s.`street`, s.`building`, s.`shop_img1` FROM shops AS s INNER JOIN products AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0';
         $data = array(':p_id' => $p_id);
         if(!empty($city_id)) {
             $sql .= ' AND s.`city_id` = :city_id';
@@ -613,4 +613,18 @@ function makeRandomKey($length = 8) {
         $result .= $chars[mt_rand(0, 62)];
     }
     return $result;
+}
+// GETパラメータ付与
+// $del_key:付与から取り除きたいGETパラメータのキー
+function appendGetParam($arr_del_key = array()) {
+    if(!empty($_GET)) {
+        $str = '?';
+        foreach($_GET as $key => $val) {
+            if(!in_array($key, $arr_del_key, true)) {
+                $str .= $key.'='.$val.'&';
+            }
+        }
+        $str = mb_strlen($str, 0, -1, "UTF-8");
+        return $str;
+    }
 }

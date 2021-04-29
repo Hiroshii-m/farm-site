@@ -33,9 +33,18 @@
         </div>
     </header><!-- /ヘッダー -->
     
+    <section class="c-dropProduct">
+        <i class="fas fa-times c-dropProduct__close"></i>
+        <p>本当にその商品を削除しますか？</p>
+        <form action="" method="post" class="">
+            <button class="c-dropProduct__btn">はい</button>
+            <button class="c-dropProduct__btn">いいえ</button>
+        </form>
+    </section>
+    
     <main id="l-main" class="u-bgColor js-sp-menu-target">
         <div class="c-main">
-            
+
             <!-- 最近登録された販売所 -->
             <section id="l-sale">
                 <div class="c-container c-submission">
@@ -119,7 +128,10 @@
                                         <p>無農薬</p>
                                     </div>
                                 </div>
-                                <a class="p-product__btn" href="">編集する</a>
+                                <div class="p-product__edit">
+                                    <a class="p-product__btn p-product__bg1" href="">編集する</a>
+                                    <a class="p-product__btn p-product__bg2" href="">削除する</a>
+                                </div>
                             </details>
                         </li>
                         <li class="p-product__list">

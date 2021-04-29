@@ -123,7 +123,10 @@ require('head.php');
                                         <p><?= showData($val['p_detail']); ?></p>
                                     </div>
                                 </div>
-                                <a class="p-product__btn" href="editProduct.php?p_id=<?= showData($val['id']); ?>">編集する</a>
+                                <div class="p-product__edit">
+                                    <a href="editProduct.php?p_id=<?= showData($val['id']); ?>" class="p-product__btn p-product__bg1">編集する</a>
+                                    <a class="p-product__btn p-product__bg2" href="">削除する</a>
+                                </div>
                             </details>
                         </li>
                         <?php endforeach; ?>

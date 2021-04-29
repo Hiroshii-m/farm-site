@@ -24,20 +24,19 @@ if(empty($p_id) && is_numeric($p_id)) {
 $cityInfo = (!empty($p_id)) ? getCityInfo($p_id) : '';
 // カテゴリー情報を取得
 $category = getCategory();
+// debug(print_r($cityInfo, true));
 // 表示件数
 $listSpan = 10;
 // 現在のレコードの先頭を算出
 $currentMinNum = (($currentPageNum-1) * $listSpan);
 // DBからデータを取得
 $dbShopData = getShopMatch($currentMinNum, $p_id, $city_id, $category_id);
-debug('取得した店舗情報');
-debug(print_r($dbShopData, true));
 // 検索クリアが押された場合
 if(!empty($_GET['clear'])) {
     $_GET['city_id'] = '';
     $_GET['category_id'] = '';
-    $_GET['clear'] = '';
 }
+// debug($_GET['clear'])
 
 ?>
 <?php
@@ -53,9 +52,8 @@ require('head.php');
 
             <!-- パンクズリスト -->
             <div class="c-pankuzu">
-                <a href="" class="u-prev p-article__prev">TOP</a><span>&nbsp;&gt;</span>
-                <a href="" class="u-prev p-article__prev">検索画面</a><span>&nbsp;&gt;</span>
-                <span href="" class="u-prev p-article__prev">店舗詳細ページ</span>
+                <a href="index.php" class="u-prev p-article__prev">TOP</a><span>&nbsp;&gt;</span>
+                <p class="u-prev p-article__prev">検索画面</p>
             </div><!-- /パンクズリスト -->
 
             <!-- 検索ボックス -->
@@ -68,9 +66,9 @@ require('head.php');
                         <div class="p-search__area">
                             <select class="p-search__select" name="city_id" id="">
                                 <option value="">エリア</option>
-                                <?php if(!empty($cityInfo)){ ?>
+                                <?php if(!empty(array_filter($category))){ ?>
                                     <?php foreach($cityInfo as $key => $val): ?>
-                                    <option value="<?= sanitize(showData($val['id'])); ?>" <?= (getFormData('city_id', true) === $val['id']) ? 'selected' : ''; ?>><?= sanitize(showData($val['city_name'])); ?></option>
+                                        <option value="<?= $key; ?>" <?= (is_numeric($_GET['city_id']) && (int)$_GET['city_id'] === $key) ? 'selected' : ''; ?>><?= sanitize(showData($val['city_name'])); ?></option>
                                     <?php endforeach; ?>
                                 <?php } ?>
                             </select>
@@ -79,9 +77,9 @@ require('head.php');
                         <div class="p-search__area">
                             <select class="p-search__select" name="category_id" id="">
                                 <option value="">カテゴリー</option>
-                                <?php if(!empty($category)){ ?>
+                                <?php if(!empty(array_filter($category))){ ?>
                                     <?php foreach($category as $key => $val): ?>
-                                    <option value="<?= sanitize(showData($val['id'])); ?>" <?= (getFormData('category_id', true) === $val['id']) ? 'selected' : ''; ?>><?= sanitize(showData($val['category_name'])); ?></option>
+                                        <option value="<?= $key; ?>" <?= (is_numeric($_GET['category_id']) && (int)$_GET['category_id'] === $key) ? 'selected' : ''; ?>><?= sanitize(showData($val['category_name'])); ?></option>
                                     <?php endforeach; ?>
                                 <?php } ?>
                             </select>
@@ -102,23 +100,25 @@ require('head.php');
                         <p class="p-shopList__title">店舗一覧</p>
                         <p class="p-shopList__showNum">1~10件表示/合計<?= (!empty($dbShopData['total'])) ? $dbShopData['total'] : '0'; ?>件ヒット</p>
                         <div class="p-shopList__terms">
-                            <span class="p-shopList__tag u-tag-accent">野菜</span>
-                            <span class="p-shopList__tag u-tag-sub">苫小牧市</span>
+                            <?php if(is_numeric($_GET['city_id'])){ ?>
+                                <span class="p-shopList__tag u-tag-sub"><?= sanitize($cityInfo[$_GET['city_id']]['city_name']); ?></span>
+                            <?php } ?>
+                            <?php if(is_numeric($_GET['category_id'])){ ?>
+                                <span class="p-shopList__tag u-tag-accent"><?= sanitize($category[$_GET['category_id']]['category_name']); ?></span>
+                            <?php } ?>
                         </div>
                     </h2>
+                    <?php if(!empty($dbShopData)) { ?>
                     <ul class="p-shopList__body">
-                    <?php if(empty($dbShopData)) { ?>
-                        検索情報はありませんでした。
-                    <?php } else { ?>
-                        <?php foreach($dbShopData as $key => $val): ?>
+                        <?php foreach($dbShopData['data'] as $key => $val): ?>
                         <li class="c-card">
                             <div class="c-card__head">
                                 <div class="c-card__img">
-                                    <img src="images/pic2.jpeg" alt="">
+                                    <img src="<?= sanitize(showData($val['shop_img1'])); ?>" alt="">
                                 </div>
                                 <div class="c-card__summary">
                                     <p class="c-card__category">野菜</p>
-                                    <a class="c-card__title">店舗名だよん店舗名だよん</a>
+                                    <a href="single.php<?= appendGetParam().'&shop_id='.sanitize($val['id']); ?>" class="c-card__title"><?= sanitize(showData($val['shop_name'])); ?></a>
                                 </div>
                                 <i class="far fa-heart c-card__icon"></i>
                             </div>
@@ -129,17 +129,17 @@ require('head.php');
                                 </div>
                                 <div class="c-card__item">
                                     <p class="c-card__row"><i class="fas fa-file-alt"></i>&nbsp;詳細</p>
-                                    <p class="c-card__detail">ピーマン育てて、1万年。研究に研究を重ねた絶品の品です。</p>
+                                    <p class="c-card__detail"><?= sanitize(showData($val['social_profile'])); ?></p>
                                 </div>
                                 <div class="c-card__item">
                                     <p class="c-card__row"><i class="fas fa-map-marker-alt"></i>&nbsp;住所</p>
-                                    <p class="c-card__detail">那覇市なんたらなんたら町11-22</p>
+                                    <p class="c-card__detail"><?= sanitize(showData($cityInfo[$_GET['city_id']]['city_name'].$val['street'].$val['building'])); ?></p>
                                 </div>
                             </div>
                         </li>
                         <?php endforeach; ?>
-                    <?php } ?>
                     </ul>
+                    <?php } ?>
                     <!-- ページング -->
                     <div id="l-pagination" class="">
                         <ul class="c-pagination u-flex-between">

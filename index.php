@@ -90,8 +90,6 @@ require('head.php');
             <!-- パンクズリスト -->
             <div class="c-pankuzu">
                 <a href="" class="u-prev p-article__prev">TOP</a><span>&nbsp;&gt;</span>
-                <a href="" class="u-prev p-article__prev">検索画面</a><span>&nbsp;&gt;</span>
-                <span href="" class="u-prev p-article__prev">店舗詳細ページ</span>
             </div><!-- /パンクズリスト -->
 
             <!-- 地域 -->

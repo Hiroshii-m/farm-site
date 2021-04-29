@@ -451,6 +451,24 @@
         font-size: $font-size_s;
     }
 }
+.c-dropProduct {
+    background: $color_base;
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    box-sizing: border-box;
+    padding: $space_xl;
+    &__close {
+        font-size: $font-size_xl;
+        float: right;
+    }
+    &__btn {
+        width: 50px;
+        border: 1px solid $font-color_default;
+        border-radius: 5px;
+    }
+}
 // Project
 // ----------------------------------
 @import "object/project/region";
@@ -717,16 +735,29 @@
             font-size: $font-size_s;
         }
     }
+    &__edit {
+        margin: $space_l -15px $space_xl 0;
+        @extend .u-flex;
+        justify-content: center;
+    }
     &__btn {
         display: block;
-        min-width: 200px;
-        width: 40%;
+        min-width: 100px;
+        width: 30%;
         padding: $space_s;
+        margin-right: $space_l;
         color: $color_base;
-        background: $bg_color;
-        margin: 20px auto 50px auto;
         border-radius: 5px;
         text-align: center;
+        &:hover {
+            opacity: .6;
+        }
+    }
+    &__bg1 {
+        background: $bg_color;
+    }
+    &__bg2 {
+        background: $color_err;
     }
 }
 .p-explain {
