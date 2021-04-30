@@ -249,7 +249,7 @@ function getFormData($str, $flg = false){
         }else{
             return $dbFormData[$str];
         }
-        // dbFormDataが無い場合
+    // dbFormDataが無い場合
     }else{
         // POSTされているか
         if(!empty($method[$str])){

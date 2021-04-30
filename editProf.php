@@ -160,12 +160,12 @@ if(!empty($_POST)) {
 
 <?php
 $headTitle = 'プロフィール編集';
-require('head.php');
+include('head.php');
 ?>
 <body>
     <!-- ヘッダー -->
     <?php
-    require('header.php');
+    include('header.php');
     ?>
 
     <main id="l-main">
@@ -272,7 +272,7 @@ require('head.php');
     </main>
     
     <!-- フッター -->
-    <?php require('footer.php'); ?>
+    <?php include('footer.php'); ?>
     <!-- プロフィール編集画面のjsファイル -->
     <script src="js/app_uploadImg.js"></script>
 </body>

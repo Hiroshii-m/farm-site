@@ -65,13 +65,13 @@ if(!empty($_POST)) {
 ?>
 <?php
 $headTitle = 'ユーザー登録画面';
-require('head.php');
+include_once('head.php');
 ?>
 
 <body>
 
 <?php
-require('header.php');
+include_once('header.php');
 ?>
 
     <main id="l-main">
@@ -106,7 +106,7 @@ require('header.php');
     </main>
     
 <?php
-require('footer.php');
+include_once('footer.php');
 ?>
 </body>
 </html>

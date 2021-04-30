@@ -40,13 +40,11 @@ if(!empty($_GET)) {
 ?>
 <?php
 $headTitle = 'トークン受け取り（メアド・パスワード変更）画面';
-require('head.php');
+include_once('head.php');
 ?>
-
 <body>
-
 <?php
-require('header.php');
+include_once('header.php');
 ?>
 
 <main id="l-main">
@@ -71,7 +69,7 @@ require('header.php');
     </main>
 
 <?php
-require('footer.php');
+include_once('footer.php');
 ?>
 </body>
 </html>

@@ -149,11 +149,11 @@ if(!empty($_POST)) {
 ?>
 <?php
 $headTitle = '店舗登録';
-require('head.php');
+include('head.php');
 ?>
     <body>
         <!-- ヘッダー -->
-        <?php require('header.php'); ?>
+        <?php include('header.php'); ?>
     
         <main id="l-main">
             <form method="post" class="c-form js-sp-menu-target" enctype="multipart/form-data">
@@ -261,7 +261,7 @@ require('head.php');
         </main>
         
         <!-- フッター -->
-        <?php require('footer.php'); ?>
+        <?php include('footer.php'); ?>
         <!-- 専用ファイル -->
         <script src="js/app_uploadImg.js"></script>
     </body>

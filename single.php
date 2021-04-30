@@ -19,11 +19,11 @@ $dbFormData = (!empty($s_id)) ? getShopOne($s_id) : '';
 
 <?php
 $headTitle = '店舗詳細ページ';
-require('head.php');
+include_once('head.php');
 ?>
 <body>
     <!-- ヘッダー -->
-    <?php require('header.php'); ?>
+    <?php include_once('header.php'); ?>
 
     <main id="l-main" class="u-bgColor js-sp-menu-target">
         <div class="c-main">
@@ -215,14 +215,14 @@ require('head.php');
         </div>
 
         <!-- サイドバー -->
-        <?php require('sidebar_favo.php'); ?>
+        <?php include('sidebar_favo.php'); ?>
 
     </main>
     <div class="u-upArrow">
         <i class="fas fa-chevron-circle-up"></i>
     </div>
     <!-- フッター -->
-    <?php require('footer.php'); ?>
+    <?php include_once('footer.php'); ?>
     <script src="js/single.js"></script>
 </body>
 </html>

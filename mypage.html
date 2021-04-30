@@ -33,14 +33,18 @@
         </div>
     </header><!-- /ヘッダー -->
     
-    <section class="c-dropProduct">
-        <i class="fas fa-times c-dropProduct__close"></i>
-        <p>本当にその商品を削除しますか？</p>
-        <form action="" method="post" class="">
-            <button class="c-dropProduct__btn">はい</button>
-            <button class="c-dropProduct__btn">いいえ</button>
-        </form>
-    </section>
+    <!-- モーダル -->
+    <section class="c-dropProduct js-modal">
+        <div class="c-dropProduct__body js-modal-body">
+            <i class="fas fa-times c-dropProduct__close js-modal-close"></i>
+            <p class="c-dropProduct__head">本当にその商品を削除しますか？</p>
+            <form action="" method="post" class="u-flex-center">
+                <input class="js-modal-value" type="hidden" name="delete_id">
+                <button name="yes" value="1" class="c-dropProduct__btn">はい</button>
+                <p name="no" value="1" class="c-dropProduct__btn js-modal-no">いいえ</p>
+            </form>
+        </div>
+    </section><!-- /モーダル -->
     
     <main id="l-main" class="u-bgColor js-sp-menu-target">
         <div class="c-main">
@@ -130,7 +134,7 @@
                                 </div>
                                 <div class="p-product__edit">
                                     <a class="p-product__btn p-product__bg1" href="">編集する</a>
-                                    <a class="p-product__btn p-product__bg2" href="">削除する</a>
+                                    <a class="p-product__btn p-product__bg2 js-delete-product" value="1">削除する</a>
                                 </div>
                             </details>
                         </li>
@@ -154,7 +158,10 @@
                                         <p>無農薬</p>
                                     </div>
                                 </div>
-                                <a class="p-product__btn" href="">編集する</a>
+                                <div class="p-product__edit">
+                                    <a class="p-product__btn p-product__bg1" href="">編集する</a>
+                                    <a class="p-product__btn p-product__bg2 js-delete-product" value="2">削除する</a>
+                                </div>
                             </details>
                         </li>
                     </ul>
@@ -239,5 +246,6 @@
     <script src="js/app.js"></script>
     <!-- 個別のjsファイル -->
     <script src="js/app_icon.js"></script>
+    <script src="js/app_modal.js"></script>
 </body>
 </html>

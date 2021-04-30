@@ -25,16 +25,36 @@ if(!empty($_POST['add_product'])) {
     $count_product++;
     $products = array_merge($products, getProducts($s_id, $count_product));
 }
+if(!empty($_POST['delete_id'])) {
+    $delete_id = (!empty($_POST['delete_id'])) ? $_POST['delete_id'] : '';
+    if(!empty($_POST['yes'])) {
+        require('delete_product.php');
+    }
+    $_POST = array();
+}
 
 ?>
 <?php
 $headTitle = 'マイページ';
-require('head.php');
+include_once('head.php');
 ?>
 <body>
     <!-- ヘッダー -->
-    <?php require('header.php'); ?>
+    <?php include_once('header.php'); ?>
     
+    <!-- モーダル -->
+    <section class="c-dropProduct js-modal">
+        <div class="c-dropProduct__body js-modal-body">
+            <i class="fas fa-times c-dropProduct__close js-modal-close"></i>
+            <p class="c-dropProduct__head">本当にその商品を削除しますか？</p>
+            <form action="" method="post" class="u-flex-center">
+                <input class="js-modal-value" type="hidden" name="delete_id" value="">
+                <button name="yes" value="1" class="c-dropProduct__btn">はい</button>
+                <p name="no" value="1" class="c-dropProduct__btn js-modal-no">いいえ</p>
+            </form>
+        </div>
+    </section><!-- /モーダル -->
+
     <main id="l-main" class="u-bgColor js-sp-menu-target">
         <div class="c-main">
             
@@ -125,7 +145,7 @@ require('head.php');
                                 </div>
                                 <div class="p-product__edit">
                                     <a href="editProduct.php?p_id=<?= showData($val['id']); ?>" class="p-product__btn p-product__bg1">編集する</a>
-                                    <a class="p-product__btn p-product__bg2" href="">削除する</a>
+                                    <a name="delete_id" value="<?= showData($val['id']); ?>" class="p-product__btn p-product__bg2 js-delete-product">削除する</a>
                                 </div>
                             </details>
                         </li>
@@ -141,7 +161,7 @@ require('head.php');
 
         </div>
         <!-- サイドバー -->
-        <?php require('sidebar_mypage.php'); ?>
+        <?php include('sidebar_mypage.php'); ?>
     </main>
 
 
@@ -149,8 +169,9 @@ require('head.php');
         <i class="fas fa-chevron-circle-up"></i>
     </div>
     <!-- フッター -->
-    <?php require('footer.php'); ?>
+    <?php include_once('footer.php'); ?>
     <!-- 個別のjsファイル -->
     <script src="js/app_icon.js"></script>
+    <script src="js/app_modal.js"></script>
 </body>
 </html>

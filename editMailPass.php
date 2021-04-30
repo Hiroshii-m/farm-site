@@ -90,10 +90,10 @@ if(!empty($_POST)) {
 ?>
 <?php
 $headTitle = 'メールアドレスとパスワードの変更画面';
-include('head.php');
+include_once('head.php');
 ?>
 <body>
-    <?php include('header.php'); ?>
+    <?php include_once('header.php'); ?>
     
     <main id="l-main">
         <form method="post" class="c-form js-sp-menu-target">
@@ -137,6 +137,6 @@ include('head.php');
     </main>
     
     <!-- フッター -->
-    <?php include('footer.php'); ?>
+    <?php include_once('footer.php'); ?>
 </body>
 </html>
