@@ -8545,3 +8545,1125 @@ Stack trace:
 [30-Apr-2021 17:09:26 Asia/Tokyo] デバッグ:==============================================
 [30-Apr-2021 17:09:26 Asia/Tokyo] デバッグ:クエリ成功しました。
 [30-Apr-2021 17:09:26 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 10:07:47 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 71
+[02-May-2021 10:07:47 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 71
+[02-May-2021 10:07:47 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 82
+[02-May-2021 10:07:47 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 82
+[02-May-2021 10:07:47 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 82
+[02-May-2021 10:07:47 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 103
+[02-May-2021 10:07:47 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 106
+[02-May-2021 10:07:47 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 10:07:47 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[02-May-2021 10:07:47 Asia/Tokyo] PHP Notice:  Undefined index:  in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[02-May-2021 10:07:47 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[02-May-2021 10:09:51 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 71
+[02-May-2021 10:09:51 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 71
+[02-May-2021 10:09:51 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 82
+[02-May-2021 10:09:51 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 82
+[02-May-2021 10:09:51 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 82
+[02-May-2021 10:09:51 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 10:09:51 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[02-May-2021 10:09:51 Asia/Tokyo] PHP Notice:  Undefined index:  in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[02-May-2021 10:09:51 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 136
+[02-May-2021 10:10:59 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 71
+[02-May-2021 10:10:59 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 71
+[02-May-2021 10:10:59 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 82
+[02-May-2021 10:10:59 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 82
+[02-May-2021 10:10:59 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 82
+[02-May-2021 10:10:59 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 10:21:55 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 71
+[02-May-2021 10:21:55 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 71
+[02-May-2021 10:21:55 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 82
+[02-May-2021 10:21:55 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 82
+[02-May-2021 10:21:55 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 82
+[02-May-2021 10:21:55 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 10:25:34 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 71
+[02-May-2021 10:25:34 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 71
+[02-May-2021 10:25:34 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 82
+[02-May-2021 10:25:34 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 82
+[02-May-2021 10:25:34 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 82
+[02-May-2021 10:25:34 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 10:27:48 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 71
+[02-May-2021 10:27:48 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 71
+[02-May-2021 10:27:48 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 82
+[02-May-2021 10:27:48 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 82
+[02-May-2021 10:27:48 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 82
+[02-May-2021 10:27:48 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 11:03:09 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 75
+[02-May-2021 11:03:09 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 75
+[02-May-2021 11:03:09 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 86
+[02-May-2021 11:03:09 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 86
+[02-May-2021 11:03:09 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 86
+[02-May-2021 11:03:09 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 11:04:12 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 75
+[02-May-2021 11:04:12 Asia/Tokyo] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 75
+[02-May-2021 11:04:12 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 86
+[02-May-2021 11:04:12 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 86
+[02-May-2021 11:04:12 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 86
+[02-May-2021 11:04:12 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 11:06:39 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 86
+[02-May-2021 11:06:39 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 86
+[02-May-2021 11:06:39 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 86
+[02-May-2021 11:06:39 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 11:07:33 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 86
+[02-May-2021 11:07:33 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 86
+[02-May-2021 11:07:33 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 86
+[02-May-2021 11:07:33 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 11:07:45 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 11:07:54 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 11:07:58 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 11:08:26 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 11:09:06 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 11:11:05 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 11:11:09 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 11:11:22 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 11:11:43 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 11:12:42 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 11:12:46 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 11:12:52 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 11:13:37 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 11:15:04 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 11:22:37 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 11:22:42 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 11:24:04 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 11:24:04 Asia/Tokyo] デバッグ:TOP画面
+[02-May-2021 11:24:04 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 11:24:04 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:24:04 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:24:06 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 11:24:06 Asia/Tokyo] デバッグ:検索画面
+[02-May-2021 11:24:06 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 11:24:06 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:24:06 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:24:06 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [city_name] => 札幌市北区
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [city_name] => 札幌市中央区
+        )
+
+)
+
+[02-May-2021 11:24:06 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:24:06 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:24:06 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 87
+[02-May-2021 11:24:06 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 87
+[02-May-2021 11:24:06 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 87
+[02-May-2021 11:24:06 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 11:25:04 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 11:25:04 Asia/Tokyo] デバッグ:検索画面
+[02-May-2021 11:25:04 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 11:25:04 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:25:04 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:25:04 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [city_name] => 札幌市北区
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [city_name] => 札幌市中央区
+        )
+
+)
+
+[02-May-2021 11:25:04 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:25:04 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:25:04 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 87
+[02-May-2021 11:25:04 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 87
+[02-May-2021 11:25:04 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 87
+[02-May-2021 11:25:04 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 11:25:54 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 11:25:54 Asia/Tokyo] デバッグ:検索画面
+[02-May-2021 11:25:54 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 11:25:54 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[02-May-2021 11:25:54 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:25:54 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:25:54 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:25:54 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:25:54 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 87
+[02-May-2021 11:25:54 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 87
+[02-May-2021 11:25:54 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 87
+[02-May-2021 11:25:54 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 11:33:21 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 11:33:21 Asia/Tokyo] デバッグ:検索画面
+[02-May-2021 11:33:21 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 11:33:21 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:33:21 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:33:21 Asia/Tokyo] デバッグ:Array
+(
+    [0] => 
+    [1] => Array
+        (
+            [id] => 1
+            [city_name] => 札幌市北区
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [city_name] => 札幌市中央区
+        )
+
+)
+
+[02-May-2021 11:33:21 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:33:21 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:33:21 Asia/Tokyo] PHP Warning:  Illegal string offset 'city_name' in /Applications/MAMP/htdocs/output2/farm/search.php on line 74
+[02-May-2021 11:33:21 Asia/Tokyo] PHP Notice:  Uninitialized string offset: 0 in /Applications/MAMP/htdocs/output2/farm/search.php on line 74
+[02-May-2021 11:33:21 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 85
+[02-May-2021 11:33:21 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 85
+[02-May-2021 11:33:21 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 85
+[02-May-2021 11:33:21 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 11:34:58 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 11:34:58 Asia/Tokyo] デバッグ:検索画面
+[02-May-2021 11:34:58 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 11:34:58 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:34:58 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:34:58 Asia/Tokyo] デバッグ:Array
+(
+    [0] => エリア
+    [1] => Array
+        (
+            [id] => 1
+            [city_name] => 札幌市北区
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [city_name] => 札幌市中央区
+        )
+
+)
+
+[02-May-2021 11:34:58 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:34:58 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:34:58 Asia/Tokyo] PHP Warning:  array_filter() expects parameter 1 to be array, string given in /Applications/MAMP/htdocs/output2/farm/search.php on line 71
+[02-May-2021 11:34:58 Asia/Tokyo] PHP Warning:  Illegal string offset 'city_name' in /Applications/MAMP/htdocs/output2/farm/search.php on line 73
+[02-May-2021 11:34:58 Asia/Tokyo] PHP Warning:  array_filter() expects parameter 1 to be array, string given in /Applications/MAMP/htdocs/output2/farm/search.php on line 82
+[02-May-2021 11:34:58 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 84
+[02-May-2021 11:34:58 Asia/Tokyo] PHP Warning:  Illegal string offset 'category_name' in /Applications/MAMP/htdocs/output2/farm/search.php on line 84
+[02-May-2021 11:34:58 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 84
+[02-May-2021 11:34:58 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 84
+[02-May-2021 11:34:58 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 84
+[02-May-2021 11:34:58 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 11:41:31 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 11:41:31 Asia/Tokyo] デバッグ:検索画面
+[02-May-2021 11:41:31 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 11:41:31 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:41:31 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:41:31 Asia/Tokyo] デバッグ:Array
+(
+    [city_id] => 0
+    [city_name] => エリア
+    [0] => Array
+        (
+            [id] => 1
+            [city_name] => 札幌市北区
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [city_name] => 札幌市中央区
+        )
+
+)
+
+[02-May-2021 11:41:31 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:41:31 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:41:31 Asia/Tokyo] PHP Warning:  array_filter() expects parameter 1 to be array, int given in /Applications/MAMP/htdocs/output2/farm/search.php on line 71
+[02-May-2021 11:41:31 Asia/Tokyo] PHP Warning:  array_filter() expects parameter 1 to be array, string given in /Applications/MAMP/htdocs/output2/farm/search.php on line 71
+[02-May-2021 11:41:31 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/search.php on line 73
+[02-May-2021 11:41:31 Asia/Tokyo] PHP Warning:  Illegal string offset 'city_name' in /Applications/MAMP/htdocs/output2/farm/search.php on line 73
+[02-May-2021 11:41:31 Asia/Tokyo] PHP Warning:  array_filter() expects parameter 1 to be array, int given in /Applications/MAMP/htdocs/output2/farm/search.php on line 82
+[02-May-2021 11:41:31 Asia/Tokyo] PHP Warning:  array_filter() expects parameter 1 to be array, string given in /Applications/MAMP/htdocs/output2/farm/search.php on line 82
+[02-May-2021 11:41:31 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 84
+[02-May-2021 11:41:31 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/search.php on line 84
+[02-May-2021 11:41:31 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 84
+[02-May-2021 11:41:31 Asia/Tokyo] PHP Warning:  Illegal string offset 'category_name' in /Applications/MAMP/htdocs/output2/farm/search.php on line 84
+[02-May-2021 11:41:31 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 84
+[02-May-2021 11:41:31 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 84
+[02-May-2021 11:41:31 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 84
+[02-May-2021 11:41:31 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 11:46:23 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 11:46:23 Asia/Tokyo] デバッグ:検索画面
+[02-May-2021 11:46:23 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 11:46:23 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:46:23 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:46:23 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [city_name] => 札幌市北区
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [city_name] => 札幌市中央区
+        )
+
+)
+
+[02-May-2021 11:46:23 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:46:23 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:46:23 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 85
+[02-May-2021 11:46:23 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 85
+[02-May-2021 11:46:23 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 85
+[02-May-2021 11:46:23 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 11:51:01 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 11:51:01 Asia/Tokyo] デバッグ:検索画面
+[02-May-2021 11:51:01 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 11:51:01 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:51:01 Asia/Tokyo] PHP Warning:  array_merge(): Expected parameter 1 to be an array, string given in /Applications/MAMP/htdocs/output2/farm/search.php on line 27
+[02-May-2021 11:51:01 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:51:01 Asia/Tokyo] デバッグ:
+[02-May-2021 11:51:01 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:51:01 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:51:01 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/output2/farm/search.php on line 73
+[02-May-2021 11:51:01 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 85
+[02-May-2021 11:51:01 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 85
+[02-May-2021 11:51:01 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 85
+[02-May-2021 11:51:01 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 11:51:13 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 11:51:13 Asia/Tokyo] デバッグ:検索画面
+[02-May-2021 11:51:13 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 11:51:13 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:51:13 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:51:13 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [city_name] => 札幌市北区
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [city_name] => 札幌市中央区
+        )
+
+)
+
+[02-May-2021 11:51:13 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:51:13 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:51:13 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 85
+[02-May-2021 11:51:13 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 85
+[02-May-2021 11:51:13 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 85
+[02-May-2021 11:51:13 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 11:52:15 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 11:52:15 Asia/Tokyo] デバッグ:検索画面
+[02-May-2021 11:52:15 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 11:52:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:52:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:52:15 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [city_name] => 札幌市北区
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [city_name] => 札幌市中央区
+        )
+
+)
+
+[02-May-2021 11:52:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:52:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:52:15 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 11:52:21 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 11:52:21 Asia/Tokyo] デバッグ:検索画面
+[02-May-2021 11:52:21 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 11:52:21 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:52:21 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:52:21 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [city_name] => 札幌市北区
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [city_name] => 札幌市中央区
+        )
+
+)
+
+[02-May-2021 11:52:21 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:52:21 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:52:21 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 11:52:27 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 11:52:27 Asia/Tokyo] デバッグ:検索画面
+[02-May-2021 11:52:27 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 11:52:27 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:52:27 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:52:27 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [city_name] => 札幌市北区
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [city_name] => 札幌市中央区
+        )
+
+)
+
+[02-May-2021 11:52:27 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:52:27 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 11:52:27 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 12:00:42 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 12:00:42 Asia/Tokyo] デバッグ:検索画面
+[02-May-2021 12:00:42 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 12:00:42 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:00:42 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:00:42 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [city_name] => エリア
+        )
+
+    [1] => Array
+        (
+            [id] => 1
+            [city_name] => 札幌市北区
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [city_name] => 札幌市中央区
+        )
+
+)
+
+[02-May-2021 12:00:42 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:00:42 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:00:42 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 12:03:47 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 12:03:47 Asia/Tokyo] デバッグ:検索画面
+[02-May-2021 12:03:47 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 12:03:47 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:03:47 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:03:47 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [city_name] => エリア
+        )
+
+    [1] => Array
+        (
+            [id] => 1
+            [city_name] => 札幌市北区
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [city_name] => 札幌市中央区
+        )
+
+)
+
+[02-May-2021 12:03:47 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:03:47 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:03:47 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 12:08:04 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 12:08:04 Asia/Tokyo] デバッグ:検索画面
+[02-May-2021 12:08:04 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 12:08:04 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:08:04 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:08:04 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [city_name] => エリア
+        )
+
+    [1] => Array
+        (
+            [id] => 1
+            [city_name] => 札幌市北区
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [city_name] => 札幌市中央区
+        )
+
+)
+
+[02-May-2021 12:08:04 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:08:04 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:08:11 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 12:08:11 Asia/Tokyo] デバッグ:検索画面
+[02-May-2021 12:08:11 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 12:08:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:08:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:08:11 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [city_name] => エリア
+        )
+
+    [1] => Array
+        (
+            [id] => 1
+            [city_name] => 札幌市北区
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [city_name] => 札幌市中央区
+        )
+
+)
+
+[02-May-2021 12:08:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:08:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:08:13 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 12:08:13 Asia/Tokyo] デバッグ:検索画面
+[02-May-2021 12:08:13 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 12:08:13 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:08:13 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:08:13 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [city_name] => エリア
+        )
+
+    [1] => Array
+        (
+            [id] => 1
+            [city_name] => 札幌市北区
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [city_name] => 札幌市中央区
+        )
+
+)
+
+[02-May-2021 12:08:13 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:08:13 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:08:19 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 12:08:19 Asia/Tokyo] デバッグ:検索画面
+[02-May-2021 12:08:19 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 12:08:19 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:08:19 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:08:19 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [city_name] => エリア
+        )
+
+    [1] => Array
+        (
+            [id] => 1
+            [city_name] => 札幌市北区
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [city_name] => 札幌市中央区
+        )
+
+)
+
+[02-May-2021 12:08:19 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:08:19 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:08:25 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 12:08:25 Asia/Tokyo] デバッグ:検索画面
+[02-May-2021 12:08:25 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 12:08:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:08:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:08:25 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [city_name] => エリア
+        )
+
+    [1] => Array
+        (
+            [id] => 1
+            [city_name] => 札幌市北区
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [city_name] => 札幌市中央区
+        )
+
+)
+
+[02-May-2021 12:08:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:08:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:08:29 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 12:08:29 Asia/Tokyo] デバッグ:検索画面
+[02-May-2021 12:08:29 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 12:08:29 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:08:29 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:08:29 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [city_name] => エリア
+        )
+
+    [1] => Array
+        (
+            [id] => 1
+            [city_name] => 札幌市北区
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [city_name] => 札幌市中央区
+        )
+
+)
+
+[02-May-2021 12:08:29 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:08:29 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:08:30 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 12:08:30 Asia/Tokyo] デバッグ:検索画面
+[02-May-2021 12:08:30 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 12:08:30 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:08:30 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:08:30 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [city_name] => エリア
+        )
+
+    [1] => Array
+        (
+            [id] => 1
+            [city_name] => 札幌市北区
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [city_name] => 札幌市中央区
+        )
+
+)
+
+[02-May-2021 12:08:30 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:08:30 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:08:36 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 12:08:36 Asia/Tokyo] デバッグ:検索画面
+[02-May-2021 12:08:36 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 12:08:36 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:08:36 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:08:36 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [city_name] => エリア
+        )
+
+    [1] => Array
+        (
+            [id] => 1
+            [city_name] => 札幌市北区
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [city_name] => 札幌市中央区
+        )
+
+)
+
+[02-May-2021 12:08:36 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:08:36 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:08:45 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 12:08:45 Asia/Tokyo] デバッグ:検索画面
+[02-May-2021 12:08:45 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 12:08:45 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:08:45 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:08:45 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [city_name] => エリア
+        )
+
+    [1] => Array
+        (
+            [id] => 1
+            [city_name] => 札幌市北区
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [city_name] => 札幌市中央区
+        )
+
+)
+
+[02-May-2021 12:08:45 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:08:45 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:09:39 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 12:09:39 Asia/Tokyo] デバッグ:検索画面
+[02-May-2021 12:09:39 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 12:09:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:09:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:09:39 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [city_name] => エリア
+        )
+
+    [1] => Array
+        (
+            [id] => 1
+            [city_name] => 札幌市北区
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [city_name] => 札幌市中央区
+        )
+
+)
+
+[02-May-2021 12:09:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:09:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:09:45 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 12:09:45 Asia/Tokyo] デバッグ:検索画面
+[02-May-2021 12:09:45 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 12:09:45 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:09:45 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:09:45 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [city_name] => エリア
+        )
+
+    [1] => Array
+        (
+            [id] => 1
+            [city_name] => 札幌市北区
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [city_name] => 札幌市中央区
+        )
+
+)
+
+[02-May-2021 12:09:45 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:09:45 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:10:10 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 12:10:10 Asia/Tokyo] デバッグ:検索画面
+[02-May-2021 12:10:10 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 12:10:10 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:10:10 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:10:10 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [city_name] => エリア
+        )
+
+    [1] => Array
+        (
+            [id] => 1
+            [city_name] => 札幌市北区
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [city_name] => 札幌市中央区
+        )
+
+)
+
+[02-May-2021 12:10:10 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:10:10 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:10:16 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 12:10:16 Asia/Tokyo] デバッグ:検索画面
+[02-May-2021 12:10:16 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 12:10:16 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:10:16 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:10:16 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [city_name] => エリア
+        )
+
+    [1] => Array
+        (
+            [id] => 1
+            [city_name] => 札幌市北区
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [city_name] => 札幌市中央区
+        )
+
+)
+
+[02-May-2021 12:10:16 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:10:16 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:10:24 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 12:10:24 Asia/Tokyo] デバッグ:検索画面
+[02-May-2021 12:10:24 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 12:10:24 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:10:24 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:10:24 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [city_name] => エリア
+        )
+
+    [1] => Array
+        (
+            [id] => 1
+            [city_name] => 札幌市北区
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [city_name] => 札幌市中央区
+        )
+
+)
+
+[02-May-2021 12:10:24 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:10:24 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:10:31 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 12:10:31 Asia/Tokyo] デバッグ:検索画面
+[02-May-2021 12:10:31 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 12:10:31 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:10:31 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:10:31 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [city_name] => エリア
+        )
+
+    [1] => Array
+        (
+            [id] => 1
+            [city_name] => 札幌市北区
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [city_name] => 札幌市中央区
+        )
+
+)
+
+[02-May-2021 12:10:31 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:10:31 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:10:35 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 12:10:35 Asia/Tokyo] デバッグ:検索画面
+[02-May-2021 12:10:35 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 12:10:35 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:10:35 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:10:35 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [city_name] => エリア
+        )
+
+    [1] => Array
+        (
+            [id] => 1
+            [city_name] => 札幌市北区
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [city_name] => 札幌市中央区
+        )
+
+)
+
+[02-May-2021 12:10:35 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:10:35 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:10:40 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 12:10:40 Asia/Tokyo] デバッグ:検索画面
+[02-May-2021 12:10:40 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 12:10:40 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:10:40 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:10:40 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [city_name] => エリア
+        )
+
+    [1] => Array
+        (
+            [id] => 1
+            [city_name] => 札幌市北区
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [city_name] => 札幌市中央区
+        )
+
+)
+
+[02-May-2021 12:10:40 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:10:40 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:10:46 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 12:10:46 Asia/Tokyo] デバッグ:検索画面
+[02-May-2021 12:10:46 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 12:10:46 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:10:46 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:10:46 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [city_name] => エリア
+        )
+
+    [1] => Array
+        (
+            [id] => 1
+            [city_name] => 札幌市北区
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [city_name] => 札幌市中央区
+        )
+
+)
+
+[02-May-2021 12:10:46 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 12:10:46 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 18:59:07 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 18:59:07 Asia/Tokyo] デバッグ:TOP画面
+[02-May-2021 18:59:07 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 18:59:07 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 18:59:07 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 18:59:11 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 18:59:11 Asia/Tokyo] デバッグ:検索画面
+[02-May-2021 18:59:11 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 18:59:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 18:59:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 18:59:11 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [city_name] => エリア
+        )
+
+    [1] => Array
+        (
+            [id] => 1
+            [city_name] => 札幌市北区
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [city_name] => 札幌市中央区
+        )
+
+)
+
+[02-May-2021 18:59:11 Asia/Tokyo] PHP Notice:  Undefined variable: currentMinNum in /Applications/MAMP/htdocs/output2/farm/search.php on line 32
+[02-May-2021 18:59:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 18:59:11 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NULL' at line 1
+[02-May-2021 19:00:30 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 19:00:30 Asia/Tokyo] デバッグ:検索画面
+[02-May-2021 19:00:30 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 19:00:30 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 19:00:30 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 19:00:30 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [city_name] => エリア
+        )
+
+    [1] => Array
+        (
+            [id] => 1
+            [city_name] => 札幌市北区
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [city_name] => 札幌市中央区
+        )
+
+)
+
+[02-May-2021 19:00:30 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 19:00:30 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 19:05:35 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 19:05:35 Asia/Tokyo] デバッグ:検索画面
+[02-May-2021 19:05:35 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 19:05:35 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 19:05:35 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 19:05:35 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [city_name] => エリア
+        )
+
+    [1] => Array
+        (
+            [id] => 1
+            [city_name] => 札幌市北区
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [city_name] => 札幌市中央区
+        )
+
+)
+
+[02-May-2021 19:05:35 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 19:05:35 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 19:11:41 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 19:11:41 Asia/Tokyo] デバッグ:検索画面
+[02-May-2021 19:11:41 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 19:11:41 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 19:11:41 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 19:11:41 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [city_name] => エリア
+        )
+
+    [1] => Array
+        (
+            [id] => 1
+            [city_name] => 札幌市北区
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [city_name] => 札幌市中央区
+        )
+
+)
+
+[02-May-2021 19:11:41 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 19:11:41 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 19:14:23 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 19:14:23 Asia/Tokyo] デバッグ:検索画面
+[02-May-2021 19:14:23 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 19:14:23 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 19:14:23 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 19:14:23 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [city_name] => エリア
+        )
+
+    [1] => Array
+        (
+            [id] => 1
+            [city_name] => 札幌市北区
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [city_name] => 札幌市中央区
+        )
+
+)
+
+[02-May-2021 19:14:23 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 19:14:23 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 19:15:39 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 19:15:39 Asia/Tokyo] デバッグ:検索画面
+[02-May-2021 19:15:39 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 19:15:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 19:15:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 19:15:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 19:15:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 19:16:19 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 19:16:19 Asia/Tokyo] デバッグ:検索画面
+[02-May-2021 19:16:19 Asia/Tokyo] デバッグ:==============================================
+[02-May-2021 19:16:19 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 19:16:19 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 19:16:19 Asia/Tokyo] デバッグ:クエリ成功しました。
+[02-May-2021 19:16:19 Asia/Tokyo] デバッグ:クエリ成功しました。

@@ -89,7 +89,7 @@ include_once('head.php');
             
             <!-- パンクズリスト -->
             <div class="c-pankuzu">
-                <a href="" class="u-prev p-article__prev">TOP</a><span>&nbsp;&gt;</span>
+                <p class="u-prev p-article__prev">TOP</p>
             </div><!-- /パンクズリスト -->
 
             <!-- 地域 -->

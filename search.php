@@ -9,32 +9,40 @@ debug('==============================================');
 debug('検索画面');
 debug('==============================================');
 
+// 変数初期化
+// ================================
+$dbShopData = array();
 // GETパラメータを取得
 // ================================
 $p_id = (!empty($_GET['p_id'])) ? $_GET['p_id'] : '';
-$currentPageNum = 1;
+$word_search = (!empty($_GET['word_search'])) ? $_GET['word_search'] : '';
 $city_id = (!empty($_GET['city_id'])) ? $_GET['city_id'] : '';
 $category_id = (!empty($_GET['category_id'])) ? $_GET['category_id'] : '';
+$currentPageNum = (!empty($_GET['page_id'])) ? $_GET['page_id'] : 1;
 if(empty($p_id) && is_numeric($p_id)) {
     header("Location:index.php");
 }
 // 処理内容
 // =================================
 // 都道府県idから市区町村idと名前を取得
-$cityInfo = (!empty($p_id)) ? getCityInfo($p_id) : '';
+$cityInfo = (!empty($p_id)) ? array_merge(array(0 => array('city_name' => 'エリア')), getCityInfo($p_id)) : array();
 // カテゴリー情報を取得
-$category = getCategory();
+$category = array_merge(array(0 => array('category_name' => 'カテゴリー')), getCategory());
 // debug(print_r($cityInfo, true));
 // 表示件数
 $listSpan = 10;
 // 現在のレコードの先頭を算出
 $currentMinNum = (($currentPageNum-1) * $listSpan);
 // DBからデータを取得
-$dbShopData = getShopMatch($currentMinNum, $p_id, $city_id, $category_id);
+$dbShopData = getShopMatch($currentMinNum, $p_id, $city_id, $category_id, $word_search);
+// 合計店舗数
+$totalShopNum = (!empty($dbShopData['total'])) ? $dbShopData['total'] : 0;
+// 合計ページ数
+$totalPageNum = (!empty($dbShopData['total_page'])) ? $dbShopData['total_page'] : 0;
 // 検索クリアが押された場合
 if(!empty($_GET['clear'])) {
-    $_GET['city_id'] = '';
-    $_GET['category_id'] = '';
+    $city_id = '';
+    $category_id = '';
 }
 // debug($_GET['clear'])
 
@@ -61,14 +69,13 @@ include_once('head.php');
                 <div class="p-search">
                     <form method="get" class="p-search__option">
                         <input type="hidden" name="p_id" value="<?= $p_id; ?>">
-                        <input type="text" class="p-search__input" placeholder="キーワード[例：キャベツ、店名、穀物]">
+                        <input name="word_search" type="text" class="p-search__input" placeholder="キーワード[例：商品名、キャベツ、店名、季節、4月]" value="<?= getFormData('word_search', true); ?>">
                         <h2 class="p-search__title">条件を絞る</h2>
                         <div class="p-search__area">
                             <select class="p-search__select" name="city_id" id="">
-                                <option value="">エリア</option>
-                                <?php if(!empty(array_filter($category))){ ?>
+                                <?php if(!empty(array_filter($category, "array_filter"))){ ?>
                                     <?php foreach($cityInfo as $key => $val): ?>
-                                        <option value="<?= $key; ?>" <?= (is_numeric($_GET['city_id']) && (int)$_GET['city_id'] === $key) ? 'selected' : ''; ?>><?= sanitize(showData($val['city_name'])); ?></option>
+                                        <option value="<?= $key; ?>" <?= ((!empty($city_id) || (int)$city_id === 0) && (int)$city_id === $key) ? 'selected' : ''; ?>><?= sanitize(showData($val['city_name'])); ?></option>
                                     <?php endforeach; ?>
                                 <?php } ?>
                             </select>
@@ -76,10 +83,9 @@ include_once('head.php');
                         </div>
                         <div class="p-search__area">
                             <select class="p-search__select" name="category_id" id="">
-                                <option value="">カテゴリー</option>
-                                <?php if(!empty(array_filter($category))){ ?>
+                                <?php if(!empty(array_filter($category, "array_filter"))){ ?>
                                     <?php foreach($category as $key => $val): ?>
-                                        <option value="<?= $key; ?>" <?= (is_numeric($_GET['category_id']) && (int)$_GET['category_id'] === $key) ? 'selected' : ''; ?>><?= sanitize(showData($val['category_name'])); ?></option>
+                                        <option value="<?= $key; ?>" <?= ((!empty($category_id) || (int)$category_id === 0) && (int)$category_id === $key) ? 'selected' : ''; ?>><?= sanitize(showData($val['category_name'])); ?></option>
                                     <?php endforeach; ?>
                                 <?php } ?>
                             </select>
@@ -98,12 +104,12 @@ include_once('head.php');
                 <div class="p-shopList">
                     <h2 class="p-shopList__heading">
                         <p class="p-shopList__title">店舗一覧</p>
-                        <p class="p-shopList__showNum">1~10件表示/合計<?= (!empty($dbShopData['total'])) ? $dbShopData['total'] : '0'; ?>件ヒット</p>
+                        <p class="p-shopList__showNum"><?= $currentMinNum + 1; ?>~<?= $currentMinNum + count($dbShopData['data']); ?>件表示/合計<?= (!empty($dbShopData['total'])) ? $dbShopData['total'] : '0'; ?>件ヒット</p>
                         <div class="p-shopList__terms">
-                            <?php if(is_numeric($_GET['city_id'])){ ?>
+                            <?php if(!empty($_GET['city_id']) && is_numeric($_GET['city_id'])){ ?>
                                 <span class="p-shopList__tag u-tag-sub"><?= sanitize($cityInfo[$_GET['city_id']]['city_name']); ?></span>
                             <?php } ?>
-                            <?php if(is_numeric($_GET['category_id'])){ ?>
+                            <?php if(!empty($_GET['category_id']) && is_numeric($_GET['category_id'])){ ?>
                                 <span class="p-shopList__tag u-tag-accent"><?= sanitize($category[$_GET['category_id']]['category_name']); ?></span>
                             <?php } ?>
                         </div>
@@ -133,7 +139,7 @@ include_once('head.php');
                                 </div>
                                 <div class="c-card__item">
                                     <p class="c-card__row"><i class="fas fa-map-marker-alt"></i>&nbsp;住所</p>
-                                    <p class="c-card__detail"><?= sanitize(showData($cityInfo[$_GET['city_id']]['city_name'].$val['street'].$val['building'])); ?></p>
+                                    <p class="c-card__detail"><?= sanitize(showData($val['city_name'].$val['street'].$val['building'])); ?></p>
                                 </div>
                             </div>
                         </li>
@@ -141,17 +147,7 @@ include_once('head.php');
                     </ul>
                     <?php } ?>
                     <!-- ページング -->
-                    <div id="l-pagination" class="">
-                        <ul class="c-pagination u-flex-between">
-                            <li class=""><a class="c-pagination__item" href="">&lt;</a></li>
-                            <li class=""><a class="c-pagination__item" href="">1</a></li>
-                            <li class=""><a class="c-pagination__item" href="">2</a></li>
-                            <li class=""><a class="c-pagination__item active" href="">3</a></li>
-                            <li class=""><a class="c-pagination__item" href="">4</a></li>
-                            <li class=""><a class="c-pagination__item" href="">5</a></li>
-                            <li class=""><a class="c-pagination__item" href="">&gt;</a></li>
-                        </ul>
-                    </div><!-- /ページング -->
+                    <?php echo pagination($currentPageNum, $totalPageNum); ?>
                 </div>
             </section><!-- /店舗一覧 -->
             

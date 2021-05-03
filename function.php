@@ -36,7 +36,7 @@ function debugLogStart(){
 // ================================================
 // デバッグ
 // ================================================
-$debug_flg = false;
+$debug_flg = true;
 function debug($str) {
     global $debug_flg;
     if(!empty($debug_flg)){
@@ -315,7 +315,7 @@ function queryPost($dbh, $sql, $data){
 function getUser($u_id) {
     try {
         $dbh = dbConnect();
-        $sql = 'SELECT `id`, `screen_name`, `last_name`, `first_name`, `last_name_kana`, `first_name_kana`, `birthday_year`, `birthday_month`, `birthday_day`, `avatar_image_path`, `prefecture_id`, `city_id`, `street`, `building`, `postcode` FROM users WHERE `id` = :u_id AND `group_id` = 1';
+        $sql = 'SELECT `id`, `screen_name`, `last_name`, `first_name`, `last_name_kana`, `first_name_kana`, `birthday_year`, `birthday_month`, `birthday_day`, `avatar_image_path`, `prefecture_id`, `city_id`, `street`, `building`, `postcode` FROM `users` WHERE `id` = :u_id AND `group_id` = 1';
         $data = array(':u_id' => $u_id);
         $stmt = queryPost($dbh, $sql, $data);
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -329,7 +329,7 @@ function getUser($u_id) {
 function getShopId($u_id) {
     try {
         $dbh = dbConnect();
-        $sql = 'SELECT `id` FROM shops WHERE `user_id` = :u_id';
+        $sql = 'SELECT `id` FROM `shops` WHERE `user_id` = :u_id';
         $data = array(':u_id' => $u_id);
         $stmt = queryPost($dbh, $sql, $data);
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -347,7 +347,7 @@ function getShopId($u_id) {
 function getShop($u_id) {
     try {
         $dbh = dbConnect();
-        $sql = 'SELECT `id`, `shop_name`, `social_profile`, `postcode`, `prefecture_id`, `city_id`, `street`, `building`, `tel`, `shop_img1`, `shop_img2`, `shop_img3` FROM shops WHERE `user_id` = :u_id';
+        $sql = 'SELECT `id`, `shop_name`, `social_profile`, `postcode`, `prefecture_id`, `city_id`, `street`, `building`, `tel`, `shop_img1`, `shop_img2`, `shop_img3` FROM `shops` WHERE `user_id` = :u_id';
         $data = array(':u_id' => $u_id);
         $stmt = queryPost($dbh, $sql, $data);
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -361,7 +361,7 @@ function getShop($u_id) {
 function getShopOne($s_id) {
     try {
         $dbh = dbConnect();
-        $sql = 'SELECT s.`id`, s.`shop_name`, s.`social_profile`, s.`postcode`, s.`prefecture_id`, s.`city_id`, s.`street`, s.`building`, s.`tel`, s.`value`, s.`map_iframe`, s.`shop_img1`, s.`shop_img2`, s.`shop_img3`, s.`browsing_num`, s.`favorites`, u.`screen_name` FROM shops AS s LEFT JOIN users AS u ON s.`user_id` = u.`id` WHERE s.`id` = :s_id';
+        $sql = 'SELECT s.`id`, s.`shop_name`, s.`social_profile`, s.`postcode`, s.`prefecture_id`, s.`city_id`, s.`street`, s.`building`, s.`tel`, s.`value`, s.`map_iframe`, s.`shop_img1`, s.`shop_img2`, s.`shop_img3`, s.`browsing_num`, s.`favorites`, u.`screen_name` FROM `shops` AS s LEFT JOIN users AS u ON s.`user_id` = u.`id` WHERE s.`id` = :s_id';
         $data = array(':s_id' => $s_id);
         $stmt = queryPost($dbh, $sql, $data);
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -375,7 +375,7 @@ function getShopOne($s_id) {
 function getShopList() {
     try {
         $dbh = dbConnect();
-        $sql = 'SELECT s.`id`, s.`shop_name`, s.`social_profile`, s.`shop_img1`, u.`screen_name` FROM shops AS s LEFT JOIN users AS u ON s.`user_id` = u.`id` LIMIT 10';
+        $sql = 'SELECT s.`id`, s.`shop_name`, s.`social_profile`, s.`shop_img1`, u.`screen_name` FROM `shops` AS s LEFT JOIN `users` AS u ON s.`user_id` = u.`id` LIMIT 10';
         $data = array();
         $stmt = queryPost($dbh, $sql, $data);
         $result = $stmt->fetchAll();
@@ -390,11 +390,11 @@ function getShopList() {
     }
 }
 // 条件に沿って店舗を取得
-function getShopMatch($currentMinNum = 0, $p_id, $city_id, $category_id, $span = 10) {
+function getShopMatch($currentMinNum = 0, $p_id, $city_id, $category_id, $word_search, $span = 10) {
     try {
         // マッチした店舗数を取得
         $dbh = dbConnect();
-        $sql = 'SELECT DISTINCT s.`id` FROM shops AS s INNER JOIN products AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0';
+        $sql = 'SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0';
         $data = array(':p_id' => $p_id);
         if(!empty($city_id)) {
             $sql .= ' AND s.`city_id` = :city_id';
@@ -403,6 +403,10 @@ function getShopMatch($currentMinNum = 0, $p_id, $city_id, $category_id, $span =
         if(!empty($category_id)) {
             $sql .= ' AND p.`category_id` = :category_id';
             $data = array_merge($data, array(':category_id' => $category_id));
+        }
+        if(!empty($word_search)) {
+            $sql .= ' AND (s.`shop_name` = :shop_name OR p.`p_name` = :p_name OR p.`term` = :term)';
+            $data = array_merge($data, array(':shop_name' => $word_search, ':p_name' => $word_search, ':term' => $term));
         }
         $stmt = queryPost($dbh, $sql, $data);
         $rst['total'] = $stmt->rowCount();
@@ -413,7 +417,7 @@ function getShopMatch($currentMinNum = 0, $p_id, $city_id, $category_id, $span =
 
         // 表示する店舗情報を取得
         $dbh = dbConnect();
-        $sql = 'SELECT DISTINCT s.`id`, s.`shop_name`, s.`social_profile`, s.`prefecture_id`, s.`city_id`, s.`street`, s.`building`, s.`shop_img1` FROM shops AS s INNER JOIN products AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0';
+        $sql = 'SELECT DISTINCT s.`id`, s.`shop_name`, s.`social_profile`, s.`prefecture_id`, s.`street`, s.`building`, s.`shop_img1`, c.`city_name` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` INNER JOIN `cities` AS c ON p.`category_id` = c.`id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0';
         $data = array(':p_id' => $p_id);
         if(!empty($city_id)) {
             $sql .= ' AND s.`city_id` = :city_id';
@@ -422,6 +426,10 @@ function getShopMatch($currentMinNum = 0, $p_id, $city_id, $category_id, $span =
         if(!empty($category_id)) {
             $sql .= ' AND p.`category_id` = :category_id';
             $data = array_merge($data, array(':category_id' => $category_id));
+        }
+        if(!empty($word_search)) {
+            $sql .= ' AND (s.`shop_name` = :shop_name OR p.`p_name` = :p_name OR p.`term` = :term)';
+            $data = array_merge($data, array(':shop_name' => $word_search, ':p_name' => $word_search, ':term' => $term));
         }
         $sql .= ' LIMIT :span OFFSET :currentMinNum';
         $data = array_merge($data, array(':span' => $span, ':currentMinNum' => $currentMinNum));
@@ -443,7 +451,7 @@ function getProducts($s_id, $current_num = 0, $limit = 10) {
     try {
         $offset = $limit * $current_num;
         $dbh = dbConnect();
-        $sql = 'SELECT p.`id`, p.`shop_id`, p.`user_id`, p.`p_name`, p.`p_detail`, p.`term`, p.`p_value`, p.`p_number`, p.`p_img`, c.`category_name` FROM products AS p LEFT JOIN category AS c ON p.`category_id` = c.`id` WHERE p.`shop_id` = :s_id LIMIT '.$limit.' OFFSET '.$offset;
+        $sql = 'SELECT p.`id`, p.`shop_id`, p.`user_id`, p.`p_name`, p.`p_detail`, p.`term`, p.`p_value`, p.`p_number`, p.`p_img`, c.`category_name` FROM `products` AS p LEFT JOIN `category` AS c ON p.`category_id` = c.`id` WHERE p.`shop_id` = :s_id LIMIT '.$limit.' OFFSET '.$offset;
         $data = array(':s_id' => $s_id);
         $stmt = queryPost($dbh, $sql, $data);
         $result = $stmt->fetchAll();
@@ -461,7 +469,7 @@ function getProducts($s_id, $current_num = 0, $limit = 10) {
 function getProductOne($p_id) {
     try {
         $dbh = dbConnect();
-        $sql = 'SELECT * FROM products WHERE id = :p_id';
+        $sql = 'SELECT * FROM `products` WHERE `id` = :p_id';
         $data = array(':p_id' => $p_id);
         $stmt = queryPost($dbh, $sql, $data);
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -479,7 +487,7 @@ function getProductOne($p_id) {
 function getCategory() {
     try {
         $dbh = dbConnect();
-        $sql = 'SELECT `id`, `category_name` FROM category WHERE `delete_flg` = 0';
+        $sql = 'SELECT `id`, `category_name` FROM `category` WHERE `delete_flg` = 0';
         $data = array();
         $stmt = queryPost($dbh, $sql, $data);
         $result = $stmt->fetchAll();
@@ -497,7 +505,7 @@ function getCategory() {
 function getMail($u_id) {
     try {
         $dbh = dbConnect();
-        $sql = 'SELECT `email` FROM users WHERE `id` = :u_id';
+        $sql = 'SELECT `email` FROM `users` WHERE `id` = :u_id';
         $data = array(':u_id' => $u_id);
         $stmt = queryPost($dbh, $sql, $data);
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -511,7 +519,7 @@ function getMail($u_id) {
 function getCityInfo($p_id) {
     try {
         $dbh = dbConnect();
-        $sql = 'SELECT `id`, `city_name` FROM cities WHERE `prefecture_id` = :p_id AND `delete_flg` = 0';
+        $sql = 'SELECT `id`, `city_name` FROM `cities` WHERE `prefecture_id` = :p_id AND `delete_flg` = 0';
         $data = array(':p_id' => $p_id);
         $stmt = queryPost($dbh, $sql, $data);
         $result = $stmt->fetchAll();
@@ -525,7 +533,7 @@ function getCityInfo($p_id) {
 function getCityName($city_id) {
     try {
         $dbh = dbConnect();
-        $sql = 'SELECT `city_name` FROM cites WHERE `id` = :c_id';
+        $sql = 'SELECT `city_name` FROM `cites` WHERE `id` = :c_id';
         $data = array(':c_id' => $city_id);
         $stmt = queryPost($dbh, $sql, $data);
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -577,6 +585,46 @@ function uploadImg($file, $key) {
         }
     }
 }
+// ページング
+function pagination( $currentPageNum, $totalPageNum, $link = '', $pageColNum = 5){
+    if($currentPageNum == $totalPageNum && $totalPageNum >= $pageColNum ){
+        $minPageNum = $currentPageNum - 4;
+        $maxPageNum = $currentPageNum;
+    }else if( $currentPageNum == $totalPageNum - 1 && $totalPageNum >= $pageColNum ){
+        $minPageNum = $currentPageNum -3;
+        $maxPageNum = $currentPageNum + 1;
+    }else if ( $currentPageNum == 2 && $totalPageNum >= $pageColNum ){
+        $minPageNum = $currentPageNum - 1;
+        $maxPageNum = $currentPageNum + 3;
+    }else if( $currentPageNum == 1 && $totalPageNum >= $pageColNum ){
+        $minPageNum = 1;
+        $maxPageNum = $currentPageNum + 4;
+    }else if( $totalPageNum < $pageColNum ){
+        $minPageNum = 1;
+        $maxPageNum = $totalPageNum;
+    }else{
+        $minPageNum = $currentPageNum - 2;
+        $maxPageNum = $currentPageNum + 2;
+    }
+
+    echo '<div id="l-pagination" class="">';
+        echo '<ul class="c-pagination u-flex-between">';
+            if($currentPageNum == 1){
+                echo '';
+            }else{
+                echo '<li class=""><a class="c-pagination__item" href="">&lt;</a></li>';
+            }
+            for($i = $minPageNum; $i <= $maxPageNum; $i++){
+                echo '<li class=""><a class="c-pagination__item" href="">'.$i.'</a></li>';
+            }
+            if($currentPageNum == $totalPageNum){
+                echo '';
+            }else{
+                echo '<li class=""><a class="c-pagination__item" href="">&gt;</a></li>';
+            }
+        echo '</ul>';
+    echo '</div>';
+}
 
 //================================
 // メール送信
@@ -624,7 +672,7 @@ function appendGetParam($arr_del_key = array()) {
                 $str .= $key.'='.$val.'&';
             }
         }
-        $str = mb_strlen($str, 0, -1, "UTF-8");
+        $str = mb_substr($str, 0, -1, "UTF-8");
         return $str;
     }
 }
