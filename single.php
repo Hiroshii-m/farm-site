@@ -43,7 +43,7 @@ include_once('head.php');
                             <p class="p-article__category">穀物</p>
                             <div class="p-article__favorite">
                                 <p>
-                                    閲覧件数:7件&nbsp;お気に入り：100件&nbsp;
+                                    お気に入り：100件&nbsp;
                                 </p>
                             </div>
                         </div>

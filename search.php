@@ -12,10 +12,17 @@ debug('==============================================');
 // 変数初期化
 // ================================
 $dbShopData = array();
+// 検索クリアが押された場合
+if(!empty($_GET['clear'])) {
+    $_GET['word_search'] = '';
+    $_GET['city_id'] = '';
+    $_GET['category_id'] = '';
+}
+
 // GETパラメータを取得
 // ================================
 $p_id = (!empty($_GET['p_id'])) ? $_GET['p_id'] : '';
-$word_search = (!empty($_GET['word_search'])) ? $_GET['word_search'] : '';
+$word_search = (!empty($_GET['word_search'])) ? splitKeywords($_GET['word_search']) : '';
 $city_id = (!empty($_GET['city_id'])) ? $_GET['city_id'] : '';
 $category_id = (!empty($_GET['category_id'])) ? $_GET['category_id'] : '';
 $currentPageNum = (!empty($_GET['page_id'])) ? $_GET['page_id'] : 1;
@@ -39,12 +46,6 @@ $dbShopData = getShopMatch($currentMinNum, $p_id, $city_id, $category_id, $word_
 $totalShopNum = (!empty($dbShopData['total'])) ? $dbShopData['total'] : 0;
 // 合計ページ数
 $totalPageNum = (!empty($dbShopData['total_page'])) ? $dbShopData['total_page'] : 0;
-// 検索クリアが押された場合
-if(!empty($_GET['clear'])) {
-    $city_id = '';
-    $category_id = '';
-}
-// debug($_GET['clear'])
 
 ?>
 <?php
@@ -104,7 +105,11 @@ include_once('head.php');
                 <div class="p-shopList">
                     <h2 class="p-shopList__heading">
                         <p class="p-shopList__title">店舗一覧</p>
-                        <p class="p-shopList__showNum"><?= $currentMinNum + 1; ?>~<?= $currentMinNum + count($dbShopData['data']); ?>件表示/合計<?= (!empty($dbShopData['total'])) ? $dbShopData['total'] : '0'; ?>件ヒット</p>
+                        <p class="p-shopList__showNum">
+                        <?php if(1 <= $currentPageNum){ ?>
+                            <?= $currentMinNum + 1; ?>~<?= $currentMinNum + count($dbShopData['data']); ?>
+                        <?php }else{ echo '0'; } ?>
+                            件表示/合計<?= (!empty($dbShopData['total'])) ? $dbShopData['total'] : '0'; ?>件ヒット</p>
                         <div class="p-shopList__terms">
                             <?php if(!empty($_GET['city_id']) && is_numeric($_GET['city_id'])){ ?>
                                 <span class="p-shopList__tag u-tag-sub"><?= sanitize($cityInfo[$_GET['city_id']]['city_name']); ?></span>

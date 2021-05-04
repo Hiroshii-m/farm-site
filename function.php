@@ -404,9 +404,21 @@ function getShopMatch($currentMinNum = 0, $p_id, $city_id, $category_id, $word_s
             $sql .= ' AND p.`category_id` = :category_id';
             $data = array_merge($data, array(':category_id' => $category_id));
         }
-        if(!empty($word_search)) {
-            $sql .= ' AND (s.`shop_name` = :shop_name OR p.`p_name` = :p_name OR p.`term` = :term)';
-            $data = array_merge($data, array(':shop_name' => $word_search, ':p_name' => $word_search, ':term' => $term));
+        // if(!empty($word_search)) {
+        //     $word_search = '%'.$word_search.'%';
+        //     $sql .= ' AND (s.`shop_name` LIKE :shop_name OR p.`p_name` LIKE :p_name OR p.`term` LIKE :term)';
+        //     $data = array_merge($data, array(':shop_name' => $word_search, ':p_name' => $word_search, ':term' => $word_search));
+        // }
+        if(is_array($word_search) && !empty($word_search)) {
+            
+            $sql .= ' AND (';
+            foreach($word_search as $key => $val){
+                $word = '%'.$val.'%';
+                $sql .= 's.`shop_name` LIKE :shop_name'.(string)$key.' OR p.`p_name` LIKE :p_name'.(string)$key.' OR p.`term` LIKE :term'.(string)$key.' OR ';
+                $data = array_merge($data, array(':shop_name'.(string)$key => $word, ':p_name'.(string)$key => $word, ':term'.(string)$key => $word));
+            }
+            $sql = mb_substr($sql, 0, -4, "UTF-8");
+            $sql .= ')';
         }
         $stmt = queryPost($dbh, $sql, $data);
         $rst['total'] = $stmt->rowCount();
@@ -427,9 +439,21 @@ function getShopMatch($currentMinNum = 0, $p_id, $city_id, $category_id, $word_s
             $sql .= ' AND p.`category_id` = :category_id';
             $data = array_merge($data, array(':category_id' => $category_id));
         }
-        if(!empty($word_search)) {
-            $sql .= ' AND (s.`shop_name` = :shop_name OR p.`p_name` = :p_name OR p.`term` = :term)';
-            $data = array_merge($data, array(':shop_name' => $word_search, ':p_name' => $word_search, ':term' => $term));
+        // if(!empty($word_search)) {
+        //     $word_search = '%'.$word_search.'%';
+        //     $sql .= ' AND (s.`shop_name` LIKE :shop_name OR p.`p_name` LIKE :p_name OR p.`term` LIKE :term)';
+        //     $data = array_merge($data, array(':shop_name' => $word_search, ':p_name' => $word_search, ':term' => $word_search));
+        // }
+        if(is_array($word_search) && !empty($word_search)) {
+            
+            $sql .= ' AND (';
+            foreach($word_search as $key => $val){
+                $word = '%'.$val.'%';
+                $sql .= 's.`shop_name` LIKE :shop_name'.(string)$key.' OR p.`p_name` LIKE :p_name'.(string)$key.' OR p.`term` LIKE :term'.(string)$key.' OR ';
+                $data = array_merge($data, array(':shop_name'.(string)$key => $word, ':p_name'.(string)$key => $word, ':term'.(string)$key => $word));
+            }
+            $sql = mb_substr($sql, 0, -4, "UTF-8");
+            $sql .= ')';
         }
         $sql .= ' LIMIT :span OFFSET :currentMinNum';
         $data = array_merge($data, array(':span' => $span, ':currentMinNum' => $currentMinNum));
@@ -609,18 +633,24 @@ function pagination( $currentPageNum, $totalPageNum, $link = '', $pageColNum = 5
 
     echo '<div id="l-pagination" class="">';
         echo '<ul class="c-pagination u-flex-between">';
-            if($currentPageNum == 1){
+            if($currentPageNum <= 1){
                 echo '';
             }else{
-                echo '<li class=""><a class="c-pagination__item" href="">&lt;</a></li>';
+                echo '<li class=""><a class="c-pagination__item" href="search.php';
+                echo (!empty(appendGetParam())) ? appendGetParam().'&page_id=1' : '?page_id=1';
+                echo '">&lt;</a></li>';
             }
             for($i = $minPageNum; $i <= $maxPageNum; $i++){
-                echo '<li class=""><a class="c-pagination__item" href="">'.$i.'</a></li>';
+                echo '<li class=""><a class="c-pagination__item" href="';
+                echo (!empty(appendGetParam())) ? appendGetParam().'&page_id='.$i : '?page_id='.$i;
+                echo '">'.$i.'</a></li>';
             }
             if($currentPageNum == $totalPageNum){
                 echo '';
             }else{
-                echo '<li class=""><a class="c-pagination__item" href="">&gt;</a></li>';
+                echo '<li class=""><a class="c-pagination__item" href="';
+                echo (!empty(appendGetParam())) ? appendGetParam().'page_id='.$totalPageNum : '?page_id='.$totalPageNum;
+                echo '">&gt;</a></li>';
             }
         echo '</ul>';
     echo '</div>';
@@ -675,4 +705,8 @@ function appendGetParam($arr_del_key = array()) {
         $str = mb_substr($str, 0, -1, "UTF-8");
         return $str;
     }
+}
+// 検索キーワードを分割する
+function splitKeywords($input, $limit = -1) {
+    return preg_split('/[\p{Z}\p{Cc}]++/u', $input, $limit, PREG_SPLIT_NO_EMPTY);
 }

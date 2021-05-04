@@ -9002,7 +9002,7 @@ Stack trace:
 
 [02-May-2021 12:03:47 Asia/Tokyo] デバッグ:クエリ成功しました。
 [02-May-2021 12:03:47 Asia/Tokyo] デバッグ:クエリ成功しました。
-[02-May-2021 12:03:47 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
+[02-May-2021 12:03:47 Asia/Tokyo] PHP Warning:  mb_strlen() expects at most 2 parΩameters, 4 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 627
 [02-May-2021 12:08:04 Asia/Tokyo] デバッグ:==============================================
 [02-May-2021 12:08:04 Asia/Tokyo] デバッグ:検索画面
 [02-May-2021 12:08:04 Asia/Tokyo] デバッグ:==============================================
@@ -9667,3 +9667,794 @@ Stack trace:
 [02-May-2021 19:16:19 Asia/Tokyo] デバッグ:クエリ成功しました。
 [02-May-2021 19:16:19 Asia/Tokyo] デバッグ:クエリ成功しました。
 [02-May-2021 19:16:19 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:38:33 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 16:38:33 Asia/Tokyo] デバッグ:TOP画面
+[04-May-2021 16:38:33 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 16:38:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:38:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:38:35 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 16:38:35 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 16:38:35 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 16:38:35 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:38:35 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:38:35 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:38:35 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:38:44 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 16:38:44 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 16:38:44 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 16:38:44 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:38:44 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:38:44 Asia/Tokyo] PHP Notice:  Undefined variable: term in /Applications/MAMP/htdocs/output2/farm/function.php on line 409
+[04-May-2021 16:38:44 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:38:44 Asia/Tokyo] PHP Notice:  Undefined variable: term in /Applications/MAMP/htdocs/output2/farm/function.php on line 432
+[04-May-2021 16:38:44 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:40:00 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 16:40:00 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 16:40:00 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 16:40:00 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:40:00 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:40:00 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:40:00 Asia/Tokyo] PHP Notice:  Undefined variable: term in /Applications/MAMP/htdocs/output2/farm/function.php on line 432
+[04-May-2021 16:40:00 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:40:11 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 16:40:11 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 16:40:11 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 16:40:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:40:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:40:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:40:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:42:48 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 16:42:48 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 16:42:48 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 16:42:48 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:42:48 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:42:48 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:42:48 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10' at line 1
+[04-May-2021 16:42:48 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 107
+[04-May-2021 16:42:48 Asia/Tokyo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Applications/MAMP/htdocs/output2/farm/search.php on line 107
+[04-May-2021 16:45:42 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 16:45:42 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 16:45:42 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 16:45:42 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:45:42 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:45:42 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:45:42 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10' at line 1
+[04-May-2021 16:45:42 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 107
+[04-May-2021 16:45:42 Asia/Tokyo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Applications/MAMP/htdocs/output2/farm/search.php on line 107
+[04-May-2021 16:47:56 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 16:47:56 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 16:47:56 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 16:47:56 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:47:56 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:47:56 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:47:56 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10' at line 1
+[04-May-2021 16:48:29 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 16:48:29 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 16:48:29 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 16:48:29 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:48:29 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:48:29 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:48:29 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10' at line 1
+[04-May-2021 16:48:57 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 16:48:57 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 16:48:57 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 16:48:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:48:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:48:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:48:57 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10' at line 1
+[04-May-2021 16:49:36 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 16:49:36 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 16:49:36 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 16:49:36 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:49:36 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:49:36 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:49:36 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10' at line 1
+[04-May-2021 16:49:42 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 16:49:42 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 16:49:42 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 16:49:42 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:49:42 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:49:42 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:49:42 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10' at line 1
+[04-May-2021 16:49:45 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 16:49:45 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 16:49:45 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 16:49:45 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:49:45 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:49:45 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:49:45 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10' at line 1
+[04-May-2021 16:49:52 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 16:49:52 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 16:49:52 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 16:49:52 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:49:52 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:49:52 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:49:52 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10' at line 1
+[04-May-2021 16:49:57 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 16:49:57 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 16:49:57 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 16:49:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:49:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:49:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:49:57 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10' at line 1
+[04-May-2021 16:50:01 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 16:50:01 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 16:50:01 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 16:50:01 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:50:01 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:50:01 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:50:01 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10' at line 1
+[04-May-2021 16:50:09 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 16:50:09 Asia/Tokyo] デバッグ:TOP画面
+[04-May-2021 16:50:09 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 16:50:09 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:50:09 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:50:11 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 16:50:11 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 16:50:11 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 16:50:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:50:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:50:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:50:11 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10' at line 1
+[04-May-2021 16:52:24 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 16:52:24 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 16:52:24 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 16:52:24 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:52:24 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:52:24 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:52:24 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10' at line 1
+[04-May-2021 16:53:13 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 16:53:13 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 16:53:13 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 16:53:13 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:53:13 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:53:13 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 16:53:13 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:11:07 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 17:11:07 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 17:11:07 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 17:11:07 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:11:07 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:11:07 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:11:07 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:11:16 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 17:11:16 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 17:11:16 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 17:11:16 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:11:16 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:11:16 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:11:16 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:16:43 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 17:16:43 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 17:16:43 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 17:16:43 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:16:43 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:16:43 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:16:43 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:16:58 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 17:16:58 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 17:16:58 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 17:16:58 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:16:58 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:16:58 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:16:58 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:17:10 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 17:17:10 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 17:17:10 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 17:17:10 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:17:10 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:17:10 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:17:10 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:17:16 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 17:17:16 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 17:17:16 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 17:17:16 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:17:16 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:17:16 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:17:16 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:17:17 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 17:17:17 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 17:17:17 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 17:17:17 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:17:17 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:17:17 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:17:17 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:17:18 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 17:17:18 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 17:17:18 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 17:17:18 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:17:18 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:17:18 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:17:18 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:17:24 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 17:17:24 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 17:17:24 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 17:17:24 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:17:24 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:17:24 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:17:24 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:17:56 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 17:17:56 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 17:17:56 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 17:17:56 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:17:56 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:17:56 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:17:56 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:18:05 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 17:18:05 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 17:18:05 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 17:18:05 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:18:05 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:18:05 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:18:05 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:18:44 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 17:18:44 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 17:18:44 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 17:18:44 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:18:44 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:18:44 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:18:44 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:18:53 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 17:18:53 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 17:18:53 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 17:18:53 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:18:53 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:18:53 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:18:53 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:18:55 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 17:18:55 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 17:18:55 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 17:18:55 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:18:55 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:18:55 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:18:55 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:21:49 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 17:21:49 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 17:21:49 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 17:21:49 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:21:49 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:21:49 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:21:49 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:21:52 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 17:21:52 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 17:21:52 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 17:21:52 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:21:52 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:21:52 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:21:52 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:22:54 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 17:22:54 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 17:22:54 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 17:22:54 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:22:54 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:22:54 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 17:22:54 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 20:39:52 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 20:39:52 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 20:39:52 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 20:39:52 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 20:39:52 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 20:39:52 Asia/Tokyo] PHP Warning:  array_filter() expects parameter 1 to be array, string given in /Applications/MAMP/htdocs/output2/farm/function.php on line 412
+[04-May-2021 20:39:52 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 20:39:52 Asia/Tokyo] PHP Warning:  array_filter() expects parameter 1 to be array, string given in /Applications/MAMP/htdocs/output2/farm/function.php on line 446
+[04-May-2021 20:39:53 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 20:41:11 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 20:41:11 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 20:41:11 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 20:41:11 Asia/Tokyo] デバッグ:Array
+(
+    [0] => 屯田
+)
+
+[04-May-2021 20:41:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 20:41:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 20:41:11 Asia/Tokyo] PHP Warning:  array_filter() expects parameter 1 to be array, string given in /Applications/MAMP/htdocs/output2/farm/function.php on line 412
+[04-May-2021 20:41:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 20:41:11 Asia/Tokyo] PHP Warning:  array_filter() expects parameter 1 to be array, string given in /Applications/MAMP/htdocs/output2/farm/function.php on line 446
+[04-May-2021 20:41:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 20:42:19 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 20:42:19 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 20:42:19 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 20:42:19 Asia/Tokyo] デバッグ:Array
+(
+    [0] => 屯田
+)
+
+[04-May-2021 20:42:19 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 20:42:19 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 20:42:19 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 20:42:19 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 20:42:19 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 20:42:19 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORSELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` ' at line 1
+[04-May-2021 20:42:19 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 20:42:19 Asia/Tokyo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 20:45:44 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 20:45:44 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 20:45:44 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 20:45:44 Asia/Tokyo] デバッグ:Array
+(
+    [0] => 屯田
+)
+
+[04-May-2021 20:45:44 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 20:45:44 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 20:45:44 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 20:45:44 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 20:45:44 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 20:45:44 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORSELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` ' at line 1
+[04-May-2021 20:45:44 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 20:45:44 Asia/Tokyo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 20:45:58 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 20:45:58 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 20:45:58 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 20:45:58 Asia/Tokyo] デバッグ:Array
+(
+    [0] => 屯田
+)
+
+[04-May-2021 20:45:58 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 20:45:58 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 20:45:58 Asia/Tokyo] PHP Warning:  array_filter() expects parameter 1 to be array, string given in /Applications/MAMP/htdocs/output2/farm/function.php on line 412
+[04-May-2021 20:45:58 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 20:45:58 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 20:45:58 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 20:45:58 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 20:45:58 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORSELECT DISTINCT s.`id`, s.`shop_name`, s.`social_profile`, s.`prefecture_id`, ' at line 1
+[04-May-2021 20:45:58 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 20:45:58 Asia/Tokyo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 20:49:06 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 20:49:06 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 20:49:06 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 20:49:06 Asia/Tokyo] デバッグ:Array
+(
+    [0] => 屯田
+)
+
+[04-May-2021 20:49:06 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 20:49:06 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 20:49:06 Asia/Tokyo] PHP Warning:  array_filter() expects parameter 1 to be array, string given in /Applications/MAMP/htdocs/output2/farm/function.php on line 412
+[04-May-2021 20:49:06 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 20:49:06 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 20:49:06 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 20:49:06 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 20:49:06 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORSELECT DISTINCT s.`id`, s.`shop_name`, s.`social_profile`, s.`prefecture_id`, ' at line 1
+[04-May-2021 20:49:06 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 20:49:06 Asia/Tokyo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 20:59:46 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 20:59:46 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 20:59:46 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 20:59:46 Asia/Tokyo] デバッグ:Array
+(
+    [0] => 屯田
+)
+
+[04-May-2021 20:59:46 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 20:59:46 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 20:59:46 Asia/Tokyo] PHP Warning:  array_filter() expects parameter 1 to be array, string given in /Applications/MAMP/htdocs/output2/farm/function.php on line 412
+[04-May-2021 20:59:46 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 20:59:46 Asia/Tokyo] PHP Warning:  array_filter() expects parameter 1 to be array, string given in /Applications/MAMP/htdocs/output2/farm/function.php on line 450
+[04-May-2021 20:59:46 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:00:19 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:00:19 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 21:00:19 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:00:19 Asia/Tokyo] デバッグ:Array
+(
+    [0] => 屯田
+)
+
+[04-May-2021 21:00:19 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:00:19 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:00:19 Asia/Tokyo] PHP Warning:  in_array() expects at least 2 parameters, 1 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 413
+[04-May-2021 21:00:19 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:00:19 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:00:19 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:00:19 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:00:19 Asia/Tokyo] PHP Warning:  in_array() expects at least 2 parameters, 1 given in /Applications/MAMP/htdocs/output2/farm/function.php on line 451
+[04-May-2021 21:00:19 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:00:19 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:00:19 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:00:19 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:02:55 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:02:55 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 21:02:55 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:02:55 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:02:55 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:02:55 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:02:55 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:02:55 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:02:55 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORSELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` ' at line 1
+[04-May-2021 21:02:55 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 21:02:55 Asia/Tokyo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 21:03:19 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:03:19 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 21:03:19 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:03:19 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:03:19 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:03:19 Asia/Tokyo] PHP Warning:  array_filter() expects parameter 1 to be array, string given in /Applications/MAMP/htdocs/output2/farm/function.php on line 412
+[04-May-2021 21:03:19 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:03:19 Asia/Tokyo] PHP Warning:  array_filter() expects parameter 1 to be array, string given in /Applications/MAMP/htdocs/output2/farm/function.php on line 448
+[04-May-2021 21:03:19 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:03:59 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:03:59 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 21:03:59 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:03:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:03:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:03:59 Asia/Tokyo] PHP Warning:  array_filter() expects parameter 1 to be array, string given in /Applications/MAMP/htdocs/output2/farm/function.php on line 412
+[04-May-2021 21:03:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:03:59 Asia/Tokyo] PHP Warning:  array_filter() expects parameter 1 to be array, string given in /Applications/MAMP/htdocs/output2/farm/function.php on line 448
+[04-May-2021 21:03:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:05:22 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:05:22 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 21:05:22 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:05:22 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:05:22 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:05:22 Asia/Tokyo] PHP Warning:  array_filter() expects parameter 1 to be array, string given in /Applications/MAMP/htdocs/output2/farm/function.php on line 412
+[04-May-2021 21:05:22 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:05:22 Asia/Tokyo] PHP Warning:  array_filter() expects parameter 1 to be array, string given in /Applications/MAMP/htdocs/output2/farm/function.php on line 448
+[04-May-2021 21:05:22 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:14:51 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:14:51 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 21:14:51 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:14:51 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:14:51 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:14:51 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/output2/farm/function.php on line 415
+[04-May-2021 21:14:51 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[04-May-2021 21:14:51 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 21:14:51 Asia/Tokyo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 21:16:15 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:16:15 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 21:16:15 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:16:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:16:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:16:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:16:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:16:22 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:16:22 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 21:16:22 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:16:22 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:16:22 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:16:22 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:16:22 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:16:22 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:16:22 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORSELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` ' at line 1
+[04-May-2021 21:16:22 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 21:16:22 Asia/Tokyo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 21:16:28 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:16:28 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 21:16:28 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:16:28 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:16:28 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:16:28 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:16:28 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:16:34 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:16:34 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 21:16:34 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:16:34 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:16:34 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:16:34 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:16:34 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:16:34 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:16:34 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORs.`shop_name` LIKE 'Array' OR p.`p_name` LIKE 'Array' OR p.`term` LIKE 'Array'' at line 1
+[04-May-2021 21:16:34 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 21:16:34 Asia/Tokyo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 21:17:33 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:17:33 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 21:17:33 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:17:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:17:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:17:33 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:17:33 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:17:33 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:17:33 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORs.`shop_name` LIKE 'Array' OR p.`p_name` LIKE 'Array' OR p.`term` LIKE 'Array'' at line 1
+[04-May-2021 21:17:33 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 21:17:33 Asia/Tokyo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 21:18:12 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:18:12 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 21:18:12 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:18:12 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:18:12 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:18:12 Asia/Tokyo] デバッグ:SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0 AND (s.`shop_name` LIKE :shop_name OR p.`p_name` LIKE :p_name OR p.`term` LIKE :term ORs.`shop_name` LIKE :shop_name OR p.`p_name` LIKE :p_name OR p.`term` LIKE :term ORSELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0 AND (s.`shop_name` LIKE :shop_name OR p.`p_name` LIKE :p_name OR p.`term` LIKE :term ORs.`shop_name` LIKE :shop_name OR p.`p_name` LIKE :p_name OR p.`term` LIKE :term O
+[04-May-2021 21:18:12 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:18:12 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:18:12 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:18:12 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORs.`shop_name` LIKE 'Array' OR p.`p_name` LIKE 'Array' OR p.`term` LIKE 'Array'' at line 1
+[04-May-2021 21:18:12 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 21:18:12 Asia/Tokyo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 21:19:07 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:19:07 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 21:19:07 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:19:07 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:19:07 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:19:07 Asia/Tokyo] デバッグ:SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0 AND (s.`shop_name` LIKE :shop_name OR p.`p_name` LIKE :p_name OR p.`term` LIKE :term OR s.`shop_name` LIKE :shop_name OR p.`p_name` LIKE :p_name OR p.`term` LIKE :term OR SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0 AND (s.`shop_name` LIKE :shop_name OR p.`p_name` LIKE :p_name OR p.`term` LIKE :term OR s.`shop_name` LIKE :shop_name OR p.`p_name` LIKE :p_name OR p.`term` LIKE :term OR
+[04-May-2021 21:19:07 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:19:07 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:19:07 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:19:07 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = ' at line 1
+[04-May-2021 21:19:07 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 21:19:07 Asia/Tokyo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 21:19:07 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:19:07 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 21:19:07 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:19:07 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:19:07 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:19:07 Asia/Tokyo] デバッグ:SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0 AND (s.`shop_name` LIKE :shop_name OR p.`p_name` LIKE :p_name OR p.`term` LIKE :term OR s.`shop_name` LIKE :shop_name OR p.`p_name` LIKE :p_name OR p.`term` LIKE :term OR SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0 AND (s.`shop_name` LIKE :shop_name OR p.`p_name` LIKE :p_name OR p.`term` LIKE :term OR s.`shop_name` LIKE :shop_name OR p.`p_name` LIKE :p_name OR p.`term` LIKE :term OR
+[04-May-2021 21:19:07 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:19:07 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:19:07 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:19:07 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = ' at line 1
+[04-May-2021 21:19:07 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 21:19:07 Asia/Tokyo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 21:21:59 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:21:59 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 21:21:59 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:21:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:21:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:21:59 Asia/Tokyo] デバッグ:SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0 AND (s.`shop_name` LIKE :shop_name OR p.`p_name` LIKE :p_name OR p.`term` LIKE :term OR s.`shop_name` LIKE :shop_name OR p.`p_name` LIKE :p_name OR p.`term` LIKE :term OR SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0 AND (s.`shop_name` LIKE :shop_name OR p.`p_name` LIKE :p_name OR p.`term` LIKE :term OR s.`shop_name` LIKE :shop_name OR p.`p_name` LIKE :p_name OR p.`term` LIKE :term OR
+[04-May-2021 21:21:59 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:21:59 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:21:59 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:21:59 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = ' at line 1
+[04-May-2021 21:21:59 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 21:21:59 Asia/Tokyo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 21:22:46 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:22:46 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 21:22:46 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:22:46 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:22:46 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:22:46 Asia/Tokyo] デバッグ:SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0 AND ( s.`shop_name` LIKE :shop_name OR p.`p_name` LIKE :p_name OR p.`term` LIKE :term OR  s.`shop_name` LIKE :shop_name OR p.`p_name` LIKE :p_name OR p.`term` LIKE :term SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0 AND ( s.`shop_name` LIKE :shop_name OR p.`p_name` LIKE :p_name OR p.`term` LIKE :term OR  s.`shop_name` LIKE :shop_name OR p.`p_name` LIKE :p_name OR p.`term` LIKE :term )
+[04-May-2021 21:22:46 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:22:46 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:22:46 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:22:46 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = ' at line 1
+[04-May-2021 21:22:46 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 21:22:46 Asia/Tokyo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 21:28:58 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:28:58 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 21:28:58 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:28:58 Asia/Tokyo] デバッグ:Array
+(
+    [0] => 屯田
+    [1] => スクラム
+)
+
+[04-May-2021 21:28:58 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:28:58 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:28:58 Asia/Tokyo] デバッグ:SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0 AND ( s.`shop_name` LIKE :shop_name OR p.`p_name` LIKE :p_name OR p.`term` LIKE :term OR  s.`shop_name` LIKE :shop_name OR p.`p_name` LIKE :p_name OR p.`term` LIKE :term SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0 AND ( s.`shop_name` LIKE :shop_name OR p.`p_name` LIKE :p_name OR p.`term` LIKE :term OR  s.`shop_name` LIKE :shop_name OR p.`p_name` LIKE :p_name OR p.`term` LIKE :term )
+[04-May-2021 21:28:58 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:28:58 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:28:58 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:28:58 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = ' at line 1
+[04-May-2021 21:28:58 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 21:28:58 Asia/Tokyo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 21:30:17 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:30:17 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 21:30:17 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:30:17 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:30:17 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:30:17 Asia/Tokyo] デバッグ:%屯田%
+[04-May-2021 21:30:17 Asia/Tokyo] デバッグ:%スクラム%
+[04-May-2021 21:30:17 Asia/Tokyo] デバッグ:SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0 AND ( s.`shop_name` LIKE :shop_name OR p.`p_name` LIKE :p_name OR p.`term` LIKE :term OR  s.`shop_name` LIKE :shop_name OR p.`p_name` LIKE :p_name OR p.`term` LIKE :term SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0 AND ( s.`shop_name` LIKE :shop_name OR p.`p_name` LIKE :p_name OR p.`term` LIKE :term OR  s.`shop_name` LIKE :shop_name OR p.`p_name` LIKE :p_name OR p.`term` LIKE :term )
+[04-May-2021 21:30:17 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:30:17 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:30:17 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:30:17 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = ' at line 1
+[04-May-2021 21:30:17 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 21:30:17 Asia/Tokyo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 21:31:21 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:31:21 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 21:31:21 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:31:21 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:31:21 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:31:21 Asia/Tokyo] デバッグ:%屯田%
+[04-May-2021 21:31:21 Asia/Tokyo] デバッグ:%スクラム%
+[04-May-2021 21:31:21 Asia/Tokyo] デバッグ:SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0 AND ( s.`shop_name` LIKE :shop_name OR  s.`shop_name` LIKE :shop_name SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0 AND ( s.`shop_name` LIKE :shop_name OR  s.`shop_name` LIKE :shop_name )
+[04-May-2021 21:31:21 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:31:21 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:31:21 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:31:21 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = ' at line 1
+[04-May-2021 21:31:21 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 21:31:21 Asia/Tokyo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 21:31:50 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:31:50 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 21:31:50 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:31:50 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:31:50 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:31:50 Asia/Tokyo] デバッグ:%屯田%
+[04-May-2021 21:31:50 Asia/Tokyo] デバッグ:%スクラム%
+[04-May-2021 21:31:50 Asia/Tokyo] デバッグ:SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0 AND ( s.`shop_name` LIKE :shop_name OR  s.`shop_name` LIKE :shop_name SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0 AND ( s.`shop_name` LIKE :shop_name OR  s.`shop_name` LIKE :shop_name )
+[04-May-2021 21:31:50 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:31:50 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:31:50 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:31:50 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = ' at line 1
+[04-May-2021 21:31:50 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 21:31:50 Asia/Tokyo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 21:33:19 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:33:19 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 21:33:19 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:33:19 Asia/Tokyo] デバッグ:配列かどうか1
+[04-May-2021 21:33:19 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:33:19 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:33:19 Asia/Tokyo] デバッグ:%屯田%
+[04-May-2021 21:33:19 Asia/Tokyo] デバッグ:%スクラム%
+[04-May-2021 21:33:19 Asia/Tokyo] デバッグ:SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0 AND ( s.`shop_name` LIKE :shop_name OR  s.`shop_name` LIKE :shop_name SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0 AND ( s.`shop_name` LIKE :shop_name OR  s.`shop_name` LIKE :shop_name )
+[04-May-2021 21:33:19 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:33:19 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:33:19 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 301
+[04-May-2021 21:33:19 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = ' at line 1
+[04-May-2021 21:33:19 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 21:33:19 Asia/Tokyo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 21:48:17 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:48:17 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 21:48:17 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:48:17 Asia/Tokyo] デバッグ:配列かどうか1
+[04-May-2021 21:48:17 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:48:17 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:48:17 Asia/Tokyo] デバッグ:SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0 AND ( s.`shop_name` LIKE :shop_name0 OR p.`p_name` LIKE :p_name0 OR p.`term` LIKE :term0 OR  s.`shop_name` LIKE :shop_name1 OR p.`p_name` LIKE :p_name1 OR p.`term` LIKE :term1 SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0 AND ( s.`shop_name` LIKE :shop_name0 OR p.`p_name` LIKE :p_name0 OR p.`term` LIKE :term0 OR  s.`shop_name` LIKE :shop_name1 OR p.`p_name` LIKE :p_name1 OR p.`term` LIKE :term1 )
+[04-May-2021 21:48:17 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = ' at line 1
+[04-May-2021 21:48:17 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 21:48:17 Asia/Tokyo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 21:50:05 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:50:05 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 21:50:05 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:50:05 Asia/Tokyo] デバッグ:配列かどうか
+[04-May-2021 21:50:05 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:50:05 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:50:05 Asia/Tokyo] デバッグ:SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0
+[04-May-2021 21:50:05 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:50:05 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:50:22 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:50:22 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 21:50:22 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:50:22 Asia/Tokyo] デバッグ:配列かどうか1
+[04-May-2021 21:50:22 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:50:22 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:50:22 Asia/Tokyo] デバッグ:SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0 AND ( s.`shop_name` LIKE :shop_name0 OR p.`p_name` LIKE :p_name0 OR p.`term` LIKE :term0 SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0 AND ( s.`shop_name` LIKE :shop_name0 OR p.`p_name` LIKE :p_name0 OR p.`term` LIKE :term0 )
+[04-May-2021 21:50:22 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = ' at line 1
+[04-May-2021 21:50:22 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 21:50:22 Asia/Tokyo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 21:53:01 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:53:01 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 21:53:01 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:53:01 Asia/Tokyo] デバッグ:配列かどうか1
+[04-May-2021 21:53:01 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:53:01 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:53:01 Asia/Tokyo] デバッグ:SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0 AND ( s.`shop_name` LIKE :shop_name0 OR p.`p_name` LIKE :p_name0 OR p.`term` LIKE :term0 SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0 AND ( s.`shop_name` LIKE :shop_name0 OR p.`p_name` LIKE :p_name0 OR p.`term` LIKE :term0 )
+[04-May-2021 21:53:01 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = ' at line 1
+[04-May-2021 21:53:01 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 21:53:01 Asia/Tokyo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 21:54:49 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:54:49 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 21:54:49 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:54:49 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:54:49 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:54:49 Asia/Tokyo] デバッグ:SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0 AND (s.`shop_name` LIKE :shop_name0 OR p.`p_name` LIKE :p_name0 OR p.`term` LIKE :term0)
+SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0 AND (s.`shop_name` LIKE :shop_name0 OR p.`p_name` LIKE :p_name0 OR p.`term` LIKE :term0)
+[04-May-2021 21:54:49 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[04-May-2021 21:54:49 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 21:54:49 Asia/Tokyo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 21:59:03 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:59:03 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 21:59:03 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 21:59:03 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:59:03 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 21:59:03 Asia/Tokyo] デバッグ:SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0 AND (s.`shop_name` LIKE :shop_name0 OR p.`p_name` LIKE :p_name0 OR p.`term` LIKE :term0SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0 AND (s.`shop_name` LIKE :shop_name0 OR p.`p_name` LIKE :p_name0 OR p.`term` LIKE :term0)
+[04-May-2021 21:59:03 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[04-May-2021 21:59:03 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 21:59:03 Asia/Tokyo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 22:00:28 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 22:00:28 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 22:00:28 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 22:00:28 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:00:28 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:00:28 Asia/Tokyo] デバッグ:SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0
+[04-May-2021 22:00:28 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:00:28 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[04-May-2021 22:00:28 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 22:00:28 Asia/Tokyo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 22:01:59 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 22:01:59 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 22:01:59 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 22:01:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:01:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:01:59 Asia/Tokyo] デバッグ:SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0 AND (s.`shop_name` LIKE :shop_name0 OR p.`p_name` LIKE :p_name0 OR p.`term` LIKE :term0SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0 AND (s.`shop_name` LIKE :shop_name0 OR p.`p_name` LIKE :p_name0 OR p.`term` LIKE :term0)
+[04-May-2021 22:01:59 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[04-May-2021 22:01:59 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 22:01:59 Asia/Tokyo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 22:03:18 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 22:03:18 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 22:03:18 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 22:03:18 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:03:18 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:03:18 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[04-May-2021 22:03:18 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 22:03:18 Asia/Tokyo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 22:04:11 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 22:04:11 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 22:04:11 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 22:04:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:04:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:04:11 Asia/Tokyo] デバッグ:SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0 AND (s.`shop_name` LIKE :shop_name0 OR p.`p_name` LIKE :p_name0 OR p.`term` LIKE :term0)
+[04-May-2021 22:04:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:04:11 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[04-May-2021 22:04:11 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 22:04:11 Asia/Tokyo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Applications/MAMP/htdocs/output2/farm/search.php on line 110
+[04-May-2021 22:04:48 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 22:04:48 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 22:04:48 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 22:04:48 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:04:48 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:04:48 Asia/Tokyo] デバッグ:SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0 AND (s.`shop_name` LIKE :shop_name0 OR p.`p_name` LIKE :p_name0 OR p.`term` LIKE :term0)
+[04-May-2021 22:04:48 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:04:48 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:04:56 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 22:04:56 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 22:04:56 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 22:04:56 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:04:56 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:04:56 Asia/Tokyo] デバッグ:SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0 AND (s.`shop_name` LIKE :shop_name0 OR p.`p_name` LIKE :p_name0 OR p.`term` LIKE :term0 OR s.`shop_name` LIKE :shop_name1 OR p.`p_name` LIKE :p_name1 OR p.`term` LIKE :term1)
+[04-May-2021 22:04:56 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:04:56 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:05:05 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 22:05:05 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 22:05:05 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 22:05:05 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:05:05 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:05:05 Asia/Tokyo] デバッグ:SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0 AND (s.`shop_name` LIKE :shop_name0 OR p.`p_name` LIKE :p_name0 OR p.`term` LIKE :term0 OR s.`shop_name` LIKE :shop_name1 OR p.`p_name` LIKE :p_name1 OR p.`term` LIKE :term1)
+[04-May-2021 22:05:05 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:05:05 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:05:12 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 22:05:12 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 22:05:12 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 22:05:12 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:05:12 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:05:12 Asia/Tokyo] デバッグ:SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0 AND (s.`shop_name` LIKE :shop_name0 OR p.`p_name` LIKE :p_name0 OR p.`term` LIKE :term0)
+[04-May-2021 22:05:12 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:05:12 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:08:15 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 22:08:15 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 22:08:15 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 22:08:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:08:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:08:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:08:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:09:05 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 22:09:05 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 22:09:05 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 22:09:05 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:09:05 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:09:05 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:09:05 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:09:10 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 22:09:10 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 22:09:10 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 22:09:10 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:09:10 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:09:10 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:09:10 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:09:18 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 22:09:18 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 22:09:18 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 22:09:18 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:09:18 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:09:18 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:09:18 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:09:23 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 22:09:23 Asia/Tokyo] デバッグ:検索画面
+[04-May-2021 22:09:23 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 22:09:23 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:09:23 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:09:23 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:09:23 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:10:25 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 22:10:25 Asia/Tokyo] デバッグ:TOP画面
+[04-May-2021 22:10:25 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 22:10:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:10:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:10:31 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 22:10:31 Asia/Tokyo] デバッグ:店舗詳細画面
+[04-May-2021 22:10:31 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 22:10:31 Asia/Tokyo] デバッグ:クエリ成功しました。
+[04-May-2021 22:12:26 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 22:12:26 Asia/Tokyo] デバッグ:店舗詳細画面
+[04-May-2021 22:12:26 Asia/Tokyo] デバッグ:==============================================
+[04-May-2021 22:12:26 Asia/Tokyo] デバッグ:クエリ成功しました。
