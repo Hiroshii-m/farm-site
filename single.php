@@ -11,9 +11,45 @@ debug('店舗詳細画面');
 debug('==============================================');
 
 // 店舗idを格納
-$s_id = (!empty($_GET['s_id'])) ? $_GET['s_id'] : '';
+$s_id = (!empty($_GET['shop_id'])) ? $_GET['shop_id'] : '';
 // 店舗情報を取得
 $dbFormData = (!empty($s_id)) ? getShopOne($s_id) : '';
+// メッセージ情報を取得
+$comments = (!empty($dbFormData)) ? getComments($s_id) : '';
+$u_id = (!empty($_SESSION['user_id'])) ? $_SESSION['user_id'] : '';
+// debug(print_r($comments, true));
+
+if(!empty($_POST)) {
+    // ユーザーであった場合、ユーザーidを格納
+    $user_id = (!empty($_SESSION['user_id'])) ? $_SESSION['user_id'] : '';
+    $msg = (!empty($_POST['msg'])) ? $_POST['msg'] : '';
+
+    // 空白かどうか
+    validRequired($msg, 'msg');
+    // ログインしていない場合
+    if(empty($u_id)) {
+        header("Location:login.php");
+        $err_msg['common'] = MSG::DOLOGIN;
+        exit;
+    }
+    if(empty($err_msg)) {
+        try {
+            $dbh = dbConnect();
+            $sql = 'INSERT INTO `comments`(`send_date`, `send_id`, `shop_id`, `msg`, `create_date`) VALUES (:send_date, :send_id, :shop_id, :msg, :create_date)';
+            $data = array(':send_date' => date('Y-m-d H:i:s'), ':send_id' => $u_id, ':shop_id' => $dbFormData['id'], ':msg' => $msg, ':create_date' => date('Y-m-d'));
+            $stmt = queryPost($dbh, $sql, $data);
+
+            if(!empty($stmt)) {
+                $_POST = array();
+                header("Location:".$_SERVER['PHP_SELF'].appendGetParam());
+            }
+
+        } catch ( Exception $e ) {
+            error_log('エラー発生:' . $e->getMessage());
+            $err_msg['common'] = MSG::UNEXPECTED;
+        }
+    }
+}
 
 ?>
 
@@ -50,9 +86,12 @@ include_once('head.php');
                         <div class="p-article__inner">
                             <div class="p-article__head u-flex-between">
                                 <h2 class="p-article__shopName"><?= sanitize(getFormData('shop_name')); ?></h2>
-                                <div class="u-flex">
-                                    <i class="far fa-heart p-article__icon"></i>
+                                <div class="c-submission__icon">
+                                <div class="c-submission__icon">
+                                    <i class="far fa-heart c-submission__fav js-click-animation"></i>
+                                    <i class="fas fa-heart c-submission__fav2 js-click-animation2"></i>
                                 </div>
+                            </div>
                             </div>
                             <div class="p-article__images">
                                 <div class="p-article__caption">
@@ -175,28 +214,47 @@ include_once('head.php');
                                     <!-- コメント -->
                                     <section id="l-comment" class="u-display-none js-article-comment">
                                         <div class="p-comment">
-                                            <div class="p-comment__body">
-                                                <div class="p-comment__to u-flex u-padding-10">
-                                                    <figure class="p-comment__icon">
-                                                        <img src="images/pic6.jpeg" alt="">
-                                                    </figure>
-                                                    <div class="p-comment__msg p-comment__msgTo">ほらこれ古い温泉卵があるねん。</div>
-                                                </div>
-                                                <div class="p-comment__from u-flex u-padding-10">
-                                                    <div class="p-comment__balloon">
-                                                        <p class="p-comment__time">10:14</p>
-                                                        <div class="p-comment__msg p-comment__msgFrom">
-                                                            なんだ？最近、温泉卵に流行ってて、商品に加えてみた。
-                                                            どや？
+                                        <div class="p-comment__wrap">
+                                                <div class="p-comment__body">
+                                                    <?php if(!empty($comments)): ?>
+                                                        <?php foreach($comments as $key => $val){ ?>
+                                                        <?php if($dbFormData['user_id'] === $comments[$key]['send_id']): ?>
+                                                        <div class="p-comment__to u-flex u-padding-10">
+                                                            <div>
+                                                                <figure class="p-comment__icon">
+                                                                    <img src="<?= showImg($comments[$key]['avatar_image_path']); ?>" alt="">
+                                                                </figure>
+                                                                <p class="p-comment__username"><?= showData($comments[$key]['screen_name']); ?></p>
+                                                            </div>
+                                                            <div class="p-comment__balloon">
+                                                                <div class="p-comment__msg p-comment__msgTo">
+                                                                    <?= showData($comments[$key]['msg']); ?>
+                                                                </div>
+                                                                <p class="p-comment__time"><?= date('Y年m月d日 H:i', strtotime($comments[$key]['send_date'])); ?></p>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <figure class="p-comment__icon">
-                                                        <img src="images/pic6.jpeg" alt="">
-                                                    </figure>
+                                                        <?php else: ?>
+                                                        <div class="p-comment__from u-flex u-padding-10">
+                                                            <div class="p-comment__balloon u-flex-end">
+                                                                <p class="p-comment__time"><?= date('Y年m月d日 H:i', strtotime($comments[$key]['send_date'])); ?></p>
+                                                                <div class="p-comment__msg p-comment__msgFrom">
+                                                                    <?= showData($comments[$key]['msg']); ?>
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <figure class="p-comment__icon">
+                                                                    <img src="images/pic6.jpeg" alt="">
+                                                                </figure>
+                                                                <p class="p-comment__username"><?= showData($comments[$key]['screen_name']); ?></p>
+                                                            </div>
+                                                        </div>
+                                                        <?php endif; ?>
+                                                        <?php } ?>
+                                                    <?php endif; ?>
                                                 </div>
                                             </div>
-                                            <form class="p-comment__form">
-                                                <textarea type="text" class="p-comment__textarea"></textarea>
+                                            <form class="p-comment__form" method="post">
+                                                <textarea name="msg" type="text" class="p-comment__textarea"></textarea>
                                                 <button class="p-comment__submit" type="submit"><i class="fas fa-paper-plane"></i></button>
                                             </form>
                                         </div>
@@ -224,5 +282,6 @@ include_once('head.php');
     <!-- フッター -->
     <?php include_once('footer.php'); ?>
     <script src="js/single.js"></script>
+    <script src="js/app_icon.js"></script>
 </body>
 </html>

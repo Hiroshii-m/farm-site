@@ -194,7 +194,7 @@ include_once('head.php');
                                 </div>
                             </div>
                             <div class="c-submission__icon">
-                                <i class="far fa-heart c-submission__fav js-click-animation"></i>
+                                <i class="far fa-heart c-submission__fav js-click-animation" data-shopid="<?= sanitize($val['id']); ?>"></i>
                                 <i class="fas fa-heart c-submission__fav2 js-click-animation2"></i>
                             </div>
                         </li>
@@ -273,7 +273,5 @@ include_once('head.php');
     </div>
     <!-- フッター -->
     <?php include('footer.php'); ?>
-    <!-- 共通ファイル -->
-    <script src="js/app_icon.js"></script>
 </body>
 </html>

@@ -69,6 +69,7 @@ class VALID {
 }
 class MSG {
     const UNEXPECTED = '予期せぬエラーが発生しました。しばらく経ってから、やり直してください。';
+    const DOLOGIN = 'コメントするには、ログインをする必要があります。アカウントがなければ、サインアップからお願いいたします。';
 }
 
 // ================================================
@@ -116,17 +117,22 @@ function validEmailDup($str, $key){
 }
 // 退会済ユーザーかどうかをチェック
 function validEmailExpired($email) {
-    $dbh = dbConnect();
-    $sql = 'SELECT `id` FROM users WHERE `email` = :email AND `delete_flg` = :d_flg';
-    $data = array(':email' => $email, ':d_flg' => 1);
-    $stmt = queryPost($dbh, $sql, $data);
-    $rst = $stmt->fetch(PDO::FETCH_ASSOC);
-    if(!empty($rst)) {
-        // 退会済のユーザーです。
-        return $rst['id'];
-    } else {
-        // 退会済のユーザーではありません。
-        return false;
+    try {
+        $dbh = dbConnect();
+        $sql = 'SELECT `id` FROM users WHERE `email` = :email AND `delete_flg` = :d_flg';
+        $data = array(':email' => $email, ':d_flg' => 1);
+        $stmt = queryPost($dbh, $sql, $data);
+        $rst = $stmt->fetch(PDO::FETCH_ASSOC);
+        if(!empty($rst)) {
+            // 退会済のユーザーです。
+            return $rst['id'];
+        } else {
+            // 退会済のユーザーではありません。
+            return false;
+        }
+    } catch ( Exception $e ) {
+        error_log('エラー発生:' . $e->getMessage());
+        $err_msg['common'] = MSG::UNEXPECTED;
     }
 }
 // 最小文字数以上かどうか判定
@@ -202,15 +208,20 @@ function validKana($str, $key) {
 // 都道府県選択されていた場合、市区町村が正しいか判定
 function getCityMatch($prefecture_id, $city_name, $key) {
     global $err_msg;
-    $dbh = dbConnect();
-    $sql = 'SELECT `id` FROM cites WHERE `prefecture_id` = :p_id AND `city_name` = :c_name';
-    $data = array(':p_id' => $prefecture_id, ':c_name' => $city_name);
-    $stmt = queryPost($dbh, $sql, $data);
-    $result = $stmt->fetch(PDO::FETCH_ASSOC);
-    if(!empty($result)) {
-        return $result['id'];
-    }else{
-        $err_msg[$key] = VALID::CITYNOMATCH;
+    try {
+        $dbh = dbConnect();
+        $sql = 'SELECT `id` FROM cites WHERE `prefecture_id` = :p_id AND `city_name` = :c_name';
+        $data = array(':p_id' => $prefecture_id, ':c_name' => $city_name);
+        $stmt = queryPost($dbh, $sql, $data);
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        if(!empty($result)) {
+            return $result['id'];
+        }else{
+            $err_msg[$key] = VALID::CITYNOMATCH;
+        }
+    } catch ( Exception $e ) {
+        error_log('エラー発生:' . $e->getMessage());
+        $err_msg['common'] = MSG::UNEXPECTED;
     }
 }
 // バリデーションを反映
@@ -361,7 +372,7 @@ function getShop($u_id) {
 function getShopOne($s_id) {
     try {
         $dbh = dbConnect();
-        $sql = 'SELECT s.`id`, s.`shop_name`, s.`social_profile`, s.`postcode`, s.`prefecture_id`, s.`city_id`, s.`street`, s.`building`, s.`tel`, s.`value`, s.`map_iframe`, s.`shop_img1`, s.`shop_img2`, s.`shop_img3`, s.`browsing_num`, s.`favorites`, u.`screen_name` FROM `shops` AS s LEFT JOIN users AS u ON s.`user_id` = u.`id` WHERE s.`id` = :s_id';
+        $sql = 'SELECT s.`id`, s.`user_id`, s.`shop_name`, s.`social_profile`, s.`postcode`, s.`prefecture_id`, s.`city_id`, s.`street`, s.`building`, s.`tel`, s.`value`, s.`map_iframe`, s.`shop_img1`, s.`shop_img2`, s.`shop_img3`, s.`browsing_num`, s.`favorites`, u.`screen_name` FROM `shops` AS s LEFT JOIN users AS u ON s.`user_id` = u.`id` WHERE s.`id` = :s_id';
         $data = array(':s_id' => $s_id);
         $stmt = queryPost($dbh, $sql, $data);
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -404,11 +415,6 @@ function getShopMatch($currentMinNum = 0, $p_id, $city_id, $category_id, $word_s
             $sql .= ' AND p.`category_id` = :category_id';
             $data = array_merge($data, array(':category_id' => $category_id));
         }
-        // if(!empty($word_search)) {
-        //     $word_search = '%'.$word_search.'%';
-        //     $sql .= ' AND (s.`shop_name` LIKE :shop_name OR p.`p_name` LIKE :p_name OR p.`term` LIKE :term)';
-        //     $data = array_merge($data, array(':shop_name' => $word_search, ':p_name' => $word_search, ':term' => $word_search));
-        // }
         if(is_array($word_search) && !empty($word_search)) {
             
             $sql .= ' AND (';
@@ -439,11 +445,6 @@ function getShopMatch($currentMinNum = 0, $p_id, $city_id, $category_id, $word_s
             $sql .= ' AND p.`category_id` = :category_id';
             $data = array_merge($data, array(':category_id' => $category_id));
         }
-        // if(!empty($word_search)) {
-        //     $word_search = '%'.$word_search.'%';
-        //     $sql .= ' AND (s.`shop_name` LIKE :shop_name OR p.`p_name` LIKE :p_name OR p.`term` LIKE :term)';
-        //     $data = array_merge($data, array(':shop_name' => $word_search, ':p_name' => $word_search, ':term' => $word_search));
-        // }
         if(is_array($word_search) && !empty($word_search)) {
             
             $sql .= ' AND (';
@@ -520,6 +521,25 @@ function getCategory() {
         } else {
             return '';
         }
+    } catch ( Exception $e ) {
+        error_log('エラー発生:' . $e->getMessage());
+        $err_msg['common'] = MSG::UNEXPECTED;
+    }
+}
+// メッセージを取得
+function getComments($s_id) {
+    try {
+        $dbh = dbConnect();
+        $sql = 'SELECT c.`send_date`, c.`send_id`, c.`shop_id`, c.`msg`, u.`screen_name`, u.`avatar_image_path` FROM `comments` AS c LEFT JOIN `users` AS u ON c.`send_id` = u.`id` WHERE c.`shop_id` = :s_id ORDER BY c.`send_date` ASC';
+        $data = array(':s_id' => $s_id);
+        $stmt = queryPost($dbh, $sql, $data);
+        $rst = $stmt->fetchAll();
+        if(!empty($rst)) {
+            return $rst;
+        } else {
+            return '';
+        }
+
     } catch ( Exception $e ) {
         error_log('エラー発生:' . $e->getMessage());
         $err_msg['common'] = MSG::UNEXPECTED;

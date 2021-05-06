@@ -80,9 +80,9 @@ $favorite = 'CREATE TABLE favorites(
 $comments = 'CREATE TABLE comments(
     `id` INT(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
     `send_date` DATETIME NOT NULL,
-    `send_id` INT(11) NOT NULL,
+    `send_id` INT(11) NULL,
     `shop_id` INT(11) NOT NULL,
-    `message` VARCHAR(255) NOT NULL,
+    `msg` VARCHAR(255) NOT NULL,
     `delete_flg` BOOLEAN DEFAULT 0 NOT NULL,
     `create_date` DATE NOT NULL,
     `update_date` TIMESTAMP NOT NULL

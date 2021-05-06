@@ -58,8 +58,9 @@
                         <div class="p-article__inner">
                             <div class="p-article__head u-flex-between">
                                 <h2 class="p-article__shopName">お店の名前</h2>
-                                <div class="u-flex">
-                                    <i class="far fa-heart p-article__icon"></i>
+                                <div class="c-submission__icon">
+                                    <i class="far fa-heart c-submission__fav js-click-animation"></i>
+                                    <i class="fas fa-heart c-submission__fav2 js-click-animation2"></i>
                                 </div>
                             </div>
                             <div class="p-article__images">
@@ -77,7 +78,7 @@
                             <section id="" class="p-article__body">
                                 <div class="p-article__menu">
                                     <div class="p-article__tab">
-                                        <input id="products" class="p-article__input u-display-none js-menu-product js-menu" type="radio" name="tab-item" value="" checked>
+                                        <input id="products" class="p-article__input u-display-none js-menu-product js-menu" type="radio" name="tab-item" value="">
                                         <label class="p-article__label" for="products">商品情報</label>
                                     </div>
                                     <div class="p-article__tab">
@@ -93,7 +94,7 @@
                                         <label class="p-article__label" for="access">アクセス</label>
                                     </div>
                                     <div class="p-article__tab">
-                                        <input id="comment" class="p-article__input u-display-none js-menu-comment js-menu" type="radio" name="tab-item" value="">
+                                        <input id="comment" class="p-article__input u-display-none js-menu-comment js-menu" type="radio" name="tab-item" value="" checked>
                                         <label class="p-article__label" for="comment">コメント</label>
                                     </div>
                                 </div>
@@ -173,24 +174,83 @@
                                     <!-- コメント -->
                                     <section id="l-comment" class="u-display-none js-article-comment">
                                         <div class="p-comment">
-                                            <div class="p-comment__body">
-                                                <div class="p-comment__to u-flex u-padding-10">
-                                                    <figure class="p-comment__icon">
-                                                        <img src="images/pic6.jpeg" alt="">
-                                                    </figure>
-                                                    <div class="p-comment__msg p-comment__msgTo">ほらこれ古い温泉卵があるねん。</div>
-                                                </div>
-                                                <div class="p-comment__from u-flex u-padding-10">
-                                                    <div class="p-comment__balloon">
-                                                        <p class="p-comment__time">10:14</p>
-                                                        <div class="p-comment__msg p-comment__msgFrom">
-                                                            なんだ？最近、温泉卵に流行ってて、商品に加えてみた。
-                                                            どや？
+                                            <div class="p-comment__wrap">
+                                                <div class="p-comment__body">
+                                                    <div class="p-comment__to u-flex u-padding-10">
+                                                        <div>
+                                                            <figure class="p-comment__icon">
+                                                                <img src="images/pic6.jpeg" alt="">
+                                                            </figure>
+                                                            <p class="p-comment__username">わんこ</p>
+                                                        </div>
+                                                        <div class="p-comment__balloon">
+                                                            <div class="p-comment__msg p-comment__msgTo">
+                                                                ほらこれ古い温泉卵があるねん。
+                                                            </div>
+                                                            <p class="p-comment__time">2021年5月5日10:14</p>
                                                         </div>
                                                     </div>
-                                                    <figure class="p-comment__icon">
-                                                        <img src="images/pic6.jpeg" alt="">
-                                                    </figure>
+                                                    <div class="p-comment__from u-flex u-padding-10">
+                                                        <div class="p-comment__balloon u-flex-end">
+                                                            <p class="p-comment__time">10:14</p>
+                                                            <div class="p-comment__msg p-comment__msgFrom">
+                                                                なんだ？最近、温泉卵に流行ってて、商品に加えてみた。
+                                                                どや？
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <figure class="p-comment__icon">
+                                                                <img src="images/pic6.jpeg" alt="">
+                                                            </figure>
+                                                            <p class="p-comment__username">わんこ</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="p-comment__from u-flex u-padding-10">
+                                                        <div class="p-comment__balloon u-flex-end">
+                                                            <p class="p-comment__time">2021年5月5日10:14</p>
+                                                            <div class="p-comment__msg p-comment__msgFrom">
+                                                                なんだ？最近、温泉卵に流行ってて、商品に加えてみた。
+                                                                どや？
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <figure class="p-comment__icon">
+                                                                <img src="images/pic6.jpeg" alt="">
+                                                            </figure>
+                                                            <p>わんこ</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="p-comment__from u-flex u-padding-10">
+                                                        <div class="p-comment__balloon u-flex-end">
+                                                            <p class="p-comment__time">10:14</p>
+                                                            <div class="p-comment__msg p-comment__msgFrom">
+                                                                なんだ？最近、温泉卵に流行ってて、商品に加えてみた。
+                                                                どや？
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <figure class="p-comment__icon">
+                                                                <img src="images/pic6.jpeg" alt="">
+                                                            </figure>
+                                                            <p>わんこ</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="p-comment__from u-flex u-padding-10">
+                                                        <div class="p-comment__balloon u-flex-end">
+                                                            <p class="p-comment__time">10:14</p>
+                                                            <div class="p-comment__msg p-comment__msgFrom">
+                                                                なんだ？最近、温泉卵に流行ってて、商品に加えてみた。
+                                                                どや？
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <figure class="p-comment__icon">
+                                                                <img src="images/pic6.jpeg" alt="">
+                                                            </figure>
+                                                            <p>わんこ</p>
+                                                        </div>
+                                                    </div>
+
                                                 </div>
                                             </div>
                                             <form class="p-comment__form">
@@ -275,5 +335,6 @@
         </div>
     </footer><!-- /フッター -->
     <script src="js/single.js"></script>
+    <script src="js/app_icon.js"></script>
 </body>
 </html>

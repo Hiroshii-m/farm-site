@@ -1725,11 +1725,31 @@ i {
   margin: 20px 0;
 }
 
+.p-comment__wrap {
+  overflow: hidden;
+}
 .p-comment__body {
   background: #D3DEF1;
   height: 500px;
+  width: calc(100% + 14px);
   overflow-y: scroll;
-  background-position: 0 600px;
+  padding: 10px;
+}
+@media screen and (max-width: 1000px) {
+  .p-comment__body {
+    width: calc(100% + 8px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-comment__body {
+    width: calc(100% + 8px);
+  }
+}
+@media screen and (max-width: 414px) {
+  .p-comment__body {
+    width: calc(100% + 4px);
+    padding: 5px;
+  }
 }
 .p-comment__from {
   justify-content: flex-end;
@@ -1740,10 +1760,20 @@ i {
   border-radius: 50%;
   overflow: hidden;
 }
+@media screen and (max-width: 414px) {
+  .p-comment__icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .p-comment__username {
+    font-size: 12px;
+  }
+}
 .p-comment__balloon {
   display: flex;
   max-width: 90%;
-  justify-content: flex-end;
   align-items: flex-end;
 }
 @media screen and (max-width: 768px) {
@@ -1756,11 +1786,17 @@ i {
   margin: 0 10px;
   text-align: end;
 }
+@media screen and (max-width: 414px) {
+  .p-comment__time {
+    margin: 0 5px;
+    font-size: 8px;
+  }
+}
 .p-comment__msg {
   background: #fff;
   padding: 10px 15px;
   border-radius: 20px;
-  max-width: 70%;
+  max-width: 90%;
 }
 @media screen and (max-width: 768px) {
   .p-comment__msg {
@@ -1844,6 +1880,9 @@ i {
 }
 .u-flex-center {
   justify-content: center;
+}
+.u-flex-end {
+  justify-content: flex-end;
 }
 
 .u-flex-between {
