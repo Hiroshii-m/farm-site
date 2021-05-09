@@ -11272,3 +11272,1578 @@ SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = 
 [06-May-2021 20:17:31 Asia/Tokyo] デバッグ:==============================================
 [06-May-2021 20:17:31 Asia/Tokyo] デバッグ:クエリ成功しました。
 [06-May-2021 20:17:31 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:27:32 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:27:32 Asia/Tokyo] デバッグ:TOP画面
+[07-May-2021 15:27:32 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:27:32 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:27:32 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:27:35 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:27:35 Asia/Tokyo] デバッグ:ログイン画面
+[07-May-2021 15:27:35 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:27:35 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[07-May-2021 15:27:35 Asia/Tokyo] デバッグ:セッションID：p4hckvfrveb2s1iim7o15fclto
+[07-May-2021 15:27:35 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[07-May-2021 15:27:35 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620368855
+[07-May-2021 15:27:48 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:27:48 Asia/Tokyo] デバッグ:ログイン画面
+[07-May-2021 15:27:48 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:27:48 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[07-May-2021 15:27:48 Asia/Tokyo] デバッグ:セッションID：9imvqav56tk9chkv0ef5mj09uj
+[07-May-2021 15:27:48 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[07-May-2021 15:27:48 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620368868
+[07-May-2021 15:27:48 Asia/Tokyo] デバッグ:POSTされました。
+[07-May-2021 15:27:48 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:27:48 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:27:48 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[07-May-2021 15:27:48 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:27:48 Asia/Tokyo] デバッグ:マイページ画面
+[07-May-2021 15:27:48 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:27:48 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:27:48 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:27:52 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:27:52 Asia/Tokyo] デバッグ:TOP画面
+[07-May-2021 15:27:52 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:27:52 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:27:52 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:28:01 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:28:01 Asia/Tokyo] デバッグ:お気に入り編集画面
+[07-May-2021 15:28:01 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:28:01 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:28:01 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:35:57 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:35:57 Asia/Tokyo] デバッグ:TOP画面
+[07-May-2021 15:35:57 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:35:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:35:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:35:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:35:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:36:13 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:36:13 Asia/Tokyo] デバッグ:お気に入り編集画面
+[07-May-2021 15:36:13 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:36:13 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:36:13 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `user_id` = '3' AND `shop_id` = '1'' at line 1
+[07-May-2021 15:36:15 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:36:15 Asia/Tokyo] デバッグ:TOP画面
+[07-May-2021 15:36:15 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:36:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:36:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:36:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:36:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:36:19 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:36:19 Asia/Tokyo] デバッグ:お気に入り編集画面
+[07-May-2021 15:36:19 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:36:19 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:36:19 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `user_id` = '3' AND `shop_id` = '1'' at line 1
+[07-May-2021 15:36:30 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:36:30 Asia/Tokyo] デバッグ:お気に入り編集画面
+[07-May-2021 15:36:30 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:36:30 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:36:30 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `user_id` = '3' AND `shop_id` = '1'' at line 1
+[07-May-2021 15:36:37 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:36:37 Asia/Tokyo] デバッグ:お気に入り編集画面
+[07-May-2021 15:36:37 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:36:37 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:36:37 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `user_id` = '3' AND `shop_id` = '1'' at line 1
+[07-May-2021 15:38:53 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:38:53 Asia/Tokyo] デバッグ:お気に入り編集画面
+[07-May-2021 15:38:53 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:38:53 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:38:53 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:38:54 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:38:54 Asia/Tokyo] デバッグ:お気に入り編集画面
+[07-May-2021 15:38:54 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:38:54 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:38:54 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:39:15 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:39:15 Asia/Tokyo] デバッグ:お気に入り編集画面
+[07-May-2021 15:39:15 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:39:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:39:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:39:22 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:39:22 Asia/Tokyo] デバッグ:お気に入り編集画面
+[07-May-2021 15:39:22 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:39:22 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:39:22 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:39:24 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:39:24 Asia/Tokyo] デバッグ:TOP画面
+[07-May-2021 15:39:24 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:39:24 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:39:24 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:39:24 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:39:24 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:39:32 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:39:32 Asia/Tokyo] デバッグ:お気に入り編集画面
+[07-May-2021 15:39:32 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:39:32 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:39:32 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:39:38 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:39:38 Asia/Tokyo] デバッグ:お気に入り編集画面
+[07-May-2021 15:39:38 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:39:38 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:39:38 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:39:45 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:39:45 Asia/Tokyo] デバッグ:TOP画面
+[07-May-2021 15:39:45 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:39:45 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:39:45 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:39:45 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:39:45 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:39:46 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:39:46 Asia/Tokyo] デバッグ:TOP画面
+[07-May-2021 15:39:46 Asia/Tokyo] デバッグ:==============================================
+[07-May-2021 15:39:46 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:39:46 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:39:46 Asia/Tokyo] デバッグ:クエリ成功しました。
+[07-May-2021 15:39:46 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 20:44:29 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 20:44:29 Asia/Tokyo] デバッグ:TOP画面
+[08-May-2021 20:44:29 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 20:44:29 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 20:44:29 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 20:44:29 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 20:44:29 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 20:44:40 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 20:44:40 Asia/Tokyo] デバッグ:検索画面
+[08-May-2021 20:44:40 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 20:44:40 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 20:44:40 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 20:44:40 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 20:44:40 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 20:44:40 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 20:44:40 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 20:44:48 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 20:44:48 Asia/Tokyo] デバッグ:店舗詳細画面
+[08-May-2021 20:44:48 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 20:44:48 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 20:44:48 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 20:44:48 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 20:44:48 Asia/Tokyo] PHP Notice:  Undefined variable: val in /Applications/MAMP/htdocs/output2/farm/single.php on line 91
+[08-May-2021 20:44:48 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/single.php on line 91
+[08-May-2021 20:44:48 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 20:48:10 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 20:48:10 Asia/Tokyo] デバッグ:TOP画面
+[08-May-2021 20:48:10 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 20:48:10 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 20:48:10 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 20:48:10 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 20:48:10 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 20:50:38 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 20:50:38 Asia/Tokyo] デバッグ:TOP画面
+[08-May-2021 20:50:38 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 20:50:38 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 20:50:38 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 20:50:38 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 20:50:38 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 20:51:17 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 20:51:17 Asia/Tokyo] デバッグ:ユーザー登録画面
+[08-May-2021 20:51:17 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 20:51:17 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-May-2021 20:51:17 Asia/Tokyo] デバッグ:セッションID：p1tl8eu0uqqljbv4ne43lq25hu
+[08-May-2021 20:51:17 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [login_date] => 1620368868
+    [login_limit] => 3600
+    [user_id] => 3
+)
+
+[08-May-2021 20:51:17 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620474677
+[08-May-2021 20:51:17 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1620372468
+[08-May-2021 20:53:44 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 20:53:44 Asia/Tokyo] デバッグ:ユーザー登録画面
+[08-May-2021 20:53:44 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 20:53:44 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-May-2021 20:53:44 Asia/Tokyo] デバッグ:セッションID：1k9rnbp1ne3sk1jsbpapvgkqiu
+[08-May-2021 20:53:44 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [login_date] => 1620368868
+    [login_limit] => 3600
+    [user_id] => 3
+)
+
+[08-May-2021 20:53:44 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620474824
+[08-May-2021 20:53:44 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1620372468
+[08-May-2021 20:53:44 Asia/Tokyo] デバッグ:POSTされました。
+[08-May-2021 20:53:44 Asia/Tokyo] デバッグ:バリデーションOKです。
+[08-May-2021 20:53:44 Asia/Tokyo] デバッグ:メールを送信しました。
+[08-May-2021 20:53:44 Asia/Tokyo] デバッグ:URL発行
+[08-May-2021 20:53:44 Asia/Tokyo] デバッグ:localhost:8888/output2/farm/tokenRecieve.php?token=d0bce7df0c54eb0d3570cd0024a0d62ed5982c54f29fadbce525275bf17a6862
+[08-May-2021 20:54:00 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 20:54:00 Asia/Tokyo] デバッグ:トークン受け取り画面
+[08-May-2021 20:54:00 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 20:54:00 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 20:54:00 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 20:54:05 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[08-May-2021 20:54:05 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 20:54:05 Asia/Tokyo] デバッグ:マイページ画面
+[08-May-2021 20:54:05 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 20:54:05 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 20:54:05 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 20:54:09 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[08-May-2021 20:54:09 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 20:54:09 Asia/Tokyo] デバッグ:店舗登録
+[08-May-2021 20:54:09 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 20:56:02 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[08-May-2021 20:56:02 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 20:56:02 Asia/Tokyo] デバッグ:店舗登録
+[08-May-2021 20:56:02 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 20:56:02 Asia/Tokyo] エラー発生:SQLSTATE[42S02]: Base table or view not found: 1146 Table 'farmshops.cites' doesn't exist
+[08-May-2021 20:56:11 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[08-May-2021 20:56:11 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 20:56:11 Asia/Tokyo] デバッグ:店舗登録
+[08-May-2021 20:56:11 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 20:56:11 Asia/Tokyo] エラー発生:SQLSTATE[42S02]: Base table or view not found: 1146 Table 'farmshops.cites' doesn't exist
+[08-May-2021 20:56:23 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[08-May-2021 20:56:23 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 20:56:23 Asia/Tokyo] デバッグ:店舗登録
+[08-May-2021 20:56:23 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 20:56:23 Asia/Tokyo] エラー発生:SQLSTATE[42S02]: Base table or view not found: 1146 Table 'farmshops.cites' doesn't exist
+[08-May-2021 21:01:43 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[08-May-2021 21:01:43 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:01:43 Asia/Tokyo] デバッグ:店舗登録
+[08-May-2021 21:01:43 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:01:43 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 21:01:43 Asia/Tokyo] PHP Notice:  Trying to get property '' of non-object in /Applications/MAMP/htdocs/output2/farm/registShop.php on line 127
+[08-May-2021 21:01:43 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based
+[08-May-2021 21:06:08 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[08-May-2021 21:06:08 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:06:08 Asia/Tokyo] デバッグ:店舗登録
+[08-May-2021 21:06:08 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:06:08 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 21:06:08 Asia/Tokyo] PHP Notice:  Trying to get property '' of non-object in /Applications/MAMP/htdocs/output2/farm/registShop.php on line 127
+[08-May-2021 21:06:08 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based
+[08-May-2021 21:06:13 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[08-May-2021 21:06:13 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:06:13 Asia/Tokyo] デバッグ:店舗登録
+[08-May-2021 21:06:13 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:06:13 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 21:06:13 Asia/Tokyo] PHP Notice:  Trying to get property '' of non-object in /Applications/MAMP/htdocs/output2/farm/registShop.php on line 127
+[08-May-2021 21:06:13 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based
+[08-May-2021 21:14:25 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[08-May-2021 21:14:25 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:14:25 Asia/Tokyo] デバッグ:店舗登録
+[08-May-2021 21:14:25 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:14:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 21:14:25 Asia/Tokyo] PHP Notice:  Trying to get property '' of non-object in /Applications/MAMP/htdocs/output2/farm/registShop.php on line 128
+[08-May-2021 21:14:25 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based
+[08-May-2021 21:14:31 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[08-May-2021 21:14:31 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:14:31 Asia/Tokyo] デバッグ:店舗登録
+[08-May-2021 21:14:31 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:14:31 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 21:14:31 Asia/Tokyo] PHP Notice:  Trying to get property '' of non-object in /Applications/MAMP/htdocs/output2/farm/registShop.php on line 128
+[08-May-2021 21:14:31 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based
+[08-May-2021 21:14:42 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[08-May-2021 21:14:42 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:14:42 Asia/Tokyo] デバッグ:店舗登録
+[08-May-2021 21:14:42 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:14:42 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 21:14:42 Asia/Tokyo] PHP Notice:  Trying to get property '' of non-object in /Applications/MAMP/htdocs/output2/farm/registShop.php on line 128
+[08-May-2021 21:14:42 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based
+[08-May-2021 21:15:59 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[08-May-2021 21:15:59 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:15:59 Asia/Tokyo] デバッグ:店舗登録
+[08-May-2021 21:15:59 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:15:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 21:15:59 Asia/Tokyo] PHP Notice:  Trying to get property '' of non-object in /Applications/MAMP/htdocs/output2/farm/registShop.php on line 128
+[08-May-2021 21:15:59 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based
+[08-May-2021 21:16:13 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[08-May-2021 21:16:13 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:16:13 Asia/Tokyo] デバッグ:店舗登録
+[08-May-2021 21:16:13 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:16:13 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 21:16:13 Asia/Tokyo] PHP Notice:  Trying to get property '' of non-object in /Applications/MAMP/htdocs/output2/farm/registShop.php on line 128
+[08-May-2021 21:16:13 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based
+[08-May-2021 21:16:19 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[08-May-2021 21:16:19 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:16:19 Asia/Tokyo] デバッグ:店舗登録
+[08-May-2021 21:16:19 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:16:19 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 21:16:19 Asia/Tokyo] PHP Notice:  Trying to get property '' of non-object in /Applications/MAMP/htdocs/output2/farm/registShop.php on line 128
+[08-May-2021 21:16:19 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based
+[08-May-2021 21:16:38 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[08-May-2021 21:16:38 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:16:38 Asia/Tokyo] デバッグ:店舗登録
+[08-May-2021 21:16:38 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:16:41 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[08-May-2021 21:16:41 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:16:41 Asia/Tokyo] デバッグ:マイページ画面
+[08-May-2021 21:16:41 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:16:41 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 21:16:41 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 21:18:08 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[08-May-2021 21:18:08 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:18:08 Asia/Tokyo] デバッグ:店舗登録
+[08-May-2021 21:18:08 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:18:30 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[08-May-2021 21:18:30 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:18:30 Asia/Tokyo] デバッグ:店舗登録
+[08-May-2021 21:18:30 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:18:45 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[08-May-2021 21:18:45 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:18:45 Asia/Tokyo] デバッグ:店舗登録
+[08-May-2021 21:18:45 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:18:45 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 21:18:45 Asia/Tokyo] PHP Notice:  Trying to get property '' of non-object in /Applications/MAMP/htdocs/output2/farm/registShop.php on line 128
+[08-May-2021 21:18:45 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based
+[08-May-2021 21:42:16 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[08-May-2021 21:42:16 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:42:16 Asia/Tokyo] デバッグ:店舗登録
+[08-May-2021 21:42:16 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:42:16 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 21:42:16 Asia/Tokyo] PHP Notice:  Trying to get property '' of non-object in /Applications/MAMP/htdocs/output2/farm/registShop.php on line 128
+[08-May-2021 21:42:16 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based
+[08-May-2021 21:42:39 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[08-May-2021 21:42:39 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:42:39 Asia/Tokyo] デバッグ:店舗登録
+[08-May-2021 21:42:39 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:42:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 21:42:39 Asia/Tokyo] PHP Notice:  Trying to get property '' of non-object in /Applications/MAMP/htdocs/output2/farm/registShop.php on line 128
+[08-May-2021 21:42:39 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based
+[08-May-2021 21:44:12 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[08-May-2021 21:44:12 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:44:12 Asia/Tokyo] デバッグ:店舗登録
+[08-May-2021 21:44:12 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:44:12 Asia/Tokyo] デバッグ:PDOStatement Object
+(
+    [queryString] => SELECT `id` FROM cities WHERE `prefecture_id` = :p_id AND `city_name` = :c_name
+)
+
+[08-May-2021 21:44:12 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 21:44:12 Asia/Tokyo] PHP Notice:  Trying to get property '' of non-object in /Applications/MAMP/htdocs/output2/farm/registShop.php on line 128
+[08-May-2021 21:44:12 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based
+[08-May-2021 21:44:25 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[08-May-2021 21:44:25 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:44:25 Asia/Tokyo] デバッグ:店舗登録
+[08-May-2021 21:44:25 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:44:25 Asia/Tokyo] デバッグ:PDOStatement Object
+(
+    [queryString] => SELECT `id` FROM cities WHERE `prefecture_id` = :p_id AND `city_name` = :c_name
+)
+
+[08-May-2021 21:44:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 21:44:25 Asia/Tokyo] PHP Notice:  Trying to get property '' of non-object in /Applications/MAMP/htdocs/output2/farm/registShop.php on line 128
+[08-May-2021 21:44:25 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based
+[08-May-2021 21:50:20 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[08-May-2021 21:50:20 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:50:20 Asia/Tokyo] デバッグ:店舗登録
+[08-May-2021 21:50:20 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:50:20 Asia/Tokyo] デバッグ:Array
+(
+    [shop_name] => 山城の里
+    [social_profile] => 
+    [postcode] => 0020855
+    [prefecture_id] => 1
+    [city_name] => 札幌市北区
+    [street] => 屯田５条１１丁目２−６
+    [building] => 
+    [tel] => 
+    [MAX_FILE_SIZE] => 3145728
+    [shop_img1] => 
+    [shop_img2] => 
+    [shop_img3] => 
+)
+
+[08-May-2021 21:50:20 Asia/Tokyo] デバッグ:PDOStatement Object
+(
+    [queryString] => SELECT `id` FROM cities WHERE `prefecture_id` = :p_id AND `city_name` = :c_name
+)
+
+[08-May-2021 21:50:20 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 21:50:20 Asia/Tokyo] PHP Notice:  Trying to get property '' of non-object in /Applications/MAMP/htdocs/output2/farm/registShop.php on line 129
+[08-May-2021 21:50:20 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based
+[08-May-2021 21:52:17 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[08-May-2021 21:52:17 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:52:17 Asia/Tokyo] デバッグ:店舗登録
+[08-May-2021 21:52:17 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:52:17 Asia/Tokyo] デバッグ:Array
+(
+    [shop_name] => 山城の里
+    [social_profile] => 
+    [postcode] => 0020855
+    [prefecture_id] => 1
+    [city_name] => 札幌市北区
+    [street] => 屯田５条１１丁目２−６
+    [building] => 
+    [tel] => 
+    [MAX_FILE_SIZE] => 3145728
+    [shop_img1] => 
+    [shop_img2] => 
+    [shop_img3] => 
+)
+
+[08-May-2021 21:52:17 Asia/Tokyo] デバッグ:PDOStatement Object
+(
+    [queryString] => SELECT `id` FROM cities WHERE `prefecture_id` = :p_id AND `city_name` = :c_name
+)
+
+[08-May-2021 21:52:17 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 21:52:17 Asia/Tokyo] PHP Notice:  Trying to get property '' of non-object in /Applications/MAMP/htdocs/output2/farm/registShop.php on line 129
+[08-May-2021 21:52:17 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based
+[08-May-2021 21:52:23 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[08-May-2021 21:52:23 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:52:23 Asia/Tokyo] デバッグ:店舗登録
+[08-May-2021 21:52:23 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:52:23 Asia/Tokyo] デバッグ:Array
+(
+    [shop_name] => 山城の里
+    [social_profile] => 
+    [postcode] => 0020855
+    [prefecture_id] => 1
+    [city_name] => 札幌市北区
+    [street] => 屯田５条１１丁目２−６
+    [building] => 
+    [tel] => 
+    [MAX_FILE_SIZE] => 3145728
+    [shop_img1] => 
+    [shop_img2] => 
+    [shop_img3] => 
+)
+
+[08-May-2021 21:52:23 Asia/Tokyo] デバッグ:PDOStatement Object
+(
+    [queryString] => SELECT `id` FROM cities WHERE `prefecture_id` = :p_id AND `city_name` = :c_name
+)
+
+[08-May-2021 21:52:23 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 21:52:23 Asia/Tokyo] PHP Notice:  Trying to get property '' of non-object in /Applications/MAMP/htdocs/output2/farm/registShop.php on line 129
+[08-May-2021 21:52:23 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based
+[08-May-2021 21:53:08 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[08-May-2021 21:53:08 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:53:08 Asia/Tokyo] デバッグ:店舗登録
+[08-May-2021 21:53:08 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:53:08 Asia/Tokyo] デバッグ:Array
+(
+    [shop_name] => 山城の里
+    [social_profile] => 
+    [postcode] => 0020855
+    [prefecture_id] => 1
+    [city_name] => 札幌市北区
+    [street] => 屯田５条１１丁目２−６
+    [building] => 
+    [tel] => 
+    [MAX_FILE_SIZE] => 3145728
+    [shop_img1] => 
+    [shop_img2] => 
+    [shop_img3] => 
+)
+
+[08-May-2021 21:53:08 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 21:53:08 Asia/Tokyo] PHP Notice:  Trying to get property '' of non-object in /Applications/MAMP/htdocs/output2/farm/registShop.php on line 129
+[08-May-2021 21:53:08 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based
+[08-May-2021 21:54:29 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[08-May-2021 21:54:29 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:54:29 Asia/Tokyo] デバッグ:店舗登録
+[08-May-2021 21:54:29 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:54:29 Asia/Tokyo] デバッグ:Array
+(
+    [shop_name] => 山城の里
+    [social_profile] => 
+    [postcode] => 0020855
+    [prefecture_id] => 1
+    [city_name] => 札幌市北区
+    [street] => 屯田５条１１丁目２−６
+    [building] => 
+    [tel] => 
+    [MAX_FILE_SIZE] => 3145728
+    [shop_img1] => 
+    [shop_img2] => 
+    [shop_img3] => 
+)
+
+[08-May-2021 21:54:29 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 21:54:29 Asia/Tokyo] PHP Notice:  Trying to get property '' of non-object in /Applications/MAMP/htdocs/output2/farm/registShop.php on line 129
+[08-May-2021 21:54:29 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based
+[08-May-2021 21:55:30 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[08-May-2021 21:55:30 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:55:30 Asia/Tokyo] デバッグ:店舗登録
+[08-May-2021 21:55:30 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:55:30 Asia/Tokyo] デバッグ:Array
+(
+    [shop_name] => 山城の里
+    [social_profile] => 
+    [postcode] => 0020855
+    [prefecture_id] => 1
+    [city_name] => 札幌市北区
+    [street] => 屯田５条１１丁目２−６
+    [building] => 
+    [tel] => 
+    [MAX_FILE_SIZE] => 3145728
+    [shop_img1] => 
+    [shop_img2] => 
+    [shop_img3] => 
+)
+
+[08-May-2021 21:55:30 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 21:55:30 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 21:55:30 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[08-May-2021 21:55:30 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:55:30 Asia/Tokyo] デバッグ:マイページ画面
+[08-May-2021 21:55:30 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:55:30 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 21:55:30 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 21:56:19 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:56:19 Asia/Tokyo] デバッグ:ログアウト画面
+[08-May-2021 21:56:19 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:56:19 Asia/Tokyo] デバッグ:セッションの中身Array
+(
+)
+
+[08-May-2021 21:56:19 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:56:19 Asia/Tokyo] デバッグ:ログイン画面
+[08-May-2021 21:56:19 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:56:19 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-May-2021 21:56:19 Asia/Tokyo] デバッグ:セッションID：q8f7k00rcc79lejsclortbie5p
+[08-May-2021 21:56:19 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[08-May-2021 21:56:19 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620478579
+[08-May-2021 21:56:30 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:56:30 Asia/Tokyo] デバッグ:ユーザー登録画面
+[08-May-2021 21:56:30 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:56:30 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-May-2021 21:56:30 Asia/Tokyo] デバッグ:セッションID：3lfosr7rg721urdcsodlu952pi
+[08-May-2021 21:56:30 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[08-May-2021 21:56:30 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620478590
+[08-May-2021 21:56:47 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:56:47 Asia/Tokyo] デバッグ:ユーザー登録画面
+[08-May-2021 21:56:47 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:56:47 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-May-2021 21:56:47 Asia/Tokyo] デバッグ:セッションID：5fjtanf8pgtqhnn53h2ml88o77
+[08-May-2021 21:56:47 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[08-May-2021 21:56:47 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620478607
+[08-May-2021 21:56:47 Asia/Tokyo] デバッグ:POSTされました。
+[08-May-2021 21:56:47 Asia/Tokyo] デバッグ:バリデーションOKです。
+[08-May-2021 21:56:47 Asia/Tokyo] デバッグ:メールを送信しました。
+[08-May-2021 21:56:47 Asia/Tokyo] デバッグ:URL発行
+[08-May-2021 21:56:47 Asia/Tokyo] デバッグ:localhost:8888/output2/farm/tokenRecieve.php?token=465df9224ce1e72ff322fc23e58f8ef32ec7d9b1f800cf4237e2ee16ac24054c
+[08-May-2021 21:57:16 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:57:16 Asia/Tokyo] デバッグ:トークン受け取り画面
+[08-May-2021 21:57:16 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:57:16 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 21:57:16 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 21:57:23 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[08-May-2021 21:57:23 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:57:23 Asia/Tokyo] デバッグ:マイページ画面
+[08-May-2021 21:57:23 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:57:23 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 21:57:23 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 21:57:25 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[08-May-2021 21:57:25 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:57:25 Asia/Tokyo] デバッグ:店舗登録
+[08-May-2021 21:57:25 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:58:35 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[08-May-2021 21:58:35 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:58:35 Asia/Tokyo] デバッグ:店舗登録
+[08-May-2021 21:58:35 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:58:35 Asia/Tokyo] デバッグ:Array
+(
+    [shop_name] => 白猫ヤマト
+    [social_profile] => 我ら、白猫卓球部。
+    [postcode] => 0020855
+    [prefecture_id] => 1
+    [city_name] => 札幌市中央区
+    [street] => 屯田５条１１丁目２−６
+    [building] => 
+    [tel] => 
+    [MAX_FILE_SIZE] => 3145728
+    [shop_img1] => 
+    [shop_img2] => 
+    [shop_img3] => 
+)
+
+[08-May-2021 21:58:35 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 21:58:35 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 21:58:35 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[08-May-2021 21:58:35 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:58:35 Asia/Tokyo] デバッグ:マイページ画面
+[08-May-2021 21:58:35 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 21:58:35 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 21:58:35 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 22:06:51 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 22:06:51 Asia/Tokyo] デバッグ:TOP画面
+[08-May-2021 22:06:51 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 22:06:51 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 22:06:51 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 22:06:51 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 22:06:51 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 22:06:51 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 22:06:51 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 22:06:51 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 22:06:51 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 22:06:51 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 22:06:51 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 22:06:51 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 22:06:51 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 22:06:59 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 22:06:59 Asia/Tokyo] デバッグ:TOP画面
+[08-May-2021 22:06:59 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 22:06:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 22:06:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 22:06:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 22:06:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 22:06:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 22:06:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 22:06:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 22:06:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 22:06:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 22:06:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 22:06:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 22:06:59 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 22:08:15 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 22:08:15 Asia/Tokyo] デバッグ:TOP画面
+[08-May-2021 22:08:15 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 22:08:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 22:08:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 22:08:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 22:08:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 22:08:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 22:08:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 22:08:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 22:08:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 22:08:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 22:08:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 22:08:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 22:08:15 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 22:09:25 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[08-May-2021 22:09:25 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 22:09:25 Asia/Tokyo] デバッグ:マイページ画面
+[08-May-2021 22:09:25 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 22:09:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 22:09:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 22:13:42 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[08-May-2021 22:13:42 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 22:13:42 Asia/Tokyo] デバッグ:マイページ画面
+[08-May-2021 22:13:42 Asia/Tokyo] デバッグ:==============================================
+[08-May-2021 22:13:42 Asia/Tokyo] デバッグ:クエリ成功しました。
+[08-May-2021 22:13:42 Asia/Tokyo] デバッグ:クエリ成功しました。
+[09-May-2021 16:45:41 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:45:41 Asia/Tokyo] デバッグ:TOP画面
+[09-May-2021 16:45:41 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:45:41 Asia/Tokyo] デバッグ:クエリ成功しました。
+[09-May-2021 16:45:41 Asia/Tokyo] デバッグ:クエリ成功しました。
+[09-May-2021 16:45:41 Asia/Tokyo] デバッグ:クエリ成功しました。
+[09-May-2021 16:45:41 Asia/Tokyo] デバッグ:クエリ成功しました。
+[09-May-2021 16:45:41 Asia/Tokyo] デバッグ:クエリ成功しました。
+[09-May-2021 16:45:41 Asia/Tokyo] デバッグ:クエリ成功しました。
+[09-May-2021 16:45:41 Asia/Tokyo] デバッグ:クエリ成功しました。
+[09-May-2021 16:45:41 Asia/Tokyo] デバッグ:クエリ成功しました。
+[09-May-2021 16:45:41 Asia/Tokyo] デバッグ:クエリ成功しました。
+[09-May-2021 16:45:41 Asia/Tokyo] デバッグ:クエリ成功しました。
+[09-May-2021 16:45:41 Asia/Tokyo] デバッグ:クエリ成功しました。
+[09-May-2021 16:45:41 Asia/Tokyo] デバッグ:クエリ成功しました。
+[09-May-2021 16:45:44 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:45:44 Asia/Tokyo] デバッグ:ユーザー登録画面
+[09-May-2021 16:45:44 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:45:44 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-May-2021 16:45:44 Asia/Tokyo] デバッグ:セッションID：698fqcjk1hs043fb4stfr1b1fa
+[09-May-2021 16:45:44 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [token] => 465df9224ce1e72ff322fc23e58f8ef32ec7d9b1f800cf4237e2ee16ac24054c
+    [email] => aiueo11@aiueo.com
+    [password] => $2y$10$oP1pZFck6WbfqMYtGiyKue5t9/.rdYf74.W6w5z5oLk8Kze0ti8Hm
+    [user_id] => 6
+    [login_date] => 1620479622
+    [login_limit] => 3600
+)
+
+[09-May-2021 16:45:44 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620546344
+[09-May-2021 16:45:44 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1620483222
+[09-May-2021 16:45:44 Asia/Tokyo] PHP Notice:  Undefined index: msg in /Applications/MAMP/htdocs/output2/farm/signup.php on line 74
+[09-May-2021 16:45:46 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:45:46 Asia/Tokyo] デバッグ:ユーザー登録画面
+[09-May-2021 16:45:46 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:45:46 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-May-2021 16:45:46 Asia/Tokyo] デバッグ:セッションID：dls21j2ko5bt5u9ku6vb4km6bj
+[09-May-2021 16:45:46 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [token] => 465df9224ce1e72ff322fc23e58f8ef32ec7d9b1f800cf4237e2ee16ac24054c
+    [email] => aiueo11@aiueo.com
+    [password] => $2y$10$oP1pZFck6WbfqMYtGiyKue5t9/.rdYf74.W6w5z5oLk8Kze0ti8Hm
+    [user_id] => 6
+    [login_date] => 1620479622
+    [login_limit] => 3600
+    [msg] => 
+)
+
+[09-May-2021 16:45:46 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620546346
+[09-May-2021 16:45:46 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1620483222
+[09-May-2021 16:45:46 Asia/Tokyo] デバッグ:POSTされました。
+[09-May-2021 16:46:00 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:46:00 Asia/Tokyo] デバッグ:ユーザー登録画面
+[09-May-2021 16:46:00 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:46:00 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-May-2021 16:46:00 Asia/Tokyo] デバッグ:セッションID：196o7hfqqhrpcvpbo32k2r5thl
+[09-May-2021 16:46:00 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [token] => 465df9224ce1e72ff322fc23e58f8ef32ec7d9b1f800cf4237e2ee16ac24054c
+    [email] => aiueo11@aiueo.com
+    [password] => $2y$10$oP1pZFck6WbfqMYtGiyKue5t9/.rdYf74.W6w5z5oLk8Kze0ti8Hm
+    [user_id] => 6
+    [login_date] => 1620479622
+    [login_limit] => 3600
+    [msg] => 
+)
+
+[09-May-2021 16:46:00 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620546360
+[09-May-2021 16:46:00 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1620483222
+[09-May-2021 16:46:00 Asia/Tokyo] デバッグ:POSTされました。
+[09-May-2021 16:46:00 Asia/Tokyo] デバッグ:バリデーションOKです。
+[09-May-2021 16:46:01 Asia/Tokyo] デバッグ:メールを送信しました。
+[09-May-2021 16:46:01 Asia/Tokyo] デバッグ:URL発行
+[09-May-2021 16:46:01 Asia/Tokyo] デバッグ:localhost:8888/output2/farm/tokenRecieve.php?token=f301d361f6546314ead9545a567dd0cf77216f9e066a641ab176abf1f83102d2
+[09-May-2021 16:48:03 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:48:03 Asia/Tokyo] デバッグ:ユーザー登録画面
+[09-May-2021 16:48:03 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:48:03 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-May-2021 16:48:03 Asia/Tokyo] デバッグ:セッションID：ta618g6hkkc8cu6lapieiirtth
+[09-May-2021 16:48:03 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [token] => f301d361f6546314ead9545a567dd0cf77216f9e066a641ab176abf1f83102d2
+    [email] => aiueo12@aiueo.com
+    [password] => $2y$10$rOMt6qLRkSkTE5lVxVzyGeGoYURrOQgv3dKc.Kc3OkZv3/zNtVF02
+    [user_id] => 6
+    [login_date] => 1620479622
+    [login_limit] => 3600
+    [msg] => 
+)
+
+[09-May-2021 16:48:03 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620546483
+[09-May-2021 16:48:03 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1620483222
+[09-May-2021 16:48:03 Asia/Tokyo] デバッグ:POSTされました。
+[09-May-2021 16:48:03 Asia/Tokyo] デバッグ:バリデーションOKです。
+[09-May-2021 16:48:03 Asia/Tokyo] デバッグ:メールを送信しました。
+[09-May-2021 16:48:03 Asia/Tokyo] デバッグ:URL発行
+[09-May-2021 16:48:03 Asia/Tokyo] デバッグ:localhost:8888/output2/farm/tokenRecieve.php?token=d5643a4cb02465c6450a77389da6c4089b6fe5bb0efea8c24ff0733f95639c5e
+[09-May-2021 16:48:06 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:48:06 Asia/Tokyo] デバッグ:ユーザー登録画面
+[09-May-2021 16:48:06 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:48:06 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-May-2021 16:48:06 Asia/Tokyo] デバッグ:セッションID：hqh76i75kdicb1qrbsi6agr2v9
+[09-May-2021 16:48:06 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [token] => d5643a4cb02465c6450a77389da6c4089b6fe5bb0efea8c24ff0733f95639c5e
+    [email] => aiueo12@aiueo.com
+    [password] => $2y$10$dgYuYfAMNs4qRF.jG8SDWe8mhwRzVMFvLB/R0rsFK/q2dfejCzIfm
+    [user_id] => 6
+    [login_date] => 1620479622
+    [login_limit] => 3600
+    [msg] => 
+)
+
+[09-May-2021 16:48:06 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620546486
+[09-May-2021 16:48:06 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1620483222
+[09-May-2021 16:48:06 Asia/Tokyo] デバッグ:POSTされました。
+[09-May-2021 16:48:06 Asia/Tokyo] デバッグ:バリデーションOKです。
+[09-May-2021 16:48:07 Asia/Tokyo] デバッグ:メールを送信しました。
+[09-May-2021 16:48:07 Asia/Tokyo] デバッグ:URL発行
+[09-May-2021 16:48:07 Asia/Tokyo] デバッグ:localhost:8888/output2/farm/tokenRecieve.php?token=b8cd527c2e3fa79e8d9843f22968f2196482ca6bd461168a7289d4c8dd680a28
+[09-May-2021 16:48:55 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:48:55 Asia/Tokyo] デバッグ:ユーザー登録画面
+[09-May-2021 16:48:55 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:48:55 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-May-2021 16:48:55 Asia/Tokyo] デバッグ:セッションID：u5uh11djkfkcuu70op5mc6itc1
+[09-May-2021 16:48:55 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [token] => b8cd527c2e3fa79e8d9843f22968f2196482ca6bd461168a7289d4c8dd680a28
+    [email] => aiueo12@aiueo.com
+    [password] => $2y$10$ZNQdV1beXLyfE7mbmKiJI.fh1UxQkGufhyt3terKDBbP.c0RN2hWu
+    [user_id] => 6
+    [login_date] => 1620479622
+    [login_limit] => 3600
+    [msg] => 
+)
+
+[09-May-2021 16:48:55 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620546535
+[09-May-2021 16:48:55 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1620483222
+[09-May-2021 16:48:55 Asia/Tokyo] デバッグ:POSTされました。
+[09-May-2021 16:48:55 Asia/Tokyo] デバッグ:バリデーションOKです。
+[09-May-2021 16:48:55 Asia/Tokyo] デバッグ:メールを送信しました。
+[09-May-2021 16:48:55 Asia/Tokyo] デバッグ:URL発行
+[09-May-2021 16:48:55 Asia/Tokyo] デバッグ:localhost:8888/output2/farm/tokenRecieve.php?token=548b6e3fedf05ad5c84d4d124d4f5037885d2ad706f8eaf914e13bd919c8b5ab
+[09-May-2021 16:49:04 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:49:04 Asia/Tokyo] デバッグ:ユーザー登録画面
+[09-May-2021 16:49:04 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:49:04 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-May-2021 16:49:04 Asia/Tokyo] デバッグ:セッションID：vbhh3468n6v8jumt3i5cf7ch1p
+[09-May-2021 16:49:04 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [token] => 548b6e3fedf05ad5c84d4d124d4f5037885d2ad706f8eaf914e13bd919c8b5ab
+    [email] => aiueo12@aiueo.com
+    [password] => $2y$10$uKmPEuRBlTUG4SYdeLB5LOrnUuPzRPR7K4wS04uO3LVYMUu.GimOS
+    [user_id] => 6
+    [login_date] => 1620479622
+    [login_limit] => 3600
+    [msg] => 
+)
+
+[09-May-2021 16:49:04 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620546544
+[09-May-2021 16:49:04 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1620483222
+[09-May-2021 16:49:31 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:49:31 Asia/Tokyo] デバッグ:ユーザー登録画面
+[09-May-2021 16:49:31 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:49:31 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-May-2021 16:49:31 Asia/Tokyo] デバッグ:セッションID：u76gvcjr5q5594c67a3vftd7o4
+[09-May-2021 16:49:31 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [token] => 548b6e3fedf05ad5c84d4d124d4f5037885d2ad706f8eaf914e13bd919c8b5ab
+    [email] => aiueo12@aiueo.com
+    [password] => $2y$10$uKmPEuRBlTUG4SYdeLB5LOrnUuPzRPR7K4wS04uO3LVYMUu.GimOS
+    [user_id] => 6
+    [login_date] => 1620479622
+    [login_limit] => 3600
+    [msg] => 
+)
+
+[09-May-2021 16:49:31 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620546571
+[09-May-2021 16:49:31 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1620483222
+[09-May-2021 16:49:31 Asia/Tokyo] デバッグ:POSTされました。
+[09-May-2021 16:49:31 Asia/Tokyo] デバッグ:バリデーションOKです。
+[09-May-2021 16:49:32 Asia/Tokyo] デバッグ:メールを送信しました。
+[09-May-2021 16:49:32 Asia/Tokyo] デバッグ:URL発行
+[09-May-2021 16:49:32 Asia/Tokyo] デバッグ:localhost:8888/output2/farm/tokenRecieve.php?token=99198d2dd83e73811230a6a63ecf554f530a56e672f48332b0e7b47445816b9d
+[09-May-2021 16:49:54 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:49:54 Asia/Tokyo] デバッグ:ユーザー登録画面
+[09-May-2021 16:49:54 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:49:54 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-May-2021 16:49:54 Asia/Tokyo] デバッグ:セッションID：o2s4mka6u71re5gfqiskp4covr
+[09-May-2021 16:49:54 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [token] => 99198d2dd83e73811230a6a63ecf554f530a56e672f48332b0e7b47445816b9d
+    [email] => aiueo12@aiueo.com
+    [password] => $2y$10$uMy4xkmy91EdrlQkQRE5ceiaROBt25HUprAtvemKB8boY8Xrdox2i
+    [user_id] => 6
+    [login_date] => 1620479622
+    [login_limit] => 3600
+    [msg] => 
+)
+
+[09-May-2021 16:49:54 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620546594
+[09-May-2021 16:49:54 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1620483222
+[09-May-2021 16:49:54 Asia/Tokyo] デバッグ:POSTされました。
+[09-May-2021 16:49:54 Asia/Tokyo] デバッグ:バリデーションOKです。
+[09-May-2021 16:49:54 Asia/Tokyo] デバッグ:メールを送信しました。
+[09-May-2021 16:49:54 Asia/Tokyo] デバッグ:URL発行
+[09-May-2021 16:49:54 Asia/Tokyo] デバッグ:localhost:8888/output2/farm/tokenRecieve.php?token=f397e9f203d8621ab790540e25ee99b08e521894e7cb55c486461f87988cdec7
+[09-May-2021 16:50:09 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:50:09 Asia/Tokyo] デバッグ:ユーザー登録画面
+[09-May-2021 16:50:09 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:50:09 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-May-2021 16:50:09 Asia/Tokyo] デバッグ:セッションID：t80fse6qlk31ts2h80rvvkfau7
+[09-May-2021 16:50:09 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [token] => f397e9f203d8621ab790540e25ee99b08e521894e7cb55c486461f87988cdec7
+    [email] => aiueo12@aiueo.com
+    [password] => $2y$10$H0MftTQGnmunmLQfquNbvem8Yk1a8/TSRuPDIMIC8wAFvtYIIJvFO
+    [user_id] => 6
+    [login_date] => 1620479622
+    [login_limit] => 3600
+    [msg] => 
+)
+
+[09-May-2021 16:50:09 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620546609
+[09-May-2021 16:50:09 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1620483222
+[09-May-2021 16:50:09 Asia/Tokyo] デバッグ:POSTされました。
+[09-May-2021 16:50:09 Asia/Tokyo] デバッグ:バリデーションOKです。
+[09-May-2021 16:50:09 Asia/Tokyo] デバッグ:メールを送信しました。
+[09-May-2021 16:50:09 Asia/Tokyo] デバッグ:URL発行
+[09-May-2021 16:50:09 Asia/Tokyo] デバッグ:localhost:8888/output2/farm/tokenRecieve.php?token=83c6d470d55b0270135502d84f1289c263525fe410199351fe8d0f53a1e00cb0
+[09-May-2021 16:52:12 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:52:12 Asia/Tokyo] デバッグ:ユーザー登録画面
+[09-May-2021 16:52:12 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:52:12 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-May-2021 16:52:12 Asia/Tokyo] デバッグ:セッションID：cblaov6fh3pumrsj0fd2sope94
+[09-May-2021 16:52:12 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [token] => 83c6d470d55b0270135502d84f1289c263525fe410199351fe8d0f53a1e00cb0
+    [email] => aiueo12@aiueo.com
+    [password] => $2y$10$w0LfPsorSjSjopPHk8S9LuH.aSkTS76nxoXGN7Tay8jwYLVyNrfYe
+    [user_id] => 6
+    [login_date] => 1620479622
+    [login_limit] => 3600
+    [msg] => 
+)
+
+[09-May-2021 16:52:12 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620546732
+[09-May-2021 16:52:12 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1620483222
+[09-May-2021 16:52:12 Asia/Tokyo] デバッグ:POSTされました。
+[09-May-2021 16:52:12 Asia/Tokyo] デバッグ:バリデーションOKです。
+[09-May-2021 16:52:13 Asia/Tokyo] デバッグ:メールを送信しました。
+[09-May-2021 16:52:13 Asia/Tokyo] デバッグ:URL発行
+[09-May-2021 16:52:13 Asia/Tokyo] デバッグ:localhost:8888/output2/farm/tokenRecieve.php?token=455abfe113a00d91c421fd1785225c9e5e59f0b4df7d369b5e56ce38d9621d83
+[09-May-2021 16:52:14 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:52:14 Asia/Tokyo] デバッグ:ユーザー登録画面
+[09-May-2021 16:52:14 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:52:14 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-May-2021 16:52:14 Asia/Tokyo] デバッグ:セッションID：6oou6ffvm7aqudt2nbv457q9q3
+[09-May-2021 16:52:14 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [token] => 455abfe113a00d91c421fd1785225c9e5e59f0b4df7d369b5e56ce38d9621d83
+    [email] => aiueo12@aiueo.com
+    [password] => $2y$10$pUcMtJ8S0d53n0Ki8qMOa.qaMvNGE1sSRaw96cHs21fJU2xOex.oy
+    [user_id] => 6
+    [login_date] => 1620479622
+    [login_limit] => 3600
+    [msg] => 
+)
+
+[09-May-2021 16:52:14 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620546734
+[09-May-2021 16:52:14 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1620483222
+[09-May-2021 16:52:14 Asia/Tokyo] デバッグ:POSTされました。
+[09-May-2021 16:52:14 Asia/Tokyo] デバッグ:バリデーションOKです。
+[09-May-2021 16:52:15 Asia/Tokyo] デバッグ:メールを送信しました。
+[09-May-2021 16:52:15 Asia/Tokyo] デバッグ:URL発行
+[09-May-2021 16:52:15 Asia/Tokyo] デバッグ:localhost:8888/output2/farm/tokenRecieve.php?token=26ab29b4b8bd3a844f429d47c75fbbf7499007f678d6fd342211c38a13a6c81b
+[09-May-2021 16:52:22 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:52:22 Asia/Tokyo] デバッグ:ユーザー登録画面
+[09-May-2021 16:52:22 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:52:22 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-May-2021 16:52:22 Asia/Tokyo] デバッグ:セッションID：d6rt11lvr7v84935783rhu1kto
+[09-May-2021 16:52:22 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [token] => 26ab29b4b8bd3a844f429d47c75fbbf7499007f678d6fd342211c38a13a6c81b
+    [email] => aiueo12@aiueo.com
+    [password] => $2y$10$muL53njrxp2l7s1a8yN79eAOPvvXtVSHJWlAerwrkuQGQ0B98RL9a
+    [user_id] => 6
+    [login_date] => 1620479622
+    [login_limit] => 3600
+    [msg] => 
+)
+
+[09-May-2021 16:52:22 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620546742
+[09-May-2021 16:52:22 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1620483222
+[09-May-2021 16:52:22 Asia/Tokyo] デバッグ:POSTされました。
+[09-May-2021 16:52:22 Asia/Tokyo] デバッグ:バリデーションOKです。
+[09-May-2021 16:52:22 Asia/Tokyo] デバッグ:メールを送信しました。
+[09-May-2021 16:52:22 Asia/Tokyo] デバッグ:URL発行
+[09-May-2021 16:52:22 Asia/Tokyo] デバッグ:localhost:8888/output2/farm/tokenRecieve.php?token=200710c6964702c5e7bc8112b728633d8e8e4437f3bd3f928f08457785b3267f
+[09-May-2021 16:52:40 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:52:40 Asia/Tokyo] デバッグ:ユーザー登録画面
+[09-May-2021 16:52:40 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:52:40 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-May-2021 16:52:40 Asia/Tokyo] デバッグ:セッションID：d6vkc930sa79o7bfcqgh23oj3p
+[09-May-2021 16:52:40 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [token] => 200710c6964702c5e7bc8112b728633d8e8e4437f3bd3f928f08457785b3267f
+    [email] => aiueo12@aiueo.com
+    [password] => $2y$10$dgQ1W8SpQsv1jQZiZnpa3.eQ6UIHIhbb5zBoHfME/XlRtUtbVHrBS
+    [user_id] => 6
+    [login_date] => 1620479622
+    [login_limit] => 3600
+    [msg] => 
+)
+
+[09-May-2021 16:52:40 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620546760
+[09-May-2021 16:52:40 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1620483222
+[09-May-2021 16:52:40 Asia/Tokyo] デバッグ:POSTされました。
+[09-May-2021 16:52:40 Asia/Tokyo] デバッグ:バリデーションOKです。
+[09-May-2021 16:52:40 Asia/Tokyo] デバッグ:メールを送信しました。
+[09-May-2021 16:52:40 Asia/Tokyo] デバッグ:URL発行
+[09-May-2021 16:52:40 Asia/Tokyo] デバッグ:localhost:8888/output2/farm/tokenRecieve.php?token=36ad5357b8113d4aadc66ecb60dc3338560815afa1a9e3c3536ec2e312bf2428
+[09-May-2021 16:53:34 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:53:34 Asia/Tokyo] デバッグ:ユーザー登録画面
+[09-May-2021 16:53:34 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:53:34 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-May-2021 16:53:34 Asia/Tokyo] デバッグ:セッションID：g1fmp9p38us0kf76os7q38ao6h
+[09-May-2021 16:53:34 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [token] => 36ad5357b8113d4aadc66ecb60dc3338560815afa1a9e3c3536ec2e312bf2428
+    [email] => aiueo12@aiueo.com
+    [password] => $2y$10$MedoZzeqh.M5tpeuHp1EpuIG8tVaDEbeQs.2.Mj8MYxz/N6RwMDIq
+    [user_id] => 6
+    [login_date] => 1620479622
+    [login_limit] => 3600
+    [msg] => 
+)
+
+[09-May-2021 16:53:34 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620546814
+[09-May-2021 16:53:34 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1620483222
+[09-May-2021 16:53:34 Asia/Tokyo] デバッグ:POSTされました。
+[09-May-2021 16:53:34 Asia/Tokyo] デバッグ:バリデーションOKです。
+[09-May-2021 16:53:34 Asia/Tokyo] デバッグ:メールを送信しました。
+[09-May-2021 16:53:34 Asia/Tokyo] デバッグ:URL発行
+[09-May-2021 16:53:34 Asia/Tokyo] デバッグ:localhost:8888/output2/farm/tokenRecieve.php?token=1f23c96bc9c460711c7df4079278f41000875e437f14acf565cd32d83ba0b8e7
+[09-May-2021 16:53:42 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:53:42 Asia/Tokyo] デバッグ:ユーザー登録画面
+[09-May-2021 16:53:42 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:53:42 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-May-2021 16:53:42 Asia/Tokyo] デバッグ:セッションID：tr5lb7gshksasgqkeasm985f0q
+[09-May-2021 16:53:42 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [token] => 1f23c96bc9c460711c7df4079278f41000875e437f14acf565cd32d83ba0b8e7
+    [email] => aiueo12@aiueo.com
+    [password] => $2y$10$IPvd.aGf.eNWgW1xW2oyw.PS.nO0CsxrDxNSObCepiPcJJMSW1bcm
+    [user_id] => 6
+    [login_date] => 1620479622
+    [login_limit] => 3600
+    [msg] => 
+)
+
+[09-May-2021 16:53:42 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620546822
+[09-May-2021 16:53:42 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1620483222
+[09-May-2021 16:53:42 Asia/Tokyo] デバッグ:POSTされました。
+[09-May-2021 16:53:42 Asia/Tokyo] デバッグ:バリデーションOKです。
+[09-May-2021 16:53:43 Asia/Tokyo] デバッグ:メールを送信しました。
+[09-May-2021 16:53:43 Asia/Tokyo] デバッグ:URL発行
+[09-May-2021 16:53:43 Asia/Tokyo] デバッグ:localhost:8888/output2/farm/tokenRecieve.php?token=20052575f1ce985f759f5e24880eea8cdff5d2417d4f4758e3e18ea0defe8939
+[09-May-2021 16:54:28 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:54:28 Asia/Tokyo] デバッグ:ユーザー登録画面
+[09-May-2021 16:54:28 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:54:28 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-May-2021 16:54:28 Asia/Tokyo] デバッグ:セッションID：cafaj1fh30ln9ug209gm5uu9ek
+[09-May-2021 16:54:28 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [token] => 20052575f1ce985f759f5e24880eea8cdff5d2417d4f4758e3e18ea0defe8939
+    [email] => aiueo12@aiueo.com
+    [password] => $2y$10$xMGPkNOfFguBMTrvQmRuOeJp8l537dyaTscCdDhnGotfEqjH/zlPe
+    [user_id] => 6
+    [login_date] => 1620479622
+    [login_limit] => 3600
+    [msg] => 
+)
+
+[09-May-2021 16:54:28 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620546868
+[09-May-2021 16:54:28 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1620483222
+[09-May-2021 16:54:28 Asia/Tokyo] デバッグ:POSTされました。
+[09-May-2021 16:54:28 Asia/Tokyo] デバッグ:バリデーションOKです。
+[09-May-2021 16:54:29 Asia/Tokyo] デバッグ:メールを送信しました。
+[09-May-2021 16:54:29 Asia/Tokyo] デバッグ:URL発行
+[09-May-2021 16:54:29 Asia/Tokyo] デバッグ:localhost:8888/output2/farm/tokenRecieve.php?token=0638f6b85674315285fe9c1b6f0c4fecd6cfbbf5b95b3630d1092af6efd0eda7
+[09-May-2021 16:54:50 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:54:50 Asia/Tokyo] デバッグ:ユーザー登録画面
+[09-May-2021 16:54:50 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:54:50 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-May-2021 16:54:50 Asia/Tokyo] デバッグ:セッションID：kj3ib6ce51ng7ir7v127g9qovr
+[09-May-2021 16:54:50 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [token] => 0638f6b85674315285fe9c1b6f0c4fecd6cfbbf5b95b3630d1092af6efd0eda7
+    [email] => aiueo12@aiueo.com
+    [password] => $2y$10$IdnOpqEcXEPnZYVjPMeIYeIDJNjqpnSRawcXeIQHOiCdki9EdQQRi
+    [user_id] => 6
+    [login_date] => 1620479622
+    [login_limit] => 3600
+    [msg] => 
+)
+
+[09-May-2021 16:54:50 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620546890
+[09-May-2021 16:54:50 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1620483222
+[09-May-2021 16:54:50 Asia/Tokyo] デバッグ:POSTされました。
+[09-May-2021 16:54:50 Asia/Tokyo] デバッグ:バリデーションOKです。
+[09-May-2021 16:54:51 Asia/Tokyo] デバッグ:メールを送信しました。
+[09-May-2021 16:54:51 Asia/Tokyo] デバッグ:URL発行
+[09-May-2021 16:54:51 Asia/Tokyo] デバッグ:localhost:8888/output2/farm/tokenRecieve.php?token=33b7659b6c12259ec11a4c7f372d7aa98877e8f1202071894947c0b5ae3c0a7f
+[09-May-2021 16:55:58 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:55:58 Asia/Tokyo] デバッグ:ユーザー登録画面
+[09-May-2021 16:55:58 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:55:58 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-May-2021 16:55:58 Asia/Tokyo] デバッグ:セッションID：9hhdmdngm5mlhpclfc0so9kpj2
+[09-May-2021 16:55:58 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [token] => 33b7659b6c12259ec11a4c7f372d7aa98877e8f1202071894947c0b5ae3c0a7f
+    [email] => aiueo12@aiueo.com
+    [password] => $2y$10$IWZkeT1aoLI8FYPGSR2PBeWg1OThj0qUOAOpr8GzZIeVslGKSuG8.
+    [user_id] => 6
+    [login_date] => 1620479622
+    [login_limit] => 3600
+    [msg] => 
+)
+
+[09-May-2021 16:55:58 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620546958
+[09-May-2021 16:55:58 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1620483222
+[09-May-2021 16:55:58 Asia/Tokyo] デバッグ:POSTされました。
+[09-May-2021 16:55:58 Asia/Tokyo] デバッグ:バリデーションOKです。
+[09-May-2021 16:55:58 Asia/Tokyo] デバッグ:メールを送信しました。
+[09-May-2021 16:55:58 Asia/Tokyo] デバッグ:URL発行
+[09-May-2021 16:55:58 Asia/Tokyo] デバッグ:localhost:8888/output2/farm/tokenRecieve.php?token=ce9dfa045abaf1d3099353f3c2316cee130fccb36c88104463e696c8a430f637
+[09-May-2021 16:56:26 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:56:26 Asia/Tokyo] デバッグ:ユーザー登録画面
+[09-May-2021 16:56:26 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:56:26 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-May-2021 16:56:26 Asia/Tokyo] デバッグ:セッションID：5grk3mc6rmh3reab7q53h3nmup
+[09-May-2021 16:56:26 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [token] => ce9dfa045abaf1d3099353f3c2316cee130fccb36c88104463e696c8a430f637
+    [email] => aiueo12@aiueo.com
+    [password] => $2y$10$dvQyiZD12rrD0msXFj7tc.vQ/g5pnMjyuYE0YWwidG8SXWmbORKWO
+    [user_id] => 6
+    [login_date] => 1620479622
+    [login_limit] => 3600
+    [msg] => 
+)
+
+[09-May-2021 16:56:26 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620546986
+[09-May-2021 16:56:26 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1620483222
+[09-May-2021 16:56:26 Asia/Tokyo] デバッグ:POSTされました。
+[09-May-2021 16:56:26 Asia/Tokyo] デバッグ:バリデーションOKです。
+[09-May-2021 16:56:27 Asia/Tokyo] デバッグ:メールを送信しました。
+[09-May-2021 16:56:27 Asia/Tokyo] デバッグ:URL発行
+[09-May-2021 16:56:27 Asia/Tokyo] デバッグ:localhost:8888/output2/farm/tokenRecieve.php?token=e6e44d6b37b4c2835ef9706b8ce9d75fb0fad393627b1ce7cec261da72b94c99
+[09-May-2021 16:56:55 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:56:55 Asia/Tokyo] デバッグ:ユーザー登録画面
+[09-May-2021 16:56:55 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:56:55 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-May-2021 16:56:55 Asia/Tokyo] デバッグ:セッションID：smtli8meudrpnk2pfa7qrh3toe
+[09-May-2021 16:56:55 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [token] => e6e44d6b37b4c2835ef9706b8ce9d75fb0fad393627b1ce7cec261da72b94c99
+    [email] => aiueo12@aiueo.com
+    [password] => $2y$10$faoHxIS/P9ewBqe0vOgQ5eaQUVzDShkLGamFS/x/PeaXlMFSoX5cC
+    [user_id] => 6
+    [login_date] => 1620479622
+    [login_limit] => 3600
+    [msg] => 
+)
+
+[09-May-2021 16:56:55 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620547015
+[09-May-2021 16:56:55 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1620483222
+[09-May-2021 16:56:55 Asia/Tokyo] デバッグ:POSTされました。
+[09-May-2021 16:56:55 Asia/Tokyo] デバッグ:バリデーションOKです。
+[09-May-2021 16:56:55 Asia/Tokyo] デバッグ:メールを送信しました。
+[09-May-2021 16:56:55 Asia/Tokyo] デバッグ:URL発行
+[09-May-2021 16:56:55 Asia/Tokyo] デバッグ:localhost:8888/output2/farm/tokenRecieve.php?token=f9a6e9bf09c706a70eaf3ad51297a543e1521d0f410ff1e1c18a80ef20c3a4c9
+[09-May-2021 16:57:08 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:57:08 Asia/Tokyo] デバッグ:ユーザー登録画面
+[09-May-2021 16:57:08 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:57:08 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-May-2021 16:57:08 Asia/Tokyo] デバッグ:セッションID：a8drek8l5l16dd2o2rm6e8gtbl
+[09-May-2021 16:57:08 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [token] => f9a6e9bf09c706a70eaf3ad51297a543e1521d0f410ff1e1c18a80ef20c3a4c9
+    [email] => aiueo12@aiueo.com
+    [password] => $2y$10$6qGSuSb4SJqwTO0.6WHLDuCVI82Q.ogT.nMnW8TWR84DF8ifjPcDG
+    [user_id] => 6
+    [login_date] => 1620479622
+    [login_limit] => 3600
+    [msg] => 
+)
+
+[09-May-2021 16:57:08 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620547028
+[09-May-2021 16:57:08 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1620483222
+[09-May-2021 16:57:08 Asia/Tokyo] デバッグ:POSTされました。
+[09-May-2021 16:57:08 Asia/Tokyo] デバッグ:バリデーションOKです。
+[09-May-2021 16:57:09 Asia/Tokyo] デバッグ:メールを送信しました。
+[09-May-2021 16:57:09 Asia/Tokyo] デバッグ:URL発行
+[09-May-2021 16:57:09 Asia/Tokyo] デバッグ:localhost:8888/output2/farm/tokenRecieve.php?token=f48eda4e1035240d43ddfb08d43e8fc9ebef4baa20334fae67021793bc90b882
+[09-May-2021 16:57:41 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:57:41 Asia/Tokyo] デバッグ:ユーザー登録画面
+[09-May-2021 16:57:41 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:57:41 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-May-2021 16:57:41 Asia/Tokyo] デバッグ:セッションID：k7inu0q0q7hsm25e46rrh3t86c
+[09-May-2021 16:57:41 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [token] => f48eda4e1035240d43ddfb08d43e8fc9ebef4baa20334fae67021793bc90b882
+    [email] => aiueo12@aiueo.com
+    [password] => $2y$10$tuaQA.rwD2PGbybBSaFF9OtQTrG49T8IsIpnIzv/l44w8F062X3we
+    [user_id] => 6
+    [login_date] => 1620479622
+    [login_limit] => 3600
+    [msg] => 
+)
+
+[09-May-2021 16:57:41 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620547061
+[09-May-2021 16:57:41 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1620483222
+[09-May-2021 16:57:41 Asia/Tokyo] デバッグ:POSTされました。
+[09-May-2021 16:57:41 Asia/Tokyo] デバッグ:バリデーションOKです。
+[09-May-2021 16:57:41 Asia/Tokyo] デバッグ:メールを送信しました。
+[09-May-2021 16:57:41 Asia/Tokyo] デバッグ:URL発行
+[09-May-2021 16:57:41 Asia/Tokyo] デバッグ:localhost:8888/output2/farm/tokenRecieve.php?token=69e64020e2c6cc7fe839635b315623c4b00678cbf7179cd96d0b1a4408998884
+[09-May-2021 16:57:50 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:57:50 Asia/Tokyo] デバッグ:ユーザー登録画面
+[09-May-2021 16:57:50 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:57:50 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-May-2021 16:57:50 Asia/Tokyo] デバッグ:セッションID：ktns82kphm4o7ttttoh2fp5k58
+[09-May-2021 16:57:50 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [token] => 69e64020e2c6cc7fe839635b315623c4b00678cbf7179cd96d0b1a4408998884
+    [email] => aiueo12@aiueo.com
+    [password] => $2y$10$VR1OiwViY4.YgBAnVJPAHeNVQgd8kiLmTBay9e7dmI0xmUUJk8qMG
+    [user_id] => 6
+    [login_date] => 1620479622
+    [login_limit] => 3600
+    [msg] => 
+)
+
+[09-May-2021 16:57:50 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620547070
+[09-May-2021 16:57:50 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1620483222
+[09-May-2021 16:57:50 Asia/Tokyo] デバッグ:POSTされました。
+[09-May-2021 16:57:50 Asia/Tokyo] デバッグ:バリデーションOKです。
+[09-May-2021 16:57:51 Asia/Tokyo] デバッグ:メールを送信しました。
+[09-May-2021 16:57:51 Asia/Tokyo] デバッグ:URL発行
+[09-May-2021 16:57:51 Asia/Tokyo] デバッグ:localhost:8888/output2/farm/tokenRecieve.php?token=e11f43eb1b03ca5afe3b1bda44a57394e956f76724d8f1761ba4919a213aee35
+[09-May-2021 16:58:00 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:58:00 Asia/Tokyo] デバッグ:ユーザー登録画面
+[09-May-2021 16:58:00 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:58:00 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-May-2021 16:58:00 Asia/Tokyo] デバッグ:セッションID：sa9870bmhatg8jsubl5o477phd
+[09-May-2021 16:58:00 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [token] => e11f43eb1b03ca5afe3b1bda44a57394e956f76724d8f1761ba4919a213aee35
+    [email] => aiueo12@aiueo.com
+    [password] => $2y$10$d/BLIncTOPM/hzUA5du.fOtRj58lrzu/gPpmjz0Q0bbW6QHmFX3JG
+    [user_id] => 6
+    [login_date] => 1620479622
+    [login_limit] => 3600
+    [msg] => 
+)
+
+[09-May-2021 16:58:00 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620547080
+[09-May-2021 16:58:00 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1620483222
+[09-May-2021 16:58:00 Asia/Tokyo] デバッグ:POSTされました。
+[09-May-2021 16:58:00 Asia/Tokyo] デバッグ:バリデーションOKです。
+[09-May-2021 16:58:00 Asia/Tokyo] デバッグ:メールを送信しました。
+[09-May-2021 16:58:00 Asia/Tokyo] デバッグ:URL発行
+[09-May-2021 16:58:00 Asia/Tokyo] デバッグ:localhost:8888/output2/farm/tokenRecieve.php?token=5dcc98ca2f1e6e5152bf94a546943bbcc92d2a06638250c9ed51a868c2339eee
+[09-May-2021 16:58:27 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:58:27 Asia/Tokyo] デバッグ:ユーザー登録画面
+[09-May-2021 16:58:27 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:58:27 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-May-2021 16:58:27 Asia/Tokyo] デバッグ:セッションID：0df3kpmtnil02q6hf23068jeqv
+[09-May-2021 16:58:27 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [token] => 5dcc98ca2f1e6e5152bf94a546943bbcc92d2a06638250c9ed51a868c2339eee
+    [email] => aiueo12@aiueo.com
+    [password] => $2y$10$u1o0mEwx39Pdb/hlqCVokeVB6rHIvYvbXxGDJusvaYW2jhmUZt9ua
+    [user_id] => 6
+    [login_date] => 1620479622
+    [login_limit] => 3600
+    [msg] => 
+)
+
+[09-May-2021 16:58:27 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620547107
+[09-May-2021 16:58:27 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1620483222
+[09-May-2021 16:58:27 Asia/Tokyo] デバッグ:POSTされました。
+[09-May-2021 16:58:27 Asia/Tokyo] デバッグ:バリデーションOKです。
+[09-May-2021 16:58:28 Asia/Tokyo] デバッグ:メールを送信しました。
+[09-May-2021 16:58:28 Asia/Tokyo] デバッグ:URL発行
+[09-May-2021 16:58:28 Asia/Tokyo] デバッグ:localhost:8888/output2/farm/tokenRecieve.php?token=b212e144f70a53102708947dc2c18c8b5fc8bbe0ab305764c19ce478ba9ff4ac
+[09-May-2021 16:59:00 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:59:00 Asia/Tokyo] デバッグ:ユーザー登録画面
+[09-May-2021 16:59:00 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:59:00 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-May-2021 16:59:00 Asia/Tokyo] デバッグ:セッションID：bfnv9qolmc64hv3dnpb6o4l5gd
+[09-May-2021 16:59:00 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [token] => b212e144f70a53102708947dc2c18c8b5fc8bbe0ab305764c19ce478ba9ff4ac
+    [email] => aiueo12@aiueo.com
+    [password] => $2y$10$vHnrrHcZOcLxriwk9xz4N.uchm9So2iaAXPyOI3pXIpwJNfHdx6MC
+    [user_id] => 6
+    [login_date] => 1620479622
+    [login_limit] => 3600
+    [msg] => 
+)
+
+[09-May-2021 16:59:00 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620547140
+[09-May-2021 16:59:00 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1620483222
+[09-May-2021 16:59:00 Asia/Tokyo] デバッグ:POSTされました。
+[09-May-2021 16:59:00 Asia/Tokyo] デバッグ:バリデーションOKです。
+[09-May-2021 16:59:00 Asia/Tokyo] デバッグ:メールを送信しました。
+[09-May-2021 16:59:00 Asia/Tokyo] デバッグ:URL発行
+[09-May-2021 16:59:00 Asia/Tokyo] デバッグ:localhost:8888/output2/farm/tokenRecieve.php?token=14927e41f24a366b6ba0b60de6d9501fb81699e741a715b13b6d0b0f50bd39f4
+[09-May-2021 16:59:12 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:59:12 Asia/Tokyo] デバッグ:ユーザー登録画面
+[09-May-2021 16:59:12 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:59:12 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-May-2021 16:59:12 Asia/Tokyo] デバッグ:セッションID：b44et5v4atgjvqcjijjftqme6a
+[09-May-2021 16:59:12 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [token] => 14927e41f24a366b6ba0b60de6d9501fb81699e741a715b13b6d0b0f50bd39f4
+    [email] => aiueo12@aiueo.com
+    [password] => $2y$10$zraCn66AsXXZJ.1f44LYEeLWMLCKDhQ7yObZylSRFwg2ZGqV8PzDe
+    [user_id] => 6
+    [login_date] => 1620479622
+    [login_limit] => 3600
+    [msg] => 
+)
+
+[09-May-2021 16:59:12 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620547152
+[09-May-2021 16:59:12 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1620483222
+[09-May-2021 16:59:12 Asia/Tokyo] デバッグ:POSTされました。
+[09-May-2021 16:59:12 Asia/Tokyo] デバッグ:バリデーションOKです。
+[09-May-2021 16:59:12 Asia/Tokyo] デバッグ:メールを送信しました。
+[09-May-2021 16:59:12 Asia/Tokyo] デバッグ:URL発行
+[09-May-2021 16:59:12 Asia/Tokyo] デバッグ:localhost:8888/output2/farm/tokenRecieve.php?token=3ff4668057b1e1bcf8564a3d41a59d8b4d880c41336bf6bbb38445f09d829b25
+[09-May-2021 16:59:54 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:59:54 Asia/Tokyo] デバッグ:ユーザー登録画面
+[09-May-2021 16:59:54 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 16:59:54 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-May-2021 16:59:54 Asia/Tokyo] デバッグ:セッションID：l20hv9s4jt4hijvvj013eknoov
+[09-May-2021 16:59:54 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [token] => 3ff4668057b1e1bcf8564a3d41a59d8b4d880c41336bf6bbb38445f09d829b25
+    [email] => aiueo12@aiueo.com
+    [password] => $2y$10$F6MjnNiJuP6FBgrwZoMNDOmpU7mZEyt1iZhTr0G4rEkX1AJ4CeTGK
+    [user_id] => 6
+    [login_date] => 1620479622
+    [login_limit] => 3600
+    [msg] => 
+)
+
+[09-May-2021 16:59:54 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620547194
+[09-May-2021 16:59:54 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1620483222
+[09-May-2021 16:59:54 Asia/Tokyo] デバッグ:POSTされました。
+[09-May-2021 16:59:54 Asia/Tokyo] デバッグ:バリデーションOKです。
+[09-May-2021 16:59:54 Asia/Tokyo] デバッグ:メールを送信しました。
+[09-May-2021 16:59:54 Asia/Tokyo] デバッグ:URL発行
+[09-May-2021 16:59:54 Asia/Tokyo] デバッグ:localhost:8888/output2/farm/tokenRecieve.php?token=8c82173cc650b8dca2f3ecc5897cc1157b3f2d8a719e22d00332e7fa996c9698
+[09-May-2021 17:00:23 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 17:00:23 Asia/Tokyo] デバッグ:ユーザー登録画面
+[09-May-2021 17:00:23 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 17:00:23 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-May-2021 17:00:23 Asia/Tokyo] デバッグ:セッションID：f2uii1s7a41o31dvhsek0h40mr
+[09-May-2021 17:00:23 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [token] => 8c82173cc650b8dca2f3ecc5897cc1157b3f2d8a719e22d00332e7fa996c9698
+    [email] => aiueo12@aiueo.com
+    [password] => $2y$10$CH5aNAki9/Lz14rC26qI1.L4hccjny00TH/tu/LmUFjCVIxVfWvOK
+    [user_id] => 6
+    [login_date] => 1620479622
+    [login_limit] => 3600
+    [msg] => 
+)
+
+[09-May-2021 17:00:23 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620547223
+[09-May-2021 17:00:23 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1620483222
+[09-May-2021 17:00:23 Asia/Tokyo] デバッグ:POSTされました。
+[09-May-2021 17:00:23 Asia/Tokyo] デバッグ:バリデーションOKです。
+[09-May-2021 17:00:24 Asia/Tokyo] デバッグ:メールを送信しました。
+[09-May-2021 17:00:24 Asia/Tokyo] デバッグ:URL発行
+[09-May-2021 17:00:24 Asia/Tokyo] デバッグ:localhost:8888/output2/farm/tokenRecieve.php?token=beb62c8ba1477f182d38e8f2b31cce1e89383120eb4681650c8fa8984622e302
+[09-May-2021 17:00:41 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 17:00:41 Asia/Tokyo] デバッグ:ユーザー登録画面
+[09-May-2021 17:00:41 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 17:00:41 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-May-2021 17:00:41 Asia/Tokyo] デバッグ:セッションID：tmbif8e1phn0kuaoosg3i2egin
+[09-May-2021 17:00:41 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [token] => beb62c8ba1477f182d38e8f2b31cce1e89383120eb4681650c8fa8984622e302
+    [email] => aiueo12@aiueo.com
+    [password] => $2y$10$Z3fgartHOjKfV932YkjCE.N7eoSI1uq88y3so8Q/xHhwSPtF1XfLO
+    [user_id] => 6
+    [login_date] => 1620479622
+    [login_limit] => 3600
+    [msg] => 
+)
+
+[09-May-2021 17:00:41 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620547241
+[09-May-2021 17:00:41 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1620483222
+[09-May-2021 17:00:41 Asia/Tokyo] デバッグ:POSTされました。
+[09-May-2021 17:00:41 Asia/Tokyo] デバッグ:バリデーションOKです。
+[09-May-2021 17:00:41 Asia/Tokyo] デバッグ:メールを送信しました。
+[09-May-2021 17:00:41 Asia/Tokyo] デバッグ:URL発行
+[09-May-2021 17:00:41 Asia/Tokyo] デバッグ:localhost:8888/output2/farm/tokenRecieve.php?token=f2eddc5a145e7df5404647ecfbf4625c0053234e87471e1dc9ccb1a23975315c
+[09-May-2021 17:01:16 Asia/Tokyo] デバッグ:ログイン有効期限切れです。
+[09-May-2021 17:01:16 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 17:01:16 Asia/Tokyo] デバッグ:ログイン画面
+[09-May-2021 17:01:16 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 17:01:16 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-May-2021 17:01:16 Asia/Tokyo] デバッグ:セッションID：
+[09-May-2021 17:01:16 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [token] => f2eddc5a145e7df5404647ecfbf4625c0053234e87471e1dc9ccb1a23975315c
+    [email] => aiueo12@aiueo.com
+    [password] => $2y$10$3/T0JqHQwuZA16kwqlcUKut0ZBNnS7kg13FbF56VkqhibEExsTLnK
+    [user_id] => 6
+    [login_date] => 1620479622
+    [login_limit] => 3600
+    [msg] => 
+)
+
+[09-May-2021 17:01:16 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620547276
+[09-May-2021 17:01:16 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1620483222
+[09-May-2021 17:01:16 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 17:01:16 Asia/Tokyo] デバッグ:ログイン画面
+[09-May-2021 17:01:16 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 17:01:16 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-May-2021 17:01:16 Asia/Tokyo] デバッグ:セッションID：u3fl1tbe3jub31as2gsllu1qlf
+[09-May-2021 17:01:16 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[09-May-2021 17:01:16 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620547276
+[09-May-2021 17:01:18 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 17:01:18 Asia/Tokyo] デバッグ:パスワードリマインダー送信画面
+[09-May-2021 17:01:18 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 17:01:23 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 17:01:23 Asia/Tokyo] デバッグ:パスワードリマインダー送信画面
+[09-May-2021 17:01:23 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 17:01:23 Asia/Tokyo] デバッグ:クエリ成功しました。
+[09-May-2021 17:01:23 Asia/Tokyo] デバッグ:メールを送信しました。
+[09-May-2021 17:01:23 Asia/Tokyo] デバッグ:hh3MgIRI
+[09-May-2021 17:01:23 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 17:01:23 Asia/Tokyo] デバッグ:認証キー受け取り画面（パスワードリマインダー）
+[09-May-2021 17:01:23 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 17:01:31 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 17:01:31 Asia/Tokyo] デバッグ:パスワードリマインダー送信画面
+[09-May-2021 17:01:31 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 17:07:10 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 17:07:10 Asia/Tokyo] デバッグ:パスワードリマインダー送信画面
+[09-May-2021 17:07:10 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 17:07:10 Asia/Tokyo] デバッグ:クエリ成功しました。
+[09-May-2021 17:07:10 Asia/Tokyo] デバッグ:メールを送信しました。
+[09-May-2021 17:07:10 Asia/Tokyo] デバッグ:qpfrQYlD
+[09-May-2021 17:07:10 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 17:07:10 Asia/Tokyo] デバッグ:認証キー受け取り画面（パスワードリマインダー）
+[09-May-2021 17:07:10 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 17:07:49 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 17:07:49 Asia/Tokyo] デバッグ:認証キー受け取り画面（パスワードリマインダー）
+[09-May-2021 17:07:49 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 17:09:35 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 17:09:35 Asia/Tokyo] デバッグ:ログイン画面
+[09-May-2021 17:09:35 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 17:09:35 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-May-2021 17:09:35 Asia/Tokyo] デバッグ:セッションID：pakj745gjeoan911an04kuc5l8
+[09-May-2021 17:09:35 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [auth_key] => qpfrQYlD
+    [email] => aiueo@aiueo.com
+    [auth_limit] => 1620549430
+    [msg] => 
+)
+
+[09-May-2021 17:09:35 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620547775
+[09-May-2021 17:09:36 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 17:09:36 Asia/Tokyo] デバッグ:ユーザー登録画面
+[09-May-2021 17:09:36 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 17:09:36 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-May-2021 17:09:36 Asia/Tokyo] デバッグ:セッションID：6j1engi8qqonr0tiie0js3o8br
+[09-May-2021 17:09:36 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [auth_key] => qpfrQYlD
+    [email] => aiueo@aiueo.com
+    [auth_limit] => 1620549430
+    [msg] => 
+)
+
+[09-May-2021 17:09:36 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620547776
+[09-May-2021 17:09:58 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 17:09:58 Asia/Tokyo] デバッグ:ユーザー登録画面
+[09-May-2021 17:09:58 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 17:09:58 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-May-2021 17:09:58 Asia/Tokyo] デバッグ:セッションID：m8m6438ct7s556u74rj5gmd5nu
+[09-May-2021 17:09:58 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [auth_key] => qpfrQYlD
+    [email] => aiueo@aiueo.com
+    [auth_limit] => 1620549430
+    [msg] => 
+)
+
+[09-May-2021 17:09:58 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620547798
+[09-May-2021 17:09:58 Asia/Tokyo] デバッグ:POSTされました。
+[09-May-2021 17:09:58 Asia/Tokyo] デバッグ:バリデーションOKです。
+[09-May-2021 17:09:58 Asia/Tokyo] デバッグ:メールを送信しました。
+[09-May-2021 17:09:58 Asia/Tokyo] デバッグ:URL発行
+[09-May-2021 17:09:58 Asia/Tokyo] デバッグ:localhost:8888/output2/farm/tokenRecieve.php?token=95f29e56e289fee50286dc7ba95986465969cfa3b15c77a1b0d27888daf378f0
+[09-May-2021 18:35:05 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 18:35:05 Asia/Tokyo] デバッグ:TOP画面
+[09-May-2021 18:35:05 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 18:35:05 Asia/Tokyo] デバッグ:クエリ成功しました。
+[09-May-2021 18:35:05 Asia/Tokyo] デバッグ:クエリ成功しました。
+[09-May-2021 19:42:18 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 19:42:18 Asia/Tokyo] デバッグ:TOP画面
+[09-May-2021 19:42:18 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 19:42:18 Asia/Tokyo] デバッグ:クエリ成功しました。
+[09-May-2021 19:42:18 Asia/Tokyo] デバッグ:クエリ成功しました。
+[09-May-2021 19:45:56 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 19:45:56 Asia/Tokyo] デバッグ:ログイン画面
+[09-May-2021 19:45:56 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 19:45:56 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-May-2021 19:45:56 Asia/Tokyo] デバッグ:セッションID：12g8fljt75fj94r1bkknkubevf
+[09-May-2021 19:45:56 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [auth_key] => qpfrQYlD
+    [email] => aiueo12@aiueo.com
+    [auth_limit] => 1620549430
+    [msg] => 
+    [token] => 95f29e56e289fee50286dc7ba95986465969cfa3b15c77a1b0d27888daf378f0
+    [password] => $2y$10$450hG7bwONcVhrq/ScUqquXsJP6Iq1F1dcU79hbWZZUB/8tt2YpW2
+)
+
+[09-May-2021 19:45:56 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620557156
+[09-May-2021 19:46:05 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 19:46:05 Asia/Tokyo] デバッグ:ログイン画面
+[09-May-2021 19:46:05 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 19:46:05 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-May-2021 19:46:05 Asia/Tokyo] デバッグ:セッションID：2uvarjbvt3vtdj5ml085g16mlf
+[09-May-2021 19:46:05 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [auth_key] => qpfrQYlD
+    [email] => aiueo12@aiueo.com
+    [auth_limit] => 1620549430
+    [msg] => 
+    [token] => 95f29e56e289fee50286dc7ba95986465969cfa3b15c77a1b0d27888daf378f0
+    [password] => $2y$10$450hG7bwONcVhrq/ScUqquXsJP6Iq1F1dcU79hbWZZUB/8tt2YpW2
+)
+
+[09-May-2021 19:46:05 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620557165
+[09-May-2021 19:46:05 Asia/Tokyo] デバッグ:POSTされました。
+[09-May-2021 19:46:05 Asia/Tokyo] デバッグ:クエリ成功しました。
+[09-May-2021 19:46:05 Asia/Tokyo] デバッグ:クエリ成功しました。
+[09-May-2021 19:46:05 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[09-May-2021 19:46:05 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 19:46:05 Asia/Tokyo] デバッグ:マイページ画面
+[09-May-2021 19:46:05 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 19:46:05 Asia/Tokyo] デバッグ:クエリ成功しました。
+[09-May-2021 19:46:05 Asia/Tokyo] デバッグ:クエリ成功しました。
+[09-May-2021 22:28:05 Asia/Tokyo] デバッグ:ログイン有効期限切れです。
+[09-May-2021 22:28:05 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 22:28:05 Asia/Tokyo] デバッグ:マイページ画面
+[09-May-2021 22:28:05 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 22:28:05 Asia/Tokyo] デバッグ:クエリ成功しました。
+[09-May-2021 22:28:05 Asia/Tokyo] デバッグ:クエリ成功しました。
+[09-May-2021 22:28:05 Asia/Tokyo] デバッグ:クエリ成功しました。
+[09-May-2021 22:28:05 Asia/Tokyo] デバッグ:クエリ成功しました。
+[09-May-2021 22:28:05 Asia/Tokyo] デバッグ:クエリ成功しました。
+[09-May-2021 22:28:05 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 22:28:05 Asia/Tokyo] デバッグ:ログイン画面
+[09-May-2021 22:28:05 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 22:28:05 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-May-2021 22:28:05 Asia/Tokyo] デバッグ:セッションID：lo0jl5n5r6677drau9fanepneh
+[09-May-2021 22:28:05 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[09-May-2021 22:28:05 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620566885
+[09-May-2021 22:28:12 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 22:28:12 Asia/Tokyo] デバッグ:ログイン画面
+[09-May-2021 22:28:12 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 22:28:12 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-May-2021 22:28:12 Asia/Tokyo] デバッグ:セッションID：lq0gmlsbu5dje1am8g64tjufr1
+[09-May-2021 22:28:12 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[09-May-2021 22:28:12 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620566892
+[09-May-2021 22:28:12 Asia/Tokyo] デバッグ:POSTされました。
+[09-May-2021 22:28:12 Asia/Tokyo] デバッグ:クエリ成功しました。
+[09-May-2021 22:28:12 Asia/Tokyo] デバッグ:クエリ成功しました。
+[09-May-2021 22:28:13 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[09-May-2021 22:28:13 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 22:28:13 Asia/Tokyo] デバッグ:マイページ画面
+[09-May-2021 22:28:13 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 22:28:13 Asia/Tokyo] デバッグ:クエリ成功しました。
+[09-May-2021 22:28:13 Asia/Tokyo] デバッグ:クエリ成功しました。
+[09-May-2021 22:28:13 Asia/Tokyo] デバッグ:クエリ成功しました。
+[09-May-2021 22:28:13 Asia/Tokyo] デバッグ:クエリ成功しました。
+[09-May-2021 22:28:13 Asia/Tokyo] デバッグ:クエリ成功しました。
+[09-May-2021 22:28:33 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[09-May-2021 22:28:33 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 22:28:33 Asia/Tokyo] デバッグ:マイページ画面
+[09-May-2021 22:28:33 Asia/Tokyo] デバッグ:==============================================
+[09-May-2021 22:28:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[09-May-2021 22:28:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[09-May-2021 22:28:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[09-May-2021 22:28:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[09-May-2021 22:28:33 Asia/Tokyo] デバッグ:クエリ成功しました。

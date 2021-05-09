@@ -88,8 +88,8 @@ include_once('head.php');
                                 <h2 class="p-article__shopName"><?= sanitize(getFormData('shop_name')); ?></h2>
                                 <div class="c-submission__icon">
                                 <div class="c-submission__icon">
-                                    <i class="far fa-heart c-submission__fav js-click-animation"></i>
-                                    <i class="fas fa-heart c-submission__fav2 js-click-animation2"></i>
+                                <i class="fa-heart c-submission__fav js-click-animation <?= ((!empty($u_id)) && isFavorite(getFormData('id'), $u_id)) ? 'fas is-active' : 'far'; ?>" data-shopid="<?= sanitize($val['id']); ?>"></i>
+                                <i class="fa-heart c-submission__fav2 js-click-animation2 <?= ((!empty($u_id)) && isFavorite(getFormData('id'), $u_id)) ? 'far is-active' : 'fas'; ?>"></i>
                                 </div>
                             </div>
                             </div>
@@ -277,7 +277,7 @@ include_once('head.php');
 
     </main>
     <div class="u-upArrow">
-        <i class="fas fa-chevron-circle-up"></i>
+        <i class="fas fa-chevron-circle-up js-goTop"></i>
     </div>
     <!-- フッター -->
     <?php include_once('footer.php'); ?>

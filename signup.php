@@ -51,6 +51,7 @@ if(!empty($_POST)) {
             // メール送信
             $_SESSION['email'] = $email;
             include('sendMailSubmit.php');
+            $_SESSION['msg'] = MSG::SENDMAIL;
             debug('URL発行');
             debug($url);
     
@@ -69,6 +70,9 @@ include_once('head.php');
 ?>
 
 <body>
+    <div class="p-flash js-show-msg u-bgColor-accent">
+        <?= getFlashMessage($_SESSION['msg']); ?>
+    </div>
 
 <?php
 include_once('header.php');

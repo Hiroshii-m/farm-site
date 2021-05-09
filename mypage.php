@@ -15,6 +15,8 @@ $u_id = $_SESSION['user_id'];
 $s_id = getShopId($u_id);
 // 登録した商品情報を取得
 $products = getProducts($s_id);
+// お気に入りの店舗情報を取得
+$shops = getFavoShop($u_id);
 // 表示する商品のカウント初期化
 $count_product = 0;
 
@@ -63,54 +65,26 @@ include_once('head.php');
                 <div class="c-container c-submission">
                     <h2 class="c-container__tit">お気に入りの販売所</h2>
                     <ul class="c-submission__body">
-                        <li class="c-submission__item">
-                            <div class="c-submission__visual">
-                                <div class="c-submission__img"><img src="images/pic2.jpeg" alt=""></div>
-                                <p class="c-submission__author">北海の農家</p>
-                            </div>
-                            <div class="c-submission__content">
-                                <a href="" class="c-submission__tit">今こそ五感で楽しむ「バナナ」</a>
-                                <div class="c-submission__detail">
-                                    どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。
+                        <?php if(!empty($shops)): ?>
+                            <?php foreach($shops as $key => $val): ?>
+                            <li class="c-submission__item">
+                                <div class="c-submission__visual">
+                                    <div class="c-submission__img"><img src="<?= sanitize(showImg($val['shop_img1'])); ?>" alt=""></div>
+                                    <p class="c-submission__author"><?= sanitize(showData($val['screen_name'])); ?></p>
                                 </div>
-                            </div>
-                            <div class="c-submission__icon">
-                                <i class="far fa-heart c-submission__fav js-click-animation"></i>
-                                <i class="fas fa-heart c-submission__fav2 js-click-animation2"></i>
-                            </div>
-                        </li>
-                        <li class="c-submission__item">
-                            <div class="c-submission__visual">
-                                <div class="c-submission__img"><img src="images/pic2.jpeg" alt=""></div>
-                                <p class="c-submission__author">北海の農家</p>
-                            </div>
-                            <div class="c-submission__content">
-                                <a href="" class="c-submission__tit">今こそ五感で楽しむ「バナナ」</a>
-                                <div class="c-submission__detail">
-                                    どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。
+                                <div class="c-submission__content">
+                                    <a href="" class="c-submission__tit"><?= sanitize(showData($val['shop_name'])); ?></a>
+                                    <div class="c-submission__detail">
+                                        <?= sanitize(showData($val['social_profile'])); ?>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="c-submission__icon">
-                                <i class="far fa-heart c-submission__fav js-click-animation"></i>
-                                <i class="fas fa-heart c-submission__fav2 js-click-animation2"></i>
-                            </div>
-                        </li>
-                        <li class="c-submission__item">
-                            <div class="c-submission__visual">
-                                <div class="c-submission__img"><img src="images/pic2.jpeg" alt=""></div>
-                                <p class="c-submission__author">北海の農家</p>
-                            </div>
-                            <div class="c-submission__content">
-                                <a href="" class="c-submission__tit">今こそ五感で楽しむ「バナナ」</a>
-                                <div class="c-submission__detail">
-                                    どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。
+                                <div class="c-submission__icon">
+                                    <i class="fa-heart c-submission__fav js-click-animation <?= ((!empty($u_id)) && isFavorite($val['id'], $u_id)) ? 'fas is-active' : 'far'; ?>" data-shopid="<?= sanitize($val['id']); ?>"></i>
+                                    <i class="fa-heart c-submission__fav2 js-click-animation2 <?= ((!empty($u_id)) && isFavorite($val['id'], $u_id)) ? 'far is-active' : 'fas'; ?>"></i>
                                 </div>
-                            </div>
-                            <div class="c-submission__icon">
-                                <i class="far fa-heart c-submission__fav js-click-animation"></i>
-                                <i class="fas fa-heart c-submission__fav2 js-click-animation2"></i>
-                            </div>
-                        </li>
+                            </li>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
                     </ul>
                     <button class="c-container__btn u-btn u-btn-border-shadow u-btn-border-shadow--color">もっと見る</button>
                 </div>

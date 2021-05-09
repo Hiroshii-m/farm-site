@@ -73,6 +73,7 @@ $kyusyu = array(
 );
 // 登録された販売所を取得
 $shopData = (!empty(getShopList())) ? getShopList() : '';
+$u_id = (!empty($_SESSION['user_id'])) ? $_SESSION['user_id'] : '';
 
 ?>
 
@@ -194,8 +195,8 @@ include_once('head.php');
                                 </div>
                             </div>
                             <div class="c-submission__icon">
-                                <i class="far fa-heart c-submission__fav js-click-animation" data-shopid="<?= sanitize($val['id']); ?>"></i>
-                                <i class="fas fa-heart c-submission__fav2 js-click-animation2"></i>
+                                <i class="fa-heart c-submission__fav js-click-animation <?= ((!empty($u_id)) && isFavorite($val['id'], $u_id)) ? 'fas is-active' : 'far'; ?>" data-shopid="<?= sanitize($val['id']); ?>"></i>
+                                <i class="fa-heart c-submission__fav2 js-click-animation2 <?= ((!empty($u_id)) && isFavorite($val['id'], $u_id)) ? 'far is-active' : 'fas'; ?>"></i>
                             </div>
                         </li>
                         <?php endforeach; ?>
@@ -206,61 +207,6 @@ include_once('head.php');
                     <?php } ?>
                 </div>
             </section><!-- /最近登録された販売所 -->
-            
-            <!-- 最近の投稿 -->
-            <section id="l-blog">
-                <div class="c-container c-submission">
-                    <h2 class="c-container__tit">最近の投稿</h2>
-                    <ul class="c-submission__body">
-                        <li class="c-submission__item">
-                            <div class="c-submission__visual">
-                                <div class="c-submission__img"><img src="images/pic2.jpeg" alt=""></div>
-                                <p class="c-submission__author">北海の農家</p>
-                            </div>
-                            <div class="c-submission__content">
-                                <a href="" class="c-submission__tit">今こそ五感で楽しむ「バナナ」</a>
-                                <div class="c-submission__detail">
-                                    どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。
-                                </div>
-                            </div>
-                            <div class="c-submission__icon">
-                                <i class="far fa-heart"></i>
-                            </div>
-                        </li>
-                        <li class="c-submission__item">
-                            <div class="c-submission__visual">
-                                <div class="c-submission__img"><img src="images/pic2.jpeg" alt=""></div>
-                                <p class="c-submission__author">北海の農家</p>
-                            </div>
-                            <div class="c-submission__content">
-                                <a href="" class="c-submission__tit">今こそ五感で楽しむ「バナナ」</a>
-                                <div class="c-submission__detail">
-                                    どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。
-                                </div>
-                            </div>
-                            <div class="c-submission__icon">
-                                <i class="far fa-heart"></i>
-                            </div>
-                        </li>
-                        <li class="c-submission__item">
-                            <div class="c-submission__visual">
-                                <div class="c-submission__img"><img src="images/pic2.jpeg" alt=""></div>
-                                <p class="c-submission__author">北海の農家</p>
-                            </div>
-                            <div class="c-submission__content">
-                                <a href="" class="c-submission__tit">今こそ五感で楽しむ「バナナ」</a>
-                                <div class="c-submission__detail">
-                                    どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。
-                                </div>
-                            </div>
-                            <div class="c-submission__icon">
-                                <i class="far fa-heart"></i>
-                            </div>
-                        </li>
-                    </ul>
-                    <button class="c-container__btn u-btn u-btn-border-shadow u-btn-border-shadow--color">もっと見る</button>
-                </div>
-            </section><!-- /最近の投稿 -->
 
         </div>
         <!-- サイドバー -->
@@ -269,7 +215,7 @@ include_once('head.php');
 
 
     <div class="u-upArrow">
-        <i class="fas fa-chevron-circle-up"></i>
+        <i class="fas fa-chevron-circle-up js-goTop"></i>
     </div>
     <!-- フッター -->
     <?php include('footer.php'); ?>

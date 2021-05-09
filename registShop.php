@@ -69,6 +69,7 @@ if(!empty($_POST)) {
     $social_profile = (!empty($_POST['social_profile'])) ? $_POST['social_profile'] : '';
     $postcode = (!empty($_POST['postcode'])) ? $_POST['postcode'] : '';
     $prefecture_id = (!empty($_POST['prefecture_id'])) ? $_POST['prefecture_id'] : 0;
+    $city_id = '';
     $city_name = (!empty($_POST['city_name'])) ? $_POST['city_name'] : '';
     $street = (!empty($_POST['street'])) ? $_POST['street'] : '';
     $building = (!empty($_POST['building'])) ? $_POST['building'] : '';
@@ -124,7 +125,7 @@ if(!empty($_POST)) {
             // 店舗登録
             $dbh = dbConnect();
             $sql = 'INSERT INTO shops (`user_id`, `shop_name`, `social_profile`, `postcode`, `prefecture_id`, `city_id`, `street`, `building`, `tel`, `map_iframe`, `shop_img1`, `shop_img2`, `shop_img3`, `create_date`) VALUES (:u_id, :shop_name, :social_profile, :postcode, :prefecture_id, :city_id, :street, :building, :tel, :map_iframe, :shop_img1, :shop_img2, :shop_img3, :create_date);';
-            $data = array(':u_id' => $u_id, ':shop_name' => $shop_name, ':social_profile' => $social_profile, ':postcode' => $postcode, ':prefecture_id' => $prefecture_id, ':city_id' => $city_id, ':street' => $street, ':building' => $building, ':tel' => $tel, ':map_iframe' -> $map_iframe, ':shop_img1' => $shop_img1, ':shop_img2' => $shop_img2, ':shop_img3' => $shop_img3, ':create_date' => date('Y-m-d H:i:s'));
+            $data = array(':u_id' => $u_id, ':shop_name' => $shop_name, ':social_profile' => $social_profile, ':postcode' => $postcode, ':prefecture_id' => $prefecture_id, ':city_id' => $city_id, ':street' => $street, ':building' => $building, ':tel' => $tel, ':map_iframe' => $map_iframe, ':shop_img1' => $shop_img1, ':shop_img2' => $shop_img2, ':shop_img3' => $shop_img3, ':create_date' => date('Y-m-d'));
             queryPost($dbh, $sql, $data);
 
             header("Location:mypage.php");

@@ -66,6 +66,7 @@ EOT;
                 sendMail($from, $to, $subject, $comment);
                 debug($auth_key);
                 header("Location:remindPassRecieve.php");
+                $_SESSION['msg'] = MSG::SENDMAIL;
                 exit;
             }
 

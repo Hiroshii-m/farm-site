@@ -7,10 +7,14 @@ window.addEventListener("DOMContentLoaded", function() {
         $spMenuTarget = document.querySelector('.js-sp-menu-target'),
         $favorites,
         $favorites2,
-        likeShopId;
+        likeShopId,
+        $showMsg,
+        $goTop;
 
         $favorites = document.querySelectorAll(".js-click-animation") || null;
         $favorites2 = document.querySelectorAll(".js-click-animation2") || null;
+        $showMsg = document.querySelector(".js-show-msg") || null;
+        $goTop = document.querySelector(".js-goTop") || null;
 
     // ********************************************************
     // 関数
@@ -19,6 +23,19 @@ window.addEventListener("DOMContentLoaded", function() {
     // ********************************************************
     // 処理内容
     // ********************************************************
+    // js-goTopボタンを押した場合、トップへ移動する
+    if($goTop !== null) {
+        $goTop.addEventListener("click", function() {
+            scrollTo(0, 0);
+        });
+    }
+    // フラッシュメッセージの動き
+    if($showMsg !== null) {
+        if($showMsg.textContent.replace(/^[\s　]+|[\s　]+$/g, "").length) {
+            setTimeout(function(){ $showMsg.classList.add('active'); }, 10);
+            setTimeout(function(){ $showMsg.classList.remove('active'); }, 8000);
+        }
+    }
     window.addEventListener("scroll", function() {
         if($spMenuTarget.offsetTop < window.scrollY) {
             $headerNav.classList.add('active');
@@ -33,7 +50,6 @@ window.addEventListener("DOMContentLoaded", function() {
         $favorites.forEach(function($fav, index) {
             likeShopId = $fav.dataset.shopid || null;
             $fav.addEventListener("click", function() {
-               
                 var xhr = new XMLHttpRequest();
                 var fd = new FormData();
                 xhr.open("POST", "favorite.php");

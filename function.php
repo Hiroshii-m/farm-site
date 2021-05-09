@@ -70,6 +70,7 @@ class VALID {
 class MSG {
     const UNEXPECTED = '予期せぬエラーが発生しました。しばらく経ってから、やり直してください。';
     const DOLOGIN = 'コメントするには、ログインをする必要があります。アカウントがなければ、サインアップからお願いいたします。';
+    const SENDMAIL = 'メールを送信しました。';
 }
 
 // ================================================
@@ -210,7 +211,7 @@ function getCityMatch($prefecture_id, $city_name, $key) {
     global $err_msg;
     try {
         $dbh = dbConnect();
-        $sql = 'SELECT `id` FROM cites WHERE `prefecture_id` = :p_id AND `city_name` = :c_name';
+        $sql = 'SELECT `id` FROM cities WHERE `prefecture_id` = :p_id AND `city_name` = :c_name';
         $data = array(':p_id' => $prefecture_id, ':c_name' => $city_name);
         $stmt = queryPost($dbh, $sql, $data);
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -321,6 +322,55 @@ function queryPost($dbh, $sql, $data){
     }
     debug('クエリ成功しました。');
     return $stmt;
+}
+// ログインしているかどうか
+function isLogin() {
+    if(!empty($_SESSION['login_date'])) {
+        // ログイン有効期限切れ
+        if($_SESSION['login_date'] + $_SESSION['login_limit'] < time()) {
+            return false;
+        }else{
+            return true;
+        }
+    }else{
+        return false;
+    }
+}
+// お気に入り登録されているかどうか
+function isFavorite($s_id, $u_id) {
+    try {
+        $dbh = dbConnect();
+        $sql = 'SELECT * FROM `favorites` WHERE `shop_id` = :s_id AND `user_id` = :u_id';
+        $data = array(':s_id' => $s_id, ':u_id' => $u_id);
+        $stmt = queryPost($dbh, $sql, $data);
+        $rst = $stmt->fetch(PDO::FETCH_ASSOC);
+        if(!empty($rst)) {
+            return true;
+        }else{
+            return false;
+        }
+    } catch ( Exception $e ) {
+        error_log('エラー発生:' . $e->getMessage());
+        $err_msg['common'] = MSG::UNEXPECTED;
+    }
+}
+// お気に入りの店舗を取得
+function getFavoShop($u_id) {
+    try {
+        $dbh = dbConnect();
+        $sql = 'SELECT f.`shop_id`, s.`id`, s.`shop_name`, s.`social_profile`, s.`shop_img1`, u.`screen_name` FROM `favorites` AS f LEFT JOIN `shops` AS s ON f.`shop_id` = s.`id` LEFT JOIN `users` AS u ON s.`user_id` = u.`id` WHERE f.`user_id` = :u_id AND f.`delete_flg` = 0 LIMIT 10 OFFSET 0';
+        $data = array(':u_id' => $u_id);
+        $stmt = queryPost($dbh, $sql, $data);
+        $result = $stmt->fetchAll();
+        if(!empty($result)) {
+            return $result;
+        } else {
+            return '';
+        }
+    } catch ( Exception $e ) {
+        error_log('エラー発生:' . $e->getMessage());
+        $err_msg['common'] = MSG::UNEXPECTED;
+    }
 }
 // ユーザー情報を取得
 function getUser($u_id) {
@@ -729,4 +779,12 @@ function appendGetParam($arr_del_key = array()) {
 // 検索キーワードを分割する
 function splitKeywords($input, $limit = -1) {
     return preg_split('/[\p{Z}\p{Cc}]++/u', $input, $limit, PREG_SPLIT_NO_EMPTY);
+}
+// フラッシュメッセージ
+function getFlashMessage($msg) {
+    $showMsg = $msg;
+    $_SESSION['msg'] = '';
+    if(!empty($showMsg)) {
+        return $showMsg;
+    }
 }

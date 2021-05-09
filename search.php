@@ -21,6 +21,7 @@ if(!empty($_GET['clear'])) {
 
 // GETパラメータを取得
 // ================================
+$u_id = (!empty($_SESSION['user_id'])) ? $_SESSION['user_id'] : '';
 $p_id = (!empty($_GET['p_id'])) ? $_GET['p_id'] : '';
 $word_search = (!empty($_GET['word_search'])) ? splitKeywords($_GET['word_search']) : '';
 $city_id = (!empty($_GET['city_id'])) ? $_GET['city_id'] : '';
@@ -131,7 +132,10 @@ include_once('head.php');
                                     <p class="c-card__category">野菜</p>
                                     <a href="single.php<?= appendGetParam().'&shop_id='.sanitize($val['id']); ?>" class="c-card__title"><?= sanitize(showData($val['shop_name'])); ?></a>
                                 </div>
-                                <i class="far fa-heart c-card__icon"></i>
+                                <div class="c-submission__icon">
+                                <i class="fa-heart c-submission__fav js-click-animation <?= ((!empty($u_id)) && isFavorite($val['id'], $u_id)) ? 'fas is-active' : 'far'; ?>" data-shopid="<?= sanitize($val['id']); ?>"></i>
+                                <i class="fa-heart c-submission__fav2 js-click-animation2 <?= ((!empty($u_id)) && isFavorite($val['id'], $u_id)) ? 'far is-active' : 'fas'; ?>"></i>
+                            </div>
                             </div>
                             <div class="c-card__body">
                                 <div class="c-card__item">
@@ -161,7 +165,7 @@ include_once('head.php');
         <?php include('sidebar_favo.php'); ?>
     </main>
     <div class="u-upArrow">
-        <i class="fas fa-chevron-circle-up"></i>
+        <i class="fas fa-chevron-circle-up js-goTop"></i>
     </div>
 
     <!-- フッター -->

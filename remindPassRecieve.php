@@ -60,6 +60,9 @@ $headTitle = '認証キー確認画面';
 require('head.php');
 ?>
 <body>
+    <div class="p-flash js-show-msg u-bgColor-accent">
+        <?= getFlashMessage($_SESSION['msg']); ?>
+    </div>
     <!-- ヘッダー -->
     <?php require('header.php') ?>;
 
