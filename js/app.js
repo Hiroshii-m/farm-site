@@ -15,6 +15,8 @@ window.addEventListener("DOMContentLoaded", function() {
         $favorites2 = document.querySelectorAll(".js-click-animation2") || null;
         $showMsg = document.querySelector(".js-show-msg") || null;
         $goTop = document.querySelector(".js-goTop") || null;
+        console.log($favorites);
+        console.log($favorites2);
 
     // ********************************************************
     // 関数
@@ -48,21 +50,21 @@ window.addEventListener("DOMContentLoaded", function() {
     // お気に入りアイコンが押された場合
     if($favorites !== undefined && $favorites !== null) {
         $favorites.forEach(function($fav, index) {
-            likeShopId = $fav.dataset.shopid || null;
             $fav.addEventListener("click", function() {
+                likeShopId = $fav.dataset.shopid || null;
                 var xhr = new XMLHttpRequest();
                 var fd = new FormData();
                 xhr.open("POST", "favorite.php");
                 fd.set('shopId', likeShopId);
-                xhr.addEventListener('readystatechange', function() {
-                    if((xhr.readyState === 4) && (xhr.status === 200)) {
-                        // styleを変える
-                        $fav.classList.toggle('far');
-                        $fav.classList.toggle('fas');
-                        $fav.classList.toggle('is-active');
-                        $favorites2[index].classList.toggle('is-active');
-                    }
-                });
+                // xhr.addEventListener('readystatechange', function() {
+                //     if((xhr.readyState === 4) && (xhr.status === 200)) {
+                //     }
+                // });
+                // styleを変える
+                $fav.classList.toggle('far');
+                $fav.classList.toggle('fas');
+                $fav.classList.toggle('is-active');
+                $favorites2[index].classList.toggle('is-active');
                 xhr.send(fd);
             });
         })

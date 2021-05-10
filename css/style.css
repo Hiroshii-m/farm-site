@@ -1132,6 +1132,7 @@ i {
 }
 .c-pagination__item.active {
   background: #D3DEF1;
+  cursor: default;
 }
 
 .c-form {

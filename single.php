@@ -12,6 +12,7 @@ debug('==============================================');
 
 // 店舗idを格納
 $s_id = (!empty($_GET['shop_id'])) ? $_GET['shop_id'] : '';
+$favoNum = getFavoCount($s_id);
 // 店舗情報を取得
 $dbFormData = (!empty($s_id)) ? getShopOne($s_id) : '';
 // メッセージ情報を取得
@@ -79,7 +80,7 @@ include_once('head.php');
                             <p class="p-article__category">穀物</p>
                             <div class="p-article__favorite">
                                 <p>
-                                    お気に入り：100件&nbsp;
+                                    お気に入り：<?= sanitize($favoNum); ?>件&nbsp;
                                 </p>
                             </div>
                         </div>
@@ -88,7 +89,7 @@ include_once('head.php');
                                 <h2 class="p-article__shopName"><?= sanitize(getFormData('shop_name')); ?></h2>
                                 <div class="c-submission__icon">
                                 <div class="c-submission__icon">
-                                <i class="fa-heart c-submission__fav js-click-animation <?= ((!empty($u_id)) && isFavorite(getFormData('id'), $u_id)) ? 'fas is-active' : 'far'; ?>" data-shopid="<?= sanitize($val['id']); ?>"></i>
+                                <i class="fa-heart c-submission__fav js-click-animation <?= ((!empty($u_id)) && isFavorite(getFormData('id'), $u_id)) ? 'fas is-active' : 'far'; ?>" data-shopid="<?= sanitize(getFormData('id')); ?>"></i>
                                 <i class="fa-heart c-submission__fav2 js-click-animation2 <?= ((!empty($u_id)) && isFavorite(getFormData('id'), $u_id)) ? 'far is-active' : 'fas'; ?>"></i>
                                 </div>
                             </div>

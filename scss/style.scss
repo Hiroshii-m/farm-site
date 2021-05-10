@@ -340,6 +340,7 @@
         border-radius: 5px;
         &.active {
             background: $color_accent;
+            cursor: default;
         }
     }
 }

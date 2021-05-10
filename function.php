@@ -355,17 +355,46 @@ function isFavorite($s_id, $u_id) {
     }
 }
 // お気に入りの店舗を取得
-function getFavoShop($u_id) {
+function getFavoShop($u_id, $currentMinNum = 0, $span = 10) {
     try {
         $dbh = dbConnect();
-        $sql = 'SELECT f.`shop_id`, s.`id`, s.`shop_name`, s.`social_profile`, s.`shop_img1`, u.`screen_name` FROM `favorites` AS f LEFT JOIN `shops` AS s ON f.`shop_id` = s.`id` LEFT JOIN `users` AS u ON s.`user_id` = u.`id` WHERE f.`user_id` = :u_id AND f.`delete_flg` = 0 LIMIT 10 OFFSET 0';
+        $sql = 'SELECT f.`shop_id`, s.`shop_name`, s.`social_profile`, s.`shop_img1`, u.`screen_name` FROM `favorites` AS f LEFT JOIN `shops` AS s ON f.`shop_id` = s.`id` LEFT JOIN `users` AS u ON s.`user_id` = u.`id` WHERE f.`user_id` = :u_id AND f.`delete_flg` = 0';
         $data = array(':u_id' => $u_id);
         $stmt = queryPost($dbh, $sql, $data);
-        $result = $stmt->fetchAll();
+        $rst['total'] = $stmt->rowCount();
+        $rst['total_page'] = ceil($rst['total']/$span);
+        if(empty($stmt)) {
+            return false;
+        }
+
+        $dbh = dbConnect();
+        $sql = 'SELECT f.`shop_id`, s.`shop_name`, s.`social_profile`, s.`shop_img1`, u.`screen_name` FROM `favorites` AS f LEFT JOIN `shops` AS s ON f.`shop_id` = s.`id` LEFT JOIN `users` AS u ON s.`user_id` = u.`id` WHERE f.`user_id` = :u_id AND f.`delete_flg` = 0';
+        $sql .= ' LIMIT :span OFFSET :currentMinNum';
+        $data = array(':u_id', ':span' => $span, ':currentMinNum' => $currentMinNum);
+        $stmt = queryPost($dbh, $sql, $data);
+        $result['data'] = $stmt->fetchAll();
         if(!empty($result)) {
             return $result;
         } else {
             return '';
+        }
+    } catch ( Exception $e ) {
+        error_log('エラー発生:' . $e->getMessage());
+        $err_msg['common'] = MSG::UNEXPECTED;
+    }
+}
+// お気に入り店舗件数を取得
+function getFavoCount($s_id) {
+    try {
+        $dbh = dbConnect();
+        $sql = 'SELECT count(*) FROM `favorites` WHERE `shop_id` = :s_id';
+        $data = array(':s_id' => $s_id);
+        $stmt = queryPost($dbh, $sql, $data);
+        $rst = $stmt->fetch(PDO::FETCH_ASSOC);
+        if(!empty($rst)) {
+            return $rst['count(*)'];
+        }else{
+            return 0;
         }
     } catch ( Exception $e ) {
         error_log('エラー発生:' . $e->getMessage());
@@ -455,7 +484,7 @@ function getShopMatch($currentMinNum = 0, $p_id, $city_id, $category_id, $word_s
     try {
         // マッチした店舗数を取得
         $dbh = dbConnect();
-        $sql = 'SELECT DISTINCT s.`id` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0';
+        $sql = 'SELECT DISTINCT s.`id` FROM `shops` AS s LEFT JOIN `products` AS p ON s.`id` = p.`shop_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0';
         $data = array(':p_id' => $p_id);
         if(!empty($city_id)) {
             $sql .= ' AND s.`city_id` = :city_id';
@@ -485,7 +514,7 @@ function getShopMatch($currentMinNum = 0, $p_id, $city_id, $category_id, $word_s
 
         // 表示する店舗情報を取得
         $dbh = dbConnect();
-        $sql = 'SELECT DISTINCT s.`id`, s.`shop_name`, s.`social_profile`, s.`prefecture_id`, s.`street`, s.`building`, s.`shop_img1`, c.`city_name` FROM `shops` AS s INNER JOIN `products` AS p ON s.`id` = p.`shop_id` INNER JOIN `cities` AS c ON p.`category_id` = c.`id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND p.`delete_flg` = 0';
+        $sql = 'SELECT DISTINCT s.`id`, s.`shop_name`, s.`social_profile`, s.`prefecture_id`, s.`street`, s.`building`, s.`shop_img1`, c.`city_name` FROM `shops` AS s LEFT JOIN `products` AS p ON s.`id` = p.`shop_id` LEFT JOIN `cities` AS c ON s.`city_id` = c.`id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0';
         $data = array(':p_id' => $p_id);
         if(!empty($city_id)) {
             $sql .= ' AND s.`city_id` = :city_id';
@@ -707,19 +736,21 @@ function pagination( $currentPageNum, $totalPageNum, $link = '', $pageColNum = 5
                 echo '';
             }else{
                 echo '<li class=""><a class="c-pagination__item" href="search.php';
-                echo (!empty(appendGetParam())) ? appendGetParam().'&page_id=1' : '?page_id=1';
+                echo (!empty(appendGetParam())) ? appendGetParam(array('page_id')).'&page_id=1' : '?page_id=1';
                 echo '">&lt;</a></li>';
             }
             for($i = $minPageNum; $i <= $maxPageNum; $i++){
-                echo '<li class=""><a class="c-pagination__item" href="';
-                echo (!empty(appendGetParam())) ? appendGetParam().'&page_id='.$i : '?page_id='.$i;
+                echo '<li class=""><a class="c-pagination__item ';
+                if((int)$currentPageNum === $i){ echo 'active'; }
+                echo '" href="';
+                echo (!empty(appendGetParam())) ? appendGetParam(array('page_id')).'&page_id='.$i : '?page_id='.$i;
                 echo '">'.$i.'</a></li>';
             }
             if($currentPageNum == $totalPageNum){
                 echo '';
             }else{
                 echo '<li class=""><a class="c-pagination__item" href="';
-                echo (!empty(appendGetParam())) ? appendGetParam().'page_id='.$totalPageNum : '?page_id='.$totalPageNum;
+                echo (!empty(appendGetParam())) ? appendGetParam(array('page_id')).'&page_id='.$totalPageNum : '?page_id='.$totalPageNum;
                 echo '">&gt;</a></li>';
             }
         echo '</ul>';
@@ -764,11 +795,11 @@ function makeRandomKey($length = 8) {
 }
 // GETパラメータ付与
 // $del_key:付与から取り除きたいGETパラメータのキー
-function appendGetParam($arr_del_key = array()) {
+function appendGetParam($del_key = array()) {
     if(!empty($_GET)) {
         $str = '?';
         foreach($_GET as $key => $val) {
-            if(!in_array($key, $arr_del_key, true)) {
+            if(!in_array($key, $del_key, true)) {
                 $str .= $key.'='.$val.'&';
             }
         }

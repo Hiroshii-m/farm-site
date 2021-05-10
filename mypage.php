@@ -65,7 +65,7 @@ include_once('head.php');
                 <div class="c-container c-submission">
                     <h2 class="c-container__tit">お気に入りの販売所</h2>
                     <ul class="c-submission__body">
-                        <?php if(!empty($shops)): ?>
+                        <?php if(!empty($shops)){ ?>
                             <?php foreach($shops as $key => $val): ?>
                             <li class="c-submission__item">
                                 <div class="c-submission__visual">
@@ -73,18 +73,20 @@ include_once('head.php');
                                     <p class="c-submission__author"><?= sanitize(showData($val['screen_name'])); ?></p>
                                 </div>
                                 <div class="c-submission__content">
-                                    <a href="" class="c-submission__tit"><?= sanitize(showData($val['shop_name'])); ?></a>
+                                    <a href="single.php<?= (!empty(appendGetParam())) ? appendGetParam().'&shop_id='.$val['shop_id'] : '?shop_id='.$val['shop_id']; ?>" class="c-submission__tit"><?= sanitize(showData($val['shop_name'])); ?></a>
                                     <div class="c-submission__detail">
                                         <?= sanitize(showData($val['social_profile'])); ?>
                                     </div>
                                 </div>
                                 <div class="c-submission__icon">
-                                    <i class="fa-heart c-submission__fav js-click-animation <?= ((!empty($u_id)) && isFavorite($val['id'], $u_id)) ? 'fas is-active' : 'far'; ?>" data-shopid="<?= sanitize($val['id']); ?>"></i>
-                                    <i class="fa-heart c-submission__fav2 js-click-animation2 <?= ((!empty($u_id)) && isFavorite($val['id'], $u_id)) ? 'far is-active' : 'fas'; ?>"></i>
+                                    <i class="fa-heart c-submission__fav js-click-animation <?= (isFavorite($val['shop_id'], $u_id) === true) ? 'fas is-active' : 'far'; ?>" data-shopid="<?= sanitize($val['shop_id']); ?>"></i>
+                                    <i class="fa-heart c-submission__fav2 js-click-animation2 <?= (isFavorite($val['shop_id'], $u_id) === true) ? 'far is-active' : 'fas'; ?>"></i>
                                 </div>
                             </li>
                             <?php endforeach; ?>
-                        <?php endif; ?>
+                        <?php }else{ ?>
+                        <p>お気に入り登録されていません。</p>
+                        <?php } ?>
                     </ul>
                     <button class="c-container__btn u-btn u-btn-border-shadow u-btn-border-shadow--color">もっと見る</button>
                 </div>
@@ -145,7 +147,6 @@ include_once('head.php');
     <!-- フッター -->
     <?php include_once('footer.php'); ?>
     <!-- 個別のjsファイル -->
-    <script src="js/app_icon.js"></script>
     <script src="js/app_modal.js"></script>
 </body>
 </html>

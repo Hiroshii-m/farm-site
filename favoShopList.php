@@ -1,56 +1,32 @@
 <?php
-// 予想時間:6h
-// かかった時間：21mi
+// 予想時間:1h
+// かかった時間：
 
 // 共通ファイルの読み込み
 require_once('function.php');
+require('auth.php');
 
 debug('==============================================');
-debug('検索画面');
+debug('お気に入り一覧画面');
 debug('==============================================');
 
 // 変数初期化
 // ================================
 $dbShopData = array();
-// 検索クリアが押された場合
-if(!empty($_GET['clear'])) {
-    $_GET['word_search'] = '';
-    $_GET['city_id'] = '';
-    $_GET['category_id'] = '';
-}
 
 // GETパラメータを取得
 // ================================
 $u_id = (!empty($_SESSION['user_id'])) ? $_SESSION['user_id'] : '';
-$p_id = (!empty($_GET['p_id'])) ? $_GET['p_id'] : '';
-$word_search = (!empty($_GET['word_search'])) ? splitKeywords($_GET['word_search']) : '';
-$city_id = (!empty($_GET['city_id'])) ? $_GET['city_id'] : '';
-$category_id = (!empty($_GET['category_id'])) ? $_GET['category_id'] : '';
 $currentPageNum = (!empty($_GET['page_id'])) ? $_GET['page_id'] : 1;
-if(empty($p_id) && is_numeric($p_id)) {
-    header("Location:index.php");
-}
-// 処理内容
-// =================================
-// 都道府県idから市区町村idと名前を取得
-$cityInfo = (!empty($p_id)) ? array_merge(array(0 => array('city_name' => 'エリア')), getCityInfo($p_id)) : array();
-// カテゴリー情報を取得
-$category = array_merge(array(0 => array('category_name' => 'カテゴリー')), getCategory());
 // 表示件数
 $listSpan = 10;
 // 現在のレコードの先頭を算出
 $currentMinNum = (($currentPageNum-1) * $listSpan);
-// DBからデータを取得
-$dbShopData = getShopMatch($currentMinNum, $p_id, $city_id, $category_id, $word_search);
-// debug(print_r($dbShopData, true));
-// 合計店舗数
-$totalShopNum = (!empty($dbShopData['total'])) ? $dbShopData['total'] : 0;
-// 合計ページ数
-$totalPageNum = (!empty($dbShopData['total_page'])) ? $dbShopData['total_page'] : 0;
+$dbShopData = getFavoShop($u_id, $currentMinNum, $listSpan);
 
 ?>
 <?php
-$headTitle = '検索画面';
+$headTitle = 'お気に入り一覧画面';
 include_once('head.php');
 ?>
 <body>
@@ -66,40 +42,6 @@ include_once('head.php');
                 <p class="u-prev p-article__prev">検索画面</p>
             </div><!-- /パンクズリスト -->
 
-            <!-- 検索ボックス -->
-            <section id="l-search" class="">
-                <div class="p-search">
-                    <form method="get" class="p-search__option">
-                        <input type="hidden" name="p_id" value="<?= $p_id; ?>">
-                        <input name="word_search" type="text" class="p-search__input" placeholder="キーワード[例：商品名、キャベツ、店名、季節、4月]" value="<?= getFormData('word_search', true); ?>">
-                        <h2 class="p-search__title">条件を絞る</h2>
-                        <div class="p-search__area">
-                            <select class="p-search__select" name="city_id" id="">
-                                <?php if(!empty(array_filter($category, "array_filter"))){ ?>
-                                    <?php foreach($cityInfo as $key => $val): ?>
-                                        <option value="<?= $key; ?>" <?= ((!empty($city_id) || (int)$city_id === 0) && (int)$city_id === $key) ? 'selected' : ''; ?>><?= sanitize(showData($val['city_name'])); ?></option>
-                                    <?php endforeach; ?>
-                                <?php } ?>
-                            </select>
-                            <i class="fas fa-chevron-down p-search__arrow"></i>
-                        </div>
-                        <div class="p-search__area">
-                            <select class="p-search__select" name="category_id" id="">
-                                <?php if(!empty(array_filter($category, "array_filter"))){ ?>
-                                    <?php foreach($category as $key => $val): ?>
-                                        <option value="<?= $key; ?>" <?= ((!empty($category_id) || (int)$category_id === 0) && (int)$category_id === $key) ? 'selected' : ''; ?>><?= sanitize(showData($val['category_name'])); ?></option>
-                                    <?php endforeach; ?>
-                                <?php } ?>
-                            </select>
-                            <i class="fas fa-chevron-down p-search__arrow"></i>
-                        </div>
-                        <div class="p-search__submit">
-                            <button class="p-search__commit u-miniBtn">こだわり検索する</button>
-                            <button name="clear" value="1" class="p-search__clear u-miniBtn">全てクリア</button>
-                        </div>
-                    </form>
-                </div>
-            </section><!-- /検索ボックス -->
         
             <!-- 店舗一覧 -->
             <section id="l-shopList" class="">
