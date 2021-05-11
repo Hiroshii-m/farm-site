@@ -320,7 +320,7 @@ function queryPost($dbh, $sql, $data){
         $err_msg['common'] = MSG::UNEXPECTED;
         return 0;
     }
-    debug('クエリ成功しました。');
+    // debug('クエリ成功しました。');
     return $stmt;
 }
 // ログインしているかどうか
@@ -358,7 +358,7 @@ function isFavorite($s_id, $u_id) {
 function getFavoShop($u_id, $currentMinNum = 0, $span = 10) {
     try {
         $dbh = dbConnect();
-        $sql = 'SELECT f.`shop_id`, s.`shop_name`, s.`social_profile`, s.`shop_img1`, u.`screen_name` FROM `favorites` AS f LEFT JOIN `shops` AS s ON f.`shop_id` = s.`id` LEFT JOIN `users` AS u ON s.`user_id` = u.`id` WHERE f.`user_id` = :u_id AND f.`delete_flg` = 0';
+        $sql = 'SELECT f.`shop_id`, s.`shop_name`, s.`social_profile`, s.`street`, s.`building`, s.`shop_img1`, u.`screen_name`, c.`city_name` FROM `favorites` AS f INNER JOIN `shops` AS s ON f.`shop_id` = s.`id` INNER JOIN `users` AS u ON s.`user_id` = u.`id` INNER JOIN `cities` AS c ON s.`city_id` = c.`id` WHERE f.`user_id` = :u_id AND f.`delete_flg` = 0';
         $data = array(':u_id' => $u_id);
         $stmt = queryPost($dbh, $sql, $data);
         $rst['total'] = $stmt->rowCount();
@@ -367,14 +367,14 @@ function getFavoShop($u_id, $currentMinNum = 0, $span = 10) {
             return false;
         }
 
-        $dbh = dbConnect();
-        $sql = 'SELECT f.`shop_id`, s.`shop_name`, s.`social_profile`, s.`shop_img1`, u.`screen_name` FROM `favorites` AS f LEFT JOIN `shops` AS s ON f.`shop_id` = s.`id` LEFT JOIN `users` AS u ON s.`user_id` = u.`id` WHERE f.`user_id` = :u_id AND f.`delete_flg` = 0';
+        $sql = 'SELECT f.`shop_id`, s.`shop_name`, s.`social_profile`, s.`street`, s.`building`, s.`shop_img1`, u.`screen_name`, c.`city_name` FROM `favorites` AS f INNER JOIN `shops` AS s ON f.`shop_id` = s.`id` INNER JOIN `users` AS u ON s.`user_id` = u.`id` INNER JOIN `cities` AS c ON s.`city_id` = c.`id` WHERE f.`user_id` = :u_id AND f.`delete_flg` = 0';
         $sql .= ' LIMIT :span OFFSET :currentMinNum';
-        $data = array(':u_id', ':span' => $span, ':currentMinNum' => $currentMinNum);
+        $data = array(':u_id' => $u_id, ':span' => $span, ':currentMinNum' => $currentMinNum);
         $stmt = queryPost($dbh, $sql, $data);
-        $result['data'] = $stmt->fetchAll();
-        if(!empty($result)) {
-            return $result;
+        $rst['data'] = $stmt->fetchAll();
+        // 製品情報を取得（TODO）
+        if(!empty($rst)) {
+            return $rst;
         } else {
             return '';
         }
@@ -514,7 +514,7 @@ function getShopMatch($currentMinNum = 0, $p_id, $city_id, $category_id, $word_s
 
         // 表示する店舗情報を取得
         $dbh = dbConnect();
-        $sql = 'SELECT DISTINCT s.`id`, s.`shop_name`, s.`social_profile`, s.`prefecture_id`, s.`street`, s.`building`, s.`shop_img1`, c.`city_name` FROM `shops` AS s LEFT JOIN `products` AS p ON s.`id` = p.`shop_id` LEFT JOIN `cities` AS c ON s.`city_id` = c.`id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0';
+        $sql = 'SELECT DISTINCT s.`id`, s.`shop_name`, s.`social_profile`, s.`prefecture_id`, s.`street`, s.`building`, s.`shop_img1`, c.`city_name`, cate.`category_name` FROM `shops` AS s LEFT JOIN `products` AS p ON s.`id` = p.`shop_id` LEFT JOIN `cities` AS c ON s.`city_id` = c.`id` LEFT JOIN `category` AS cate ON cate.`id` = p.`category_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0';
         $data = array(':p_id' => $p_id);
         if(!empty($city_id)) {
             $sql .= ' AND s.`city_id` = :city_id';
@@ -540,6 +540,21 @@ function getShopMatch($currentMinNum = 0, $p_id, $city_id, $category_id, $word_s
         $stmt = queryPost($dbh, $sql, $data);
         if(!empty($stmt)) {
             $rst['data'] = $stmt->fetchAll();
+        } else {
+            return false;
+        }
+
+        if(!empty($rst['data'])) {
+            // 取得した店舗idを元に商品情報を取得
+            foreach($rst['data'] as $key => $val) {
+                $sql = 'SELECT * FROM `products` WHERE `shop_id` = :s_id';
+                $data = array(':s_id' => $val['id']);
+                $stmt = queryPost($dbh, $sql, $data);
+                $rst['data'][$key]['products'] = $stmt->fetchAll();
+            }
+        }
+
+        if(!empty($rst)) {
             return $rst;
         } else {
             return false;

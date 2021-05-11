@@ -23,6 +23,8 @@ $listSpan = 10;
 // 現在のレコードの先頭を算出
 $currentMinNum = (($currentPageNum-1) * $listSpan);
 $dbShopData = getFavoShop($u_id, $currentMinNum, $listSpan);
+// debug(print_r($dbShopData, true));
+
 
 ?>
 <?php
@@ -35,32 +37,17 @@ include_once('head.php');
 
     <main id="l-main" class="u-bgColor js-sp-menu-target">
         <div class="c-main">
-
-            <!-- パンクズリスト -->
-            <div class="c-pankuzu">
-                <a href="index.php" class="u-prev p-article__prev">TOP</a><span>&nbsp;&gt;</span>
-                <p class="u-prev p-article__prev">検索画面</p>
-            </div><!-- /パンクズリスト -->
-
         
             <!-- 店舗一覧 -->
             <section id="l-shopList" class="">
                 <div class="p-shopList">
                     <h2 class="p-shopList__heading">
-                        <p class="p-shopList__title">店舗一覧</p>
+                        <p class="p-shopList__title">お気に入り一覧</p>
                         <p class="p-shopList__showNum">
                         <?php if(1 <= $currentPageNum){ ?>
                             <?= $currentMinNum + 1; ?>~<?= $currentMinNum + count($dbShopData['data']); ?>
                         <?php }else{ echo '0'; } ?>
                             件表示/合計<?= (!empty($dbShopData['total'])) ? $dbShopData['total'] : '0'; ?>件ヒット</p>
-                        <div class="p-shopList__terms">
-                            <?php if(!empty($_GET['city_id']) && is_numeric($_GET['city_id'])){ ?>
-                                <span class="p-shopList__tag u-tag-sub"><?= sanitize($cityInfo[$_GET['city_id']]['city_name']); ?></span>
-                            <?php } ?>
-                            <?php if(!empty($_GET['category_id']) && is_numeric($_GET['category_id'])){ ?>
-                                <span class="p-shopList__tag u-tag-accent"><?= sanitize($category[$_GET['category_id']]['category_name']); ?></span>
-                            <?php } ?>
-                        </div>
                     </h2>
                     <?php if(!empty($dbShopData)) { ?>
                     <ul class="p-shopList__body">
@@ -72,11 +59,11 @@ include_once('head.php');
                                 </div>
                                 <div class="c-card__summary">
                                     <p class="c-card__category">野菜</p>
-                                    <a href="single.php<?= appendGetParam().'&shop_id='.sanitize($val['id']); ?>" class="c-card__title"><?= sanitize(showData($val['shop_name'])); ?></a>
+                                    <a href="single.php<?= appendGetParam().'&shop_id='.sanitize($val['shop_id']); ?>" class="c-card__title"><?= sanitize(showData($val['shop_name'])); ?></a>
                                 </div>
                                 <div class="c-submission__icon">
-                                    <i class="fa-heart c-submission__fav js-click-animation <?= ((!empty($u_id)) && isFavorite($val['id'], $u_id)) ? 'fas is-active' : 'far'; ?>" data-shopid="<?= sanitize($val['id']); ?>"></i>
-                                    <i class="fa-heart c-submission__fav2 js-click-animation2 <?= ((!empty($u_id)) && isFavorite($val['id'], $u_id)) ? 'far is-active' : 'fas'; ?>"></i>
+                                    <i class="fa-heart c-submission__fav js-click-animation <?= ((!empty($u_id)) && isFavorite($val['shop_id'], $u_id)) ? 'fas is-active' : 'far'; ?>" data-shopid="<?= sanitize($val['shop_id']); ?>"></i>
+                                    <i class="fa-heart c-submission__fav2 js-click-animation2 <?= ((!empty($u_id)) && isFavorite($val['shop_id'], $u_id)) ? 'far is-active' : 'fas'; ?>"></i>
                                 </div>
                             </div>
                             <div class="c-card__body">
@@ -96,15 +83,17 @@ include_once('head.php');
                         </li>
                         <?php endforeach; ?>
                     </ul>
-                    <?php } ?>
                     <!-- ページング -->
-                    <?php echo pagination($currentPageNum, $totalPageNum); ?>
+                    <?php pagination($currentPageNum, $dbShopData['total_page']); ?>
+                    <?php }else{ ?>
+                    <p>お気に入り登録された店舗はありません。</p>
+                    <?php } ?>
                 </div>
             </section><!-- /店舗一覧 -->
             
         </div>
         <!-- サイドバー -->
-        <?php include('sidebar_favo.php'); ?>
+        <?php include('sidebar_mypage.php'); ?>
     </main>
     <div class="u-upArrow">
         <i class="fas fa-chevron-circle-up js-goTop"></i>

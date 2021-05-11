@@ -42,7 +42,6 @@ $listSpan = 10;
 $currentMinNum = (($currentPageNum-1) * $listSpan);
 // DBからデータを取得
 $dbShopData = getShopMatch($currentMinNum, $p_id, $city_id, $category_id, $word_search);
-// debug(print_r($dbShopData, true));
 // 合計店舗数
 $totalShopNum = (!empty($dbShopData['total'])) ? $dbShopData['total'] : 0;
 // 合計ページ数
@@ -122,14 +121,14 @@ include_once('head.php');
                     </h2>
                     <?php if(!empty($dbShopData)) { ?>
                     <ul class="p-shopList__body">
-                        <?php foreach($dbShopData['data'] as $key => $val): ?>
+                        <?php foreach($dbShopData['data'] as $key => $val){ ?>
                         <li class="c-card">
                             <div class="c-card__head">
                                 <div class="c-card__img">
                                     <img src="<?= sanitize(showImg($val['shop_img1'])); ?>" alt="">
                                 </div>
                                 <div class="c-card__summary">
-                                    <p class="c-card__category">野菜</p>
+                                    <p class="c-card__category"><?= sanitize(showData($val['category_name'])); ?></p>
                                     <a href="single.php<?= appendGetParam().'&shop_id='.sanitize($val['id']); ?>" class="c-card__title"><?= sanitize(showData($val['shop_name'])); ?></a>
                                 </div>
                                 <div class="c-submission__icon">
@@ -140,7 +139,13 @@ include_once('head.php');
                             <div class="c-card__body">
                                 <div class="c-card__item">
                                     <p class="c-card__row"><i class="fas fa-shopping-bag"></i>&nbsp;商品</p>
-                                    <p class="c-card__detail">米1g 100円、白菜 100円、ピーマン100円</p>
+                                    <p class="c-card__detail">
+                                    <?php foreach($val['products'] as $products => $product){ ?>
+                                        <?= sanitize($product['p_name']); ?>
+                                        <?= sanitize($product['p_value']); ?>円
+                                        <?= sanitize($product['p_number']); ?>
+                                    <?php } ?>
+                                    </p>
                                 </div>
                                 <div class="c-card__item">
                                     <p class="c-card__row"><i class="fas fa-file-alt"></i>&nbsp;詳細</p>
@@ -152,7 +157,7 @@ include_once('head.php');
                                 </div>
                             </div>
                         </li>
-                        <?php endforeach; ?>
+                        <?php } ?>
                     </ul>
                     <?php } ?>
                     <!-- ページング -->

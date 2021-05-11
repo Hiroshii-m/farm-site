@@ -65,8 +65,8 @@ include_once('head.php');
                 <div class="c-container c-submission">
                     <h2 class="c-container__tit">お気に入りの販売所</h2>
                     <ul class="c-submission__body">
-                        <?php if(!empty($shops)){ ?>
-                            <?php foreach($shops as $key => $val): ?>
+                        <?php if(!empty($shops['data'])){ ?>
+                            <?php foreach($shops['data'] as $key => $val): ?>
                             <li class="c-submission__item">
                                 <div class="c-submission__visual">
                                     <div class="c-submission__img"><img src="<?= sanitize(showImg($val['shop_img1'])); ?>" alt=""></div>
@@ -88,7 +88,7 @@ include_once('head.php');
                         <p>お気に入り登録されていません。</p>
                         <?php } ?>
                     </ul>
-                    <button class="c-container__btn u-btn u-btn-border-shadow u-btn-border-shadow--color">もっと見る</button>
+                    <a href="favoShopList.php" class="c-container__btn u-btn u-btn-border-shadow u-btn-border-shadow--color">もっと見る</a>
                 </div>
             </section><!-- /最近登録された販売所 -->
 

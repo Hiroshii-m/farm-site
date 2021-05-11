@@ -15883,3 +15883,2349 @@ Stack trace:
 [10-May-2021 19:51:48 Asia/Tokyo] デバッグ:クエリ成功しました。
 [10-May-2021 19:51:48 Asia/Tokyo] デバッグ:クエリ成功しました。
 [10-May-2021 19:51:48 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:39:33 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 12:39:33 Asia/Tokyo] デバッグ:TOP画面
+[11-May-2021 12:39:33 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 12:39:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:39:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:39:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:39:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:39:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:39:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:39:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:39:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:39:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:39:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:39:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:39:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:39:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:39:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:39:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:39:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:39:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:39:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:39:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:39:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:39:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:39:33 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:39:37 Asia/Tokyo] デバッグ:ログイン有効期限切れです。
+[11-May-2021 12:39:37 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 12:39:37 Asia/Tokyo] デバッグ:ログイン画面
+[11-May-2021 12:39:37 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 12:39:37 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[11-May-2021 12:39:37 Asia/Tokyo] デバッグ:セッションID：
+[11-May-2021 12:39:37 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [login_date] => 1620642441
+    [login_limit] => 3600
+    [user_id] => 3
+)
+
+[11-May-2021 12:39:37 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620704377
+[11-May-2021 12:39:37 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1620646041
+[11-May-2021 12:39:37 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 12:39:37 Asia/Tokyo] デバッグ:ログイン画面
+[11-May-2021 12:39:37 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 12:39:37 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[11-May-2021 12:39:37 Asia/Tokyo] デバッグ:セッションID：q7rqpa67mpbtpppendiqc03phi
+[11-May-2021 12:39:37 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[11-May-2021 12:39:37 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620704377
+[11-May-2021 12:40:19 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based
+[11-May-2021 12:41:09 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based
+[11-May-2021 12:41:11 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based
+[11-May-2021 12:41:11 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 26
+[11-May-2021 12:41:11 Asia/Tokyo] PHP Notice:  Undefined variable: appendGetParam in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 42
+[11-May-2021 12:41:11 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Function name must be a string in /Applications/MAMP/htdocs/output2/farm/favoShopList.php:42
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 42
+[11-May-2021 12:41:31 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based
+[11-May-2021 12:41:31 Asia/Tokyo] PHP Notice:  Undefined variable: appendGetParam in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 42
+[11-May-2021 12:41:31 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Function name must be a string in /Applications/MAMP/htdocs/output2/farm/favoShopList.php:42
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 42
+[11-May-2021 12:41:31 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based
+[11-May-2021 12:41:31 Asia/Tokyo] PHP Notice:  Undefined variable: appendGetParam in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 42
+[11-May-2021 12:41:31 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Function name must be a string in /Applications/MAMP/htdocs/output2/farm/favoShopList.php:42
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 42
+[11-May-2021 12:42:53 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based
+[11-May-2021 12:42:53 Asia/Tokyo] PHP Notice:  Undefined variable: appendGetParam in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 42
+[11-May-2021 12:42:53 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Function name must be a string in /Applications/MAMP/htdocs/output2/farm/favoShopList.php:42
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 42
+[11-May-2021 12:42:54 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based
+[11-May-2021 12:42:54 Asia/Tokyo] PHP Notice:  Undefined variable: appendGetParam in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 42
+[11-May-2021 12:42:54 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Function name must be a string in /Applications/MAMP/htdocs/output2/farm/favoShopList.php:42
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 42
+[11-May-2021 12:43:30 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based
+[11-May-2021 12:43:30 Asia/Tokyo] PHP Notice:  Undefined variable: appendGetParam in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 42
+[11-May-2021 12:43:30 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Function name must be a string in /Applications/MAMP/htdocs/output2/farm/favoShopList.php:42
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 42
+[11-May-2021 12:44:46 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based
+[11-May-2021 12:44:46 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 53
+[11-May-2021 12:44:46 Asia/Tokyo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 53
+[11-May-2021 12:46:24 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based
+[11-May-2021 12:46:24 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 53
+[11-May-2021 12:46:24 Asia/Tokyo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 53
+[11-May-2021 12:50:21 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based
+[11-May-2021 12:50:21 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based
+[11-May-2021 12:52:43 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[11-May-2021 12:52:43 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 12:52:43 Asia/Tokyo] デバッグ:お気に入り一覧画面
+[11-May-2021 12:52:43 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 12:52:43 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:52:43 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based
+[11-May-2021 12:52:43 Asia/Tokyo] デバッグ:
+[11-May-2021 12:55:25 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[11-May-2021 12:55:25 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 12:55:25 Asia/Tokyo] デバッグ:お気に入り一覧画面
+[11-May-2021 12:55:25 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 12:55:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:55:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:55:25 Asia/Tokyo] デバッグ:Array
+(
+    [data] => Array
+        (
+            [0] => Array
+                (
+                    [shop_id] => 1
+                    [shop_name] => 屯田スクラム
+                    [social_profile] => 化学肥料は一切なし。動物系、植物系の肥料をふんだんに使って自然に優しく。土にこだわっている。
+1. ふかふかの土
+有機肥料がたっぷり入った特製の柔らかな土。アスパラガスは土の中のミネラルで甘みやコクがあるアスパラガスに仕上がります。
+2. 美しい自然と水
+眞鍋牧場は山々に囲まれた高台にあり、清らかな地下水に恵まれている環境です。
+                    [shop_img1] => uploads/5146bcb40e6b81b1afb89254c422c9cfa7c0e714.jpeg
+                    [screen_name] => サトシ
+                )
+
+            [1] => Array
+                (
+                    [shop_id] => 4
+                    [shop_name] => 山城の里
+                    [social_profile] => 
+                    [shop_img1] => 
+                    [screen_name] => 
+                )
+
+            [2] => Array
+                (
+                    [shop_id] => 5
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [shop_img1] => 
+                    [screen_name] => 
+                )
+
+            [3] => Array
+                (
+                    [shop_id] => 6
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [shop_img1] => 
+                    [screen_name] => 
+                )
+
+            [4] => Array
+                (
+                    [shop_id] => 7
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [shop_img1] => 
+                    [screen_name] => 
+                )
+
+            [5] => Array
+                (
+                    [shop_id] => 8
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [shop_img1] => 
+                    [screen_name] => 
+                )
+
+            [6] => Array
+                (
+                    [shop_id] => 9
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [shop_img1] => 
+                    [screen_name] => 
+                )
+
+            [7] => Array
+                (
+                    [shop_id] => 10
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [shop_img1] => 
+                    [screen_name] => 
+                )
+
+            [8] => Array
+                (
+                    [shop_id] => 12
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [shop_img1] => 
+                    [screen_name] => 
+                )
+
+        )
+
+)
+
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 12:55:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 12:55:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: city_name in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: street in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: building in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 12:55:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 12:55:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: city_name in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: street in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: building in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 12:55:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 12:55:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: city_name in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: street in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: building in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 12:55:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 12:55:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: city_name in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: street in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: building in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 12:55:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 12:55:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: city_name in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: street in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: building in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 12:55:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 12:55:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: city_name in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: street in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: building in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 12:55:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 12:55:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: city_name in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: street in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: building in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 12:55:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 12:55:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: city_name in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: street in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: building in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 12:55:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 12:55:25 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: city_name in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: street in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined index: building in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:55:25 Asia/Tokyo] PHP Notice:  Undefined variable: totalPageNum in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 93
+[11-May-2021 12:58:39 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[11-May-2021 12:58:39 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 12:58:39 Asia/Tokyo] デバッグ:お気に入り一覧画面
+[11-May-2021 12:58:39 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 12:58:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:58:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:58:39 Asia/Tokyo] デバッグ:Array
+(
+    [data] => Array
+        (
+            [0] => Array
+                (
+                    [shop_id] => 1
+                    [shop_name] => 屯田スクラム
+                    [social_profile] => 化学肥料は一切なし。動物系、植物系の肥料をふんだんに使って自然に優しく。土にこだわっている。
+1. ふかふかの土
+有機肥料がたっぷり入った特製の柔らかな土。アスパラガスは土の中のミネラルで甘みやコクがあるアスパラガスに仕上がります。
+2. 美しい自然と水
+眞鍋牧場は山々に囲まれた高台にあり、清らかな地下水に恵まれている環境です。
+                    [shop_img1] => uploads/5146bcb40e6b81b1afb89254c422c9cfa7c0e714.jpeg
+                    [screen_name] => サトシ
+                )
+
+            [1] => Array
+                (
+                    [shop_id] => 4
+                    [shop_name] => 山城の里
+                    [social_profile] => 
+                    [shop_img1] => 
+                    [screen_name] => 
+                )
+
+            [2] => Array
+                (
+                    [shop_id] => 5
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [shop_img1] => 
+                    [screen_name] => 
+                )
+
+            [3] => Array
+                (
+                    [shop_id] => 6
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [shop_img1] => 
+                    [screen_name] => 
+                )
+
+            [4] => Array
+                (
+                    [shop_id] => 7
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [shop_img1] => 
+                    [screen_name] => 
+                )
+
+            [5] => Array
+                (
+                    [shop_id] => 8
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [shop_img1] => 
+                    [screen_name] => 
+                )
+
+            [6] => Array
+                (
+                    [shop_id] => 9
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [shop_img1] => 
+                    [screen_name] => 
+                )
+
+            [7] => Array
+                (
+                    [shop_id] => 10
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [shop_img1] => 
+                    [screen_name] => 
+                )
+
+            [8] => Array
+                (
+                    [shop_id] => 12
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [shop_img1] => 
+                    [screen_name] => 
+                )
+
+        )
+
+)
+
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 12:58:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 12:58:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: city_name in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: street in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: building in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 12:58:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 12:58:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: city_name in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: street in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: building in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 12:58:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 12:58:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: city_name in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: street in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: building in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 12:58:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 12:58:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: city_name in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: street in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: building in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 12:58:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 12:58:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: city_name in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: street in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: building in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 12:58:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 12:58:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: city_name in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: street in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: building in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 12:58:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 12:58:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: city_name in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: street in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: building in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 12:58:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 12:58:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: city_name in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: street in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: building in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 12:58:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 12:58:39 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: city_name in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: street in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined index: building in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 86
+[11-May-2021 12:58:39 Asia/Tokyo] PHP Notice:  Undefined variable: totalPageNum in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 93
+[11-May-2021 13:17:05 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 13:17:05 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 13:17:05 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 13:17:05 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 13:17:05 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 13:17:05 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 13:17:05 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 13:17:05 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 13:17:05 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 13:17:05 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 13:17:05 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 13:17:05 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 13:17:05 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 13:17:05 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 13:17:05 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 13:17:05 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 13:17:05 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 13:17:05 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 13:17:05 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 13:17:05 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 13:17:05 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 13:17:05 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 13:17:05 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 13:17:05 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 13:17:05 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 13:17:05 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 13:17:05 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 13:17:05 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 13:17:05 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 13:17:05 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 13:17:05 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 13:17:05 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 13:17:05 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 13:17:05 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 13:17:05 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 13:17:05 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 13:17:05 Asia/Tokyo] PHP Notice:  Undefined variable: totalPageNum in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 93
+[11-May-2021 14:22:09 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:22:09 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:22:09 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:22:09 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:22:09 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:22:09 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:22:09 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:22:09 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:22:09 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:22:09 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:22:09 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OR  `shop_id` =  OR  `shop_id` =  OR  `shop_id` =  OR  `shop_id` =  OR  `shop_id' at line 1
+[11-May-2021 14:22:09 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 111
+[11-May-2021 14:22:09 Asia/Tokyo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Applications/MAMP/htdocs/output2/farm/search.php on line 111
+[11-May-2021 14:22:55 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:22:55 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:22:55 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:22:55 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:22:55 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:22:55 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:22:55 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:22:55 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:22:55 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:22:55 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:22:55 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OR  `shop_id` =  OR  `shop_id` =  OR  `shop_id` =  OR  `shop_id` =  OR  `shop_id' at line 1
+[11-May-2021 14:22:55 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 111
+[11-May-2021 14:22:55 Asia/Tokyo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Applications/MAMP/htdocs/output2/farm/search.php on line 111
+[11-May-2021 14:23:25 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:23:25 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:23:25 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:23:25 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:23:25 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:23:25 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:23:25 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:23:25 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:23:25 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:23:25 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:23:25 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OR  `shop_id` =  OR  `shop_id` =  OR  `shop_id` =  OR  `shop_id` =  OR  `shop_id' at line 1
+[11-May-2021 14:24:48 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:24:48 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:24:48 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:24:48 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:24:48 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:24:48 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:24:48 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:24:48 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:24:48 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:24:48 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:24:48 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OR  `shop_id` =  OR  `shop_id` =  OR  `shop_id` =  OR  `shop_id` =  OR  `shop_id' at line 1
+[11-May-2021 14:24:48 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 111
+[11-May-2021 14:24:48 Asia/Tokyo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Applications/MAMP/htdocs/output2/farm/search.php on line 111
+[11-May-2021 14:26:38 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:26:38 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:26:38 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:26:38 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:26:38 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:26:38 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:26:38 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:26:38 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:26:38 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:26:38 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:26:38 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OR  `shop_id` =  OR  `shop_id` =  OR  `shop_id` =  OR  `shop_id` =  OR  `shop_id' at line 1
+[11-May-2021 14:26:38 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 111
+[11-May-2021 14:26:38 Asia/Tokyo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Applications/MAMP/htdocs/output2/farm/search.php on line 111
+[11-May-2021 14:27:27 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 14:27:27 Asia/Tokyo] デバッグ:検索画面
+[11-May-2021 14:27:27 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 14:27:27 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:27:27 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:27:27 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:27:27 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:27:27 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:27:27 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:27:27 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:27:27 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:27:27 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:27:27 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:27:27 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:27:27 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:27:27 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:27:27 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 552
+[11-May-2021 14:27:27 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [shop_name] => 屯田スクラム
+            [social_profile] => 化学肥料は一切なし。動物系、植物系の肥料をふんだんに使って自然に優しく。土にこだわっている。
+1. ふかふかの土
+有機肥料がたっぷり入った特製の柔らかな土。アスパラガスは土の中のミネラルで甘みやコクがあるアスパラガスに仕上がります。
+2. 美しい自然と水
+眞鍋牧場は山々に囲まれた高台にあり、清らかな地下水に恵まれている環境です。
+            [prefecture_id] => 1
+            [street] => 屯田５条１１丁目２−６
+            [building] => 
+            [shop_img1] => uploads/5146bcb40e6b81b1afb89254c422c9cfa7c0e714.jpeg
+            [city_name] => 札幌市中央区
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [shop_name] => 
+            [social_profile] => 
+            [prefecture_id] => 1
+            [street] => あえいうえお
+            [building] => 
+            [shop_img1] => 
+            [city_name] => 札幌市北区
+        )
+
+    [2] => Array
+        (
+            [id] => 3
+            [shop_name] => アイウエオ
+            [social_profile] => 
+            [prefecture_id] => 1
+            [street] => 
+            [building] => 
+            [shop_img1] => 
+            [city_name] => 札幌市北区
+        )
+
+    [3] => Array
+        (
+            [id] => 4
+            [shop_name] => 山城の里
+            [social_profile] => 
+            [prefecture_id] => 1
+            [street] => 屯田５条１１丁目２−６
+            [building] => 
+            [shop_img1] => 
+            [city_name] => 札幌市北区
+        )
+
+    [4] => Array
+        (
+            [id] => 5
+            [shop_name] => 白猫ヤマト
+            [social_profile] => 我ら、白猫卓球部。
+            [prefecture_id] => 1
+            [street] => 屯田５条１１丁目２−６
+            [building] => 
+            [shop_img1] => 
+            [city_name] => 札幌市中央区
+        )
+
+    [5] => Array
+        (
+            [id] => 6
+            [shop_name] => 白猫ヤマト
+            [social_profile] => 我ら、白猫卓球部。
+            [prefecture_id] => 1
+            [street] => 屯田５条１１丁目２−６
+            [building] => 
+            [shop_img1] => 
+            [city_name] => 札幌市中央区
+        )
+
+    [6] => Array
+        (
+            [id] => 7
+            [shop_name] => 白猫ヤマト
+            [social_profile] => 我ら、白猫卓球部。
+            [prefecture_id] => 1
+            [street] => 屯田５条１１丁目２−６
+            [building] => 
+            [shop_img1] => 
+            [city_name] => 札幌市中央区
+        )
+
+    [7] => Array
+        (
+            [id] => 8
+            [shop_name] => 白猫ヤマト
+            [social_profile] => 我ら、白猫卓球部。
+            [prefecture_id] => 1
+            [street] => 屯田５条１１丁目２−６
+            [building] => 
+            [shop_img1] => 
+            [city_name] => 札幌市中央区
+        )
+
+    [8] => Array
+        (
+            [id] => 9
+            [shop_name] => 白猫ヤマト
+            [social_profile] => 我ら、白猫卓球部。
+            [prefecture_id] => 1
+            [street] => 屯田５条１１丁目２−６
+            [building] => 
+            [shop_img1] => 
+            [city_name] => 札幌市中央区
+        )
+
+    [9] => Array
+        (
+            [id] => 10
+            [shop_name] => 白猫ヤマト
+            [social_profile] => 我ら、白猫卓球部。
+            [prefecture_id] => 1
+            [street] => 屯田５条１１丁目２−６
+            [building] => 
+            [shop_img1] => 
+            [city_name] => 札幌市中央区
+        )
+
+)
+
+[11-May-2021 14:27:27 Asia/Tokyo] エラー発生:SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OR  `shop_id` =  OR  `shop_id` =  OR  `shop_id` =  OR  `shop_id` =  OR  `shop_id' at line 1
+[11-May-2021 14:27:27 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/search.php on line 111
+[11-May-2021 14:27:27 Asia/Tokyo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Applications/MAMP/htdocs/output2/farm/search.php on line 111
+[11-May-2021 14:27:57 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 14:27:57 Asia/Tokyo] デバッグ:検索画面
+[11-May-2021 14:27:57 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 14:27:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:27:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:27:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:27:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:27:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:27:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:27:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:27:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:27:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:27:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:27:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:27:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:27:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:27:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:27:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:27:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:27:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:27:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:27:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:27:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:27:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:27:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:27:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:27:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:27:57 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:30:11 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 14:30:11 Asia/Tokyo] デバッグ:検索画面
+[11-May-2021 14:30:11 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 14:30:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:30:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:30:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:30:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:30:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:30:11 Asia/Tokyo] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 4
+            [shop_id] => 1
+            [user_id] => 3
+            [p_name] => 米
+            [p_detail] => 
+            [category_id] => 1
+            [term] => 
+            [p_value] => 100000
+            [p_number] => 10kg
+            [p_img] => 
+            [delete_flg] => 0
+            [create_date] => 2021-04-26
+            [update_date] => 2021-04-27 16:26:50
+        )
+
+)
+
+[11-May-2021 14:30:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:30:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:30:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:30:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:30:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:30:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:30:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:30:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:30:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:30:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:30:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:30:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:30:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:30:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:30:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:30:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:30:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:30:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:30:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:30:11 Asia/Tokyo] デバッグ:クエリ成功しました。
+[11-May-2021 14:37:30 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 14:37:30 Asia/Tokyo] デバッグ:検索画面
+[11-May-2021 14:37:30 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 15:24:11 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 15:24:11 Asia/Tokyo] デバッグ:検索画面
+[11-May-2021 15:24:11 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 15:24:43 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 15:24:43 Asia/Tokyo] デバッグ:検索画面
+[11-May-2021 15:24:43 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 15:24:43 Asia/Tokyo] デバッグ:Array
+(
+    [total] => 72
+    [total_page] => 8
+    [data] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [shop_name] => 屯田スクラム
+                    [social_profile] => 化学肥料は一切なし。動物系、植物系の肥料をふんだんに使って自然に優しく。土にこだわっている。
+1. ふかふかの土
+有機肥料がたっぷり入った特製の柔らかな土。アスパラガスは土の中のミネラルで甘みやコクがあるアスパラガスに仕上がります。
+2. 美しい自然と水
+眞鍋牧場は山々に囲まれた高台にあり、清らかな地下水に恵まれている環境です。
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => uploads/5146bcb40e6b81b1afb89254c422c9cfa7c0e714.jpeg
+                    [city_name] => 札幌市中央区
+                    [category_name] => 穀物
+                )
+
+        )
+
+    [0] => Array
+        (
+            [products] => Array
+                (
+                )
+
+        )
+
+)
+
+[11-May-2021 15:25:54 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 15:25:54 Asia/Tokyo] デバッグ:検索画面
+[11-May-2021 15:25:54 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 15:25:54 Asia/Tokyo] デバッグ:Array
+(
+    [total] => 72
+    [total_page] => 8
+    [data] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [shop_name] => 屯田スクラム
+                    [social_profile] => 化学肥料は一切なし。動物系、植物系の肥料をふんだんに使って自然に優しく。土にこだわっている。
+1. ふかふかの土
+有機肥料がたっぷり入った特製の柔らかな土。アスパラガスは土の中のミネラルで甘みやコクがあるアスパラガスに仕上がります。
+2. 美しい自然と水
+眞鍋牧場は山々に囲まれた高台にあり、清らかな地下水に恵まれている環境です。
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => uploads/5146bcb40e6b81b1afb89254c422c9cfa7c0e714.jpeg
+                    [city_name] => 札幌市中央区
+                    [category_name] => 穀物
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [shop_name] => 
+                    [social_profile] => 
+                    [prefecture_id] => 1
+                    [street] => あえいうえお
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市北区
+                    [category_name] => 
+                )
+
+            [2] => Array
+                (
+                    [id] => 3
+                    [shop_name] => アイウエオ
+                    [social_profile] => 
+                    [prefecture_id] => 1
+                    [street] => 
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市北区
+                    [category_name] => 
+                )
+
+            [3] => Array
+                (
+                    [id] => 4
+                    [shop_name] => 山城の里
+                    [social_profile] => 
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市北区
+                    [category_name] => 
+                )
+
+            [4] => Array
+                (
+                    [id] => 5
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市中央区
+                    [category_name] => 
+                )
+
+            [5] => Array
+                (
+                    [id] => 6
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市中央区
+                    [category_name] => 
+                )
+
+            [6] => Array
+                (
+                    [id] => 7
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市中央区
+                    [category_name] => 
+                )
+
+            [7] => Array
+                (
+                    [id] => 8
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市中央区
+                    [category_name] => 
+                )
+
+            [8] => Array
+                (
+                    [id] => 9
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市中央区
+                    [category_name] => 
+                )
+
+            [9] => Array
+                (
+                    [id] => 10
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市中央区
+                    [category_name] => 
+                )
+
+        )
+
+    [0] => Array
+        (
+            [products] => Array
+                (
+                )
+
+        )
+
+    [1] => Array
+        (
+            [products] => Array
+                (
+                )
+
+        )
+
+    [2] => Array
+        (
+            [products] => Array
+                (
+                )
+
+        )
+
+    [3] => Array
+        (
+            [products] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 4
+                            [shop_id] => 1
+                            [user_id] => 3
+                            [p_name] => 米
+                            [p_detail] => 
+                            [category_id] => 1
+                            [term] => 
+                            [p_value] => 100000
+                            [p_number] => 10kg
+                            [p_img] => 
+                            [delete_flg] => 0
+                            [create_date] => 2021-04-26
+                            [update_date] => 2021-04-27 16:26:50
+                        )
+
+                )
+
+        )
+
+    [4] => Array
+        (
+            [products] => Array
+                (
+                )
+
+        )
+
+    [5] => Array
+        (
+            [products] => Array
+                (
+                )
+
+        )
+
+    [6] => Array
+        (
+            [products] => Array
+                (
+                )
+
+        )
+
+    [7] => Array
+        (
+            [products] => Array
+                (
+                )
+
+        )
+
+    [8] => Array
+        (
+            [products] => Array
+                (
+                )
+
+        )
+
+    [9] => Array
+        (
+            [products] => Array
+                (
+                )
+
+        )
+
+)
+
+[11-May-2021 15:27:22 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 15:27:22 Asia/Tokyo] デバッグ:検索画面
+[11-May-2021 15:27:22 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 15:27:22 Asia/Tokyo] デバッグ:Array
+(
+    [total] => 72
+    [total_page] => 8
+    [data] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [shop_name] => 屯田スクラム
+                    [social_profile] => 化学肥料は一切なし。動物系、植物系の肥料をふんだんに使って自然に優しく。土にこだわっている。
+1. ふかふかの土
+有機肥料がたっぷり入った特製の柔らかな土。アスパラガスは土の中のミネラルで甘みやコクがあるアスパラガスに仕上がります。
+2. 美しい自然と水
+眞鍋牧場は山々に囲まれた高台にあり、清らかな地下水に恵まれている環境です。
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => uploads/5146bcb40e6b81b1afb89254c422c9cfa7c0e714.jpeg
+                    [city_name] => 札幌市中央区
+                    [category_name] => 穀物
+                    [products] => Array
+                        (
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [shop_name] => 
+                    [social_profile] => 
+                    [prefecture_id] => 1
+                    [street] => あえいうえお
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市北区
+                    [category_name] => 
+                    [products] => Array
+                        (
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [id] => 3
+                    [shop_name] => アイウエオ
+                    [social_profile] => 
+                    [prefecture_id] => 1
+                    [street] => 
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市北区
+                    [category_name] => 
+                    [products] => Array
+                        (
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [id] => 4
+                    [shop_name] => 山城の里
+                    [social_profile] => 
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市北区
+                    [category_name] => 
+                    [products] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => 4
+                                    [shop_id] => 1
+                                    [user_id] => 3
+                                    [p_name] => 米
+                                    [p_detail] => 
+                                    [category_id] => 1
+                                    [term] => 
+                                    [p_value] => 100000
+                                    [p_number] => 10kg
+                                    [p_img] => 
+                                    [delete_flg] => 0
+                                    [create_date] => 2021-04-26
+                                    [update_date] => 2021-04-27 16:26:50
+                                )
+
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [id] => 5
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市中央区
+                    [category_name] => 
+                    [products] => Array
+                        (
+                        )
+
+                )
+
+            [5] => Array
+                (
+                    [id] => 6
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市中央区
+                    [category_name] => 
+                    [products] => Array
+                        (
+                        )
+
+                )
+
+            [6] => Array
+                (
+                    [id] => 7
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市中央区
+                    [category_name] => 
+                    [products] => Array
+                        (
+                        )
+
+                )
+
+            [7] => Array
+                (
+                    [id] => 8
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市中央区
+                    [category_name] => 
+                    [products] => Array
+                        (
+                        )
+
+                )
+
+            [8] => Array
+                (
+                    [id] => 9
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市中央区
+                    [category_name] => 
+                    [products] => Array
+                        (
+                        )
+
+                )
+
+            [9] => Array
+                (
+                    [id] => 10
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市中央区
+                    [category_name] => 
+                    [products] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+)
+
+[11-May-2021 15:29:22 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 15:29:22 Asia/Tokyo] デバッグ:検索画面
+[11-May-2021 15:29:22 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 15:29:22 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 551
+[11-May-2021 15:29:22 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 551
+[11-May-2021 15:29:22 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 551
+[11-May-2021 15:29:22 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 551
+[11-May-2021 15:29:22 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 551
+[11-May-2021 15:29:22 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 551
+[11-May-2021 15:29:22 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 551
+[11-May-2021 15:29:22 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 551
+[11-May-2021 15:29:22 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 551
+[11-May-2021 15:29:22 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/function.php on line 551
+[11-May-2021 15:29:22 Asia/Tokyo] デバッグ:Array
+(
+    [total] => 72
+    [total_page] => 8
+    [data] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [shop_name] => 屯田スクラム
+                    [social_profile] => 化学肥料は一切なし。動物系、植物系の肥料をふんだんに使って自然に優しく。土にこだわっている。
+1. ふかふかの土
+有機肥料がたっぷり入った特製の柔らかな土。アスパラガスは土の中のミネラルで甘みやコクがあるアスパラガスに仕上がります。
+2. 美しい自然と水
+眞鍋牧場は山々に囲まれた高台にあり、清らかな地下水に恵まれている環境です。
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => uploads/5146bcb40e6b81b1afb89254c422c9cfa7c0e714.jpeg
+                    [city_name] => 札幌市中央区
+                    [category_name] => 穀物
+                    [products] => Array
+                        (
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [shop_name] => 
+                    [social_profile] => 
+                    [prefecture_id] => 1
+                    [street] => あえいうえお
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市北区
+                    [category_name] => 
+                    [products] => Array
+                        (
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [id] => 3
+                    [shop_name] => アイウエオ
+                    [social_profile] => 
+                    [prefecture_id] => 1
+                    [street] => 
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市北区
+                    [category_name] => 
+                    [products] => Array
+                        (
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [id] => 4
+                    [shop_name] => 山城の里
+                    [social_profile] => 
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市北区
+                    [category_name] => 
+                    [products] => Array
+                        (
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [id] => 5
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市中央区
+                    [category_name] => 
+                    [products] => Array
+                        (
+                        )
+
+                )
+
+            [5] => Array
+                (
+                    [id] => 6
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市中央区
+                    [category_name] => 
+                    [products] => Array
+                        (
+                        )
+
+                )
+
+            [6] => Array
+                (
+                    [id] => 7
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市中央区
+                    [category_name] => 
+                    [products] => Array
+                        (
+                        )
+
+                )
+
+            [7] => Array
+                (
+                    [id] => 8
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市中央区
+                    [category_name] => 
+                    [products] => Array
+                        (
+                        )
+
+                )
+
+            [8] => Array
+                (
+                    [id] => 9
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市中央区
+                    [category_name] => 
+                    [products] => Array
+                        (
+                        )
+
+                )
+
+            [9] => Array
+                (
+                    [id] => 10
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市中央区
+                    [category_name] => 
+                    [products] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+)
+
+[11-May-2021 15:29:41 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 15:29:41 Asia/Tokyo] デバッグ:検索画面
+[11-May-2021 15:29:41 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 15:29:41 Asia/Tokyo] デバッグ:Array
+(
+    [total] => 72
+    [total_page] => 8
+    [data] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [shop_name] => 屯田スクラム
+                    [social_profile] => 化学肥料は一切なし。動物系、植物系の肥料をふんだんに使って自然に優しく。土にこだわっている。
+1. ふかふかの土
+有機肥料がたっぷり入った特製の柔らかな土。アスパラガスは土の中のミネラルで甘みやコクがあるアスパラガスに仕上がります。
+2. 美しい自然と水
+眞鍋牧場は山々に囲まれた高台にあり、清らかな地下水に恵まれている環境です。
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => uploads/5146bcb40e6b81b1afb89254c422c9cfa7c0e714.jpeg
+                    [city_name] => 札幌市中央区
+                    [category_name] => 穀物
+                    [products] => Array
+                        (
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [shop_name] => 
+                    [social_profile] => 
+                    [prefecture_id] => 1
+                    [street] => あえいうえお
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市北区
+                    [category_name] => 
+                    [products] => Array
+                        (
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [id] => 3
+                    [shop_name] => アイウエオ
+                    [social_profile] => 
+                    [prefecture_id] => 1
+                    [street] => 
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市北区
+                    [category_name] => 
+                    [products] => Array
+                        (
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [id] => 4
+                    [shop_name] => 山城の里
+                    [social_profile] => 
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市北区
+                    [category_name] => 
+                    [products] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => 4
+                                    [shop_id] => 1
+                                    [user_id] => 3
+                                    [p_name] => 米
+                                    [p_detail] => 
+                                    [category_id] => 1
+                                    [term] => 
+                                    [p_value] => 100000
+                                    [p_number] => 10kg
+                                    [p_img] => 
+                                    [delete_flg] => 0
+                                    [create_date] => 2021-04-26
+                                    [update_date] => 2021-04-27 16:26:50
+                                )
+
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [id] => 5
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市中央区
+                    [category_name] => 
+                    [products] => Array
+                        (
+                        )
+
+                )
+
+            [5] => Array
+                (
+                    [id] => 6
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市中央区
+                    [category_name] => 
+                    [products] => Array
+                        (
+                        )
+
+                )
+
+            [6] => Array
+                (
+                    [id] => 7
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市中央区
+                    [category_name] => 
+                    [products] => Array
+                        (
+                        )
+
+                )
+
+            [7] => Array
+                (
+                    [id] => 8
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市中央区
+                    [category_name] => 
+                    [products] => Array
+                        (
+                        )
+
+                )
+
+            [8] => Array
+                (
+                    [id] => 9
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市中央区
+                    [category_name] => 
+                    [products] => Array
+                        (
+                        )
+
+                )
+
+            [9] => Array
+                (
+                    [id] => 10
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市中央区
+                    [category_name] => 
+                    [products] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+)
+
+[11-May-2021 15:30:37 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 15:30:37 Asia/Tokyo] デバッグ:検索画面
+[11-May-2021 15:30:37 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 15:30:37 Asia/Tokyo] デバッグ:Array
+(
+    [total] => 72
+    [total_page] => 8
+    [data] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [shop_name] => 屯田スクラム
+                    [social_profile] => 化学肥料は一切なし。動物系、植物系の肥料をふんだんに使って自然に優しく。土にこだわっている。
+1. ふかふかの土
+有機肥料がたっぷり入った特製の柔らかな土。アスパラガスは土の中のミネラルで甘みやコクがあるアスパラガスに仕上がります。
+2. 美しい自然と水
+眞鍋牧場は山々に囲まれた高台にあり、清らかな地下水に恵まれている環境です。
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => uploads/5146bcb40e6b81b1afb89254c422c9cfa7c0e714.jpeg
+                    [city_name] => 札幌市中央区
+                    [category_name] => 穀物
+                    [products] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => 4
+                                    [shop_id] => 1
+                                    [user_id] => 3
+                                    [p_name] => 米
+                                    [p_detail] => 
+                                    [category_id] => 1
+                                    [term] => 
+                                    [p_value] => 100000
+                                    [p_number] => 10kg
+                                    [p_img] => 
+                                    [delete_flg] => 0
+                                    [create_date] => 2021-04-26
+                                    [update_date] => 2021-04-27 16:26:50
+                                )
+
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [shop_name] => 
+                    [social_profile] => 
+                    [prefecture_id] => 1
+                    [street] => あえいうえお
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市北区
+                    [category_name] => 
+                    [products] => Array
+                        (
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [id] => 3
+                    [shop_name] => アイウエオ
+                    [social_profile] => 
+                    [prefecture_id] => 1
+                    [street] => 
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市北区
+                    [category_name] => 
+                    [products] => Array
+                        (
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [id] => 4
+                    [shop_name] => 山城の里
+                    [social_profile] => 
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市北区
+                    [category_name] => 
+                    [products] => Array
+                        (
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [id] => 5
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市中央区
+                    [category_name] => 
+                    [products] => Array
+                        (
+                        )
+
+                )
+
+            [5] => Array
+                (
+                    [id] => 6
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市中央区
+                    [category_name] => 
+                    [products] => Array
+                        (
+                        )
+
+                )
+
+            [6] => Array
+                (
+                    [id] => 7
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市中央区
+                    [category_name] => 
+                    [products] => Array
+                        (
+                        )
+
+                )
+
+            [7] => Array
+                (
+                    [id] => 8
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市中央区
+                    [category_name] => 
+                    [products] => Array
+                        (
+                        )
+
+                )
+
+            [8] => Array
+                (
+                    [id] => 9
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市中央区
+                    [category_name] => 
+                    [products] => Array
+                        (
+                        )
+
+                )
+
+            [9] => Array
+                (
+                    [id] => 10
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [prefecture_id] => 1
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 札幌市中央区
+                    [category_name] => 
+                    [products] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+)
+
+[11-May-2021 15:59:10 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 15:59:10 Asia/Tokyo] デバッグ:検索画面
+[11-May-2021 15:59:10 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 15:59:10 Asia/Tokyo] PHP Notice:  Undefined index: social_profile in /Applications/MAMP/htdocs/output2/farm/search.php on line 152
+[11-May-2021 15:59:10 Asia/Tokyo] PHP Notice:  Undefined index: city_name in /Applications/MAMP/htdocs/output2/farm/search.php on line 156
+[11-May-2021 15:59:10 Asia/Tokyo] PHP Notice:  Undefined index: street in /Applications/MAMP/htdocs/output2/farm/search.php on line 156
+[11-May-2021 15:59:10 Asia/Tokyo] PHP Notice:  Undefined index: building in /Applications/MAMP/htdocs/output2/farm/search.php on line 156
+[11-May-2021 15:59:55 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 15:59:55 Asia/Tokyo] デバッグ:検索画面
+[11-May-2021 15:59:55 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 15:59:55 Asia/Tokyo] PHP Notice:  Undefined index: social_profile in /Applications/MAMP/htdocs/output2/farm/search.php on line 152
+[11-May-2021 15:59:55 Asia/Tokyo] PHP Notice:  Undefined index: city_name in /Applications/MAMP/htdocs/output2/farm/search.php on line 156
+[11-May-2021 15:59:55 Asia/Tokyo] PHP Notice:  Undefined index: street in /Applications/MAMP/htdocs/output2/farm/search.php on line 156
+[11-May-2021 15:59:55 Asia/Tokyo] PHP Notice:  Undefined index: building in /Applications/MAMP/htdocs/output2/farm/search.php on line 156
+[11-May-2021 16:01:16 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 16:01:16 Asia/Tokyo] デバッグ:検索画面
+[11-May-2021 16:01:16 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 16:01:37 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 16:01:37 Asia/Tokyo] デバッグ:検索画面
+[11-May-2021 16:01:37 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 16:01:37 Asia/Tokyo] PHP Notice:  Undefined index: social_profile in /Applications/MAMP/htdocs/output2/farm/search.php on line 152
+[11-May-2021 16:01:37 Asia/Tokyo] PHP Notice:  Undefined index: city_name in /Applications/MAMP/htdocs/output2/farm/search.php on line 156
+[11-May-2021 16:01:37 Asia/Tokyo] PHP Notice:  Undefined index: street in /Applications/MAMP/htdocs/output2/farm/search.php on line 156
+[11-May-2021 16:01:37 Asia/Tokyo] PHP Notice:  Undefined index: building in /Applications/MAMP/htdocs/output2/farm/search.php on line 156
+[11-May-2021 16:06:17 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 16:06:17 Asia/Tokyo] デバッグ:検索画面
+[11-May-2021 16:06:17 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 16:06:17 Asia/Tokyo] PHP Notice:  Undefined index: social_profile in /Applications/MAMP/htdocs/output2/farm/search.php on line 152
+[11-May-2021 16:06:17 Asia/Tokyo] PHP Notice:  Undefined index: city_name in /Applications/MAMP/htdocs/output2/farm/search.php on line 156
+[11-May-2021 16:06:17 Asia/Tokyo] PHP Notice:  Undefined index: street in /Applications/MAMP/htdocs/output2/farm/search.php on line 156
+[11-May-2021 16:06:17 Asia/Tokyo] PHP Notice:  Undefined index: building in /Applications/MAMP/htdocs/output2/farm/search.php on line 156
+[11-May-2021 16:09:23 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 16:09:23 Asia/Tokyo] デバッグ:検索画面
+[11-May-2021 16:09:23 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 21:11:06 Asia/Tokyo] デバッグ:ログイン有効期限切れです。
+[11-May-2021 21:11:06 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 21:11:06 Asia/Tokyo] デバッグ:ログイン画面
+[11-May-2021 21:11:06 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 21:11:06 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[11-May-2021 21:11:06 Asia/Tokyo] デバッグ:セッションID：
+[11-May-2021 21:11:06 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [login_date] => 1620706625
+    [login_limit] => 3600
+    [user_id] => 3
+)
+
+[11-May-2021 21:11:06 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620735066
+[11-May-2021 21:11:06 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1620710225
+[11-May-2021 21:11:06 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 21:11:06 Asia/Tokyo] デバッグ:ログイン画面
+[11-May-2021 21:11:06 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 21:11:06 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[11-May-2021 21:11:06 Asia/Tokyo] デバッグ:セッションID：este79qc5uln7ivso0ef6lmpt6
+[11-May-2021 21:11:06 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[11-May-2021 21:11:06 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620735066
+[11-May-2021 21:11:12 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 21:11:12 Asia/Tokyo] デバッグ:ログイン画面
+[11-May-2021 21:11:12 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 21:11:12 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[11-May-2021 21:11:12 Asia/Tokyo] デバッグ:セッションID：qgagola3tm5lmp2okp2m6jrmah
+[11-May-2021 21:11:12 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[11-May-2021 21:11:12 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620735072
+[11-May-2021 21:11:12 Asia/Tokyo] デバッグ:POSTされました。
+[11-May-2021 21:11:13 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[11-May-2021 21:11:13 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 21:11:13 Asia/Tokyo] デバッグ:マイページ画面
+[11-May-2021 21:11:13 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 21:11:13 Asia/Tokyo] PHP Notice:  Undefined index: shop_img1 in /Applications/MAMP/htdocs/output2/farm/mypage.php on line 72
+[11-May-2021 21:11:13 Asia/Tokyo] PHP Notice:  Undefined index: screen_name in /Applications/MAMP/htdocs/output2/farm/mypage.php on line 73
+[11-May-2021 21:11:13 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/mypage.php on line 76
+[11-May-2021 21:11:13 Asia/Tokyo] PHP Notice:  Undefined index: shop_name in /Applications/MAMP/htdocs/output2/farm/mypage.php on line 76
+[11-May-2021 21:11:13 Asia/Tokyo] PHP Notice:  Undefined index: social_profile in /Applications/MAMP/htdocs/output2/farm/mypage.php on line 78
+[11-May-2021 21:11:13 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/mypage.php on line 82
+[11-May-2021 21:11:13 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/mypage.php on line 82
+[11-May-2021 21:11:13 Asia/Tokyo] PHP Notice:  Undefined index: shop_id in /Applications/MAMP/htdocs/output2/farm/mypage.php on line 83
+[11-May-2021 21:13:02 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[11-May-2021 21:13:02 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 21:13:02 Asia/Tokyo] デバッグ:マイページ画面
+[11-May-2021 21:13:02 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 21:13:11 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[11-May-2021 21:13:11 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 21:13:11 Asia/Tokyo] デバッグ:お気に入り一覧画面
+[11-May-2021 21:13:11 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 21:13:11 Asia/Tokyo] デバッグ:Array
+(
+    [data] => Array
+        (
+            [0] => Array
+                (
+                    [shop_id] => 1
+                    [shop_name] => 屯田スクラム
+                    [social_profile] => 化学肥料は一切なし。動物系、植物系の肥料をふんだんに使って自然に優しく。土にこだわっている。
+1. ふかふかの土
+有機肥料がたっぷり入った特製の柔らかな土。アスパラガスは土の中のミネラルで甘みやコクがあるアスパラガスに仕上がります。
+2. 美しい自然と水
+眞鍋牧場は山々に囲まれた高台にあり、清らかな地下水に恵まれている環境です。
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => uploads/5146bcb40e6b81b1afb89254c422c9cfa7c0e714.jpeg
+                    [screen_name] => サトシ
+                    [city_name] => 札幌市中央区
+                )
+
+            [1] => Array
+                (
+                    [shop_id] => 4
+                    [shop_name] => 山城の里
+                    [social_profile] => 
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [screen_name] => 
+                    [city_name] => 札幌市北区
+                )
+
+            [2] => Array
+                (
+                    [shop_id] => 5
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [screen_name] => 
+                    [city_name] => 札幌市中央区
+                )
+
+            [3] => Array
+                (
+                    [shop_id] => 6
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [screen_name] => 
+                    [city_name] => 札幌市中央区
+                )
+
+            [4] => Array
+                (
+                    [shop_id] => 7
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [screen_name] => 
+                    [city_name] => 札幌市中央区
+                )
+
+            [5] => Array
+                (
+                    [shop_id] => 8
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [screen_name] => 
+                    [city_name] => 札幌市中央区
+                )
+
+            [6] => Array
+                (
+                    [shop_id] => 9
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [screen_name] => 
+                    [city_name] => 札幌市中央区
+                )
+
+            [7] => Array
+                (
+                    [shop_id] => 10
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [screen_name] => 
+                    [city_name] => 札幌市中央区
+                )
+
+            [8] => Array
+                (
+                    [shop_id] => 12
+                    [shop_name] => 白猫ヤマト
+                    [social_profile] => 我ら、白猫卓球部。
+                    [street] => 屯田５条１１丁目２−６
+                    [building] => 
+                    [shop_img1] => 
+                    [screen_name] => 
+                    [city_name] => 札幌市中央区
+                )
+
+        )
+
+)
+
+[11-May-2021 21:13:11 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:13:11 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:13:11 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:13:11 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:13:11 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:13:11 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:13:11 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:13:11 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:13:11 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:13:11 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:13:11 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:13:11 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:13:11 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:13:11 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:13:11 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:13:11 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:13:11 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:13:11 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:13:11 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:13:11 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:13:11 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:13:11 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:13:11 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:13:11 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:13:11 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:13:11 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:13:11 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:13:11 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:13:11 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:13:11 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:13:11 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:13:11 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:13:11 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:13:11 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:13:11 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:13:11 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:13:11 Asia/Tokyo] PHP Notice:  Undefined variable: totalPageNum in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 93
+[11-May-2021 21:14:22 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[11-May-2021 21:14:22 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 21:14:22 Asia/Tokyo] デバッグ:お気に入り一覧画面
+[11-May-2021 21:14:22 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 21:14:22 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:14:22 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:14:22 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:14:22 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:14:22 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:14:22 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:14:22 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:14:22 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:14:22 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:14:22 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:14:22 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:14:22 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:14:22 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:14:22 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:14:22 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:14:22 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:14:22 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:14:22 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:14:22 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:14:22 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:14:22 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:14:22 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:14:22 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:14:22 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:14:22 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:14:22 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:14:22 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:14:22 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:14:22 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:14:22 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:14:22 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:14:22 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:14:22 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:14:22 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:14:22 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:14:22 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:14:22 Asia/Tokyo] PHP Notice:  Undefined variable: totalPageNum in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 93
+[11-May-2021 21:14:25 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[11-May-2021 21:14:25 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 21:14:25 Asia/Tokyo] デバッグ:お気に入り一覧画面
+[11-May-2021 21:14:25 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 21:14:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:14:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:14:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:14:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:14:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:14:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:14:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:14:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:14:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:14:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:14:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:14:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:14:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:14:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:14:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:14:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:14:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:14:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:14:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:14:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:14:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:14:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:14:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:14:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:14:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:14:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:14:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:14:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:14:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:14:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:14:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:14:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:14:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:14:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:14:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:14:25 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:14:25 Asia/Tokyo] PHP Notice:  Undefined variable: totalPageNum in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 93
+[11-May-2021 21:15:35 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[11-May-2021 21:15:35 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 21:15:35 Asia/Tokyo] デバッグ:お気に入り一覧画面
+[11-May-2021 21:15:35 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 21:15:35 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:15:35 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:15:35 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:15:35 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:15:35 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:15:35 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:15:35 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:15:35 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:15:35 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:15:35 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:15:35 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:15:35 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:15:35 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:15:35 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:15:35 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:15:35 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:15:35 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:15:35 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:15:35 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:15:35 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:15:35 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:15:35 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:15:35 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:15:35 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:15:35 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:15:35 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:15:35 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:15:35 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:15:35 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:15:35 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:15:35 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:15:35 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:15:35 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:15:35 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:15:35 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:15:35 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:15:35 Asia/Tokyo] PHP Notice:  Undefined index: total_page in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 93
+[11-May-2021 21:17:57 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[11-May-2021 21:17:57 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 21:17:57 Asia/Tokyo] デバッグ:お気に入り一覧画面
+[11-May-2021 21:17:57 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 21:17:57 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:17:57 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:17:57 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:17:57 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:17:57 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:17:57 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:17:57 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:17:57 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:17:57 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:17:57 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:17:57 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:17:57 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:17:57 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:17:57 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:17:57 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:17:57 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:17:57 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:17:57 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:17:57 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:17:57 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:17:57 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:17:57 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:17:57 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:17:57 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:17:57 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:17:57 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:17:57 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:17:57 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:17:57 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:17:57 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:17:57 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:17:57 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:17:57 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:17:57 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:17:57 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:17:57 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:18:55 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[11-May-2021 21:18:55 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 21:18:55 Asia/Tokyo] デバッグ:お気に入り一覧画面
+[11-May-2021 21:18:55 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 21:18:55 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:18:55 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:18:55 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:18:55 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:18:55 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:18:55 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:18:55 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:18:55 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:18:55 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:18:55 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:18:55 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:18:55 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:18:55 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:18:55 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:18:55 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:18:55 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:18:55 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:18:55 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:18:55 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:18:55 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:18:55 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:18:55 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:18:55 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:18:55 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:18:55 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:18:55 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:18:55 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:18:55 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:18:55 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:18:55 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:18:55 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:18:55 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:18:55 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 68
+[11-May-2021 21:18:55 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:18:55 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 71
+[11-May-2021 21:18:55 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/favoShopList.php on line 72
+[11-May-2021 21:20:45 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[11-May-2021 21:20:45 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 21:20:45 Asia/Tokyo] デバッグ:お気に入り一覧画面
+[11-May-2021 21:20:45 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 21:21:48 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[11-May-2021 21:21:48 Asia/Tokyo] デバッグ:==============================================
+[11-May-2021 21:21:48 Asia/Tokyo] デバッグ:お気に入り一覧画面
+[11-May-2021 21:21:48 Asia/Tokyo] デバッグ:==============================================
