@@ -108,8 +108,9 @@ $cites = 'CREATE TABLE cities(
 $blog = 'CREATE TABLE blogs(
     `id` INT(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
     `shop_id` INT(11) NOT NULL,
+    `title` VARCHAR(255) NULL,
     `img` VARCHAR(255) NULL,
-    `text` VARCHAR(255) NULL,
+    `content` VARCHAR(255) NULL,
     `delete_flg` BOOLEAN DEFAULT 0 NOT NULL,
     `create_date` DATE NOT NULL,
     `update_date` TIMESTAMP NOT NULL

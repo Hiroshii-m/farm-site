@@ -53,7 +53,7 @@ include_once('head.php');
                     <ul class="p-shopList__body">
                         <?php foreach($dbShopData['data'] as $key => $val): ?>
                         <li class="c-card">
-                            <div class="c-card__head">
+                            <div class="c-card__head u-flex-between">
                                 <div class="c-card__img">
                                     <img src="<?= sanitize(showImg($val['shop_img1'])); ?>" alt="">
                                 </div>
@@ -69,7 +69,13 @@ include_once('head.php');
                             <div class="c-card__body">
                                 <div class="c-card__item">
                                     <p class="c-card__row"><i class="fas fa-shopping-bag"></i>&nbsp;商品</p>
-                                    <p class="c-card__detail">米1g 100円、白菜 100円、ピーマン100円</p>
+                                    <p class="c-card__detail">
+                                    <?php foreach($val['products'] as $products => $product){ ?>
+                                        <?= sanitize($product['p_name']); ?>
+                                        <?= sanitize($product['p_value']); ?>円
+                                        <?= sanitize($product['p_number']); ?>
+                                    <?php } ?>
+                                    </p>
                                 </div>
                                 <div class="c-card__item">
                                     <p class="c-card__row"><i class="fas fa-file-alt"></i>&nbsp;詳細</p>

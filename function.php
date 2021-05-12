@@ -372,7 +372,15 @@ function getFavoShop($u_id, $currentMinNum = 0, $span = 10) {
         $data = array(':u_id' => $u_id, ':span' => $span, ':currentMinNum' => $currentMinNum);
         $stmt = queryPost($dbh, $sql, $data);
         $rst['data'] = $stmt->fetchAll();
-        // 製品情報を取得（TODO）
+        // 製品情報を取得
+        if(!empty($rst['data'])) {
+            foreach($rst['data'] as $key => $val) {
+                $sql = 'SELECT * FROM `products` WHERE `shop_id` = :s_id';
+                $data = array(':s_id' => $val['shop_id']);
+                $stmt = queryPost($dbh, $sql, $data);
+                $rst['data'][$key]['products'] = $stmt->fetchAll();
+            }
+        }
         if(!empty($rst)) {
             return $rst;
         } else {
@@ -451,29 +459,11 @@ function getShop($u_id) {
 function getShopOne($s_id) {
     try {
         $dbh = dbConnect();
-        $sql = 'SELECT s.`id`, s.`user_id`, s.`shop_name`, s.`social_profile`, s.`postcode`, s.`prefecture_id`, s.`city_id`, s.`street`, s.`building`, s.`tel`, s.`value`, s.`map_iframe`, s.`shop_img1`, s.`shop_img2`, s.`shop_img3`, s.`browsing_num`, s.`favorites`, u.`screen_name` FROM `shops` AS s LEFT JOIN users AS u ON s.`user_id` = u.`id` WHERE s.`id` = :s_id';
+        $sql = 'SELECT s.`id`, s.`user_id`, s.`shop_name`, s.`social_profile`, s.`postcode`, s.`prefecture_id`, s.`city_id`, s.`street`, s.`building`, s.`tel`, s.`value`, s.`map_iframe`, s.`shop_img1`, s.`shop_img2`, s.`shop_img3`, s.`browsing_num`, s.`favorites`, u.`screen_name`, c.`city_name` FROM `shops` AS s LEFT JOIN users AS u ON s.`user_id` = u.`id` INNER JOIN `cities` AS c ON c.`id` = s.`city_id` WHERE s.`id` = :s_id';
         $data = array(':s_id' => $s_id);
         $stmt = queryPost($dbh, $sql, $data);
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
         return $result;
-    } catch ( Exception $e ) {
-        error_log('エラー発生:' . $e->getMessage());
-        $err_msg['common'] = MSG::UNEXPECTED;
-    }
-}
-// 複数の店舗を取得(index.php用)
-function getShopList() {
-    try {
-        $dbh = dbConnect();
-        $sql = 'SELECT s.`id`, s.`shop_name`, s.`social_profile`, s.`shop_img1`, u.`screen_name` FROM `shops` AS s LEFT JOIN `users` AS u ON s.`user_id` = u.`id` LIMIT 10';
-        $data = array();
-        $stmt = queryPost($dbh, $sql, $data);
-        $result = $stmt->fetchAll();
-        if(!empty($result)) {
-            return $result;
-        } else {
-            return '';
-        }
     } catch ( Exception $e ) {
         error_log('エラー発生:' . $e->getMessage());
         $err_msg['common'] = MSG::UNEXPECTED;
@@ -566,11 +556,10 @@ function getShopMatch($currentMinNum = 0, $p_id, $city_id, $category_id, $word_s
     }
 }
 // 商品一覧を取得
-function getProducts($s_id, $current_num = 0, $limit = 10) {
+function getProducts($s_id) {
     try {
-        $offset = $limit * $current_num;
         $dbh = dbConnect();
-        $sql = 'SELECT p.`id`, p.`shop_id`, p.`user_id`, p.`p_name`, p.`p_detail`, p.`term`, p.`p_value`, p.`p_number`, p.`p_img`, c.`category_name` FROM `products` AS p LEFT JOIN `category` AS c ON p.`category_id` = c.`id` WHERE p.`shop_id` = :s_id LIMIT '.$limit.' OFFSET '.$offset;
+        $sql = 'SELECT p.`id`, p.`shop_id`, p.`user_id`, p.`p_name`, p.`p_detail`, p.`term`, p.`p_value`, p.`p_number`, p.`p_img`, c.`category_name` FROM `products` AS p LEFT JOIN `category` AS c ON p.`category_id` = c.`id` WHERE p.`shop_id` = :s_id';
         $data = array(':s_id' => $s_id);
         $stmt = queryPost($dbh, $sql, $data);
         $result = $stmt->fetchAll();
@@ -594,6 +583,35 @@ function getProductOne($p_id) {
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
         if(!empty($result)) {
             return $result;
+        } else {
+            return '';
+        }
+    } catch ( Exception $e ) {
+        error_log('エラー発生:' . $e->getMessage());
+        $err_msg['common'] = MSG::UNEXPECTED;
+    }
+}
+// ブログを取得
+function getBlogList($s_id, $currentMinNum = 0, $span = 10) {
+    try {
+        $dbh = dbConnect();
+        $sql = 'SELECT * FROM `blogs` WHERE `shop_id` = :s_id AND `delete_flg` =  0 ORDER BY `update_date` DESC';
+        $data = array(':s_id' => $s_id);
+        $stmt = queryPost($dbh, $sql, $data);
+        $rst['total'] = $stmt->rowCount();
+        $rst['total_page'] = ceil($rst['total']/$span);
+        if(empty($stmt)) {
+            return false;
+        }
+
+        $sql = 'SELECT * FROM `blogs` WHERE `shop_id` = :s_id AND `delete_flg` =  0 ORDER BY `update_date` DESC';
+        $sql .= ' LIMIT :span OFFSET :currentMinNum';
+        $data = array(':s_id' => $s_id, ':span' => $span, ':currentMinNum' => $currentMinNum);
+        $stmt = queryPost($dbh, $sql, $data);
+        $rst['data'] = $stmt->fetchAll();
+
+        if(!empty($rst)) {
+            return $rst;
         } else {
             return '';
         }
@@ -750,22 +768,22 @@ function pagination( $currentPageNum, $totalPageNum, $link = '', $pageColNum = 5
             if($currentPageNum <= 1){
                 echo '';
             }else{
-                echo '<li class=""><a class="c-pagination__item" href="search.php';
-                echo (!empty(appendGetParam())) ? appendGetParam(array('page_id')).'&page_id=1' : '?page_id=1';
+                echo '<li class=""><a class="c-pagination__item" href="';
+                echo (!empty(appendGetParam(array('page_id')))) ? appendGetParam(array('page_id')).'&page_id=1' : '?page_id=1';
                 echo '">&lt;</a></li>';
             }
             for($i = $minPageNum; $i <= $maxPageNum; $i++){
                 echo '<li class=""><a class="c-pagination__item ';
                 if((int)$currentPageNum === $i){ echo 'active'; }
                 echo '" href="';
-                echo (!empty(appendGetParam())) ? appendGetParam(array('page_id')).'&page_id='.$i : '?page_id='.$i;
+                echo (!empty(appendGetParam(array('page_id')))) ? appendGetParam(array('page_id')).'&page_id='.$i : '?page_id='.$i;
                 echo '">'.$i.'</a></li>';
             }
             if($currentPageNum == $totalPageNum){
                 echo '';
             }else{
                 echo '<li class=""><a class="c-pagination__item" href="';
-                echo (!empty(appendGetParam())) ? appendGetParam(array('page_id')).'&page_id='.$totalPageNum : '?page_id='.$totalPageNum;
+                echo (!empty(appendGetParam(array('page_id')))) ? appendGetParam(array('page_id')).'&page_id='.$totalPageNum : '?page_id='.$totalPageNum;
                 echo '">&gt;</a></li>';
             }
         echo '</ul>';

@@ -18,6 +18,9 @@
                 <a href="registProduct.php" class="c-sidebar__text">商品登録</a>
             </li>
             <li class="c-sidebar__list">
+                <a href="registBlog.php" class="c-sidebar__text">記事を作成</a>
+            </li>
+            <li class="c-sidebar__list">
                 <a href="editMailPass.php" class="c-sidebar__text">メールアドレス・パスワードを変更する</a>
             </li>
             <li class="c-sidebar__list">

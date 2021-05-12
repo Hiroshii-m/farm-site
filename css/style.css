@@ -582,11 +582,6 @@ i {
   }
 }
 
-#l-sale {
-  padding: 40px 0 0;
-  background: #FFF6E8;
-}
-
 #l-sidebar {
   margin: 45px 0 0 50px;
 }
@@ -600,6 +595,14 @@ i {
 
 #l-footer {
   background: #D3DEF1;
+}
+
+#l-blogList {
+  padding: 40px 0 0 0;
+}
+
+#l-sale {
+  padding: 40px 0;
 }
 
 #l-search {
@@ -1008,7 +1011,6 @@ i {
 }
 .c-card__head {
   display: flex;
-  justify-content: space-between;
 }
 @media screen and (max-width: 414px) {
   .c-card__head {
@@ -1725,6 +1727,9 @@ i {
 .p-shopBlog__img {
   margin: 20px 0;
 }
+.p-shopBlog__content {
+  margin: 40px 0;
+}
 
 .p-comment__wrap {
   overflow: hidden;
@@ -2024,6 +2029,9 @@ i {
 
 .u-margin-top-5 {
   margin-top: 5px;
+}
+.u-margin-left-20 {
+  margin-left: 20px;
 }
 
 .u-font-weight-bold {

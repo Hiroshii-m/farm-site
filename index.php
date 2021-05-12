@@ -71,8 +71,6 @@ $kyusyu = array(
     '46'=>'鹿児島県',
     '47'=>'沖縄県'
 );
-// 登録された販売所を取得
-$shopData = (!empty(getShopList())) ? getShopList() : '';
 $u_id = (!empty($_SESSION['user_id'])) ? $_SESSION['user_id'] : '';
 
 ?>
@@ -175,38 +173,6 @@ include_once('head.php');
                     </div>
                 </div>
             </section><!-- /地域 -->
-
-            <!-- 最近登録された販売所 -->
-            <section id="l-sale">
-                <div class="c-container c-submission">
-                    <h2 class="c-container__tit">最近登録された販売所</h2>
-                    <?php if(!empty($shopData)){ ?>
-                    <ul class="c-submission__body">
-                        <?php foreach($shopData as $key => $val): ?>
-                        <li class="c-submission__item">
-                            <div class="c-submission__visual">
-                                <div class="c-submission__img"><img src="<?= sanitize(showImg($val['shop_img1'])); ?>" alt=""></div>
-                                <p class="c-submission__author"><?= sanitize(showData($val['screen_name'])); ?></p>
-                            </div>
-                            <div class="c-submission__content">
-                                <a href="single.php?s_id=<?= sanitize(showData($val['id'])); ?>" class="c-submission__tit"><?= sanitize(showData($val['shop_name'])); ?></a>
-                                <div class="c-submission__detail">
-                                    <?= sanitize(showData($val['social_profile'])); ?>
-                                </div>
-                            </div>
-                            <div class="c-submission__icon">
-                                <i class="fa-heart c-submission__fav js-click-animation <?= ((!empty($u_id)) && isFavorite($val['id'], $u_id) === true) ? 'fas is-active' : 'far'; ?>" data-shopid="<?= sanitize($val['id']); ?>"></i>
-                                <i class="fa-heart c-submission__fav2 js-click-animation2 <?= ((!empty($u_id)) && isFavorite($val['id'], $u_id) === true) ? 'far is-active' : 'fas'; ?>"></i>
-                            </div>
-                        </li>
-                        <?php endforeach; ?>
-                    </ul>
-                    <button class="c-container__btn u-btn u-btn-border-shadow u-btn-border-shadow--color">もっと見る</button>
-                    <?php } else { ?>
-                        今、販売所を登録すると、登録者の中で、あなたが一番初めの販売者です。
-                    <?php } ?>
-                </div>
-            </section><!-- /最近登録された販売所 -->
 
         </div>
         <!-- サイドバー -->

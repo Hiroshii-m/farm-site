@@ -74,7 +74,7 @@ include_once('head.php');
                                 </div>
                                 <div class="c-submission__content">
                                     <a href="single.php<?= (!empty(appendGetParam())) ? appendGetParam().'&shop_id='.$val['shop_id'] : '?shop_id='.$val['shop_id']; ?>" class="c-submission__tit"><?= sanitize(showData($val['shop_name'])); ?></a>
-                                    <div class="c-submission__detail">
+                                    <div class="c-submission__detail js-card-text">
                                         <?= sanitize(showData($val['social_profile'])); ?>
                                     </div>
                                 </div>
@@ -91,6 +91,48 @@ include_once('head.php');
                     <a href="favoShopList.php" class="c-container__btn u-btn u-btn-border-shadow u-btn-border-shadow--color">もっと見る</a>
                 </div>
             </section><!-- /最近登録された販売所 -->
+
+            <!-- 作成した記事一覧 -->
+            <section id="l-blogList">
+                <div class="c-container c-submission">
+                    <h2 class="c-container__tit">作成した記事</h2>
+                    <ul class="c-submission__body">
+                        <li class="c-submission__item">
+                            <div class="c-submission__visual">
+                                <div class="c-submission__img"><img src="images/pic2.jpeg" alt=""></div>
+                                <p class="c-submission__author">店舗名<br>ワクワクさんが転んだ</p>
+                            </div>
+                            <div class="c-submission__content">
+                                <a href="" class="c-submission__tit">今こそ五感で楽しむ「バナナ」</a>
+                                <div class="c-submission__detail">
+                                    どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。
+                                </div>
+                                <div class="p-product__edit">
+                                    <a href="editProduct.php?p_id=" class="p-product__btn p-product__bg1">編集する</a>
+                                    <a name="delete_id" value="" class="p-product__btn p-product__bg2 js-delete-product">削除する</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="c-submission__item">
+                            <div class="c-submission__visual">
+                                <div class="c-submission__img"><img src="images/pic2.jpeg" alt=""></div>
+                                <p class="c-submission__author">店舗名<br>ワクワクさんが転んだ</p>
+                            </div>
+                            <div class="c-submission__content">
+                                <a href="" class="c-submission__tit">今こそ五感で楽しむ「バナナ」</a>
+                                <div class="c-submission__detail">
+                                    どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。
+                                </div>
+                                <div class="p-product__edit">
+                                    <a href="editProduct.php?p_id=<?= showData($val['id']); ?>" class="p-product__btn p-product__bg1">編集する</a>
+                                    <a name="delete_id" value="<?= showData($val['id']); ?>" class="p-product__btn p-product__bg2 js-delete-product">削除する</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="myBlogList.php?s_id=<?= $s_id; ?>" class="c-container__btn u-btn u-btn-border-shadow u-btn-border-shadow--color">もっと見る</a>
+                </div>
+            </section><!-- /作成した記事一覧 -->
 
             <?php if(!empty($products)){ ?>
             <!-- 登録した商品 -->
@@ -127,10 +169,6 @@ include_once('head.php');
                         </li>
                         <?php endforeach; ?>
                     </ul>
-                    <form action="" method="post">
-                        <input type="hidden" name="count_product" value="<?= $count_product; ?>">
-                        <button name="add_product" class="c-container__btn u-btn u-btn-border-shadow u-btn-border-shadow--color" value="1">もっと見る</button>
-                    </form>
                 </div>
             </section><!-- /登録した商品 -->
             <?php } ?>
@@ -140,10 +178,6 @@ include_once('head.php');
         <?php include('sidebar_mypage.php'); ?>
     </main>
 
-
-    <div class="u-upArrow">
-        <i class="fas fa-chevron-circle-up"></i>
-    </div>
     <!-- フッター -->
     <?php include_once('footer.php'); ?>
     <!-- 個別のjsファイル -->

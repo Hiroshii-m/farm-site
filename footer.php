@@ -1,3 +1,6 @@
+<div class="u-upArrow">
+    <i class="fas fa-chevron-circle-up js-goTop"></i>
+</div>
  <!-- フッター -->
  <footer id="l-footer" class="js-footer">
         <div class="c-footer">

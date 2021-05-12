@@ -1,6 +1,4 @@
 <?php
-// 予想時間:6h
-// かかった時間：21mi
 
 // 共通ファイルの読み込み
 require_once('function.php');
@@ -123,7 +121,7 @@ include_once('head.php');
                     <ul class="p-shopList__body">
                         <?php foreach($dbShopData['data'] as $key => $val){ ?>
                         <li class="c-card">
-                            <div class="c-card__head">
+                            <div class="c-card__head u-flex-between">
                                 <div class="c-card__img">
                                     <img src="<?= sanitize(showImg($val['shop_img1'])); ?>" alt="">
                                 </div>
@@ -139,7 +137,7 @@ include_once('head.php');
                             <div class="c-card__body">
                                 <div class="c-card__item">
                                     <p class="c-card__row"><i class="fas fa-shopping-bag"></i>&nbsp;商品</p>
-                                    <p class="c-card__detail">
+                                    <p class="c-card__detail js-card-text">
                                     <?php foreach($val['products'] as $products => $product){ ?>
                                         <?= sanitize($product['p_name']); ?>
                                         <?= sanitize($product['p_value']); ?>円
@@ -149,11 +147,11 @@ include_once('head.php');
                                 </div>
                                 <div class="c-card__item">
                                     <p class="c-card__row"><i class="fas fa-file-alt"></i>&nbsp;詳細</p>
-                                    <p class="c-card__detail"><?= sanitize(showData($val['social_profile'])); ?></p>
+                                    <p class="c-card__detail js-card-text"><?= sanitize(showData($val['social_profile'])); ?></p>
                                 </div>
                                 <div class="c-card__item">
                                     <p class="c-card__row"><i class="fas fa-map-marker-alt"></i>&nbsp;住所</p>
-                                    <p class="c-card__detail"><?= sanitize(showData($val['city_name'].$val['street'].$val['building'])); ?></p>
+                                    <p class="c-card__detail js-card-text"><?= sanitize(showData($val['city_name'].$val['street'].$val['building'])); ?></p>
                                 </div>
                             </div>
                         </li>
@@ -169,9 +167,6 @@ include_once('head.php');
         <!-- サイドバー -->
         <?php include('sidebar_favo.php'); ?>
     </main>
-    <div class="u-upArrow">
-        <i class="fas fa-chevron-circle-up js-goTop"></i>
-    </div>
 
     <!-- フッター -->
     <?php include_once('footer.php'); ?>

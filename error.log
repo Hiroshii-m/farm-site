@@ -18229,3 +18229,145 @@ Stack trace:
 [11-May-2021 21:21:48 Asia/Tokyo] デバッグ:==============================================
 [11-May-2021 21:21:48 Asia/Tokyo] デバッグ:お気に入り一覧画面
 [11-May-2021 21:21:48 Asia/Tokyo] デバッグ:==============================================
+[12-May-2021 12:43:12 Asia/Tokyo] デバッグ:==============================================
+[12-May-2021 12:43:12 Asia/Tokyo] デバッグ:TOP画面
+[12-May-2021 12:43:12 Asia/Tokyo] デバッグ:==============================================
+[12-May-2021 12:43:20 Asia/Tokyo] デバッグ:ログイン有効期限切れです。
+[12-May-2021 12:43:20 Asia/Tokyo] デバッグ:==============================================
+[12-May-2021 12:43:20 Asia/Tokyo] デバッグ:ログイン画面
+[12-May-2021 12:43:20 Asia/Tokyo] デバッグ:==============================================
+[12-May-2021 12:43:20 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[12-May-2021 12:43:20 Asia/Tokyo] デバッグ:セッションID：
+[12-May-2021 12:43:20 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [login_date] => 1620735708
+    [login_limit] => 3600
+    [user_id] => 3
+)
+
+[12-May-2021 12:43:20 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620791000
+[12-May-2021 12:43:20 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1620739308
+[12-May-2021 12:43:20 Asia/Tokyo] デバッグ:==============================================
+[12-May-2021 12:43:20 Asia/Tokyo] デバッグ:ログイン画面
+[12-May-2021 12:43:20 Asia/Tokyo] デバッグ:==============================================
+[12-May-2021 12:43:20 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[12-May-2021 12:43:20 Asia/Tokyo] デバッグ:セッションID：mi0p5lcr6mnjfna6fkakaku1lh
+[12-May-2021 12:43:20 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[12-May-2021 12:43:20 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620791000
+[12-May-2021 12:43:26 Asia/Tokyo] デバッグ:==============================================
+[12-May-2021 12:43:26 Asia/Tokyo] デバッグ:ログイン画面
+[12-May-2021 12:43:26 Asia/Tokyo] デバッグ:==============================================
+[12-May-2021 12:43:26 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[12-May-2021 12:43:26 Asia/Tokyo] デバッグ:セッションID：6g5qc4hos701nrggpa6heb4jt1
+[12-May-2021 12:43:26 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[12-May-2021 12:43:26 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620791006
+[12-May-2021 12:43:26 Asia/Tokyo] デバッグ:POSTされました。
+[12-May-2021 12:43:26 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[12-May-2021 12:43:26 Asia/Tokyo] デバッグ:==============================================
+[12-May-2021 12:43:26 Asia/Tokyo] デバッグ:マイページ画面
+[12-May-2021 12:43:26 Asia/Tokyo] デバッグ:==============================================
+[12-May-2021 12:43:33 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[12-May-2021 12:43:33 Asia/Tokyo] デバッグ:==============================================
+[12-May-2021 12:43:33 Asia/Tokyo] デバッグ:お気に入り一覧画面
+[12-May-2021 12:43:33 Asia/Tokyo] デバッグ:==============================================
+[12-May-2021 12:44:27 Asia/Tokyo] デバッグ:==============================================
+[12-May-2021 12:44:27 Asia/Tokyo] デバッグ:TOP画面
+[12-May-2021 12:44:27 Asia/Tokyo] デバッグ:==============================================
+[12-May-2021 12:44:33 Asia/Tokyo] デバッグ:==============================================
+[12-May-2021 12:44:33 Asia/Tokyo] デバッグ:検索画面
+[12-May-2021 12:44:33 Asia/Tokyo] デバッグ:==============================================
+[12-May-2021 12:55:22 Asia/Tokyo] PHP Notice:  Undefined variable: limit in /Applications/MAMP/htdocs/output2/farm/function.php on line 579
+[12-May-2021 12:55:22 Asia/Tokyo] PHP Notice:  Undefined variable: current_num in /Applications/MAMP/htdocs/output2/farm/function.php on line 579
+[12-May-2021 12:55:34 Asia/Tokyo] PHP Notice:  Undefined variable: limit in /Applications/MAMP/htdocs/output2/farm/function.php on line 579
+[12-May-2021 12:55:34 Asia/Tokyo] PHP Notice:  Undefined variable: current_num in /Applications/MAMP/htdocs/output2/farm/function.php on line 579
+[12-May-2021 13:02:20 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Call to undefined function getShopList() in /Applications/MAMP/htdocs/output2/farm/index.php:75
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/output2/farm/index.php on line 75
+[12-May-2021 16:03:26 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[12-May-2021 16:04:28 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[12-May-2021 19:55:48 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 249
+[12-May-2021 19:55:48 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[12-May-2021 19:55:48 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[12-May-2021 19:55:48 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 254
+[12-May-2021 19:55:48 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 249
+[12-May-2021 19:55:48 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[12-May-2021 19:55:48 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[12-May-2021 19:55:48 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 254
+[12-May-2021 19:55:48 Asia/Tokyo] PHP Notice:  Undefined index: title in /Applications/MAMP/htdocs/output2/farm/single.php on line 249
+[12-May-2021 19:55:48 Asia/Tokyo] PHP Notice:  Undefined index: create_date in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[12-May-2021 19:55:48 Asia/Tokyo] PHP Notice:  Undefined index: update_date in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[12-May-2021 19:55:48 Asia/Tokyo] PHP Notice:  Undefined index: content in /Applications/MAMP/htdocs/output2/farm/single.php on line 254
+[12-May-2021 19:55:59 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/mypage.php on line 127
+[12-May-2021 19:55:59 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/mypage.php on line 128
+[12-May-2021 19:56:07 Asia/Tokyo] PHP Notice:  Undefined variable: dbShopData in /Applications/MAMP/htdocs/output2/farm/myBlogList.php on line 44
+[12-May-2021 19:56:07 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/myBlogList.php on line 44
+[12-May-2021 19:56:07 Asia/Tokyo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Applications/MAMP/htdocs/output2/farm/myBlogList.php on line 44
+[12-May-2021 19:56:37 Asia/Tokyo] PHP Notice:  Undefined variable: dbShopData in /Applications/MAMP/htdocs/output2/farm/myBlogList.php on line 44
+[12-May-2021 19:56:37 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/myBlogList.php on line 44
+[12-May-2021 19:56:37 Asia/Tokyo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Applications/MAMP/htdocs/output2/farm/myBlogList.php on line 44
+[12-May-2021 19:56:37 Asia/Tokyo] PHP Notice:  Undefined variable: dbShopData in /Applications/MAMP/htdocs/output2/farm/myBlogList.php on line 70
+[12-May-2021 19:56:37 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/myBlogList.php on line 70
+[12-May-2021 19:56:55 Asia/Tokyo] PHP Notice:  Undefined variable: dbShopData in /Applications/MAMP/htdocs/output2/farm/myBlogList.php on line 70
+[12-May-2021 19:56:55 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/output2/farm/myBlogList.php on line 70
+[12-May-2021 20:00:23 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/myBlogList.php on line 54
+[12-May-2021 20:00:23 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/myBlogList.php on line 57
+[12-May-2021 20:00:23 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/myBlogList.php on line 62
+[12-May-2021 20:00:23 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/myBlogList.php on line 54
+[12-May-2021 20:00:23 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/myBlogList.php on line 57
+[12-May-2021 20:00:23 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/myBlogList.php on line 62
+[12-May-2021 20:00:23 Asia/Tokyo] PHP Notice:  Undefined index: img in /Applications/MAMP/htdocs/output2/farm/myBlogList.php on line 54
+[12-May-2021 20:00:23 Asia/Tokyo] PHP Notice:  Undefined index: title in /Applications/MAMP/htdocs/output2/farm/myBlogList.php on line 57
+[12-May-2021 20:00:23 Asia/Tokyo] PHP Notice:  Undefined index: content in /Applications/MAMP/htdocs/output2/farm/myBlogList.php on line 62
+[12-May-2021 20:02:49 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[12-May-2021 20:02:49 Asia/Tokyo] デバッグ:==============================================
+[12-May-2021 20:02:49 Asia/Tokyo] デバッグ:ブログ一覧画面
+[12-May-2021 20:02:49 Asia/Tokyo] デバッグ:==============================================
+[12-May-2021 20:02:49 Asia/Tokyo] デバッグ:Array
+(
+    [total] => 2
+    [total_page] => 1
+    [data] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [shop_id] => 1
+                    [title] => 2つ目じゃよ
+                    [img] => uploads/13e658f2f98aa65071072729271d37096d5827ff.jpeg
+                    [content] => ヤッホー
+                    [delete_flg] => 0
+                    [create_date] => 2021-05-12
+                    [update_date] => 2021-05-12 16:29:51
+                )
+
+            [1] => Array
+                (
+                    [id] => 1
+                    [shop_id] => 1
+                    [title] => 本腰入れて、直販サイトを作ってみました。
+                    [img] => 
+                    [content] => こんにちは。
+                    [delete_flg] => 0
+                    [create_date] => 2021-05-12
+                    [update_date] => 2021-05-12 16:05:24
+                )
+
+        )
+
+)
+
+[12-May-2021 20:03:27 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[12-May-2021 20:03:27 Asia/Tokyo] デバッグ:==============================================
+[12-May-2021 20:03:27 Asia/Tokyo] デバッグ:ブログ一覧画面
+[12-May-2021 20:03:27 Asia/Tokyo] デバッグ:==============================================
+[12-May-2021 20:03:54 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[12-May-2021 20:03:54 Asia/Tokyo] デバッグ:==============================================
+[12-May-2021 20:03:54 Asia/Tokyo] デバッグ:ブログ一覧画面
+[12-May-2021 20:03:54 Asia/Tokyo] デバッグ:==============================================

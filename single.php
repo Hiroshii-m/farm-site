@@ -1,7 +1,4 @@
 <?php
-// 予想時間:8h
-// かかった時間：2h
-// できれば、google map自動生成をしたい。もし、自動生成でずれていたら、自分で修正できるようにiframeをいれてもらう。
 
 // 共通ファイルの読み込み
 require_once('function.php');
@@ -9,6 +6,57 @@ require_once('function.php');
 debug('==============================================');
 debug('店舗詳細画面');
 debug('==============================================');
+
+// 都道府県データ
+$prefecture = array(
+    '1'=>'北海道',
+    '2'=>'青森県',
+    '3'=>'岩手県',
+    '4'=>'宮城県',
+    '5'=>'秋田県',
+    '6'=>'山形県',
+    '7'=>'福島県',
+    '8'=>'茨城県',
+    '9'=>'栃木県',
+    '10'=>'群馬県',
+    '11'=>'埼玉県',
+    '12'=>'千葉県',
+    '13'=>'東京都',
+    '14'=>'神奈川県',
+    '15'=>'新潟県',
+    '16'=>'富山県',
+    '17'=>'石川県',
+    '18'=>'福井県',
+    '19'=>'山梨県',
+    '20'=>'長野県',
+    '31'=>'鳥取県',
+    '32'=>'島根県',
+    '33'=>'岡山県',
+    '34'=>'広島県',
+    '35'=>'山口県',
+    '36'=>'徳島県',
+    '37'=>'香川県',
+    '38'=>'愛媛県',
+    '39'=>'高知県',
+    '21'=>'岐阜県',
+    '22'=>'静岡県',
+    '23'=>'愛知県',
+    '24'=>'三重県',
+    '25'=>'滋賀県',
+    '26'=>'京都府',
+    '27'=>'大阪府',
+    '28'=>'兵庫県',
+    '29'=>'奈良県',
+    '30'=>'和歌山県',
+    '40'=>'福岡県',
+    '41'=>'佐賀県',
+    '42'=>'長崎県',
+    '43'=>'熊本県',
+    '44'=>'大分県',
+    '45'=>'宮崎県',
+    '46'=>'鹿児島県',
+    '47'=>'沖縄県'
+);
 
 // 店舗idを格納
 $s_id = (!empty($_GET['shop_id'])) ? $_GET['shop_id'] : '';
@@ -18,7 +66,8 @@ $dbFormData = (!empty($s_id)) ? getShopOne($s_id) : '';
 // メッセージ情報を取得
 $comments = (!empty($dbFormData)) ? getComments($s_id) : '';
 $u_id = (!empty($_SESSION['user_id'])) ? $_SESSION['user_id'] : '';
-// debug(print_r($comments, true));
+// ブログ情報を取得
+$blogs = getBlogList($s_id);
 
 if(!empty($_POST)) {
     // ユーザーであった場合、ユーザーidを格納
@@ -195,10 +244,16 @@ include_once('head.php');
                                     <section id="l-shopBlog" class="u-display-none js-article-blog">
                                         <div class="p-shopBlog">
                                             <div class="p-shopBlog__body">
-                                                <h3 class="p-shopBlog__title">誰でもオシャレな農業生活を実現する</h3>
-                                                <p class="p-shopBlog__time"><i class="far fa-clock"></i>2021/4/10&ensp;<i class="fas fa-sync-alt"></i>2021/4/11</p>
-                                                <div class="p-shopBlog__img"><img src="images/pic2.jpeg" alt=""></div>
-                                                <div class="p-shopBlog__content">オシャレなブログの方が稼げると断言しても過言ではありません。私はブログ歴5年、現在はブログで独立して法人の代表も務めているので、多くの人にブログのアドバイスを求められるのですが、この事実を伝えるとみんな驚き不安そうな顔をします。</div>
+                                                <?php if(!empty($blogs)){ ?>
+                                                    <?php foreach($blogs as $key => $val){ ?>
+                                                <h3 class="p-shopBlog__title"><?= sanitize($val['title']); ?></h3>
+                                                <p class="p-shopBlog__time"><i class="far fa-clock"></i><?= sanitize(date('Y/m/d', strtotime($val['create_date']))); ?>&ensp;<i class="fas fa-sync-alt"></i><?= sanitize(date('Y/m/d', strtotime($val['update_date']))); ?></p>
+                                                <?php if(!empty($val['img'])){ ?>
+                                                <div class="p-shopBlog__img"><img src="<?= showImg($val['img']); ?>" alt=""></div>
+                                                <?php } ?>
+                                                <div class="p-shopBlog__content"><?= sanitize($val['content']); ?></div>
+                                                        <?php } ?>
+                                                <?php } ?>
                                             </div>
                                         </div>
                                     </section>
@@ -207,7 +262,9 @@ include_once('head.php');
                                     <section id="l-access" class="u-display-none js-article-access">
                                         <div class="p-access">
                                             <div class="p-access__map">
-                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26132.349305661788!2d135.7192719!3d35.04314444999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a820c0eb46bd%3A0xee4272b1c22645f!2z6YeR6Zaj5a-6!5e0!3m2!1sja!2sjp!4v1617712311517!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                                <?= getFormData('map_iframe'); ?>
+                                                <p class="p-explain__title u-padding-10 u-font-weight-bold">＜住所＞</p>
+                                                <p class="u-padding-10"><?= (!empty($dbFormData['prefecture_id'])) ? $prefecture[$dbFormData['prefecture_id']] : '';getFormData('city_name').getFormData('street').getFormData('building'); ?></p>
                                             </div>
                                         </div>
                                     </section><!-- /アクセス -->
@@ -277,9 +334,6 @@ include_once('head.php');
         <?php include('sidebar_favo.php'); ?>
 
     </main>
-    <div class="u-upArrow">
-        <i class="fas fa-chevron-circle-up js-goTop"></i>
-    </div>
     <!-- フッター -->
     <?php include_once('footer.php'); ?>
     <script src="js/single.js"></script>

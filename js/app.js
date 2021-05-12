@@ -9,14 +9,14 @@ window.addEventListener("DOMContentLoaded", function() {
         $favorites2,
         likeShopId,
         $showMsg,
-        $goTop;
+        $goTop,
+        $cardTexts;
 
         $favorites = document.querySelectorAll(".js-click-animation") || null;
         $favorites2 = document.querySelectorAll(".js-click-animation2") || null;
         $showMsg = document.querySelector(".js-show-msg") || null;
         $goTop = document.querySelector(".js-goTop") || null;
-        console.log($favorites);
-        console.log($favorites2);
+        $cardTexts = document.querySelectorAll(".js-card-text") || null;
 
     // ********************************************************
     // 関数
@@ -25,6 +25,15 @@ window.addEventListener("DOMContentLoaded", function() {
     // ********************************************************
     // 処理内容
     // ********************************************************
+    // cardText内を42文字いないに調整する
+    if($cardTexts !== null) {
+        $cardTexts.forEach(function(cardText){
+            var length = 42;
+            if(length < cardText.textContent.length){
+                cardText.textContent = cardText.textContent.substring(0, length-2) + ' ...';
+            }
+        });
+    }
     // js-goTopボタンを押した場合、トップへ移動する
     if($goTop !== null) {
         $goTop.addEventListener("click", function() {
@@ -56,16 +65,16 @@ window.addEventListener("DOMContentLoaded", function() {
                 var fd = new FormData();
                 xhr.open("POST", "favorite.php");
                 fd.set('shopId', likeShopId);
-                // xhr.addEventListener('readystatechange', function() {
-                //     if((xhr.readyState === 4) && (xhr.status === 200)) {
-                //     }
-                // });
-                // styleを変える
-                $fav.classList.toggle('far');
-                $fav.classList.toggle('fas');
-                $fav.classList.toggle('is-active');
-                $favorites2[index].classList.toggle('is-active');
-                xhr.send(fd);
+                xhr.addEventListener('readystatechange', function() {
+                    if((xhr.readyState === 4) && (xhr.status === 200)) {
+                        // styleを変える
+                        $fav.classList.toggle('far');
+                        $fav.classList.toggle('fas');
+                        $fav.classList.toggle('is-active');
+                        $favorites2[index].classList.toggle('is-active');
+                        xhr.send(fd);
+                    }
+                });
             });
         })
     }

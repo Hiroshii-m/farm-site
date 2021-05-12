@@ -13,9 +13,14 @@
 @import "layout/blog";
 @import "layout/header";
 @import "layout/region";
-@import "layout/sale";
 @import "layout/sidebar";
 @import "layout/footer";
+#l-blogList {
+    padding: 40px 0 0 0;
+}
+#l-sale {
+    padding: 40px 0;
+}
 #l-search {
     padding: 0 0 80px 0;
     @include mq(sm) {
@@ -238,7 +243,6 @@
     }
     &__head {
         display: flex;
-        justify-content: space-between;
         @include mq(sm) {
             flex-direction: column-reverse;
         }
@@ -807,6 +811,9 @@
     &__img {
         margin: $space_xl 0;
     }
+    &__content {
+        margin: $space_3l 0;
+    }
 }
 .p-comment {
     &__wrap {
@@ -1067,6 +1074,11 @@
     &-top {
         &-5 {
             margin-top: $space_s;
+        }
+    }
+    &-left {
+        &-20 {
+            margin-left: 20px;
         }
     }
 }
