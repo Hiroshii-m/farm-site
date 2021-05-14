@@ -101,9 +101,6 @@ include_once('head.php');
         <!-- サイドバー -->
         <?php include('sidebar_mypage.php'); ?>
     </main>
-    <div class="u-upArrow">
-        <i class="fas fa-chevron-circle-up js-goTop"></i>
-    </div>
 
     <!-- フッター -->
     <?php include_once('footer.php'); ?>

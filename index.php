@@ -1,7 +1,4 @@
 <?php
-// 予想時間:4h
-// かかった時間：1h24mi
-
 // 共通ファイルの読み込み
 require_once('function.php');
 
@@ -179,10 +176,6 @@ include_once('head.php');
         <?php include('sidebar_favo.php'); ?>
     </main>
 
-
-    <div class="u-upArrow">
-        <i class="fas fa-chevron-circle-up js-goTop"></i>
-    </div>
     <!-- フッター -->
     <?php include('footer.php'); ?>
 </body>

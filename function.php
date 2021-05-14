@@ -36,7 +36,7 @@ function debugLogStart(){
 // ================================================
 // デバッグ
 // ================================================
-$debug_flg = true;
+$debug_flg = false;
 function debug($str) {
     global $debug_flg;
     if(!empty($debug_flg)){
@@ -320,7 +320,6 @@ function queryPost($dbh, $sql, $data){
         $err_msg['common'] = MSG::UNEXPECTED;
         return 0;
     }
-    // debug('クエリ成功しました。');
     return $stmt;
 }
 // ログインしているかどうか
@@ -591,6 +590,24 @@ function getProductOne($p_id) {
         $err_msg['common'] = MSG::UNEXPECTED;
     }
 }
+// 1記事取得
+function getBlogOne($b_id) {
+    try {
+        $dbh = dbConnect();
+        $sql = 'SELECT * FROM `blogs` WHERE `id` = :b_id';
+        $data = array(':b_id' => $b_id);
+        $stmt = queryPost($dbh, $sql, $data);
+        if(!empty($stmt)) {
+            $rst = $stmt->fetch(PDO::FETCH_ASSOC);
+            return $rst;
+        } else {
+            return '';
+        }
+    } catch ( Exception $e ) {
+        error_log('エラー発生:' . $e->getMessage());
+        $err_msg['common'] = MSG::UNEXPECTED;
+    }
+}
 // ブログを取得
 function getBlogList($s_id, $currentMinNum = 0, $span = 10) {
     try {
@@ -689,7 +706,7 @@ function getCityInfo($p_id) {
 function getCityName($city_id) {
     try {
         $dbh = dbConnect();
-        $sql = 'SELECT `city_name` FROM `cites` WHERE `id` = :c_id';
+        $sql = 'SELECT `city_name` FROM `cities` WHERE `id` = :c_id';
         $data = array(':c_id' => $city_id);
         $stmt = queryPost($dbh, $sql, $data);
         $result = $stmt->fetch(PDO::FETCH_ASSOC);

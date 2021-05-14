@@ -813,6 +813,8 @@
     }
     &__content {
         margin: $space_3l 0;
+        padding-bottom: $space_3l;
+        border-bottom: 1px solid $font-color_default;
     }
 }
 .p-comment {

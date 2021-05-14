@@ -19,6 +19,8 @@ $products = getProducts($s_id);
 $shops = getFavoShop($u_id);
 // 表示する商品のカウント初期化
 $count_product = 0;
+// ブログ記事を取得
+$blogs = getBlogList($s_id);
 
 // POSTされた場合、登録した商品を追加取得
 if(!empty($_POST['add_product'])) {
@@ -97,38 +99,27 @@ include_once('head.php');
                 <div class="c-container c-submission">
                     <h2 class="c-container__tit">作成した記事</h2>
                     <ul class="c-submission__body">
-                        <li class="c-submission__item">
-                            <div class="c-submission__visual">
-                                <div class="c-submission__img"><img src="images/pic2.jpeg" alt=""></div>
-                                <p class="c-submission__author">店舗名<br>ワクワクさんが転んだ</p>
-                            </div>
-                            <div class="c-submission__content">
-                                <a href="" class="c-submission__tit">今こそ五感で楽しむ「バナナ」</a>
-                                <div class="c-submission__detail">
-                                    どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。
+                    <?php if(!empty($blogs['data'])): ?>
+                        <?php foreach($blogs['data'] as $key => $val): ?>
+                        <li class="c-card">
+                            <div class="c-card__head">
+                                <div class="c-card__img">
+                                    <img src="<?= sanitize(showImg($val['img'])); ?>" alt="">
                                 </div>
-                                <div class="p-product__edit">
-                                    <a href="editProduct.php?p_id=" class="p-product__btn p-product__bg1">編集する</a>
-                                    <a name="delete_id" value="" class="p-product__btn p-product__bg2 js-delete-product">削除する</a>
+                                <div class="c-card__summary u-margin-left-20">
+                                    <a class="c-card__title"><?= sanitize($val['title']); ?></a>
                                 </div>
                             </div>
-                        </li>
-                        <li class="c-submission__item">
-                            <div class="c-submission__visual">
-                                <div class="c-submission__img"><img src="images/pic2.jpeg" alt=""></div>
-                                <p class="c-submission__author">店舗名<br>ワクワクさんが転んだ</p>
+                            <div class="c-card__body">
+                                <?= sanitize($val['content']); ?>
                             </div>
-                            <div class="c-submission__content">
-                                <a href="" class="c-submission__tit">今こそ五感で楽しむ「バナナ」</a>
-                                <div class="c-submission__detail">
-                                    どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。どうも、北海の農家です。
-                                </div>
-                                <div class="p-product__edit">
-                                    <a href="editProduct.php?p_id=<?= showData($val['id']); ?>" class="p-product__btn p-product__bg1">編集する</a>
-                                    <a name="delete_id" value="<?= showData($val['id']); ?>" class="p-product__btn p-product__bg2 js-delete-product">削除する</a>
-                                </div>
+                            <div class="p-product__edit">
+                                <a href="editBlog.php<?= (!empty(appendGetParam())) ? appendGetParam().'&b_id='.$val['id'].'&s_id='.$s_id : '?b_id='.$val['id'].'&s_id='.$s_id; ?>" class="p-product__btn p-product__bg1">編集する</a>
+                                <a href="deleteBlog.php<?= (!empty(appendGetParam())) ? appendGetParam().'&b_id='.$val['id'].'&s_id='.$s_id : '?b_id='.$val['id'].'&s_id='.$s_id; ?>" name="delete_id" value="" class="p-product__btn p-product__bg2 js-delete-product">削除する</a>
                             </div>
                         </li>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
                     </ul>
                     <a href="myBlogList.php?s_id=<?= $s_id; ?>" class="c-container__btn u-btn u-btn-border-shadow u-btn-border-shadow--color">もっと見る</a>
                 </div>
@@ -150,7 +141,7 @@ include_once('head.php');
                                 </summary>
                                 <div class="p-product__info u-flex">
                                     <div class="p-product__img">
-                                        <img src="images/pic3.jpeg" alt="">
+                                        <img src="<?= showImg($val['p_img']); ?>" alt="">
                                     </div>
                                     <div class="p-product__explain">
                                         <p class="u-font-weight-bold">＜カテゴリ＞</p>

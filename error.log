@@ -18371,3 +18371,322 @@ Stack trace:
 [12-May-2021 20:03:54 Asia/Tokyo] デバッグ:==============================================
 [12-May-2021 20:03:54 Asia/Tokyo] デバッグ:ブログ一覧画面
 [12-May-2021 20:03:54 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 15:35:04 Asia/Tokyo] PHP Warning:  Illegal string offset 'category_id' in /Applications/MAMP/htdocs/output2/farm/editProduct.php on line 114
+[14-May-2021 15:35:04 Asia/Tokyo] PHP Notice:  Uninitialized string offset: 0 in /Applications/MAMP/htdocs/output2/farm/editProduct.php on line 114
+[14-May-2021 15:35:04 Asia/Tokyo] PHP Warning:  Illegal string offset 'category_id' in /Applications/MAMP/htdocs/output2/farm/editProduct.php on line 114
+[14-May-2021 15:35:04 Asia/Tokyo] PHP Notice:  Uninitialized string offset: 0 in /Applications/MAMP/htdocs/output2/farm/editProduct.php on line 114
+[14-May-2021 15:35:04 Asia/Tokyo] PHP Warning:  Illegal string offset 'category_id' in /Applications/MAMP/htdocs/output2/farm/editProduct.php on line 114
+[14-May-2021 15:35:04 Asia/Tokyo] PHP Notice:  Uninitialized string offset: 0 in /Applications/MAMP/htdocs/output2/farm/editProduct.php on line 114
+[14-May-2021 15:52:28 Asia/Tokyo] PHP Warning:  Illegal string offset 'category_id' in /Applications/MAMP/htdocs/output2/farm/editProduct.php on line 114
+[14-May-2021 15:52:28 Asia/Tokyo] PHP Notice:  Uninitialized string offset: 0 in /Applications/MAMP/htdocs/output2/farm/editProduct.php on line 114
+[14-May-2021 15:52:28 Asia/Tokyo] PHP Warning:  Illegal string offset 'category_id' in /Applications/MAMP/htdocs/output2/farm/editProduct.php on line 114
+[14-May-2021 15:52:28 Asia/Tokyo] PHP Notice:  Uninitialized string offset: 0 in /Applications/MAMP/htdocs/output2/farm/editProduct.php on line 114
+[14-May-2021 15:52:28 Asia/Tokyo] PHP Warning:  Illegal string offset 'category_id' in /Applications/MAMP/htdocs/output2/farm/editProduct.php on line 114
+[14-May-2021 15:52:28 Asia/Tokyo] PHP Notice:  Uninitialized string offset: 0 in /Applications/MAMP/htdocs/output2/farm/editProduct.php on line 114
+[14-May-2021 15:52:38 Asia/Tokyo] PHP Warning:  Illegal string offset 'category_id' in /Applications/MAMP/htdocs/output2/farm/editProduct.php on line 114
+[14-May-2021 15:52:38 Asia/Tokyo] PHP Notice:  Uninitialized string offset: 0 in /Applications/MAMP/htdocs/output2/farm/editProduct.php on line 114
+[14-May-2021 15:52:38 Asia/Tokyo] PHP Warning:  Illegal string offset 'category_id' in /Applications/MAMP/htdocs/output2/farm/editProduct.php on line 114
+[14-May-2021 15:52:38 Asia/Tokyo] PHP Notice:  Uninitialized string offset: 0 in /Applications/MAMP/htdocs/output2/farm/editProduct.php on line 114
+[14-May-2021 15:52:38 Asia/Tokyo] PHP Warning:  Illegal string offset 'category_id' in /Applications/MAMP/htdocs/output2/farm/editProduct.php on line 114
+[14-May-2021 15:52:38 Asia/Tokyo] PHP Notice:  Uninitialized string offset: 0 in /Applications/MAMP/htdocs/output2/farm/editProduct.php on line 114
+[14-May-2021 16:06:12 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[14-May-2021 16:06:12 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 16:06:12 Asia/Tokyo] デバッグ:マイページ画面
+[14-May-2021 16:06:12 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 16:06:20 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[14-May-2021 16:06:20 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 16:06:20 Asia/Tokyo] デバッグ:ブログ編集
+[14-May-2021 16:06:20 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 16:06:24 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[14-May-2021 16:06:24 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 16:06:24 Asia/Tokyo] デバッグ:ブログ一覧画面
+[14-May-2021 16:06:24 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 16:06:31 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[14-May-2021 16:06:31 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 16:06:31 Asia/Tokyo] デバッグ:ブログ削除
+[14-May-2021 16:06:31 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 16:06:33 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[14-May-2021 16:06:33 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 16:06:33 Asia/Tokyo] デバッグ:ブログ一覧画面
+[14-May-2021 16:06:33 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 16:06:38 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[14-May-2021 16:06:38 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 16:06:38 Asia/Tokyo] デバッグ:マイページ画面
+[14-May-2021 16:06:38 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 16:06:48 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 16:06:48 Asia/Tokyo] デバッグ:TOP画面
+[14-May-2021 16:06:48 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:08:00 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:08:00 Asia/Tokyo] デバッグ:TOP画面
+[14-May-2021 17:08:00 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:09:50 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:09:50 Asia/Tokyo] デバッグ:TOP画面
+[14-May-2021 17:09:50 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:09:50 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/sidebar_favo.php on line 14
+[14-May-2021 17:09:50 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/sidebar_favo.php on line 14
+[14-May-2021 17:09:50 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/sidebar_favo.php on line 14
+[14-May-2021 17:09:50 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/sidebar_favo.php on line 14
+[14-May-2021 17:09:50 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/sidebar_favo.php on line 14
+[14-May-2021 17:09:50 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/sidebar_favo.php on line 14
+[14-May-2021 17:09:50 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/sidebar_favo.php on line 14
+[14-May-2021 17:09:50 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/sidebar_favo.php on line 14
+[14-May-2021 17:09:50 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/sidebar_favo.php on line 14
+[14-May-2021 17:09:50 Asia/Tokyo] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/sidebar_favo.php on line 14
+[14-May-2021 17:10:07 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:10:07 Asia/Tokyo] デバッグ:TOP画面
+[14-May-2021 17:10:07 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:10:10 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:10:10 Asia/Tokyo] デバッグ:店舗詳細画面
+[14-May-2021 17:10:10 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:10:10 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 249
+[14-May-2021 17:10:10 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:10:10 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:10:10 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 254
+[14-May-2021 17:10:10 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 249
+[14-May-2021 17:10:10 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:10:10 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:10:10 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 254
+[14-May-2021 17:10:10 Asia/Tokyo] PHP Notice:  Undefined index: title in /Applications/MAMP/htdocs/output2/farm/single.php on line 249
+[14-May-2021 17:10:10 Asia/Tokyo] PHP Notice:  Undefined index: create_date in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:10:10 Asia/Tokyo] PHP Notice:  Undefined index: update_date in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:10:10 Asia/Tokyo] PHP Notice:  Undefined index: content in /Applications/MAMP/htdocs/output2/farm/single.php on line 254
+[14-May-2021 17:11:03 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:11:03 Asia/Tokyo] デバッグ:店舗詳細画面
+[14-May-2021 17:11:03 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:11:03 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 249
+[14-May-2021 17:11:03 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:11:03 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:11:03 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 254
+[14-May-2021 17:11:03 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 249
+[14-May-2021 17:11:03 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:11:03 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:11:03 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 254
+[14-May-2021 17:11:03 Asia/Tokyo] PHP Notice:  Undefined index: title in /Applications/MAMP/htdocs/output2/farm/single.php on line 249
+[14-May-2021 17:11:03 Asia/Tokyo] PHP Notice:  Undefined index: create_date in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:11:03 Asia/Tokyo] PHP Notice:  Undefined index: update_date in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:11:03 Asia/Tokyo] PHP Notice:  Undefined index: content in /Applications/MAMP/htdocs/output2/farm/single.php on line 254
+[14-May-2021 17:11:13 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:11:13 Asia/Tokyo] デバッグ:店舗詳細画面
+[14-May-2021 17:11:13 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:11:13 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 249
+[14-May-2021 17:11:13 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:11:13 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:11:13 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 254
+[14-May-2021 17:11:13 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 249
+[14-May-2021 17:11:13 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:11:13 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:11:13 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 254
+[14-May-2021 17:11:13 Asia/Tokyo] PHP Notice:  Undefined index: title in /Applications/MAMP/htdocs/output2/farm/single.php on line 249
+[14-May-2021 17:11:13 Asia/Tokyo] PHP Notice:  Undefined index: create_date in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:11:13 Asia/Tokyo] PHP Notice:  Undefined index: update_date in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:11:13 Asia/Tokyo] PHP Notice:  Undefined index: content in /Applications/MAMP/htdocs/output2/farm/single.php on line 254
+[14-May-2021 17:11:15 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:11:15 Asia/Tokyo] デバッグ:店舗詳細画面
+[14-May-2021 17:11:15 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:11:15 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 249
+[14-May-2021 17:11:15 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:11:15 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:11:15 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 254
+[14-May-2021 17:11:15 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 249
+[14-May-2021 17:11:15 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:11:15 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:11:15 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 254
+[14-May-2021 17:11:15 Asia/Tokyo] PHP Notice:  Undefined index: title in /Applications/MAMP/htdocs/output2/farm/single.php on line 249
+[14-May-2021 17:11:15 Asia/Tokyo] PHP Notice:  Undefined index: create_date in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:11:15 Asia/Tokyo] PHP Notice:  Undefined index: update_date in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:11:15 Asia/Tokyo] PHP Notice:  Undefined index: content in /Applications/MAMP/htdocs/output2/farm/single.php on line 254
+[14-May-2021 17:13:02 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:13:02 Asia/Tokyo] デバッグ:店舗詳細画面
+[14-May-2021 17:13:02 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:13:02 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 249
+[14-May-2021 17:13:02 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:13:02 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:13:02 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 254
+[14-May-2021 17:13:02 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 249
+[14-May-2021 17:13:02 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:13:02 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:13:02 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 254
+[14-May-2021 17:13:02 Asia/Tokyo] PHP Notice:  Undefined index: title in /Applications/MAMP/htdocs/output2/farm/single.php on line 249
+[14-May-2021 17:13:02 Asia/Tokyo] PHP Notice:  Undefined index: create_date in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:13:02 Asia/Tokyo] PHP Notice:  Undefined index: update_date in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:13:02 Asia/Tokyo] PHP Notice:  Undefined index: content in /Applications/MAMP/htdocs/output2/farm/single.php on line 254
+[14-May-2021 17:13:04 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:13:04 Asia/Tokyo] デバッグ:TOP画面
+[14-May-2021 17:13:04 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:13:08 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:13:08 Asia/Tokyo] デバッグ:検索画面
+[14-May-2021 17:13:08 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:13:13 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:13:13 Asia/Tokyo] デバッグ:店舗詳細画面
+[14-May-2021 17:13:13 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:13:13 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 249
+[14-May-2021 17:13:13 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:13:13 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:13:13 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 254
+[14-May-2021 17:13:13 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 249
+[14-May-2021 17:13:13 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:13:13 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:13:13 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 254
+[14-May-2021 17:13:13 Asia/Tokyo] PHP Notice:  Undefined index: title in /Applications/MAMP/htdocs/output2/farm/single.php on line 249
+[14-May-2021 17:13:13 Asia/Tokyo] PHP Notice:  Undefined index: create_date in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:13:13 Asia/Tokyo] PHP Notice:  Undefined index: update_date in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:13:13 Asia/Tokyo] PHP Notice:  Undefined index: content in /Applications/MAMP/htdocs/output2/farm/single.php on line 254
+[14-May-2021 17:13:59 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:13:59 Asia/Tokyo] デバッグ:店舗詳細画面
+[14-May-2021 17:13:59 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:13:59 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 249
+[14-May-2021 17:13:59 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:13:59 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:13:59 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 254
+[14-May-2021 17:13:59 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 249
+[14-May-2021 17:13:59 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:13:59 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:13:59 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 254
+[14-May-2021 17:13:59 Asia/Tokyo] PHP Notice:  Undefined index: title in /Applications/MAMP/htdocs/output2/farm/single.php on line 249
+[14-May-2021 17:13:59 Asia/Tokyo] PHP Notice:  Undefined index: create_date in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:13:59 Asia/Tokyo] PHP Notice:  Undefined index: update_date in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:13:59 Asia/Tokyo] PHP Notice:  Undefined index: content in /Applications/MAMP/htdocs/output2/farm/single.php on line 254
+[14-May-2021 17:14:09 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:14:09 Asia/Tokyo] デバッグ:検索画面
+[14-May-2021 17:14:09 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:14:12 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:14:12 Asia/Tokyo] デバッグ:店舗詳細画面
+[14-May-2021 17:14:12 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:14:12 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 249
+[14-May-2021 17:14:12 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:14:12 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:14:12 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 254
+[14-May-2021 17:14:12 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 249
+[14-May-2021 17:14:12 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:14:12 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:14:12 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 254
+[14-May-2021 17:14:12 Asia/Tokyo] PHP Notice:  Undefined index: title in /Applications/MAMP/htdocs/output2/farm/single.php on line 249
+[14-May-2021 17:14:12 Asia/Tokyo] PHP Notice:  Undefined index: create_date in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:14:12 Asia/Tokyo] PHP Notice:  Undefined index: update_date in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:14:12 Asia/Tokyo] PHP Notice:  Undefined index: content in /Applications/MAMP/htdocs/output2/farm/single.php on line 254
+[14-May-2021 17:14:14 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:14:14 Asia/Tokyo] デバッグ:検索画面
+[14-May-2021 17:14:14 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:15:24 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:15:24 Asia/Tokyo] デバッグ:店舗詳細画面
+[14-May-2021 17:15:24 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:15:24 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 249
+[14-May-2021 17:15:24 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:15:24 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:15:24 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 254
+[14-May-2021 17:15:24 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 249
+[14-May-2021 17:15:24 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:15:24 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:15:24 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 254
+[14-May-2021 17:15:24 Asia/Tokyo] PHP Notice:  Undefined index: title in /Applications/MAMP/htdocs/output2/farm/single.php on line 249
+[14-May-2021 17:15:24 Asia/Tokyo] PHP Notice:  Undefined index: create_date in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:15:24 Asia/Tokyo] PHP Notice:  Undefined index: update_date in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 17:15:24 Asia/Tokyo] PHP Notice:  Undefined index: content in /Applications/MAMP/htdocs/output2/farm/single.php on line 254
+[14-May-2021 17:15:33 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:15:33 Asia/Tokyo] デバッグ:検索画面
+[14-May-2021 17:15:33 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:16:01 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:16:01 Asia/Tokyo] デバッグ:TOP画面
+[14-May-2021 17:16:01 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:16:46 Asia/Tokyo] デバッグ:ログイン有効期限切れです。
+[14-May-2021 17:16:46 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:16:46 Asia/Tokyo] デバッグ:ログイン画面
+[14-May-2021 17:16:46 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:16:46 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[14-May-2021 17:16:46 Asia/Tokyo] デバッグ:セッションID：
+[14-May-2021 17:16:46 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+    [login_date] => 1620975998
+    [login_limit] => 3600
+    [user_id] => 3
+)
+
+[14-May-2021 17:16:46 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620980206
+[14-May-2021 17:16:46 Asia/Tokyo] デバッグ:ログイン期限日時タイムスタンプ：1620979598
+[14-May-2021 17:16:46 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:16:46 Asia/Tokyo] デバッグ:ログイン画面
+[14-May-2021 17:16:46 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:16:46 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[14-May-2021 17:16:46 Asia/Tokyo] デバッグ:セッションID：32di64am2lb1shpei4228tlait
+[14-May-2021 17:16:46 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[14-May-2021 17:16:46 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620980206
+[14-May-2021 17:16:53 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:16:53 Asia/Tokyo] デバッグ:ログイン画面
+[14-May-2021 17:16:53 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:16:53 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[14-May-2021 17:16:53 Asia/Tokyo] デバッグ:セッションID：b8h9uhe145j1ilr4p4ng3jfbd9
+[14-May-2021 17:16:53 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[14-May-2021 17:16:53 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620980213
+[14-May-2021 17:16:53 Asia/Tokyo] デバッグ:POSTされました。
+[14-May-2021 17:16:54 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[14-May-2021 17:16:54 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:16:54 Asia/Tokyo] デバッグ:マイページ画面
+[14-May-2021 17:16:54 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:16:58 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[14-May-2021 17:16:58 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:16:58 Asia/Tokyo] デバッグ:ブログ作成
+[14-May-2021 17:16:58 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:17:10 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[14-May-2021 17:17:10 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:17:10 Asia/Tokyo] デバッグ:ブログ作成
+[14-May-2021 17:17:10 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:17:10 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[14-May-2021 17:17:10 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:17:10 Asia/Tokyo] デバッグ:マイページ画面
+[14-May-2021 17:17:10 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:17:26 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[14-May-2021 17:17:26 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:17:26 Asia/Tokyo] デバッグ:店舗編集
+[14-May-2021 17:17:26 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:17:26 Asia/Tokyo] エラー発生:SQLSTATE[42S02]: Base table or view not found: 1146 Table 'farmshops.cites' doesn't exist
+[14-May-2021 17:17:30 Asia/Tokyo] デバッグ:ログイン有効期限内です。
+[14-May-2021 17:17:30 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:17:30 Asia/Tokyo] デバッグ:マイページ画面
+[14-May-2021 17:17:30 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:17:33 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:17:33 Asia/Tokyo] デバッグ:ログアウト画面
+[14-May-2021 17:17:33 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:17:33 Asia/Tokyo] デバッグ:セッションの中身Array
+(
+)
+
+[14-May-2021 17:17:33 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:17:33 Asia/Tokyo] デバッグ:ログイン画面
+[14-May-2021 17:17:33 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:17:33 Asia/Tokyo] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[14-May-2021 17:17:33 Asia/Tokyo] デバッグ:セッションID：nt4qf28bq8ftsuet4gq1dm1o2o
+[14-May-2021 17:17:33 Asia/Tokyo] デバッグ:セッション変数の中身：Array
+(
+)
+
+[14-May-2021 17:17:33 Asia/Tokyo] デバッグ:現在日時タイムスタンプ：1620980253
+[14-May-2021 17:17:36 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:17:36 Asia/Tokyo] デバッグ:TOP画面
+[14-May-2021 17:17:36 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:17:44 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:17:44 Asia/Tokyo] デバッグ:検索画面
+[14-May-2021 17:17:44 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:17:46 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:17:46 Asia/Tokyo] デバッグ:TOP画面
+[14-May-2021 17:17:46 Asia/Tokyo] デバッグ:==============================================
+[14-May-2021 17:19:06 Asia/Tokyo] エラー発生:SQLSTATE[42S02]: Base table or view not found: 1146 Table 'farmshops.cites' doesn't exist
+[14-May-2021 17:23:00 Asia/Tokyo] エラー発生:SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[14-May-2021 18:34:55 Asia/Tokyo] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/output2/farm/mypage.php on line 13
+[14-May-2021 18:42:48 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 249
+[14-May-2021 18:42:48 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 18:42:48 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 18:42:48 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type int in /Applications/MAMP/htdocs/output2/farm/single.php on line 254
+[14-May-2021 18:42:48 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 249
+[14-May-2021 18:42:48 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 18:42:48 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 18:42:48 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type float in /Applications/MAMP/htdocs/output2/farm/single.php on line 254
+[14-May-2021 18:42:48 Asia/Tokyo] PHP Notice:  Undefined index: title in /Applications/MAMP/htdocs/output2/farm/single.php on line 249
+[14-May-2021 18:42:48 Asia/Tokyo] PHP Notice:  Undefined index: create_date in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 18:42:48 Asia/Tokyo] PHP Notice:  Undefined index: update_date in /Applications/MAMP/htdocs/output2/farm/single.php on line 250
+[14-May-2021 18:42:48 Asia/Tokyo] PHP Notice:  Undefined index: content in /Applications/MAMP/htdocs/output2/farm/single.php on line 254

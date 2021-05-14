@@ -61,8 +61,8 @@ include_once('head.php');
                                 <?= sanitize($val['content']); ?>
                             </div>
                             <div class="p-product__edit">
-                                <a href="editProduct.php?b_id=" class="p-product__btn p-product__bg1">編集する</a>
-                                <a name="delete_id" value="" class="p-product__btn p-product__bg2 js-delete-product">削除する</a>
+                                <a href="editBlog.php<?= (!empty(appendGetParam())) ? appendGetParam().'&b_id='.$val['id'] : '?b_id='.$val['id']; ?>" class="p-product__btn p-product__bg1">編集する</a>
+                                <a href="deleteBlog.php<?= (!empty(appendGetParam())) ? appendGetParam().'&b_id='.$val['id'] : '?b_id='.$val['id']; ?>" name="delete_id" value="" class="p-product__btn p-product__bg2 js-delete-product">削除する</a>
                             </div>
                         </li>
                         <?php endforeach; ?>

@@ -81,6 +81,7 @@ if(!empty($_POST)) {
     $social_profile = (!empty($_POST['social_profile'])) ? $_POST['social_profile'] : '';
     $postcode = (!empty($_POST['postcode'])) ? $_POST['postcode'] : '';
     $prefecture_id = (!empty($_POST['prefecture_id'])) ? $_POST['prefecture_id'] : 0;
+    $city_id = '';
     $city_name = (!empty($_POST['city_name'])) ? $_POST['city_name'] : '';
     $street = (!empty($_POST['street'])) ? $_POST['street'] : '';
     $building = (!empty($_POST['building'])) ? $_POST['building'] : '';
@@ -134,11 +135,12 @@ if(!empty($_POST)) {
     if(empty($err_msg)) {
         try {
             $dbh = dbConnect();
-            $sql = 'UPDATE shops SET `shop_name` = :shop_name, `social_profile` = :social_profile, `postcode` = :postcode, `prefecture_id` = :p_id, `city_id` = :c_id, `street` = :street, `building` = :building, `tel` = :tel, `map_iframe`, `shop_img1` = :shop_img1, `shop_img2` = :shop_img2, `shop_img3` = :shop_img3, `create_date` = :create_date WHERE `id` = :s_id AND `user_id` = :u_id';
-            $data = array(':shop_name' => $shop_name, ':social_profile' => $social_profile, ':postcode' => $postcode, ':p_id' => $prefecture_id, ':c_id' => $city_id, ':street' => $street, ':building' => $building, ':tel' => $tel, ':map_iframe' => $map_iframe, ':shop_img1' => $shop_img1, ':shop_img2' => $shop_img2, ':shop_img3' => $shop_img3, ':create_date' => date('Y-m-d H:i:s'), ':s_id' => $s_id, ':u_id' => $u_id);
-            queryPost($dbh, $sql, $data);
-
-            header("Location:mypage.php");
+            $sql = 'UPDATE shops SET `shop_name` = :shop_name, `social_profile` = :social_profile, `postcode` = :postcode, `prefecture_id` = :p_id, `city_id` = :c_id, `street` = :street, `building` = :building, `tel` = :tel, `map_iframe` = :map_iframe, `shop_img1` = :shop_img1, `shop_img2` = :shop_img2, `shop_img3` = :shop_img3 WHERE `id` = :s_id AND `user_id` = :u_id';
+            $data = array(':shop_name' => $shop_name, ':social_profile' => $social_profile, ':postcode' => $postcode, ':p_id' => $prefecture_id, ':c_id' => $city_id, ':street' => $street, ':building' => $building, ':tel' => $tel, ':map_iframe' => $map_iframe, ':shop_img1' => $shop_img1, ':shop_img2' => $shop_img2, ':shop_img3' => $shop_img3, ':s_id' => $s_id, ':u_id' => $u_id);
+            $stmt = queryPost($dbh, $sql, $data);
+            if(!empty($stmt)) {
+                header("Location:mypage.php");
+            }
         } catch ( Exception $e ) {
             error_log('エラー発生:' . $e->getMessage());
             $err_msg['common'] = MSG::UNEXPECTED;
@@ -256,7 +258,7 @@ include('head.php');
                     </div>
                 </label>
                 
-                <input class="c-form__submit" type="submit" value="登録">
+                <input class="c-form__submit" type="submit" value="更新">
             </form>
         </main>
         

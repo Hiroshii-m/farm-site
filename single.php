@@ -119,8 +119,8 @@ include_once('head.php');
 
                     <!-- パンクズリスト -->
                     <div class="c-pankuzu">
-                        <a href="" class="u-prev p-article__prev">TOP</a><span>&nbsp;&gt;</span>
-                        <a href="" class="u-prev p-article__prev">検索画面</a><span>&nbsp;&gt;</span>
+                        <a href="index.php<?= (!empty(appendGetParam())) ? appendGetParam(array('p_id', 'shop_id')) : ''; ?>" class="u-prev p-article__prev">TOP</a><span>&nbsp;&gt;</span>
+                        <a href="search.php<?= (!empty(appendGetParam())) ? appendGetParam(array('shop_id')) : ''; ?>" class="u-prev p-article__prev">検索画面</a><span>&nbsp;&gt;</span>
                         <span href="" class="u-prev p-article__prev">店舗詳細ページ</span>
                     </div><!-- /パンクズリスト -->
 
@@ -244,8 +244,8 @@ include_once('head.php');
                                     <section id="l-shopBlog" class="u-display-none js-article-blog">
                                         <div class="p-shopBlog">
                                             <div class="p-shopBlog__body">
-                                                <?php if(!empty($blogs)){ ?>
-                                                    <?php foreach($blogs as $key => $val){ ?>
+                                                <?php if(!empty($blogs['data'])){ ?>
+                                                    <?php foreach($blogs['data'] as $key => $val){ ?>
                                                 <h3 class="p-shopBlog__title"><?= sanitize($val['title']); ?></h3>
                                                 <p class="p-shopBlog__time"><i class="far fa-clock"></i><?= sanitize(date('Y/m/d', strtotime($val['create_date']))); ?>&ensp;<i class="fas fa-sync-alt"></i><?= sanitize(date('Y/m/d', strtotime($val['update_date']))); ?></p>
                                                 <?php if(!empty($val['img'])){ ?>
