@@ -8,13 +8,13 @@
                 <p class="c-footer__text">SNSでシェアしよう</p>
                 <ul class="c-footer__sns u-flex">
                     <li class="c-footer__icon">
-                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href="https://twitter.com/intent/tweet?text=「農産物販売所」&url=「<?= (isset($_SERVER['HTTPS'])) ? 'https://' : 'http://'; ?><?= $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>」&related=「ツイッターアカウント名」" target="_blank" rel="nofollow"><i class="fab fa-twitter"></i></a>
                     </li>
                     <li class="c-footer__icon">
-                        <a href=""><i class="fab fa-facebook-square"></i></a>
+                        <a href="http://www.facebook.com/share.php?u=<?= (isset($_SERVER['HTTPS'])) ? 'https://' : 'http://'; ?><?= $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>" ><i class="fab fa-facebook-square"></i></a>
                     </li>
                     <li class="c-footer__icon">
-                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href="http://line.me/R/msg/text/?「農産物販売所」「<?= (isset($_SERVER['HTTPS'])) ? 'https://' : 'http://'; ?><?= $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>」" target="_blank" rel="nofollow"><i class="fab fa-line"></i></a>
                     </li>
                 </ul>
             </div>

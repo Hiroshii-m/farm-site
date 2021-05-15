@@ -134,23 +134,26 @@ include_once('head.php');
                             </div>
                         </div>
                         <div class="p-article__inner">
+                            <div class="p-article__sns">
+                                <a class="p-article__fab" href="https://twitter.com/intent/tweet?text=「<?= sanitize(getFormData('shop_name')); ?>」&url=「<?= (isset($_SERVER['HTTPS'])) ? 'https://' : 'http://'; ?><?= $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>」" target="_blank" rel="nofollow"><i class="fab fa-twitter"></i></a>
+                                <a class="p-article__fab" href="http://www.facebook.com/share.php?u=<?= (isset($_SERVER['HTTPS'])) ? 'https://' : 'http://'; ?><?= $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>" ><i class="fab fa-facebook-square"></i></a>
+                                <a class="p-article__fab" href="http://line.me/R/msg/text/?「<?= sanitize(getFormData('shop_name')); ?>」「<?= (isset($_SERVER['HTTPS'])) ? 'https://' : 'http://'; ?><?= $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>」" target="_blank" rel="nofollow"><i class="fab fa-line"></i></a>
+                            </div>
                             <div class="p-article__head u-flex-between">
                                 <h2 class="p-article__shopName"><?= sanitize(getFormData('shop_name')); ?></h2>
                                 <div class="c-submission__icon">
-                                <div class="c-submission__icon">
-                                <i class="fa-heart c-submission__fav js-click-animation <?= ((!empty($u_id)) && isFavorite(getFormData('id'), $u_id)) ? 'fas is-active' : 'far'; ?>" data-shopid="<?= sanitize(getFormData('id')); ?>"></i>
-                                <i class="fa-heart c-submission__fav2 js-click-animation2 <?= ((!empty($u_id)) && isFavorite(getFormData('id'), $u_id)) ? 'far is-active' : 'fas'; ?>"></i>
+                                    <i class="fa-heart c-submission__fav js-click-animation <?= ((!empty($u_id)) && isFavorite(getFormData('id'), $u_id)) ? 'fas is-active' : 'far'; ?>" data-shopid="<?= sanitize(getFormData('id')); ?>"></i>
+                                    <i class="fa-heart c-submission__fav2 js-click-animation2 <?= ((!empty($u_id)) && isFavorite(getFormData('id'), $u_id)) ? 'far is-active' : 'fas'; ?>"></i>
                                 </div>
-                            </div>
                             </div>
                             <div class="p-article__images">
                                 <div class="p-article__caption">
-                                    <img src="<?= sanitize(showImg(getFormData('shop_img1'))); ?>" alt="">
+                                    <img class="js-main-img" src="<?= sanitize(showImg(getFormData('shop_img1'))); ?>" alt="">
                                 </div>
                                 <div class="p-article__thumnails">
-                                    <div class="p-article__img"><img src="<?= sanitize(showImg(getFormData('shop_img1'))); ?>" alt=""></div>
-                                    <div class="p-article__img"><img src="<?= sanitize(showImg(getFormData('shop_img2'))); ?>" alt=""></div>
-                                    <div class="p-article__img"><img src="<?= sanitize(showImg(getFormData('shop_img3'))); ?>" alt=""></div>
+                                    <div class="p-article__img"><img class="js-sub-img" src="<?= sanitize(showImg(getFormData('shop_img1'))); ?>" alt=""></div>
+                                    <div class="p-article__img"><img class="js-sub-img" src="<?= sanitize(showImg(getFormData('shop_img2'))); ?>" alt=""></div>
+                                    <div class="p-article__img"><img class="js-sub-img" src="<?= sanitize(showImg(getFormData('shop_img3'))); ?>" alt=""></div>
                                 </div>
                             </div>
                             
@@ -337,6 +340,5 @@ include_once('head.php');
     <!-- フッター -->
     <?php include_once('footer.php'); ?>
     <script src="js/single.js"></script>
-    <script src="js/app_icon.js"></script>
 </body>
 </html>

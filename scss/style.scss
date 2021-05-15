@@ -177,12 +177,11 @@
     &__icon {
         font-size: $font-size_xl;
         cursor: pointer;
-        margin-right: 20px;
+        margin: $space_m $space_3l 0 0;
         position: relative;
+        right: 30px;
         @include mq(sm) {
-            position: absolute;
-            top: 10px;
-            right: 30px;
+            margin: $space_m 0 0 0;
         }
     }
     &__fav {
@@ -538,6 +537,18 @@
         @include mq(md) {
             font-size: $font-size_xl;
         }
+        @include mq(sm) {
+            max-width: 260px;
+        }
+    }
+    &__sns {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: $space_xl;
+    }
+    &__fab {
+        font-size: $font-size_xl;
+        margin: 0 $space_s;
     }
     &__icon {
         font-size: $font-size_xl;
@@ -551,6 +562,7 @@
     &__caption {
         width: 68%;
         max-width: 450px;
+        height: 300px;
         @include mq(md) {
             width: 100%;
             margin: 0 auto;
@@ -568,6 +580,7 @@
     &__img {
         width: 120px;
         margin: $space_m 0;
+        cursor: pointer;
         @include mq(md) {
             margin: $space_m;
             width: calc(33.3% - 20px);
