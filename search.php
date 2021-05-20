@@ -72,7 +72,7 @@ include_once('head.php');
                         <h2 class="p-search__title">条件を絞る</h2>
                         <div class="p-search__area">
                             <select class="p-search__select" name="city_id" id="">
-                                <?php if(!empty(array_filter($category, "array_filter"))){ ?>
+                                <?php if(!empty(array_filter($cityInfo, "array_filter"))){ ?>
                                     <?php foreach($cityInfo as $key => $val): ?>
                                         <option value="<?= $key; ?>" <?= ((!empty($city_id) || (int)$city_id === 0) && (int)$city_id === $key) ? 'selected' : ''; ?>><?= sanitize(showData($val['city_name'])); ?></option>
                                     <?php endforeach; ?>
