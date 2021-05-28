@@ -53,6 +53,7 @@ if(!empty($_GET)) {
                 $_SESSION['token'] = $token;
 
                include('sendMailSubmit.php');
+               $_SESSION['msg'] = MSG::SENDMAIL;
             }
         }
     } catch (Exception $e) {

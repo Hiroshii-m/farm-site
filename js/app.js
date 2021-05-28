@@ -4,7 +4,7 @@ window.addEventListener("DOMContentLoaded", function() {
     // ********************************************************
     var $headerNav = document.querySelector('.js-header-nav'),
         $headerList = document.querySelector('.js-header-list'),
-        $spMenuTarget = document.querySelector('.js-sp-menu-target'),
+        $spMenuTarget,
         $favorites,
         $favorites2,
         likeShopId,
@@ -12,6 +12,7 @@ window.addEventListener("DOMContentLoaded", function() {
         $goTop,
         $cardTexts;
 
+        $spMenuTarget = document.querySelector('.js-sp-menu-target') || null;
         $favorites = document.querySelectorAll(".js-click-animation") || null;
         $favorites2 = document.querySelectorAll(".js-click-animation2") || null;
         $showMsg = document.querySelector(".js-show-msg") || null;
@@ -44,9 +45,10 @@ window.addEventListener("DOMContentLoaded", function() {
     if($showMsg !== null) {
         if($showMsg.textContent.replace(/^[\s　]+|[\s　]+$/g, "").length) {
             setTimeout(function(){ $showMsg.classList.add('active'); }, 10);
-            setTimeout(function(){ $showMsg.classList.remove('active'); }, 8000);
+            setTimeout(function(){ $showMsg.classList.remove('active'); }, 4000);
         }
     }
+    // if
     window.addEventListener("scroll", function() {
         if($spMenuTarget.offsetTop < window.scrollY) {
             $headerNav.classList.add('active');

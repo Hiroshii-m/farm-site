@@ -52,8 +52,8 @@ if(!empty($_POST)) {
             $_SESSION['email'] = $email;
             include('sendMailSubmit.php');
             $_SESSION['msg'] = MSG::SENDMAIL;
-            debug('URL発行');
-            debug($url);
+            // debug('URL発行');
+            // debug($url);
     
         } catch (Exception $e) {
             error_log('エラー発生:' . $e->getMessage());

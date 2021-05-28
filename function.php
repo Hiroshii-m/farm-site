@@ -10,13 +10,13 @@ ini_set('error_log', 'error.log');
 // セッション準備・セッション有効期限を延ばす
 // =====================================
 // // デフォルトだと、24分でセッションが削除されてしまうので、置き場所変更
-// session_save_path("/var/tmp/");
+session_save_path("/var/tmp/");
 // // ガーベージコレクションが削除するセッションの有効期限を設定（30日に設定）
-// ini_set('session.gc_maxlifetime', 60 * 60 * 24 * 30);
+ini_set('session.gc_maxlifetime', 60 * 60 * 24 * 30);
 // // ブラウザを閉じても削除されないようにクッキー自体の有効期限を延ばす
-// ini_set('session.cookie_lifetime', 60 * 60 * 24 * 30);
+ini_set('session.cookie_lifetime', 60 * 60 * 24 * 30);
 // 上の設定は、session_start()の前に書かないといけない。キャッシュなどのヘッダー情報が送信される。
-// session_start();
+session_start();
 // セッションIDを再発行
 session_regenerate_id();
 
@@ -296,9 +296,8 @@ function dbConnect(){
     // $user = 'root';
     // $password = 'root';
     // ロリポップ
-    $dsn = 'mysql:dbname=LAA1303831-farmshops;host=mysql138.phy.lolipop.lan;charset=utf8';
-    $user = 'LAA1303831';
-    $password = 'tyokuhan251';
+    // 非公開
+    
     $options = array(
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,

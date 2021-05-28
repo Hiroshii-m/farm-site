@@ -1889,11 +1889,11 @@ i {
   text-align: center;
   position: absolute;
   top: -100%;
-  transition: all 5s;
+  transition: all 4s;
 }
 .p-flash.active {
   top: 0;
-  transition: all 3s;
+  transition: all 2s;
 }
 
 .u-upArrow {

@@ -1,0 +1,17 @@
+.c-main {
+    width: 90%;
+    max-width: $site-width_xxl;
+    box-sizing: border-box;
+    @include mq(xl) {
+        max-width: $site-width_xl;
+    }
+    @include mq(lg) {
+        margin: 0 auto;
+    }
+    @include mq(md) {
+        max-width: $site-width_md;
+    }
+    @include mq(ms) {
+        max-width: $site-width_ms;
+    }
+}
