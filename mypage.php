@@ -86,11 +86,11 @@ include_once('head.php');
                                 </div>
                             </li>
                             <?php endforeach; ?>
-                        <?php }else{ ?>
-                        <p>お気に入り登録されていません。</p>
-                        <?php } ?>
                     </ul>
                     <a href="favoShopList.php" class="c-container__btn u-btn u-btn-border-shadow u-btn-border-shadow--color">もっと見る</a>
+                    <?php }else{ ?>
+                    <p>お気に入り登録されていません。</p>
+                    <?php } ?>
                 </div>
             </section><!-- /最近登録された販売所 -->
 
@@ -99,7 +99,7 @@ include_once('head.php');
                 <div class="c-container c-submission">
                     <h2 class="c-container__tit">作成した記事</h2>
                     <ul class="c-submission__body">
-                    <?php if(!empty($blogs['data'])): ?>
+                    <?php if(!empty($blogs['data'])){ ?>
                         <?php foreach($blogs['data'] as $key => $val): ?>
                         <li class="c-card">
                             <div class="c-card__head">
@@ -119,9 +119,11 @@ include_once('head.php');
                             </div>
                         </li>
                         <?php endforeach; ?>
-                    <?php endif; ?>
                     </ul>
                     <a href="myBlogList.php?s_id=<?= $s_id; ?>" class="c-container__btn u-btn u-btn-border-shadow u-btn-border-shadow--color">もっと見る</a>
+                    <?php }else{ ?>
+                        <p>作成された記事はありません。</p>
+                    <?php } ?>
                 </div>
             </section><!-- /作成した記事一覧 -->
 
