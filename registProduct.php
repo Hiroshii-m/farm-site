@@ -41,7 +41,7 @@ if(!empty($_POST)) {
             // 商品を登録
             $dbh = dbConnect();
             $sql = 'INSERT INTO products(`shop_id`, `user_id`, `p_name`, `p_detail`, `category_id`, `term`, `p_value`, `p_number`, `p_img`, `create_date`) VALUES(:s_id, :u_id, :p_name, :p_detail, :c_id, :term, :p_value, :p_number, :p_img, :create_date)';
-            $data = array(':s_id' => $s_id, ':u_id' => $u_id, ':p_name' => $p_name, ':p_detail' => $p_detail, ':c_id' => $c_id, ':term' => $term, ':p_value' => $p_value, ':p_number' => $p_number, ':p_img' => $p_img, ':create_date' => date('Y-m-d H:i:s'));
+            $data = array(':s_id' => $s_id, ':u_id' => $u_id, ':p_name' => $p_name, ':p_detail' => $p_detail, ':c_id' => $c_id, ':term' => $term, ':p_value' => $p_value, ':p_number' => $p_number, ':p_img' => $p_img, ':create_date' => date('Y-m-d'));
             queryPost($dbh, $sql, $data);
 
             header("Location:mypage.php");

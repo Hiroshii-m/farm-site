@@ -28,10 +28,8 @@ if(!empty($_GET)) {
             // 新規ユーザーの場合、INSERTで登録する。
             } else {
                 $dbh = dbConnect();
-                $sql = 'INSERT INTO users (`email`, `password`, `login_time`, `create_date`) VALUES(:email, :pass, :login_time,:create_date)';
-                $data = array(':email' => $_SESSION['email'], ':pass' => $_SESSION['password'], 
-                ':login_time' => date('Y-m-d H:i:s'), 
-                ':create_date' => date('Y-m-d H:i:s'));
+                $sql = 'INSERT INTO users (`email`, `password`, `create_date`) VALUES(:email, :pass, :create_date)';
+                $data = array(':email' => $_SESSION['email'], ':pass' => $_SESSION['password'], ':create_date' => date('Y-m-d H:i:s'));
                 // クエリ実行
                 $stmt = queryPost($dbh, $sql, $data);
                 // ユーザーIDを格納

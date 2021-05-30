@@ -1,11 +1,8 @@
-<?php
-// ****************************************
-// テーブル作成(2021/4/11)
-// ****************************************
-// DB作成
-$db = 'CREATE DATABASE farmshops;';
-// テーブル作成
-$table = 'CREATE TABLE users(
+
+-- DB作成
+CREATE DATABASE farmshops;
+-- テーブル作成
+CREATE TABLE users(
     `id` INT(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
     `group_id` INT(11) DEFAULT 1 NOT NULL,
     `screen_name` VARCHAR(30) NULL,
@@ -25,7 +22,7 @@ $table = 'CREATE TABLE users(
     `street` VARCHAR(255) NULL,
     `building` VARCHAR(255) NULL,
     `delete_flg` BOOLEAN DEFAULT 0 NOT NULL,
-    `create_date` DATE NOT NULL,
+    `create_date` DATETIME NOT NULL,
     `update_date` TIMESTAMP NOT NULL
 )ENGINE=INNODB DEFAULT CHARSET=utf8;
 CREATE TABLE shops(
@@ -107,20 +104,12 @@ CREATE TABLE blogs(
     `delete_flg` BOOLEAN DEFAULT 0 NOT NULL,
     `create_date` DATE NOT NULL,
     `update_date` TIMESTAMP NOT NULL
-)ENGINE=INNODB DEFAULT CHARSET=utf8;';
-// 市区町村データを登録
-$cities = '
-INSERT INTO `cities` (`id`, `prefecture_id`, `city_name`, `delete_flg`, `create_date`, `update_date`) VALUES 
-(NULL, '1', '札幌市中央区', '0', '2021-05-20', CURRENT_TIMESTAMP),
-(NULL, '1', '札幌市北区', '0', '2021-05-20', CURRENT_TIMESTAMP),
-(NULL, '1', '札幌市東区', '0', '2021-05-20', CURRENT_TIMESTAMP),
-(NULL, '1', '札幌市白石区', '0', '2021-05-20', CURRENT_TIMESTAMP),
-(NULL, '1', '札幌市豊平区', '0', '2021-05-20', CURRENT_TIMESTAMP),
-(NULL, '1', '札幌市南区', '0', '2021-05-20', CURRENT_TIMESTAMP),
-(NULL, '1', '札幌市西区', '0', '2021-05-20', CURRENT_TIMESTAMP),
-(NULL, '1', '札幌市厚別区', '0', '2021-05-20', CURRENT_TIMESTAMP),
-(NULL, '1', '札幌市手稲区', '0', '2021-05-20', CURRENT_TIMESTAMP),
-(NULL, '1', '札幌市清田区', '0', '2021-05-20', CURRENT_TIMESTAMP),
+)ENGINE=INNODB DEFAULT CHARSET=utf8;
+-- 市区町村データを登録
+INSERT INTO `cities` (`id`, `prefecture_id`, `city_name`, `delete_flg`, `create_date`, `update_date`) VALUES (NULL, '1', '札幌市中央区', '0', '2021-05-20', CURRENT_TIMESTAMP),(NULL, '1', '札幌市北区', '0', '2021-05-20', CURRENT_TIMESTAMP),(NULL, '1', '札幌市東区', '0', '2021-05-20', CURRENT_TIMESTAMP),(NULL, '1', '札幌市白石区', '0', '2021-05-20', CURRENT_TIMESTAMP),
+(NULL, '1', '札幌市豊平区', '0', '2021-05-20', CURRENT_TIMESTAMP),(NULL, '1', '札幌市南区', '0', '2021-05-20', CURRENT_TIMESTAMP),
+(NULL, '1', '札幌市西区', '0', '2021-05-20', CURRENT_TIMESTAMP),(NULL, '1', '札幌市厚別区', '0', '2021-05-20', CURRENT_TIMESTAMP),
+(NULL, '1', '札幌市手稲区', '0', '2021-05-20', CURRENT_TIMESTAMP),(NULL, '1', '札幌市清田区', '0', '2021-05-20', CURRENT_TIMESTAMP),
 (NULL, '1', '函館市', '0', '2021-05-20', CURRENT_TIMESTAMP),
 (NULL, '1', '小樽市', '0', '2021-05-20', CURRENT_TIMESTAMP),
 (NULL, '1', '旭川市', '0', '2021-05-20', CURRENT_TIMESTAMP),
@@ -2095,6 +2084,3 @@ INSERT INTO `cities` (`id`, `prefecture_id`, `city_name`, `delete_flg`, `create_
 (NULL, '47', '宮古郡多良間村', '0', '2021-05-20', CURRENT_TIMESTAMP),
 (NULL, '47', '八重山郡竹富町', '0', '2021-05-20', CURRENT_TIMESTAMP),
 (NULL, '47', '八重山郡与那国町', '0', '2021-05-20', CURRENT_TIMESTAMP);
-
-
-';
