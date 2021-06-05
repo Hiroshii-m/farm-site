@@ -7,7 +7,6 @@ debug('トークン受け取り画面');
 debug('==============================================');
 
 $token_flg = false;
-$expired_id = '';
 
 // GETパラメータのトークンを取得
 $token_get = (!empty($_GET['token'])) ? $_GET['token'] : '';

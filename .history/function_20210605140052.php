@@ -252,7 +252,6 @@ function getFormData($str, $flg = false){
         $method = $_POST;
     }
     global $dbFormData;
-
     // dbFormDataがある場合
     if(!empty($dbFormData[$str])){
         // POSTされている場合
@@ -267,28 +266,6 @@ function getFormData($str, $flg = false){
         // POSTされているか
         if(!empty($method[$str])){
             return $method[$str];
-        }else{
-            return '';
-        }
-    }
-}
-// FILE、DBの情報を表示
-function getFileData($str, $file){
-    global $dbFormData;
-    // dbFormDataがある場合
-    if(!empty($dbFormData[$str])){
-        // FILEにあるか
-        if(!empty($file)){
-            return $file;
-            // FILEになければ、db表示
-        }else{
-            return $dbFormData[$str];
-        }
-    // dbFormDataが無い場合
-    }else{
-        // FILEにあるか
-        if(!empty($file)){
-            return $file;
         }else{
             return '';
         }
@@ -315,11 +292,13 @@ function showImg($src) {
 function dbConnect(){
     // DB接続準備
     // MAMP環境
-    // $dsn = 'mysql:dbname=farmshops;host=localhost;charset=utf8';
-    // $user = 'root';
-    // $password = 'root';
+    $dsn = 'mysql:dbname=farmshops;host=localhost;charset=utf8';
+    $user = 'root';
+    $password = 'root';
     // ロリポップ
-    
+    // $dsn = 'mysql:dbname=LAA1303831-farmshops;host=mysql138.phy.lolipop.lan;charset=utf8';
+    // $user = 'LAA1303831';
+    // $password = 'tyokuhan251';
     $options = array(
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
@@ -893,7 +872,5 @@ function getFlashMessage($msg) {
     $_SESSION['msg'] = '';
     if(!empty($showMsg)) {
         return $showMsg;
-    }else{
-        return '';
     }
 }

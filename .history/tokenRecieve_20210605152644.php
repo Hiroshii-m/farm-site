@@ -15,7 +15,17 @@ if(!empty($_GET)) {
     try {
         if($token_get === $_SESSION['token']) {
             $token_flg = true;
-            $expired_id = validEmailExpired($_SESSION['email']);
+            // $expired_id = validEmailExpired($_SESSION['email']);
+            $dbh = dbConnect();
+            $sql = 'SELECT `id` FROM users WHERE `email` = :email AND `delete_flg` = :d_flg';
+            $data = array(':email' => $_SESSION['email'], ':d_flg' => 1);
+            $stmt = queryPost($dbh, $sql, $data);
+            $rst = $stmt->fetch(PDO::FETCH_ASSOC);
+            if(!empty($rst)) {
+            // 退会済のユーザーです。
+                $expired_id = $rst;
+            }
+            debug(print_r($rst, true));
             // 退会ユーザーの場合、UPDATEで登録する。
             if(!empty($expired_id)) {
                 $dbh = dbConnect();

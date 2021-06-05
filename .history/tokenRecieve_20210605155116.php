@@ -16,6 +16,9 @@ if(!empty($_GET)) {
         if($token_get === $_SESSION['token']) {
             $token_flg = true;
             $expired_id = validEmailExpired($_SESSION['email']);
+            debug(print_r($_SESSION['email'], true));
+            debug(print_r($expired_id, true));
+
             // 退会ユーザーの場合、UPDATEで登録する。
             if(!empty($expired_id)) {
                 $dbh = dbConnect();

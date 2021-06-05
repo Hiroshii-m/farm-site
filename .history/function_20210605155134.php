@@ -36,7 +36,7 @@ function debugLogStart(){
 // ================================================
 // デバッグ
 // ================================================
-$debug_flg = false;
+$debug_flg = true;
 function debug($str) {
     global $debug_flg;
     if(!empty($debug_flg)){
@@ -315,11 +315,13 @@ function showImg($src) {
 function dbConnect(){
     // DB接続準備
     // MAMP環境
-    // $dsn = 'mysql:dbname=farmshops;host=localhost;charset=utf8';
-    // $user = 'root';
-    // $password = 'root';
+    $dsn = 'mysql:dbname=farmshops;host=localhost;charset=utf8';
+    $user = 'root';
+    $password = 'root';
     // ロリポップ
-    
+    // $dsn = 'mysql:dbname=LAA1303831-farmshops;host=mysql138.phy.lolipop.lan;charset=utf8';
+    // $user = 'LAA1303831';
+    // $password = 'tyokuhan251';
     $options = array(
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,

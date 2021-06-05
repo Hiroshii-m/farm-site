@@ -87,13 +87,6 @@ if(!empty($_POST)) {
     $building = (!empty($_POST['building'])) ? $_POST['building'] : '';
     $tel = (!empty($_POST['tel'])) ? $_POST['tel'] : '';
     $map_iframe = (!empty($_POST['map_iframe'])) ? $_POST['map_iframe'] : '';
-    // 画像
-    $shop_img1 = (!empty($_FILES['shop_img1']['name'])) ? uploadImg($_FILES['shop_img1'], 'shop_img1') : '';
-    $shop_img1 = ( empty($shop_img1) && !empty($dbFormData['shop_img1']) ) ? $dbFormData['shop_img1'] : $shop_img1;
-    $shop_img2 = (!empty($_FILES['shop_img2']['name'])) ? uploadImg($_FILES['shop_img2'], 'shop_img2') : '';
-    $shop_img2 = ( empty($shop_img2) && !empty($dbFormData['shop_img2']) ) ? $dbFormData['shop_img2'] : $shop_img2;
-    $shop_img3 = (!empty($_FILES['shop_img3']['name'])) ? uploadImg($_FILES['shop_img3'], 'shop_img3') : '';
-    $shop_img3 = ( empty($shop_img3) && !empty($dbFormData['shop_img3']) ) ? $dbFormData['shop_img3'] : $shop_img3;
 
     // バリデーションチェック
     validRequired($shop_name, 'shop_name');
@@ -127,6 +120,15 @@ if(!empty($_POST)) {
         if(empty($err_msg['tel'])) {
             validTel($tel, 'tel');
         }
+    }
+    // 全てエラーがなければ、ファイルをアップロードし、パスを変数へ格納
+    if(empty($err_msg)) {
+        $shop_img1 = (!empty($_FILES['shop_img1']['name'])) ? uploadImg($_FILES['shop_img1'], 'shop_img1') : '';
+        $shop_img1 = ( empty($shop_img1) && !empty($dbFormData['shop_img1']) ) ? $dbFormData['shop_img1'] : $shop_img1;
+        $shop_img2 = (!empty($_FILES['shop_img2']['name'])) ? uploadImg($_FILES['shop_img2'], 'shop_img2') : '';
+        $shop_img2 = ( empty($shop_img2) && !empty($dbFormData['shop_img2']) ) ? $dbFormData['shop_img2'] : $shop_img2;
+        $shop_img3 = (!empty($_FILES['shop_img3']['name'])) ? uploadImg($_FILES['shop_img3'], 'shop_img3') : '';
+        $shop_img3 = ( empty($shop_img3) && !empty($dbFormData['shop_img3']) ) ? $dbFormData['shop_img3'] : $shop_img3;
     }
 
     // DBへ登録
@@ -235,26 +237,24 @@ include('head.php');
                         <label class="c-form__areaDrop u-margin-top-5 js-area-drop">
                             <input type="hidden" name="MAX_FILE_SIZE" value="3145728">
                             <input class="c-form__file js-file-input" type="file" name="shop_img1">
-                            <img src="<?= sanitize(getFileData('shop_img1', $shop_img1)); ?>" class="c-form__img js-avatar-img" alt="">
+                            <img src="<?= sanitize(getFormData('shop_img1')); ?>" class="c-form__img js-avatar-img" alt="">
                             <p class="c-form__areaText">ドラッグ&ドロップ</p>
                         </label>
                         <label class="c-form__areaDrop u-margin-top-5 js-area-drop">
                             <input type="hidden" name="MAX_FILE_SIZE" value="3145728">
                             <input class="c-form__file js-file-input" type="file" name="shop_img2">
-                            <img src="<?= sanitize(getFileData('shop_img2', $shop_img2)); ?>" class="c-form__img js-avatar-img" alt="">
+                            <img src="<?= sanitize(getFormData('shop_img2')); ?>" class="c-form__img js-avatar-img" alt="">
                             <p class="c-form__areaText">ドラッグ&ドロップ</p>
                         </label>
                         <label class="c-form__areaDrop u-margin-top-5 js-area-drop">
                             <input type="hidden" name="MAX_FILE_SIZE" value="3145728">
                             <input class="c-form__file js-file-input" type="file" name="shop_img3">
-                            <img src="<?= sanitize(getFileData('shop_img3', $shop_img3)); ?>" class="c-form__img js-avatar-img" alt="">
+                            <img src="<?= sanitize(getFormData('shop_img3')); ?>" class="c-form__img js-avatar-img" alt="">
                             <p class="c-form__areaText">ドラッグ&ドロップ</p>
                         </label>
                     </div>
                     <div class="u-err-msg">
-                        <?= showErrMsg('shop_img1'); ?>
-                        <?= showErrMsg('shop_img2'); ?>
-                        <?= showErrMsg('shop_img3'); ?>
+                        <?= showErrMsg('shop_img'); ?>
                     </div>
                 </label>
                 

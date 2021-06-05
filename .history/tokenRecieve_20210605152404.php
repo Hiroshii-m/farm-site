@@ -7,7 +7,6 @@ debug('トークン受け取り画面');
 debug('==============================================');
 
 $token_flg = false;
-$expired_id = '';
 
 // GETパラメータのトークンを取得
 $token_get = (!empty($_GET['token'])) ? $_GET['token'] : '';
@@ -15,7 +14,20 @@ if(!empty($_GET)) {
     try {
         if($token_get === $_SESSION['token']) {
             $token_flg = true;
-            $expired_id = validEmailExpired($_SESSION['email']);
+            // $expired_id = validEmailExpired($_SESSION['email']);
+            $dbh = dbConnect();
+            $sql = 'SELECT `id` FROM users WHERE `email` = :email AND `delete_flg` = :d_flg';
+            $data = array(':email' => $email, ':d_flg' => 1);
+            $stmt = queryPost($dbh, $sql, $data);
+            $rst = $stmt->fetch(PDO::FETCH_ASSOC);
+            if(!empty($rst)) {
+            // 退会済のユーザーです。
+                return $rst['id'];
+            } else {
+                // 退会済のユーザーではありません。
+                return false;
+            }
+            debug(print_r($expired_id, true));
             // 退会ユーザーの場合、UPDATEで登録する。
             if(!empty($expired_id)) {
                 $dbh = dbConnect();

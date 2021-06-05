@@ -1,6 +1,6 @@
 <?php
-// 予想時間:1h
-// かかった時間：38mi
+// 予想時間:3h
+// かかった時間：2h40mi
 
 // 共通ファイルの読み込み
 require('function.php');
@@ -8,7 +8,7 @@ require('function.php');
 require('auth.php');
 
 debug('==============================================');
-debug('店舗編集');
+debug('店舗登録');
 debug('==============================================');
 
 // 都道府県の配列生成
@@ -61,20 +61,8 @@ $pref = array(
     '46'=>'鹿児島県',
     '47'=>'沖縄県'
 );
-
 // ユーザーIDを格納
 $u_id = $_SESSION['user_id'];
-// 店舗情報を取得
-$dbFormData = getShop($u_id);
-// 店舗IDを格納
-$s_id = $dbFormData['id'];
-// 市区町村名を取得
-$dbFormData['city_name'] = (!empty($dbFormData['city_id'])) ? getCityName($dbFormData['city_id']) : '';
-// 不正な値が入った場合
-if(empty($dbFormData)) {
-    debug('不正な値が入りました。');
-    header("Location:mypage.php");
-}
 
 if(!empty($_POST)) {
     $shop_name = (!empty($_POST['shop_name'])) ? $_POST['shop_name'] : '';
@@ -87,13 +75,6 @@ if(!empty($_POST)) {
     $building = (!empty($_POST['building'])) ? $_POST['building'] : '';
     $tel = (!empty($_POST['tel'])) ? $_POST['tel'] : '';
     $map_iframe = (!empty($_POST['map_iframe'])) ? $_POST['map_iframe'] : '';
-    // 画像
-    $shop_img1 = (!empty($_FILES['shop_img1']['name'])) ? uploadImg($_FILES['shop_img1'], 'shop_img1') : '';
-    $shop_img1 = ( empty($shop_img1) && !empty($dbFormData['shop_img1']) ) ? $dbFormData['shop_img1'] : $shop_img1;
-    $shop_img2 = (!empty($_FILES['shop_img2']['name'])) ? uploadImg($_FILES['shop_img2'], 'shop_img2') : '';
-    $shop_img2 = ( empty($shop_img2) && !empty($dbFormData['shop_img2']) ) ? $dbFormData['shop_img2'] : $shop_img2;
-    $shop_img3 = (!empty($_FILES['shop_img3']['name'])) ? uploadImg($_FILES['shop_img3'], 'shop_img3') : '';
-    $shop_img3 = ( empty($shop_img3) && !empty($dbFormData['shop_img3']) ) ? $dbFormData['shop_img3'] : $shop_img3;
 
     // バリデーションチェック
     validRequired($shop_name, 'shop_name');
@@ -128,17 +109,26 @@ if(!empty($_POST)) {
             validTel($tel, 'tel');
         }
     }
+    // 全てエラーがなければ、ファイルをアップロードし、パスを変数へ格納
+    if(empty($err_msg)) {
+        $shop_img1 = (!empty($_FILES['shop_img1']['name'])) ? uploadImg($_FILES['shop_img1'], 'shop_img1') : '';
+        $shop_img1 = ( empty($shop_img1) && !empty($dbFormData['shop_img1']) ) ? $dbFormData['shop_img1'] : $shop_img1;
+        $shop_img2 = (!empty($_FILES['shop_img2']['name'])) ? uploadImg($_FILES['shop_img2'], 'shop_img2') : '';
+        $shop_img2 = ( empty($shop_img2) && !empty($dbFormData['shop_img2']) ) ? $dbFormData['shop_img2'] : $shop_img2;
+        $shop_img3 = (!empty($_FILES['shop_img3']['name'])) ? uploadImg($_FILES['shop_img3'], 'shop_img3') : '';
+        $shop_img3 = ( empty($shop_img3) && !empty($dbFormData['shop_img3']) ) ? $dbFormData['shop_img3'] : $shop_img3;
+    }
 
     // DBへ登録
     if(empty($err_msg)) {
         try {
+            // 店舗登録
             $dbh = dbConnect();
-            $sql = 'UPDATE shops SET `shop_name` = :shop_name, `social_profile` = :social_profile, `postcode` = :postcode, `prefecture_id` = :p_id, `city_id` = :c_id, `street` = :street, `building` = :building, `tel` = :tel, `map_iframe` = :map_iframe, `shop_img1` = :shop_img1, `shop_img2` = :shop_img2, `shop_img3` = :shop_img3 WHERE `id` = :s_id AND `user_id` = :u_id';
-            $data = array(':shop_name' => $shop_name, ':social_profile' => $social_profile, ':postcode' => $postcode, ':p_id' => $prefecture_id, ':c_id' => $city_id, ':street' => $street, ':building' => $building, ':tel' => $tel, ':map_iframe' => $map_iframe, ':shop_img1' => $shop_img1, ':shop_img2' => $shop_img2, ':shop_img3' => $shop_img3, ':s_id' => $s_id, ':u_id' => $u_id);
-            $stmt = queryPost($dbh, $sql, $data);
-            if(!empty($stmt)) {
-                header("Location:mypage.php");
-            }
+            $sql = 'INSERT INTO shops (`user_id`, `shop_name`, `social_profile`, `postcode`, `prefecture_id`, `city_id`, `street`, `building`, `tel`, `map_iframe`, `shop_img1`, `shop_img2`, `shop_img3`, `create_date`) VALUES (:u_id, :shop_name, :social_profile, :postcode, :prefecture_id, :city_id, :street, :building, :tel, :map_iframe, :shop_img1, :shop_img2, :shop_img3, :create_date);';
+            $data = array(':u_id' => $u_id, ':shop_name' => $shop_name, ':social_profile' => $social_profile, ':postcode' => $postcode, ':prefecture_id' => $prefecture_id, ':city_id' => $city_id, ':street' => $street, ':building' => $building, ':tel' => $tel, ':map_iframe' => $map_iframe, ':shop_img1' => $shop_img1, ':shop_img2' => $shop_img2, ':shop_img3' => $shop_img3, ':create_date' => date('Y-m-d'));
+            queryPost($dbh, $sql, $data);
+
+            header("Location:mypage.php");
         } catch ( Exception $e ) {
             error_log('エラー発生:' . $e->getMessage());
             $err_msg['common'] = MSG::UNEXPECTED;
@@ -149,15 +139,15 @@ if(!empty($_POST)) {
 ?>
 <?php
 $headTitle = '店舗登録';
-include('head.php');
+require('head.php');
 ?>
     <body>
         <!-- ヘッダー -->
-        <?php include('header.php'); ?>
+        <?php require('header.php'); ?>
     
         <main id="l-main">
-            <form method="post" class="c-form js-sp-menu-target" enctype="multipart/form-data">
-                <h2 class="c-form__title">店舗を編集する</h2>
+            <form method="post" class="c-form js-sp-menu-target">
+                <h2 class="c-form__title">店舗を登録する</h2>
                 <div class="u-err-msg">
                     <?= showErrMsg('common'); ?>
                 </div>
@@ -235,19 +225,19 @@ include('head.php');
                         <label class="c-form__areaDrop u-margin-top-5 js-area-drop">
                             <input type="hidden" name="MAX_FILE_SIZE" value="3145728">
                             <input class="c-form__file js-file-input" type="file" name="shop_img1">
-                            <img src="<?= sanitize(getFileData('shop_img1', $shop_img1)); ?>" class="c-form__img js-avatar-img" alt="">
+                            <img src="<?= sanitize(getFormData('shop_img1')); ?>" class="c-form__img js-avatar-img" alt="">
                             <p class="c-form__areaText">ドラッグ&ドロップ</p>
                         </label>
                         <label class="c-form__areaDrop u-margin-top-5 js-area-drop">
                             <input type="hidden" name="MAX_FILE_SIZE" value="3145728">
                             <input class="c-form__file js-file-input" type="file" name="shop_img2">
-                            <img src="<?= sanitize(getFileData('shop_img2', $shop_img2)); ?>" class="c-form__img js-avatar-img" alt="">
+                            <img src="<?= sanitize(getFormData('shop_img2')); ?>" class="c-form__img js-avatar-img" alt="">
                             <p class="c-form__areaText">ドラッグ&ドロップ</p>
                         </label>
                         <label class="c-form__areaDrop u-margin-top-5 js-area-drop">
                             <input type="hidden" name="MAX_FILE_SIZE" value="3145728">
                             <input class="c-form__file js-file-input" type="file" name="shop_img3">
-                            <img src="<?= sanitize(getFileData('shop_img3', $shop_img3)); ?>" class="c-form__img js-avatar-img" alt="">
+                            <img src="<?= sanitize(getFormData('shop_img3')); ?>" class="c-form__img js-avatar-img" alt="">
                             <p class="c-form__areaText">ドラッグ&ドロップ</p>
                         </label>
                     </div>
@@ -258,12 +248,14 @@ include('head.php');
                     </div>
                 </label>
                 
-                <input class="c-form__submit" type="submit" value="更新">
+                <input class="c-form__submit" type="submit" value="登録">
             </form>
         </main>
         
         <!-- フッター -->
-        <?php include('footer.php'); ?>
+        <?php require('footer.php'); ?>
+        <!-- 共通ファイル -->
+        <script src="js/app.js"></script>
         <!-- 専用ファイル -->
         <script src="js/app_uploadImg.js"></script>
     </body>

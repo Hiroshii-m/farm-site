@@ -235,19 +235,19 @@ include('head.php');
                         <label class="c-form__areaDrop u-margin-top-5 js-area-drop">
                             <input type="hidden" name="MAX_FILE_SIZE" value="3145728">
                             <input class="c-form__file js-file-input" type="file" name="shop_img1">
-                            <img src="<?= sanitize(getFileData('shop_img1', $shop_img1)); ?>" class="c-form__img js-avatar-img" alt="">
+                            <img src="<?= sanitize(getFormData('shop_img1')); ?>" class="c-form__img js-avatar-img" alt="">
                             <p class="c-form__areaText">ドラッグ&ドロップ</p>
                         </label>
                         <label class="c-form__areaDrop u-margin-top-5 js-area-drop">
                             <input type="hidden" name="MAX_FILE_SIZE" value="3145728">
                             <input class="c-form__file js-file-input" type="file" name="shop_img2">
-                            <img src="<?= sanitize(getFileData('shop_img2', $shop_img2)); ?>" class="c-form__img js-avatar-img" alt="">
+                            <img src="<?= sanitize(getFormData('shop_img2')); ?>" class="c-form__img js-avatar-img" alt="">
                             <p class="c-form__areaText">ドラッグ&ドロップ</p>
                         </label>
                         <label class="c-form__areaDrop u-margin-top-5 js-area-drop">
                             <input type="hidden" name="MAX_FILE_SIZE" value="3145728">
                             <input class="c-form__file js-file-input" type="file" name="shop_img3">
-                            <img src="<?= sanitize(getFileData('shop_img3', $shop_img3)); ?>" class="c-form__img js-avatar-img" alt="">
+                            <img src="<?= sanitize(getFormData('shop_img3')); ?>" class="c-form__img js-avatar-img" alt="">
                             <p class="c-form__areaText">ドラッグ&ドロップ</p>
                         </label>
                     </div>

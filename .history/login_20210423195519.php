@@ -115,7 +115,7 @@ require('header.php');
                 <input id="pass_omit" class="c-form__check" type="checkbox" name="pass_save" <?php echo (!empty($_POST['pass_save'])) ? 'checked' : ''; ?>>次回ログインを省略する
             </label>
 
-            <input class="c-form__submit" type="submit" value="ログイン">
+            <input class="c-form__submit" type="submit" value="送信">
             <a class="" href="remindPassSend.php">パスワードお忘れですか？</a>
         </form>
     </main>

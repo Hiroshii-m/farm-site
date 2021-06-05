@@ -15,7 +15,17 @@ if(!empty($_GET)) {
     try {
         if($token_get === $_SESSION['token']) {
             $token_flg = true;
-            $expired_id = validEmailExpired($_SESSION['email']);
+            // $expired_id = validEmailExpired($_SESSION['email']);
+            $dbh = dbConnect();
+            $sql = 'SELECT * FROM `users` WHERE `email` = :email AND `delete_flg` = 1';
+            $data = array(':email' => $_SESSION['email']);
+            $stmt = queryPost($dbh, $sql, $data);
+            $rst = $stmt->fetch(PDO::FETCH_ASSOC);
+            if(!empty($rst)) {
+            // 退会済のユーザーです。
+                $expired_id = $rst;
+            }
+            debug(print_r($rst, true));
             // 退会ユーザーの場合、UPDATEで登録する。
             if(!empty($expired_id)) {
                 $dbh = dbConnect();
@@ -28,13 +38,13 @@ if(!empty($_GET)) {
 
             // 新規ユーザーの場合、INSERTで登録する。
             } else {
-                $dbh = dbConnect();
-                $sql = 'INSERT INTO users (`email`, `password`, `create_date`) VALUES(:email, :pass, :create_date)';
-                $data = array(':email' => $_SESSION['email'], ':pass' => $_SESSION['password'], ':create_date' => date('Y-m-d H:i:s'));
-                // クエリ実行
-                $stmt = queryPost($dbh, $sql, $data);
-                // ユーザーIDを格納
-                $_SESSION['user_id'] = $dbh->lastInsertId();
+                // $dbh = dbConnect();
+                // $sql = 'INSERT INTO users (`email`, `password`, `create_date`) VALUES(:email, :pass, :create_date)';
+                // $data = array(':email' => $_SESSION['email'], ':pass' => $_SESSION['password'], ':create_date' => date('Y-m-d H:i:s'));
+                // // クエリ実行
+                // $stmt = queryPost($dbh, $sql, $data);
+                // // ユーザーIDを格納
+                // $_SESSION['user_id'] = $dbh->lastInsertId();
             }
 
             // クエリ成功の場合

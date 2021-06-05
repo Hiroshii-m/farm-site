@@ -7,7 +7,6 @@ debug('トークン受け取り画面');
 debug('==============================================');
 
 $token_flg = false;
-$expired_id = '';
 
 // GETパラメータのトークンを取得
 $token_get = (!empty($_GET['token'])) ? $_GET['token'] : '';
@@ -16,6 +15,7 @@ if(!empty($_GET)) {
         if($token_get === $_SESSION['token']) {
             $token_flg = true;
             $expired_id = validEmailExpired($_SESSION['email']);
+            debug(print_r($_SESSION, true));
             // 退会ユーザーの場合、UPDATEで登録する。
             if(!empty($expired_id)) {
                 $dbh = dbConnect();
