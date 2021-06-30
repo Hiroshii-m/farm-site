@@ -37,6 +37,7 @@ CREATE TABLE shops(
     `building` VARCHAR(255) NULL,
     `tel` VARCHAR(15) NULL,
     `value` INT(1) NULL,
+    `map_iframe` VARCHAR(255) NULL,
     `shop_img1` VARCHAR(255) NULL,
     `shop_img2` VARCHAR(255) NULL,
     `shop_img3` VARCHAR(255) NULL,

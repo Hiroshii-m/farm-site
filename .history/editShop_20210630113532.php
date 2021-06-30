@@ -66,7 +66,6 @@ $pref = array(
 $u_id = $_SESSION['user_id'];
 // 店舗情報を取得
 $dbFormData = getShop($u_id);
-error_log(print_r($dbFormData, true));
 // 店舗IDを格納
 $s_id = $dbFormData['id'];
 // 市区町村名を取得
@@ -92,7 +91,7 @@ if(!empty($_POST)) {
     $street = (!empty($_POST['street'])) ? $_POST['street'] : '';
     $building = (!empty($_POST['building'])) ? $_POST['building'] : '';
     $tel = (!empty($_POST['tel'])) ? $_POST['tel'] : '';
-
+    $map_iframe = (!empty($_POST['map_iframe'])) ? $_POST['map_iframe'] : '';
     // 画像
     $shop_img1 = (!empty($_FILES['shop_img1']['name'])) ? uploadImg($_FILES['shop_img1'], 'shop_img1') : '';
     $shop_img1 = ( empty($shop_img1) && !empty($dbFormData['shop_img1']) ) ? $dbFormData['shop_img1'] : $shop_img1;
@@ -139,8 +138,8 @@ if(!empty($_POST)) {
     if(empty($err_msg)) {
         try {
             $dbh = dbConnect();
-            $sql = 'UPDATE shops SET `shop_name` = :shop_name, `social_profile` = :social_profile, `postcode` = :postcode, `prefecture_id` = :p_id, `city_id` = :c_id, `street` = :street, `building` = :building, `tel` = :tel, `shop_img1` = :shop_img1, `shop_img2` = :shop_img2, `shop_img3` = :shop_img3 WHERE `id` = :s_id AND `user_id` = :u_id';
-            $data = array(':shop_name' => $shop_name, ':social_profile' => $social_profile, ':postcode' => $postcode, ':p_id' => $prefecture_id, ':c_id' => $city_id, ':street' => $street, ':building' => $building, ':tel' => $tel, ':shop_img1' => $shop_img1, ':shop_img2' => $shop_img2, ':shop_img3' => $shop_img3, ':s_id' => $s_id, ':u_id' => $u_id);
+            $sql = 'UPDATE shops SET `shop_name` = :shop_name, `social_profile` = :social_profile, `postcode` = :postcode, `prefecture_id` = :p_id, `city_id` = :c_id, `street` = :street, `building` = :building, `tel` = :tel, `map_iframe` = :map_iframe, `shop_img1` = :shop_img1, `shop_img2` = :shop_img2, `shop_img3` = :shop_img3 WHERE `id` = :s_id AND `user_id` = :u_id';
+            $data = array(':shop_name' => $shop_name, ':social_profile' => $social_profile, ':postcode' => $postcode, ':p_id' => $prefecture_id, ':c_id' => $city_id, ':street' => $street, ':building' => $building, ':tel' => $tel, ':map_iframe' => $map_iframe, ':shop_img1' => $shop_img1, ':shop_img2' => $shop_img2, ':shop_img3' => $shop_img3, ':s_id' => $s_id, ':u_id' => $u_id);
             $stmt = queryPost($dbh, $sql, $data);
             if(!empty($stmt)) {
                 header("Location:mypage.php");
@@ -219,6 +218,13 @@ include('head.php');
                     <input class="c-form__input <?= showErrStyle('building'); ?>" type="text" name="building" value="<?= sanitize(getFormData('building')); ?>">
                     <div class="u-err-msg">
                         <?= showErrMsg('building'); ?>
+                    </div>
+                </label>
+                <label class="c-form__label" for="">
+                    Googleマップを埋め込む＊任意
+                    <input class="c-form__input <?= showErrStyle('map_iframe'); ?>" type="text" name="" value="<?= sanitize(getFormData('map_iframe')); ?>">
+                    <div class="u-err-msg">
+                        <?= showErrMsg('map_iframe'); ?>
                     </div>
                 </label>
                 <label class="c-form__label" for="">

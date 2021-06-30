@@ -188,34 +188,51 @@ include_once('head.php');
                                     <!-- 製品情報 -->
                                     <section id="l-product" class="u-display-none js-article-product">
                                         <ul class="p-product">
-                                        <?php if(!empty($productData)){ ?>
-                                            <?php foreach($productData as $key => $val): ?>
+                                            <p>＜<?= showData($productData); ?>＞</p>
                                             <li class="p-product__list">
                                                 <details open>
                                                     <summary class="p-product__summary">
-                                                        <span class="p-product__point ">【<i class="fas fa-shopping-bag u-padding-1"></i>商品名】</span><?= showData($val['p_name']); ?>
-                                                        <span class="p-product__point ">【<i class="fas fa-yen-sign u-padding-1"></i>値段】</span><?= $val['p_value']; ?>円
-                                                        <span class="p-product__point ">【<i class="fas fa-balance-scale u-padding-1"></i>数量・質量】</span><?= $val['p_number']; ?>
+                                                        <span class="p-product__point ">【<i class="fas fa-shopping-bag u-padding-1"></i>商品名】</span>聖護院青長節成キュウリ
+                                                        <span class="p-product__point ">【<i class="fas fa-yen-sign u-padding-1"></i>値段】</span>500円
+                                                        <span class="p-product__point ">【<i class="fas fa-balance-scale u-padding-1"></i>数量・質量】</span>10本
                                                     </summary>
                                                     <div class="p-product__info u-flex">
                                                         <div class="p-product__img">
-                                                            <img src="<?= showImg($val['p_img']); ?>" alt="">
+                                                            <img src="images/pic3.jpeg" alt="">
                                                         </div>
                                                         <div class="p-product__explain">
                                                             <p class="u-font-weight-bold">＜カテゴリ＞</p>
-                                                            <p><?= $val['category_name']; ?></p>
+                                                            <p>野菜</p>
                                                             <p class="u-font-weight-bold">＜収穫時期・販売時期＞</p>
-                                                            <p><?= $val['term']; ?></p>
+                                                            <p>4月〜7月</p>
                                                             <p class="u-font-weight-bold">＜説明＞</p>
-                                                            <p><?= $val['p_detail']; ?></p>
+                                                            <p>無農薬</p>
                                                         </div>
                                                     </div>
                                                 </details>
                                             </li>
-                                            <?php endforeach; ?>
-                                            <?php }else{ ?>
-                                                <p>商品情報はありません。</p>
-                                            <?php } ?>
+                                            <li class="p-product__list">
+                                                <details open>
+                                                    <summary class="p-product__summary">
+                                                        <span class="p-product__point ">【<i class="fas fa-shopping-bag u-padding-1"></i>商品名】</span>聖護院青長節成キュウリ
+                                                        <span class="p-product__point ">【<i class="fas fa-yen-sign u-padding-1"></i>値段】</span>500円
+                                                        <span class="p-product__point ">【<i class="fas fa-balance-scale u-padding-1"></i>数量・質量】</span>10本
+                                                    </summary>
+                                                    <div class="p-product__info u-flex">
+                                                        <div class="p-product__img">
+                                                            <img src="images/pic3.jpeg" alt="">
+                                                        </div>
+                                                        <div class="p-product__explain">
+                                                            <p>＜カテゴリ＞</p>
+                                                            <p>野菜</p>
+                                                            <p>＜収穫時期・販売時期＞</p>
+                                                            <p>4月〜7月</p>
+                                                            <p>＜説明＞</p>
+                                                            <p>無農薬</p>
+                                                        </div>
+                                                    </div>
+                                                </details>
+                                            </li>
                                         </ul>
                                     </section><!-- /製品情報 -->
                                     <!-- 店舗情報 -->
@@ -250,6 +267,7 @@ include_once('head.php');
                                     <section id="l-access" class="u-display-none js-article-access">
                                         <div class="p-access">
                                             <div class="p-access__map">
+                                                <?= getFormData('map_iframe'); ?>
                                                 <p class="p-explain__title u-padding-10 u-font-weight-bold">＜住所＞</p>
                                                 <p class="u-padding-10"><?= (!empty($dbFormData['prefecture_id'])) ? $prefecture[$dbFormData['prefecture_id']] : '';getFormData('city_name').getFormData('street').getFormData('building'); ?></p>
                                             </div>

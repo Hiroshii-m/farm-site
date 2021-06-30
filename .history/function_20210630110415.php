@@ -36,7 +36,7 @@ function debugLogStart(){
 // ================================================
 // デバッグ
 // ================================================
-$debug_flg = false;
+$debug_flg = true;
 function debug($str) {
     global $debug_flg;
     if(!empty($debug_flg)){
@@ -326,7 +326,10 @@ function dbConnect(){
     $dsn = 'mysql:dbname=farmshops;host=localhost;charset=utf8';
     $user = 'root';
     $password = 'root';
-    
+    // ロリポップ
+    // $dsn = 'mysql:dbname=LAA1303831-farmshops;host=mysql138.phy.lolipop.lan;charset=utf8';
+    // $user = 'LAA1303831';
+    // $password = 'tyokuhan251';
     $options = array(
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
@@ -477,7 +480,7 @@ function getShopId($u_id) {
 function getShop($u_id) {
     try {
         $dbh = dbConnect();
-        $sql = 'SELECT `id`, `shop_name`, `social_profile`, `postcode`, `prefecture_id`, `city_id`, `street`, `building`, `tel`, `map_iframe`, `shop_img1`, `shop_img2`, `shop_img3` FROM `shops` WHERE `user_id` = :u_id';
+        $sql = 'SELECT `id`, `shop_name`, `social_profile`, `postcode`, `prefecture_id`, `city_id`, `street`, `building`, `tel`, `shop_img1`, `shop_img2`, `shop_img3` FROM `shops` WHERE `user_id` = :u_id';
         $data = array(':u_id' => $u_id);
         $stmt = queryPost($dbh, $sql, $data);
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -493,7 +496,6 @@ function getProduct($s_id) {
         $dbh = dbConnect();
         $sql = 'SELECT * FROM `products` AS p LEFT JOIN `category` AS c ON p.category_id = c.id WHERE p.`shop_id` = :s_id';
         $data = array(':s_id' => $s_id);
-        $stmt = queryPost($dbh, $sql, $data);
         $result = $stmt->fetchAll();
         return $result;
     } catch ( Exception $e ) {

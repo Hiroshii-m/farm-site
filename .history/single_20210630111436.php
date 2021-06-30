@@ -199,7 +199,7 @@ include_once('head.php');
                                                     </summary>
                                                     <div class="p-product__info u-flex">
                                                         <div class="p-product__img">
-                                                            <img src="<?= showImg($val['p_img']); ?>" alt="">
+                                                            <img src="images/pic3.jpeg" alt="">
                                                         </div>
                                                         <div class="p-product__explain">
                                                             <p class="u-font-weight-bold">＜カテゴリ＞</p>
@@ -250,6 +250,7 @@ include_once('head.php');
                                     <section id="l-access" class="u-display-none js-article-access">
                                         <div class="p-access">
                                             <div class="p-access__map">
+                                                <?= getFormData('map_iframe'); ?>
                                                 <p class="p-explain__title u-padding-10 u-font-weight-bold">＜住所＞</p>
                                                 <p class="u-padding-10"><?= (!empty($dbFormData['prefecture_id'])) ? $prefecture[$dbFormData['prefecture_id']] : '';getFormData('city_name').getFormData('street').getFormData('building'); ?></p>
                                             </div>

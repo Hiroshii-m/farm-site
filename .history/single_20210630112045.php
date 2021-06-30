@@ -250,8 +250,10 @@ include_once('head.php');
                                     <section id="l-access" class="u-display-none js-article-access">
                                         <div class="p-access">
                                             <div class="p-access__map">
+                                                <?= getFormData('map_iframe'); ?>
                                                 <p class="p-explain__title u-padding-10 u-font-weight-bold">＜住所＞</p>
                                                 <p class="u-padding-10"><?= (!empty($dbFormData['prefecture_id'])) ? $prefecture[$dbFormData['prefecture_id']] : '';getFormData('city_name').getFormData('street').getFormData('building'); ?></p>
+                                                <?= getFormData('map_iframe'); ?>
                                             </div>
                                         </div>
                                     </section><!-- /アクセス -->
