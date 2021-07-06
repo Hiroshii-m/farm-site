@@ -8,6 +8,7 @@
     "watch-css": "sass --watch scss/style.scss css/style.css"
   },
   "devDependencies": {
+    "jquery": "^3.6.0",
     "sass": "^1.32.8"
   },
   "dependencies": {
