@@ -98,8 +98,7 @@ include('head.php');
                 </label>
                 <label class="c-form__label" for="">
                     収穫時期・販売時期
-                    <textarea class="c-form__textarea js-text-count <?= showErrStyle('term'); ?>" name="term" id="" value="<?= sanitize(getFormData('term')); ?>" placeholder="春、夏、秋、冬、3月〜等"></textarea>
-                    <p class="u-text--right"><span class="js-count-num">0</span>/255</p>
+                    <textarea class="c-form__textarea <?= showErrStyle('term'); ?>" name="term" id="" value="<?= sanitize(getFormData('term')); ?>" placeholder="春、夏、秋、冬、3月〜等"></textarea>
                     <div class="u-err-msg">
                         <?= showErrMsg('term'); ?>
                     </div>

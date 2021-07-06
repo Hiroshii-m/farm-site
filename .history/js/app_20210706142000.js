@@ -20,8 +20,6 @@ window.addEventListener("DOMContentLoaded", function() {
         $showMsg = document.querySelector(".js-show-msg") || null;
         $goTop = document.querySelector(".js-goTop") || null;
         $cardTexts = document.querySelectorAll(".js-card-text") || null;
-        $countTexts = document.querySelectorAll('.js-text-count') || null;
-        $showCounts = document.querySelectorAll('.js-count-num') || null;
     // ********************************************************
     // 関数
     // ********************************************************
@@ -51,7 +49,7 @@ window.addEventListener("DOMContentLoaded", function() {
             setTimeout(function(){ $showMsg.classList.remove('active'); }, 4000);
         }
     }
-    // scrollされた時、ヘッダーのアクティブクラスを切り替える
+    // if
     window.addEventListener("scroll", function() {
         if($spMenuTarget.offsetTop < window.scrollY) {
             $headerNav.classList.add('active');
@@ -61,7 +59,7 @@ window.addEventListener("DOMContentLoaded", function() {
             $headerList.classList.remove('active');
         }
     });
-    // お気に入りアイコンが押された場合（ここだけjQueryを使う）
+    // お気に入りアイコンが押された場合
     if($favorites !== undefined && $favorites !== null) {
         $favorites.forEach(function($fav, index) {
             $fav.addEventListener("click", function() {
@@ -82,20 +80,4 @@ window.addEventListener("DOMContentLoaded", function() {
             });
         })
     }
-    // テキストフォームの文字数をカウントし表示する
-    $countTexts.forEach(function($countText, index) {
-        $countText.addEventListener('keyup', function() {
-            var count = $countText.value.length;
-            console.log(count);
-            
-            $showCounts[index].innerHTML = count;
-            $showCounts[index].classList.remove('u-err-msg');
-            $countText.classList.remove('u-err-input');
-            // 255文字を超えた場合、色を加える
-            if(255 < count){
-                $showCounts[index].classList.add('u-err-msg');
-                $countText.classList.add('u-err-input');
-            }
-        });
-    });
 });

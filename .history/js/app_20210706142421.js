@@ -20,8 +20,8 @@ window.addEventListener("DOMContentLoaded", function() {
         $showMsg = document.querySelector(".js-show-msg") || null;
         $goTop = document.querySelector(".js-goTop") || null;
         $cardTexts = document.querySelectorAll(".js-card-text") || null;
-        $countTexts = document.querySelectorAll('.js-text-count') || null;
-        $showCounts = document.querySelectorAll('.js-count-num') || null;
+        $countText = document.querySelectorAll('.js-text-count') || null;
+        $showCount = document.querySelectorAll('.js-count-num') || null;
     // ********************************************************
     // 関数
     // ********************************************************
@@ -83,19 +83,4 @@ window.addEventListener("DOMContentLoaded", function() {
         })
     }
     // テキストフォームの文字数をカウントし表示する
-    $countTexts.forEach(function($countText, index) {
-        $countText.addEventListener('keyup', function() {
-            var count = $countText.value.length;
-            console.log(count);
-            
-            $showCounts[index].innerHTML = count;
-            $showCounts[index].classList.remove('u-err-msg');
-            $countText.classList.remove('u-err-input');
-            // 255文字を超えた場合、色を加える
-            if(255 < count){
-                $showCounts[index].classList.add('u-err-msg');
-                $countText.classList.add('u-err-input');
-            }
-        });
-    });
 });

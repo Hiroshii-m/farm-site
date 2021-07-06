@@ -1093,3 +1093,8 @@
         text-align: right;
     }
 }
+.u-color {
+    &--warning {
+        color: $color_err;
+    }
+}

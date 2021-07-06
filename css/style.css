@@ -2055,4 +2055,12 @@ i {
   font-weight: bold;
 }
 
+.u-text--right {
+  text-align: right;
+}
+
+.u-color--warning {
+  color: #CF737A;
+}
+
 /*# sourceMappingURL=style.css.map */

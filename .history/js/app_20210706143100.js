@@ -83,19 +83,10 @@ window.addEventListener("DOMContentLoaded", function() {
         })
     }
     // テキストフォームの文字数をカウントし表示する
-    $countTexts.forEach(function($countText, index) {
+    $countTexts.forEach(function($countText) {
         $countText.addEventListener('keyup', function() {
             var count = $countText.value.length;
             console.log(count);
-            
-            $showCounts[index].innerHTML = count;
-            $showCounts[index].classList.remove('u-err-msg');
-            $countText.classList.remove('u-err-input');
-            // 255文字を超えた場合、色を加える
-            if(255 < count){
-                $showCounts[index].classList.add('u-err-msg');
-                $countText.classList.add('u-err-input');
-            }
         });
     });
 });

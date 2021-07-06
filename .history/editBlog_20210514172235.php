@@ -1,21 +1,19 @@
 <?php
-// 予想時間: 3h
-// かかった時間：1h18mi
-
 // 共通ファイルの読み込み
 require_once('function.php');
 // ログイン認証ファイル読み込み
 require('auth.php');
 
 debug('==============================================');
-debug('ブログ作成');
+debug('ブログ編集');
 debug('==============================================');
 
+// GETパラメータ取得
+$b_id = (!empty($_GET['b_id'])) ? $_GET['b_id'] : '';
 // ユーザーidを格納
 $u_id = $_SESSION['user_id'];
-// 店舗情報を取得
-$shop = getShop($u_id);
-$s_id = $shop['id'];
+// ブログ情報を取得
+$dbFormData = getBlogOne($b_id);
 
 if(!empty($_POST)) {
     $title = (!empty($_POST['title'])) ? $_POST['title'] : '';
@@ -38,11 +36,12 @@ if(!empty($_POST)) {
         try {
             // ブログを登録
             $dbh = dbConnect();
-            $sql = 'INSERT INTO `blogs`(`shop_id`, `title`, `img`, `content`, `create_date`) VALUES(:s_id, :title, :img, :content, :create_date)';
-            $data = array(':s_id' => $s_id, ':title' => $title, ':img' => $img, ':content' => $content, ':create_date' => date('Y-m-d'));
-            queryPost($dbh, $sql, $data);
-
-            header("Location:mypage.php");
+            $sql = 'UPDATE `blogs` SET `title` = :title, `img` = :img, `content` = :content WHERE `id` = :b_id';
+            $data = array(':title' => $title, ':img' => $img, ':content' => $content, ':b_id' => $b_id);
+            $stmt = queryPost($dbh, $sql, $data);
+            if(!empty($stmt)) {
+                header("Location:mypage.php");
+            }
         } catch ( Exception $e ) {
             error_log('エラー発生:' . $e->getMessage());
             $err_msg['common'] = MSG::UNEXPECTED;
@@ -52,7 +51,7 @@ if(!empty($_POST)) {
 
 ?>
 <?php
-$headTitle = 'ブログ作成ページ';
+$headTitle = 'ブログ編集ページ';
 include('head.php');
 ?>
     <body>
@@ -61,7 +60,11 @@ include('head.php');
     
         <main id="l-main">
             <form method="post" class="c-form js-sp-menu-target" enctype="multipart/form-data">
-                <h2 class="c-form__title">記事を作成する</h2>
+            <!-- パンクズリスト -->
+            <div class="c-pankuzu">
+                <a href="myBlogList.php<?= appendGetParam(array('b_id')); ?>" class="u-prev p-article__prev">&ang;記事一覧へ遷移する</a>
+            </div><!-- /パンクズリスト -->
+                <h2 class="c-form__title">記事を編集する</h2>
                 <div class="u-err-msg">
                     <?= showErrMsg('common'); ?>
                 </div>
@@ -74,8 +77,7 @@ include('head.php');
                 </label>
                 <label class="c-form__label" for="">
                     内容
-                    <textarea class="c-form__textarea js-text-count <?= showErrStyle('content'); ?>" name="content" id="" placeholder="ブログの内容"><?= sanitize(getFormData('content')); ?></textarea>
-                    <p class="u-text--right"><span class="js-count-num">0</span>/255</p>
+                    <textarea class="c-form__textarea <?= showErrStyle('content'); ?>" name="content" id="" placeholder="ブログの内容"><?= sanitize(getFormData('content')); ?></textarea>
                     <div class="u-err-msg">
                         <?= showErrMsg('content'); ?>
                     </div>
@@ -85,7 +87,7 @@ include('head.php');
                     <label class="c-form__areaDrop u-margin-top-5 js-area-drop">
                         <input type="hidden" name="MAX_FILE_SIZE" value="3145728">
                         <input class="c-form__file js-file-input" type="file" name="img">
-                        <img src="" class="c-form__img js-avatar-img" alt="">
+                        <img src="<?= sanitize(getFormData('img')); ?>" class="c-form__img js-avatar-img" alt="">
                         <p class="c-form__areaText">ドラッグ&ドロップ</p>
                     </label>
                     <div class="u-err-msg">
@@ -93,7 +95,7 @@ include('head.php');
                     </div>
                 </label>
                 
-                <input class="c-form__submit" type="submit" value="記事作成">
+                <input class="c-form__submit" type="submit" value="記事更新">
             </form>
         </main>
         

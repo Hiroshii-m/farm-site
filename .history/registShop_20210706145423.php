@@ -158,8 +158,7 @@ require('head.php');
                 </label>
                 <label class="c-form__label" for="">
                     店の情報（任意）
-                    <textarea class="c-form__textarea js-text-count <?= showErrStyle('social_profile'); ?>" type="text" name="social_profile"><?= sanitize(getFormData('social_profile')); ?></textarea>
-                    <p class="u-text--right"><span class="js-count-num">0</span>/255</p>
+                    <textarea class="c-form__textarea <?= showErrStyle('social_profile'); ?>" type="text" name="social_profile"><?= sanitize(getFormData('social_profile')); ?></textarea>
                     <div class="u-err-msg">
                         <?= showErrMsg('social_profile'); ?>
                     </div>
@@ -167,6 +166,7 @@ require('head.php');
                 <label class="c-form__label" for="">
                     郵便番号（ハイフンなし）
                     <input class="c-form__input <?= showErrStyle('postcode'); ?>" type="text" name="postcode" value="<?= sanitize(getFormData('postcode')); ?>">
+                    <p class="u-text--right"><span class="js-count-num">0</span>/255</p>
                     <div class="u-err-msg">
                         <?= showErrMsg('postcode'); ?>
                     </div>

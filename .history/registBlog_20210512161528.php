@@ -74,8 +74,7 @@ include('head.php');
                 </label>
                 <label class="c-form__label" for="">
                     内容
-                    <textarea class="c-form__textarea js-text-count <?= showErrStyle('content'); ?>" name="content" id="" placeholder="ブログの内容"><?= sanitize(getFormData('content')); ?></textarea>
-                    <p class="u-text--right"><span class="js-count-num">0</span>/255</p>
+                    <textarea class="c-form__textarea <?= showErrStyle('content'); ?>" name="content" id="" placeholder="ブログの内容"><?= sanitize(getFormData('content')); ?></textarea>
                     <div class="u-err-msg">
                         <?= showErrMsg('content'); ?>
                     </div>

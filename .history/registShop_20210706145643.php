@@ -6,6 +6,7 @@
 require('function.php');
 // ログイン認証ファイル読み込み
 require('auth.php');
+// editShopがある場合
 
 debug('==============================================');
 debug('店舗登録');

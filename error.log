@@ -20949,3 +20949,448 @@ Stack trace:
 [05-Jul-2021 13:56:11 UTC] デバッグ:==============================================
 [05-Jul-2021 13:56:11 UTC] デバッグ:マイページ画面
 [05-Jul-2021 13:56:11 UTC] デバッグ:==============================================
+[06-Jul-2021 05:12:40 UTC] PHP Notice:  Undefined index: msg in /Applications/MAMP/htdocs/output2/farm/signup.php on line 74
+[06-Jul-2021 05:13:01 UTC] Array
+(
+    [id] => 3
+    [shop_name] => アイウエオ
+    [social_profile] => 
+    [postcode] => 0020855
+    [prefecture_id] => 1
+    [city_id] => 1
+    [street] => 屯田５条１１丁目２−６
+    [building] => 
+    [tel] => 
+    [shop_img1] => uploads/566c2eae2847293cc021e3392eb1eea72ab6b959.jpeg
+    [shop_img2] => 
+    [shop_img3] => 
+)
+
+[06-Jul-2021 05:14:40 UTC] Array
+(
+    [id] => 3
+    [shop_name] => アイウエオ
+    [social_profile] => 
+    [postcode] => 0020855
+    [prefecture_id] => 1
+    [city_id] => 1
+    [street] => 屯田５条１１丁目２−６
+    [building] => 
+    [tel] => 
+    [shop_img1] => uploads/566c2eae2847293cc021e3392eb1eea72ab6b959.jpeg
+    [shop_img2] => 
+    [shop_img3] => 
+)
+
+[06-Jul-2021 05:14:51 UTC] Array
+(
+    [id] => 3
+    [shop_name] => アイウエオ
+    [social_profile] => 
+    [postcode] => 0020855
+    [prefecture_id] => 1
+    [city_id] => 1
+    [street] => 屯田５条１１丁目２−６
+    [building] => 
+    [tel] => 
+    [shop_img1] => uploads/566c2eae2847293cc021e3392eb1eea72ab6b959.jpeg
+    [shop_img2] => 
+    [shop_img3] => 
+)
+
+[06-Jul-2021 05:17:28 UTC] Array
+(
+    [id] => 3
+    [shop_name] => アイウエオ
+    [social_profile] => 
+    [postcode] => 0020855
+    [prefecture_id] => 1
+    [city_id] => 1
+    [street] => 屯田５条１１丁目２−６
+    [building] => 
+    [tel] => 
+    [shop_img1] => uploads/566c2eae2847293cc021e3392eb1eea72ab6b959.jpeg
+    [shop_img2] => 
+    [shop_img3] => 
+)
+
+[06-Jul-2021 05:17:30 UTC] Array
+(
+    [id] => 3
+    [shop_name] => アイウエオ
+    [social_profile] => 
+    [postcode] => 0020855
+    [prefecture_id] => 1
+    [city_id] => 1
+    [street] => 屯田５条１１丁目２−６
+    [building] => 
+    [tel] => 
+    [shop_img1] => uploads/566c2eae2847293cc021e3392eb1eea72ab6b959.jpeg
+    [shop_img2] => 
+    [shop_img3] => 
+)
+
+[06-Jul-2021 05:17:57 UTC] Array
+(
+    [id] => 3
+    [shop_name] => アイウエオ
+    [social_profile] => 
+    [postcode] => 0020855
+    [prefecture_id] => 1
+    [city_id] => 1
+    [street] => 屯田５条１１丁目２−６
+    [building] => 
+    [tel] => 
+    [shop_img1] => uploads/566c2eae2847293cc021e3392eb1eea72ab6b959.jpeg
+    [shop_img2] => 
+    [shop_img3] => 
+)
+
+[06-Jul-2021 05:28:00 UTC] Array
+(
+    [id] => 3
+    [shop_name] => アイウエオ
+    [social_profile] => 
+    [postcode] => 0020855
+    [prefecture_id] => 1
+    [city_id] => 1
+    [street] => 屯田５条１１丁目２−６
+    [building] => 
+    [tel] => 
+    [shop_img1] => uploads/566c2eae2847293cc021e3392eb1eea72ab6b959.jpeg
+    [shop_img2] => 
+    [shop_img3] => 
+)
+
+[06-Jul-2021 05:28:59 UTC] Array
+(
+    [id] => 3
+    [shop_name] => アイウエオ
+    [social_profile] => 
+    [postcode] => 0020855
+    [prefecture_id] => 1
+    [city_id] => 1
+    [street] => 屯田５条１１丁目２−６
+    [building] => 
+    [tel] => 
+    [shop_img1] => uploads/566c2eae2847293cc021e3392eb1eea72ab6b959.jpeg
+    [shop_img2] => 
+    [shop_img3] => 
+)
+
+[06-Jul-2021 05:29:26 UTC] Array
+(
+    [id] => 3
+    [shop_name] => アイウエオ
+    [social_profile] => 
+    [postcode] => 0020855
+    [prefecture_id] => 1
+    [city_id] => 1
+    [street] => 屯田５条１１丁目２−６
+    [building] => 
+    [tel] => 
+    [shop_img1] => uploads/566c2eae2847293cc021e3392eb1eea72ab6b959.jpeg
+    [shop_img2] => 
+    [shop_img3] => 
+)
+
+[06-Jul-2021 05:29:53 UTC] Array
+(
+    [id] => 3
+    [shop_name] => アイウエオ
+    [social_profile] => 
+    [postcode] => 0020855
+    [prefecture_id] => 1
+    [city_id] => 1
+    [street] => 屯田５条１１丁目２−６
+    [building] => 
+    [tel] => 
+    [shop_img1] => uploads/566c2eae2847293cc021e3392eb1eea72ab6b959.jpeg
+    [shop_img2] => 
+    [shop_img3] => 
+)
+
+[06-Jul-2021 05:30:25 UTC] Array
+(
+    [id] => 3
+    [shop_name] => アイウエオ
+    [social_profile] => 
+    [postcode] => 0020855
+    [prefecture_id] => 1
+    [city_id] => 1
+    [street] => 屯田５条１１丁目２−６
+    [building] => 
+    [tel] => 
+    [shop_img1] => uploads/566c2eae2847293cc021e3392eb1eea72ab6b959.jpeg
+    [shop_img2] => 
+    [shop_img3] => 
+)
+
+[06-Jul-2021 05:30:51 UTC] Array
+(
+    [id] => 3
+    [shop_name] => アイウエオ
+    [social_profile] => 
+    [postcode] => 0020855
+    [prefecture_id] => 1
+    [city_id] => 1
+    [street] => 屯田５条１１丁目２−６
+    [building] => 
+    [tel] => 
+    [shop_img1] => uploads/566c2eae2847293cc021e3392eb1eea72ab6b959.jpeg
+    [shop_img2] => 
+    [shop_img3] => 
+)
+
+[06-Jul-2021 05:31:01 UTC] Array
+(
+    [id] => 3
+    [shop_name] => アイウエオ
+    [social_profile] => 
+    [postcode] => 0020855
+    [prefecture_id] => 1
+    [city_id] => 1
+    [street] => 屯田５条１１丁目２−６
+    [building] => 
+    [tel] => 
+    [shop_img1] => uploads/566c2eae2847293cc021e3392eb1eea72ab6b959.jpeg
+    [shop_img2] => 
+    [shop_img3] => 
+)
+
+[06-Jul-2021 05:31:36 UTC] Array
+(
+    [id] => 3
+    [shop_name] => アイウエオ
+    [social_profile] => 
+    [postcode] => 0020855
+    [prefecture_id] => 1
+    [city_id] => 1
+    [street] => 屯田５条１１丁目２−６
+    [building] => 
+    [tel] => 
+    [shop_img1] => uploads/566c2eae2847293cc021e3392eb1eea72ab6b959.jpeg
+    [shop_img2] => 
+    [shop_img3] => 
+)
+
+[06-Jul-2021 05:33:00 UTC] Array
+(
+    [id] => 3
+    [shop_name] => アイウエオ
+    [social_profile] => 
+    [postcode] => 0020855
+    [prefecture_id] => 1
+    [city_id] => 1
+    [street] => 屯田５条１１丁目２−６
+    [building] => 
+    [tel] => 
+    [shop_img1] => uploads/566c2eae2847293cc021e3392eb1eea72ab6b959.jpeg
+    [shop_img2] => 
+    [shop_img3] => 
+)
+
+[06-Jul-2021 05:38:05 UTC] Array
+(
+    [id] => 3
+    [shop_name] => アイウエオ
+    [social_profile] => 
+    [postcode] => 0020855
+    [prefecture_id] => 1
+    [city_id] => 1
+    [street] => 屯田５条１１丁目２−６
+    [building] => 
+    [tel] => 
+    [shop_img1] => uploads/566c2eae2847293cc021e3392eb1eea72ab6b959.jpeg
+    [shop_img2] => 
+    [shop_img3] => 
+)
+
+[06-Jul-2021 05:39:36 UTC] Array
+(
+    [id] => 3
+    [shop_name] => アイウエオ
+    [social_profile] => 
+    [postcode] => 0020855
+    [prefecture_id] => 1
+    [city_id] => 1
+    [street] => 屯田５条１１丁目２−６
+    [building] => 
+    [tel] => 
+    [shop_img1] => uploads/566c2eae2847293cc021e3392eb1eea72ab6b959.jpeg
+    [shop_img2] => 
+    [shop_img3] => 
+)
+
+[06-Jul-2021 05:39:47 UTC] Array
+(
+    [id] => 3
+    [shop_name] => アイウエオ
+    [social_profile] => 
+    [postcode] => 0020855
+    [prefecture_id] => 1
+    [city_id] => 1
+    [street] => 屯田５条１１丁目２−６
+    [building] => 
+    [tel] => 
+    [shop_img1] => uploads/566c2eae2847293cc021e3392eb1eea72ab6b959.jpeg
+    [shop_img2] => 
+    [shop_img3] => 
+)
+
+[06-Jul-2021 05:40:43 UTC] Array
+(
+    [id] => 3
+    [shop_name] => アイウエオ
+    [social_profile] => 
+    [postcode] => 0020855
+    [prefecture_id] => 1
+    [city_id] => 1
+    [street] => 屯田５条１１丁目２−６
+    [building] => 
+    [tel] => 
+    [shop_img1] => uploads/566c2eae2847293cc021e3392eb1eea72ab6b959.jpeg
+    [shop_img2] => 
+    [shop_img3] => 
+)
+
+[06-Jul-2021 05:48:21 UTC] Array
+(
+    [id] => 3
+    [shop_name] => アイウエオ
+    [social_profile] => 
+    [postcode] => 0020855
+    [prefecture_id] => 1
+    [city_id] => 1
+    [street] => 屯田５条１１丁目２−６
+    [building] => 
+    [tel] => 
+    [shop_img1] => uploads/566c2eae2847293cc021e3392eb1eea72ab6b959.jpeg
+    [shop_img2] => 
+    [shop_img3] => 
+)
+
+[06-Jul-2021 05:48:40 UTC] Array
+(
+    [id] => 3
+    [shop_name] => アイウエオ
+    [social_profile] => 
+    [postcode] => 0020855
+    [prefecture_id] => 1
+    [city_id] => 1
+    [street] => 屯田５条１１丁目２−６
+    [building] => 
+    [tel] => 
+    [shop_img1] => uploads/566c2eae2847293cc021e3392eb1eea72ab6b959.jpeg
+    [shop_img2] => 
+    [shop_img3] => 
+)
+
+[06-Jul-2021 05:48:56 UTC] Array
+(
+    [id] => 3
+    [shop_name] => アイウエオ
+    [social_profile] => 
+    [postcode] => 0020855
+    [prefecture_id] => 1
+    [city_id] => 1
+    [street] => 屯田５条１１丁目２−６
+    [building] => 
+    [tel] => 
+    [shop_img1] => uploads/566c2eae2847293cc021e3392eb1eea72ab6b959.jpeg
+    [shop_img2] => 
+    [shop_img3] => 
+)
+
+[06-Jul-2021 05:48:56 UTC] Array
+(
+    [id] => 3
+    [shop_name] => アイウエオ
+    [social_profile] => 
+    [postcode] => 0020855
+    [prefecture_id] => 1
+    [city_id] => 1
+    [street] => 屯田５条１１丁目２−６
+    [building] => 
+    [tel] => 
+    [shop_img1] => uploads/566c2eae2847293cc021e3392eb1eea72ab6b959.jpeg
+    [shop_img2] => 
+    [shop_img3] => 
+)
+
+[06-Jul-2021 05:49:20 UTC] Array
+(
+    [id] => 3
+    [shop_name] => アイウエオ
+    [social_profile] => 
+    [postcode] => 0020855
+    [prefecture_id] => 1
+    [city_id] => 1
+    [street] => 屯田５条１１丁目２−６
+    [building] => 
+    [tel] => 
+    [shop_img1] => uploads/566c2eae2847293cc021e3392eb1eea72ab6b959.jpeg
+    [shop_img2] => 
+    [shop_img3] => 
+)
+
+[06-Jul-2021 05:49:25 UTC] Array
+(
+    [id] => 3
+    [shop_name] => アイウエオ
+    [social_profile] => 
+    [postcode] => 0020855
+    [prefecture_id] => 1
+    [city_id] => 1
+    [street] => 屯田５条１１丁目２−６
+    [building] => 
+    [tel] => 
+    [shop_img1] => uploads/566c2eae2847293cc021e3392eb1eea72ab6b959.jpeg
+    [shop_img2] => 
+    [shop_img3] => 
+)
+
+[06-Jul-2021 05:50:01 UTC] Array
+(
+    [id] => 3
+    [shop_name] => アイウエオ
+    [social_profile] => 
+    [postcode] => 0020855
+    [prefecture_id] => 1
+    [city_id] => 1
+    [street] => 屯田５条１１丁目２−６
+    [building] => 
+    [tel] => 
+    [shop_img1] => uploads/566c2eae2847293cc021e3392eb1eea72ab6b959.jpeg
+    [shop_img2] => 
+    [shop_img3] => 
+)
+
+[06-Jul-2021 05:52:41 UTC] Array
+(
+    [id] => 3
+    [shop_name] => アイウエオ
+    [social_profile] => 
+    [postcode] => 0020855
+    [prefecture_id] => 1
+    [city_id] => 1
+    [street] => 屯田５条１１丁目２−６
+    [building] => 
+    [tel] => 
+    [shop_img1] => uploads/566c2eae2847293cc021e3392eb1eea72ab6b959.jpeg
+    [shop_img2] => 
+    [shop_img3] => 
+)
+
+[06-Jul-2021 05:54:52 UTC] PHP Notice:  Undefined variable: shop_img1 in /Applications/MAMP/htdocs/output2/farm/registShop.php on line 220
+[06-Jul-2021 05:54:52 UTC] PHP Notice:  Undefined variable: shop_img2 in /Applications/MAMP/htdocs/output2/farm/registShop.php on line 226
+[06-Jul-2021 05:54:52 UTC] PHP Notice:  Undefined variable: shop_img3 in /Applications/MAMP/htdocs/output2/farm/registShop.php on line 232
+[06-Jul-2021 05:55:32 UTC] PHP Notice:  Undefined variable: shop_img1 in /Applications/MAMP/htdocs/output2/farm/registShop.php on line 220
+[06-Jul-2021 05:55:32 UTC] PHP Notice:  Undefined variable: shop_img2 in /Applications/MAMP/htdocs/output2/farm/registShop.php on line 226
+[06-Jul-2021 05:55:32 UTC] PHP Notice:  Undefined variable: shop_img3 in /Applications/MAMP/htdocs/output2/farm/registShop.php on line 232
+[06-Jul-2021 06:01:27 UTC] PHP Warning:  Illegal string offset 'category_id' in /Applications/MAMP/htdocs/output2/farm/editProduct.php on line 114
+[06-Jul-2021 06:01:27 UTC] PHP Notice:  Uninitialized string offset: 0 in /Applications/MAMP/htdocs/output2/farm/editProduct.php on line 114
+[06-Jul-2021 06:01:27 UTC] PHP Warning:  Illegal string offset 'category_id' in /Applications/MAMP/htdocs/output2/farm/editProduct.php on line 114
+[06-Jul-2021 06:01:27 UTC] PHP Notice:  Uninitialized string offset: 0 in /Applications/MAMP/htdocs/output2/farm/editProduct.php on line 114
+[06-Jul-2021 06:01:27 UTC] PHP Warning:  Illegal string offset 'category_id' in /Applications/MAMP/htdocs/output2/farm/editProduct.php on line 114
+[06-Jul-2021 06:01:27 UTC] PHP Notice:  Uninitialized string offset: 0 in /Applications/MAMP/htdocs/output2/farm/editProduct.php on line 114
