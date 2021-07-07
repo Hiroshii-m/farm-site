@@ -3,8 +3,8 @@
 // ================================================
 // ログ
 // ================================================
-ini_set('log_errors', 'on');
-ini_set('error_log', 'error.log');
+// ini_set('log_errors', 'on');
+// ini_set('error_log', 'error.log');
 
 // =====================================
 // セッション準備・セッション有効期限を延ばす
@@ -326,7 +326,10 @@ function dbConnect(){
     $dsn = 'mysql:dbname=farmshops;host=localhost;charset=utf8';
     $user = 'root';
     $password = 'root';
-    
+    // ロリポップ
+    // $dsn = 'mysql:dbname=LAA1303831-farmshops;host=mysql138.phy.lolipop.lan;charset=utf8';
+    // $user = 'LAA1303831';
+    // $password = 'tyokuhan251';
     $options = array(
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
