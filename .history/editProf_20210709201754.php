@@ -142,8 +142,8 @@ if(!empty($_POST)) {
     if(empty($err_msg)) {
         try {
             $dbh = dbConnect();
-            $sql = 'UPDATE users SET `screen_name` = :s_name, `last_name` = :l_name, `first_name` = :f_name, `last_name_kana` = :l_name_kana, `first_name_kana` = :f_name_kana, `birthday_year` = :b_year, `birthday_month` = :b_month, `birthday_day` = :b_day, `avatar_image_path` = :a_path, `prefecture_id` = :p_id, `city_id` = :c_id, `street` = :street, `building` = :building, `postcode` = :postcode WHERE `id` = :u_id';
-            $data = array(':u_id' => $u_id, ':s_name' => $screen_name, ':l_name' => $last_name, ':f_name' => $first_name, ':l_name_kana' => $last_name_kana, ':f_name_kana' => $first_name_kana, ':b_year' => $birthday_year, ':b_month' => $birthday_month, ':b_day' => $birthday_day, ':a_path' => $avatar_image_path, ':p_id' => $prefecture_id, ':c_id' => $city_id, ':street' => $street, ':building' => $building, ':postcode' => $postcode);
+            $sql = 'UPDATE users SET `screen_name` = :s_name, `last_name` = :l_name, `first_name` = :f_name, `last_name_kana` = :l_name_kana, `first_name_kana` = :f_name_kana, `birthday_year` = :b_year, `birthday_month` = :b_month, `birthday_day` = :b_day, `avatar_image_path` = :a_path, `prefecture_id` = :p_id, `city_id` = :c_id, `street` = :street, `building` = :building, `postcode` = :postcode';
+            $data = array(':s_name' => $screen_name, ':l_name' => $last_name, ':f_name' => $first_name, ':l_name_kana' => $last_name_kana, ':f_name_kana' => $first_name_kana, ':b_year' => $birthday_year, ':b_month' => $birthday_month, ':b_day' => $birthday_day, ':a_path' => $avatar_image_path, ':p_id' => $prefecture_id, ':c_id' => $city_id, ':street' => $street, ':building' => $building, ':postcode' => $postcode);
             $stmt = queryPost($dbh, $sql, $data);
 
             // マイページへ移動
@@ -254,7 +254,7 @@ include('head.php');
                 </div>
             </label>
             <label class="c-form__label" for="">
-                TOP画像 ＊画像サイズは、3MB以下にしてください
+                TOP画像
                 <label class="c-form__areaDrop u-margin-top-5 js-area-drop">
                     <input type="hidden" name="MAX_FILE_SIZE" value="3145728">
                     <input class="c-form__file js-file-input" type="file" name="avatar_image_path">
@@ -266,7 +266,7 @@ include('head.php');
                 </div>
             </label>
             
-            <input class="c-form__submit" type="submit" value="変更">
+            <input class="c-form__submit" type="submit" value="送信">
         </form>
     </main>
     

@@ -62,7 +62,7 @@ include_once('head.php');
     <main id="l-main" class="u-bgColor js-sp-menu-target">
         <div class="c-main">
 
-            <a href="seeder.php">DB登録</a>
+            <a href="seeder.php"></a>
             
             <!-- 最近登録された販売所 -->
             <section id="l-sale">

@@ -254,7 +254,7 @@ include('head.php');
                 </div>
             </label>
             <label class="c-form__label" for="">
-                TOP画像 ＊画像サイズは、3MB以下にしてください
+                TOP画像 ＊3MB以下にしてください
                 <label class="c-form__areaDrop u-margin-top-5 js-area-drop">
                     <input type="hidden" name="MAX_FILE_SIZE" value="3145728">
                     <input class="c-form__file js-file-input" type="file" name="avatar_image_path">
