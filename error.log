@@ -21394,3 +21394,2661 @@ Stack trace:
 [06-Jul-2021 06:01:27 UTC] PHP Notice:  Uninitialized string offset: 0 in /Applications/MAMP/htdocs/output2/farm/editProduct.php on line 114
 [06-Jul-2021 06:01:27 UTC] PHP Warning:  Illegal string offset 'category_id' in /Applications/MAMP/htdocs/output2/farm/editProduct.php on line 114
 [06-Jul-2021 06:01:27 UTC] PHP Notice:  Uninitialized string offset: 0 in /Applications/MAMP/htdocs/output2/farm/editProduct.php on line 114
+[11-Jul-2021 12:16:54 UTC] PHP Notice:  Undefined index: msg in /Applications/MAMP/htdocs/output2/farm/signup.php on line 74
+[11-Jul-2021 12:28:12 UTC] デバッグ:==============================================
+[11-Jul-2021 12:28:12 UTC] デバッグ:検索画面
+[11-Jul-2021 12:28:12 UTC] デバッグ:==============================================
+[11-Jul-2021 12:28:17 UTC] デバッグ:==============================================
+[11-Jul-2021 12:28:17 UTC] デバッグ:検索画面
+[11-Jul-2021 12:28:17 UTC] デバッグ:==============================================
+[11-Jul-2021 12:28:55 UTC] デバッグ:==============================================
+[11-Jul-2021 12:28:55 UTC] デバッグ:検索画面
+[11-Jul-2021 12:28:55 UTC] デバッグ:==============================================
+[11-Jul-2021 12:29:08 UTC] デバッグ:==============================================
+[11-Jul-2021 12:29:08 UTC] デバッグ:検索画面
+[11-Jul-2021 12:29:08 UTC] デバッグ:==============================================
+[11-Jul-2021 12:29:12 UTC] デバッグ:==============================================
+[11-Jul-2021 12:29:12 UTC] デバッグ:検索画面
+[11-Jul-2021 12:29:12 UTC] デバッグ:==============================================
+[11-Jul-2021 12:30:05 UTC] デバッグ:==============================================
+[11-Jul-2021 12:30:05 UTC] デバッグ:検索画面
+[11-Jul-2021 12:30:05 UTC] デバッグ:==============================================
+[11-Jul-2021 12:30:15 UTC] デバッグ:==============================================
+[11-Jul-2021 12:30:15 UTC] デバッグ:検索画面
+[11-Jul-2021 12:30:15 UTC] デバッグ:==============================================
+[11-Jul-2021 12:31:10 UTC] デバッグ:==============================================
+[11-Jul-2021 12:31:10 UTC] デバッグ:検索画面
+[11-Jul-2021 12:31:10 UTC] デバッグ:==============================================
+[11-Jul-2021 12:31:16 UTC] デバッグ:==============================================
+[11-Jul-2021 12:31:16 UTC] デバッグ:TOP画面
+[11-Jul-2021 12:31:16 UTC] デバッグ:==============================================
+[11-Jul-2021 12:31:18 UTC] デバッグ:==============================================
+[11-Jul-2021 12:31:18 UTC] デバッグ:検索画面
+[11-Jul-2021 12:31:18 UTC] デバッグ:==============================================
+[11-Jul-2021 12:33:12 UTC] デバッグ:==============================================
+[11-Jul-2021 12:33:12 UTC] デバッグ:検索画面
+[11-Jul-2021 12:33:12 UTC] デバッグ:==============================================
+[11-Jul-2021 12:33:12 UTC] デバッグ:Array
+(
+    [total] => 1
+    [total_page] => 1
+    [data] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 75
+                    [shop_name] => aaaaaaaaaa
+                    [social_profile] => aaa
+                    [prefecture_id] => 2
+                    [street] => aaa
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 青森市
+                    [category_name] => 
+                    [products] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+)
+
+[11-Jul-2021 12:33:24 UTC] デバッグ:==============================================
+[11-Jul-2021 12:33:24 UTC] デバッグ:検索画面
+[11-Jul-2021 12:33:24 UTC] デバッグ:==============================================
+[11-Jul-2021 12:33:24 UTC] デバッグ:Array
+(
+    [total] => 0
+    [total_page] => 0
+    [data] => Array
+        (
+        )
+
+)
+
+[11-Jul-2021 12:37:42 UTC] デバッグ:==============================================
+[11-Jul-2021 12:37:42 UTC] デバッグ:検索画面
+[11-Jul-2021 12:37:42 UTC] デバッグ:==============================================
+[11-Jul-2021 12:37:42 UTC] デバッグ:Array
+(
+    [total] => 1
+    [total_page] => 1
+    [data] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 75
+                    [shop_name] => aaaaaaaaaa
+                    [social_profile] => aaa
+                    [prefecture_id] => 2
+                    [street] => aaa
+                    [building] => 
+                    [shop_img1] => 
+                    [city_name] => 青森市
+                    [category_name] => 
+                    [products] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+)
+
+[11-Jul-2021 12:38:47 UTC] デバッグ:==============================================
+[11-Jul-2021 12:38:47 UTC] デバッグ:検索画面
+[11-Jul-2021 12:38:47 UTC] デバッグ:==============================================
+[11-Jul-2021 12:38:47 UTC] デバッグ:SELECT DISTINCT s.`id`, s.`shop_name`, s.`social_profile`, s.`prefecture_id`, s.`street`, s.`building`, s.`shop_img1`, c.`city_name`, cate.`category_name` FROM `shops` AS s LEFT JOIN `products` AS p ON s.`id` = p.`shop_id` LEFT JOIN `cities` AS c ON s.`city_id` = c.`id` LEFT JOIN `category` AS cate ON cate.`id` = p.`category_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND s.`city_id` = :city_id LIMIT :span OFFSET :currentMinNum
+[11-Jul-2021 12:41:24 UTC] デバッグ:==============================================
+[11-Jul-2021 12:41:24 UTC] デバッグ:検索画面
+[11-Jul-2021 12:41:24 UTC] デバッグ:==============================================
+[11-Jul-2021 12:41:24 UTC] デバッグ:SELECT DISTINCT s.`id`, s.`shop_name`, s.`social_profile`, s.`prefecture_id`, s.`street`, s.`building`, s.`shop_img1`, c.`city_name`, cate.`category_name` FROM `shops` AS s LEFT JOIN `products` AS p ON s.`id` = p.`shop_id` LEFT JOIN `cities` AS c ON s.`city_id` = c.`id` LEFT JOIN `category` AS cate ON cate.`id` = p.`category_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND s.`city_id` = :city_id LIMIT :span OFFSET :currentMinNum
+[11-Jul-2021 12:42:26 UTC] デバッグ:==============================================
+[11-Jul-2021 12:42:26 UTC] デバッグ:検索画面
+[11-Jul-2021 12:42:26 UTC] デバッグ:==============================================
+[11-Jul-2021 12:42:26 UTC] デバッグ:SELECT DISTINCT s.`id`, s.`shop_name`, s.`social_profile`, s.`prefecture_id`, s.`street`, s.`building`, s.`shop_img1`, c.`city_name`, cate.`category_name` FROM `shops` AS s LEFT JOIN `products` AS p ON s.`id` = p.`shop_id` LEFT JOIN `cities` AS c ON s.`city_id` = c.`id` LEFT JOIN `category` AS cate ON cate.`id` = p.`category_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND s.`city_id` = :city_id LIMIT :span OFFSET :currentMinNum
+[11-Jul-2021 12:42:29 UTC] デバッグ:==============================================
+[11-Jul-2021 12:42:29 UTC] デバッグ:検索画面
+[11-Jul-2021 12:42:29 UTC] デバッグ:==============================================
+[11-Jul-2021 12:42:29 UTC] デバッグ:SELECT DISTINCT s.`id`, s.`shop_name`, s.`social_profile`, s.`prefecture_id`, s.`street`, s.`building`, s.`shop_img1`, c.`city_name`, cate.`category_name` FROM `shops` AS s LEFT JOIN `products` AS p ON s.`id` = p.`shop_id` LEFT JOIN `cities` AS c ON s.`city_id` = c.`id` LEFT JOIN `category` AS cate ON cate.`id` = p.`category_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 LIMIT :span OFFSET :currentMinNum
+[11-Jul-2021 12:46:10 UTC] デバッグ:==============================================
+[11-Jul-2021 12:46:10 UTC] デバッグ:検索画面
+[11-Jul-2021 12:46:10 UTC] デバッグ:==============================================
+[11-Jul-2021 12:46:10 UTC] デバッグ:SELECT s.`id`, s.`shop_name`, s.`social_profile`, s.`prefecture_id`, s.`street`, s.`building`, s.`shop_img1`, c.`city_name`, cate.`category_name` FROM `shops` AS s LEFT JOIN `products` AS p ON s.`id` = p.`shop_id` LEFT JOIN `cities` AS c ON s.`city_id` = c.`id` LEFT JOIN `category` AS cate ON cate.`id` = p.`category_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 LIMIT :span OFFSET :currentMinNum
+[11-Jul-2021 12:46:13 UTC] デバッグ:==============================================
+[11-Jul-2021 12:46:13 UTC] デバッグ:検索画面
+[11-Jul-2021 12:46:13 UTC] デバッグ:==============================================
+[11-Jul-2021 12:46:13 UTC] デバッグ:SELECT s.`id`, s.`shop_name`, s.`social_profile`, s.`prefecture_id`, s.`street`, s.`building`, s.`shop_img1`, c.`city_name`, cate.`category_name` FROM `shops` AS s LEFT JOIN `products` AS p ON s.`id` = p.`shop_id` LEFT JOIN `cities` AS c ON s.`city_id` = c.`id` LEFT JOIN `category` AS cate ON cate.`id` = p.`category_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND s.`city_id` = :city_id LIMIT :span OFFSET :currentMinNum
+[11-Jul-2021 12:46:40 UTC] デバッグ:==============================================
+[11-Jul-2021 12:46:40 UTC] デバッグ:検索画面
+[11-Jul-2021 12:46:40 UTC] デバッグ:==============================================
+[11-Jul-2021 12:46:40 UTC] デバッグ:SELECT DISTINCT s.`id`, s.`shop_name`, s.`social_profile`, s.`prefecture_id`, s.`street`, s.`building`, s.`shop_img1`, c.`city_name`, cate.`category_name` FROM `shops` AS s LEFT JOIN `products` AS p ON s.`id` = p.`shop_id` LEFT JOIN `cities` AS c ON s.`city_id` = 6 LEFT JOIN `category` AS cate ON cate.`id` = p.`category_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND s.`city_id` = :city_id LIMIT :span OFFSET :currentMinNum
+[11-Jul-2021 12:47:29 UTC] デバッグ:==============================================
+[11-Jul-2021 12:47:29 UTC] デバッグ:TOP画面
+[11-Jul-2021 12:47:29 UTC] デバッグ:==============================================
+[11-Jul-2021 12:48:15 UTC] デバッグ:==============================================
+[11-Jul-2021 12:48:15 UTC] デバッグ:検索画面
+[11-Jul-2021 12:48:15 UTC] デバッグ:==============================================
+[11-Jul-2021 12:48:15 UTC] デバッグ:SELECT DISTINCT s.`id`, s.`shop_name`, s.`social_profile`, s.`prefecture_id`, s.`street`, s.`building`, s.`shop_img1`, c.`city_name`, cate.`category_name` FROM `shops` AS s LEFT JOIN `products` AS p ON s.`id` = p.`shop_id` LEFT JOIN `cities` AS c ON s.`city_id` = c.`id` LEFT JOIN `category` AS cate ON cate.`id` = p.`category_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 LIMIT :span OFFSET :currentMinNum
+[11-Jul-2021 12:48:19 UTC] デバッグ:==============================================
+[11-Jul-2021 12:48:19 UTC] デバッグ:検索画面
+[11-Jul-2021 12:48:19 UTC] デバッグ:==============================================
+[11-Jul-2021 12:48:19 UTC] デバッグ:SELECT DISTINCT s.`id`, s.`shop_name`, s.`social_profile`, s.`prefecture_id`, s.`street`, s.`building`, s.`shop_img1`, c.`city_name`, cate.`category_name` FROM `shops` AS s LEFT JOIN `products` AS p ON s.`id` = p.`shop_id` LEFT JOIN `cities` AS c ON s.`city_id` = c.`id` LEFT JOIN `category` AS cate ON cate.`id` = p.`category_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND s.`city_id` = :city_id LIMIT :span OFFSET :currentMinNum
+[11-Jul-2021 12:50:06 UTC] デバッグ:==============================================
+[11-Jul-2021 12:50:06 UTC] デバッグ:検索画面
+[11-Jul-2021 12:50:06 UTC] デバッグ:==============================================
+[11-Jul-2021 12:50:06 UTC] デバッグ:SELECT DISTINCT s.`id`, s.`shop_name`, s.`social_profile`, s.`prefecture_id`, s.`street`, s.`building`, s.`shop_img1`, c.`city_name`, cate.`category_name` FROM `shops` AS s LEFT JOIN `products` AS p ON s.`id` = p.`shop_id` LEFT JOIN `cities` AS c ON s.`city_id` = c.`id` LEFT JOIN `category` AS cate ON cate.`id` = p.`category_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 LIMIT :span OFFSET :currentMinNum
+[11-Jul-2021 12:50:12 UTC] デバッグ:==============================================
+[11-Jul-2021 12:50:12 UTC] デバッグ:TOP画面
+[11-Jul-2021 12:50:12 UTC] デバッグ:==============================================
+[11-Jul-2021 12:50:14 UTC] デバッグ:==============================================
+[11-Jul-2021 12:50:14 UTC] デバッグ:検索画面
+[11-Jul-2021 12:50:14 UTC] デバッグ:==============================================
+[11-Jul-2021 12:50:14 UTC] デバッグ:SELECT DISTINCT s.`id`, s.`shop_name`, s.`social_profile`, s.`prefecture_id`, s.`street`, s.`building`, s.`shop_img1`, c.`city_name`, cate.`category_name` FROM `shops` AS s LEFT JOIN `products` AS p ON s.`id` = p.`shop_id` LEFT JOIN `cities` AS c ON s.`city_id` = c.`id` LEFT JOIN `category` AS cate ON cate.`id` = p.`category_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 LIMIT :span OFFSET :currentMinNum
+[11-Jul-2021 12:50:25 UTC] デバッグ:==============================================
+[11-Jul-2021 12:50:25 UTC] デバッグ:検索画面
+[11-Jul-2021 12:50:25 UTC] デバッグ:==============================================
+[11-Jul-2021 12:50:25 UTC] デバッグ:SELECT DISTINCT s.`id`, s.`shop_name`, s.`social_profile`, s.`prefecture_id`, s.`street`, s.`building`, s.`shop_img1`, c.`city_name`, cate.`category_name` FROM `shops` AS s LEFT JOIN `products` AS p ON s.`id` = p.`shop_id` LEFT JOIN `cities` AS c ON s.`city_id` = c.`id` LEFT JOIN `category` AS cate ON cate.`id` = p.`category_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND s.`city_id` = :city_id LIMIT :span OFFSET :currentMinNum
+[11-Jul-2021 12:50:35 UTC] デバッグ:==============================================
+[11-Jul-2021 12:50:35 UTC] デバッグ:検索画面
+[11-Jul-2021 12:50:35 UTC] デバッグ:==============================================
+[11-Jul-2021 12:50:35 UTC] デバッグ:SELECT DISTINCT s.`id`, s.`shop_name`, s.`social_profile`, s.`prefecture_id`, s.`street`, s.`building`, s.`shop_img1`, c.`city_name`, cate.`category_name` FROM `shops` AS s LEFT JOIN `products` AS p ON s.`id` = p.`shop_id` LEFT JOIN `cities` AS c ON s.`city_id` = c.`id` LEFT JOIN `category` AS cate ON cate.`id` = p.`category_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND s.`city_id` = :city_id AND p.`category_id` = :category_id LIMIT :span OFFSET :currentMinNum
+[11-Jul-2021 12:50:40 UTC] デバッグ:==============================================
+[11-Jul-2021 12:50:40 UTC] デバッグ:検索画面
+[11-Jul-2021 12:50:40 UTC] デバッグ:==============================================
+[11-Jul-2021 12:50:40 UTC] デバッグ:SELECT DISTINCT s.`id`, s.`shop_name`, s.`social_profile`, s.`prefecture_id`, s.`street`, s.`building`, s.`shop_img1`, c.`city_name`, cate.`category_name` FROM `shops` AS s LEFT JOIN `products` AS p ON s.`id` = p.`shop_id` LEFT JOIN `cities` AS c ON s.`city_id` = c.`id` LEFT JOIN `category` AS cate ON cate.`id` = p.`category_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND s.`city_id` = :city_id LIMIT :span OFFSET :currentMinNum
+[11-Jul-2021 12:50:44 UTC] デバッグ:==============================================
+[11-Jul-2021 12:50:44 UTC] デバッグ:検索画面
+[11-Jul-2021 12:50:44 UTC] デバッグ:==============================================
+[11-Jul-2021 12:50:44 UTC] デバッグ:SELECT DISTINCT s.`id`, s.`shop_name`, s.`social_profile`, s.`prefecture_id`, s.`street`, s.`building`, s.`shop_img1`, c.`city_name`, cate.`category_name` FROM `shops` AS s LEFT JOIN `products` AS p ON s.`id` = p.`shop_id` LEFT JOIN `cities` AS c ON s.`city_id` = c.`id` LEFT JOIN `category` AS cate ON cate.`id` = p.`category_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND s.`city_id` = :city_id LIMIT :span OFFSET :currentMinNum
+[11-Jul-2021 12:50:59 UTC] デバッグ:==============================================
+[11-Jul-2021 12:50:59 UTC] デバッグ:TOP画面
+[11-Jul-2021 12:50:59 UTC] デバッグ:==============================================
+[11-Jul-2021 12:51:09 UTC] デバッグ:==============================================
+[11-Jul-2021 12:51:09 UTC] デバッグ:検索画面
+[11-Jul-2021 12:51:09 UTC] デバッグ:==============================================
+[11-Jul-2021 12:51:09 UTC] デバッグ:SELECT DISTINCT s.`id`, s.`shop_name`, s.`social_profile`, s.`prefecture_id`, s.`street`, s.`building`, s.`shop_img1`, c.`city_name`, cate.`category_name` FROM `shops` AS s LEFT JOIN `products` AS p ON s.`id` = p.`shop_id` LEFT JOIN `cities` AS c ON s.`city_id` = c.`id` LEFT JOIN `category` AS cate ON cate.`id` = p.`category_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 LIMIT :span OFFSET :currentMinNum
+[11-Jul-2021 12:51:46 UTC] デバッグ:==============================================
+[11-Jul-2021 12:51:46 UTC] デバッグ:検索画面
+[11-Jul-2021 12:51:46 UTC] デバッグ:==============================================
+[11-Jul-2021 12:51:46 UTC] デバッグ:SELECT DISTINCT s.`id`, s.`shop_name`, s.`social_profile`, s.`prefecture_id`, s.`street`, s.`building`, s.`shop_img1`, c.`city_name`, cate.`category_name` FROM `shops` AS s LEFT JOIN `products` AS p ON s.`id` = p.`shop_id` LEFT JOIN `cities` AS c ON s.`city_id` = c.`id` LEFT JOIN `category` AS cate ON cate.`id` = p.`category_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND s.`city_id` = :city_id LIMIT :span OFFSET :currentMinNum
+[11-Jul-2021 12:51:53 UTC] デバッグ:==============================================
+[11-Jul-2021 12:51:53 UTC] デバッグ:検索画面
+[11-Jul-2021 12:51:53 UTC] デバッグ:==============================================
+[11-Jul-2021 12:51:53 UTC] デバッグ:SELECT DISTINCT s.`id`, s.`shop_name`, s.`social_profile`, s.`prefecture_id`, s.`street`, s.`building`, s.`shop_img1`, c.`city_name`, cate.`category_name` FROM `shops` AS s LEFT JOIN `products` AS p ON s.`id` = p.`shop_id` LEFT JOIN `cities` AS c ON s.`city_id` = c.`id` LEFT JOIN `category` AS cate ON cate.`id` = p.`category_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 LIMIT :span OFFSET :currentMinNum
+[11-Jul-2021 12:53:59 UTC] デバッグ:==============================================
+[11-Jul-2021 12:53:59 UTC] デバッグ:検索画面
+[11-Jul-2021 12:53:59 UTC] デバッグ:==============================================
+[11-Jul-2021 12:53:59 UTC] デバッグ:SELECT DISTINCT s.`id`, s.`shop_name`, s.`social_profile`, s.`prefecture_id`, s.`street`, s.`building`, s.`shop_img1`, c.`city_name`, cate.`category_name` FROM `shops` AS s LEFT JOIN `products` AS p ON s.`id` = p.`shop_id` LEFT JOIN `cities` AS c ON s.`city_id` = c.`id` LEFT JOIN `category` AS cate ON cate.`id` = p.`category_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 LIMIT :span OFFSET :currentMinNum
+[11-Jul-2021 12:58:43 UTC] デバッグ:==============================================
+[11-Jul-2021 12:58:43 UTC] デバッグ:検索画面
+[11-Jul-2021 12:58:43 UTC] デバッグ:==============================================
+[11-Jul-2021 12:58:43 UTC] デバッグ:1
+[11-Jul-2021 12:58:43 UTC] デバッグ:SELECT DISTINCT s.`id`, s.`shop_name`, s.`social_profile`, s.`prefecture_id`, s.`street`, s.`building`, s.`shop_img1`, c.`city_name`, cate.`category_name` FROM `shops` AS s LEFT JOIN `products` AS p ON s.`id` = p.`shop_id` LEFT JOIN `cities` AS c ON s.`city_id` = c.`id` LEFT JOIN `category` AS cate ON cate.`id` = p.`category_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND s.`city_id` = :city_id LIMIT :span OFFSET :currentMinNum
+[11-Jul-2021 13:00:15 UTC] デバッグ:==============================================
+[11-Jul-2021 13:00:15 UTC] デバッグ:検索画面
+[11-Jul-2021 13:00:15 UTC] デバッグ:==============================================
+[11-Jul-2021 13:00:15 UTC] デバッグ:1
+[11-Jul-2021 13:00:15 UTC] デバッグ:SELECT DISTINCT s.`id`, s.`shop_name`, s.`social_profile`, s.`prefecture_id`, s.`street`, s.`building`, s.`shop_img1`, c.`city_name`, cate.`category_name` FROM `shops` AS s LEFT JOIN `products` AS p ON s.`id` = p.`shop_id` LEFT JOIN `cities` AS c ON s.`city_id` = c.`id` LEFT JOIN `category` AS cate ON cate.`id` = p.`category_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 AND s.`city_id` = :city_id LIMIT :span OFFSET :currentMinNum
+[11-Jul-2021 13:00:15 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:15 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:15 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:15 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:15 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:15 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:15 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:15 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:15 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:15 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:15 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:15 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:15 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:15 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:15 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:15 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:15 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:15 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:15 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:15 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:15 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:15 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:15 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:15 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:15 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:15 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:15 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:15 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:15 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:15 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:15 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:15 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:15 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:15 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:15 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:15 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:15 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:15 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:15 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:15 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:19 UTC] デバッグ:==============================================
+[11-Jul-2021 13:00:19 UTC] デバッグ:検索画面
+[11-Jul-2021 13:00:19 UTC] デバッグ:==============================================
+[11-Jul-2021 13:00:19 UTC] デバッグ:
+[11-Jul-2021 13:00:19 UTC] デバッグ:SELECT DISTINCT s.`id`, s.`shop_name`, s.`social_profile`, s.`prefecture_id`, s.`street`, s.`building`, s.`shop_img1`, c.`city_name`, cate.`category_name` FROM `shops` AS s LEFT JOIN `products` AS p ON s.`id` = p.`shop_id` LEFT JOIN `cities` AS c ON s.`city_id` = c.`id` LEFT JOIN `category` AS cate ON cate.`id` = p.`category_id` WHERE s.`prefecture_id` = :p_id AND s.`delete_flg` = 0 LIMIT :span OFFSET :currentMinNum
+[11-Jul-2021 13:00:19 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:19 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:19 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:19 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:19 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:19 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:19 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:19 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:19 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:19 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:19 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:19 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:19 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:19 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:19 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:19 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:19 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:19 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:19 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:19 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:19 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:19 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:19 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:19 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:19 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:19 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:19 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:19 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:19 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:19 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:19 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:19 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:19 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:19 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:19 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:19 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:19 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:19 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:19 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:00:19 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:48 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 88
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:52 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 88
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:03:57 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 88
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:05:33 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 88
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 88
+[11-Jul-2021 13:06:22 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 88
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 88
+[11-Jul-2021 13:06:25 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 88
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 88
+[11-Jul-2021 13:06:30 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 88
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 88
+[11-Jul-2021 13:06:33 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 88
+[11-Jul-2021 13:09:06 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:09:06 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:09:06 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 88
+[11-Jul-2021 13:09:06 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 88
+[11-Jul-2021 13:09:10 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:09:10 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:09:10 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 88
+[11-Jul-2021 13:09:10 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 88
+[11-Jul-2021 13:09:20 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:09:20 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 13:09:20 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 88
+[11-Jul-2021 13:09:20 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 88
+[11-Jul-2021 15:28:00 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 15:28:00 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 15:28:00 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 88
+[11-Jul-2021 15:28:04 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 15:28:04 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 15:28:04 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 88
+[11-Jul-2021 15:28:09 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 15:28:09 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 15:28:09 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 88
+[11-Jul-2021 15:32:39 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 15:32:39 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 15:32:39 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 88
+[11-Jul-2021 15:32:44 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 15:32:44 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 15:32:44 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 88
+[11-Jul-2021 15:32:49 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 15:32:49 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 15:32:49 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 88
+[11-Jul-2021 15:32:53 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 15:32:53 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 15:32:53 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 88
+[11-Jul-2021 15:36:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function pritn_r() in /Applications/MAMP/htdocs/output2/farm/search.php:47
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/output2/farm/search.php on line 47
+[11-Jul-2021 15:36:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function pritn_r() in /Applications/MAMP/htdocs/output2/farm/search.php:47
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/output2/farm/search.php on line 47
+[11-Jul-2021 15:36:55 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 15:36:55 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 15:36:55 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 88
+[11-Jul-2021 15:37:24 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 15:37:24 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 78
+[11-Jul-2021 15:37:24 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 88
+[11-Jul-2021 15:38:18 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 79
+[11-Jul-2021 15:38:18 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 79
+[11-Jul-2021 15:38:18 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 89
+[11-Jul-2021 15:38:43 UTC] デバッグ:==============================================
+[11-Jul-2021 15:38:43 UTC] デバッグ:検索画面
+[11-Jul-2021 15:38:43 UTC] デバッグ:==============================================
+[11-Jul-2021 15:38:43 UTC] デバッグ:Array
+(
+    [0] => Array
+        (
+            [city_name] => エリア
+        )
+
+    [1] => Array
+        (
+            [id] => 6
+            [city_name] => 青森市
+        )
+
+    [2] => Array
+        (
+            [id] => 7
+            [city_name] => 弘前市
+        )
+
+    [3] => Array
+        (
+            [id] => 8
+            [city_name] => 八戸市
+        )
+
+    [4] => Array
+        (
+            [id] => 9
+            [city_name] => 黒石市
+        )
+
+    [5] => Array
+        (
+            [id] => 10
+            [city_name] => 五所川原市
+        )
+
+    [6] => Array
+        (
+            [id] => 11
+            [city_name] => 十和田市
+        )
+
+    [7] => Array
+        (
+            [id] => 12
+            [city_name] => 三沢市
+        )
+
+    [8] => Array
+        (
+            [id] => 13
+            [city_name] => むつ市
+        )
+
+    [9] => Array
+        (
+            [id] => 14
+            [city_name] => つがる市
+        )
+
+    [10] => Array
+        (
+            [id] => 15
+            [city_name] => 平川市
+        )
+
+    [11] => Array
+        (
+            [id] => 16
+            [city_name] => 東津軽郡平内町
+        )
+
+    [12] => Array
+        (
+            [id] => 17
+            [city_name] => 東津軽郡今別町
+        )
+
+    [13] => Array
+        (
+            [id] => 18
+            [city_name] => 東津軽郡蓬田村
+        )
+
+    [14] => Array
+        (
+            [id] => 19
+            [city_name] => 西津軽郡鯵ヶ沢町
+        )
+
+    [15] => Array
+        (
+            [id] => 20
+            [city_name] => 西津軽郡深浦町
+        )
+
+    [16] => Array
+        (
+            [id] => 21
+            [city_name] => 中津軽郡西目屋村
+        )
+
+    [17] => Array
+        (
+            [id] => 22
+            [city_name] => 南津軽郡藤崎町
+        )
+
+    [18] => Array
+        (
+            [id] => 23
+            [city_name] => 南津軽郡大鰐町
+        )
+
+    [19] => Array
+        (
+            [id] => 24
+            [city_name] => 南津軽郡田舎館村
+        )
+
+    [20] => Array
+        (
+            [id] => 25
+            [city_name] => 北津軽郡板柳町
+        )
+
+    [21] => Array
+        (
+            [id] => 26
+            [city_name] => 北津軽郡鶴田町
+        )
+
+    [22] => Array
+        (
+            [id] => 27
+            [city_name] => 北津軽郡中泊町
+        )
+
+    [23] => Array
+        (
+            [id] => 28
+            [city_name] => 上北郡野辺地町
+        )
+
+    [24] => Array
+        (
+            [id] => 29
+            [city_name] => 上北郡七戸町
+        )
+
+    [25] => Array
+        (
+            [id] => 30
+            [city_name] => 上北郡六戸町
+        )
+
+    [26] => Array
+        (
+            [id] => 31
+            [city_name] => 上北郡横浜町
+        )
+
+    [27] => Array
+        (
+            [id] => 32
+            [city_name] => 上北郡東北町
+        )
+
+    [28] => Array
+        (
+            [id] => 33
+            [city_name] => 上北郡六ヶ所村
+        )
+
+    [29] => Array
+        (
+            [id] => 34
+            [city_name] => 上北郡おいらせ町
+        )
+
+    [30] => Array
+        (
+            [id] => 35
+            [city_name] => 下北郡大間町
+        )
+
+    [31] => Array
+        (
+            [id] => 36
+            [city_name] => 下北郡東通村
+        )
+
+    [32] => Array
+        (
+            [id] => 37
+            [city_name] => 下北郡風間浦村
+        )
+
+    [33] => Array
+        (
+            [id] => 38
+            [city_name] => 下北郡佐井村
+        )
+
+    [34] => Array
+        (
+            [id] => 39
+            [city_name] => 三戸郡三戸町
+        )
+
+    [35] => Array
+        (
+            [id] => 40
+            [city_name] => 三戸郡五戸町
+        )
+
+    [36] => Array
+        (
+            [id] => 41
+            [city_name] => 三戸郡田子町
+        )
+
+    [37] => Array
+        (
+            [id] => 42
+            [city_name] => 三戸郡南部町
+        )
+
+    [38] => Array
+        (
+            [id] => 43
+            [city_name] => 三戸郡階上町
+        )
+
+    [39] => Array
+        (
+            [id] => 44
+            [city_name] => 三戸郡新郷村
+        )
+
+)
+
+[11-Jul-2021 15:38:43 UTC] デバッグ:Array
+(
+    [p_id] => 2
+    [word_search] => 
+    [city_id] => 6
+    [category_id] => 
+)
+
+[11-Jul-2021 15:38:43 UTC] デバッグ:6
+[11-Jul-2021 15:38:43 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 79
+[11-Jul-2021 15:38:43 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 79
+[11-Jul-2021 15:38:43 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 89
+[11-Jul-2021 15:40:14 UTC] デバッグ:==============================================
+[11-Jul-2021 15:40:14 UTC] デバッグ:検索画面
+[11-Jul-2021 15:40:14 UTC] デバッグ:==============================================
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+(
+    [0] => Array
+        (
+            [city_name] => エリア
+        )
+
+    [1] => Array
+        (
+            [id] => 6
+            [city_name] => 青森市
+        )
+
+    [2] => Array
+        (
+            [id] => 7
+            [city_name] => 弘前市
+        )
+
+    [3] => Array
+        (
+            [id] => 8
+            [city_name] => 八戸市
+        )
+
+    [4] => Array
+        (
+            [id] => 9
+            [city_name] => 黒石市
+        )
+
+    [5] => Array
+        (
+            [id] => 10
+            [city_name] => 五所川原市
+        )
+
+    [6] => Array
+        (
+            [id] => 11
+            [city_name] => 十和田市
+        )
+
+    [7] => Array
+        (
+            [id] => 12
+            [city_name] => 三沢市
+        )
+
+    [8] => Array
+        (
+            [id] => 13
+            [city_name] => むつ市
+        )
+
+    [9] => Array
+        (
+            [id] => 14
+            [city_name] => つがる市
+        )
+
+    [10] => Array
+        (
+            [id] => 15
+            [city_name] => 平川市
+        )
+
+    [11] => Array
+        (
+            [id] => 16
+            [city_name] => 東津軽郡平内町
+        )
+
+    [12] => Array
+        (
+            [id] => 17
+            [city_name] => 東津軽郡今別町
+        )
+
+    [13] => Array
+        (
+            [id] => 18
+            [city_name] => 東津軽郡蓬田村
+        )
+
+    [14] => Array
+        (
+            [id] => 19
+            [city_name] => 西津軽郡鯵ヶ沢町
+        )
+
+    [15] => Array
+        (
+            [id] => 20
+            [city_name] => 西津軽郡深浦町
+        )
+
+    [16] => Array
+        (
+            [id] => 21
+            [city_name] => 中津軽郡西目屋村
+        )
+
+    [17] => Array
+        (
+            [id] => 22
+            [city_name] => 南津軽郡藤崎町
+        )
+
+    [18] => Array
+        (
+            [id] => 23
+            [city_name] => 南津軽郡大鰐町
+        )
+
+    [19] => Array
+        (
+            [id] => 24
+            [city_name] => 南津軽郡田舎館村
+        )
+
+    [20] => Array
+        (
+            [id] => 25
+            [city_name] => 北津軽郡板柳町
+        )
+
+    [21] => Array
+        (
+            [id] => 26
+            [city_name] => 北津軽郡鶴田町
+        )
+
+    [22] => Array
+        (
+            [id] => 27
+            [city_name] => 北津軽郡中泊町
+        )
+
+    [23] => Array
+        (
+            [id] => 28
+            [city_name] => 上北郡野辺地町
+        )
+
+    [24] => Array
+        (
+            [id] => 29
+            [city_name] => 上北郡七戸町
+        )
+
+    [25] => Array
+        (
+            [id] => 30
+            [city_name] => 上北郡六戸町
+        )
+
+    [26] => Array
+        (
+            [id] => 31
+            [city_name] => 上北郡横浜町
+        )
+
+    [27] => Array
+        (
+            [id] => 32
+            [city_name] => 上北郡東北町
+        )
+
+    [28] => Array
+        (
+            [id] => 33
+            [city_name] => 上北郡六ヶ所村
+        )
+
+    [29] => Array
+        (
+            [id] => 34
+            [city_name] => 上北郡おいらせ町
+        )
+
+    [30] => Array
+        (
+            [id] => 35
+            [city_name] => 下北郡大間町
+        )
+
+    [31] => Array
+        (
+            [id] => 36
+            [city_name] => 下北郡東通村
+        )
+
+    [32] => Array
+        (
+            [id] => 37
+            [city_name] => 下北郡風間浦村
+        )
+
+    [33] => Array
+        (
+            [id] => 38
+            [city_name] => 下北郡佐井村
+        )
+
+    [34] => Array
+        (
+            [id] => 39
+            [city_name] => 三戸郡三戸町
+        )
+
+    [35] => Array
+        (
+            [id] => 40
+            [city_name] => 三戸郡五戸町
+        )
+
+    [36] => Array
+        (
+            [id] => 41
+            [city_name] => 三戸郡田子町
+        )
+
+    [37] => Array
+        (
+            [id] => 42
+            [city_name] => 三戸郡南部町
+        )
+
+    [38] => Array
+        (
+            [id] => 43
+            [city_name] => 三戸郡階上町
+        )
+
+    [39] => Array
+        (
+            [id] => 44
+            [city_name] => 三戸郡新郷村
+        )
+
+)
+
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+(
+    [p_id] => 2
+    [word_search] => 
+    [city_id] => 6
+    [category_id] => 
+)
+
+[11-Jul-2021 15:40:14 UTC] デバッグ:6
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 80
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 80
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/output2/farm/function.php on line 43
+[11-Jul-2021 15:40:14 UTC] デバッグ:Array
+[11-Jul-2021 15:40:14 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 90
+[11-Jul-2021 15:40:43 UTC] デバッグ:==============================================
+[11-Jul-2021 15:40:43 UTC] デバッグ:検索画面
+[11-Jul-2021 15:40:43 UTC] デバッグ:==============================================
+[11-Jul-2021 15:40:43 UTC] デバッグ:Array
+(
+    [city_name] => エリア
+)
+
+[11-Jul-2021 15:40:43 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 77
+[11-Jul-2021 15:40:43 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 77
+[11-Jul-2021 15:40:43 UTC] デバッグ:Array
+(
+    [id] => 6
+    [city_name] => 青森市
+)
+
+[11-Jul-2021 15:40:43 UTC] デバッグ:Array
+(
+    [id] => 7
+    [city_name] => 弘前市
+)
+
+[11-Jul-2021 15:40:43 UTC] デバッグ:Array
+(
+    [id] => 8
+    [city_name] => 八戸市
+)
+
+[11-Jul-2021 15:40:43 UTC] デバッグ:Array
+(
+    [id] => 9
+    [city_name] => 黒石市
+)
+
+[11-Jul-2021 15:40:43 UTC] デバッグ:Array
+(
+    [id] => 10
+    [city_name] => 五所川原市
+)
+
+[11-Jul-2021 15:40:43 UTC] デバッグ:Array
+(
+    [id] => 11
+    [city_name] => 十和田市
+)
+
+[11-Jul-2021 15:40:43 UTC] デバッグ:Array
+(
+    [id] => 12
+    [city_name] => 三沢市
+)
+
+[11-Jul-2021 15:40:43 UTC] デバッグ:Array
+(
+    [id] => 13
+    [city_name] => むつ市
+)
+
+[11-Jul-2021 15:40:43 UTC] デバッグ:Array
+(
+    [id] => 14
+    [city_name] => つがる市
+)
+
+[11-Jul-2021 15:40:43 UTC] デバッグ:Array
+(
+    [id] => 15
+    [city_name] => 平川市
+)
+
+[11-Jul-2021 15:40:43 UTC] デバッグ:Array
+(
+    [id] => 16
+    [city_name] => 東津軽郡平内町
+)
+
+[11-Jul-2021 15:40:43 UTC] デバッグ:Array
+(
+    [id] => 17
+    [city_name] => 東津軽郡今別町
+)
+
+[11-Jul-2021 15:40:43 UTC] デバッグ:Array
+(
+    [id] => 18
+    [city_name] => 東津軽郡蓬田村
+)
+
+[11-Jul-2021 15:40:43 UTC] デバッグ:Array
+(
+    [id] => 19
+    [city_name] => 西津軽郡鯵ヶ沢町
+)
+
+[11-Jul-2021 15:40:43 UTC] デバッグ:Array
+(
+    [id] => 20
+    [city_name] => 西津軽郡深浦町
+)
+
+[11-Jul-2021 15:40:43 UTC] デバッグ:Array
+(
+    [id] => 21
+    [city_name] => 中津軽郡西目屋村
+)
+
+[11-Jul-2021 15:40:43 UTC] デバッグ:Array
+(
+    [id] => 22
+    [city_name] => 南津軽郡藤崎町
+)
+
+[11-Jul-2021 15:40:43 UTC] デバッグ:Array
+(
+    [id] => 23
+    [city_name] => 南津軽郡大鰐町
+)
+
+[11-Jul-2021 15:40:43 UTC] デバッグ:Array
+(
+    [id] => 24
+    [city_name] => 南津軽郡田舎館村
+)
+
+[11-Jul-2021 15:40:43 UTC] デバッグ:Array
+(
+    [id] => 25
+    [city_name] => 北津軽郡板柳町
+)
+
+[11-Jul-2021 15:40:43 UTC] デバッグ:Array
+(
+    [id] => 26
+    [city_name] => 北津軽郡鶴田町
+)
+
+[11-Jul-2021 15:40:43 UTC] デバッグ:Array
+(
+    [id] => 27
+    [city_name] => 北津軽郡中泊町
+)
+
+[11-Jul-2021 15:40:43 UTC] デバッグ:Array
+(
+    [id] => 28
+    [city_name] => 上北郡野辺地町
+)
+
+[11-Jul-2021 15:40:43 UTC] デバッグ:Array
+(
+    [id] => 29
+    [city_name] => 上北郡七戸町
+)
+
+[11-Jul-2021 15:40:43 UTC] デバッグ:Array
+(
+    [id] => 30
+    [city_name] => 上北郡六戸町
+)
+
+[11-Jul-2021 15:40:43 UTC] デバッグ:Array
+(
+    [id] => 31
+    [city_name] => 上北郡横浜町
+)
+
+[11-Jul-2021 15:40:43 UTC] デバッグ:Array
+(
+    [id] => 32
+    [city_name] => 上北郡東北町
+)
+
+[11-Jul-2021 15:40:43 UTC] デバッグ:Array
+(
+    [id] => 33
+    [city_name] => 上北郡六ヶ所村
+)
+
+[11-Jul-2021 15:40:43 UTC] デバッグ:Array
+(
+    [id] => 34
+    [city_name] => 上北郡おいらせ町
+)
+
+[11-Jul-2021 15:40:43 UTC] デバッグ:Array
+(
+    [id] => 35
+    [city_name] => 下北郡大間町
+)
+
+[11-Jul-2021 15:40:43 UTC] デバッグ:Array
+(
+    [id] => 36
+    [city_name] => 下北郡東通村
+)
+
+[11-Jul-2021 15:40:43 UTC] デバッグ:Array
+(
+    [id] => 37
+    [city_name] => 下北郡風間浦村
+)
+
+[11-Jul-2021 15:40:43 UTC] デバッグ:Array
+(
+    [id] => 38
+    [city_name] => 下北郡佐井村
+)
+
+[11-Jul-2021 15:40:43 UTC] デバッグ:Array
+(
+    [id] => 39
+    [city_name] => 三戸郡三戸町
+)
+
+[11-Jul-2021 15:40:43 UTC] デバッグ:Array
+(
+    [id] => 40
+    [city_name] => 三戸郡五戸町
+)
+
+[11-Jul-2021 15:40:43 UTC] デバッグ:Array
+(
+    [id] => 41
+    [city_name] => 三戸郡田子町
+)
+
+[11-Jul-2021 15:40:43 UTC] デバッグ:Array
+(
+    [id] => 42
+    [city_name] => 三戸郡南部町
+)
+
+[11-Jul-2021 15:40:43 UTC] デバッグ:Array
+(
+    [id] => 43
+    [city_name] => 三戸郡階上町
+)
+
+[11-Jul-2021 15:40:43 UTC] デバッグ:Array
+(
+    [id] => 44
+    [city_name] => 三戸郡新郷村
+)
+
+[11-Jul-2021 15:40:43 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 87
+[11-Jul-2021 15:42:41 UTC] デバッグ:==============================================
+[11-Jul-2021 15:42:41 UTC] デバッグ:検索画面
+[11-Jul-2021 15:42:41 UTC] デバッグ:==============================================
+[11-Jul-2021 15:42:41 UTC] デバッグ:Array
+(
+    [city_name] => エリア
+)
+
+[11-Jul-2021 15:42:41 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 77
+[11-Jul-2021 15:42:41 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 77
+[11-Jul-2021 15:42:41 UTC] デバッグ:Array
+(
+    [id] => 6
+    [city_name] => 青森市
+)
+
+[11-Jul-2021 15:42:41 UTC] デバッグ:Array
+(
+    [id] => 7
+    [city_name] => 弘前市
+)
+
+[11-Jul-2021 15:42:41 UTC] デバッグ:Array
+(
+    [id] => 8
+    [city_name] => 八戸市
+)
+
+[11-Jul-2021 15:42:41 UTC] デバッグ:Array
+(
+    [id] => 9
+    [city_name] => 黒石市
+)
+
+[11-Jul-2021 15:42:41 UTC] デバッグ:Array
+(
+    [id] => 10
+    [city_name] => 五所川原市
+)
+
+[11-Jul-2021 15:42:41 UTC] デバッグ:Array
+(
+    [id] => 11
+    [city_name] => 十和田市
+)
+
+[11-Jul-2021 15:42:41 UTC] デバッグ:Array
+(
+    [id] => 12
+    [city_name] => 三沢市
+)
+
+[11-Jul-2021 15:42:41 UTC] デバッグ:Array
+(
+    [id] => 13
+    [city_name] => むつ市
+)
+
+[11-Jul-2021 15:42:41 UTC] デバッグ:Array
+(
+    [id] => 14
+    [city_name] => つがる市
+)
+
+[11-Jul-2021 15:42:41 UTC] デバッグ:Array
+(
+    [id] => 15
+    [city_name] => 平川市
+)
+
+[11-Jul-2021 15:42:41 UTC] デバッグ:Array
+(
+    [id] => 16
+    [city_name] => 東津軽郡平内町
+)
+
+[11-Jul-2021 15:42:41 UTC] デバッグ:Array
+(
+    [id] => 17
+    [city_name] => 東津軽郡今別町
+)
+
+[11-Jul-2021 15:42:41 UTC] デバッグ:Array
+(
+    [id] => 18
+    [city_name] => 東津軽郡蓬田村
+)
+
+[11-Jul-2021 15:42:41 UTC] デバッグ:Array
+(
+    [id] => 19
+    [city_name] => 西津軽郡鯵ヶ沢町
+)
+
+[11-Jul-2021 15:42:41 UTC] デバッグ:Array
+(
+    [id] => 20
+    [city_name] => 西津軽郡深浦町
+)
+
+[11-Jul-2021 15:42:41 UTC] デバッグ:Array
+(
+    [id] => 21
+    [city_name] => 中津軽郡西目屋村
+)
+
+[11-Jul-2021 15:42:41 UTC] デバッグ:Array
+(
+    [id] => 22
+    [city_name] => 南津軽郡藤崎町
+)
+
+[11-Jul-2021 15:42:41 UTC] デバッグ:Array
+(
+    [id] => 23
+    [city_name] => 南津軽郡大鰐町
+)
+
+[11-Jul-2021 15:42:41 UTC] デバッグ:Array
+(
+    [id] => 24
+    [city_name] => 南津軽郡田舎館村
+)
+
+[11-Jul-2021 15:42:41 UTC] デバッグ:Array
+(
+    [id] => 25
+    [city_name] => 北津軽郡板柳町
+)
+
+[11-Jul-2021 15:42:41 UTC] デバッグ:Array
+(
+    [id] => 26
+    [city_name] => 北津軽郡鶴田町
+)
+
+[11-Jul-2021 15:42:41 UTC] デバッグ:Array
+(
+    [id] => 27
+    [city_name] => 北津軽郡中泊町
+)
+
+[11-Jul-2021 15:42:41 UTC] デバッグ:Array
+(
+    [id] => 28
+    [city_name] => 上北郡野辺地町
+)
+
+[11-Jul-2021 15:42:41 UTC] デバッグ:Array
+(
+    [id] => 29
+    [city_name] => 上北郡七戸町
+)
+
+[11-Jul-2021 15:42:41 UTC] デバッグ:Array
+(
+    [id] => 30
+    [city_name] => 上北郡六戸町
+)
+
+[11-Jul-2021 15:42:41 UTC] デバッグ:Array
+(
+    [id] => 31
+    [city_name] => 上北郡横浜町
+)
+
+[11-Jul-2021 15:42:41 UTC] デバッグ:Array
+(
+    [id] => 32
+    [city_name] => 上北郡東北町
+)
+
+[11-Jul-2021 15:42:41 UTC] デバッグ:Array
+(
+    [id] => 33
+    [city_name] => 上北郡六ヶ所村
+)
+
+[11-Jul-2021 15:42:41 UTC] デバッグ:Array
+(
+    [id] => 34
+    [city_name] => 上北郡おいらせ町
+)
+
+[11-Jul-2021 15:42:41 UTC] デバッグ:Array
+(
+    [id] => 35
+    [city_name] => 下北郡大間町
+)
+
+[11-Jul-2021 15:42:41 UTC] デバッグ:Array
+(
+    [id] => 36
+    [city_name] => 下北郡東通村
+)
+
+[11-Jul-2021 15:42:41 UTC] デバッグ:Array
+(
+    [id] => 37
+    [city_name] => 下北郡風間浦村
+)
+
+[11-Jul-2021 15:42:41 UTC] デバッグ:Array
+(
+    [id] => 38
+    [city_name] => 下北郡佐井村
+)
+
+[11-Jul-2021 15:42:41 UTC] デバッグ:Array
+(
+    [id] => 39
+    [city_name] => 三戸郡三戸町
+)
+
+[11-Jul-2021 15:42:41 UTC] デバッグ:Array
+(
+    [id] => 40
+    [city_name] => 三戸郡五戸町
+)
+
+[11-Jul-2021 15:42:41 UTC] デバッグ:Array
+(
+    [id] => 41
+    [city_name] => 三戸郡田子町
+)
+
+[11-Jul-2021 15:42:41 UTC] デバッグ:Array
+(
+    [id] => 42
+    [city_name] => 三戸郡南部町
+)
+
+[11-Jul-2021 15:42:41 UTC] デバッグ:Array
+(
+    [id] => 43
+    [city_name] => 三戸郡階上町
+)
+
+[11-Jul-2021 15:42:41 UTC] デバッグ:Array
+(
+    [id] => 44
+    [city_name] => 三戸郡新郷村
+)
+
+[11-Jul-2021 15:42:41 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 87
+[11-Jul-2021 15:43:50 UTC] デバッグ:==============================================
+[11-Jul-2021 15:43:50 UTC] デバッグ:検索画面
+[11-Jul-2021 15:43:50 UTC] デバッグ:==============================================
+[11-Jul-2021 15:43:50 UTC] デバッグ:Array
+(
+    [city_name] => エリア
+)
+
+[11-Jul-2021 15:43:50 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 77
+[11-Jul-2021 15:43:50 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 77
+[11-Jul-2021 15:43:50 UTC] デバッグ:Array
+(
+    [id] => 6
+    [city_name] => 青森市
+)
+
+[11-Jul-2021 15:43:50 UTC] デバッグ:Array
+(
+    [id] => 7
+    [city_name] => 弘前市
+)
+
+[11-Jul-2021 15:43:50 UTC] デバッグ:Array
+(
+    [id] => 8
+    [city_name] => 八戸市
+)
+
+[11-Jul-2021 15:43:50 UTC] デバッグ:Array
+(
+    [id] => 9
+    [city_name] => 黒石市
+)
+
+[11-Jul-2021 15:43:50 UTC] デバッグ:Array
+(
+    [id] => 10
+    [city_name] => 五所川原市
+)
+
+[11-Jul-2021 15:43:50 UTC] デバッグ:Array
+(
+    [id] => 11
+    [city_name] => 十和田市
+)
+
+[11-Jul-2021 15:43:50 UTC] デバッグ:Array
+(
+    [id] => 12
+    [city_name] => 三沢市
+)
+
+[11-Jul-2021 15:43:50 UTC] デバッグ:Array
+(
+    [id] => 13
+    [city_name] => むつ市
+)
+
+[11-Jul-2021 15:43:50 UTC] デバッグ:Array
+(
+    [id] => 14
+    [city_name] => つがる市
+)
+
+[11-Jul-2021 15:43:50 UTC] デバッグ:Array
+(
+    [id] => 15
+    [city_name] => 平川市
+)
+
+[11-Jul-2021 15:43:50 UTC] デバッグ:Array
+(
+    [id] => 16
+    [city_name] => 東津軽郡平内町
+)
+
+[11-Jul-2021 15:43:50 UTC] デバッグ:Array
+(
+    [id] => 17
+    [city_name] => 東津軽郡今別町
+)
+
+[11-Jul-2021 15:43:50 UTC] デバッグ:Array
+(
+    [id] => 18
+    [city_name] => 東津軽郡蓬田村
+)
+
+[11-Jul-2021 15:43:50 UTC] デバッグ:Array
+(
+    [id] => 19
+    [city_name] => 西津軽郡鯵ヶ沢町
+)
+
+[11-Jul-2021 15:43:50 UTC] デバッグ:Array
+(
+    [id] => 20
+    [city_name] => 西津軽郡深浦町
+)
+
+[11-Jul-2021 15:43:50 UTC] デバッグ:Array
+(
+    [id] => 21
+    [city_name] => 中津軽郡西目屋村
+)
+
+[11-Jul-2021 15:43:50 UTC] デバッグ:Array
+(
+    [id] => 22
+    [city_name] => 南津軽郡藤崎町
+)
+
+[11-Jul-2021 15:43:50 UTC] デバッグ:Array
+(
+    [id] => 23
+    [city_name] => 南津軽郡大鰐町
+)
+
+[11-Jul-2021 15:43:50 UTC] デバッグ:Array
+(
+    [id] => 24
+    [city_name] => 南津軽郡田舎館村
+)
+
+[11-Jul-2021 15:43:50 UTC] デバッグ:Array
+(
+    [id] => 25
+    [city_name] => 北津軽郡板柳町
+)
+
+[11-Jul-2021 15:43:50 UTC] デバッグ:Array
+(
+    [id] => 26
+    [city_name] => 北津軽郡鶴田町
+)
+
+[11-Jul-2021 15:43:50 UTC] デバッグ:Array
+(
+    [id] => 27
+    [city_name] => 北津軽郡中泊町
+)
+
+[11-Jul-2021 15:43:50 UTC] デバッグ:Array
+(
+    [id] => 28
+    [city_name] => 上北郡野辺地町
+)
+
+[11-Jul-2021 15:43:50 UTC] デバッグ:Array
+(
+    [id] => 29
+    [city_name] => 上北郡七戸町
+)
+
+[11-Jul-2021 15:43:50 UTC] デバッグ:Array
+(
+    [id] => 30
+    [city_name] => 上北郡六戸町
+)
+
+[11-Jul-2021 15:43:50 UTC] デバッグ:Array
+(
+    [id] => 31
+    [city_name] => 上北郡横浜町
+)
+
+[11-Jul-2021 15:43:50 UTC] デバッグ:Array
+(
+    [id] => 32
+    [city_name] => 上北郡東北町
+)
+
+[11-Jul-2021 15:43:50 UTC] デバッグ:Array
+(
+    [id] => 33
+    [city_name] => 上北郡六ヶ所村
+)
+
+[11-Jul-2021 15:43:50 UTC] デバッグ:Array
+(
+    [id] => 34
+    [city_name] => 上北郡おいらせ町
+)
+
+[11-Jul-2021 15:43:50 UTC] デバッグ:Array
+(
+    [id] => 35
+    [city_name] => 下北郡大間町
+)
+
+[11-Jul-2021 15:43:50 UTC] デバッグ:Array
+(
+    [id] => 36
+    [city_name] => 下北郡東通村
+)
+
+[11-Jul-2021 15:43:50 UTC] デバッグ:Array
+(
+    [id] => 37
+    [city_name] => 下北郡風間浦村
+)
+
+[11-Jul-2021 15:43:50 UTC] デバッグ:Array
+(
+    [id] => 38
+    [city_name] => 下北郡佐井村
+)
+
+[11-Jul-2021 15:43:50 UTC] デバッグ:Array
+(
+    [id] => 39
+    [city_name] => 三戸郡三戸町
+)
+
+[11-Jul-2021 15:43:50 UTC] デバッグ:Array
+(
+    [id] => 40
+    [city_name] => 三戸郡五戸町
+)
+
+[11-Jul-2021 15:43:50 UTC] デバッグ:Array
+(
+    [id] => 41
+    [city_name] => 三戸郡田子町
+)
+
+[11-Jul-2021 15:43:50 UTC] デバッグ:Array
+(
+    [id] => 42
+    [city_name] => 三戸郡南部町
+)
+
+[11-Jul-2021 15:43:50 UTC] デバッグ:Array
+(
+    [id] => 43
+    [city_name] => 三戸郡階上町
+)
+
+[11-Jul-2021 15:43:50 UTC] デバッグ:Array
+(
+    [id] => 44
+    [city_name] => 三戸郡新郷村
+)
+
+[11-Jul-2021 15:43:50 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 87
+[11-Jul-2021 15:44:26 UTC] デバッグ:==============================================
+[11-Jul-2021 15:44:26 UTC] デバッグ:検索画面
+[11-Jul-2021 15:44:26 UTC] デバッグ:==============================================
+[11-Jul-2021 15:44:26 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 76
+[11-Jul-2021 15:44:26 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 76
+[11-Jul-2021 15:44:26 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 86
+[11-Jul-2021 15:45:07 UTC] デバッグ:==============================================
+[11-Jul-2021 15:45:07 UTC] デバッグ:検索画面
+[11-Jul-2021 15:45:07 UTC] デバッグ:==============================================
+[11-Jul-2021 15:45:07 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 76
+[11-Jul-2021 15:45:07 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 76
+[11-Jul-2021 15:45:07 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 86
+[11-Jul-2021 15:46:09 UTC] デバッグ:==============================================
+[11-Jul-2021 15:46:09 UTC] デバッグ:検索画面
+[11-Jul-2021 15:46:09 UTC] デバッグ:==============================================
+[11-Jul-2021 15:46:09 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 76
+[11-Jul-2021 15:46:09 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 76
+[11-Jul-2021 15:46:09 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 86
+[11-Jul-2021 15:48:34 UTC] デバッグ:==============================================
+[11-Jul-2021 15:48:34 UTC] デバッグ:検索画面
+[11-Jul-2021 15:48:34 UTC] デバッグ:==============================================
+[11-Jul-2021 15:48:34 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 76
+[11-Jul-2021 15:48:34 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 86
+[11-Jul-2021 15:49:44 UTC] デバッグ:==============================================
+[11-Jul-2021 15:49:44 UTC] デバッグ:検索画面
+[11-Jul-2021 15:49:44 UTC] デバッグ:==============================================
+[11-Jul-2021 15:49:44 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 76
+[11-Jul-2021 15:49:44 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 86
+[11-Jul-2021 15:50:06 UTC] デバッグ:==============================================
+[11-Jul-2021 15:50:06 UTC] デバッグ:検索画面
+[11-Jul-2021 15:50:06 UTC] デバッグ:==============================================
+[11-Jul-2021 15:50:06 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 76
+[11-Jul-2021 15:50:06 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 86
+[11-Jul-2021 15:51:15 UTC] デバッグ:==============================================
+[11-Jul-2021 15:51:15 UTC] デバッグ:検索画面
+[11-Jul-2021 15:51:15 UTC] デバッグ:==============================================
+[11-Jul-2021 15:51:15 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 76
+[11-Jul-2021 15:51:15 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 86
+[11-Jul-2021 15:51:44 UTC] デバッグ:==============================================
+[11-Jul-2021 15:51:44 UTC] デバッグ:検索画面
+[11-Jul-2021 15:51:44 UTC] デバッグ:==============================================
+[11-Jul-2021 15:51:44 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 76
+[11-Jul-2021 15:51:44 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 76
+[11-Jul-2021 15:51:44 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 86
+[11-Jul-2021 15:54:24 UTC] デバッグ:==============================================
+[11-Jul-2021 15:54:24 UTC] デバッグ:検索画面
+[11-Jul-2021 15:54:24 UTC] デバッグ:==============================================
+[11-Jul-2021 15:54:24 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 88
+[11-Jul-2021 16:05:10 UTC] デバッグ:==============================================
+[11-Jul-2021 16:05:10 UTC] デバッグ:検索画面
+[11-Jul-2021 16:05:10 UTC] デバッグ:==============================================
+[11-Jul-2021 16:05:10 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 50
+[11-Jul-2021 16:06:13 UTC] デバッグ:==============================================
+[11-Jul-2021 16:06:13 UTC] デバッグ:検索画面
+[11-Jul-2021 16:06:13 UTC] デバッグ:==============================================
+[11-Jul-2021 16:06:13 UTC] PHP Notice:  Undefined index: id in /Applications/MAMP/htdocs/output2/farm/search.php on line 50
+[11-Jul-2021 16:06:49 UTC] デバッグ:==============================================
+[11-Jul-2021 16:06:49 UTC] デバッグ:検索画面
+[11-Jul-2021 16:06:49 UTC] デバッグ:==============================================
+[11-Jul-2021 16:08:34 UTC] デバッグ:==============================================
+[11-Jul-2021 16:08:34 UTC] デバッグ:検索画面
+[11-Jul-2021 16:08:34 UTC] デバッグ:==============================================
+[11-Jul-2021 16:11:15 UTC] デバッグ:==============================================
+[11-Jul-2021 16:11:15 UTC] デバッグ:検索画面
+[11-Jul-2021 16:11:15 UTC] デバッグ:==============================================
+[11-Jul-2021 16:12:08 UTC] デバッグ:==============================================
+[11-Jul-2021 16:12:08 UTC] デバッグ:検索画面
+[11-Jul-2021 16:12:08 UTC] デバッグ:==============================================
+[11-Jul-2021 16:12:14 UTC] デバッグ:==============================================
+[11-Jul-2021 16:12:14 UTC] デバッグ:検索画面
+[11-Jul-2021 16:12:14 UTC] デバッグ:==============================================
+[11-Jul-2021 16:12:19 UTC] デバッグ:==============================================
+[11-Jul-2021 16:12:19 UTC] デバッグ:検索画面
+[11-Jul-2021 16:12:19 UTC] デバッグ:==============================================
+[11-Jul-2021 16:12:45 UTC] デバッグ:==============================================
+[11-Jul-2021 16:12:45 UTC] デバッグ:検索画面
+[11-Jul-2021 16:12:45 UTC] デバッグ:==============================================
+[11-Jul-2021 16:12:48 UTC] デバッグ:==============================================
+[11-Jul-2021 16:12:48 UTC] デバッグ:検索画面
+[11-Jul-2021 16:12:48 UTC] デバッグ:==============================================
+[11-Jul-2021 16:13:11 UTC] デバッグ:==============================================
+[11-Jul-2021 16:13:11 UTC] デバッグ:検索画面
+[11-Jul-2021 16:13:11 UTC] デバッグ:==============================================
+[11-Jul-2021 16:13:16 UTC] デバッグ:==============================================
+[11-Jul-2021 16:13:16 UTC] デバッグ:検索画面
+[11-Jul-2021 16:13:16 UTC] デバッグ:==============================================
+[11-Jul-2021 16:13:20 UTC] デバッグ:==============================================
+[11-Jul-2021 16:13:20 UTC] デバッグ:検索画面
+[11-Jul-2021 16:13:20 UTC] デバッグ:==============================================
+[11-Jul-2021 16:13:26 UTC] デバッグ:==============================================
+[11-Jul-2021 16:13:26 UTC] デバッグ:検索画面
+[11-Jul-2021 16:13:26 UTC] デバッグ:==============================================
+[11-Jul-2021 16:13:30 UTC] デバッグ:==============================================
+[11-Jul-2021 16:13:30 UTC] デバッグ:検索画面
+[11-Jul-2021 16:13:30 UTC] デバッグ:==============================================
+[11-Jul-2021 16:14:01 UTC] デバッグ:==============================================
+[11-Jul-2021 16:14:01 UTC] デバッグ:店舗詳細画面
+[11-Jul-2021 16:14:01 UTC] デバッグ:==============================================
+[11-Jul-2021 16:14:01 UTC] デバッグ:Array
+(
+    [id] => 75
+    [user_id] => 1
+    [shop_name] => aaaaaaaaaa
+    [social_profile] => aaa
+    [postcode] => 1111111
+    [prefecture_id] => 2
+    [city_id] => 6
+    [street] => aaa
+    [building] => 
+    [tel] => 
+    [value] => 
+    [shop_img1] => 
+    [shop_img2] => 
+    [shop_img3] => 
+    [browsing_num] => 
+    [favorites] => 
+    [screen_name] => 
+    [city_name] => 青森市
+)
+
+[11-Jul-2021 16:22:39 UTC] デバッグ:==============================================
+[11-Jul-2021 16:22:39 UTC] デバッグ:検索画面
+[11-Jul-2021 16:22:39 UTC] デバッグ:==============================================
+[11-Jul-2021 16:22:49 UTC] デバッグ:==============================================
+[11-Jul-2021 16:22:49 UTC] デバッグ:店舗詳細画面
+[11-Jul-2021 16:22:49 UTC] デバッグ:==============================================
+[11-Jul-2021 16:22:49 UTC] デバッグ:Array
+(
+    [id] => 75
+    [user_id] => 1
+    [shop_name] => aaaaaaaaaa
+    [social_profile] => aaa
+    [postcode] => 1111111
+    [prefecture_id] => 2
+    [city_id] => 6
+    [street] => aaa
+    [building] => 
+    [tel] => 
+    [value] => 
+    [shop_img1] => 
+    [shop_img2] => 
+    [shop_img3] => 
+    [browsing_num] => 
+    [favorites] => 
+    [screen_name] => 
+    [city_name] => 青森市
+)
+
+[11-Jul-2021 16:26:09 UTC] デバッグ:==============================================
+[11-Jul-2021 16:26:09 UTC] デバッグ:店舗詳細画面
+[11-Jul-2021 16:26:09 UTC] デバッグ:==============================================
+[11-Jul-2021 16:26:09 UTC] デバッグ:Array
+(
+    [id] => 75
+    [user_id] => 1
+    [shop_name] => aaaaaaaaaa
+    [social_profile] => aaa
+    [postcode] => 1111111
+    [prefecture_id] => 2
+    [city_id] => 6
+    [street] => aaa
+    [building] => 
+    [tel] => 
+    [value] => 
+    [shop_img1] => 
+    [shop_img2] => 
+    [shop_img3] => 
+    [browsing_num] => 
+    [favorites] => 
+    [screen_name] => 
+    [city_name] => 青森市
+)
+
+[11-Jul-2021 16:26:09 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/single.php on line 82
+[11-Jul-2021 16:26:09 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/output2/farm/single.php on line 82
+[11-Jul-2021 16:26:09 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/output2/farm/single.php on line 82
+[11-Jul-2021 16:27:26 UTC] デバッグ:==============================================
+[11-Jul-2021 16:27:26 UTC] デバッグ:店舗詳細画面
+[11-Jul-2021 16:27:26 UTC] デバッグ:==============================================
+[11-Jul-2021 16:27:26 UTC] デバッグ:Array
+(
+    [id] => 75
+    [user_id] => 1
+    [shop_name] => aaaaaaaaaa
+    [social_profile] => aaa
+    [postcode] => 1111111
+    [prefecture_id] => 2
+    [city_id] => 6
+    [street] => aaa
+    [building] => 
+    [tel] => 
+    [value] => 
+    [shop_img1] => 
+    [shop_img2] => 
+    [shop_img3] => 
+    [browsing_num] => 
+    [favorites] => 
+    [screen_name] => 
+    [city_name] => 青森市
+)
+
+[11-Jul-2021 16:27:26 UTC] PHP Notice:  Undefined index: city_id in /Applications/MAMP/htdocs/output2/farm/single.php on line 82
+[11-Jul-2021 16:28:01 UTC] デバッグ:==============================================
+[11-Jul-2021 16:28:01 UTC] デバッグ:店舗詳細画面
+[11-Jul-2021 16:28:01 UTC] デバッグ:==============================================
+[11-Jul-2021 16:28:01 UTC] デバッグ:Array
+(
+    [id] => 75
+    [user_id] => 1
+    [shop_name] => aaaaaaaaaa
+    [social_profile] => aaa
+    [postcode] => 1111111
+    [prefecture_id] => 2
+    [city_id] => 6
+    [street] => aaa
+    [building] => 
+    [tel] => 
+    [value] => 
+    [shop_img1] => 
+    [shop_img2] => 
+    [shop_img3] => 
+    [browsing_num] => 
+    [favorites] => 
+    [screen_name] => 
+    [city_name] => 青森市
+)
+
+[11-Jul-2021 16:28:40 UTC] デバッグ:==============================================
+[11-Jul-2021 16:28:40 UTC] デバッグ:店舗詳細画面
+[11-Jul-2021 16:28:40 UTC] デバッグ:==============================================
+[11-Jul-2021 16:28:43 UTC] デバッグ:==============================================
+[11-Jul-2021 16:28:43 UTC] デバッグ:店舗詳細画面
+[11-Jul-2021 16:28:43 UTC] デバッグ:==============================================
+[11-Jul-2021 16:29:30 UTC] デバッグ:==============================================
+[11-Jul-2021 16:29:30 UTC] デバッグ:店舗詳細画面
+[11-Jul-2021 16:29:30 UTC] デバッグ:==============================================
+[11-Jul-2021 16:31:06 UTC] デバッグ:==============================================
+[11-Jul-2021 16:31:06 UTC] デバッグ:店舗詳細画面
+[11-Jul-2021 16:31:06 UTC] デバッグ:==============================================
+[11-Jul-2021 16:32:28 UTC] デバッグ:==============================================
+[11-Jul-2021 16:32:28 UTC] デバッグ:店舗詳細画面
+[11-Jul-2021 16:32:28 UTC] デバッグ:==============================================
+[11-Jul-2021 16:32:34 UTC] デバッグ:==============================================
+[11-Jul-2021 16:32:34 UTC] デバッグ:店舗詳細画面
+[11-Jul-2021 16:32:34 UTC] デバッグ:==============================================
+[11-Jul-2021 16:33:00 UTC] デバッグ:==============================================
+[11-Jul-2021 16:33:00 UTC] デバッグ:店舗詳細画面
+[11-Jul-2021 16:33:00 UTC] デバッグ:==============================================
+[11-Jul-2021 16:33:00 UTC] デバッグ:Array
+(
+    [0] => Array
+        (
+            [id] => 6
+            [city_name] => 青森市
+        )
+
+    [1] => Array
+        (
+            [id] => 7
+            [city_name] => 弘前市
+        )
+
+    [2] => Array
+        (
+            [id] => 8
+            [city_name] => 八戸市
+        )
+
+    [3] => Array
+        (
+            [id] => 9
+            [city_name] => 黒石市
+        )
+
+    [4] => Array
+        (
+            [id] => 10
+            [city_name] => 五所川原市
+        )
+
+    [5] => Array
+        (
+            [id] => 11
+            [city_name] => 十和田市
+        )
+
+    [6] => Array
+        (
+            [id] => 12
+            [city_name] => 三沢市
+        )
+
+    [7] => Array
+        (
+            [id] => 13
+            [city_name] => むつ市
+        )
+
+    [8] => Array
+        (
+            [id] => 14
+            [city_name] => つがる市
+        )
+
+    [9] => Array
+        (
+            [id] => 15
+            [city_name] => 平川市
+        )
+
+    [10] => Array
+        (
+            [id] => 16
+            [city_name] => 東津軽郡平内町
+        )
+
+    [11] => Array
+        (
+            [id] => 17
+            [city_name] => 東津軽郡今別町
+        )
+
+    [12] => Array
+        (
+            [id] => 18
+            [city_name] => 東津軽郡蓬田村
+        )
+
+    [13] => Array
+        (
+            [id] => 19
+            [city_name] => 西津軽郡鯵ヶ沢町
+        )
+
+    [14] => Array
+        (
+            [id] => 20
+            [city_name] => 西津軽郡深浦町
+        )
+
+    [15] => Array
+        (
+            [id] => 21
+            [city_name] => 中津軽郡西目屋村
+        )
+
+    [16] => Array
+        (
+            [id] => 22
+            [city_name] => 南津軽郡藤崎町
+        )
+
+    [17] => Array
+        (
+            [id] => 23
+            [city_name] => 南津軽郡大鰐町
+        )
+
+    [18] => Array
+        (
+            [id] => 24
+            [city_name] => 南津軽郡田舎館村
+        )
+
+    [19] => Array
+        (
+            [id] => 25
+            [city_name] => 北津軽郡板柳町
+        )
+
+    [20] => Array
+        (
+            [id] => 26
+            [city_name] => 北津軽郡鶴田町
+        )
+
+    [21] => Array
+        (
+            [id] => 27
+            [city_name] => 北津軽郡中泊町
+        )
+
+    [22] => Array
+        (
+            [id] => 28
+            [city_name] => 上北郡野辺地町
+        )
+
+    [23] => Array
+        (
+            [id] => 29
+            [city_name] => 上北郡七戸町
+        )
+
+    [24] => Array
+        (
+            [id] => 30
+            [city_name] => 上北郡六戸町
+        )
+
+    [25] => Array
+        (
+            [id] => 31
+            [city_name] => 上北郡横浜町
+        )
+
+    [26] => Array
+        (
+            [id] => 32
+            [city_name] => 上北郡東北町
+        )
+
+    [27] => Array
+        (
+            [id] => 33
+            [city_name] => 上北郡六ヶ所村
+        )
+
+    [28] => Array
+        (
+            [id] => 34
+            [city_name] => 上北郡おいらせ町
+        )
+
+    [29] => Array
+        (
+            [id] => 35
+            [city_name] => 下北郡大間町
+        )
+
+    [30] => Array
+        (
+            [id] => 36
+            [city_name] => 下北郡東通村
+        )
+
+    [31] => Array
+        (
+            [id] => 37
+            [city_name] => 下北郡風間浦村
+        )
+
+    [32] => Array
+        (
+            [id] => 38
+            [city_name] => 下北郡佐井村
+        )
+
+    [33] => Array
+        (
+            [id] => 39
+            [city_name] => 三戸郡三戸町
+        )
+
+    [34] => Array
+        (
+            [id] => 40
+            [city_name] => 三戸郡五戸町
+        )
+
+    [35] => Array
+        (
+            [id] => 41
+            [city_name] => 三戸郡田子町
+        )
+
+    [36] => Array
+        (
+            [id] => 42
+            [city_name] => 三戸郡南部町
+        )
+
+    [37] => Array
+        (
+            [id] => 43
+            [city_name] => 三戸郡階上町
+        )
+
+    [38] => Array
+        (
+            [id] => 44
+            [city_name] => 三戸郡新郷村
+        )
+
+)
+
+[11-Jul-2021 16:35:30 UTC] デバッグ:==============================================
+[11-Jul-2021 16:35:30 UTC] デバッグ:店舗詳細画面
+[11-Jul-2021 16:35:30 UTC] デバッグ:==============================================
+[11-Jul-2021 16:36:31 UTC] デバッグ:==============================================
+[11-Jul-2021 16:36:31 UTC] デバッグ:店舗詳細画面
+[11-Jul-2021 16:36:31 UTC] デバッグ:==============================================
+[11-Jul-2021 16:39:02 UTC] デバッグ:==============================================
+[11-Jul-2021 16:39:02 UTC] デバッグ:店舗詳細画面
+[11-Jul-2021 16:39:02 UTC] デバッグ:==============================================
+[11-Jul-2021 16:39:09 UTC] デバッグ:==============================================
+[11-Jul-2021 16:39:09 UTC] デバッグ:店舗詳細画面
+[11-Jul-2021 16:39:09 UTC] デバッグ:==============================================
+[11-Jul-2021 16:40:46 UTC] デバッグ:==============================================
+[11-Jul-2021 16:40:46 UTC] デバッグ:店舗詳細画面
+[11-Jul-2021 16:40:46 UTC] デバッグ:==============================================

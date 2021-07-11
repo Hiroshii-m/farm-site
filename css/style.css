@@ -1471,8 +1471,10 @@ i {
 }
 .p-article__img {
   width: 120px;
+  height: 110px;
   margin: 10px 0;
   cursor: pointer;
+  object-fit: cover;
 }
 @media screen and (max-width: 768px) {
   .p-article__img {
