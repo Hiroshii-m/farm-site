@@ -53,7 +53,7 @@ class VALID {
     const EMAIL = 'Email形式で入力してください。';
     const EMAILDUP = 'このEmailは既に登録されています。';
     const TEXTMIN = '文字以上入力してください。';
-    const TEXTMAX = '最大文字数を超えています。';
+    const TEXTMAX = '255文字を超えています。';
     const TEXTMAX_30 = '30文字以内で入力してください。';
     const HALFENG = '半角英数字で入力してください。';
     const ILLEGAL = '不正な値が入りました。';
@@ -302,6 +302,14 @@ function showData($str) {
         return '';
     }
 }
+// カテゴリーを表示
+function showCategory($str) {
+    if(!empty($str)) {
+        return $str;
+    }else{
+        return '未分類';
+    }
+}
 // 画像を表示
 function showImg($src) {
     if(!empty($src)) {
@@ -318,10 +326,6 @@ function dbConnect(){
     $dsn = 'mysql:dbname=farmshops;host=localhost;charset=utf8';
     $user = 'root';
     $password = 'root';
-    // ロリポップ
-    // $dsn = 'mysql:dbname=LAA1303831-farmshops;host=mysql138.phy.lolipop.lan;charset=utf8';
-    // $user = 'LAA1303831';
-    // $password = 'tyokuhan251';
     $options = array(
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
@@ -351,18 +355,25 @@ function queryPost($dbh, $sql, $data){
     return $stmt;
 }
 // ログインしているかどうか
-function isLogin() {
-    if(!empty($_SESSION['login_date'])) {
-        // ログイン有効期限切れ
-        if($_SESSION['login_date'] + $_SESSION['login_limit'] < time()) {
+function isLogin(){
+    // ログインしている場合
+    if( !empty($_SESSION['login_date']) ){
+  
+        // 現在日時が最終ログイン日時＋有効期限を超えていた場合
+        if( ($_SESSION['login_date'] + $_SESSION['login_limit']) < time()){
+  
+            // セッションを削除（ログアウトする）
+            @session_destroy();
             return false;
+        // 有効期限内の場合
         }else{
             return true;
         }
+    // 未ログインユーザーの場合
     }else{
         return false;
     }
-}
+  }
 // お気に入り登録されているかどうか
 function isFavorite($s_id, $u_id) {
     try {
@@ -482,11 +493,25 @@ function getShop($u_id) {
         $err_msg['common'] = MSG::UNEXPECTED;
     }
 }
+// 登録した商品を取得
+function getProduct($s_id) {
+    try {
+        $dbh = dbConnect();
+        $sql = 'SELECT * FROM `products` AS p LEFT JOIN `category` AS c ON p.category_id = c.id WHERE p.`shop_id` = :s_id';
+        $data = array(':s_id' => $s_id);
+        $stmt = queryPost($dbh, $sql, $data);
+        $result = $stmt->fetchAll();
+        return $result;
+    } catch ( Exception $e ) {
+        error_log('エラー発生:' . $e->getMessage());
+        $err_msg['common'] = MSG::UNEXPECTED;
+    }
+}
 // 店舗詳細情報を取得
 function getShopOne($s_id) {
     try {
         $dbh = dbConnect();
-        $sql = 'SELECT s.`id`, s.`user_id`, s.`shop_name`, s.`social_profile`, s.`postcode`, s.`prefecture_id`, s.`city_id`, s.`street`, s.`building`, s.`tel`, s.`value`, s.`map_iframe`, s.`shop_img1`, s.`shop_img2`, s.`shop_img3`, s.`browsing_num`, s.`favorites`, u.`screen_name`, c.`city_name` FROM `shops` AS s LEFT JOIN users AS u ON s.`user_id` = u.`id` INNER JOIN `cities` AS c ON c.`id` = s.`city_id` WHERE s.`id` = :s_id';
+        $sql = 'SELECT s.`id`, s.`user_id`, s.`shop_name`, s.`social_profile`, s.`postcode`, s.`prefecture_id`, s.`city_id`, s.`street`, s.`building`, s.`tel`, s.`value`, s.`shop_img1`, s.`shop_img2`, s.`shop_img3`, s.`browsing_num`, s.`favorites`, u.`screen_name`, c.`city_name` FROM `shops` AS s LEFT JOIN users AS u ON s.`user_id` = u.`id` INNER JOIN `cities` AS c ON c.`id` = s.`city_id` WHERE s.`id` = :s_id';
         $data = array(':s_id' => $s_id);
         $stmt = queryPost($dbh, $sql, $data);
         $result = $stmt->fetch(PDO::FETCH_ASSOC);

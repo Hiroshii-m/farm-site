@@ -36,25 +36,27 @@ try{
     // queryPost($dbh, $sql, $data);
     // header("Location:mypage.php");
 
-    $sql = 'INSERT INTO products (`shop_id`, `user_id`, `p_name`, `p_detail`, `category_id`, `term`, `p_value`, `p_number`, `p_img`,  `create_date`) VALUES(:s_id, :u_id, :p_name, :p_detail, :category_id, :term, :p_value, :p_number, :p_img, :create_date)';
+    $sql = 'INSERT INTO products (`shop_id`, `user_id`, `p_name`, `p_detail`, `category_id`, `term`, `p_value`, `p_number`, `p_img`, `shop_img3`, `create_date`) VALUES(:u_id, :s_name, :s_profile, :postcode, :p_id, :c_id, :street, :img1, :img2, :img3, :create_date)';
 
-    for($i = 0; $i <= 240; $i++){
-        $s_id = 31 + $i;
-        $u_id = 36 + $i;
-        $data = array(':s_id' => $s_id, ':u_id' => $u_id, ':p_name' => 'トマト', ':p_detail' => '稲の果実である籾から外皮を取り去った粒状の穀物である。穀物の一種として米穀とも呼ぶ。日本では主食の一つ。', ':category_id' => 1, ':term' => '夏〜冬', ':p_value' => '1000', ':p_number' => '1kg', ':p_img' => 'uploads/3b4ef7761f05b013da4eb057db721673e17f91a8.png', ':create_date' => date('Y-m-d H:i:s'));
+    for($i = 675; $i <= 736; $i++){
+        $k = $i - 674;
+        $u_id = 2219 + $k;
+        $c_id = $i;
+        $data = array(':u_id' => $u_id, ':s_name' => '無農薬野菜', ':s_profile' => 'たくさん売れてます！
+
+        取扱商品（旬野菜等）
+        ・野菜
+        　トマト・なす・きゅうり・えだまめ・さんどまめ・とうがらし・ピーマン・いちご・えんどう・
+        トウモロコシ・かぶ・ほうれんそう・きく菜・小松菜・ねぎ・
+        畑菜・金時人参・西洋人参・水菜・壬生菜・きゃべつ・白菜・ブロッコリー・カリフラワー・
+        花菜
+        ・果実
+        柿
+        ・米', ':postcode' => '7231234', ':p_id' => '13', ':c_id' => $c_id, ':street' => '東2条5番地', ':img1' => 'uploads/3002ac290f0d88b0cf1605d1b85624db7d663bbd.png', ':img2' => 'uploads/aecdf9a4649fc3397eb22797c4b03383edc5e210.jpeg', ':img3' => 'uploads/41aad9be5552cf469f62b8c61df1ed380d23f8fa.jpeg', ':create_date' => date('Y-m-d H:i:s'));
         // クエリ実行
         queryPost($dbh, $sql, $data);
         header("Location:mypage.php");
     }
-    // for($i = 0; $i <= 61; $i++){
-    //     $s_id = 2282 + $i;
-    //     $u_id = 2220 + $i;
-    //     $c_id = $i;
-    //     $data = array(':s_id' => $s_id, ':u_id' => $u_id, ':p_name' => '西洋カボチャ', ':p_detail' => '日本カボチャ、西洋カボチャ、ぺポカボチャの３種類に分けられ、現在の主流は、ほくほくして甘みの強い西洋カボチャです。', ':category_id' => 2, ':term' => '秋、夏。', ':p_value' => '100', ':p_number' => '500g', ':p_img' => 'uploads/b1ec76f6cdc0ed3202e1d2683a742f2c164a1a5a.png', ':create_date' => date('Y-m-d H:i:s'));
-    //     // クエリ実行
-    //     queryPost($dbh, $sql, $data);
-    //     header("Location:mypage.php");
-    // }
 
 } catch (Exception $e){
     error_log('エラー発生：'.$e->getMessage());

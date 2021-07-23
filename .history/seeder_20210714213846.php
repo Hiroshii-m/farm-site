@@ -38,7 +38,7 @@ try{
 
     $sql = 'INSERT INTO products (`shop_id`, `user_id`, `p_name`, `p_detail`, `category_id`, `term`, `p_value`, `p_number`, `p_img`,  `create_date`) VALUES(:s_id, :u_id, :p_name, :p_detail, :category_id, :term, :p_value, :p_number, :p_img, :create_date)';
 
-    for($i = 0; $i <= 240; $i++){
+    for($i = 0; $i <= 61; $i++){
         $s_id = 31 + $i;
         $u_id = 36 + $i;
         $data = array(':s_id' => $s_id, ':u_id' => $u_id, ':p_name' => 'トマト', ':p_detail' => '稲の果実である籾から外皮を取り去った粒状の穀物である。穀物の一種として米穀とも呼ぶ。日本では主食の一つ。', ':category_id' => 1, ':term' => '夏〜冬', ':p_value' => '1000', ':p_number' => '1kg', ':p_img' => 'uploads/3b4ef7761f05b013da4eb057db721673e17f91a8.png', ':create_date' => date('Y-m-d H:i:s'));

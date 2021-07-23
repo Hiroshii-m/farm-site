@@ -24,7 +24,7 @@
                     <?php }else{ ?>
 
                     <li class="c-header__item">
-                        <a href="index.php" class="c-header__text">TOP</a>
+                        <a href="index.php" class="c-header__text">ホーム</a>
                     </li>
                     <li class="c-header__item">
                         <a href="login.php" class="c-header__text">ログイン</a>
