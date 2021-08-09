@@ -1,0 +1,103 @@
+.c-form {
+    width: $site-width_xl;
+    margin: 0 auto;
+    border: 1px solid $color_accent;
+    padding: $space_3l;
+    box-sizing: border-box;
+    @include mq(md) {
+        width: $site-width_md;
+    }
+    @include mq(ms) {
+        width: 90%;
+        min-width: 300px;
+    }
+    &__title {
+        font-size: $font-size_xxl;
+        text-align: center;
+        margin-bottom: $space_l;
+        @include mq(md) {
+            font-size: $font-size_xl;
+        }
+    }
+    &__label {
+        display: block;
+        margin: $space_l 0;
+    }
+    &__input, &__textarea, &__select {
+        display: block;
+        border: 2px solid $color_accent;
+        width: 100%;
+        margin-bottom: $space_s;
+        box-sizing: border-box;
+    }
+    &__input {
+        height: 40px;
+        padding: $space_l;
+    }
+    &__textarea {
+        height: 200px;
+        padding: $space_s $space_m;
+    }
+    &__select {
+        height: 40px;
+        padding-left: $space_l;
+        cursor: pointer;
+    }
+    &__divide {
+        &2 {
+            width: calc(50% - 5px);
+        }
+        &3 {
+            width: calc(33.3% - 5px);
+        }
+    }
+    &__areaDrop {
+        display: block;
+        background: $border_color;
+        min-width: 150px;
+        width: 30%;
+        height: 150px;
+        text-align: center;
+        display: table;
+        position: relative;
+        cursor: pointer;
+        &.active {
+            opacity: .4;
+        }
+    }
+    &__areaText {
+        display: table-cell;
+        width: 100%;
+        vertical-align: middle;
+        font-weight: bold;
+    }
+    &__file {
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+    }
+    &__img {
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    &__check {
+        width: 20px;
+        margin-right: $space_m;
+    }
+    &__submit {
+        width: 100%;
+        background: $color_accent;
+        text-align: center;
+        font-size: $font-size_l;
+        padding: $space_m;
+        margin: $space_xxl 0 $space_xl 0;
+        &:hover {
+            opacity: .6;
+        }
+    }
+}

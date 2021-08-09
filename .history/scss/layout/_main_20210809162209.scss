@@ -1,0 +1,11 @@
+#l-main {
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    @include mq(lg) {
+        display: block;
+    }
+    @include mq(sm) {
+        padding-top: 20px;
+    }
+}

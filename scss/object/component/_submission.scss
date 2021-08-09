@@ -1,0 +1,104 @@
+.c-submission {
+    background: $color_base;
+    padding-bottom: 80px;
+    @include mq(sm) {
+        padding-bottom: 40px;
+    }
+    &__body {
+        width: 90%;
+        height: 400px;
+        margin: 0 auto;
+        background: $color_base;
+        overflow-y: scroll;
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $color_accent;
+        padding: $space_xxl;
+        @include mq(md) {
+            padding: $space_xl;
+        }
+        @include mq(ms) {
+            padding: $space_xl 0;
+        }
+        @include mq(sm) {
+            display: block;
+            position: relative;
+        }
+        &:last-child {
+            border: none;
+        }
+    }
+    &__visual {
+        margin: 10px 50px 0 10px;
+        text-align: center;
+        @include mq(md) {
+            margin: 0;
+        }
+        @include mq(sm) {
+            margin: 0 0 $space_m 0;
+        }
+    }
+    &__img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: $space_m;
+        @include mq(ms) {
+            width: 80px;
+            height: 80px;
+        }
+        @include mq(sm) {
+            margin: 0 auto;
+        }
+    }
+    &__author {
+        font-size: $font-size_m;
+    }
+    &__content {
+        margin: 0 20px;
+    }
+    &__tit {
+        font-size: $font-size_l;
+        @include mq(ms) {
+            font-size: $font-size_m;
+        }
+    }
+    &__detail {
+        max-height: 100px;
+        overflow: hidden;
+        margin-top: 40px;
+        @include mq(ms) {
+            font-size: $font-size_s;
+        }
+        @include mq(sm) {
+            margin-top: $space_m;
+        }
+    }
+    &__icon {
+        font-size: $font-size_xl;
+        cursor: pointer;
+        margin: $space_m $space_3l 0 0;
+        position: relative;
+        right: 30px;
+        @include mq(sm) {
+            margin: $space_m 0 0 0;
+        }
+    }
+    &__fav {
+        position: absolute;
+        z-index: 2;
+        background: $color_base;
+        &.is-active {
+            animation: favPushAnimation .2s ease-out;
+            color: $color_err;
+        }
+        &2 {
+            color: $color_err;
+            position: absolute;
+            &.is-active {
+                animation: favMoveAnimation 1s ease-out;
+            }
+        }
+    }
+}

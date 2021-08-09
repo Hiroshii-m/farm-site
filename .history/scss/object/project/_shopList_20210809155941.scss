@@ -1,0 +1,33 @@
+.p-shopList {
+    &__heading {
+        margin: 0 auto 50px auto;
+    }
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        margin-left: 50px;
+        font-size: $font-size_xl;
+        font-weight: bold;
+        @include mq(sm) {
+            margin: 0 0 $space_l 0;
+            text-align: center;
+        }
+    }
+    &__showNum {
+        text-align: right;
+        padding-bottom: $space_m;
+        border-bottom: 1px solid $font-color_default;
+    }
+    &__terms {
+        margin-top: $space_m;
+    }
+    &__tag {
+        display: inline-block;
+        border-radius: 5px;
+        font-size: $font-size_l;
+        padding: 0 $space_m;
+        background: $color_base;
+    }
+}

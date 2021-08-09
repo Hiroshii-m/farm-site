@@ -1,0 +1,24 @@
+.p-shopBlog {
+    padding: 0 $space_xl;
+    &__body {
+        margin: $space_xl 0;
+    }
+    &__title {
+        font-size: $font-size_l;
+        font-weight: bold;
+        margin-bottom: $space_l;
+    }
+    &__time {
+        font-size: $font-size_s;
+        font-weight: 800;
+        opacity: .7;
+    }
+    &__img {
+        margin: $space_xl 0;
+    }
+    &__content {
+        margin: $space_3l 0;
+        padding-bottom: $space_3l;
+        border-bottom: 1px solid $font-color_default;
+    }
+}

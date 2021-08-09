@@ -1,0 +1,10 @@
+.u-tag {
+    &-accent {
+        color: $color_accent2;
+        border: 1px solid $color_accent2;
+    }
+    &-sub {
+        color: $bg_color;
+        border: 1px solid $bg_color;
+    }
+}

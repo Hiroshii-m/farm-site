@@ -1,0 +1,232 @@
+// ==================================
+// Foundation
+// ==================================
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
+@import "foundation/variables";
+@import "foundation/mixin";
+@import "foundation/_reset";
+@import "foundation/_base";
+
+// ==================================
+// Layout
+// ==================================
+@import "layout/blog";
+@import "layout/header";
+@import "layout/region";
+@import "layout/sidebar";
+@import "layout/footer";
+#l-blogList {
+    padding: 40px 0 0 0;
+}
+#l-sale {
+    padding: 40px 0;
+}
+#l-search {
+    padding: 0 0 80px 0;
+    @include mq(sm) {
+        padding: 0 0 50px 0;
+    }
+}
+#l-shopList {
+    padding: 0 0 80px 0;
+}
+#l-pagination {
+    padding: 30px 0 0 0;
+}
+#l-article {
+    padding: 0 0 10px 0;
+}
+#l-explain {
+    padding: $space_3l 0;
+}
+#l-shop {
+    padding: 80px 0;
+}
+#l-main {
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    @include mq(lg) {
+        display: block;
+    }
+    @include mq(sm) {
+        padding-top: 20px;
+    }
+}
+// ==================================
+// Object
+// ==================================
+// Component
+// ----------------------------------
+@import "object/component/footer";
+@import "object/component/header";
+@import "object/component/_main";
+@import "object/component/_container";
+@import "object/component/submission";
+@import "object/component/sidebar";
+@import "object/component/card";
+@import "object/component/pagination";
+@import "object/component/form";
+@import "object/component/pankuzu";
+@import "object/component/dropProduct";
+
+// Project
+// ----------------------------------
+@import "object/project/region";
+@import "object/project/article";
+@import "object/project/search";
+@import "object/project/shopList";
+@import "object/project/product";
+.p-explain {
+    padding: 0 $space_xl;
+}
+@import "object/project/shopBlog";
+@import "object/project/comment";
+@import "object/project/tokenRecieve";
+@import "object/project/flash";
+// Utility
+// ----------------------------------
+@import "object/utility/upArrow";
+.u-flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    &-center {
+        @extend .u-flex;
+        justify-content: center;
+    }
+    &-end {
+        justify-content: flex-end;
+    }
+}
+.u-flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+.u-flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+.u-bgColor {
+    background: $color_main;
+    &-accent {
+        background: $color_accent;
+    }
+}
+.u-miniBtn {
+    padding: $space_m $space_l;
+    background: $color_accent;
+    text-align: center;
+    border-radius: 2px;
+    &:hover {
+        opacity: .7;
+    }
+    @include mq(sm) {
+        padding: $space_s $space_m;
+    }
+}
+.u-btn {
+    font-size: $font-size_m;
+    font-weight: 700;
+    line-height: 1;
+    position: relative;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    letter-spacing: 0.1em;
+    color: $font-color_default;
+    border-radius: 0.5rem;
+}
+.u-btn-border-shadow {
+    padding: calc(1.5rem - 12px) 2rem 1.5rem 3.5rem;
+    background: #fff;
+}  
+.u-btn-border-shadow:before {
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    width: 100%;
+    height: 100%;
+    content: "";
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    border: 3px solid $font-color_default;
+    border-radius: 0.5rem;
+}
+.u-btn-border-shadow:hover {
+    padding: calc(1.5rem - 6px) 2rem calc(1.5rem - 6px) 3.5rem;
+}
+.u-btn-border-shadow:hover:before {
+    top: 0;
+    left: 0;
+}
+.u-btn-border-shadow--color {
+    border-radius: 0;
+    background: $color_accent;
+}
+.u-btn-border-shadow--color:before {
+    border-radius: 0;
+}
+.u-heading {
+    font-size: $font-size_xl;
+    border-bottom: 1px solid $font-color_default;
+    padding-bottom: $space_l;
+    margin-bottom: $space_xxl;
+}
+.u-padding {
+    &-1 {
+        padding: 0 1px;
+    }
+    &-10 {
+        padding: $space_m;
+    }
+}
+.u-display-none {
+    display: none;
+}
+.u-err-msg {
+    color: $color_err;
+}
+.u-err-input {
+    background: $bg_err;
+    border: 2px solid $color_err;
+}
+.u-tag {
+    &-accent {
+        color: $color_accent2;
+        border: 1px solid $color_accent2;
+    }
+    &-sub {
+        color: $bg_color;
+        border: 1px solid $bg_color;
+    }
+}
+.u-margin {
+    &-top {
+        &-5 {
+            margin-top: $space_s;
+        }
+    }
+    &-left {
+        &-20 {
+            margin-left: 20px;
+        }
+    }
+}
+.u-font {
+    &-weight {
+        &-bold {
+            font-weight: bold;
+        }
+    }
+}
+.u-text {
+    &--right {
+        text-align: right;
+    }
+}

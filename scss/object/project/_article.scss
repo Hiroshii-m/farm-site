@@ -1,0 +1,125 @@
+.p-article {
+    &__prev {
+        display: inline-block;
+        margin-bottom: $space_xl;
+    }
+    &__content {
+        background: $color_base;
+        padding-bottom: 80px;
+    }
+    &__top {
+        background: $color_accent;
+        padding: $space_l $space_xl;
+        margin-bottom: 50px;
+        @extend .u-flex;
+        justify-content: space-between;
+    }
+    &__category {
+        color: $color_accent2;
+        border: 1px solid $color_accent2;
+        padding: 0 $space_m;
+        border-radius: 5px;
+        @include mq(sm) {
+            margin-bottom: $space_m;
+        }
+    }
+    &__inner {
+        width: 88%;
+        margin: 0 auto;
+    }
+    &__head {
+        margin-bottom: 30px;
+    }
+    &__shopName {
+        font-size: $font-size_xxl;
+        @include mq(md) {
+            font-size: $font-size_xl;
+        }
+        @include mq(sm) {
+            max-width: 260px;
+        }
+    }
+    &__sns {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: $space_xl;
+    }
+    &__fab {
+        font-size: $font-size_xl;
+        margin: 0 $space_s;
+    }
+    &__icon {
+        font-size: $font-size_xl;
+        margin-top: 20px;
+    }
+    &__images {
+        margin-bottom: 50px;
+        @extend .u-flex;
+        justify-content: space-between;
+    }
+    &__caption {
+        width: 68%;
+        max-width: 450px;
+        height: 300px;
+        @include mq(md) {
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+    &__thumnails {
+        margin: 0 0 0 $space_l;
+        padding: 0 10px;
+        border: 5px solid $border_color;
+        @include mq(md) {
+            display: flex;
+            margin: $space_xl auto 0 auto;
+        }
+    }
+    &__img {
+        width: 120px;
+        height: 110px;
+        margin: $space_m 0;
+        cursor: pointer;
+        object-fit: cover;
+        @include mq(md) {
+            margin: $space_m;
+            width: calc(33.3% - 20px);
+        }
+    }
+    &__body {
+        box-shadow: 0 0 20px 0px #f1f1f1;
+    }
+    &__data {
+        min-height: 500px;
+    }
+    // メニュー関連
+    &__menu {
+        border-bottom: 3px solid $bg_color;
+        display: flex;
+        @include mq(md) {
+            overflow-x: scroll;
+        }
+    }
+    &__tab {
+        width: calc(100%/5);
+        min-width: 70px;
+        height: 50px;
+        background: $border_color;
+        line-height: 50px;
+    }
+    &__input {
+        &:checked + .p-article__label {
+            color: $color_base;
+            background: $bg_color;
+        }
+    }
+    &__label {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        @include mq(md) {
+            font-size: $font-size_s;
+        }
+    }
+}

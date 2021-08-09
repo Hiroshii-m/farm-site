@@ -1,0 +1,25 @@
+.c-pagination {
+    max-width: 350px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    @include mq(sm) {
+        justify-content: center;
+        max-width: 280px;
+    }
+    &__item {
+        color: $color_base;
+        background: $bg_color;
+        display: block;
+        width: 30px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 5px;
+        margin: 0 $space_m;
+        &.active {
+            background: $color_accent;
+            cursor: default;
+        }
+    }
+}

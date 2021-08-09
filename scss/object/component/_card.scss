@@ -1,0 +1,97 @@
+.c-card {
+    background: $color_base;
+    padding: $space_3l;
+    margin: 0 auto 50px auto;
+    border-top: 15px solid $color_accent;
+    border-radius: 5px;
+    @include mq(sm) {
+        padding: $space_xl;
+    }
+    &__head {
+        display: flex;
+        @include mq(md) {
+            flex-direction: column-reverse;
+        }
+    }
+    &__img {
+        margin-right: $space_xl;
+        width: 200px;
+        height: 150px;
+        @include mq(md) {
+            margin: 0 auto;
+        }
+    }
+    &__author {
+        text-align: center;
+    }
+    &__summary {
+        width: 100%;
+        display: block;
+        margin-right: $space_3l;
+        @include mq(lg) {
+            margin: 0;
+        }
+        @include mq(md) {
+            margin-bottom: $space_xxl;
+        }
+        @include mq(sm) {
+            width: auto;
+        }
+    }
+    &__category {
+        margin-bottom: $space_l;
+        @include mq(sm) {
+            margin-bottom: $space_s;
+        }
+    }
+    &__title {
+        font-size: $font-size_l;
+        font-weight: bold;
+        cursor: pointer;
+        border-bottom: 1px solid $font-color_default;
+        &:hover {
+            color: $font-color_default;
+            border-bottom: none;
+        }
+    }
+    &__icon {
+        font-size: $font-size_xxl;
+        cursor: pointer;
+        @include mq(sm) {
+            margin-left: auto;
+        }
+    }
+    &__body {
+        margin-top: $space_xl;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        border-top: 1px solid $color_accent;
+        padding: 4px 0;
+        &:last-child {
+            border-bottom: 1px solid $color_accent;
+        }
+    }
+    &__row {
+        width: 120px;
+        background: $color_accent;
+        padding: $space_m;
+        font-weight: bold;
+        margin-right: $space_m;
+        box-sizing: border-box;
+    }
+    &__detail {
+        font-size: $font-size_m;
+        max-width: 330px;
+        @include mq(lg) {
+            font-size: $font-size_s;
+        }
+        @include mq(ms) {
+            max-width: 180px;
+        }
+        @include mq(sm) {
+            max-width: 120px;
+        }
+    }
+}

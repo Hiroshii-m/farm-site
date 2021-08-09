@@ -1,0 +1,36 @@
+.c-header {
+    width: 80%;
+    min-height: 83px;
+    margin: 0 auto;
+    font-weight: bold;
+    &__logo {
+        font-size: $font-size_l;
+        cursor: pointer;
+        max-width: 200px;
+    }
+    &__img {
+        width: 30px;
+    }
+    &__nav {
+        margin-top: 50px;
+        @include mq(md) {
+            margin-top: $space_xxl;
+        }
+    }
+    &__item {
+        margin-right: $space_xxl;
+        @include mq(sm) {
+            margin-right: $space_m;
+            font-size: $font-size_m;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    &__text {
+        padding-bottom: 15px;
+        &:hover {
+            border-bottom: 5px solid $font-color_active;
+        }
+    }
+}

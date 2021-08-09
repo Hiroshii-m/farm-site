@@ -1,0 +1,116 @@
+.p-comment {
+    &__wrap {
+        overflow: hidden;
+    }
+    &__body {
+        background: $color_accent;
+        height: 500px;
+        width: calc(100% + 14px);
+        overflow-y: scroll;
+        padding: $space_m;
+        @include mq(lg) {
+            width: calc(100% + 8px);
+        }
+        @include mq(md) {
+            width: calc(100% + 8px);
+        }
+        @include mq(sm) {
+            width: calc(100% + 4px);
+            padding: $space_s;
+        }
+    }
+    &__from {
+        justify-content: flex-end;
+    }
+    &__icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+        @include mq(sm) {
+            width: 40px;
+            height: 40px;
+        }
+    }
+    &__username {
+        @include mq(sm) {
+            font-size: $font-size_s;
+        }
+    }
+    &__balloon {
+        display: flex;
+        max-width: 90%;
+        align-items: flex-end;
+        @include mq(md) {
+            max-width: 80%;
+        }
+    }
+    &__time {
+        font-size: $font-size_s;
+        margin: 0 $space_m;
+        text-align: end;
+        @include mq(sm) {
+            margin: 0 $space_s;
+            font-size: 8px;
+        }
+    }
+    &__msg {
+        background: $color_base;
+        padding: $space_m $space_l;
+        border-radius: 20px;
+        max-width: 90%;
+        @include mq(md) {
+            font-size: $font-size_s;
+        }
+        &To {
+            margin-left: $space_xl;
+            position: relative;
+            &::before {
+                display: block;
+                content: "";
+                width: 0;
+                height: 0;
+                position: absolute;
+                top: 30%;
+                left: -10px;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-top: 10px solid $color_base;
+            }
+        }
+        &From {
+            margin-right: $space_xl;
+            position: relative;
+            &::before {
+                display: block;
+                content: "";
+                width: 0;
+                height: 0;
+                position: absolute;
+                top: 30%;
+                right: -10px;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-top: 10px solid $color_base;
+            }
+        }
+    }
+    &__form {
+        background: $color_base;
+        padding: $space_s 0 $space_s $space_xl;
+    }
+    &__textarea {
+        width: 90%;
+        max-height: 80px;
+        min-height: 50px;
+        border-radius: 15px;
+        border: 1px solid $border_color;
+        padding: 0 $space_l;
+    }
+    &__submit {
+        vertical-align: bottom;
+        text-align: center;
+        font-size: $font-size_l;
+        margin-left: $space_s;
+    }
+}

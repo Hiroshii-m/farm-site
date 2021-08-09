@@ -1,0 +1,30 @@
+.c-sidebar {
+    width: 250px;
+    background: $color_base;
+    @include mq(xl) {
+        width: 200px;
+    }
+    @include mq(lg) {
+        width: 90%;
+        max-width: $site-width_xl;
+        margin: 0 auto;
+    }
+    @include mq(md) {
+        max-width: $site-width_md;
+    }
+    &__tit {
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: $color_base;
+        background: $bg_color;
+    }
+    &__list {
+        padding: $space_xl;
+        box-sizing: border-box;
+        border-bottom: 1px solid $color_accent;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}

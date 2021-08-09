@@ -1,0 +1,78 @@
+.p-search {
+    border: 1px solid $font-color_default;
+    background: $color_base;
+    padding: 50px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px;
+    @include mq(lg) {
+        margin: 0 auto;
+    }
+    @include mq(ms) {
+        padding: 30px;
+    }
+    &__input {
+        height: 100%;
+        width: 100%;
+        max-width: 800px;
+        border: 2px solid $border_color;
+        padding: $space_m;
+        box-sizing: border-box;
+        margin-right: $space_m;
+        @include mq(sm) {
+            padding: $space_s;
+        }
+    }
+    &__nameBtn {
+        height: 100%;
+        width: 100px;
+    }
+    &__title {
+        font-size: $font-size_l;
+        margin: 5px 0;
+        @include mq(ms) {
+            font-size: $font-size_m;
+        }
+    }
+    &__area {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        max-width: 800px;
+        box-sizing: border-box;
+        margin-bottom: $space_m;
+        @include mq(xl) {
+            
+        }
+    }
+    &__select {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: 2px solid $border_color;
+        cursor: pointer;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    &__arrow {
+        position: absolute;
+        top: 17px;
+        right: 10px;
+    }
+    &__submit {
+        margin: $space_xxl 0 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include mq(sm) {
+            font-size: $font-size_s;
+        }
+    }
+    &__commit {
+        min-width: 150px;
+        height: 55px;
+        margin-right: $space_m;
+        @include mq(sm) {
+            height: 40px;
+        }
+    }
+}

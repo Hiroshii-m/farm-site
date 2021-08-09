@@ -1,0 +1,20 @@
+.u-flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    &-center {
+        @extend .u-flex;
+        justify-content: center;
+    }
+    &-end {
+        justify-content: flex-end;
+    }
+}
+.u-flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+.u-flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}

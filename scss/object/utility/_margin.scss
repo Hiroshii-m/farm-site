@@ -1,0 +1,12 @@
+.u-margin {
+    &-top {
+        &-5 {
+            margin-top: $space_s;
+        }
+    }
+    &-left {
+        &-20 {
+            margin-left: 20px;
+        }
+    }
+}
